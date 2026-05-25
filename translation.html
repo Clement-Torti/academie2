@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Traduction — L'Académie</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Montserrat','sans-serif'], serif: ['Merriweather','serif'] },
+                    colors: {
+                        frBlue:  '#002654',
+                        frRed:   '#ED2939',
+                        frCream: '#F5F5DC',
+                        gold:    '#D4AF37',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { overscroll-behavior-y: none; -webkit-tap-highlight-color: transparent; }
+        textarea, input { font-size: 16px !important; }
+        @keyframes slideIn {
+            from { opacity:0; transform:translateY(10px); }
+            to   { opacity:1; transform:translateY(0); }
+        }
+        .animate-slide-in { animation: slideIn .3s ease-out forwards; }
+        @keyframes correctPulse { 0%,100% { opacity:.5; } 50% { opacity:1; } }
+        .correction-checking { animation: correctPulse 1s infinite; }
+
+        .correction-block { margin-top:6px; padding-top:6px; border-top:1px solid rgba(255,255,255,.3); font-size:.72rem; line-height:1.4; }
+        .correction-block del { opacity:.6; text-decoration:line-through; }
+        .correction-item  { display:flex; flex-wrap:wrap; align-items:center; gap:3px; margin-bottom:2px; }
+        .corr-fix { font-weight:700; background:rgba(255,255,255,.25); border-radius:3px; padding:0 3px; }
+
+        .loader { border:4px solid #f3f3f3; border-top:4px solid #002654; border-radius:50%; width:40px; height:40px; animation:spin 1s linear infinite; margin:20px auto; }
+        @keyframes spin { 0%{transform:rotate(0)} 100%{transform:rotate(360deg)} }
+
+        /* Règle tables conjugaison */
+        .cj-rule-box { background:#f0f9ff; padding:10px; border-left:4px solid #2563eb; margin:10px 0; text-align:left; font-size:.9rem; }
+        .cj-table { width:100%; border-collapse:collapse; margin-top:6px; font-size:.8rem; }
+        .cj-table th,.cj-table td { border:1px solid #dbeafe; padding:4px 6px; text-align:left; }
+        .cj-table thead { background:#eff6ff; font-weight:bold; }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 h-[100dvh] flex flex-col overflow-hidden"
+      style="font-family:'Montserrat',sans-serif;">
+
+<!-- ═══════════════════════════════════════════════════════════════
+     NAVBAR
+═══════════════════════════════════════════════════════════════ -->
+<nav class="bg-frBlue text-white shadow-lg z-50 shrink-0">
+    <div class="max-w-2xl mx-auto px-4 h-14 flex justify-between items-center">
+        <a href="index.html" class="flex items-center gap-2 active:opacity-70 transition">
+            <i class="fa-solid fa-landmark text-gold text-xl"></i>
+            <h1 class="font-bold text-sm tracking-wider uppercase hidden sm:block">L'Académie 2</h1>
+        </a>
+        <div class="flex items-center gap-2">
+            <span id="streak-chip"
+                  class="flex items-center gap-1.5 bg-white/10 px-3 py-1 rounded-full border border-white/10 text-xs font-bold">
+                <i class="fa-solid fa-fire text-orange-400 text-sm animate-pulse"></i>
+                <span id="streak-val">0 jour</span>
+            </span>
+        </div>
+    </div>
+    <div class="h-1 w-full flex">
+        <div class="w-1/3 bg-blue-600"></div>
+        <div class="w-1/3 bg-white"></div>
+        <div class="w-1/3 bg-red-600"></div>
+    </div>
+</nav>
+
+<!-- modal aide conjugaison -->
+<div id="cj-help-modal" class="hidden fixed inset-0 z-[80] flex items-center justify-center p-4 bg-black/40 backdrop-blur-sm"></div>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     CONTENU PRINCIPAL
+═══════════════════════════════════════════════════════════════ -->
+<main id="app" class="flex-1 overflow-y-auto bg-frCream w-full">
+    <div class="h-full flex flex-col items-center justify-center">
+        <div class="loader"></div>
+        <p class="text-gray-500 mt-2 text-sm">Chargement…</p>
+    </div>
+</main>
+
+<script>
+// ════════════════════════════════════════════════════════════════
+//  CONJUGAISON HELP (inchangé depuis v1)
+// ════════════════════════════════════════════════════════════════
+const conjHelp = {
+    rules: {
+        "present": "Action actuelle / vérité générale.<br><div class='cj-rule-box'><strong>Formation :</strong> Radical + terminaisons selon le groupe.<br><table class='cj-table'><thead><tr><th></th><th>1er (-ER)</th><th>2e (-IR)</th><th>3e (-RE)</th></tr></thead><tbody><tr><td>je</td><td>-e</td><td>-is</td><td>-s</td></tr><tr><td>tu</td><td>-es</td><td>-is</td><td>-s</td></tr><tr><td>il</td><td>-e</td><td>-it</td><td>—</td></tr><tr><td>nous</td><td>-ons</td><td>-issons</td><td>-ons</td></tr><tr><td>vous</td><td>-ez</td><td>-issez</td><td>-ez</td></tr><tr><td>ils</td><td>-ent</td><td>-issent</td><td>-ent</td></tr></tbody></table></div>",
+        "pc":       "Passé terminé.<br><div class='cj-rule-box'>Auxiliaire présent + participe passé.<br><em>Je n'ai pas mangé.</em></div>",
+        "imparfait":"Description / habitude au passé.<br><div class='cj-rule-box'>Radical (nous-présent) + -ais/-ais/-ait/-ions/-iez/-aient</div>",
+        "futur":    "Projet dans l'avenir.<br><div class='cj-rule-box'>Infinitif + -ai/-as/-a/-ons/-ez/-ont</div>",
+        "futur_proche":"Action immédiate.<br><div class='cj-rule-box'>Aller (présent) + Infinitif.<br><em>Je vais manger.</em></div>",
+        "conditionnel":"Politesse / hypothèse.<br><div class='cj-rule-box'>Infinitif + terminaisons imparfait.</div>",
+        "imperatif":"Ordre ou conseil.<br><div class='cj-rule-box'>3 formes : tu / nous / vous.</div>",
+    },
+    show(tense) {
+        const modal = document.getElementById('cj-help-modal');
+        const label = { present:'Présent', pc:'Passé Composé', imparfait:'Imparfait',
+            futur_proche:'Futur Proche', futur:'Futur Simple',
+            conditionnel:'Conditionnel', imperatif:'Impératif' }[tense] || tense;
+        modal.innerHTML = `
+            <div class="bg-white p-6 rounded-2xl max-w-md w-full shadow-2xl overflow-y-auto max-h-[80vh]" onclick="event.stopPropagation()">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="font-bold text-frBlue text-lg">${label}</h3>
+                    <button onclick="document.getElementById('cj-help-modal').classList.add('hidden')"
+                            class="text-gray-400 hover:text-gray-600"><i class="fa-solid fa-times text-xl"></i></button>
+                </div>
+                <div class="text-gray-700 leading-relaxed text-sm">${this.rules[tense] || 'Pas de règle.'}</div>
+            </div>`;
+        modal.onclick = e => { if (e.target === modal) modal.classList.add('hidden'); };
+        modal.classList.remove('hidden');
+    }
+};
+
+// ════════════════════════════════════════════════════════════════
+//  APP TRADUCTION
+// ════════════════════════════════════════════════════════════════
+const trans = {
+
+    container: document.getElementById('app'),
+
+    // État
+    sentences: [],
+    currentIdx: 0,
+    sentenceStartTime: null,
+    sessionTimes: [],          // ms par phrase révélée
+    countdownInterval: null,
+    answerRevealed: false,
+    currentApiKeyIndex: 0,
+
+    // ── Accesseurs ───────────────────────────────────────────────
+    get cfg() { return JSON.parse(localStorage.getItem('acad2_config') || '{}'); },
+    get sentencesTarget() { return this.cfg.sentencesPerSession || 10; },
+
+    getGeminiKeys() {
+        try { return JSON.parse(localStorage.getItem('acad_gemini_keys') || '[]').filter(k => k?.trim()); }
+        catch { return []; }
+    },
+    getCurrentKey() {
+        const k = this.getGeminiKeys();
+        return k.length ? k[this.currentApiKeyIndex % k.length] : null;
+    },
+    rotateKey() {
+        const k = this.getGeminiKeys();
+        if (k.length) this.currentApiKeyIndex = (this.currentApiKeyIndex + 1) % k.length;
+    },
+
+    // ── Init ─────────────────────────────────────────────────────
+    async init() {
+        // Streak
+        const stats = JSON.parse(localStorage.getItem('acad2_stats') || '{"streak":0}');
+        const s = stats.streak || 0;
+        document.getElementById('streak-val').textContent = `${s} jour${s > 1 ? 's' : ''}`;
+
+        await this.generateAndStart();
+    },
+
+    // ════════════════════════════════════════════════════════════
+    //  GÉNÉRATION DES PHRASES (adapté v1)
+    // ════════════════════════════════════════════════════════════
+    async generateAndStart() {
+        this.container.innerHTML = `
+            <div class="h-full flex flex-col items-center justify-center p-6">
+                <div class="loader"></div>
+                <p id="gen-status" class="text-gray-500 mt-4 text-sm">Génération des phrases…</p>
+            </div>`;
+
+        const vocab = JSON.parse(localStorage.getItem('acad_user_vocab') || '[]');
+
+        const COUNTER_KEY = 'acad_trans_counter';
+        const HISTORY_KEY = 'acad_trans_history';
+        const REVIEW_OFFSETS = [1, 3, 6, 19];
+
+        const currentCount = parseInt(localStorage.getItem(COUNTER_KEY) || '0');
+        const rawHistory   = JSON.parse(localStorage.getItem(HISTORY_KEY) || '[]');
+        const activeHistory = rawHistory.filter(s => currentCount - s.date <= 19);
+
+        const target = this.sentencesTarget;
+        let newSentences = [];
+
+        const setStatus = msg => {
+            const el = document.getElementById('gen-status');
+            if (el) el.textContent = msg;
+        };
+
+        if (vocab.length > 0) {
+            const allTenses   = ['present','pc','imparfait','futur_proche','futur','conditionnel','imperatif'];
+            const tenseNames  = { present:'présent', pc:'passé composé', imparfait:'imparfait',
+                futur_proche:'futur proche', futur:'futur simple',
+                conditionnel:'conditionnel', imperatif:'impératif' };
+            const nbNew = Math.min(target, 8); // max 8 nouvelles par session
+
+            const selected    = [...vocab].sort(() => Math.random() - .5).slice(0, Math.min(nbNew, vocab.length));
+            const chosenTenses= [...allTenses].sort(() => Math.random() - .5).slice(0, selected.length);
+            const wordList    = selected.map((w,i) => `${i+1}. ${w.fr} (español: ${w.es})`).join('\n');
+            const tenseList   = chosenTenses.map((t,i) => `frase ${i+1}: ${tenseNames[t]}`).join(', ');
+
+            const prompt = `Eres un profesor de francés. Genera exactamente ${selected.length} frases en francés usando las palabras de abajo.
+
+Palabras (una por frase):
+${wordList}
+
+Tiempos (uno por frase): ${tenseList}
+
+Reglas:
+- Varía los pronombres (je, tu, il, elle, nous, vous, ils)
+- Frases cortas: 5-9 palabras
+- Proporciona la traducción al español de cada frase
+- El 2° campo es la clave del tiempo en francés (exactamente una de: present, pc, imparfait, futur_proche, futur, conditionnel, imperatif)
+- Al final de la traducción española, añade entre paréntesis el pronombre sujeto francés usado: ej. (nous)
+
+FORMATO EXACTO (4 campos separados por |):
+FRASE1|clave_tiempo|frase en francés|traducción española (pronombre)
+FRASE2|clave_tiempo|frase en francés|traducción española (pronombre)
+
+Ejemplo:
+FRASE1|present|Il mange une pomme.|Él come una manzana. (il)
+FRASE2|pc|Nous avons visité Paris.|Hemos visitado París. (nous)`;
+
+            for (let attempt = 1; attempt <= 3; attempt++) {
+                if (attempt > 1) {
+                    setStatus(`Tentative ${attempt}/3…`);
+                    await new Promise(r => setTimeout(r, 3000));
+                } else {
+                    setStatus('Génération des phrases…');
+                }
+                try {
+                    const keys = this.getGeminiKeys();
+                    if (!keys.length) break;
+                    let raw = null;
+                    for (let ki = 0; ki < keys.length; ki++) {
+                        try {
+                            const apiKey = keys[(this.currentApiKeyIndex + ki) % keys.length];
+                            const res = await fetch(
+                                `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key=${apiKey}`,
+                                { method:'POST', headers:{'Content-Type':'application/json'},
+                                  body: JSON.stringify({ contents:[{role:'user',parts:[{text:prompt}]}], generationConfig:{temperature:.8,maxOutputTokens:512} }) }
+                            );
+                            if (res.ok) { const d = await res.json(); raw = d.candidates[0].content.parts[0].text; break; }
+                            if (res.status === 429 || res.status === 403) { this.rotateKey(); continue; }
+                            break;
+                        } catch { this.rotateKey(); }
+                    }
+                    if (raw) {
+                        for (const line of raw.trim().split('\n')) {
+                            const parts = line.trim().split('|').map(s => s.trim());
+                            if (parts.length === 4 && /^FRASE\d+$/i.test(parts[0]))
+                                newSentences.push({ tense:parts[1], french:parts[2], spanish:parts[3], date:currentCount });
+                            else if (parts.length === 3 && /^FRASE\d+$/i.test(parts[0]))
+                                newSentences.push({ french:parts[1], spanish:parts[2], date:currentCount });
+                            else if (parts.length === 2 && parts[0].length > 3 && parts[1].length > 3)
+                                newSentences.push({ french:parts[0], spanish:parts[1], date:currentCount });
+                        }
+                    }
+                    if (newSentences.length >= selected.length) break;
+                    newSentences = [];
+                } catch (e) { console.error('Gen error', e); }
+            }
+        }
+
+        // Sauvegarder nouvelles phrases
+        if (newSentences.length > 0) {
+            const updated = [...activeHistory, ...newSentences];
+            localStorage.setItem(HISTORY_KEY, JSON.stringify(updated));
+            localStorage.setItem(COUNTER_KEY, String(currentCount + 1));
+        }
+
+        // Répétition espacée : phrases dues
+        const due = activeHistory.filter(s => REVIEW_OFFSETS.includes(currentCount - s.date));
+        let pool  = [...newSentences, ...due];
+
+        // Compléter jusqu'à target avec l'historique
+        if (pool.length < target) {
+            const already = new Set(pool.map(s => s.french));
+            const filler  = activeHistory
+                .filter(s => !already.has(s.french))
+                .sort(() => Math.random() - .5);
+            pool.push(...filler.slice(0, target - pool.length));
+        }
+
+        this.sentences = pool.slice(0, target).sort(() => Math.random() - .5);
+        this.currentIdx = 0;
+
+        if (this.sentences.length === 0) {
+            this.showNoSentences();
+            return;
+        }
+        this.renderSentence();
+    },
+
+    showNoSentences() {
+        this.container.innerHTML = `
+            <div class="h-full flex flex-col items-center justify-center p-8 text-center gap-6">
+                <i class="fa-solid fa-triangle-exclamation text-4xl text-amber-400"></i>
+                <div>
+                    <p class="font-bold text-gray-700 mb-2">Impossible de générer les phrases</p>
+                    <p class="text-sm text-gray-500">Vérifie ta clé API Gemini dans la configuration.</p>
+                </div>
+                <a href="index.html"
+                   class="bg-frBlue text-white font-bold px-8 py-3 rounded-xl shadow active:translate-y-0.5 transition uppercase tracking-widest text-sm">
+                    Retour à l'accueil
+                </a>
+            </div>`;
+    },
+
+    // ════════════════════════════════════════════════════════════
+    //  RENDU D'UNE PHRASE
+    // ════════════════════════════════════════════════════════════
+    renderSentence() {
+        if (this.currentIdx >= this.sentences.length) {
+            this.finishSession();
+            return;
+        }
+
+        if (this.countdownInterval) { clearInterval(this.countdownInterval); this.countdownInterval = null; }
+        this.answerRevealed = false;
+        this.sentenceStartTime = Date.now();
+
+        const s      = this.sentences[this.currentIdx];
+        const cur    = this.currentIdx + 1;
+        const total  = this.sentences.length;
+        const isLast = cur >= total;
+        const pct    = Math.round((cur - 1) / total * 100);
+
+        const tenseLabels = {
+            present:'Présent', pc:'Passé composé', imparfait:'Imparfait',
+            futur_proche:'Futur proche', futur:'Futur simple',
+            conditionnel:'Conditionnel', imperatif:'Impératif'
+        };
+
+        this.container.innerHTML = `
+            <div class="h-full flex flex-col bg-frCream" id="trans-screen">
+
+                <!-- Header -->
+                <div class="px-6 py-4 text-center bg-white border-b border-gray-100 shrink-0">
+                    <h2 class="text-frBlue font-bold text-xs uppercase tracking-widest mb-2">Traduction orale</h2>
+                    <!-- Progress bar session -->
+                    <div class="w-full bg-gray-100 rounded-full h-1.5 mb-1">
+                        <div class="bg-frBlue h-1.5 rounded-full transition-all" style="width:${pct}%"></div>
+                    </div>
+                    <p class="text-gray-400 text-[10px]">${cur} / ${total}</p>
+                </div>
+
+                <!-- Corps -->
+                <div class="flex-1 flex flex-col items-center justify-center px-8 gap-5 overflow-y-auto py-6">
+
+                    ${s.tense ? `
+                    <button onclick="conjHelp.show('${s.tense}')"
+                        class="flex items-center gap-1.5 bg-frBlue/10 hover:bg-frBlue/20 text-frBlue text-xs font-bold px-3 py-1.5 rounded-full transition border border-frBlue/20">
+                        <i class="fa-regular fa-lightbulb text-xs"></i>
+                        ${tenseLabels[s.tense] || s.tense}
+                    </button>` : ''}
+
+                    <!-- Chrono -->
+                    <div id="chrono" class="flex items-center gap-1.5 text-xs font-mono text-gray-400">
+                        <i class="fa-regular fa-stopwatch"></i> <span id="chrono-val">0 s</span>
+                    </div>
+
+                    <!-- Phrase espagnole -->
+                    <p id="trans-spanish"
+                       class="text-xl font-serif text-center text-gray-800 leading-relaxed animate-slide-in">
+                        ${s.spanish}
+                    </p>
+
+                    <!-- Réponse (cachée) -->
+                    <div id="trans-answer" class="hidden w-full text-center"></div>
+                </div>
+
+                <!-- Boutons -->
+                <div class="p-5 bg-white border-t border-gray-100 shrink-0">
+                    <button id="btn-reveal" onclick="trans.reveal()"
+                        class="w-full bg-frBlue text-white font-bold py-4 rounded-xl shadow-md active:translate-y-0.5 transition uppercase tracking-widest text-sm">
+                        Révéler
+                    </button>
+                    <button id="btn-next" onclick="trans.nextSentence()"
+                        class="hidden w-full bg-green-500 text-white font-bold py-4 rounded-xl shadow-md active:translate-y-0.5 transition uppercase tracking-widest text-sm">
+                        ${isLast ? 'Terminer' : 'Suivant'}
+                    </button>
+                </div>
+            </div>`;
+
+        // Chronomètre visible
+        this._chronoStart = Date.now();
+        this._chronoInterval = setInterval(() => {
+            const el = document.getElementById('chrono-val');
+            if (el) el.textContent = Math.floor((Date.now() - this._chronoStart) / 1000) + ' s';
+        }, 500);
+    },
+
+    // ════════════════════════════════════════════════════════════
+    //  RÉVÉLER
+    // ════════════════════════════════════════════════════════════
+    reveal() {
+        if (this._chronoInterval) { clearInterval(this._chronoInterval); this._chronoInterval = null; }
+
+        const elapsed = this.sentenceStartTime
+            ? Math.round((Date.now() - this.sentenceStartTime) / 1000)
+            : 0;
+        this.sessionTimes.push(elapsed);
+
+        const s = this.sentences[this.currentIdx];
+        const waitSec = Math.min(elapsed, 15);
+
+        // Mots cliquables
+        const words = s.french.split(/\s+/).filter(w => w.length > 0);
+        const failed = new Set(s.failedWords || []);
+        const wordsHtml = words.map((w, i) => {
+            const f = failed.has(i);
+            return `<span onclick="trans.toggleWord(${i})" id="tw-${i}" data-failed="${f}"
+                class="cursor-pointer rounded px-0.5 transition-colors ${f ? 'bg-red-200 text-red-800' : 'hover:bg-red-100'}">${w}</span>`;
+        }).join(' ');
+
+        const safeText = s.french.replace(/'/g, "\\'");
+
+        const answerDiv = document.getElementById('trans-answer');
+        if (answerDiv) {
+            answerDiv.innerHTML = `
+                <div class="w-10 h-px bg-frBlue/20 mx-auto mb-4"></div>
+                <div class="flex items-center justify-center gap-3 flex-wrap mb-1">
+                    <p id="trans-french" class="text-xl font-serif font-bold text-frBlue leading-relaxed">${wordsHtml}</p>
+                    <button onclick="trans.speakFrench('${safeText}')"
+                        class="shrink-0 text-frBlue/50 hover:text-frBlue transition active:scale-90">
+                        <i class="fa-solid fa-volume-high text-lg"></i>
+                    </button>
+                </div>
+                <p class="text-[11px] text-gray-400">Toca las palabras que no supiste</p>
+                <button id="btn-correct" onclick="trans.correctWithAI()"
+                    class="mt-2 flex items-center gap-1.5 mx-auto text-[11px] text-gray-400 hover:text-amber-600 transition px-2 py-1 rounded-full hover:bg-amber-50 border border-transparent hover:border-amber-200">
+                    <i class="fa-solid fa-rotate text-[10px]"></i> Corriger avec l'IA
+                </button>`;
+            answerDiv.classList.remove('hidden');
+        }
+
+        document.getElementById('btn-reveal')?.classList.add('hidden');
+        this.answerRevealed = true;
+
+        const btnNext = document.getElementById('btn-next');
+        if (btnNext) {
+            btnNext.classList.remove('hidden');
+            const baseText = btnNext.textContent.trim();
+            if (waitSec > 1) {
+                btnNext.disabled = true;
+                btnNext.classList.add('opacity-50', 'cursor-not-allowed');
+                let rem = waitSec;
+                btnNext.textContent = `${baseText} (${rem}s)`;
+                this.countdownInterval = setInterval(() => {
+                    rem--;
+                    if (rem <= 0) {
+                        clearInterval(this.countdownInterval);
+                        this.countdownInterval = null;
+                        btnNext.disabled = false;
+                        btnNext.classList.remove('opacity-50','cursor-not-allowed');
+                        btnNext.textContent = baseText;
+                    } else {
+                        btnNext.textContent = `${baseText} (${rem}s)`;
+                    }
+                }, 1000);
+            }
+        }
+        this.speakFrench(s.french);
+    },
+
+    toggleWord(idx) {
+        const el = document.getElementById(`tw-${idx}`);
+        if (!el) return;
+        const wasFailed = el.dataset.failed === 'true';
+        el.dataset.failed = String(!wasFailed);
+        el.className = `cursor-pointer rounded px-0.5 transition-colors ${!wasFailed ? 'bg-red-200 text-red-800' : 'hover:bg-red-100'}`;
+    },
+
+    async correctWithAI() {
+        const s   = this.sentences[this.currentIdx];
+        const btn = document.getElementById('btn-correct');
+        if (!btn) return;
+        btn.disabled = true;
+        btn.innerHTML = `<i class="fa-solid fa-spinner fa-spin text-[10px]"></i> Correction…`;
+
+        const keys = this.getGeminiKeys();
+        if (!keys.length) return;
+        const tenseLabels = { present:'Présent', pc:'Passé composé', imparfait:'Imparfait',
+            futur_proche:'Futur proche', futur:'Futur simple', conditionnel:'Conditionnel', imperatif:'Impératif' };
+
+        try {
+            const apiKey = keys[this.currentApiKeyIndex % keys.length];
+            const res = await fetch(
+                `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key=${apiKey}`,
+                { method:'POST', headers:{'Content-Type':'application/json'},
+                  body: JSON.stringify({ contents:[{role:'user',parts:[{text:
+                      `Corrige si nécessaire ce pair frase française / traduction espagnole.\nTemps: ${tenseLabels[s.tense]||''}\nFrançais: ${s.french}\nEspañol: ${s.spanish}\n\nFORMAT: français|español (pronombre)`
+                  }]}], generationConfig:{temperature:.2, maxOutputTokens:128} }) }
+            );
+            if (!res.ok) throw new Error('api');
+            const d   = await res.json();
+            const raw = d?.candidates?.[0]?.content?.parts?.[0]?.text?.trim() || '';
+            const parts = raw.split('|').map(p => p.trim());
+            if (parts.length !== 2 || !parts[0] || !parts[1]) throw new Error('fmt');
+
+            const origFr = s.french;
+            s.french  = parts[0];
+            s.spanish = parts[1];
+
+            const spEl = document.getElementById('trans-spanish');
+            if (spEl) spEl.textContent = s.spanish;
+
+            const words = s.french.split(/\s+/).filter(w => w.length > 0);
+            const wHtml = words.map((w,i) =>
+                `<span onclick="trans.toggleWord(${i})" id="tw-${i}" data-failed="false"
+                    class="cursor-pointer rounded px-0.5 hover:bg-red-100">${w}</span>`
+            ).join(' ');
+            const frEl = document.getElementById('trans-french');
+            if (frEl) frEl.innerHTML = wHtml;
+
+            btn.innerHTML = `<i class="fa-solid fa-check text-[10px]"></i> Corrigé`;
+            btn.className = 'mt-2 flex items-center gap-1.5 mx-auto text-[11px] text-green-600 px-2 py-1 rounded-full border border-green-200 bg-green-50 cursor-default';
+
+            // Persister dans l'historique
+            const history = JSON.parse(localStorage.getItem('acad_trans_history') || '[]');
+            for (let i = history.length - 1; i >= 0; i--) {
+                if (history[i].french === origFr) {
+                    history[i].french  = s.french;
+                    history[i].spanish = s.spanish;
+                    break;
+                }
+            }
+            localStorage.setItem('acad_trans_history', JSON.stringify(history));
+            this.speakFrench(s.french);
+        } catch {
+            btn.disabled = false;
+            btn.innerHTML = `<i class="fa-solid fa-rotate text-[10px]"></i> Réessayer`;
+        }
+    },
+
+    // ════════════════════════════════════════════════════════════
+    //  PHRASE SUIVANTE
+    // ════════════════════════════════════════════════════════════
+    nextSentence() {
+        const s = this.sentences[this.currentIdx];
+        if (s) {
+            const words = s.french.split(/\s+/).filter(w => w.length > 0);
+            const failed = words.reduce((acc,_,i) => {
+                const el = document.getElementById(`tw-${i}`);
+                if (el && el.dataset.failed === 'true') acc.push(i);
+                return acc;
+            }, []);
+            s.failedWords = failed;
+
+            // Sauvegarder failed words
+            try {
+                const h = JSON.parse(localStorage.getItem('acad_trans_history') || '[]');
+                for (let i = h.length-1; i >= 0; i--) {
+                    if (h[i].french === s.french) { h[i].failedWords = failed; break; }
+                }
+                localStorage.setItem('acad_trans_history', JSON.stringify(h));
+            } catch {}
+
+            if (this.answerRevealed && failed.length === 0 && window.confetti) {
+                confetti({ particleCount:60, spread:50, origin:{y:.75}, scalar:.9 });
+            }
+        }
+
+        if (this.countdownInterval) { clearInterval(this.countdownInterval); this.countdownInterval = null; }
+        this.currentIdx++;
+        this.renderSentence();
+    },
+
+    // ════════════════════════════════════════════════════════════
+    //  FIN DE SESSION
+    // ════════════════════════════════════════════════════════════
+    finishSession() {
+        const today = new Date().toISOString().split('T')[0];
+        const stats = JSON.parse(localStorage.getItem('acad2_stats') ||
+            '{"sessions":[],"streak":0,"lastCompletedDate":null}');
+
+        // Session du jour
+        let session = stats.sessions.find(s => s.date === today);
+        if (!session) {
+            session = { date:today, readingWords:0, readingDurationMs:0, readingWpm:0,
+                translationSentences:0, translationTimes:[] };
+            stats.sessions.push(session);
+        }
+        session.translationSentences = this.sessionTimes.length;
+        session.translationTimes     = this.sessionTimes;
+
+        // Streak
+        const last = stats.lastCompletedDate;
+        const yesterday = new Date(Date.now() - 86400000).toISOString().split('T')[0];
+        if (last === yesterday) {
+            stats.streak = (stats.streak || 0) + 1;
+        } else if (last !== today) {
+            stats.streak = 1;
+        }
+        stats.lastCompletedDate = today;
+
+        // Marquer jour complété
+        const days = JSON.parse(localStorage.getItem('acad2_days') || '{}');
+        days[today] = 'completed';
+        localStorage.setItem('acad2_days', JSON.stringify(days));
+        localStorage.setItem('acad2_stats', JSON.stringify(stats));
+
+        // Résumé
+        const avg = this.sessionTimes.length
+            ? Math.round(this.sessionTimes.reduce((a,b)=>a+b,0) / this.sessionTimes.length)
+            : 0;
+
+        this.container.innerHTML = `
+            <div class="h-full flex flex-col items-center justify-center p-8 text-center gap-6 bg-frCream animate-slide-in">
+                <div class="text-6xl mb-2">🎉</div>
+                <div>
+                    <h2 class="text-2xl font-serif font-bold text-frBlue mb-1">Pratique terminée !</h2>
+                    <p class="text-gray-500 text-sm">Excellente session aujourd'hui.</p>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4 w-full max-w-xs">
+                    <div class="bg-white rounded-xl p-4 shadow-sm border border-gray-100 text-center">
+                        <div class="text-2xl font-bold text-frBlue">${this.sessionTimes.length}</div>
+                        <div class="text-xs text-gray-500 mt-1">phrases traduites</div>
+                    </div>
+                    <div class="bg-white rounded-xl p-4 shadow-sm border border-gray-100 text-center">
+                        <div class="text-2xl font-bold text-frBlue">${avg}s</div>
+                        <div class="text-xs text-gray-500 mt-1">temps moyen</div>
+                    </div>
+                </div>
+
+                <a href="index.html"
+                   class="w-full max-w-xs bg-frBlue text-white font-bold py-4 rounded-xl shadow-md active:translate-y-0.5 transition uppercase tracking-widest text-sm text-center">
+                    <i class="fa-solid fa-house mr-2"></i> Retour à l'accueil
+                </a>
+            </div>`;
+    },
+
+    // ════════════════════════════════════════════════════════════
+    //  TTS
+    // ════════════════════════════════════════════════════════════
+    _speakId: 0,
+    _utterance: null,
+    _getVoicesAsync() {
+        return new Promise(resolve => {
+            const v = window.speechSynthesis.getVoices();
+            if (v.length) return resolve(v);
+            window.speechSynthesis.addEventListener('voiceschanged', function h() {
+                window.speechSynthesis.removeEventListener('voiceschanged', h);
+                resolve(window.speechSynthesis.getVoices());
+            });
+        });
+    },
+    async speakFrench(text) {
+        if (!text) return;
+        const id = ++this._speakId;
+        const voices = await this._getVoicesAsync();
+        if (id !== this._speakId) return;
+        window.speechSynthesis.cancel();
+        const utt = new SpeechSynthesisUtterance(text);
+        const v = voices.find(v => v.name === 'Google français') ||
+                  voices.find(v => v.name === 'Thomas') ||
+                  voices.find(v => v.lang === 'fr-FR') ||
+                  voices.find(v => v.lang.startsWith('fr'));
+        if (v) { utt.voice = v; utt.lang = v.lang; } else { utt.lang = 'fr-FR'; }
+        utt.rate = .85; utt.pitch = 1; utt.volume = 1;
+        this._utterance = utt;
+        utt.onend = () => { this._utterance = null; };
+        utt.onerror = e => { if (e.error !== 'interrupted') console.error(e); };
+        window.speechSynthesis.speak(utt);
+    }
+};
+
+// Pré-charger les voix
+window.speechSynthesis.getVoices();
+trans.init();
+</script>
+</body>
+</html>

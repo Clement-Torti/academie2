@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Lecture — L'Académie</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --bg:      #12111a;
+            --surface: #1c1b2a;
+            --border:  #252336;
+            --text:    #e8dcc8;
+            --muted:   #4a4560;
+            --accent:  #c9a96e;
+            --dimmed:  #2e2b45;
+        }
+        *, *::before, *::after { box-sizing: border-box; }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            overscroll-behavior-y: none;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        /* ── Typographie lecture ───────────────────────────────── */
+        .read-body {
+            font-family: 'Merriweather', serif;
+            font-size: 1.05rem;
+            line-height: 1.95;
+            color: var(--text);
+        }
+        .read-body p         { margin-bottom: 1.4em; text-indent: 1.6em; }
+        .read-body p.no-ind  { text-indent: 0; }
+        .read-body h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: .85rem; font-weight: 800;
+            text-transform: uppercase; letter-spacing: .16em;
+            text-align: center; text-indent: 0;
+            color: var(--accent);
+            margin: 3em 0 1.2em;
+        }
+        .read-body h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: .72rem; font-weight: 600;
+            text-transform: uppercase; letter-spacing: .14em;
+            text-align: center; text-indent: 0;
+            color: #635e85;
+            margin: 2em 0 1em;
+        }
+
+        /* ── Contexte session précédente ───────────────────────── */
+        .ctx-block { opacity: .28; pointer-events: none; }
+
+        /* ── Progress bar ──────────────────────────────────────── */
+        #prog-fill { transition: width .6s ease; }
+
+        /* ── Scrollbar ─────────────────────────────────────────── */
+        ::-webkit-scrollbar              { width: 3px; }
+        ::-webkit-scrollbar-track        { background: var(--bg); }
+        ::-webkit-scrollbar-thumb        { background: #2a2840; border-radius: 4px; }
+
+        /* ── Modal vocab ───────────────────────────────────────── */
+        @keyframes slideUp   { from { transform: translateY(100%); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+        @keyframes fadeUp    { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes toastAnim { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+
+        .vocab-slide  { animation: slideUp  .25s ease-out; }
+        .fade-up      { animation: fadeUp   .4s  ease;     }
+        .toast-anim   { animation: toastAnim .3s ease;     }
+
+        /* ── Inputs dark ───────────────────────────────────────── */
+        input { font-size: 16px !important; }
+        .dark-inp {
+            background: var(--bg);
+            color: var(--text);
+            border: 1px solid var(--border);
+            border-radius: .75rem;
+            padding: .75rem 1rem;
+            width: 100%;
+            transition: border-color .2s;
+        }
+        .dark-inp:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 2px rgba(201,169,110,.18);
+        }
+        .dark-inp::placeholder { color: var(--dimmed); }
+    </style>
+</head>
+
+<body class="h-[100dvh] flex flex-col overflow-hidden">
+
+<!-- ═══════════════════════════════════════════════════════════════
+     NAVBAR
+═══════════════════════════════════════════════════════════════ -->
+<nav style="background:var(--surface); border-bottom:1px solid var(--border);" class="shrink-0 z-20 select-none">
+    <div class="flex items-center h-11 px-4 gap-3">
+
+        <a href="index.html"
+           class="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wide transition-opacity active:opacity-40 shrink-0"
+           style="color:var(--muted);">
+            <i class="fa-solid fa-chevron-left text-[10px]"></i>
+            <span class="hidden sm:inline">Accueil</span>
+        </a>
+
+        <p id="book-title"
+           class="flex-1 text-center text-[11px] font-bold uppercase tracking-widest truncate"
+           style="color:var(--accent);">Chargement…</p>
+
+        <button onclick="reader.showVocabModal()"
+                class="flex items-center gap-1 text-xs font-bold uppercase tracking-wide transition-opacity active:opacity-40 shrink-0"
+                style="color:var(--muted);">
+            <i class="fa-solid fa-plus text-[10px]"></i>
+            <span class="hidden sm:inline">Vocab</span>
+        </button>
+    </div>
+
+    <!-- barre de progression livre -->
+    <div style="height:2px; background:var(--border);">
+        <div id="prog-fill" style="height:100%; width:0%; background:var(--accent);"></div>
+    </div>
+    <div class="flex justify-between px-4 py-1">
+        <span id="prog-label"  class="text-[9px] font-mono" style="color:var(--dimmed);">0 % du livre</span>
+        <span id="words-label" class="text-[9px] font-mono" style="color:var(--dimmed);">— mots</span>
+    </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     CONTENU
+═══════════════════════════════════════════════════════════════ -->
+<main id="reader-main"
+      class="flex-1 overflow-y-auto px-6 sm:px-10 md:px-16 py-10 w-full"
+      style="max-width:680px; margin:0 auto;">
+
+    <div id="loader" class="flex flex-col items-center justify-center h-full" style="color:var(--muted);">
+        <i class="fa-solid fa-book-open text-4xl mb-4" style="color:var(--dimmed);"></i>
+        <p class="text-sm">Ouverture du livre…</p>
+    </div>
+
+    <div id="reading-area" class="hidden read-body"></div>
+</main>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     BARRE BASSE
+═══════════════════════════════════════════════════════════════ -->
+<div id="bottom-bar"
+     class="hidden shrink-0 px-4 py-3 flex flex-col gap-2"
+     style="background:var(--surface); border-top:1px solid var(--border);">
+
+    <div class="flex justify-between items-center">
+        <span id="session-label" class="text-[11px]" style="color:var(--muted);">— mots lus</span>
+        <span id="timer-label"   class="text-[11px] font-mono" style="color:var(--muted);">
+            <i class="fa-regular fa-clock"></i> 0:00
+        </span>
+    </div>
+
+    <div class="flex gap-2">
+        <button id="btn-continue" onclick="reader.continueReading()"
+                class="flex-1 py-3 rounded-xl text-sm font-bold transition active:scale-95"
+                style="background:transparent; border:1px solid var(--border); color:var(--muted);">
+            <i class="fa-solid fa-arrow-down mr-1 text-xs"></i> Continuer
+        </button>
+        <button onclick="reader.finishReading()"
+                class="flex-[2] py-3 rounded-xl text-sm font-bold transition active:scale-95"
+                style="background:var(--accent); color:#12111a;">
+            <i class="fa-solid fa-check mr-1 text-xs"></i> Terminer la lecture
+        </button>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     MODAL VOCABULAIRE
+═══════════════════════════════════════════════════════════════ -->
+<div id="vocab-overlay"
+     class="hidden fixed inset-0 z-50 flex items-end justify-center"
+     style="background:rgba(0,0,0,.78);"
+     onclick="if(event.target===this)reader.hideVocabModal()">
+
+    <div class="vocab-slide w-full" style="max-width:540px;">
+        <div class="rounded-t-2xl p-5 pb-8" style="background:var(--surface); border-top:1px solid var(--border);">
+
+            <div class="flex items-center justify-between mb-4">
+                <h3 class="text-[11px] font-bold uppercase tracking-widest" style="color:var(--accent);">
+                    <i class="fa-solid fa-bookmark mr-2"></i>Ajouter au vocabulaire
+                </h3>
+                <button onclick="reader.hideVocabModal()" style="color:var(--muted);" class="active:opacity-40">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+
+            <div class="flex flex-col gap-3">
+                <input id="vocab-fr" type="text" placeholder="Mot ou phrase en français…"
+                       autocomplete="off" autocorrect="off" class="dark-inp">
+                <input id="vocab-es" type="text" placeholder="Traducción en español…"
+                       autocomplete="off" autocorrect="off" class="dark-inp">
+                <button id="vocab-save-btn" onclick="reader.saveVocab()"
+                        class="w-full py-3 rounded-xl font-bold text-sm transition active:scale-95"
+                        style="background:var(--accent); color:#12111a;">
+                    Sauvegarder
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- TOAST -->
+<div id="toast" class="hidden fixed bottom-28 left-1/2 -translate-x-1/2 z-[60] toast-anim pointer-events-none">
+    <div class="px-4 py-2 rounded-full text-xs font-bold shadow-lg"
+         style="background:#4ade80; color:#12111a;">
+        <i class="fa-solid fa-check mr-1"></i> Mot sauvegardé !
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     CONTENU DU LIVRE (Markdown hardcodé)
+     → Remplace ce contenu avec ton livre complet
+═══════════════════════════════════════════════════════════════ -->
+<script id="book-data" type="text/markdown">
+# Ombre et Lumière
+
+## Chapitre I — La Nuit des Prodiges
+
+La nuit était tombée sur la ville comme un voile de soie noire. Alina marchait seule dans les rues pavées, son souffle formant de petits nuages blancs dans l'air glacé. Elle ne savait pas encore ce que le destin lui réservait.
+
+Les lumières des lanternes projetaient des ombres dansantes sur les murs de pierre ancienne. Quelque part au loin, une cloche sonnait minuit. Alina s'arrêta net, le cœur battant, car elle avait entendu quelque chose — un murmure venu de nulle part, ou peut-être de partout à la fois.
+
+— Qui est là ? chuchota-t-elle dans l'obscurité. Personne ne répondit. Pourtant, elle ne se sentait pas seule. Une présence invisible l'observait, elle en était certaine.
+
+Elle serra son manteau contre elle et continua d'avancer. La rue débouchait sur une place centrale où une fontaine ancienne murmurait doucement. L'eau semblait lumineuse, presque dorée sous la lune. C'est là qu'elle le vit pour la première fois.
+
+Un jeune homme, les cheveux noirs comme l'encre, se tenait immobile au bord de la fontaine. Il regardait le ciel avec une expression qu'Alina ne saurait décrire — ni joie, ni tristesse, mais quelque chose d'infiniment plus profond.
+
+Elle fit un pas en arrière. Une branche craqua sous son pied. Il se retourna. Leurs regards se croisèrent.
+
+## Chapitre II — Les Secrets du Palais
+
+Le lendemain matin, tout semblait différent. La lumière du soleil baignait les toits de tuiles rouges avec une douceur inhabituelle. Alina se réveilla avec l'étrange sensation que sa vie avait changé pendant la nuit.
+
+Elle descendit les escaliers de l'auberge en essayant de chasser ces pensées. La salle du bas était déjà animée : des voyageurs prenaient leur petit-déjeuner, un ménestrel accordait son luth dans le coin, et la patronne servait des bols de soupe fumante.
+
+— Tu as l'air songeuse, ma petite, dit la patronne. Tu as mal dormi ?
+
+— Non, répondit Alina. J'ai simplement fait un rêve étrange.
+
+— Ici, tous les rêves sont étranges, dit la femme avec un clin d'œil. C'est la nature de cette ville.
+
+Alina mangea en silence, le regard perdu par la fenêtre. La place était déjà peuplée de marchands qui installaient leurs étals. Des enfants couraient entre les jambes des adultes. La vie ordinaire continuait, indifférente aux mystères de la nuit précédente. Mais le garçon aux cheveux noirs était là, debout à l'entrée de la place, et il la regardait.
+
+## Chapitre III — La Bibliothèque Interdite
+
+Le palais royal se dressait au sommet de la colline, dominant la ville de sa silhouette imposante. Ses tours de marbre blanc brillaient sous le soleil comme autant de flammes figées. Alina avait toujours rêvé d'y entrer, mais l'accès était réservé à la noblesse et aux serviteurs du roi.
+
+Ce matin-là, une invitation mystérieuse avait glissé sous sa porte : un simple carton blanc sur lequel étaient tracés ces mots en encre dorée : la bibliothèque vous attend. Elle reconnut l'écriture — c'était la même que celle du vieux parchemin de sa grand-mère. Un frisson parcourut son échine.
+
+La grille du palais était gardée par deux soldats en armure brillante. Alina s'avança, l'invitation à la main. L'un des gardes l'examina avec surprise, puis s'écarta sans un mot. Comme si son passage avait été prévu depuis longtemps.
+
+Les jardins intérieurs étaient d'une beauté saisissante. Des rosiers en fleur bordaient les allées de gravier blanc. Des fontaines chantaient au milieu de bassins en marbre. Mais Alina n'avait pas le cœur à admirer les décors — elle cherchait la bibliothèque.
+
+Elle la trouva au fond d'une aile déserte, derrière une porte de chêne massif ornée de figures gravées. Des dragons entrelacés, des étoiles, et au centre, un œil ouvert qui semblait la regarder. La porte s'ouvrit d'elle-même à son approche.
+
+## Chapitre IV — Le Choix de l'Ombre
+
+À l'intérieur, l'odeur de vieux livres et de cire d'abeille enveloppa Alina comme une étreinte familière. Les étagères montaient jusqu'au plafond, chargées de volumes aux reliures colorées. Une lumière dorée filtrait par de hautes fenêtres.
+
+Le garçon aux cheveux noirs était assis à une grande table de travail, un livre ouvert devant lui. Il leva les yeux à son entrée.
+
+— Vous êtes venue, dit-il simplement. Sa voix était grave, posée, comme celle de quelqu'un habitué à peser chaque mot.
+
+— Je n'avais pas l'intention de venir, répondit Alina. Et pourtant, me voilà.
+
+Il sourit — un sourire bref, presque imperceptible. Il poussa vers elle le vieux parchemin. Ses doigts effleurèrent les siens. Un courant d'air invisible traversa la pièce, faisant frissonner les flammes des bougies.
+
+— Mon nom est Nikolaï, dit-il enfin. Et je crois que nous sommes liés par quelque chose qui dépasse notre compréhension.
+</script>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     LOGIQUE
+═══════════════════════════════════════════════════════════════ -->
+<script>
+const reader = {
+
+    // ── Données du livre ─────────────────────────────────────────
+    allBlocks: [],      // [{type:'h1'|'h2'|'sentence', text, paraIdx}]
+    totalSentenceCount: 0,
+
+    // ── Session ──────────────────────────────────────────────────
+    contextBlocks: [],  // session précédente (atténuée)
+    dayBlocks: [],      // session du jour
+    dayEndIdx: 0,       // index suivant dans allBlocks
+    wordsLoaded: 0,
+
+    // ── Timer ─────────────────────────────────────────────────────
+    startTime: null,
+    timerInterval: null,
+
+    // ── Config & progrès ─────────────────────────────────────────
+    get cfg() {
+        return JSON.parse(localStorage.getItem('acad2_config') || '{}');
+    },
+    get wordsPerDay() { return this.cfg.wordsPerDay || 300; },
+    get prog() {
+        return JSON.parse(localStorage.getItem('acad2_reader_progress') ||
+            '{"blockIdx":0,"lastDate":null,"lastBlocks":[]}');
+    },
+    saveProg(data) {
+        localStorage.setItem('acad2_reader_progress', JSON.stringify(data));
+    },
+
+    // ════════════════════════════════════════════════════════════
+    //  INIT
+    // ════════════════════════════════════════════════════════════
+    init() {
+        this.parseBook();
+        this.buildSession();
+        this.render();
+        this.startTimer();
+
+        document.getElementById('loader').classList.add('hidden');
+        document.getElementById('reading-area').classList.remove('hidden');
+        document.getElementById('bottom-bar').classList.remove('hidden');
+
+        ['vocab-fr','vocab-es'].forEach(id => {
+            document.getElementById(id).addEventListener('keydown', e => {
+                if (e.key === 'Enter') reader.saveVocab();
+            });
+        });
+    },
+
+    // ════════════════════════════════════════════════════════════
+    //  PARSE MARKDOWN → allBlocks
+    // ════════════════════════════════════════════════════════════
+    parseBook() {
+        const md = document.getElementById('book-data').textContent;
+        const lines = md.split('\n');
+        let paraIdx = 0;
+        let pendingPara = '';
+
+        const flushPara = () => {
+            if (!pendingPara.trim()) return;
+            this.splitSentences(pendingPara.trim()).forEach(s => {
+                if (s.trim().length > 1) {
+                    this.allBlocks.push({ type: 'sentence', text: s.trim(), paraIdx });
+                }
+            });
+            paraIdx++;
+            pendingPara = '';
+        };
+
+        for (const rawLine of lines) {
+            const line = rawLine.trim();
+            if (!line)          { flushPara(); continue; }
+            if (line.startsWith('# '))  { flushPara(); this.allBlocks.push({ type:'h1', text:line.slice(2).trim(),  paraIdx:-1 }); }
+            else if (line.startsWith('## ')) { flushPara(); this.allBlocks.push({ type:'h2', text:line.slice(3).trim(), paraIdx:-1 }); }
+            else pendingPara += (pendingPara ? ' ' : '') + line;
+        }
+        flushPara();
+
+        this.totalSentenceCount = this.allBlocks.filter(b => b.type === 'sentence').length;
+
+        const h1 = this.allBlocks.find(b => b.type === 'h1');
+        if (h1) document.getElementById('book-title').textContent = h1.text;
+    },
+
+    splitSentences(text) {
+        // Découpe sur . ! ? … quand suivis d'un espace + majuscule, ou en fin de texte
+        const result = [];
+        let buf = '';
+        for (let i = 0; i < text.length; i++) {
+            buf += text[i];
+            if ('.!?…'.includes(text[i])) {
+                const next      = text[i + 1] ?? '';
+                const afterSp   = text[i + 2] ?? '';
+                const isEnd     = !next;
+                const isBreak   = next === ' ' &&
+                    afterSp !== '' &&
+                    afterSp === afterSp.toUpperCase() &&
+                    afterSp !== afterSp.toLowerCase();
+                if (isEnd || isBreak) {
+                    result.push(buf.trim());
+                    buf = '';
+                    if (next === ' ') i++;
+                }
+            }
+        }
+        if (buf.trim()) result.push(buf.trim());
+        return result.filter(s => s.length > 1);
+    },
+
+    countWords(text) {
+        return text.trim().split(/\s+/).filter(w => w.length > 0).length;
+    },
+
+    // ════════════════════════════════════════════════════════════
+    //  BUILD SESSION
+    // ════════════════════════════════════════════════════════════
+    buildSession() {
+        const prog = this.prog;
+        const startIdx = prog.blockIdx || 0;
+
+        this.contextBlocks = prog.lastBlocks || [];
+
+        let idx = startIdx;
+        let words = 0;
+        this.dayBlocks = [];
+
+        while (idx < this.allBlocks.length) {
+            const b = this.allBlocks[idx];
+            this.dayBlocks.push({ ...b, globalIdx: idx });
+            if (b.type === 'sentence') {
+                words += this.countWords(b.text);
+                idx++;
+                if (words >= this.wordsPerDay) break;
+            } else {
+                idx++;
+            }
+        }
+
+        this.dayEndIdx  = idx;
+        this.wordsLoaded = words;
+
+        document.getElementById('words-label').textContent =
+            `${words} / ${this.wordsPerDay} mots`;
+        document.getElementById('session-label').textContent =
+            `${words} mots lus aujourd'hui`;
+        this.updateProgressBar();
+    },
+
+    // ════════════════════════════════════════════════════════════
+    //  RENDER
+    // ════════════════════════════════════════════════════════════
+    render() {
+        const area = document.getElementById('reading-area');
+        let html = '';
+
+        // Contexte session précédente
+        if (this.contextBlocks.length > 0) {
+            html += '<div class="ctx-block mb-10 pb-8" style="border-bottom:1px solid #1e1c2e;">';
+            html += '<p class="no-ind text-center mb-6" style="font-family:Montserrat,sans-serif; font-size:.68rem; letter-spacing:.25em; text-transform:uppercase; color:#252234;">— session précédente —</p>';
+            html += this.renderBlocks(this.contextBlocks);
+            html += '</div>';
+        }
+
+        // Contenu du jour
+        html += '<div id="day-content" class="fade-up">';
+        html += this.renderBlocks(this.dayBlocks);
+        html += '</div>';
+
+        if (this.dayEndIdx >= this.allBlocks.length) {
+            html += `<div class="text-center mt-16 mb-8" style="color:#2a2840; font-family:Montserrat,sans-serif;">
+                <i class="fa-solid fa-scroll text-3xl mb-3 block"></i>
+                <p style="font-size:.7rem; letter-spacing:.2em; text-transform:uppercase;">Fin du livre</p>
+            </div>`;
+        }
+
+        html += '<div style="height:90px;"></div>';
+        area.innerHTML = html;
+    },
+
+    renderBlocks(blocks) {
+        let html = '';
+        let curPara = -999;
+        let buf = '';
+        let firstOfSection = true;
+
+        const flushP = () => {
+            if (!buf) return;
+            html += `<p class="${firstOfSection ? 'no-ind' : ''}">${buf}</p>`;
+            buf = '';
+            firstOfSection = false;
+        };
+
+        for (const b of blocks) {
+            if (b.type === 'h1') {
+                flushP();
+                html += `<h1>${this.inline(b.text)}</h1>`;
+                firstOfSection = true;
+            } else if (b.type === 'h2') {
+                flushP();
+                html += `<h2>${this.inline(b.text)}</h2>`;
+                firstOfSection = true;
+            } else {
+                if (b.paraIdx !== curPara) {
+                    flushP();
+                    curPara = b.paraIdx;
+                }
+                buf += (buf ? ' ' : '') + this.inline(b.text);
+            }
+        }
+        flushP();
+        return html;
+    },
+
+    inline(text) {
+        return text
+            .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+            .replace(/\*(.+?)\*/g,     '<em>$1</em>')
+            .replace(/_(.+?)_/g,       '<em>$1</em>');
+    },
+
+    // ════════════════════════════════════════════════════════════
+    //  CONTINUE (+20 phrases)
+    // ════════════════════════════════════════════════════════════
+    continueReading() {
+        let idx   = this.dayEndIdx;
+        let added = 0;
+
+        while (idx < this.allBlocks.length && added < 20) {
+            const b = this.allBlocks[idx];
+            this.dayBlocks.push({ ...b, globalIdx: idx });
+            if (b.type === 'sentence') {
+                this.wordsLoaded += this.countWords(b.text);
+                added++;
+            }
+            idx++;
+        }
+        this.dayEndIdx = idx;
+
+        document.getElementById('words-label').textContent = `${this.wordsLoaded} mots`;
+        document.getElementById('session-label').textContent = `${this.wordsLoaded} mots lus`;
+        this.updateProgressBar();
+
+        const dayDiv = document.getElementById('day-content');
+        if (dayDiv) {
+            dayDiv.innerHTML = this.renderBlocks(this.dayBlocks);
+            setTimeout(() => {
+                const main = document.getElementById('reader-main');
+                main.scrollTo({ top: main.scrollHeight, behavior: 'smooth' });
+            }, 80);
+        }
+
+        if (this.dayEndIdx >= this.allBlocks.length) {
+            const btn = document.getElementById('btn-continue');
+            btn.disabled = true;
+            btn.style.opacity = '.35';
+            btn.style.cursor  = 'not-allowed';
+        }
+    },
+
+    // ════════════════════════════════════════════════════════════
+    //  TERMINER
+    // ════════════════════════════════════════════════════════════
+    finishReading() {
+        this.stopTimer();
+
+        const durationMs = this.startTime ? Date.now() - this.startTime : 0;
+        const wpm = durationMs > 5000
+            ? Math.round(this.wordsLoaded / (durationMs / 60000))
+            : 0;
+        const today = new Date().toISOString().split('T')[0];
+
+        // Sauvegarder position
+        this.saveProg({
+            blockIdx:   this.dayEndIdx,
+            lastDate:   today,
+            lastBlocks: this.dayBlocks.slice(-8)
+        });
+
+        // Stats
+        const stats = JSON.parse(localStorage.getItem('acad2_stats') ||
+            '{"sessions":[],"streak":0,"lastCompletedDate":null}');
+
+        let session = stats.sessions.find(s => s.date === today);
+        if (!session) {
+            session = {
+                date: today,
+                readingWords: 0, readingDurationMs: 0, readingWpm: 0,
+                translationSentences: 0, translationTimes: []
+            };
+            stats.sessions.push(session);
+        }
+        session.readingWords    = this.wordsLoaded;
+        session.readingDurationMs = durationMs;
+        session.readingWpm      = wpm;
+
+        localStorage.setItem('acad2_stats', JSON.stringify(stats));
+        window.location.href = 'translation.html';
+    },
+
+    // ════════════════════════════════════════════════════════════
+    //  BARRE DE PROGRESSION
+    // ════════════════════════════════════════════════════════════
+    updateProgressBar() {
+        if (!this.totalSentenceCount) return;
+        const done = this.allBlocks
+            .slice(0, this.dayEndIdx)
+            .filter(b => b.type === 'sentence').length;
+        const pct = Math.min(100, Math.round(done / this.totalSentenceCount * 100));
+        document.getElementById('prog-fill').style.width = pct + '%';
+        document.getElementById('prog-label').textContent  = `${pct} % du livre`;
+    },
+
+    // ════════════════════════════════════════════════════════════
+    //  TIMER
+    // ════════════════════════════════════════════════════════════
+    startTimer() {
+        this.startTime = Date.now();
+        this.timerInterval = setInterval(() => {
+            const ms = Date.now() - this.startTime;
+            const m  = Math.floor(ms / 60000);
+            const s  = Math.floor((ms % 60000) / 1000);
+            const el = document.getElementById('timer-label');
+            if (el) el.innerHTML =
+                `<i class="fa-regular fa-clock"></i> ${m}:${s.toString().padStart(2,'0')}`;
+        }, 1000);
+    },
+    stopTimer() { if (this.timerInterval) clearInterval(this.timerInterval); },
+
+    // ════════════════════════════════════════════════════════════
+    //  VOCABULAIRE
+    // ════════════════════════════════════════════════════════════
+    showVocabModal() {
+        document.getElementById('vocab-overlay').classList.remove('hidden');
+        setTimeout(() => document.getElementById('vocab-fr').focus(), 150);
+    },
+    hideVocabModal() {
+        document.getElementById('vocab-overlay').classList.add('hidden');
+        document.getElementById('vocab-fr').value = '';
+        document.getElementById('vocab-es').value = '';
+    },
+    saveVocab() {
+        const fr = document.getElementById('vocab-fr').value.trim();
+        const es = document.getElementById('vocab-es').value.trim();
+        if (!fr || !es) return;
+
+        const vocab = JSON.parse(localStorage.getItem('acad_user_vocab') || '[]');
+        if (!vocab.find(v => v.fr.toLowerCase() === fr.toLowerCase())) {
+            vocab.push({ fr, es });
+            localStorage.setItem('acad_user_vocab', JSON.stringify(vocab));
+        }
+        this.hideVocabModal();
+
+        // Toast
+        const t = document.getElementById('toast');
+        t.classList.remove('hidden');
+        setTimeout(() => t.classList.add('hidden'), 2000);
+    }
+};
+
+reader.init();
+</script>
+</body>
+</html>

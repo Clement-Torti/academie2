@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>L'Académie 2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans:['Montserrat','sans-serif'], serif:['Merriweather','serif'] },
+                    colors: {
+                        frBlue:  '#002654',
+                        frRed:   '#ED2939',
+                        frCream: '#F5F5DC',
+                        gold:    '#D4AF37',
+                    },
+                    boxShadow: { card:'0 10px 15px -3px rgba(0,0,0,.1)', btn:'0px 4px 0px 0px rgba(0,0,0,.3)' }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { overscroll-behavior-y: none; -webkit-tap-highlight-color: transparent; }
+        input, textarea { font-size: 16px !important; }
+
+        /* Timeline */
+        .timeline-scroll { overflow-x: auto; overflow-y: hidden; scrollbar-width: none; }
+        .timeline-scroll::-webkit-scrollbar { display: none; }
+        .tl-line {
+            position: absolute; top: 50%; left: 0; right: 0;
+            height: 3px; background: #e5e7eb;
+            transform: translateY(-50%); z-index: 0;
+        }
+        .tl-node { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; flex-shrink: 0; }
+        .tl-btn {
+            width: 52px; height: 52px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            border-bottom: 4px solid rgba(0,0,0,.2);
+            transition: transform .15s, box-shadow .15s;
+        }
+        .tl-btn:active { transform: translateY(2px); box-shadow: none !important; }
+        @keyframes pulse-today {
+            0%,100% { box-shadow: 0 0 0 0 rgba(0,38,84,.35), 0 4px 0 0 rgba(0,0,0,.2); }
+            50%      { box-shadow: 0 0 0 9px rgba(0,38,84,0), 0 4px 0 0 rgba(0,0,0,.2); }
+        }
+        .tl-today { animation: pulse-today 2s infinite; }
+
+        /* Stats */
+        .stat-card { background:white; border-radius:1rem; padding:1rem; box-shadow:0 2px 8px rgba(0,0,0,.07); border:1px solid #f1f1f1; }
+
+        /* Modal */
+        @keyframes slideIn { from { opacity:0; transform:scale(.95); } to { opacity:1; transform:scale(1); } }
+        .modal-body { animation: slideIn .2s ease-out; }
+
+        .loader { border:4px solid #f3f3f3; border-top:4px solid #002654; border-radius:50%; width:36px; height:36px; animation:spin 1s linear infinite; }
+        @keyframes spin { 0%{transform:rotate(0)} 100%{transform:rotate(360deg)} }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 h-[100dvh] flex flex-col overflow-hidden">
+
+<!-- ═══════════════════════════════════════════════════════════════
+     NAVBAR
+═══════════════════════════════════════════════════════════════ -->
+<nav class="bg-frBlue text-white shadow-lg z-50 shrink-0">
+    <div class="max-w-4xl mx-auto px-4 h-14 flex justify-between items-center">
+        <div class="flex items-center gap-3">
+            <i class="fa-solid fa-landmark text-gold text-xl"></i>
+            <h1 class="font-bold text-sm tracking-wider uppercase hidden sm:block">L'Académie 2</h1>
+            <div class="flex items-center gap-1.5 bg-white/10 px-3 py-1 rounded-full border border-white/10">
+                <i class="fa-solid fa-fire text-orange-400 text-sm animate-pulse"></i>
+                <span id="streak-display" class="text-xs font-bold font-mono">0 jour</span>
+            </div>
+        </div>
+        <button onclick="home.showConfig()"
+                class="bg-white/10 active:bg-white/20 text-white w-9 h-9 rounded-lg flex items-center justify-center transition">
+            <i class="fa-solid fa-sliders text-gold text-sm"></i>
+        </button>
+    </div>
+    <div class="h-1 w-full flex">
+        <div class="w-1/3 bg-blue-600"></div>
+        <div class="w-1/3 bg-white"></div>
+        <div class="w-1/3 bg-red-600"></div>
+    </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     MODAL CONFIG
+═══════════════════════════════════════════════════════════════ -->
+<div id="config-modal"
+     class="hidden fixed inset-0 z-[70] bg-black/50 backdrop-blur-sm flex items-center justify-center p-4"
+     onclick="if(event.target===this)home.hideConfig()">
+    <div class="modal-body bg-white rounded-2xl shadow-xl w-full max-w-md overflow-y-auto max-h-[90vh]">
+
+        <div class="flex items-center justify-between p-5 border-b border-gray-100">
+            <h3 class="text-base font-bold text-frBlue flex items-center gap-2">
+                <i class="fa-solid fa-sliders text-gold"></i> Configuration
+            </h3>
+            <button onclick="home.hideConfig()" class="text-gray-400 hover:text-gray-600 text-xl">&times;</button>
+        </div>
+
+        <div class="p-5 flex flex-col gap-6">
+
+            <!-- Clés Gemini -->
+            <section>
+                <h4 class="text-xs font-bold uppercase tracking-widest text-frBlue mb-3">
+                    <i class="fa-solid fa-key mr-1 text-gold"></i> Clés API Gemini
+                </h4>
+                <p class="text-xs text-gray-500 mb-3">
+                    Nécessaires pour générer les phrases.
+                    <a href="https://aistudio.google.com/apikey" target="_blank" class="text-frBlue underline">Obtenir une clé</a>
+                </p>
+                <div id="keys-list" class="space-y-2 mb-3"></div>
+                <div class="flex gap-2">
+                    <input type="text" id="new-key-input" placeholder="AIzaSy…"
+                           onkeypress="if(event.key==='Enter')home.addKey()"
+                           class="flex-1 px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-frBlue">
+                    <button onclick="home.addKey()"
+                            class="bg-frBlue text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-blue-900 transition">
+                        Ajouter
+                    </button>
+                </div>
+            </section>
+
+            <!-- Paramètres pratique -->
+            <section>
+                <h4 class="text-xs font-bold uppercase tracking-widest text-frBlue mb-3">
+                    <i class="fa-solid fa-gear mr-1 text-gold"></i> Pratique quotidienne
+                </h4>
+                <div class="flex flex-col gap-3">
+                    <label class="flex flex-col gap-1">
+                        <span class="text-xs font-bold text-gray-600">Mots à lire par jour</span>
+                        <input type="number" id="cfg-words" min="50" max="2000" step="50"
+                               class="px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-frBlue">
+                    </label>
+                    <label class="flex flex-col gap-1">
+                        <span class="text-xs font-bold text-gray-600">Phrases à traduire par session</span>
+                        <input type="number" id="cfg-sentences" min="5" max="50" step="1"
+                               class="px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-frBlue">
+                    </label>
+                    <button id="cfg-save-btn" onclick="home.saveConfig()"
+                            class="w-full bg-frBlue text-white font-bold py-3 rounded-xl text-sm transition hover:bg-blue-900 active:translate-y-0.5">
+                        <i class="fa-solid fa-floppy-disk mr-1"></i> Sauvegarder
+                    </button>
+                </div>
+            </section>
+
+            <!-- Vocabulaire -->
+            <section>
+                <h4 class="text-xs font-bold uppercase tracking-widest text-frBlue mb-3">
+                    <i class="fa-solid fa-layer-group mr-1 text-gold"></i> Vocabulaire
+                </h4>
+                <div class="flex flex-col gap-2">
+                    <button onclick="home.exportVocab()"
+                            class="flex items-center justify-between w-full px-4 py-3 bg-gray-50 hover:bg-gray-100 rounded-xl text-sm font-bold text-frBlue border border-gray-200 transition active:scale-[.98]">
+                        <span><i class="fa-solid fa-download mr-2 text-gold"></i>Exporter le vocabulaire (JSON)</span>
+                        <span id="vocab-count" class="text-xs font-normal text-gray-400"></span>
+                    </button>
+                    <label class="flex items-center justify-between w-full px-4 py-3 bg-gray-50 hover:bg-gray-100 rounded-xl text-sm font-bold text-frBlue border border-gray-200 transition cursor-pointer active:scale-[.98]">
+                        <span><i class="fa-solid fa-upload mr-2 text-gold"></i>Importer un fichier JSON</span>
+                        <input type="file" accept=".json" id="vocab-import" class="hidden"
+                               onchange="home.importVocab(event)">
+                    </label>
+                    <div id="import-feedback" class="hidden text-xs text-center font-bold text-green-600 py-1"></div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     CONTENU PRINCIPAL
+═══════════════════════════════════════════════════════════════ -->
+<main class="flex-1 overflow-y-auto bg-frCream">
+<div class="max-w-4xl mx-auto px-4 py-6 flex flex-col gap-8 pb-10">
+
+    <!-- ── TIMELINE ─────────────────────────────────────────── -->
+    <section>
+        <h2 class="text-xs font-bold uppercase tracking-widest text-frBlue mb-4">
+            <i class="fa-solid fa-calendar-days mr-1 text-gold"></i> Programme du jour
+        </h2>
+        <div class="bg-white rounded-2xl shadow-card border border-gray-100 py-6 px-4">
+            <div class="timeline-scroll" id="tl-scroll">
+                <div id="timeline-inner"
+                     class="relative flex items-center gap-5 px-4"
+                     style="min-height:90px;">
+                    <div class="tl-line"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── STATISTIQUES ─────────────────────────────────────── -->
+    <section>
+        <h2 class="text-xs font-bold uppercase tracking-widest text-frBlue mb-4">
+            <i class="fa-solid fa-chart-line mr-1 text-gold"></i> Mes statistiques
+        </h2>
+
+        <!-- Chiffres -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-4">
+            <div class="stat-card flex flex-col gap-1">
+                <span class="text-[10px] uppercase tracking-wider text-gray-400 font-bold">Sessions</span>
+                <span id="stat-sessions" class="text-3xl font-bold text-frBlue">—</span>
+                <span class="text-[10px] text-gray-400">complétées</span>
+            </div>
+            <div class="stat-card flex flex-col gap-1">
+                <span class="text-[10px] uppercase tracking-wider text-gray-400 font-bold">Racha</span>
+                <span id="stat-streak" class="text-3xl font-bold text-orange-500">—</span>
+                <span class="text-[10px] text-gray-400">jours consécutifs</span>
+            </div>
+            <div class="stat-card flex flex-col gap-1">
+                <span class="text-[10px] uppercase tracking-wider text-gray-400 font-bold">Lecture</span>
+                <span id="stat-read-time" class="text-3xl font-bold text-frBlue">—</span>
+                <span class="text-[10px] text-gray-400">minutes totales</span>
+            </div>
+            <div class="stat-card flex flex-col gap-1">
+                <span class="text-[10px] uppercase tracking-wider text-gray-400 font-bold">Traductions</span>
+                <span id="stat-trans" class="text-3xl font-bold text-frBlue">—</span>
+                <span class="text-[10px] text-gray-400">phrases traduites</span>
+            </div>
+        </div>
+
+        <!-- Charts -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div class="stat-card">
+                <p class="text-[10px] uppercase tracking-wider text-gray-400 font-bold mb-3">
+                    Vitesse de lecture (mots/min)
+                </p>
+                <canvas id="chart-wpm" height="120"></canvas>
+            </div>
+            <div class="stat-card">
+                <p class="text-[10px] uppercase tracking-wider text-gray-400 font-bold mb-3">
+                    Vitesse de traduction (sec/phrase)
+                </p>
+                <canvas id="chart-trans" height="120"></canvas>
+            </div>
+        </div>
+    </section>
+
+</div>
+</main>
+
+<script>
+const home = {
+
+    get stats()  { return JSON.parse(localStorage.getItem('acad2_stats')  || '{"sessions":[],"streak":0,"lastCompletedDate":null}'); },
+    get cfg()    { return JSON.parse(localStorage.getItem('acad2_config') || '{"wordsPerDay":300,"sentencesPerSession":10}'); },
+    get days()   { return JSON.parse(localStorage.getItem('acad2_days')   || '{}'); },
+    get vocab()  { return JSON.parse(localStorage.getItem('acad_user_vocab') || '[]'); },
+
+    // ════════════════════════════════════════════════════════════
+    //  INIT
+    // ════════════════════════════════════════════════════════════
+    init() {
+        this.renderStreak();
+        this.renderTimeline();
+        this.renderStats();
+        this.renderCharts();
+    },
+
+    renderStreak() {
+        const s = this.stats.streak || 0;
+        document.getElementById('streak-display').textContent =
+            `${s} jour${s > 1 ? 's' : ''}`;
+    },
+
+    // ════════════════════════════════════════════════════════════
+    //  TIMELINE HORIZONTALE
+    // ════════════════════════════════════════════════════════════
+    renderTimeline() {
+        const today    = new Date().toISOString().split('T')[0];
+        const days     = this.days;
+        const sessions = (this.stats.sessions || []).slice().sort((a,b) => a.date.localeCompare(b.date));
+
+        // Date de début (première session ou aujourd'hui)
+        const startDate = sessions.length > 0 ? sessions[0].date : today;
+
+        const msDay    = 86400000;
+        const todayIdx = Math.round((new Date(today) - new Date(startDate)) / msDay) + 1;
+
+        // Afficher 7 avant + aujourd'hui + 7 après
+        const first = Math.max(1, todayIdx - 7);
+        const last  = todayIdx + 7;
+
+        const inner = document.getElementById('timeline-inner');
+        // Garder uniquement la tl-line
+        inner.innerHTML = '<div class="tl-line"></div>';
+
+        for (let d = first; d <= last; d++) {
+            const date    = new Date(new Date(startDate).getTime() + (d-1) * msDay)
+                .toISOString().split('T')[0];
+            const isToday = date === today;
+            const status  = days[date] || (date < today ? 'missed' : 'future');
+
+            let btnStyle, icon, labelColor;
+
+            if (status === 'completed') {
+                btnStyle   = 'background:#D4AF37; border-color:#8f6900;';
+                icon       = '<i class="fa-solid fa-check text-white text-sm"></i>';
+                labelColor = '#9ca3af';
+            } else if (isToday) {
+                btnStyle   = 'background:#002654; border-color:#001333;';
+                icon       = '<i class="fa-solid fa-book-open text-white text-sm"></i>';
+                labelColor = '#002654';
+            } else if (date < today && status !== 'completed') {
+                btnStyle   = 'background:#fee2e2; border-color:#fca5a5;';
+                icon       = '<i class="fa-solid fa-xmark text-red-500 text-sm"></i>';
+                labelColor = '#9ca3af';
+            } else {
+                btnStyle   = 'background:#f3f4f6; border-color:#d1d5db;';
+                icon       = `<span class="text-xs font-bold text-gray-400">${d}</span>`;
+                labelColor = '#9ca3af';
+            }
+
+            const canClick = isToday && status !== 'completed';
+            const node     = document.createElement('div');
+            node.className = 'tl-node';
+            node.innerHTML = `
+                <button class="tl-btn ${isToday ? 'tl-today' : ''}"
+                        style="${btnStyle}"
+                        ${canClick ? `onclick="window.location.href='reader.html'"` : 'disabled'}
+                        title="${date}">
+                    ${icon}
+                </button>
+                <span class="text-[9px] font-bold mt-2 uppercase tracking-wider"
+                      style="color:${labelColor}; white-space:nowrap;">
+                    ${isToday ? 'Aujourd\'hui' : 'J' + d}
+                </span>`;
+            inner.appendChild(node);
+        }
+
+        // Scroll centré sur aujourd'hui
+        setTimeout(() => {
+            const todayNode = inner.querySelector('.tl-today');
+            if (!todayNode) return;
+            const scroll = document.getElementById('tl-scroll');
+            const nodeLeft = todayNode.closest('.tl-node').offsetLeft;
+            scroll.scrollTo({ left: nodeLeft - scroll.clientWidth / 2 + 26, behavior:'smooth' });
+        }, 120);
+    },
+
+    // ════════════════════════════════════════════════════════════
+    //  STATISTIQUES CHIFFRES
+    // ════════════════════════════════════════════════════════════
+    renderStats() {
+        const stats    = this.stats;
+        const sessions = stats.sessions || [];
+
+        const completed = sessions.filter(s => (s.translationSentences||0) > 0 || (s.readingWords||0) > 0).length;
+        document.getElementById('stat-sessions').textContent  = completed;
+
+        const streak = stats.streak || 0;
+        document.getElementById('stat-streak').textContent   = streak;
+
+        const totalMs = sessions.reduce((a,s) => a + (s.readingDurationMs||0), 0);
+        document.getElementById('stat-read-time').textContent = Math.round(totalMs / 60000);
+
+        const totalTrans = sessions.reduce((a,s) => a + (s.translationSentences||0), 0);
+        document.getElementById('stat-trans').textContent    = totalTrans;
+    },
+
+    // ════════════════════════════════════════════════════════════
+    //  CHARTS (Chart.js)
+    // ════════════════════════════════════════════════════════════
+    renderCharts() {
+        const sessions = (this.stats.sessions || []).slice(-14);
+        const labels   = sessions.map(s => {
+            const d = new Date(s.date);
+            return `${d.getDate()}/${d.getMonth()+1}`;
+        });
+
+        const baseOpts = {
+            responsive: true,
+            maintainAspectRatio: true,
+            plugins: { legend:{ display:false } },
+            scales: {
+                x: { ticks:{ font:{size:9}, color:'#9ca3af' }, grid:{ display:false } },
+                y: { ticks:{ font:{size:9}, color:'#9ca3af' }, grid:{ color:'#f3f4f6' }, beginAtZero:true }
+            }
+        };
+
+        // WPM
+        new Chart(document.getElementById('chart-wpm').getContext('2d'), {
+            type: 'line',
+            data: {
+                labels,
+                datasets: [{
+                    data: sessions.map(s => s.readingWpm || 0),
+                    borderColor: '#002654', backgroundColor: 'rgba(0,38,84,.08)',
+                    borderWidth: 2, pointRadius: 3, pointBackgroundColor: '#002654',
+                    tension: .4, fill: true
+                }]
+            },
+            options: { ...baseOpts, plugins: { ...baseOpts.plugins,
+                tooltip: { callbacks: { label: c => `${c.parsed.y} mots/min` } } } }
+        });
+
+        // Traduction
+        new Chart(document.getElementById('chart-trans').getContext('2d'), {
+            type: 'line',
+            data: {
+                labels,
+                datasets: [{
+                    data: sessions.map(s => {
+                        const t = s.translationTimes || [];
+                        return t.length ? Math.round(t.reduce((a,b)=>a+b,0)/t.length) : 0;
+                    }),
+                    borderColor: '#D4AF37', backgroundColor: 'rgba(212,175,55,.1)',
+                    borderWidth: 2, pointRadius: 3, pointBackgroundColor: '#D4AF37',
+                    tension: .4, fill: true
+                }]
+            },
+            options: { ...baseOpts, plugins: { ...baseOpts.plugins,
+                tooltip: { callbacks: { label: c => `${c.parsed.y} s/phrase` } } } }
+        });
+    },
+
+    // ════════════════════════════════════════════════════════════
+    //  CONFIG MODAL
+    // ════════════════════════════════════════════════════════════
+    showConfig() {
+        const cfg = this.cfg;
+        document.getElementById('cfg-words').value     = cfg.wordsPerDay        || 300;
+        document.getElementById('cfg-sentences').value = cfg.sentencesPerSession || 10;
+        document.getElementById('vocab-count').textContent = `${this.vocab.length} mots`;
+        this.renderKeysList();
+        document.getElementById('config-modal').classList.remove('hidden');
+    },
+    hideConfig() { document.getElementById('config-modal').classList.add('hidden'); },
+
+    saveConfig() {
+        const w = parseInt(document.getElementById('cfg-words').value)     || 300;
+        const s = parseInt(document.getElementById('cfg-sentences').value) || 10;
+        localStorage.setItem('acad2_config', JSON.stringify({
+            wordsPerDay:         Math.max(50,  Math.min(2000, w)),
+            sentencesPerSession: Math.max(5,   Math.min(50,   s))
+        }));
+        const btn = document.getElementById('cfg-save-btn');
+        const orig = btn.innerHTML;
+        btn.innerHTML = '<i class="fa-solid fa-check mr-1"></i> Sauvegardé !';
+        btn.style.background = '#22c55e';
+        setTimeout(() => { btn.innerHTML = orig; btn.style.background = ''; }, 1500);
+    },
+
+    // ── Clés Gemini ──────────────────────────────────────────────
+    getKeys() {
+        try { return JSON.parse(localStorage.getItem('acad_gemini_keys')||'[]').filter(k=>k?.trim()); }
+        catch { return []; }
+    },
+    renderKeysList() {
+        const keys = this.getKeys();
+        const el   = document.getElementById('keys-list');
+        if (!keys.length) {
+            el.innerHTML = '<p class="text-xs text-gray-400 italic text-center py-1">Aucune clé configurée</p>';
+            return;
+        }
+        el.innerHTML = keys.map((k,i) => `
+            <div class="flex items-center justify-between bg-gray-50 rounded-lg px-3 py-2 border border-gray-200">
+                <span class="text-xs font-mono text-gray-600">${k.substring(0,10)}…${k.slice(-4)}</span>
+                <button onclick="home.removeKey(${i})" class="text-red-400 hover:text-red-600 text-sm ml-2">
+                    <i class="fa-solid fa-trash-can"></i>
+                </button>
+            </div>`).join('');
+    },
+    addKey() {
+        const inp = document.getElementById('new-key-input');
+        const k   = inp.value.trim();
+        if (!k) return;
+        const keys = this.getKeys();
+        if (!keys.includes(k)) { keys.push(k); localStorage.setItem('acad_gemini_keys', JSON.stringify(keys)); }
+        inp.value = '';
+        this.renderKeysList();
+    },
+    removeKey(i) {
+        const keys = this.getKeys();
+        keys.splice(i, 1);
+        localStorage.setItem('acad_gemini_keys', JSON.stringify(keys));
+        this.renderKeysList();
+    },
+
+    // ── Vocabulaire export / import ──────────────────────────────
+    exportVocab() {
+        const data = localStorage.getItem('acad_user_vocab') || '[]';
+        const a    = Object.assign(document.createElement('a'), {
+            href:     URL.createObjectURL(new Blob([data], { type:'application/json' })),
+            download: `vocabulaire-academie-${new Date().toISOString().split('T')[0]}.json`
+        });
+        a.click();
+        URL.revokeObjectURL(a.href);
+    },
+    importVocab(event) {
+        const file = event.target.files[0];
+        if (!file) return;
+        const fr = new FileReader();
+        fr.onload = e => {
+            try {
+                const imported = JSON.parse(e.target.result);
+                if (!Array.isArray(imported)) throw new Error();
+                const existing = JSON.parse(localStorage.getItem('acad_user_vocab') || '[]');
+                const existFr  = new Set(existing.map(v => v.fr.toLowerCase()));
+                const added    = imported.filter(v => v.fr && v.es && !existFr.has(v.fr.toLowerCase()));
+                const merged   = [...existing, ...added];
+                localStorage.setItem('acad_user_vocab', JSON.stringify(merged));
+                const fb = document.getElementById('import-feedback');
+                fb.textContent = `✓ ${added.length} mot(s) importé(s) !`;
+                fb.classList.remove('hidden');
+                document.getElementById('vocab-count').textContent = `${merged.length} mots`;
+                setTimeout(() => fb.classList.add('hidden'), 3000);
+            } catch { alert('Fichier JSON invalide.'); }
+            event.target.value = '';
+        };
+        fr.readAsText(file);
+    }
+};
+
+home.init();
+</script>
+</body>
+</html>

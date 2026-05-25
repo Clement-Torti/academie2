@@ -340,15 +340,14 @@ const reader = {
             });
         });
 
-        // Surlignage
+        // Surlignage — selectionchange ne conflicte pas avec Google Translate
+        let _selTimer = null;
+        document.addEventListener('selectionchange', () => {
+            clearTimeout(_selTimer);
+            _selTimer = setTimeout(() => reader.checkSelection(), 900);
+        });
         document.addEventListener('mousedown', e => {
             if (!e.target.closest('#hl-bar')) reader.hideHlBar();
-        });
-        document.addEventListener('mouseup', e => {
-            if (!e.target.closest('#hl-bar')) setTimeout(() => reader.checkSelection(), 600);
-        });
-        document.addEventListener('touchend', e => {
-            if (!e.target.closest('#hl-bar')) setTimeout(() => reader.checkSelection(), 80);
         });
     },
 

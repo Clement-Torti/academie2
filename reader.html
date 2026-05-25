@@ -77,9 +77,6 @@
         #hl-bar {
             position: fixed;
             z-index: 200;
-            bottom: 24px;
-            left: 50%;
-            transform: translateX(-50%);
             align-items: center;
             gap: 4px;
             padding: 5px 8px;
@@ -87,6 +84,7 @@
             box-shadow: 0 4px 16px rgba(0,0,0,.5);
             background: var(--surface);
             border: 1px solid var(--border);
+            transform: translateX(-50%);
             pointer-events: auto;
         }
         #hl-bar button {
@@ -340,14 +338,15 @@ const reader = {
             });
         });
 
-        // Surlignage — selectionchange ne conflicte pas avec Google Translate
-        let _selTimer = null;
-        document.addEventListener('selectionchange', () => {
-            clearTimeout(_selTimer);
-            _selTimer = setTimeout(() => reader.checkSelection(), 900);
-        });
+        // Surlignage
         document.addEventListener('mousedown', e => {
             if (!e.target.closest('#hl-bar')) reader.hideHlBar();
+        });
+        document.addEventListener('mouseup', e => {
+            if (!e.target.closest('#hl-bar')) setTimeout(() => reader.checkSelection(), 0);
+        });
+        document.addEventListener('touchend', e => {
+            if (!e.target.closest('#hl-bar')) setTimeout(() => reader.checkSelection(), 80);
         });
     },
 
@@ -660,7 +659,11 @@ const reader = {
             const range    = sel.getRangeAt(0);
             const readArea = document.getElementById('reading-area');
             if (!readArea || !readArea.contains(range.commonAncestorContainer)) return;
-            document.getElementById('hl-bar').style.display = 'flex';
+            const rect = range.getBoundingClientRect();
+            const bar  = document.getElementById('hl-bar');
+            bar.style.display = 'flex';
+            bar.style.top  = `${rect.top - 44}px`;
+            bar.style.left = `${rect.left + rect.width / 2}px`;
         } catch {}
     },
 

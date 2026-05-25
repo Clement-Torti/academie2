@@ -343,7 +343,7 @@ const reader = {
             if (!e.target.closest('#hl-bar')) reader.hideHlBar();
         });
         document.addEventListener('mouseup', e => {
-            if (!e.target.closest('#hl-bar')) setTimeout(() => reader.checkSelection(), 0);
+            if (!e.target.closest('#hl-bar')) setTimeout(() => reader.checkSelection(), 600);
         });
         document.addEventListener('touchend', e => {
             if (!e.target.closest('#hl-bar')) setTimeout(() => reader.checkSelection(), 80);

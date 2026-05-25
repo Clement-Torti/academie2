@@ -321,7 +321,7 @@ const home = {
 
             const canClick = isToday && status !== 'completed';
             const dt = new Date(date);
-            const dateShort = `${String(dt.getDate()).padStart(2,'0')}/${String(dt.getMonth()+1).padStart(2,'0')}`;
+            const dateShort = `${String(dt.getUTCDate()).padStart(2,'0')}/${String(dt.getUTCMonth()+1).padStart(2,'0')}`;
 
             const node     = document.createElement('div');
             node.className = 'tl-node';
@@ -378,7 +378,7 @@ const home = {
         const sessions = (this.stats.sessions || []).slice(-14);
         const labels   = sessions.map(s => {
             const d = new Date(s.date);
-            return `${d.getDate()}/${d.getMonth()+1}`;
+            return `${d.getUTCDate()}/${d.getUTCMonth()+1}`;
         });
 
         const baseOpts = {

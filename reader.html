@@ -77,7 +77,6 @@
         #hl-bar {
             position: fixed;
             z-index: 200;
-            display: flex;
             align-items: center;
             gap: 4px;
             padding: 5px 8px;
@@ -87,7 +86,6 @@
             border: 1px solid var(--border);
             transform: translateX(-50%);
             pointer-events: auto;
-            transition: opacity .15s;
         }
         #hl-bar button {
             font-size: 12px;
@@ -147,7 +145,7 @@
 </nav>
 
 <!-- Barre de surlignage flottante -->
-<div id="hl-bar" class="hidden" onmousedown="event.preventDefault()">
+<div id="hl-bar" style="display:none;" onmousedown="event.preventDefault()">
     <button onclick="reader.applyHighlight()"
             style="background:rgba(201,169,110,.25); color:var(--accent);">
         <i class="fa-solid fa-highlighter mr-1"></i>Surligner
@@ -341,14 +339,14 @@ const reader = {
         });
 
         // Surlignage
-        const area = document.getElementById('reading-area');
-        area.addEventListener('mouseup',  () => reader.showHlBar());
-        area.addEventListener('touchend', () => setTimeout(() => reader.showHlBar(), 80));
         document.addEventListener('mousedown', e => {
             if (!e.target.closest('#hl-bar')) reader.hideHlBar();
         });
-        document.addEventListener('touchstart', e => {
-            if (!e.target.closest('#hl-bar') && !e.target.closest('#reading-area')) reader.hideHlBar();
+        document.addEventListener('mouseup', e => {
+            if (!e.target.closest('#hl-bar')) setTimeout(() => reader.checkSelection(), 0);
+        });
+        document.addEventListener('touchend', e => {
+            if (!e.target.closest('#hl-bar')) setTimeout(() => reader.checkSelection(), 80);
         });
     },
 
@@ -485,7 +483,7 @@ const reader = {
         <button id="btn-continue" onclick="reader.continueReading()"
                 class="flex-1 py-3 rounded-xl text-sm font-bold transition active:scale-95"
                 style="background:transparent; border:1px solid var(--border); color:var(--muted);">
-            <i class="fa-solid fa-arrow-down mr-1 text-xs"></i> Continuer
+            <i class="fa-solid fa-arrow-down mr-1 text-xs"></i> Lire plus
         </button>
         <button onclick="reader.finishReading()"
                 class="flex-[2] py-3 rounded-xl text-sm font-bold transition active:scale-95"
@@ -653,26 +651,24 @@ const reader = {
         return JSON.parse(localStorage.getItem('acad2_highlights') || '[]');
     },
 
-    showHlBar() {
+    checkSelection() {
         const sel  = window.getSelection();
         const text = sel ? sel.toString().trim() : '';
-        if (!text || text.length < 2) { this.hideHlBar(); return; }
-
-        const range    = sel.getRangeAt(0);
-        const readArea = document.getElementById('reading-area');
-        if (!readArea || !readArea.contains(range.commonAncestorContainer)) {
-            this.hideHlBar(); return;
-        }
-
-        const rect = range.getBoundingClientRect();
-        const bar  = document.getElementById('hl-bar');
-        bar.classList.remove('hidden');
-        bar.style.top  = `${rect.top - 44 + window.scrollY}px`;
-        bar.style.left = `${rect.left + rect.width / 2}px`;
+        if (!text || text.length < 2) return;
+        try {
+            const range    = sel.getRangeAt(0);
+            const readArea = document.getElementById('reading-area');
+            if (!readArea || !readArea.contains(range.commonAncestorContainer)) return;
+            const rect = range.getBoundingClientRect();
+            const bar  = document.getElementById('hl-bar');
+            bar.style.display = 'flex';
+            bar.style.top  = `${rect.top - 44}px`;
+            bar.style.left = `${rect.left + rect.width / 2}px`;
+        } catch {}
     },
 
     hideHlBar() {
-        document.getElementById('hl-bar').classList.add('hidden');
+        document.getElementById('hl-bar').style.display = 'none';
     },
 
     applyHighlight() {

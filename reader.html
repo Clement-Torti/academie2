@@ -67,6 +67,40 @@
         @keyframes fadeUp { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
         .fade-up { animation: fadeUp .4s ease; }
 
+        /* ── Surlignage ────────────────────────────────────────── */
+        mark.hl {
+            background: rgba(201,169,110,.22);
+            color: inherit;
+            border-radius: 2px;
+            padding: 0 1px;
+        }
+        #hl-bar {
+            position: fixed;
+            z-index: 200;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            padding: 5px 8px;
+            border-radius: 10px;
+            box-shadow: 0 4px 16px rgba(0,0,0,.5);
+            background: var(--surface);
+            border: 1px solid var(--border);
+            transform: translateX(-50%);
+            pointer-events: auto;
+            transition: opacity .15s;
+        }
+        #hl-bar button {
+            font-size: 12px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            padding: 3px 8px;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            transition: opacity .15s;
+        }
+        #hl-bar button:active { opacity: .6; }
+
         /* ── Vocab sidebar ─────────────────────────────────────── */
         .vocab-inp {
             background: var(--bg);
@@ -112,6 +146,22 @@
 
 </nav>
 
+<!-- Barre de surlignage flottante -->
+<div id="hl-bar" class="hidden" onmousedown="event.preventDefault()">
+    <button onclick="reader.applyHighlight()"
+            style="background:rgba(201,169,110,.25); color:var(--accent);">
+        <i class="fa-solid fa-highlighter mr-1"></i>Surligner
+    </button>
+    <button onclick="reader.sendToVocab()"
+            style="background:rgba(99,94,133,.35); color:#a09bbf;">
+        <i class="fa-solid fa-bookmark mr-1"></i>Vocab
+    </button>
+    <button onclick="reader.removeHighlight()"
+            style="background:var(--dimmed); color:var(--muted);">
+        <i class="fa-solid fa-eraser"></i>
+    </button>
+</div>
+
 <!-- ═══════════════════════════════════════════════════════════════
      CONTENU + SIDEBAR VOCAB
 ═══════════════════════════════════════════════════════════════ -->
@@ -131,32 +181,47 @@
         </div>
     </main>
 
-    <!-- ── Sidebar vocabulaire (toujours ouverte) ───────────── -->
+    <!-- ── Sidebar vocabulaire (collapsable) ───────────────── -->
     <aside id="vocab-side"
-           class="shrink-0 flex flex-col gap-2.5 overflow-y-auto"
-           style="width:148px; padding:0.75rem 0.625rem; background:var(--surface); border-left:1px solid var(--border);">
+           class="shrink-0 flex flex-col overflow-hidden"
+           style="width:32px; background:var(--surface); border-left:1px solid var(--border); transition:width .2s ease;">
 
-        <p class="text-[9px] font-bold uppercase tracking-widest mb-0.5" style="color:var(--accent);">
-            <i class="fa-solid fa-bookmark mr-1"></i>Vocab
-        </p>
-
-        <input id="vocab-fr" type="text" placeholder="Français…"
-               autocomplete="off" autocorrect="off" spellcheck="false"
-               class="vocab-inp">
-
-        <input id="vocab-es" type="text" placeholder="Español…"
-               autocomplete="off" autocorrect="off" spellcheck="false"
-               class="vocab-inp">
-
-        <button onclick="reader.saveVocab()"
-                class="w-full rounded-lg font-bold transition active:scale-95"
-                style="background:var(--accent); color:#12111a; padding:.5rem .25rem; font-size:11px; font-family:'Montserrat',sans-serif;">
-            + Ajouter
+        <!-- Toggle tab -->
+        <button onclick="reader.toggleVocab()"
+                class="shrink-0 flex items-center justify-center transition active:opacity-50"
+                style="height:44px; color:var(--muted); border-bottom:1px solid var(--border);"
+                title="Vocabulaire">
+            <i id="vocab-toggle-icon" class="fa-solid fa-bookmark text-xs"></i>
         </button>
 
-        <span id="vocab-saved"
-              class="hidden text-center font-bold"
-              style="color:#4ade80; font-size:10px;">✓ Sauvegardé</span>
+        <!-- Contenu (masqué par défaut) -->
+        <div id="vocab-content"
+             class="flex flex-col gap-2.5 overflow-y-auto overflow-x-hidden"
+             style="display:none; padding:0.625rem 0.625rem 0.75rem; width:148px;">
+
+            <p class="text-[9px] font-bold uppercase tracking-widest" style="color:var(--accent);">
+                Vocabulaire
+            </p>
+
+            <input id="vocab-fr" type="text" placeholder="Français…"
+                   autocomplete="off" autocorrect="off" spellcheck="false"
+                   class="vocab-inp">
+
+            <input id="vocab-es" type="text" placeholder="Español…"
+                   autocomplete="off" autocorrect="off" spellcheck="false"
+                   class="vocab-inp">
+
+            <button onclick="reader.saveVocab()"
+                    class="w-full rounded-lg font-bold transition active:scale-95"
+                    style="background:var(--accent); color:#12111a; padding:.5rem .25rem; font-size:11px; font-family:'Montserrat',sans-serif;">
+                + Ajouter
+            </button>
+
+            <span id="vocab-saved"
+                  class="hidden text-center font-bold"
+                  style="color:#4ade80; font-size:10px;">✓ Sauvegardé</span>
+
+        </div>
 
     </aside>
 
@@ -273,6 +338,17 @@ const reader = {
             document.getElementById(id).addEventListener('keydown', e => {
                 if (e.key === 'Enter') reader.saveVocab();
             });
+        });
+
+        // Surlignage
+        const area = document.getElementById('reading-area');
+        area.addEventListener('mouseup',  () => reader.showHlBar());
+        area.addEventListener('touchend', () => setTimeout(() => reader.showHlBar(), 80));
+        document.addEventListener('mousedown', e => {
+            if (!e.target.closest('#hl-bar')) reader.hideHlBar();
+        });
+        document.addEventListener('touchstart', e => {
+            if (!e.target.closest('#hl-bar') && !e.target.closest('#reading-area')) reader.hideHlBar();
         });
     },
 
@@ -420,6 +496,7 @@ const reader = {
 </div>`;
 
         area.innerHTML = html;
+        this.applyHighlightsToDOM(area);
     },
 
     renderBlocks(blocks) {
@@ -488,6 +565,7 @@ const reader = {
         const dayDiv = document.getElementById('day-content');
         if (dayDiv) {
             dayDiv.innerHTML = this.renderBlocks(this.dayBlocks);
+            this.applyHighlightsToDOM(dayDiv);
             setTimeout(() => {
                 const main = document.getElementById('reader-main');
                 main.scrollTo({ top: main.scrollHeight, behavior: 'smooth' });
@@ -567,6 +645,135 @@ const reader = {
         }, 1000);
     },
     stopTimer() { if (this.timerInterval) clearInterval(this.timerInterval); },
+
+    // ════════════════════════════════════════════════════════════
+    //  SURLIGNAGE
+    // ════════════════════════════════════════════════════════════
+    get highlights() {
+        return JSON.parse(localStorage.getItem('acad2_highlights') || '[]');
+    },
+
+    showHlBar() {
+        const sel  = window.getSelection();
+        const text = sel ? sel.toString().trim() : '';
+        if (!text || text.length < 2) { this.hideHlBar(); return; }
+
+        const range    = sel.getRangeAt(0);
+        const readArea = document.getElementById('reading-area');
+        if (!readArea || !readArea.contains(range.commonAncestorContainer)) {
+            this.hideHlBar(); return;
+        }
+
+        const rect = range.getBoundingClientRect();
+        const bar  = document.getElementById('hl-bar');
+        bar.classList.remove('hidden');
+        bar.style.top  = `${rect.top - 44 + window.scrollY}px`;
+        bar.style.left = `${rect.left + rect.width / 2}px`;
+    },
+
+    hideHlBar() {
+        document.getElementById('hl-bar').classList.add('hidden');
+    },
+
+    applyHighlight() {
+        const sel  = window.getSelection();
+        const text = sel ? sel.toString().trim() : '';
+        if (!text || text.length < 2) return;
+
+        // Sauvegarde
+        const hl = this.highlights;
+        if (!hl.includes(text)) {
+            hl.push(text);
+            localStorage.setItem('acad2_highlights', JSON.stringify(hl));
+        }
+
+        // Marque visuelle immédiate
+        try {
+            const range = sel.getRangeAt(0);
+            const mark  = document.createElement('mark');
+            mark.className = 'hl';
+            range.surroundContents(mark);
+        } catch {
+            // Si la sélection couvre plusieurs éléments, re-rendu avec highlights
+            const dayDiv = document.getElementById('day-content');
+            if (dayDiv) {
+                dayDiv.innerHTML = this.renderBlocks(this.dayBlocks);
+                this.applyHighlightsToDOM(dayDiv);
+            }
+        }
+        sel.removeAllRanges();
+        this.hideHlBar();
+    },
+
+    toggleVocab() {
+        const aside   = document.getElementById('vocab-side');
+        const content = document.getElementById('vocab-content');
+        const icon    = document.getElementById('vocab-toggle-icon');
+        const open    = content.style.display === 'none';
+        aside.style.width        = open ? '148px' : '32px';
+        content.style.display    = open ? 'flex'  : 'none';
+        icon.className           = open
+            ? 'fa-solid fa-chevron-right text-xs'
+            : 'fa-solid fa-bookmark text-xs';
+    },
+
+    sendToVocab() {
+        const sel  = window.getSelection();
+        const text = sel ? sel.toString().trim() : '';
+        this.hideHlBar();
+        if (!text) return;
+        // Ouvrir la sidebar si fermée
+        const content = document.getElementById('vocab-content');
+        if (content.style.display === 'none') this.toggleVocab();
+        const inp = document.getElementById('vocab-fr');
+        inp.value = text;
+        document.getElementById('vocab-es').value = '';
+        document.getElementById('vocab-es').focus();
+    },
+
+    removeHighlight() {
+        const sel  = window.getSelection();
+        const text = sel ? sel.toString().trim() : '';
+        this.hideHlBar();
+        if (!text) return;
+
+        const hl = this.highlights.filter(h => h !== text);
+        localStorage.setItem('acad2_highlights', JSON.stringify(hl));
+
+        const dayDiv = document.getElementById('day-content');
+        if (dayDiv) {
+            dayDiv.innerHTML = this.renderBlocks(this.dayBlocks);
+            this.applyHighlightsToDOM(dayDiv);
+        }
+        if (sel) sel.removeAllRanges();
+    },
+
+    applyHighlightsToDOM(container) {
+        const highlights = this.highlights;
+        for (const text of highlights) {
+            this._markTextInNode(container, text);
+        }
+    },
+
+    _markTextInNode(node, text) {
+        if (node.nodeType === Node.TEXT_NODE) {
+            const idx = node.textContent.indexOf(text);
+            if (idx === -1) return;
+            const mark   = document.createElement('mark');
+            mark.className = 'hl';
+            mark.textContent = text;
+            const parent = node.parentNode;
+            if (idx > 0) parent.insertBefore(document.createTextNode(node.textContent.slice(0, idx)), node);
+            parent.insertBefore(mark, node);
+            const after = node.textContent.slice(idx + text.length);
+            if (after) parent.insertBefore(document.createTextNode(after), node);
+            parent.removeChild(node);
+        } else if (node.nodeType === Node.ELEMENT_NODE && node.tagName !== 'MARK') {
+            for (const child of [...node.childNodes]) {
+                this._markTextInNode(child, text);
+            }
+        }
+    },
 
     // ════════════════════════════════════════════════════════════
     //  VOCABULAIRE (sidebar inline)

@@ -285,8 +285,8 @@ const home = {
         const msDay    = 86400000;
         const todayIdx = Math.round((new Date(today) - new Date(startDate)) / msDay) + 1;
 
-        // Afficher 7 avant + aujourd'hui + 7 après
-        const first = Math.max(1, todayIdx - 7);
+        // Afficher tout depuis le début + 7 jours futurs
+        const first = 1;
         const last  = todayIdx + 7;
 
         const inner = document.getElementById('timeline-inner');
@@ -320,6 +320,9 @@ const home = {
             }
 
             const canClick = isToday && status !== 'completed';
+            const dt = new Date(date);
+            const dateShort = `${String(dt.getDate()).padStart(2,'0')}/${String(dt.getMonth()+1).padStart(2,'0')}`;
+
             const node     = document.createElement('div');
             node.className = 'tl-node';
             node.innerHTML = `
@@ -329,9 +332,11 @@ const home = {
                         title="${date}">
                     ${icon}
                 </button>
-                <span class="text-[9px] font-bold mt-2 uppercase tracking-wider"
-                      style="color:${labelColor}; white-space:nowrap;">
-                    ${isToday ? 'Aujourd\'hui' : 'J' + d}
+                <span class="text-center" style="display:flex;flex-direction:column;align-items:center;gap:1px;margin-top:6px;white-space:nowrap;">
+                    ${isToday
+                        ? `<span style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:${labelColor};">Auj.</span>`
+                        : ''}
+                    <span style="font-size:8px;font-weight:${isToday ? '600' : '400'};color:${isToday ? '#002654' : labelColor};letter-spacing:0.03em;">${dateShort}</span>
                 </span>`;
             inner.appendChild(node);
         }

@@ -63,32 +63,28 @@
         ::-webkit-scrollbar-track        { background: var(--bg); }
         ::-webkit-scrollbar-thumb        { background: #2a2840; border-radius: 4px; }
 
-        /* ── Modal vocab ───────────────────────────────────────── */
-        @keyframes slideUp   { from { transform: translateY(100%); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
-        @keyframes fadeUp    { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
-        @keyframes toastAnim { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+        /* ── Animations ────────────────────────────────────────── */
+        @keyframes fadeUp { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+        .fade-up { animation: fadeUp .4s ease; }
 
-        .vocab-slide  { animation: slideUp  .25s ease-out; }
-        .fade-up      { animation: fadeUp   .4s  ease;     }
-        .toast-anim   { animation: toastAnim .3s ease;     }
-
-        /* ── Inputs dark ───────────────────────────────────────── */
-        input { font-size: 16px !important; }
-        .dark-inp {
+        /* ── Vocab sidebar ─────────────────────────────────────── */
+        .vocab-inp {
             background: var(--bg);
             color: var(--text);
             border: 1px solid var(--border);
-            border-radius: .75rem;
-            padding: .75rem 1rem;
+            border-radius: .5rem;
+            padding: .5rem .6rem;
             width: 100%;
+            font-size: 13px !important;
             transition: border-color .2s;
+            font-family: 'Montserrat', sans-serif;
         }
-        .dark-inp:focus {
+        .vocab-inp:focus {
             outline: none;
             border-color: var(--accent);
-            box-shadow: 0 0 0 2px rgba(201,169,110,.18);
+            box-shadow: 0 0 0 2px rgba(201,169,110,.12);
         }
-        .dark-inp::placeholder { color: var(--dimmed); }
+        .vocab-inp::placeholder { color: var(--dimmed); font-size: 10px; }
     </style>
 </head>
 
@@ -111,108 +107,59 @@
            class="flex-1 text-center text-[11px] font-bold uppercase tracking-widest truncate"
            style="color:var(--accent);">Chargement…</p>
 
-        <button onclick="reader.showVocabModal()"
-                class="flex items-center gap-1 text-xs font-bold uppercase tracking-wide transition-opacity active:opacity-40 shrink-0"
-                style="color:var(--muted);">
-            <i class="fa-solid fa-plus text-[10px]"></i>
-            <span class="hidden sm:inline">Vocab</span>
-        </button>
+        <span id="prog-label" class="shrink-0 text-[11px] font-mono font-bold" style="color:var(--accent);">0%</span>
     </div>
 
-    <!-- barre de progression livre -->
-    <div style="height:2px; background:var(--border);">
-        <div id="prog-fill" style="height:100%; width:0%; background:var(--accent);"></div>
-    </div>
-    <div class="flex justify-between px-4 py-1">
-        <span id="prog-label"  class="text-[9px] font-mono" style="color:var(--dimmed);">0 % du livre</span>
-        <span id="words-label" class="text-[9px] font-mono" style="color:var(--dimmed);">— mots</span>
-    </div>
 </nav>
 
 <!-- ═══════════════════════════════════════════════════════════════
-     CONTENU
+     CONTENU + SIDEBAR VOCAB
 ═══════════════════════════════════════════════════════════════ -->
-<main id="reader-main"
-      class="flex-1 overflow-y-auto px-6 sm:px-10 md:px-16 py-10 w-full"
-      style="max-width:680px; margin:0 auto;">
+<div class="flex-1 flex overflow-hidden">
 
-    <div id="loader" class="flex flex-col items-center justify-center h-full" style="color:var(--muted);">
-        <i class="fa-solid fa-book-open text-4xl mb-4" style="color:var(--dimmed);"></i>
-        <p class="text-sm">Ouverture du livre…</p>
-    </div>
+    <!-- ── Zone de lecture ──────────────────────────────────── -->
+    <main id="reader-main" class="flex-1 overflow-y-auto">
+        <div style="max-width:640px; margin:0 auto; padding:2.5rem 1.5rem 3rem;">
 
-    <div id="reading-area" class="hidden read-body"></div>
-</main>
-
-<!-- ═══════════════════════════════════════════════════════════════
-     BARRE BASSE
-═══════════════════════════════════════════════════════════════ -->
-<div id="bottom-bar"
-     class="hidden shrink-0 px-4 py-3 flex flex-col gap-2"
-     style="background:var(--surface); border-top:1px solid var(--border);">
-
-    <div class="flex justify-between items-center">
-        <span id="session-label" class="text-[11px]" style="color:var(--muted);">— mots lus</span>
-        <span id="timer-label"   class="text-[11px] font-mono" style="color:var(--muted);">
-            <i class="fa-regular fa-clock"></i> 0:00
-        </span>
-    </div>
-
-    <div class="flex gap-2">
-        <button id="btn-continue" onclick="reader.continueReading()"
-                class="flex-1 py-3 rounded-xl text-sm font-bold transition active:scale-95"
-                style="background:transparent; border:1px solid var(--border); color:var(--muted);">
-            <i class="fa-solid fa-arrow-down mr-1 text-xs"></i> Continuer
-        </button>
-        <button onclick="reader.finishReading()"
-                class="flex-[2] py-3 rounded-xl text-sm font-bold transition active:scale-95"
-                style="background:var(--accent); color:#12111a;">
-            <i class="fa-solid fa-check mr-1 text-xs"></i> Terminer la lecture
-        </button>
-    </div>
-</div>
-
-<!-- ═══════════════════════════════════════════════════════════════
-     MODAL VOCABULAIRE
-═══════════════════════════════════════════════════════════════ -->
-<div id="vocab-overlay"
-     class="hidden fixed inset-0 z-50 flex items-end justify-center"
-     style="background:rgba(0,0,0,.78);"
-     onclick="if(event.target===this)reader.hideVocabModal()">
-
-    <div class="vocab-slide w-full" style="max-width:540px;">
-        <div class="rounded-t-2xl p-5 pb-8" style="background:var(--surface); border-top:1px solid var(--border);">
-
-            <div class="flex items-center justify-between mb-4">
-                <h3 class="text-[11px] font-bold uppercase tracking-widest" style="color:var(--accent);">
-                    <i class="fa-solid fa-bookmark mr-2"></i>Ajouter au vocabulaire
-                </h3>
-                <button onclick="reader.hideVocabModal()" style="color:var(--muted);" class="active:opacity-40">
-                    <i class="fa-solid fa-xmark text-lg"></i>
-                </button>
+            <div id="loader" class="flex flex-col items-center justify-center py-24" style="color:var(--muted);">
+                <i class="fa-solid fa-book-open text-4xl mb-4" style="color:var(--dimmed);"></i>
+                <p class="text-sm">Ouverture du livre…</p>
             </div>
 
-            <div class="flex flex-col gap-3">
-                <input id="vocab-fr" type="text" placeholder="Mot ou phrase en français…"
-                       autocomplete="off" autocorrect="off" class="dark-inp">
-                <input id="vocab-es" type="text" placeholder="Traducción en español…"
-                       autocomplete="off" autocorrect="off" class="dark-inp">
-                <button id="vocab-save-btn" onclick="reader.saveVocab()"
-                        class="w-full py-3 rounded-xl font-bold text-sm transition active:scale-95"
-                        style="background:var(--accent); color:#12111a;">
-                    Sauvegarder
-                </button>
-            </div>
+            <div id="reading-area" class="hidden read-body"></div>
+
         </div>
-    </div>
-</div>
+    </main>
 
-<!-- TOAST -->
-<div id="toast" class="hidden fixed bottom-28 left-1/2 -translate-x-1/2 z-[60] toast-anim pointer-events-none">
-    <div class="px-4 py-2 rounded-full text-xs font-bold shadow-lg"
-         style="background:#4ade80; color:#12111a;">
-        <i class="fa-solid fa-check mr-1"></i> Mot sauvegardé !
-    </div>
+    <!-- ── Sidebar vocabulaire (toujours ouverte) ───────────── -->
+    <aside id="vocab-side"
+           class="shrink-0 flex flex-col gap-2.5 overflow-y-auto"
+           style="width:148px; padding:0.75rem 0.625rem; background:var(--surface); border-left:1px solid var(--border);">
+
+        <p class="text-[9px] font-bold uppercase tracking-widest mb-0.5" style="color:var(--accent);">
+            <i class="fa-solid fa-bookmark mr-1"></i>Vocab
+        </p>
+
+        <input id="vocab-fr" type="text" placeholder="Français…"
+               autocomplete="off" autocorrect="off" spellcheck="false"
+               class="vocab-inp">
+
+        <input id="vocab-es" type="text" placeholder="Español…"
+               autocomplete="off" autocorrect="off" spellcheck="false"
+               class="vocab-inp">
+
+        <button onclick="reader.saveVocab()"
+                class="w-full rounded-lg font-bold transition active:scale-95"
+                style="background:var(--accent); color:#12111a; padding:.5rem .25rem; font-size:11px; font-family:'Montserrat',sans-serif;">
+            + Ajouter
+        </button>
+
+        <span id="vocab-saved"
+              class="hidden text-center font-bold"
+              style="color:#4ade80; font-size:10px;">✓ Sauvegardé</span>
+
+    </aside>
+
 </div>
 
 <!-- ═══════════════════════════════════════════════════════════════
@@ -321,7 +268,6 @@ const reader = {
 
         document.getElementById('loader').classList.add('hidden');
         document.getElementById('reading-area').classList.remove('hidden');
-        document.getElementById('bottom-bar').classList.remove('hidden');
 
         ['vocab-fr','vocab-es'].forEach(id => {
             document.getElementById(id).addEventListener('keydown', e => {
@@ -422,10 +368,6 @@ const reader = {
         this.dayEndIdx  = idx;
         this.wordsLoaded = words;
 
-        document.getElementById('words-label').textContent =
-            `${words} / ${this.wordsPerDay} mots`;
-        document.getElementById('session-label').textContent =
-            `${words} mots lus aujourd'hui`;
         this.updateProgressBar();
     },
 
@@ -456,7 +398,27 @@ const reader = {
             </div>`;
         }
 
-        html += '<div style="height:90px;"></div>';
+        // Boutons d'action intégrés au contenu
+        html += `
+<div id="end-actions" class="mt-12 pt-6 pb-4" style="border-top:1px solid var(--border);">
+    <div class="flex justify-between items-center mb-4" style="color:var(--muted);">
+        <span id="session-label" class="text-xs">${this.wordsLoaded} mots lus aujourd'hui</span>
+        <span id="timer-label" class="text-xs font-mono"><i class="fa-regular fa-clock"></i> 0:00</span>
+    </div>
+    <div class="flex gap-2">
+        <button id="btn-continue" onclick="reader.continueReading()"
+                class="flex-1 py-3 rounded-xl text-sm font-bold transition active:scale-95"
+                style="background:transparent; border:1px solid var(--border); color:var(--muted);">
+            <i class="fa-solid fa-arrow-down mr-1 text-xs"></i> Continuer
+        </button>
+        <button onclick="reader.finishReading()"
+                class="flex-[2] py-3 rounded-xl text-sm font-bold transition active:scale-95"
+                style="background:var(--accent); color:#12111a;">
+            <i class="fa-solid fa-check mr-1 text-xs"></i> Terminer la lecture
+        </button>
+    </div>
+</div>`;
+
         area.innerHTML = html;
     },
 
@@ -519,8 +481,8 @@ const reader = {
         }
         this.dayEndIdx = idx;
 
-        document.getElementById('words-label').textContent = `${this.wordsLoaded} mots`;
-        document.getElementById('session-label').textContent = `${this.wordsLoaded} mots lus`;
+        const sl = document.getElementById('session-label');
+        if (sl) sl.textContent = `${this.wordsLoaded} mots lus`;
         this.updateProgressBar();
 
         const dayDiv = document.getElementById('day-content');
@@ -534,9 +496,7 @@ const reader = {
 
         if (this.dayEndIdx >= this.allBlocks.length) {
             const btn = document.getElementById('btn-continue');
-            btn.disabled = true;
-            btn.style.opacity = '.35';
-            btn.style.cursor  = 'not-allowed';
+            if (btn) { btn.disabled = true; btn.style.opacity = '.35'; btn.style.cursor = 'not-allowed'; }
         }
     },
 
@@ -589,8 +549,7 @@ const reader = {
             .slice(0, this.dayEndIdx)
             .filter(b => b.type === 'sentence').length;
         const pct = Math.min(100, Math.round(done / this.totalSentenceCount * 100));
-        document.getElementById('prog-fill').style.width = pct + '%';
-        document.getElementById('prog-label').textContent  = `${pct} % du livre`;
+        document.getElementById('prog-label').textContent = `${pct}%`;
     },
 
     // ════════════════════════════════════════════════════════════
@@ -610,17 +569,8 @@ const reader = {
     stopTimer() { if (this.timerInterval) clearInterval(this.timerInterval); },
 
     // ════════════════════════════════════════════════════════════
-    //  VOCABULAIRE
+    //  VOCABULAIRE (sidebar inline)
     // ════════════════════════════════════════════════════════════
-    showVocabModal() {
-        document.getElementById('vocab-overlay').classList.remove('hidden');
-        setTimeout(() => document.getElementById('vocab-fr').focus(), 150);
-    },
-    hideVocabModal() {
-        document.getElementById('vocab-overlay').classList.add('hidden');
-        document.getElementById('vocab-fr').value = '';
-        document.getElementById('vocab-es').value = '';
-    },
     saveVocab() {
         const fr = document.getElementById('vocab-fr').value.trim();
         const es = document.getElementById('vocab-es').value.trim();
@@ -631,12 +581,13 @@ const reader = {
             vocab.push({ fr, es });
             localStorage.setItem('acad_user_vocab', JSON.stringify(vocab));
         }
-        this.hideVocabModal();
+        document.getElementById('vocab-fr').value = '';
+        document.getElementById('vocab-es').value = '';
+        document.getElementById('vocab-fr').focus();
 
-        // Toast
-        const t = document.getElementById('toast');
-        t.classList.remove('hidden');
-        setTimeout(() => t.classList.add('hidden'), 2000);
+        const saved = document.getElementById('vocab-saved');
+        saved.classList.remove('hidden');
+        setTimeout(() => saved.classList.add('hidden'), 2000);
     }
 };
 

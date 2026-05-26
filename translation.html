@@ -127,6 +127,15 @@ const conjHelp = {
 // ════════════════════════════════════════════════════════════════
 //  APP TRADUCTION
 // ════════════════════════════════════════════════════════════════
+function shuffleArray(array) {
+    const a = [...array];
+    for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+}
+
 const trans = {
 
     container: document.getElementById('app'),
@@ -202,8 +211,8 @@ const trans = {
                 conditionnel:'conditionnel', imperatif:'impératif' };
             const nbNew = Math.min(target, 8); // max 8 nouvelles par session
 
-            const selected    = [...vocab].sort(() => Math.random() - .5).slice(0, Math.min(nbNew, vocab.length));
-            const chosenTenses= [...allTenses].sort(() => Math.random() - .5).slice(0, selected.length);
+            const selected    = shuffleArray(vocab).slice(0, Math.min(nbNew, vocab.length));
+            const chosenTenses= shuffleArray(allTenses).slice(0, selected.length);
             const wordList    = selected.map((w,i) => `${i+1}. ${w.fr} (español: ${w.es})`).join('\n');
             const tenseList   = chosenTenses.map((t,i) => `frase ${i+1}: ${tenseNames[t]}`).join(', ');
 
@@ -284,13 +293,11 @@ FRASE2|pc|Nous avons visité Paris.|Hemos visitado París. (nous)`;
         // Compléter jusqu'à target avec l'historique
         if (pool.length < target) {
             const already = new Set(pool.map(s => s.french));
-            const filler  = activeHistory
-                .filter(s => !already.has(s.french))
-                .sort(() => Math.random() - .5);
+            const filler  = shuffleArray(activeHistory.filter(s => !already.has(s.french)));
             pool.push(...filler.slice(0, target - pool.length));
         }
 
-        this.sentences = pool.slice(0, target).sort(() => Math.random() - .5);
+        this.sentences = shuffleArray(pool).slice(0, target);
         this.currentIdx = 0;
 
         if (this.sentences.length === 0) {

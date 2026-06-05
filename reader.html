@@ -711,7 +711,7 @@ const reader = {
         let idx   = this.dayEndIdx;
         let added = 0;
 
-        while (idx < this.allBlocks.length && added < 20) {
+        while (idx < this.allBlocks.length && added < 10) {
             const b = this.allBlocks[idx];
             this.dayBlocks.push({ ...b, globalIdx: idx });
             if (b.type === 'sentence') {

@@ -176,6 +176,32 @@
             to   { opacity: 1; }
         }
 
+        /* ── Sparkles / fioriture ───────────────────────────────── */
+        .sp {
+            position: absolute;
+            pointer-events: none;
+            z-index: 602;
+            opacity: 0;
+            animation: spTwinkle var(--spd, 1.2s) ease-in-out var(--dly, 0s) infinite;
+        }
+        .sp.dot {
+            border-radius: 50%;
+            background: radial-gradient(circle, #fff 15%, rgba(201,169,110,.85) 55%, transparent 75%);
+            box-shadow: 0 0 7px 2px rgba(201,169,110,.55), 0 0 3px 1px rgba(255,255,255,.5);
+        }
+        .sp.star {
+            background: rgba(220,190,130,.95);
+            clip-path: polygon(50% 0%,56% 44%,100% 50%,56% 56%,50% 100%,44% 56%,0% 50%,44% 44%);
+            filter: drop-shadow(0 0 5px rgba(201,169,110,1)) drop-shadow(0 0 2px rgba(255,255,255,.8));
+        }
+        @keyframes spTwinkle {
+            0%   { opacity: 0;   transform: scale(0)    rotate(0deg);  }
+            20%  { opacity: 1;   transform: scale(1)    rotate(18deg); }
+            50%  { opacity: .55; transform: scale(.72)  rotate(38deg); }
+            80%  { opacity: .9;  transform: scale(1.15) rotate(56deg); }
+            100% { opacity: 0;   transform: scale(0)    rotate(72deg); }
+        }
+
         /* ── Vocab sidebar ─────────────────────────────────────── */
         .vocab-inp {
             background: var(--bg);
@@ -434,6 +460,27 @@ const reader = {
         const splash      = document.getElementById('cover-splash');
         const coverScene  = document.getElementById('cover-scene');
         if (splash && coverScene) {
+            // Spawn sparkles around the book
+            const cx = 50, cy = 50, total = 28;
+            for (let i = 0; i < total; i++) {
+                const isStar = Math.random() > .48;
+                const el     = document.createElement('div');
+                el.className = 'sp ' + (isStar ? 'star' : 'dot');
+                const angle  = (i / total) * 360 + Math.random() * 22;
+                const rad    = angle * Math.PI / 180;
+                const rx     = 11 + Math.random() * 17;   // horizontal spread %
+                const ry     = 16 + Math.random() * 23;   // vertical spread %
+                const size   = isStar ? 5 + Math.random() * 10 : 3 + Math.random() * 6;
+                const dur    = (.65 + Math.random() * 1.5).toFixed(2);
+                const dly    = (Math.random() * 2).toFixed(2);
+                el.style.cssText =
+                    `left:${(cx + Math.cos(rad) * rx).toFixed(1)}%;` +
+                    `top:${(cy + Math.sin(rad) * ry).toFixed(1)}%;` +
+                    `width:${size.toFixed(1)}px;height:${size.toFixed(1)}px;` +
+                    `--spd:${dur}s;--dly:${dly}s;`;
+                splash.appendChild(el);
+            }
+
             coverScene.addEventListener('animationend', e => {
                 if (e.animationName === 'coverAppear') {
                     setTimeout(() => coverScene.classList.add('zooming'), 375);

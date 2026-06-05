@@ -1,0 +1,5 @@
+Traduit le texte suivant en français en réduisant la complexité au niveau A2+ / B1- pour permettre à un étudiant en français de comprendre.
+fournie le résultant en respectant le format markdown pour styliser le texte.
+
+le texte:
+

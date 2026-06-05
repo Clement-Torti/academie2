@@ -53,7 +53,7 @@
         }
 
         /* ── Contexte session précédente ───────────────────────── */
-        .ctx-block { opacity: .28; pointer-events: none; }
+        .ctx-block { opacity: .55; }
 
         /* ── Progress bar ──────────────────────────────────────── */
         #prog-fill { transition: width .6s ease; }
@@ -471,10 +471,18 @@ const reader = {
         this.parseBook();
         this.buildSession();
         this.render();
+        this.initScrollTitle();
         this.startTimer();
 
         document.getElementById('loader').classList.add('hidden');
         document.getElementById('reading-area').classList.remove('hidden');
+
+        // Scroll to today's content immediately (no animation — instant positioning)
+        const dayDiv = document.getElementById('day-content');
+        if (dayDiv) {
+            const main = document.getElementById('reader-main');
+            main.scrollTop = dayDiv.offsetTop - main.offsetTop - 32;
+        }
 
         ['vocab-fr','vocab-es'].forEach(id => {
             document.getElementById(id).addEventListener('keydown', e => {
@@ -570,9 +578,20 @@ const reader = {
     },
 
     updateChapterTitle() {
-        const h2s = this.dayBlocks.filter(b => b.type === 'h2');
-        const last = h2s[h2s.length - 1];
-        if (last) document.getElementById('book-title').textContent = last.text;
+        const main = document.getElementById('reader-main');
+        const h2s  = [...document.getElementById('reading-area').querySelectorAll('h2')];
+        if (!h2s.length) return;
+        const navH = document.querySelector('nav').offsetHeight;
+        let current = h2s[0];
+        for (const el of h2s) {
+            if (el.getBoundingClientRect().top - navH <= 4) current = el;
+        }
+        document.getElementById('book-title').textContent = current.textContent;
+    },
+
+    initScrollTitle() {
+        const main = document.getElementById('reader-main');
+        main.addEventListener('scroll', () => this.updateChapterTitle(), { passive: true });
     },
 
     splitSentences(text) {
@@ -611,7 +630,7 @@ const reader = {
         const prog = this.prog;
         const startIdx = prog.blockIdx || 0;
 
-        this.contextBlocks = prog.lastBlocks || [];
+        this.contextBlocks = this.allBlocks.slice(0, startIdx);
 
         let idx = startIdx;
         let words = 0;
@@ -685,7 +704,6 @@ const reader = {
 
         area.innerHTML = html;
         this.applyHighlightsToDOM(area);
-        this.updateChapterTitle();
     },
 
     renderBlocks(blocks) {
@@ -755,7 +773,6 @@ const reader = {
         if (dayDiv) {
             dayDiv.innerHTML = this.renderBlocks(this.dayBlocks);
             this.applyHighlightsToDOM(dayDiv);
-            this.updateChapterTitle();
             setTimeout(() => {
                 const main = document.getElementById('reader-main');
                 main.scrollTo({ top: main.scrollHeight, behavior: 'smooth' });
@@ -783,8 +800,7 @@ const reader = {
         // Sauvegarder position
         this.saveProg({
             blockIdx:   this.dayEndIdx,
-            lastDate:   today,
-            lastBlocks: this.dayBlocks.slice(-8)
+            lastDate:   today
         });
 
         // Stats

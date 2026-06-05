@@ -202,6 +202,32 @@
             100% { opacity: 0;   transform: scale(0)    rotate(72deg); }
         }
 
+        /* ── Ambient reader sparkles (behind all content) ───────── */
+        .sp-bg {
+            position: fixed;
+            pointer-events: none;
+            z-index: 1;
+            opacity: 0;
+            animation: spAmbient var(--spd, 5s) ease-in-out var(--dly, 0s) infinite;
+        }
+        .sp-bg.dot {
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(255,255,255,.7) 15%, rgba(201,169,110,.55) 55%, transparent 75%);
+            box-shadow: 0 0 7px 3px rgba(201,169,110,.3);
+        }
+        .sp-bg.star {
+            background: rgba(201,169,110,.8);
+            clip-path: polygon(50% 0%,56% 44%,100% 50%,56% 56%,50% 100%,44% 56%,0% 50%,44% 44%);
+            filter: drop-shadow(0 0 4px rgba(201,169,110,.65));
+        }
+        @keyframes spAmbient {
+            0%   { opacity: 0;  transform: scale(0)    rotate(0deg);  }
+            25%  { opacity: .8; transform: scale(1)    rotate(12deg); }
+            55%  { opacity: .5; transform: scale(.82)  rotate(27deg); }
+            80%  { opacity: .7; transform: scale(1.05) rotate(42deg); }
+            100% { opacity: 0;  transform: scale(0)    rotate(55deg); }
+        }
+
         /* ── Vocab sidebar ─────────────────────────────────────── */
         .vocab-inp {
             background: var(--bg);
@@ -956,6 +982,27 @@ const reader = {
 };
 
 reader.init();
+
+// Ambient background sparkles — side margins only, never over the reading column
+(function(){
+    const N = 18;
+    for (let i = 0; i < N; i++) {
+        const el   = document.createElement('div');
+        el.className = 'sp-bg ' + (Math.random() > .45 ? 'star' : 'dot');
+        // concentrate in left (0-22%) and right (78-100%) dark margins
+        const left = Math.random() > .5;
+        const x    = left ? 1 + Math.random() * 21 : 77 + Math.random() * 21;
+        const y    = 3 + Math.random() * 92;
+        const size = 5 + Math.random() * 9;
+        const dur  = (4.5 + Math.random() * 4.5).toFixed(2);
+        const dly  = (Math.random() * 8).toFixed(2);
+        el.style.cssText =
+            `left:${x.toFixed(1)}%;top:${y.toFixed(1)}%;` +
+            `width:${size.toFixed(1)}px;height:${size.toFixed(1)}px;` +
+            `--spd:${dur}s;--dly:${dly}s;`;
+        document.body.appendChild(el);
+    }
+}());
 </script>
 </body>
 </html>

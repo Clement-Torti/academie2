@@ -229,7 +229,7 @@
      CONTENU DU LIVRE (Markdown hardcodé)
      → Remplace ce contenu avec ton livre complet
 ═══════════════════════════════════════════════════════════════ -->
-<script id="book-data" type="text/markdown">
+<script id="book-data-1" type="text/markdown">
 # Ombre et Lumière
 
 ## Chapitre I — La Nuit des Prodiges
@@ -354,7 +354,15 @@ const reader = {
     //  PARSE MARKDOWN → allBlocks
     // ════════════════════════════════════════════════════════════
     parseBook() {
-        const md = document.getElementById('book-data').textContent;
+        let md = '';
+        let i = 1;
+        while (true) {
+            const el = document.getElementById(`book-data-${i}`);
+            if (!el) break;
+            md += (md ? '\n' : '') + el.textContent;
+            i++;
+        }
+        if (!md) md = (document.getElementById('book-data') || { textContent: '' }).textContent;
         const lines = md.split('\n');
         let paraIdx = 0;
         let pendingPara = '';

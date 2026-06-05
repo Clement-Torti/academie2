@@ -112,6 +112,7 @@
         /* wrapper that animates — pages + cover move together */
         #cover-scene {
             position: relative;
+            z-index: 603;
             width: min(360px, 72vw);
             animation: coverAppear .55s cubic-bezier(.15,.85,.35,1) both;
         }
@@ -162,9 +163,9 @@
             to   { opacity: 1; transform: scale(1)   translateY(0); }
         }
         @keyframes coverZoom {
-            0%   { transform: scale(1);    opacity: 1; }
-            28%  { transform: scale(.88);  opacity: 1; }
-            100% { transform: scale(10);   opacity: 0; }
+            0%   { transform: scale(1);   }
+            28%  { transform: scale(.88); }
+            100% { transform: scale(3.5); }
         }
         /* Reader fade-in after cover animation */
         body.reader-in > nav,

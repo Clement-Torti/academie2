@@ -418,7 +418,7 @@ FRASE2|pc|Nous avons visité Paris.|Hemos visitado París. (nous)`;
         this.sessionTimes.push(elapsed);
 
         const s = this.sentences[this.currentIdx];
-        const waitSec = Math.min(elapsed, 15);
+        const waitSec = Math.min(elapsed, 5);
 
         // Mots cliquables
         const words = s.french.split(/\s+/).filter(w => w.length > 0);

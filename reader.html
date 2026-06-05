@@ -371,68 +371,6 @@
 </div>
 
 <!-- ═══════════════════════════════════════════════════════════════
-     CONTENU DU LIVRE (Markdown hardcodé)
-     → Remplace ce contenu avec ton livre complet
-═══════════════════════════════════════════════════════════════ -->
-<script id="book-data-1" type="text/markdown">
-# Ombre et Lumière
-
-## Chapitre I — La Nuit des Prodiges
-
-La nuit était tombée sur la ville comme un voile de soie noire. Alina marchait seule dans les rues pavées, son souffle formant de petits nuages blancs dans l'air glacé. Elle ne savait pas encore ce que le destin lui réservait.
-
-Les lumières des lanternes projetaient des ombres dansantes sur les murs de pierre ancienne. Quelque part au loin, une cloche sonnait minuit. Alina s'arrêta net, le cœur battant, car elle avait entendu quelque chose — un murmure venu de nulle part, ou peut-être de partout à la fois.
-
-— Qui est là ? chuchota-t-elle dans l'obscurité. Personne ne répondit. Pourtant, elle ne se sentait pas seule. Une présence invisible l'observait, elle en était certaine.
-
-Elle serra son manteau contre elle et continua d'avancer. La rue débouchait sur une place centrale où une fontaine ancienne murmurait doucement. L'eau semblait lumineuse, presque dorée sous la lune. C'est là qu'elle le vit pour la première fois.
-
-Un jeune homme, les cheveux noirs comme l'encre, se tenait immobile au bord de la fontaine. Il regardait le ciel avec une expression qu'Alina ne saurait décrire — ni joie, ni tristesse, mais quelque chose d'infiniment plus profond.
-
-Elle fit un pas en arrière. Une branche craqua sous son pied. Il se retourna. Leurs regards se croisèrent.
-
-## Chapitre II — Les Secrets du Palais
-
-Le lendemain matin, tout semblait différent. La lumière du soleil baignait les toits de tuiles rouges avec une douceur inhabituelle. Alina se réveilla avec l'étrange sensation que sa vie avait changé pendant la nuit.
-
-Elle descendit les escaliers de l'auberge en essayant de chasser ces pensées. La salle du bas était déjà animée : des voyageurs prenaient leur petit-déjeuner, un ménestrel accordait son luth dans le coin, et la patronne servait des bols de soupe fumante.
-
-— Tu as l'air songeuse, ma petite, dit la patronne. Tu as mal dormi ?
-
-— Non, répondit Alina. J'ai simplement fait un rêve étrange.
-
-— Ici, tous les rêves sont étranges, dit la femme avec un clin d'œil. C'est la nature de cette ville.
-
-Alina mangea en silence, le regard perdu par la fenêtre. La place était déjà peuplée de marchands qui installaient leurs étals. Des enfants couraient entre les jambes des adultes. La vie ordinaire continuait, indifférente aux mystères de la nuit précédente. Mais le garçon aux cheveux noirs était là, debout à l'entrée de la place, et il la regardait.
-
-## Chapitre III — La Bibliothèque Interdite
-
-Le palais royal se dressait au sommet de la colline, dominant la ville de sa silhouette imposante. Ses tours de marbre blanc brillaient sous le soleil comme autant de flammes figées. Alina avait toujours rêvé d'y entrer, mais l'accès était réservé à la noblesse et aux serviteurs du roi.
-
-Ce matin-là, une invitation mystérieuse avait glissé sous sa porte : un simple carton blanc sur lequel étaient tracés ces mots en encre dorée : la bibliothèque vous attend. Elle reconnut l'écriture — c'était la même que celle du vieux parchemin de sa grand-mère. Un frisson parcourut son échine.
-
-La grille du palais était gardée par deux soldats en armure brillante. Alina s'avança, l'invitation à la main. L'un des gardes l'examina avec surprise, puis s'écarta sans un mot. Comme si son passage avait été prévu depuis longtemps.
-
-Les jardins intérieurs étaient d'une beauté saisissante. Des rosiers en fleur bordaient les allées de gravier blanc. Des fontaines chantaient au milieu de bassins en marbre. Mais Alina n'avait pas le cœur à admirer les décors — elle cherchait la bibliothèque.
-
-Elle la trouva au fond d'une aile déserte, derrière une porte de chêne massif ornée de figures gravées. Des dragons entrelacés, des étoiles, et au centre, un œil ouvert qui semblait la regarder. La porte s'ouvrit d'elle-même à son approche.
-
-## Chapitre IV — Le Choix de l'Ombre
-
-À l'intérieur, l'odeur de vieux livres et de cire d'abeille enveloppa Alina comme une étreinte familière. Les étagères montaient jusqu'au plafond, chargées de volumes aux reliures colorées. Une lumière dorée filtrait par de hautes fenêtres.
-
-Le garçon aux cheveux noirs était assis à une grande table de travail, un livre ouvert devant lui. Il leva les yeux à son entrée.
-
-— Vous êtes venue, dit-il simplement. Sa voix était grave, posée, comme celle de quelqu'un habitué à peser chaque mot.
-
-— Je n'avais pas l'intention de venir, répondit Alina. Et pourtant, me voilà.
-
-Il sourit — un sourire bref, presque imperceptible. Il poussa vers elle le vieux parchemin. Ses doigts effleurèrent les siens. Un courant d'air invisible traversa la pièce, faisant frissonner les flammes des bougies.
-
-— Mon nom est Nikolaï, dit-il enfin. Et je crois que nous sommes liés par quelque chose qui dépasse notre compréhension.
-</script>
-
-<!-- ═══════════════════════════════════════════════════════════════
      LOGIQUE
 ═══════════════════════════════════════════════════════════════ -->
 <script>
@@ -468,8 +406,8 @@ const reader = {
     // ════════════════════════════════════════════════════════════
     //  INIT
     // ════════════════════════════════════════════════════════════
-    init() {
-        this.parseBook();
+    async init() {
+        await this.loadBook();
         this.buildSession();
         this.render();
         this.initScrollTitle();
@@ -539,18 +477,27 @@ const reader = {
     },
 
     // ════════════════════════════════════════════════════════════
-    //  PARSE MARKDOWN → allBlocks
+    //  LOAD CHAPITRES (fetch chapitres/0.txt, 1.txt, …)
     // ════════════════════════════════════════════════════════════
-    parseBook() {
+    async loadBook() {
         let md = '';
-        let i = 1;
+        let i = 0;
         while (true) {
-            const el = document.getElementById(`book-data-${i}`);
-            if (!el) break;
-            md += (md ? '\n' : '') + el.textContent;
+            let resp;
+            try { resp = await fetch(`chapitres/${i}.txt`); }
+            catch { break; }
+            if (!resp.ok) break;
+            const text = await resp.text();
+            md += (md ? '\n\n' : '') + `## Chapitre ${i}\n\n` + text.trim();
             i++;
         }
-        if (!md) md = (document.getElementById('book-data') || { textContent: '' }).textContent;
+        this.parseMarkdown(md);
+    },
+
+    // ════════════════════════════════════════════════════════════
+    //  PARSE MARKDOWN → allBlocks
+    // ════════════════════════════════════════════════════════════
+    parseMarkdown(md) {
         const lines = md.split('\n');
         let paraIdx = 0;
         let pendingPara = '';

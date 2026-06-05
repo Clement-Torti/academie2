@@ -209,7 +209,7 @@ const trans = {
             const tenseNames  = { present:'présent', pc:'passé composé', imparfait:'imparfait',
                 futur_proche:'futur proche', futur:'futur simple',
                 conditionnel:'conditionnel', imperatif:'impératif' };
-            const nbNew = Math.min(target, 8); // max 8 nouvelles par session
+            const nbNew = Math.min(target, 10); // max 10s nouvelles par session
 
             const selected    = shuffleArray(vocab).slice(0, Math.min(nbNew, vocab.length));
             const chosenTenses= shuffleArray(allTenses).slice(0, selected.length);

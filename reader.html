@@ -116,6 +116,7 @@
             z-index: 603;
             width: min(360px, 72vw);
             animation: coverAppear .55s cubic-bezier(.15,.85,.35,1) both;
+            animation-play-state: paused;
         }
         #cover-scene.zooming {
             animation: coverZoom .78s cubic-bezier(.4,0,.85,1) forwards;
@@ -463,6 +464,14 @@ const reader = {
                     document.body.classList.add('reader-in');
                 }
             });
+
+            const coverImg = document.querySelector('#cover-wrap img');
+            const startCoverAnim = () => { coverScene.style.animationPlayState = 'running'; };
+            if (coverImg.complete && coverImg.naturalWidth > 0) {
+                startCoverAnim();
+            } else {
+                coverImg.addEventListener('load', startCoverAnim);
+            }
         }
 
         // Surlignage

@@ -567,9 +567,12 @@ const reader = {
         flushPara();
 
         this.totalSentenceCount = this.allBlocks.filter(b => b.type === 'sentence').length;
+    },
 
-        const h1 = this.allBlocks.find(b => b.type === 'h1');
-        if (h1) document.getElementById('book-title').textContent = h1.text;
+    updateChapterTitle() {
+        const h2s = this.dayBlocks.filter(b => b.type === 'h2');
+        const last = h2s[h2s.length - 1];
+        if (last) document.getElementById('book-title').textContent = last.text;
     },
 
     splitSentences(text) {
@@ -682,6 +685,7 @@ const reader = {
 
         area.innerHTML = html;
         this.applyHighlightsToDOM(area);
+        this.updateChapterTitle();
     },
 
     renderBlocks(blocks) {
@@ -751,6 +755,7 @@ const reader = {
         if (dayDiv) {
             dayDiv.innerHTML = this.renderBlocks(this.dayBlocks);
             this.applyHighlightsToDOM(dayDiv);
+            this.updateChapterTitle();
             setTimeout(() => {
                 const main = document.getElementById('reader-main');
                 main.scrollTo({ top: main.scrollHeight, behavior: 'smooth' });

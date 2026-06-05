@@ -252,7 +252,7 @@
 const home = {
 
     get stats()  { return JSON.parse(localStorage.getItem('acad2_stats')  || '{"sessions":[],"streak":0,"lastCompletedDate":null}'); },
-    get cfg()    { return JSON.parse(localStorage.getItem('acad2_config') || '{"wordsPerDay":800,"sentencesPerSession":10}'); },
+    get cfg()    { return JSON.parse(localStorage.getItem('acad2_config') || '{"wordsPerDay":800,"sentencesPerSession":7}'); },
     get days()   { return JSON.parse(localStorage.getItem('acad2_days')   || '{}'); },
     get vocab()  { return JSON.parse(localStorage.getItem('acad_user_vocab') || '[]'); },
 

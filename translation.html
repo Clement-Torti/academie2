@@ -416,7 +416,7 @@ FRASE2|pc|Nous avons visité Paris.|Hemos visitado París. (nous)`;
         const elapsed = this.sentenceStartTime
             ? Math.round((Date.now() - this.sentenceStartTime) / 1000)
             : 0;
-        this.sessionTimes.push(elapsed);
+        if (elapsed <= 60) this.sessionTimes.push(elapsed);
 
         const s = this.sentences[this.currentIdx];
         const waitSec = Math.min(elapsed, 5);

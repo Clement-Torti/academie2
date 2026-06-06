@@ -320,7 +320,7 @@ const home = {
                 labelColor = '#9ca3af';
             }
 
-            const canClick = isToday && status !== 'completed';
+            const canClick = isToday;
             const dt = new Date(date);
             const dateShort = `${String(dt.getUTCDate()).padStart(2,'0')}/${String(dt.getUTCMonth()+1).padStart(2,'0')}`;
 

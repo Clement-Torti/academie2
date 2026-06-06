@@ -293,11 +293,7 @@
 
 <!-- Barre de surlignage flottante -->
 <div id="hl-bar" style="display:none;" onmousedown="event.preventDefault()">
-    <button onclick="reader.applyHighlight()"
-            style="background:rgba(201,169,110,.25); color:var(--accent);">
-        <i class="fa-solid fa-highlighter mr-1"></i>Surligner
-    </button>
-    <button onclick="reader.sendToVocab()"
+    <button onclick="reader.vocabAndHighlight()"
             style="background:rgba(99,94,133,.35); color:#a09bbf;">
         <i class="fa-solid fa-bookmark mr-1"></i>Vocab
     </button>
@@ -899,6 +895,40 @@ const reader = {
         icon.className           = open
             ? 'fa-solid fa-chevron-right text-xs'
             : 'fa-solid fa-bookmark text-xs';
+    },
+
+    vocabAndHighlight() {
+        const sel  = window.getSelection();
+        const text = sel ? sel.toString().trim() : '';
+        if (!text || text.length < 2) return;
+
+        // Surligne
+        const hl = this.highlights;
+        if (!hl.includes(text)) {
+            hl.push(text);
+            localStorage.setItem('acad2_highlights', JSON.stringify(hl));
+        }
+        try {
+            const range = sel.getRangeAt(0);
+            const mark  = document.createElement('mark');
+            mark.className = 'hl';
+            range.surroundContents(mark);
+        } catch {
+            const dayDiv = document.getElementById('day-content');
+            if (dayDiv) {
+                dayDiv.innerHTML = this.renderBlocks(this.dayBlocks);
+                this.applyHighlightsToDOM(dayDiv);
+            }
+        }
+        sel.removeAllRanges();
+        this.hideHlBar();
+
+        // Ouvre le panel vocab avec le texte
+        const content = document.getElementById('vocab-content');
+        if (content.style.display === 'none') this.toggleVocab();
+        document.getElementById('vocab-fr').value = text;
+        document.getElementById('vocab-es').value = '';
+        document.getElementById('vocab-es').focus();
     },
 
     sendToVocab() {

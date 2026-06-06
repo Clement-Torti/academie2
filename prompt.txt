@@ -1,14 +1,33 @@
-Traduit le texte suivant en français en réduisant la complexité au niveau A2+ / B1- pour permettre à un étudiant en français de comprendre. Remplace le vocabulaire et expressions avancées par des mots basiques et simplifie la structure des phrases longues.
-Fournie le résultant en respectant le format markdown pour styliser le texte. usa /Users/clementtorti/Documents/Developer/HTML/a2b2/academie2/chapitres/0.txt como ejemplo.
-
-
-le texte:
-
-
-
--------
 
 
 Traduit le texte /Users/clementtorti/Documents/Developer/HTML/a2b2/academie2/capitulos/1.txt en français en réduisant la complexité au niveau A2+ / B1- pour permettre à un étudiant en français de comprendre. Remplace le vocabulaire et expressions avancées par des mots basiques et simplifie la structure des phrases longues.
 Fournie le résultant dans  /Users/clementtorti/Documents/Developer/HTML/a2b2/academie2/chapitres/1.txt en respectant le format markdown pour styliser le texte. usa /Users/clementtorti/Documents/Developer/HTML/a2b2/academie2/chapitres/0.txt como ejemplo.
 
+---------
+
+Traduis le texte suivant en français, pour un lecteur débutant en français (niveau A2, 
+comme un enfant de 10-12 ans qui commence à lire des romans).
+
+Règles à respecter dans cet ordre de priorité :
+
+1. VOCABULAIRE SIMPLE
+   - Si un mot est rare, technique ou littéraire, remplace-le par le mot le plus courant possible.
+   - Exemples : "cèdre" → "bois", "mélasse" → "sucre", "gorgojo" → supprime.
+   - En cas de doute, choisis toujours le mot le plus simple.
+
+2. PHRASES COURTES
+   - Une seule idée par phrase. 
+   - Divise les phrases longues en deux ou trois phrases courtes.
+
+3. MOINS DE DÉTAILS
+   - Supprime les descriptions trop précises ou trop nombreuses si elles ralentissent la lecture.
+   - L'histoire doit avancer. Préfère un texte plus court mais fluide à un texte complet mais lourd.
+
+4. PAS D'EXPRESSIONS AVANCÉES
+   - Évite les expressions idiomatiques, les métaphores littéraires, le langage soutenu.
+   - Exemple à éviter : "apporterait de mauvais vents" → dire simplement "portait malheur".
+
+Priorité absolue : un texte agréable à lire et facile à comprendre. 
+Il vaut mieux supprimer un détail que garder un mot difficile.
+
+Fournis le résultat en markdown.

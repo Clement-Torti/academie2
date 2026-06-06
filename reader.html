@@ -301,6 +301,11 @@
             style="background:rgba(99,94,133,.35); color:#a09bbf;">
         <i class="fa-solid fa-bookmark mr-1"></i>Vocab
     </button>
+    <button onclick="reader.repeatSpeak()"
+            style="background:rgba(201,169,110,.15); color:var(--accent);"
+            title="Répéter">
+        <i class="fa-solid fa-volume-high"></i>
+    </button>
     <button onclick="reader.removeHighlight()"
             style="background:var(--dimmed); color:var(--muted);">
         <i class="fa-solid fa-eraser"></i>
@@ -483,6 +488,13 @@ const reader = {
         });
         document.addEventListener('touchend', e => {
             if (!e.target.closest('#hl-bar')) setTimeout(() => reader.checkSelection(), 80);
+        });
+        document.addEventListener('selectionchange', () => {
+            const sel = window.getSelection();
+            if (!sel || !sel.toString().trim()) {
+                const bar = document.getElementById('hl-bar');
+                if (bar && bar.style.display !== 'none') reader.hideHlBar();
+            }
         });
     },
 
@@ -828,7 +840,7 @@ const reader = {
     checkSelection() {
         const sel  = window.getSelection();
         const text = sel ? sel.toString().trim() : '';
-        if (!text || text.length < 2) return;
+        if (!text || text.length < 2) { this.hideHlBar(); return; }
         try {
             const range    = sel.getRangeAt(0);
             const readArea = document.getElementById('reading-area');
@@ -838,10 +850,12 @@ const reader = {
             bar.style.display = 'flex';
             bar.style.top  = `${rect.top - 44}px`;
             bar.style.left = `${rect.left + rect.width / 2}px`;
+            this.speakFrench(text);
         } catch {}
     },
 
     hideHlBar() {
+        window.speechSynthesis.cancel();
         document.getElementById('hl-bar').style.display = 'none';
     },
 
@@ -946,6 +960,42 @@ const reader = {
     },
 
     // ════════════════════════════════════════════════════════════
+    //  TTS
+    // ════════════════════════════════════════════════════════════
+    _speakId: 0,
+    _lastSpokenText: '',
+    _getVoicesAsync() {
+        return new Promise(resolve => {
+            const v = window.speechSynthesis.getVoices();
+            if (v.length) return resolve(v);
+            window.speechSynthesis.addEventListener('voiceschanged', function h() {
+                window.speechSynthesis.removeEventListener('voiceschanged', h);
+                resolve(window.speechSynthesis.getVoices());
+            });
+        });
+    },
+    async speakFrench(text) {
+        if (!text) return;
+        this._lastSpokenText = text;
+        const id = ++this._speakId;
+        const voices = await this._getVoicesAsync();
+        if (id !== this._speakId) return;
+        window.speechSynthesis.cancel();
+        const utt = new SpeechSynthesisUtterance(text);
+        const v = voices.find(v => v.name === 'Google français') ||
+                  voices.find(v => v.name === 'Thomas') ||
+                  voices.find(v => v.lang === 'fr-FR') ||
+                  voices.find(v => v.lang.startsWith('fr'));
+        if (v) { utt.voice = v; utt.lang = v.lang; } else { utt.lang = 'fr-FR'; }
+        utt.rate = .85; utt.pitch = 1; utt.volume = 1;
+        utt.onerror = e => { if (e.error !== 'interrupted') console.error(e); };
+        window.speechSynthesis.speak(utt);
+    },
+    repeatSpeak() {
+        if (this._lastSpokenText) this.speakFrench(this._lastSpokenText);
+    },
+
+    // ════════════════════════════════════════════════════════════
     //  VOCABULAIRE (sidebar inline)
     // ════════════════════════════════════════════════════════════
     saveVocab() {
@@ -969,6 +1019,7 @@ const reader = {
 };
 
 reader.init();
+window.speechSynthesis.getVoices();
 
 // Ambient background sparkles — side margins only, never over the reading column
 (function(){

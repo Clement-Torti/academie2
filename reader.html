@@ -249,6 +249,17 @@
             box-shadow: 0 0 0 2px rgba(201,169,110,.12);
         }
         .vocab-inp::placeholder { color: var(--dimmed); font-size: 10px; }
+
+        /* ── Chapter image ─────────────────────────────────────────── */
+        .chapter-img {
+            display: block;
+            width: 100%;
+            max-height: 340px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 0 0 2em;
+            opacity: .92;
+        }
     </style>
 </head>
 
@@ -697,6 +708,10 @@ const reader = {
             } else if (b.type === 'h2') {
                 flushP();
                 html += `<h2>${this.inline(b.text)}</h2>`;
+                const chM = b.text.match(/^Chapitre\s+(\d+)$/i);
+                if (chM) {
+                    html += `<img src="images/${chM[1]}.png" alt="" class="chapter-img" onerror="this.style.display='none'">`;
+                }
                 firstOfSection = true;
             } else if (b.type === 'hr') {
                 flushP();

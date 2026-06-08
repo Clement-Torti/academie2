@@ -6,7 +6,7 @@
     <title>L'Académie 2</title>
     <link rel="icon" type="image/x-icon" href="../academie/academie.png">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Montserrat:wght@400;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
@@ -20,6 +20,8 @@
                         frRed:   '#ED2939',
                         frCream: '#F5F5DC',
                         gold:    '#D4AF37',
+                        coral:   '#FF6B6B',
+                        teal:    '#4ECDC4',
                     },
                     boxShadow: { card:'0 10px 15px -3px rgba(0,0,0,.1)', btn:'0px 4px 0px 0px rgba(0,0,0,.3)' }
                 }
@@ -31,27 +33,18 @@
         body { overscroll-behavior-y: none; -webkit-tap-highlight-color: transparent; }
         input, textarea { font-size: 16px !important; }
 
-        /* Timeline */
-        .timeline-scroll { overflow-x: auto; overflow-y: hidden; scrollbar-width: none; }
-        .timeline-scroll::-webkit-scrollbar { display: none; }
-        .tl-line {
-            position: absolute; top: 50%; left: 0; right: 0;
-            height: 3px; background: #e5e7eb;
-            transform: translateY(-50%); z-index: 0;
+        /* Article cards */
+        .article-card-img { width:100%; height:160px; object-fit:cover; display:block; transition: transform .3s; }
+        .article-card:hover .article-card-img { transform: scale(1.04); }
+        .article-card { transition: box-shadow .2s, transform .15s; }
+        .article-card:active { transform: scale(.98); }
+        .line-clamp-2 {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
         }
-        .tl-node { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; flex-shrink: 0; }
-        .tl-btn {
-            width: 52px; height: 52px; border-radius: 50%;
-            display: flex; align-items: center; justify-content: center;
-            border-bottom: 4px solid rgba(0,0,0,.2);
-            transition: transform .15s, box-shadow .15s;
-        }
-        .tl-btn:active { transform: translateY(2px); box-shadow: none !important; }
-        @keyframes pulse-today {
-            0%,100% { box-shadow: 0 0 0 0 rgba(0,38,84,.35), 0 4px 0 0 rgba(0,0,0,.2); }
-            50%      { box-shadow: 0 0 0 9px rgba(0,38,84,0), 0 4px 0 0 rgba(0,0,0,.2); }
-        }
-        .tl-today { animation: pulse-today 2s infinite; }
 
         /* Stats */
         .stat-card { background:white; border-radius:1rem; padding:1rem; box-shadow:0 2px 8px rgba(0,0,0,.07); border:1px solid #f1f1f1; }
@@ -182,20 +175,29 @@
 <main class="flex-1 overflow-y-auto bg-frCream">
 <div class="max-w-4xl mx-auto px-4 py-6 flex flex-col gap-8 pb-10">
 
-    <!-- ── TIMELINE ─────────────────────────────────────────── -->
+    <!-- ── ARTICLES ──────────────────────────────────────────── -->
     <section>
-        <h2 class="text-xs font-bold uppercase tracking-widest text-frBlue mb-4">
-            <i class="fa-solid fa-calendar-days mr-1 text-gold"></i> Programme du jour
-        </h2>
-        <div class="bg-white rounded-2xl shadow-card border border-gray-100 py-6 px-4">
-            <div class="timeline-scroll" id="tl-scroll">
-                <div id="timeline-inner"
-                     class="relative flex items-center gap-5 px-4"
-                     style="min-height:90px;">
-                    <div class="tl-line"></div>
-                </div>
-            </div>
+        <div class="flex items-center justify-between mb-4">
+            <h2 class="text-xs font-bold uppercase tracking-widest text-frBlue flex items-center gap-2">
+                <i class="fa-solid fa-newspaper text-coral"></i> Articles
+            </h2>
+            <span id="articles-count" class="text-xs text-gray-400"></span>
         </div>
+
+        <!-- Loading -->
+        <div id="articles-loading" class="flex justify-center py-8">
+            <div class="loader" style="border-top-color:#FF6B6B;"></div>
+        </div>
+
+        <!-- Error fallback -->
+        <div id="articles-error" class="hidden bg-amber-50 border border-amber-200 rounded-xl px-5 py-4 text-sm text-amber-800">
+            <i class="fa-solid fa-triangle-exclamation mr-2"></i>
+            Impossible de charger les articles.
+            <a href="article.html?id=festival-cannes" class="underline font-bold ml-1">Voir l'article de démonstration</a>
+        </div>
+
+        <!-- Grid -->
+        <div id="articles-grid" class="grid grid-cols-1 sm:grid-cols-2 gap-4" style="display:none;"></div>
     </section>
 
     <!-- ── STATISTIQUES ─────────────────────────────────────── -->
@@ -253,7 +255,6 @@ const home = {
 
     get stats()  { return JSON.parse(localStorage.getItem('acad2_stats')  || '{"sessions":[],"streak":0,"lastCompletedDate":null}'); },
     get cfg()    { return JSON.parse(localStorage.getItem('acad2_config') || '{"wordsPerDay":800,"sentencesPerSession":7}'); },
-    get days()   { return JSON.parse(localStorage.getItem('acad2_days')   || '{}'); },
     get vocab()  { return JSON.parse(localStorage.getItem('acad_user_vocab') || '[]'); },
 
     // ════════════════════════════════════════════════════════════
@@ -261,7 +262,7 @@ const home = {
     // ════════════════════════════════════════════════════════════
     init() {
         this.renderStreak();
-        this.renderTimeline();
+        this.loadArticles();
         this.renderStats();
         this.renderCharts();
     },
@@ -273,83 +274,73 @@ const home = {
     },
 
     // ════════════════════════════════════════════════════════════
-    //  TIMELINE HORIZONTALE
+    //  ARTICLES
     // ════════════════════════════════════════════════════════════
-    renderTimeline() {
-        const today    = new Date().toISOString().split('T')[0];
-        const days     = this.days;
-        const sessions = (this.stats.sessions || []).slice().sort((a,b) => a.date.localeCompare(b.date));
+    async loadArticles() {
+        const grid    = document.getElementById('articles-grid');
+        const loading = document.getElementById('articles-loading');
+        const errDiv  = document.getElementById('articles-error');
 
-        // Date de début (première session ou aujourd'hui)
-        const startDate = sessions.length > 0 ? sessions[0].date : today;
+        const base = location.protocol === 'file:'
+            ? 'https://clement-torti.github.io/academie2/'
+            : '';
 
-        const msDay    = 86400000;
-        const todayIdx = Math.round((new Date(today) - new Date(startDate)) / msDay) + 1;
+        try {
+            const res = await fetch(`${base}catalog.json`);
+            if (!res.ok) throw new Error('HTTP ' + res.status);
+            const articles = await res.json();
 
-        // Afficher tout depuis le début + 7 jours futurs
-        const first = 1;
-        const last  = todayIdx + 7;
+            loading.classList.add('hidden');
+            const count = articles.length;
+            document.getElementById('articles-count').textContent =
+                `${count} article${count > 1 ? 's' : ''}`;
 
-        const inner = document.getElementById('timeline-inner');
-        // Garder uniquement la tl-line
-        inner.innerHTML = '<div class="tl-line"></div>';
-
-        for (let d = first; d <= last; d++) {
-            const date    = new Date(new Date(startDate).getTime() + (d-1) * msDay)
-                .toISOString().split('T')[0];
-            const isToday = date === today;
-            const status  = days[date] || (date < today ? 'missed' : 'future');
-
-            let btnStyle, icon, labelColor;
-
-            if (status === 'completed') {
-                btnStyle   = 'background:#D4AF37; border-color:#8f6900;';
-                icon       = '<i class="fa-solid fa-check text-white text-sm"></i>';
-                labelColor = '#9ca3af';
-            } else if (isToday) {
-                btnStyle   = 'background:#002654; border-color:#001333;';
-                icon       = '<i class="fa-solid fa-book-open text-white text-sm"></i>';
-                labelColor = '#002654';
-            } else if (date < today && status !== 'completed') {
-                btnStyle   = 'background:#fee2e2; border-color:#fca5a5;';
-                icon       = '<i class="fa-solid fa-xmark text-red-500 text-sm"></i>';
-                labelColor = '#9ca3af';
-            } else {
-                btnStyle   = 'background:#f3f4f6; border-color:#d1d5db;';
-                icon       = `<span class="text-xs font-bold text-gray-400">${d}</span>`;
-                labelColor = '#9ca3af';
+            if (!count) {
+                grid.style.display = 'grid';
+                grid.innerHTML = '<p class="text-sm text-gray-400 text-center col-span-2 py-4">Aucun article disponible.</p>';
+                return;
             }
 
-            const canClick = isToday;
-            const dt = new Date(date);
-            const dateShort = `${String(dt.getUTCDate()).padStart(2,'0')}/${String(dt.getUTCMonth()+1).padStart(2,'0')}`;
+            grid.innerHTML = articles
+                .slice().sort((a, b) => b.date.localeCompare(a.date))
+                .map(a => this._articleCard(a))
+                .join('');
+            grid.style.display = 'grid';
 
-            const node     = document.createElement('div');
-            node.className = 'tl-node';
-            node.innerHTML = `
-                <button class="tl-btn ${isToday ? 'tl-today' : ''}"
-                        style="${btnStyle}"
-                        ${canClick ? `onclick="window.location.href='reader.html'"` : 'disabled'}
-                        title="${date}">
-                    ${icon}
-                </button>
-                <span class="text-center" style="display:flex;flex-direction:column;align-items:center;gap:1px;margin-top:6px;white-space:nowrap;">
-                    ${isToday
-                        ? `<span style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:${labelColor};">Auj.</span>`
-                        : ''}
-                    <span style="font-size:8px;font-weight:${isToday ? '600' : '400'};color:${isToday ? '#002654' : labelColor};letter-spacing:0.03em;">${dateShort}</span>
-                </span>`;
-            inner.appendChild(node);
+        } catch (err) {
+            loading.classList.add('hidden');
+            errDiv.classList.remove('hidden');
+            console.warn('catalog.json load failed:', err);
         }
+    },
 
-        // Scroll centré sur aujourd'hui
-        setTimeout(() => {
-            const todayNode = inner.querySelector('.tl-today');
-            if (!todayNode) return;
-            const scroll = document.getElementById('tl-scroll');
-            const nodeLeft = todayNode.closest('.tl-node').offsetLeft;
-            scroll.scrollTo({ left: nodeLeft - scroll.clientWidth / 2 + 26, behavior:'smooth' });
-        }, 120);
+    _articleCard(a) {
+        const d = new Date(a.date + 'T00:00:00');
+        const dateStr = d.toLocaleDateString('fr-FR', { day:'numeric', month:'long', year:'numeric' });
+        return `
+            <a href="article.html?id=${this._esc(a.id)}"
+               class="article-card block bg-white rounded-2xl overflow-hidden border border-gray-100"
+               style="box-shadow:0 2px 10px rgba(0,0,0,.07); text-decoration:none;">
+              <div class="overflow-hidden relative" style="height:160px; background:#f3f4f6;">
+                <img src="${this._esc(a.image)}" alt="${this._esc(a.title)}"
+                     class="article-card-img"
+                     onerror="this.style.display='none'">
+                <div style="position:absolute;inset:0;
+                     background:linear-gradient(to top,rgba(0,0,0,.4) 0%,transparent 60%);"></div>
+                <span class="absolute top-3 left-3 text-[9px] font-bold uppercase tracking-widest
+                             text-white px-2 py-1 rounded-full"
+                      style="background:#4ECDC4;">${this._esc(a.category || '')}</span>
+              </div>
+              <div class="p-4">
+                <h3 class="font-bold text-frBlue text-sm leading-snug mb-1 line-clamp-2">${this._esc(a.title)}</h3>
+                <p class="text-[11px] text-gray-400">${dateStr}</p>
+              </div>
+            </a>`;
+    },
+
+    _esc(str) {
+        return String(str || '').replace(/&/g,'&amp;').replace(/</g,'&lt;')
+                                .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
     },
 
     // ════════════════════════════════════════════════════════════

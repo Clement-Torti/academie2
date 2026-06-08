@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title id="page-title">Article — L'Académie 2</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Montserrat:wght@400;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Montserrat','sans-serif'],
+            serif: ['Merriweather','serif'],
+            chat: ['Nunito','sans-serif']
+          },
+          colors: {
+            frBlue: '#002654',
+            frRed:  '#ED2939',
+            gold:   '#D4AF37',
+            coral:  '#FF6B6B',
+            teal:   '#4ECDC4',
+            sand:   '#FFF8F0'
+          },
+          boxShadow: {
+            card: '0 2px 12px rgba(0,0,0,.07)'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* ── HERO ─────────────────────────────────────────── */
+    .hero-img { width:100%; height:280px; object-fit:cover; display:block; }
+    @media(min-width:640px){ .hero-img { height:380px; } }
+    .hero-overlay {
+      position:absolute; inset:0;
+      background: linear-gradient(to top, rgba(0,0,0,.78) 0%, rgba(0,0,0,.25) 55%, transparent 100%);
+    }
+
+    /* ── VOCAB CARD ───────────────────────────────────── */
+    .vocab-card {
+      background: white;
+      border-radius: 12px;
+      padding: 12px 16px;
+      border-left: 4px solid #4ECDC4;
+      box-shadow: 0 2px 8px rgba(0,0,0,.06);
+      transition: transform .15s;
+    }
+    .vocab-card:active { transform: scale(.97); }
+
+    /* ── ARTICLE PROSE ────────────────────────────────── */
+    .prose-article {
+      font-family: 'Merriweather', serif;
+      font-size: 1.02rem;
+      line-height: 1.95;
+      color: #2d2d2d;
+    }
+    .prose-article p + p { margin-top: 1.35em; text-indent: 1.5em; }
+    .prose-article p:first-child { text-indent: 0; }
+
+    /* ── CONVERSATION BUBBLES ─────────────────────────── */
+    @keyframes slideInLeft {
+      from { opacity:0; transform:translateX(-20px); }
+      to   { opacity:1; transform:translateX(0); }
+    }
+    @keyframes slideInRight {
+      from { opacity:0; transform:translateX(20px); }
+      to   { opacity:1; transform:translateX(0); }
+    }
+    .bubble-left  { animation: slideInLeft  .35s cubic-bezier(.2,.8,.4,1) both; }
+    .bubble-right { animation: slideInRight .35s cubic-bezier(.2,.8,.4,1) both; }
+
+    /* ── TTS HIGHLIGHT ────────────────────────────────── */
+    .bubble-speaking .bubble-content {
+      outline: 3px solid #D4AF37;
+      outline-offset: 3px;
+      box-shadow: 0 0 0 6px rgba(212,175,55,.15);
+      transition: box-shadow .2s;
+    }
+
+    /* ── REVEAL BUTTON ────────────────────────────────── */
+    .btn-reveal {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: #FFF3CD;
+      border: 1.5px dashed #D4AF37;
+      color: #7a5f00;
+      border-radius: 8px;
+      padding: 5px 12px;
+      font-size: .8rem;
+      font-weight: 700;
+      font-family: 'Nunito', sans-serif;
+      cursor: pointer;
+      transition: background .15s;
+      margin-top: 6px;
+    }
+    .btn-reveal:active { background: #FFE69C; }
+
+    /* ── LOADER ───────────────────────────────────────── */
+    .loader {
+      border: 4px solid #f0ece6;
+      border-top: 4px solid #FF6B6B;
+      border-radius: 50%;
+      width: 38px; height: 38px;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin { 0%{transform:rotate(0)} 100%{transform:rotate(360deg)} }
+
+    /* ── MISC ─────────────────────────────────────────── */
+    .line-clamp-2 {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+
+<body class="bg-sand min-h-screen" style="font-family:'Montserrat',sans-serif;">
+
+  <!-- ══ NAVBAR ════════════════════════════════════════ -->
+  <nav class="bg-frBlue text-white z-50 sticky top-0" style="box-shadow:0 2px 12px rgba(0,0,0,.18);">
+    <div class="max-w-3xl mx-auto px-4 h-14 flex justify-between items-center gap-3">
+      <a href="index.html"
+         class="flex items-center gap-2 shrink-0 transition active:opacity-60"
+         style="text-decoration:none; color:inherit;">
+        <i class="fa-solid fa-chevron-left text-gold text-sm"></i>
+        <span class="text-xs font-bold uppercase tracking-wide hidden sm:inline">Accueil</span>
+      </a>
+      <div class="flex flex-col items-center min-w-0">
+        <span class="text-[10px] uppercase tracking-widest text-white/50 font-bold">L'Académie 2</span>
+        <span id="nav-date" class="text-[11px] font-bold text-gold truncate"></span>
+      </div>
+      <div class="w-14 shrink-0"></div>
+    </div>
+    <div class="h-1 w-full flex">
+      <div class="w-1/3 bg-blue-600"></div>
+      <div class="w-1/3 bg-white"></div>
+      <div class="w-1/3 bg-red-600"></div>
+    </div>
+  </nav>
+
+  <!-- ══ LOADING SCREEN ════════════════════════════════ -->
+  <div id="loader-screen" class="flex items-center justify-center py-24">
+    <div class="loader"></div>
+  </div>
+
+  <!-- ══ ARTICLE BODY (hidden until loaded) ════════════ -->
+  <div id="article-body" class="hidden">
+
+    <!-- ── HERO ──────────────────────────────────────── -->
+    <div id="hero-section" class="relative overflow-hidden" style="min-height:260px; background:#1a1a2e;">
+      <img id="hero-img" src="" alt="" class="hero-img">
+      <div class="hero-overlay"></div>
+      <div class="absolute bottom-0 left-0 right-0 px-5 pb-6 pt-12">
+        <span id="hero-category"
+              class="inline-block text-[10px] font-bold uppercase tracking-widest
+                     bg-teal text-white px-3 py-1 rounded-full mb-3">
+        </span>
+        <h1 id="hero-title"
+            class="text-2xl sm:text-3xl font-bold text-white leading-tight"
+            style="text-shadow: 0 2px 10px rgba(0,0,0,.5); max-width:600px;">
+        </h1>
+      </div>
+    </div>
+
+    <!-- ── VOCABULARY ─────────────────────────────────── -->
+    <section class="max-w-3xl mx-auto px-4 pt-8 pb-4">
+      <h2 class="text-[11px] font-bold uppercase tracking-widest text-frBlue mb-4 flex items-center gap-2">
+        <i class="fa-solid fa-book-open text-teal"></i> Vocabulaire clé
+      </h2>
+      <div id="vocab-grid" class="grid grid-cols-2 sm:grid-cols-3 gap-3"></div>
+    </section>
+
+    <!-- ── ARTICLE TEXT ───────────────────────────────── -->
+    <section class="max-w-3xl mx-auto px-4 py-4">
+      <div class="bg-white rounded-2xl shadow-card border border-gray-100 px-6 py-7">
+        <div id="article-text" class="prose-article"></div>
+      </div>
+    </section>
+
+    <!-- ── CONVERSATION ───────────────────────────────── -->
+    <section class="max-w-3xl mx-auto px-4 pt-4 pb-16" id="conversation-section">
+
+      <h2 class="text-[11px] font-bold uppercase tracking-widest text-frBlue mb-4 flex items-center gap-2">
+        <i class="fa-solid fa-comments text-coral"></i> Exercice de conversation
+      </h2>
+
+      <!-- Context box -->
+      <div class="bg-amber-50 border border-amber-200 rounded-xl px-5 py-4 mb-5">
+        <p class="text-[10px] font-bold uppercase tracking-widest text-amber-700 mb-1">
+          <i class="fa-solid fa-circle-info mr-1"></i> Contexte
+        </p>
+        <p id="conv-intro" class="text-sm text-amber-900 leading-relaxed" style="font-family:'Nunito',sans-serif;"></p>
+      </div>
+
+      <!-- Instruction badge -->
+      <div class="bg-coral/10 border border-coral/25 rounded-xl px-4 py-3 mb-6 flex gap-3 items-start">
+        <i class="fa-solid fa-lightbulb text-coral mt-0.5 shrink-0"></i>
+        <p class="text-xs text-gray-700 leading-relaxed" style="font-family:'Nunito',sans-serif;">
+          Les répliques de <strong class="text-coral">Rosalia</strong> apparaissent en espagnol.
+          Traduis-les mentalement en français, puis clique sur <strong>Voir en français</strong> pour vérifier.
+        </p>
+      </div>
+
+      <!-- START state -->
+      <div id="conv-start" class="text-center py-4">
+        <button onclick="conv.start()"
+                class="bg-coral text-white font-bold px-8 py-4 rounded-2xl shadow-lg text-sm
+                       transition active:scale-95 active:shadow-none">
+          <i class="fa-solid fa-play mr-2"></i>Commencer la conversation
+        </button>
+      </div>
+
+      <!-- Lines container -->
+      <div id="conv-lines" class="hidden flex flex-col gap-4"></div>
+
+      <!-- NEXT button -->
+      <div id="conv-next-wrap" class="hidden mt-5 text-center">
+        <button id="conv-next-btn" onclick="conv.nextLine()"
+                class="bg-frBlue text-white font-bold px-6 py-3 rounded-xl text-sm transition active:scale-95">
+          Phrase suivante <i class="fa-solid fa-arrow-right ml-1"></i>
+        </button>
+      </div>
+
+      <!-- LISTEN button -->
+      <div id="conv-listen-wrap" class="hidden mt-6 text-center">
+        <button onclick="conv.playAll()"
+                class="bg-gold text-frBlue font-bold px-8 py-4 rounded-2xl shadow-lg text-sm
+                       transition active:scale-95 inline-flex items-center gap-2">
+          <i class="fa-solid fa-play" id="conv-listen-icon"></i>
+          <span id="conv-listen-label">Écouter la conversation</span>
+        </button>
+        <p class="text-[11px] text-gray-400 mt-2">Toutes les répliques en français · voix fr-FR</p>
+      </div>
+
+    </section>
+
+  </div><!-- end #article-body -->
+
+  <script>
+  // ════════════════════════════════════════════════════
+  //  TTS helpers
+  // ════════════════════════════════════════════════════
+  const tts = {
+    _speakId: 0,
+
+    _getVoicesAsync() {
+      return new Promise(resolve => {
+        const v = window.speechSynthesis.getVoices();
+        if (v.length) return resolve(v);
+        window.speechSynthesis.addEventListener('voiceschanged', function h() {
+          window.speechSynthesis.removeEventListener('voiceschanged', h);
+          resolve(window.speechSynthesis.getVoices());
+        });
+      });
+    },
+
+    async _speak(text, onEnd) {
+      const voices = await this._getVoicesAsync();
+      window.speechSynthesis.cancel();
+      const utt = new SpeechSynthesisUtterance(text);
+      const v = voices.find(v => v.name === 'Google français') ||
+                voices.find(v => v.name === 'Thomas') ||
+                voices.find(v => v.lang === 'fr-FR') ||
+                voices.find(v => v.lang && v.lang.startsWith('fr'));
+      if (v) { utt.voice = v; utt.lang = v.lang; } else { utt.lang = 'fr-FR'; }
+      utt.rate = 0.82; utt.pitch = 1; utt.volume = 1;
+      utt.onerror = e => { if (e.error !== 'interrupted') console.error(e); if (onEnd) onEnd(); };
+      utt.onend = onEnd || null;
+      window.speechSynthesis.speak(utt);
+    },
+
+    stop() {
+      this._speakId++;
+      window.speechSynthesis.cancel();
+    }
+  };
+
+  // ════════════════════════════════════════════════════
+  //  Conversation controller
+  // ════════════════════════════════════════════════════
+  const conv = {
+    data: null,
+    state: 'idle',
+    currentLine: -1,
+    revealedLines: new Set(),
+
+    init(articleData) {
+      this.data = articleData;
+      this.state = 'idle';
+      this.currentLine = -1;
+      this.revealedLines = new Set();
+      document.getElementById('conv-intro').textContent = articleData.conversation.intro;
+    },
+
+    start() {
+      this.state = 'started';
+      document.getElementById('conv-start').classList.add('hidden');
+      document.getElementById('conv-lines').classList.remove('hidden');
+      this.currentLine = -1;
+      this.nextLine();
+    },
+
+    nextLine() {
+      this.currentLine++;
+      const lines = this.data.conversation.lines;
+
+      if (this.currentLine >= lines.length) {
+        this._onComplete();
+        return;
+      }
+
+      const line = lines[this.currentLine];
+      const isRosalia = line.speaker === 'Rosalia';
+
+      const bubble = this._buildBubble(line, this.currentLine);
+      document.getElementById('conv-lines').appendChild(bubble);
+
+      setTimeout(() => bubble.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 80);
+
+      document.getElementById('conv-next-wrap').classList.remove('hidden');
+      const btn = document.getElementById('conv-next-btn');
+      const isLast = this.currentLine === lines.length - 1;
+
+      if (isRosalia) {
+        btn.disabled = true;
+        btn.style.opacity = '.35';
+        btn.style.cursor = 'not-allowed';
+        this.state = 'rosalia_hidden';
+      } else {
+        btn.disabled = false;
+        btn.style.opacity = '1';
+        btn.style.cursor = '';
+        this.state = 'line';
+      }
+
+      btn.innerHTML = isLast
+        ? 'Terminer <i class="fa-solid fa-check ml-1"></i>'
+        : 'Phrase suivante <i class="fa-solid fa-arrow-right ml-1"></i>';
+    },
+
+    revealFr(lineIdx) {
+      const line = this.data.conversation.lines[lineIdx];
+      const bubble = document.querySelector(`[data-line-idx="${lineIdx}"]`);
+      if (!bubble) return;
+
+      const revealBtn = bubble.querySelector('.btn-reveal');
+      if (revealBtn) revealBtn.style.display = 'none';
+
+      const frEl = document.createElement('p');
+      frEl.className = 'text-frBlue font-bold mt-2 text-sm leading-relaxed';
+      frEl.style.fontFamily = "'Nunito', sans-serif";
+      frEl.textContent = line.fr;
+      bubble.querySelector('.bubble-content').appendChild(frEl);
+
+      this.revealedLines.add(lineIdx);
+      this.state = 'rosalia_revealed';
+
+      const btn = document.getElementById('conv-next-btn');
+      btn.disabled = false;
+      btn.style.opacity = '1';
+      btn.style.cursor = '';
+    },
+
+    _onComplete() {
+      document.getElementById('conv-next-wrap').classList.add('hidden');
+      document.getElementById('conv-listen-wrap').classList.remove('hidden');
+      this.state = 'completed';
+    },
+
+    async playAll() {
+      if (this.state === 'playing') {
+        tts.stop();
+        this._resetListenBtn();
+        this.state = 'completed';
+        return;
+      }
+
+      this.state = 'playing';
+      document.getElementById('conv-listen-icon').className = 'fa-solid fa-stop';
+      document.getElementById('conv-listen-label').textContent = 'Arrêter';
+
+      const sessionId = ++tts._speakId;
+      const lines = this.data.conversation.lines;
+
+      const playLine = async (idx) => {
+        if (tts._speakId !== sessionId) return;
+
+        document.querySelectorAll('[data-line-idx]').forEach(b => b.classList.remove('bubble-speaking'));
+
+        if (idx >= lines.length) {
+          this._resetListenBtn();
+          this.state = 'completed';
+          return;
+        }
+
+        const bubble = document.querySelector(`[data-line-idx="${idx}"]`);
+        if (bubble) {
+          bubble.classList.add('bubble-speaking');
+          bubble.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        await new Promise(resolve => tts._speak(lines[idx].fr, resolve));
+
+        if (tts._speakId !== sessionId) return;
+        await new Promise(r => setTimeout(r, 280));
+        playLine(idx + 1);
+      };
+
+      playLine(0);
+    },
+
+    _resetListenBtn() {
+      document.getElementById('conv-listen-icon').className = 'fa-solid fa-play';
+      document.getElementById('conv-listen-label').textContent = 'Écouter la conversation';
+      document.querySelectorAll('[data-line-idx]').forEach(b => b.classList.remove('bubble-speaking'));
+    },
+
+    _buildBubble(line, idx) {
+      const isRosalia = line.speaker === 'Rosalia';
+      const div = document.createElement('div');
+      div.setAttribute('data-line-idx', idx);
+
+      if (isRosalia) {
+        div.className = 'bubble-right flex items-end gap-2 justify-end';
+        div.innerHTML = `
+          <div class="min-w-0">
+            <p class="text-[10px] font-bold mb-1 text-right" style="color:#FF6B6B; opacity:.7;">Rosalia</p>
+            <div class="bubble-content rounded-2xl rounded-br-sm px-4 py-3 text-sm max-w-xs leading-relaxed"
+                 style="background:rgba(255,107,107,.1); border:1.5px solid rgba(255,107,107,.25);
+                        font-family:'Nunito',sans-serif; color:#2d2d2d;">
+              <p class="text-gray-500 italic text-xs" style="font-family:'Nunito',sans-serif;">${this._esc(line.es)}</p>
+              <button onclick="conv.revealFr(${idx})" class="btn-reveal">
+                <i class="fa-solid fa-eye text-xs"></i>Voir en français
+              </button>
+            </div>
+          </div>
+          <div class="w-8 h-8 rounded-full flex items-center justify-center shrink-0
+                      text-xs font-bold text-white"
+               style="background:#FF6B6B; min-width:2rem;">R</div>`;
+      } else {
+        const initial = line.speaker.charAt(0).toUpperCase();
+        div.className = 'bubble-left flex items-end gap-2';
+        div.innerHTML = `
+          <div class="w-8 h-8 rounded-full flex items-center justify-center shrink-0
+                      text-xs font-bold text-gray-500 bg-gray-200"
+               style="min-width:2rem;">${this._esc(initial)}</div>
+          <div class="min-w-0">
+            <p class="text-[10px] font-bold text-gray-400 mb-1">${this._esc(line.speaker)}</p>
+            <div class="bubble-content bg-gray-100 text-gray-800 rounded-2xl rounded-bl-sm
+                        px-4 py-3 text-sm max-w-xs leading-relaxed"
+                 style="font-family:'Nunito',sans-serif;">
+              ${this._esc(line.fr)}
+            </div>
+          </div>`;
+      }
+
+      return div;
+    },
+
+    _esc(str) {
+      return String(str || '').replace(/&/g,'&amp;').replace(/</g,'&lt;')
+                              .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    }
+  };
+
+  // ════════════════════════════════════════════════════
+  //  Article loader & renderer
+  // ════════════════════════════════════════════════════
+  const article = {
+    data: null,
+
+    async init() {
+      const params = new URLSearchParams(location.search);
+      const id = params.get('id');
+
+      if (!id) {
+        this.renderError('Aucun article spécifié.');
+        return;
+      }
+
+      const base = location.protocol === 'file:'
+        ? 'https://clement-torti.github.io/academie2/'
+        : '';
+
+      try {
+        const res = await fetch(`${base}articles/${id}.json`);
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        this.data = await res.json();
+        this.render();
+      } catch (err) {
+        console.error(err);
+        this.renderError('Impossible de charger l\'article. Vérifiez l\'identifiant ou votre connexion.');
+      }
+    },
+
+    render() {
+      const d = this.data;
+
+      document.getElementById('page-title').textContent = `${d.title} — L'Académie 2`;
+
+      const dateObj = new Date(d.date + 'T00:00:00');
+      document.getElementById('nav-date').textContent =
+        dateObj.toLocaleDateString('fr-FR', { day:'numeric', month:'long', year:'numeric' });
+
+      const img = document.getElementById('hero-img');
+      img.src = d.image.url;
+      img.alt = d.image.alt;
+      img.onerror = () => { img.style.display = 'none'; };
+      document.getElementById('hero-title').textContent = d.title;
+      document.getElementById('hero-category').textContent = d.category || '';
+
+      const vocabGrid = document.getElementById('vocab-grid');
+      vocabGrid.innerHTML = d.vocabulary.map(v => `
+        <div class="vocab-card">
+          <p class="text-[13px] font-bold text-frBlue mb-0.5">${conv._esc(v.fr)}</p>
+          <p class="text-[12px] text-gray-500">${conv._esc(v.es)}</p>
+        </div>`).join('');
+
+      const articleEl = document.getElementById('article-text');
+      const paragraphs = d.article.split('\n\n').filter(p => p.trim());
+      articleEl.innerHTML = paragraphs.map(p => `<p>${conv._esc(p.trim())}</p>`).join('');
+
+      conv.init(d);
+
+      document.getElementById('loader-screen').classList.add('hidden');
+      document.getElementById('article-body').classList.remove('hidden');
+    },
+
+    renderError(msg) {
+      document.getElementById('loader-screen').innerHTML = `
+        <div class="text-center py-24 px-6" style="font-family:'Montserrat',sans-serif;">
+          <i class="fa-solid fa-circle-exclamation text-5xl text-red-300 mb-4 block"></i>
+          <p class="text-gray-500 text-sm mb-4">${conv._esc(msg)}</p>
+          <a href="index.html" class="text-frBlue text-sm underline">
+            ← Retour à l'accueil
+          </a>
+        </div>`;
+    }
+  };
+
+  // Preload voices (avoids first-speak delay on some browsers)
+  window.speechSynthesis.getVoices();
+  article.init();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+{
+  "id": "festival-cannes",
+  "title": "Le Festival de Cannes fête ses 75 ans",
+  "date": "2026-06-07",
+  "category": "Culture",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Cannes_Palais_des_festivals.jpg/1280px-Cannes_Palais_des_festivals.jpg",
+    "alt": "Le Palais des Festivals à Cannes sous le soleil"
+  },
+  "vocabulary": [
+    { "fr": "le palmarès", "es": "la lista de premiados" },
+    { "fr": "la Palme d'or", "es": "la Palma de Oro" },
+    { "fr": "le jury", "es": "el jurado" },
+    { "fr": "un réalisateur", "es": "un director de cine" },
+    { "fr": "une projection", "es": "una proyección" },
+    { "fr": "acclamé", "es": "aclamado" },
+    { "fr": "la montée des marches", "es": "la subida de la escalinata" },
+    { "fr": "incontournable", "es": "imprescindible" },
+    { "fr": "un hommage", "es": "un homenaje" },
+    { "fr": "la sélection officielle", "es": "la selección oficial" }
+  ],
+  "article": "Chaque année au mois de mai, la ville de Cannes devient la capitale du cinéma mondial. Le Festival de Cannes est l'un des événements les plus importants du monde du cinéma. Cette année, il fête ses 75 ans d'existence.\n\nLe festival dure environ deux semaines. Pendant ce temps, des centaines de films sont présentés au public et aux professionnels. Les acteurs, les réalisateurs et les producteurs viennent du monde entier. Ils marchent tous sur le célèbre tapis rouge devant le Palais des Festivals.\n\nLe prix le plus important est la Palme d'or. Un jury composé de personnalités du cinéma choisit le meilleur film. Recevoir la Palme d'or, c'est un honneur immense pour un réalisateur. Le film gagnant devient souvent très populaire dans le monde entier.\n\nMais le festival, ce n'est pas seulement les prix. C'est aussi un lieu de rencontres entre professionnels. Les producteurs cherchent de nouveaux projets. Les acteurs découvrent des rôles intéressants. Et le public peut voir des films avant tout le monde.\n\nCette année, la sélection officielle comprend des films de France, du Japon, du Mexique et d'autres pays. Parmi les films présentés, il y a des comédies, des drames et des documentaires. Le jury a du travail pour choisir le palmarès final.\n\nLe Festival de Cannes est aussi important pour l'économie de la région. Les hôtels et les restaurants sont complets. Les rues sont animées jour et nuit. Des milliers de touristes viennent voir les stars et l'atmosphère unique du festival.",
+  "conversation": {
+    "intro": "Rosalia est en vacances à Nice avec son amie française Léa. Elles parlent du Festival de Cannes qui commence la semaine prochaine. Elles décident peut-être d'aller y faire un tour.",
+    "lines": [
+      { "speaker": "Léa", "fr": "T'as vu que le Festival de Cannes commence la semaine prochaine ?" },
+      { "speaker": "Rosalia", "fr": "Ouais, j'ai lu un article là-dessus. Ça a l'air incroyable !", "es": "Sí, leí un artículo sobre eso. ¡Parece increíble!" },
+      { "speaker": "Léa", "fr": "Tu veux y aller ? On est pas loin de Nice, c'est à une heure en train." },
+      { "speaker": "Rosalia", "fr": "Sérieusement ? On peut y aller comme ça ?", "es": "¿En serio? ¿Podemos ir así sin más?" },
+      { "speaker": "Léa", "fr": "Bah, la montée des marches c'est sur invitation, mais on peut traîner sur la Croisette et voir les gens." },
+      { "speaker": "Rosalia", "fr": "C'est quoi exactement la Croisette ?", "es": "¿Qué es exactamente La Croisette?" },
+      { "speaker": "Léa", "fr": "C'est le boulevard principal de Cannes, au bord de la mer. Tous les hôtels de luxe sont là." },
+      { "speaker": "Rosalia", "fr": "Et on peut voir des stars comme ça, dans la rue ?", "es": "¿Y se puede ver a las estrellas así, por la calle?" },
+      { "speaker": "Léa", "fr": "C'est possible, ouais. L'année dernière ma cousine a vu Cate Blanchett devant son hôtel." },
+      { "speaker": "Rosalia", "fr": "C'est dingue ! Bon, on y va quand ?", "es": "¡Qué locura! Bueno, ¿cuándo vamos?" },
+      { "speaker": "Léa", "fr": "Samedi ? Le train du matin est pas cher." },
+      { "speaker": "Rosalia", "fr": "Samedi c'est parfait pour moi. Je réserve les billets ce soir.", "es": "El sábado me viene perfecto. Esta noche reservo los billetes." },
+      { "speaker": "Léa", "fr": "Super ! Et on mange des trucs sympas sur place, la ville est top pour ça." },
+      { "speaker": "Rosalia", "fr": "J'adore l'idée. T'as des bons restos à recommander ?", "es": "Me encanta la idea. ¿Tienes buenos restaurantes que recomendar?" },
+      { "speaker": "Léa", "fr": "J'en connais un parfait, c'est au bord de l'eau. Tu vas kiffer." }
+    ]
+  }
+}

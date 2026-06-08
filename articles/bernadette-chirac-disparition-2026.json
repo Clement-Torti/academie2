@@ -1,0 +1,45 @@
+{
+  "id": "bernadette-chirac-disparition-2026",
+  "title": "Bernadette Chirac, une vie au service de la politique française",
+  "date": "2026-06-08",
+  "category": "Société",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bernadette_Chirac_1_(2009)_(cropped).jpg",
+    "alt": "Portrait de Bernadette Chirac, ancienne première dame de France"
+  },
+  "vocabulary": [
+    { "fr": "le dévouement", "es": "la dedicación" },
+    { "fr": "l'aristocratie", "es": "la aristocracia" },
+    { "fr": "se fiancer", "es": "comprometerse en matrimonio" },
+    { "fr": "le député", "es": "el diputado" },
+    { "fr": "l'ancrage politique", "es": "el arraigo político" },
+    { "fr": "réélire", "es": "reelegir" },
+    { "fr": "l'instinct politique", "es": "el olfato político" },
+    { "fr": "la dissolution", "es": "la disolución" },
+    { "fr": "la collecte de fonds", "es": "la recaudación de fondos" },
+    { "fr": "la retenue", "es": "la discreción, la moderación" },
+    { "fr": "la marraine", "es": "la madrina" },
+    { "fr": "le grand public", "es": "el gran público" }
+  ],
+  "article": "Bernadette Chirac, née Chodron de Courcel le 18 mai 1933 à Paris, est décédée le 5 juin 2026. Elle avait 93 ans. Son mari, l'ancien président français Jacques Chirac, était mort en 2019. Pendant près de 45 ans, elle a accompagné sa carrière politique avec un dévouement total. La France perd une femme discrète mais très influente. Elle a joué un rôle essentiel derrière son mari, mais aussi comme une personnalité publique à part entière.\n\nBernadette venait d'une famille aristocrate et catholique. Elle a rencontré Jacques Chirac en 1951, à Sciences-Po, une grande école de sciences politiques à Paris. Les deux étudiants se sont rapidement liés d'amitié. Jacques était charmant et très ambitieux. Ils se sont fiancés en octobre 1953 et se sont mariés le 16 mars 1956 à Paris. Le couple a eu deux filles : Laurence, née en 1958, et Claude, née en 1962.\n\nLa politique n'était pas prévue dans leur vie de couple. Mais Jacques Chirac a très vite montré ses ambitions. Il a rejoint le gouvernement en 1962, puis il a été élu député en Corrèze en 1967. Bernadette ne s'intéressait pas au début à la politique. Mais elle a compris que c'était la grande passion de son mari. « Je me suis sentie obligée de m'accrocher à lui comme une moule à son rocher », a-t-elle dit. Elle a soutenu toutes ses campagnes et l'a accompagné partout.\n\nEn 1979, elle a accepté de se présenter au Conseil général de Corrèze. Son mari avait besoin de garder un ancrage dans la région pendant ses fonctions à Paris. Elle a été élue et réélue cinq fois d'affilée, jusqu'en 2015. Elle s'est consacrée au développement économique et agricole du département. Elle circulait dans la région au volant de sa Peugeot 205 rouge, proche des gens. Les habitants de Corrèze l'appréciaient et lui faisaient confiance.\n\nBernadette Chirac était connue pour son instinct politique affûté. En 2002, elle a prévu que Jean-Marie Le Pen passerait au second tour des élections présidentielles. Elle était la seule dans l'entourage de son mari à l'avoir prédit. En 1997, elle s'était opposée à la dissolution de l'Assemblée nationale. Cette décision avait coûté sa majorité à Jacques Chirac. Son sens politique et son jugement étaient très respectés.\n\nAu fil des années, elle a développé une image plus proche des Français. Depuis 1994, elle organisait la campagne des Pièces Jaunes pour les enfants malades à l'hôpital. Elle était aussi la marraine de la Maison de Solenn. Ce centre accueillait des adolescents souffrant de dépression ou d'anorexie. Sa fille aînée Laurence avait elle-même souffert de ces maladies. Laurence est décédée en 2016, à l'âge de 58 ans.\n\nEn 2001, Bernadette Chirac a publié un livre d'entretiens, « Conversations », vendu à 500 000 exemplaires. Elle y parlait de sa vie et de la maladie de sa fille. Avec beaucoup de retenue, elle évoquait aussi les infidélités de son mari. Ce livre l'a rendue très populaire auprès du grand public. Jusqu'à la fin de sa vie, elle est restée une figure respectée et aimée de la politique française.",
+  "conversation": {
+    "intro": "Sophie et Rosalia sont à la cafétéria de l'université. Rosalia a lu un article sur la mort de Bernadette Chirac et elle veut en savoir plus sur cette femme. Elle demande à son amie Sophie de lui expliquer qui elle était.",
+    "lines": [
+      { "speaker": "Sophie", "fr": "T'as vu aux infos ? Bernadette Chirac est décédée hier." },
+      { "speaker": "Rosalia", "fr": "Oui, j'ai vu ça. Mais je ne sais pas vraiment qui elle était.", "es": "Sí, lo vi. Pero no sé bien quién era en realidad." },
+      { "speaker": "Sophie", "fr": "C'était la femme de l'ancien président Chirac, elle était très influente." },
+      { "speaker": "Rosalia", "fr": "Elle faisait quoi, à part être l'épouse du président ?", "es": "¿Qué hacía, además de ser la esposa del presidente?" },
+      { "speaker": "Sophie", "fr": "Elle était élue politique en Corrèze pendant plus de 35 ans !" },
+      { "speaker": "Rosalia", "fr": "C'est quoi la Corrèze ? C'est une grande région ?", "es": "¿Qué es la Corrèze? ¿Es una región grande?" },
+      { "speaker": "Sophie", "fr": "Non, c'est un petit département au centre de la France, leur fief politique." },
+      { "speaker": "Rosalia", "fr": "Alors elle avait vraiment sa propre carrière politique ?", "es": "¿Entonces tenía de verdad su propia carrera política?" },
+      { "speaker": "Sophie", "fr": "Oui ! Et elle avait un très bon instinct, meilleur que celui de son mari." },
+      { "speaker": "Rosalia", "fr": "Tu peux me donner un exemple de cet instinct ?", "es": "¿Puedes darme un ejemplo de ese olfato político?" },
+      { "speaker": "Sophie", "fr": "En 2002, elle a prévu Le Pen au second tour. Personne d'autre ne l'avait vu !" },
+      { "speaker": "Rosalia", "fr": "Impressionnant ! Elle était connue pour autre chose aussi ?", "es": "¡Impresionante! ¿Era conocida por algo más también?" },
+      { "speaker": "Sophie", "fr": "Oui, elle organisait la campagne des Pièces Jaunes pour les enfants malades." },
+      { "speaker": "Rosalia", "fr": "C'est une belle cause. Elle semble vraiment remarquable.", "es": "Es una causa hermosa. Parece una mujer realmente notable." },
+      { "speaker": "Sophie", "fr": "Les Français l'adoraient. Elle a beaucoup fait pour les gens ordinaires." }
+    ]
+  }
+}

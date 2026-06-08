@@ -157,8 +157,8 @@
                                class="px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-frBlue">
                     </label>
                     <label class="flex flex-col gap-1">
-                        <span class="text-xs font-bold text-gray-600">Phrases à traduire par session</span>
-                        <input type="number" id="cfg-sentences" min="5" max="50" step="1"
+                        <span class="text-xs font-bold text-gray-600">Nouvelles phrases générées par session</span>
+                        <input type="number" id="cfg-sentences" min="1" max="20" step="1"
                                class="px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-frBlue">
                     </label>
                     <button id="cfg-save-btn" onclick="home.saveConfig()"
@@ -560,7 +560,7 @@ const home = {
     showConfig() {
         const cfg = this.cfg;
         document.getElementById('cfg-words').value     = cfg.wordsPerDay        || 300;
-        document.getElementById('cfg-sentences').value = cfg.sentencesPerSession || 10;
+        document.getElementById('cfg-sentences').value = cfg.newSentencesPerDay || 5;
         document.getElementById('vocab-count').textContent = `${this.vocab.length} mots`;
         this.renderKeysList();
         document.getElementById('config-modal').classList.remove('hidden');
@@ -569,10 +569,10 @@ const home = {
 
     saveConfig() {
         const w = parseInt(document.getElementById('cfg-words').value)     || 300;
-        const s = parseInt(document.getElementById('cfg-sentences').value) || 10;
+        const s = parseInt(document.getElementById('cfg-sentences').value) || 5;
         localStorage.setItem('acad2_config', JSON.stringify({
-            wordsPerDay:         Math.max(50,  Math.min(2000, w)),
-            sentencesPerSession: Math.max(5,   Math.min(50,   s))
+            wordsPerDay:        Math.max(50, Math.min(2000, w)),
+            newSentencesPerDay: Math.max(1,  Math.min(20,   s))
         }));
         const btn = document.getElementById('cfg-save-btn');
         const orig = btn.innerHTML;

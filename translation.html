@@ -137,6 +137,8 @@ function shuffleArray(array) {
     return a;
 }
 
+const SENTENCES_KEY = 'acad_trans_sentences';
+
 const trans = {
 
     container: document.getElementById('app'),
@@ -152,7 +154,7 @@ const trans = {
 
     // ── Accesseurs ───────────────────────────────────────────────
     get cfg() { return JSON.parse(localStorage.getItem('acad2_config') || '{}'); },
-    get sentencesTarget() { return this.cfg.sentencesPerSession || 10; },
+    get X()   { return this.cfg.newSentencesPerDay || 5; },
 
     getGeminiKeys() {
         try { return JSON.parse(localStorage.getItem('acad_gemini_keys') || '[]').filter(k => k?.trim()); }
@@ -178,7 +180,7 @@ const trans = {
     },
 
     // ════════════════════════════════════════════════════════════
-    //  GÉNÉRATION DES PHRASES (adapté v1)
+    //  GÉNÉRATION + POOL SRS
     // ════════════════════════════════════════════════════════════
     async generateAndStart() {
         this.container.innerHTML = `
@@ -188,16 +190,12 @@ const trans = {
             </div>`;
 
         const vocab = JSON.parse(localStorage.getItem('acad_user_vocab') || '[]');
+        const X = this.X;
 
-        const COUNTER_KEY = 'acad_trans_counter';
-        const HISTORY_KEY = 'acad_trans_history';
-        const REVIEW_OFFSETS = [1, 3, 6, 19];
+        // Load stored sentences, prune expired ones
+        let stored = JSON.parse(localStorage.getItem(SENTENCES_KEY) || '[]');
+        stored = stored.filter(s => s.number <= 14);
 
-        const currentCount = parseInt(localStorage.getItem(COUNTER_KEY) || '0');
-        const rawHistory   = JSON.parse(localStorage.getItem(HISTORY_KEY) || '[]');
-        const activeHistory = rawHistory.filter(s => currentCount - s.date <= 19);
-
-        const target = this.sentencesTarget;
         let newSentences = [];
 
         const setStatus = msg => {
@@ -206,16 +204,15 @@ const trans = {
         };
 
         if (vocab.length > 0) {
-            const allTenses   = ['present','pc','imparfait','futur_proche','futur','conditionnel','imperatif'];
-            const tenseNames  = { present:'présent', pc:'passé composé', imparfait:'imparfait',
+            const allTenses  = ['present','pc','imparfait','futur_proche','futur','conditionnel','imperatif'];
+            const tenseNames = { present:'présent', pc:'passé composé', imparfait:'imparfait',
                 futur_proche:'futur proche', futur:'futur simple',
                 conditionnel:'conditionnel', imperatif:'impératif' };
-            const nbNew = Math.min(target, 10); // max 10s nouvelles par session
 
-            const selected    = shuffleArray(vocab).slice(0, Math.min(nbNew, vocab.length));
-            const chosenTenses= shuffleArray(allTenses).slice(0, selected.length);
-            const wordList    = selected.map((w,i) => `${i+1}. ${w.fr} (español: ${w.es})`).join('\n');
-            const tenseList   = chosenTenses.map((t,i) => `frase ${i+1}: ${tenseNames[t]}`).join(', ');
+            const selected     = shuffleArray(vocab).slice(0, Math.min(X, vocab.length));
+            const chosenTenses = shuffleArray(allTenses).slice(0, selected.length);
+            const wordList     = selected.map((w,i) => `${i+1}. ${w.fr} (español: ${w.es})`).join('\n');
+            const tenseList    = chosenTenses.map((t,i) => `frase ${i+1}: ${tenseNames[t]}`).join(', ');
 
             const prompt = `Eres un profesor de francés. Genera exactamente ${selected.length} frases en francés usando las palabras de abajo.
 
@@ -267,11 +264,11 @@ FRASE2|pc|Nous avons visité Paris.|Hemos visitado París. (nous)`;
                         for (const line of raw.trim().split('\n')) {
                             const parts = line.trim().split('|').map(s => s.trim());
                             if (parts.length === 4 && /^FRASE\d+$/i.test(parts[0]))
-                                newSentences.push({ tense:parts[1], french:parts[2], spanish:parts[3], date:currentCount });
+                                newSentences.push({ tense:parts[1], french:parts[2], spanish:parts[3], number:0 });
                             else if (parts.length === 3 && /^FRASE\d+$/i.test(parts[0]))
-                                newSentences.push({ french:parts[1], spanish:parts[2], date:currentCount });
+                                newSentences.push({ french:parts[1], spanish:parts[2], number:0 });
                             else if (parts.length === 2 && parts[0].length > 3 && parts[1].length > 3)
-                                newSentences.push({ french:parts[0], spanish:parts[1], date:currentCount });
+                                newSentences.push({ french:parts[0], spanish:parts[1], number:0 });
                         }
                     }
                     if (newSentences.length >= selected.length) break;
@@ -280,25 +277,27 @@ FRASE2|pc|Nous avons visité Paris.|Hemos visitado París. (nous)`;
             }
         }
 
-        // Sauvegarder nouvelles phrases
+        // Persist new sentences
         if (newSentences.length > 0) {
-            const updated = [...activeHistory, ...newSentences];
-            localStorage.setItem(HISTORY_KEY, JSON.stringify(updated));
-            localStorage.setItem(COUNTER_KEY, String(currentCount + 1));
+            stored = [...stored, ...newSentences];
+            localStorage.setItem(SENTENCES_KEY, JSON.stringify(stored));
         }
 
-        // Répétition espacée : phrases dues
-        const due = activeHistory.filter(s => REVIEW_OFFSETS.includes(currentCount - s.date));
-        let pool  = [...newSentences, ...due];
+        // Build SRS pool: X new + X at day 3 + X at day 7 + X at day 14
+        const at3  = shuffleArray(stored.filter(s => s.number === 3)).slice(0, X);
+        const at7  = shuffleArray(stored.filter(s => s.number === 7)).slice(0, X);
+        const at14 = shuffleArray(stored.filter(s => s.number === 14)).slice(0, X);
 
-        // Compléter jusqu'à target avec l'historique
-        if (pool.length < target) {
+        let pool = [...newSentences.slice(0, X), ...at3, ...at7, ...at14];
+
+        // Fill up to 4X with random not-yet-selected sentences
+        if (pool.length < 4 * X) {
             const already = new Set(pool.map(s => s.french));
-            const filler  = shuffleArray(activeHistory.filter(s => !already.has(s.french)));
-            pool.push(...filler.slice(0, target - pool.length));
+            const filler  = shuffleArray(stored.filter(s => !already.has(s.french)));
+            pool.push(...filler.slice(0, 4 * X - pool.length));
         }
 
-        this.sentences = shuffleArray(pool).slice(0, target);
+        this.sentences = shuffleArray(pool);
         this.currentIdx = 0;
 
         if (this.sentences.length === 0) {
@@ -533,8 +532,8 @@ FRASE2|pc|Nous avons visité Paris.|Hemos visitado París. (nous)`;
             btn.innerHTML = `<i class="fa-solid fa-check text-[10px]"></i> Corrigé`;
             btn.className = 'mt-2 flex items-center gap-1.5 mx-auto text-[11px] text-green-600 px-2 py-1 rounded-full border border-green-200 bg-green-50 cursor-default';
 
-            // Persister dans l'historique
-            const history = JSON.parse(localStorage.getItem('acad_trans_history') || '[]');
+            // Persist correction
+            const history = JSON.parse(localStorage.getItem(SENTENCES_KEY) || '[]');
             for (let i = history.length - 1; i >= 0; i--) {
                 if (history[i].french === origFr) {
                     history[i].french  = s.french;
@@ -542,7 +541,7 @@ FRASE2|pc|Nous avons visité Paris.|Hemos visitado París. (nous)`;
                     break;
                 }
             }
-            localStorage.setItem('acad_trans_history', JSON.stringify(history));
+            localStorage.setItem(SENTENCES_KEY, JSON.stringify(history));
             this.speakFrench(s.french);
         } catch {
             btn.disabled = false;
@@ -566,11 +565,11 @@ FRASE2|pc|Nous avons visité Paris.|Hemos visitado París. (nous)`;
 
             // Sauvegarder failed words
             try {
-                const h = JSON.parse(localStorage.getItem('acad_trans_history') || '[]');
+                const h = JSON.parse(localStorage.getItem(SENTENCES_KEY) || '[]');
                 for (let i = h.length-1; i >= 0; i--) {
                     if (h[i].french === s.french) { h[i].failedWords = failed; break; }
                 }
-                localStorage.setItem('acad_trans_history', JSON.stringify(h));
+                localStorage.setItem(SENTENCES_KEY, JSON.stringify(h));
             } catch {}
 
             if (this.answerRevealed && failed.length === 0 && window.confetti) {
@@ -620,6 +619,12 @@ FRASE2|pc|Nous avons visité Paris.|Hemos visitado París. (nous)`;
         }
         localStorage.setItem('acad2_days', JSON.stringify(days));
         localStorage.setItem('acad2_stats', JSON.stringify(stats));
+
+        // Increment every stored sentence's number and prune those past day 14
+        const allSentences = JSON.parse(localStorage.getItem(SENTENCES_KEY) || '[]');
+        localStorage.setItem(SENTENCES_KEY, JSON.stringify(
+            allSentences.map(s => ({ ...s, number: s.number + 1 })).filter(s => s.number <= 14)
+        ));
 
         // Résumé
         const avg = this.sessionTimes.length

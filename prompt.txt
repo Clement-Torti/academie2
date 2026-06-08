@@ -48,14 +48,14 @@ RÈGLES DÉTAILLÉES PAR CHAMP
 - Exemples : "festival-cannes-2026", "intelligence-artificielle-sante"
 
 ### vocabulary
-- Entre 8 et 12 mots EXACTEMENT (ni plus, ni moins)
+- Entre 5 et 10 mots EXACTEMENT (ni plus, ni moins)
 - Choisis des mots présents dans l'article, utiles et non triviaux
 - Évite les mots de niveau A1 déjà connus (maison, voiture, manger, etc.)
 - Le champ "fr" peut être un mot seul ou une expression (ex : "la montée des marches")
 - Le champ "es" est la traduction naturelle en espagnol (pas forcément mot à mot)
 
 ### article
-- Longueur : 500 à 600 mots EXACTEMENT. Compte les mots avant de soumettre.
+- Longueur : 550 à 650 mots EXACTEMENT. Compte les mots avant de soumettre.
 - Structure : 5 à 7 paragraphes logiques, séparés par \n\n (deux barres obliques inverses + n dans le JSON)
 - Chaque phrase : sujet + verbe + complément. Pas de phrases composées avec plusieurs virgules.
 - Temps privilégiés : présent de l'indicatif et passé composé

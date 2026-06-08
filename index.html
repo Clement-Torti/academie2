@@ -653,6 +653,16 @@ const home = {
 };
 
 home.init();
+
+// Re-render on back-navigation (browser restores page from bfcache without re-running init)
+window.addEventListener('pageshow', (event) => {
+    if (event.persisted) {
+        home.renderStreak();
+        home.renderStats();
+        home.renderCharts();
+        home.renderTimeline();
+    }
+});
 </script>
 </body>
 </html>

@@ -1,0 +1,45 @@
+{
+  "id": "simone-biles-hospitalisation-2026",
+  "title": "Simone Biles hospitalisée : « L'une des expériences les plus effrayantes de ma vie »",
+  "date": "2026-06-07",
+  "category": "Sport",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Simone_Biles_2016b.jpg",
+    "alt": "Simone Biles lors des Jeux olympiques de 2016"
+  },
+  "vocabulary": [
+    { "fr": "inquiéter", "es": "preocupar" },
+    { "fr": "effrayant(e)", "es": "aterrador(a)" },
+    { "fr": "failli mourir", "es": "casi morir" },
+    { "fr": "être hospitalisé(e)", "es": "estar hospitalizado/a" },
+    { "fr": "un bracelet d'hôpital", "es": "una pulsera de hospital" },
+    { "fr": "garder le repos", "es": "guardar reposo" },
+    { "fr": "confier", "es": "confiar / contar" },
+    { "fr": "la vie privée", "es": "la vida privada" },
+    { "fr": "une icône", "es": "un ícono" },
+    { "fr": "le rétablissement", "es": "la recuperación" },
+    { "fr": "dévoiler", "es": "revelar" },
+    { "fr": "une urgence médicale", "es": "una urgencia médica" }
+  ],
+  "article": "Simone Biles a inquiété ses millions de fans cette semaine. La gymnaste américaine a partagé un message surprenant sur ses réseaux sociaux. Elle a révélé qu'elle a vécu une expérience très grave et très effrayante. Ses abonnés et les médias ont été très choqués par ses mots.\n\nSimone Biles est l'une des meilleures gymnastes de tous les temps. Elle a 29 ans et elle vit aux États-Unis. Elle a remporté onze médailles olympiques au cours de sa carrière exceptionnelle. C'est un record qui fait d'elle une légende du sport mondial. En 2021, elle a pris une décision courageuse : elle s'est retirée des Jeux olympiques de Tokyo pour protéger sa santé mentale. Ce geste fort a inspiré beaucoup de sportifs et de sportives dans le monde entier. Elle est aujourd'hui une véritable icône du sport féminin.\n\nDans sa vie personnelle, Simone Biles est mariée au joueur de football américain Jonathan Owens. Le couple s'est marié en mai 2023. Ils vivent ensemble à Spring, une ville près de Houston, au Texas. Jonathan voyage souvent pour ses entraînements et ses matchs. Ils forment un couple très populaire aux États-Unis.\n\nCette semaine, Jonathan était à Indianapolis pour s'entraîner. Simone était seule chez elle. C'est pendant cette période qu'un incident grave s'est produit. La gymnaste a posté des photos sur Instagram pour informer ses fans. Sur une des photos, on peut voir plusieurs bracelets d'hôpital à son poignet droit. Elle a aussi écrit un long message pour expliquer sa situation à ses abonnés. Cela montre clairement qu'elle a eu besoin de soins médicaux urgents.\n\n\"Normalement, je ne parle pas de ce genre de choses, parce que je protège beaucoup ma vie privée\", a-t-elle écrit. Mais cette fois, elle a fait une exception. \"J'ai failli mourir au début de cette semaine\", a-t-elle confié à ses abonnés. \"C'est l'une des expériences les plus effrayantes de ma vie, si ce n'est la plus effrayante\", a-t-elle ajouté. Elle a promis de dévoiler toute l'histoire un jour, mais elle n'est pas encore prête.\n\nDepuis cet incident, les médecins lui ont conseillé de garder le repos absolu. Simone a donc passé plusieurs jours au lit chez elle, sans faire d'exercice. Elle a partagé d'autres photos sur ses réseaux sociaux : un grand bouquet de fleurs envoyé par ses proches, et une image d'elle allongée avec ses chiens. Elle a aussi montré une capture de son rythme cardiaque avant de dormir. Ces images ont rassuré ses nombreux fans, qui s'inquiétaient pour elle. Pour finir, elle a remercié ses amis et sa famille : \"Vous m'avez appelée, rendu visite ou envoyé des fleurs. Je vous aime beaucoup.\"\n\nEn avril 2026, Simone était à Madrid pour les Laureus Awards, une grande cérémonie sportive. Des journalistes lui ont demandé si elle comptait participer aux Jeux olympiques de Los Angeles en 2028. Elle n'a pas répondu clairement. Elle n'a pas non plus annoncé sa retraite de façon officielle. Mais depuis quelque temps, elle ne participe plus à des compétitions de haut niveau. Ses fans du monde entier lui souhaitent un bon rétablissement et espèrent la revoir bientôt.",
+  "conversation": {
+    "intro": "Rosalia et Léa sont dans un café. Rosalia lit les nouvelles sur son téléphone et découvre le message de Simone Biles. Elle en parle à Léa, qui connaît bien la gymnaste américaine.",
+    "lines": [
+      { "speaker": "Léa", "fr": "T'as vu ce que Simone Biles a posté cette semaine ?" },
+      { "speaker": "Rosalia", "fr": "Non, j'ai pas encore regardé. Elle a dit quoi ?", "es": "No, todavía no lo vi. ¿Qué dijo?" },
+      { "speaker": "Léa", "fr": "Elle dit qu'elle a failli mourir au début de la semaine." },
+      { "speaker": "Rosalia", "fr": "C'est vrai ? Ça me fait peur. Elle va bien maintenant ?", "es": "¿En serio? Eso me asusta. ¿Está bien ahora?" },
+      { "speaker": "Léa", "fr": "Oui, elle se repose chez elle, par ordre des médecins." },
+      { "speaker": "Rosalia", "fr": "Mais qu'est-ce qui lui est arrivé exactement ? Je veux comprendre.", "es": "¿Pero qué le pasó exactamente? Quiero entender." },
+      { "speaker": "Léa", "fr": "Elle n'a pas voulu expliquer. Elle a dit qu'elle racontera plus tard." },
+      { "speaker": "Rosalia", "fr": "Et son mari, il était là quand c'est arrivé ?", "es": "¿Y su marido estaba ahí cuando pasó?" },
+      { "speaker": "Léa", "fr": "Non, justement. Jonathan était à Indianapolis pour ses entraînements." },
+      { "speaker": "Rosalia", "fr": "Oh non, elle était toute seule… C'est vraiment effrayant.", "es": "Oh no, estaba completamente sola… Eso da mucho miedo." },
+      { "speaker": "Léa", "fr": "Ouais. Mais ses amis lui ont envoyé des fleurs, c'est touchant." },
+      { "speaker": "Rosalia", "fr": "Elle a quand même posté des photos de l'hôpital ?", "es": "¿Y de todas formas publicó fotos del hospital?" },
+      { "speaker": "Léa", "fr": "Elle a montré des bracelets d'hôpital. Donc elle a bien été hospitalisée." },
+      { "speaker": "Rosalia", "fr": "J'espère qu'elle va se remettre vite. Elle est très courageuse.", "es": "Espero que se recupere rápido. Es muy valiente." },
+      { "speaker": "Léa", "fr": "Moi aussi. Et j'espère qu'on la reverra un jour en compétition !" }
+    ]
+  }
+}

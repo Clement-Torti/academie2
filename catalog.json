@@ -1,5 +1,12 @@
 [
   {
+    "id": "simone-biles-hospitalisation-2026",
+    "title": "Simone Biles hospitalisée : « L'une des expériences les plus effrayantes de ma vie »",
+    "date": "2026-06-07",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Simone_Biles_2016b.jpg",
+    "category": "Sport"
+  },
+  {
     "id": "kim-kardashian-brundle-monaco-f1-2026",
     "title": "Kim Kardashian ignore Martin Brundle au Grand Prix de Monaco",
     "date": "2026-06-07",
@@ -10,7 +17,7 @@
     "id": "psg-champions-league-emeutes-france-2026",
     "title": "Plus de 200 blessés et des centaines d'arrestations après la victoire du PSG en Ligue des Champions",
     "date": "2026-05-31",
-    "image": "https://images.unsplash.com/photo-1504222490345-c075b626831c?w=1280&q=80",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris_Parc_des_Princes_1.jpg",
     "category": "Société"
   }
 ]

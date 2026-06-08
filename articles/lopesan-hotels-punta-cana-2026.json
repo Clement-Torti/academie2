@@ -1,0 +1,44 @@
+{
+  "id": "lopesan-hotels-punta-cana-2026",
+  "title": "Lopesan ouvre trois nouveaux hôtels à Punta Cana",
+  "date": "2026-03-25",
+  "category": "Voyage",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Punta_Cana.jpg",
+    "alt": "Vue aérienne de la plage de Punta Cana en République dominicaine"
+  },
+  "vocabulary": [
+    { "fr": "la chaîne hôtelière", "es": "la cadena hotelera" },
+    { "fr": "l'inauguration", "es": "la inauguración" },
+    { "fr": "le complexe hôtelier", "es": "el complejo hotelero" },
+    { "fr": "doubler la capacité", "es": "duplicar la capacidad" },
+    { "fr": "le segment premium", "es": "el segmento premium" },
+    { "fr": "le centre de conventions", "es": "el centro de convenciones" },
+    { "fr": "la lagune artificielle", "es": "la laguna artificial" },
+    { "fr": "réservé aux adultes", "es": "exclusivo para adultos" },
+    { "fr": "le parc aquatique", "es": "el parque acuático" },
+    { "fr": "le cénote", "es": "el cenote" },
+    { "fr": "tout inclus", "es": "todo incluido" }
+  ],
+  "article": "La République dominicaine est une destination touristique très populaire dans les Caraïbes. Chaque année, des millions de voyageurs du monde entier visitent ses plages de sable blanc et ses grands hôtels. Le tourisme représente une part importante de l'économie du pays. En 2026, une grande chaîne hôtelière espagnole a annoncé l'ouverture de trois nouveaux complexes luxueux dans la région de Punta Cana.\n\nLe groupe Lopesan Hotel Group a présenté ce projet lors d'un événement à Buenos Aires, en Argentine. Jean Dorville, directeur des ventes pour l'Amérique latine, a présenté les hôtels à des agences de voyages et des tour-opérateurs. Les trois établissements vont ouvrir à partir du mois de mai 2026. Avec ces nouvelles ouvertures, le groupe va presque doubler sa capacité à Punta Cana et passer de plus de mille à plus de deux mille chambres.\n\nLe premier hôtel s'appelle Lopesan Caoba Lagoon Resort, Spa & Casino. Cet établissement est destiné aux voyageurs du segment premium et aux clients professionnels. Il sera connecté à un grand centre de conventions qui ouvrira en 2027. C'est une option idéale pour les conférences internationales et les voyages d'affaires. Jean Dorville a souligné que cet hôtel va attirer des entreprises et des voyageurs de luxe du monde entier.\n\nLe deuxième hôtel est le Lopesan Splash Cove Resort, Spa & Casino. Cet établissement est conçu spécialement pour les familles avec enfants. Il propose des parcs aquatiques modernes, une piscine à vagues et des chambres spacieuses adaptées aux familles nombreuses. Les enfants et les adolescents ont accès à des clubs d'activités avec de nombreux programmes de divertissement. Les parents apprécieront aussi la sécurité et les nombreux services adaptés aux familles.\n\nLe troisième hôtel est le Lopesan Serenity Bay Resort, Spa & Casino. Ce complexe est réservé uniquement aux adultes. Il offre une ambiance calme et une expérience exclusive. Les clients de cet hôtel peuvent aussi accéder aux installations des deux autres complexes, comme les parcs aquatiques, les restaurants et les espaces de loisirs. C'est l'option parfaite pour les couples qui cherchent calme et luxe.\n\nLes trois hôtels partagent plusieurs attractions innovantes. La plus remarquable est une lagune artificielle de plus de cinq mille mètres carrés. Cette lagune fonctionne comme le cœur social des complexes. Autour d'elle, on trouve des cénotes artificiels avec des cascades et des espaces naturels recreés. Ces éléments offrent une expérience unique dans les Caraïbes. Un boulevard avec des restaurants, des boutiques et des espaces de divertissement complète l'ensemble.\n\nLopesan a présenté son concept «Endless Luxury», que l'on peut traduire par «Luxe sans fin». Ce concept inclut la gastronomie illimitée, des boissons premium, une connexion internet totale et des expériences personnalisées pour chaque client. L'objectif est de proposer des vacances complètes sans dépenses supplémentaires. En 2026 et 2027, la chaîne veut toucher différents profils de voyageurs : les familles, les couples, les professionnels et les amateurs de luxe. La République dominicaine continue ainsi de renforcer sa réputation comme grande destination touristique internationale.",
+  "conversation": {
+    "intro": "Rosalia et son amie Sophie prennent un café à Paris. Sophie montre à Rosalia une actualité sur son téléphone : un groupe espagnol va ouvrir trois nouveaux hôtels à Punta Cana.",
+    "lines": [
+      { "speaker": "Sophie", "fr": "Hé Rosalia, regarde ! Trois nouveaux hôtels vont ouvrir à Punta Cana." },
+      { "speaker": "Rosalia", "fr": "Punta Cana ? C'est en République dominicaine, non ?", "es": "¿Punta Cana? Eso está en República Dominicana, ¿verdad?" },
+      { "speaker": "Sophie", "fr": "Exactement ! C'est une chaîne espagnole qui s'appelle Lopesan." },
+      { "speaker": "Rosalia", "fr": "Je connais pas cette chaîne. C'est quoi comme hôtels ?", "es": "No conozco esa cadena. ¿Qué tipo de hoteles son?" },
+      { "speaker": "Sophie", "fr": "Y'en a un pour les familles, un pour les adultes seulement, et un pour les pros." },
+      { "speaker": "Rosalia", "fr": "Un hôtel juste pour adultes ? Ça doit être super tranquille !", "es": "¿Un hotel solo para adultos? ¡Debe ser muy tranquilo!" },
+      { "speaker": "Sophie", "fr": "Oui, et ils partagent une grande lagune artificielle de cinq mille mètres carrés !" },
+      { "speaker": "Rosalia", "fr": "Une lagune artificielle ? C'est quoi exactement ?", "es": "¿Una laguna artificial? ¿Qué es eso exactamente?" },
+      { "speaker": "Sophie", "fr": "C'est une grande piscine naturelle avec des cascades et des cénotes recreés." },
+      { "speaker": "Rosalia", "fr": "Des cénotes ! J'adore ça, au Mexique y'en a plein.", "es": "¡Los cenotes! Me encantan, en México hay muchísimos." },
+      { "speaker": "Sophie", "fr": "Le concept s'appelle «Endless Luxury», tout est inclus sans limite." },
+      { "speaker": "Rosalia", "fr": "Gastronomie illimitée et boissons premium ? C'est parfait pour des vacances !", "es": "¿Gastronomía ilimitada y bebidas premium? ¡Es perfecto para unas vacaciones!" },
+      { "speaker": "Sophie", "fr": "Ils ouvrent en mai 2026. T'aurais envie d'y aller ?" },
+      { "speaker": "Rosalia", "fr": "Oui ! On pourrait aller à l'hôtel pour adultes toutes les deux ?", "es": "¡Sí! ¿Podríamos ir al hotel para adultos las dos juntas?" },
+      { "speaker": "Sophie", "fr": "Bonne idée ! Je regarde les prix ce soir et je t'envoie les infos." }
+    ]
+  }
+}

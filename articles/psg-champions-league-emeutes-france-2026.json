@@ -1,0 +1,43 @@
+{
+  "id": "psg-champions-league-emeutes-france-2026",
+  "title": "Plus de 200 blessés et des centaines d'arrestations après la victoire du PSG en Ligue des Champions",
+  "date": "2026-05-31",
+  "category": "Société",
+  "image": {
+    "url": "https://images.unsplash.com/photo-1504222490345-c075b626831c?w=1280&q=80",
+    "alt": "Foule de supporters dans une ville la nuit"
+  },
+  "vocabulary": [
+    { "fr": "les émeutes", "es": "los disturbios" },
+    { "fr": "les affrontements", "es": "los enfrentamientos" },
+    { "fr": "les forces de l'ordre", "es": "las fuerzas del orden" },
+    { "fr": "les blessés", "es": "los heridos" },
+    { "fr": "la garde à vue", "es": "la detención preventiva" },
+    { "fr": "les gaz lacrymogènes", "es": "los gases lacrimógenos" },
+    { "fr": "les fauteurs de troubles", "es": "los alborotadores" },
+    { "fr": "le défilé de la victoire", "es": "el desfile de la victoria" },
+    { "fr": "interpeller", "es": "detener / arrestar" },
+    { "fr": "dégénérer", "es": "degenerar / descontrolarse" }
+  ],
+  "article": "Le Paris Saint-Germain a remporté la finale de la Ligue des Champions, samedi 30 mai 2026, en battant Arsenal aux tirs au but. La rencontre s'est jouée à Budapest, en Hongrie. Mais la victoire a déclenché de violents affrontements entre des supporters et la police dans plusieurs villes de France.\n\nAu total, 219 personnes ont été blessées selon les autorités. Le ministre de l'Intérieur Laurent Nuñez a précisé que huit d'entre elles se trouvaient dans un état grave. Cinquante-sept policiers ont également été blessés lors des heurts.\n\nDes milliers d'agents ont été déployés dans Paris pour contenir les débordements, qui ont perturbé les lignes de bus et de métro dans la capitale. Le ministre a annoncé que 780 personnes avaient été interpellées et que plus de 450 se trouvaient en garde à vue.\n\nUn homme a été retrouvé mort après un accident survenu sur le boulevard périphérique de Paris, que des fauteurs de troubles avaient tenté de bloquer dans la nuit. Les circonstances exactes du décès d'un jeune homme de 24 ans, près de la Porte Maillot, restent floues. Certains témoins affirment qu'il circulait à moto lorsqu'il a percuté des blocs de béton.\n\nLa vaste avenue des Champs-Élysées a été envahie par des milliers de personnes peu après la victoire du PSG. Des images montrent des fumigènes allumés, des vélos électriques en feu et des vitrines brisées dans au moins un magasin. La police a utilisé des gaz lacrymogènes pour disperser les groupes dans le centre de la ville.\n\nLa préfecture de police de Paris a procédé à 480 interpellations, dont 277 gardes à vue. Parmi les personnes arrêtées, 82 étaient mineures. Les faits reprochés vont des agressions contre des agents aux dégradations de biens, en passant par le vol et la détention illégale d'armes.\n\nEnviron 6 000 policiers ont été mobilisés pour encadrer le défilé de la victoire du PSG, prévu le dimanche dans la zone de la Tour Eiffel. Le président Emmanuel Macron devait recevoir les joueurs à l'Élysée.\n\nLe ministre de l'Intérieur avait averti que les forces de l'ordre feraient preuve de fermeté. « La grande majorité des gens vient célébrer et ça se passe très bien, mais certains individus, qui ne sont pas des supporters du PSG, qui n'ont même pas regardé le match, viennent provoquer des troubles. Notre réponse est très ferme », a-t-il déclaré.\n\nDes violences similaires avaient éclaté l'an dernier, lors du précédent sacre du PSG en Ligue des Champions.",
+  "conversation": {
+    "intro": "Léa et Rosalia discutent des émeutes qui ont éclaté après la victoire du PSG en Ligue des Champions.",
+    "lines": [
+      { "speaker": "Léa", "fr": "T'as regardé la finale du PSG hier soir ?" },
+      { "speaker": "Rosalia", "fr": "Oui, mais j'ai surtout vu les images des émeutes après. C'était choquant.", "es": "Sí, pero sobre todo vi las imágenes de los disturbios después. Fue impactante." },
+      { "speaker": "Léa", "fr": "219 blessés rien qu'en France. C'est complètement fou non ?" },
+      { "speaker": "Rosalia", "fr": "Et des centaines d'arrestations ! Mais pourquoi ça dégénère comme ça à chaque fois ?", "es": "¡Y cientos de detenciones! ¿Pero por qué se descontrola así cada vez?" },
+      { "speaker": "Léa", "fr": "Apparemment, c'est pas vraiment des supporters du PSG. Des gens profitent du chaos." },
+      { "speaker": "Rosalia", "fr": "C'est ce qu'a dit le ministre de l'Intérieur, c'est ça ?", "es": "Eso es lo que dijo el ministro del Interior, ¿verdad?" },
+      { "speaker": "Léa", "fr": "Exactement. Il a dit que beaucoup n'avaient même pas regardé le match." },
+      { "speaker": "Rosalia", "fr": "La même chose s'était passée l'an dernier quand le PSG avait déjà gagné.", "es": "Lo mismo pasó el año pasado cuando el PSG también ganó." },
+      { "speaker": "Léa", "fr": "Oui, et cette année un homme est mort sur le périph'. C'est vraiment tragique." },
+      { "speaker": "Rosalia", "fr": "Comment des célébrations peuvent dégénérer en violence à ce point ?", "es": "¿Cómo pueden las celebraciones degenerar en violencia hasta ese punto?" },
+      { "speaker": "Léa", "fr": "C'est toute la question. Les Champs-Élysées sont devenus un terrain de bataille." },
+      { "speaker": "Rosalia", "fr": "Et Marine Le Pen a dit quoi là-dessus ?", "es": "¿Y qué dijo Marine Le Pen al respecto?" },
+      { "speaker": "Léa", "fr": "Elle a tweeté que seule la France vit ça à cause d'une victoire au foot." },
+      { "speaker": "Rosalia", "fr": "Tu penses que le défilé de la victoire ce dimanche va aussi mal se passer ?", "es": "¿Crees que el desfile de la victoria del domingo también saldrá mal?" },
+      { "speaker": "Léa", "fr": "J'espère pas. 6 000 policiers sont déployés. Croisons les doigts !" }
+    ]
+  }
+}

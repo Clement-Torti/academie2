@@ -102,9 +102,32 @@ COMMENT UTILISER CE PROMPT
 
 1. Colle ce prompt dans Claude (ou un autre modèle de langage)
 2. Remplace [COLLE TON TEXTE ICI] par le texte brut de l'article que tu veux transformer
-3. Copie le JSON produit dans un fichier : academie2/articles/{id}.json
-4. Ajoute une entrée dans academie2/catalog.json :
-   { "id": "{id}", "title": "...", "date": "YYYY-MM-DD", "image": "url", "category": "..." }
+3. Copie le JSON produit dans un NOUVEAU fichier :
+      academie2/articles/{id}.json
+   Exemple : si l'id est "rugby-coupe-monde", enregistre sous academie2/articles/rugby-coupe-monde.json
+
+4. Ajoute une entrée au DÉBUT du tableau dans academie2/catalog.json
+   (les articles les plus récents doivent apparaître en premier)
+
+   Structure exacte de l'entrée à ajouter :
+   {
+     "id": "{id}",
+     "title": "{title}",
+     "date": "YYYY-MM-DD",
+     "image": "{image.url}",
+     "category": "{category}"
+   }
+
+   Exemple réel :
+   {
+     "id": "rugby-coupe-monde",
+     "title": "La France accueille la Coupe du Monde de Rugby",
+     "date": "2026-06-10",
+     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Rugby_World_Cup.jpg",
+     "category": "Sport"
+   }
+
+   ATTENTION : l'entrée catalog.json ne contient que ces 5 champs (pas vocabulary, article, conversation).
 
 ═══════════════════════════════════════
 VOICI LE TEXTE SOURCE À TRAITER :

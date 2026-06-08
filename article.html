@@ -201,7 +201,7 @@
         <p class="text-[10px] font-bold uppercase tracking-widest text-amber-700 mb-1">
           <i class="fa-solid fa-circle-info mr-1"></i> Contexte
         </p>
-        <p id="conv-intro" class="text-base text-amber-900 leading-relaxed" style="font-family:'Nunito',sans-serif;"></p>
+        <p id="conv-intro" class="text-lg text-amber-900 leading-relaxed" style="font-family:'Nunito',sans-serif;"></p>
       </div>
 
       <!-- Instruction badge -->
@@ -229,13 +229,15 @@
 
       <!-- LISTEN button -->
       <div id="conv-listen-wrap" class="hidden mt-6 text-center">
-        <button onclick="conv.playAll()"
+        <button id="conv-listen-btn" onclick="conv.playAll()"
                 class="bg-gold text-frBlue font-bold px-8 py-4 rounded-2xl shadow-lg text-sm
                        transition active:scale-95 inline-flex items-center gap-2">
           <i class="fa-solid fa-play" id="conv-listen-icon"></i>
           <span id="conv-listen-label">Écouter la conversation</span>
         </button>
-        <p class="text-[11px] text-gray-400 mt-2">Toutes les répliques en français · voix fr-FR</p>
+        <p class="text-[11px] text-gray-400 mt-2">
+          <i class="fa-solid fa-lock text-xs mr-1"></i>Écoute requise pour continuer
+        </p>
       </div>
 
       <!-- DONE: go to translations -->
@@ -258,12 +260,64 @@
 
   </div><!-- end #article-body -->
 
+  <!-- ══ MEDIA PLAYER (fixed bottom-left) ═════════════════ -->
+  <div id="media-player" class="hidden fixed bottom-5 left-4 z-50">
+    <div class="flex items-center gap-2 rounded-2xl px-4 py-3 shadow-2xl"
+         style="background:rgba(0,38,84,.95); backdrop-filter:blur(10px);
+                border:1px solid rgba(255,255,255,.1);">
+
+      <!-- Line counter -->
+      <span id="player-counter"
+            class="text-[10px] font-mono w-8 text-center shrink-0"
+            style="color:rgba(255,255,255,.45);">0/0</span>
+
+      <div style="width:1px; height:18px; background:rgba(255,255,255,.15);"></div>
+
+      <!-- Prev -->
+      <button onclick="player.prev()" title="Phrase précédente"
+              class="w-8 h-8 rounded-xl flex items-center justify-center text-white
+                     transition active:bg-white/20">
+        <i class="fa-solid fa-backward-step text-sm"></i>
+      </button>
+
+      <!-- Play / Pause -->
+      <button onclick="player.togglePause()" title="Lecture / Pause"
+              class="w-9 h-9 rounded-xl flex items-center justify-center font-bold
+                     transition active:scale-95"
+              style="background:#D4AF37; color:#002654;">
+        <i id="player-pause-icon" class="fa-solid fa-pause text-sm"></i>
+      </button>
+
+      <!-- Next -->
+      <button onclick="player.next()" title="Phrase suivante"
+              class="w-8 h-8 rounded-xl flex items-center justify-center text-white
+                     transition active:bg-white/20">
+        <i class="fa-solid fa-forward-step text-sm"></i>
+      </button>
+
+      <div style="width:1px; height:18px; background:rgba(255,255,255,.15);"></div>
+
+      <!-- Speed -->
+      <select onchange="player.setRate(this.value)"
+              title="Vitesse de lecture"
+              class="text-white text-[11px] font-bold outline-none cursor-pointer"
+              style="background:transparent; border:none; -webkit-appearance:none; appearance:none;">
+        <option value="0.6"  style="background:#002654;">0.6×</option>
+        <option value="0.75" style="background:#002654;">0.75×</option>
+        <option value="0.82" selected style="background:#002654;">0.82×</option>
+        <option value="1.0"  style="background:#002654;">1×</option>
+        <option value="1.25" style="background:#002654;">1.25×</option>
+      </select>
+    </div>
+  </div>
+
   <script>
   // ════════════════════════════════════════════════════
   //  TTS helpers
   // ════════════════════════════════════════════════════
   const tts = {
     _speakId: 0,
+    rate: 0.82,
 
     _getVoicesAsync() {
       return new Promise(resolve => {
@@ -285,7 +339,7 @@
                 voices.find(v => v.lang === 'fr-FR') ||
                 voices.find(v => v.lang && v.lang.startsWith('fr'));
       if (v) { utt.voice = v; utt.lang = v.lang; } else { utt.lang = 'fr-FR'; }
-      utt.rate = 0.82; utt.pitch = 1; utt.volume = 1;
+      utt.rate = tts.rate; utt.pitch = 1; utt.volume = 1;
       utt.onerror = e => { if (e.error !== 'interrupted') console.error(e); if (onEnd) onEnd(); };
       utt.onend = onEnd || null;
       window.speechSynthesis.speak(utt);
@@ -304,6 +358,7 @@
     data: null,
     state: 'idle',
     currentLine: -1,
+    _currentPlayIdx: 0,
     revealedLines: new Set(),
 
     init(articleData) {
@@ -371,7 +426,7 @@
       if (revealBtn) revealBtn.style.display = 'none';
 
       const frEl = document.createElement('p');
-      frEl.className = 'text-frBlue font-bold mt-2 text-base leading-relaxed';
+      frEl.className = 'text-frBlue font-bold mt-2 text-lg leading-relaxed';
       frEl.style.fontFamily = "'Nunito', sans-serif";
       frEl.textContent = line.fr;
       bubble.querySelector('.bubble-content').appendChild(frEl);
@@ -388,7 +443,6 @@
     _onComplete() {
       document.getElementById('conv-next-wrap').classList.add('hidden');
       document.getElementById('conv-listen-wrap').classList.remove('hidden');
-      document.getElementById('conv-done-wrap').classList.remove('hidden');
       this._markCompleted();
       this.state = 'completed';
     },
@@ -420,20 +474,18 @@
       }
     },
 
-    async playAll() {
-      if (this.state === 'playing') {
-        tts.stop();
-        this._resetListenBtn();
-        this.state = 'completed';
-        return;
-      }
+    playAll() {
+      this._currentPlayIdx = 0;
+      // Disable the listen button while playing
+      const btn = document.getElementById('conv-listen-btn');
+      if (btn) { btn.disabled = true; btn.style.opacity = '.4'; }
+      player.show();
+      this._playChain(0);
+    },
 
-      this.state = 'playing';
-      document.getElementById('conv-listen-icon').className = 'fa-solid fa-stop';
-      document.getElementById('conv-listen-label').textContent = 'Arrêter';
-
-      const sessionId = ++tts._speakId;
+    async _playChain(startIdx) {
       const lines = this.data.conversation.lines;
+      const sessionId = ++tts._speakId;
 
       const playLine = async (idx) => {
         if (tts._speakId !== sessionId) return;
@@ -441,10 +493,20 @@
         document.querySelectorAll('[data-line-idx]').forEach(b => b.classList.remove('bubble-speaking'));
 
         if (idx >= lines.length) {
-          this._resetListenBtn();
+          // Natural end → unlock done button
           this.state = 'completed';
+          player.hide();
+          document.getElementById('conv-done-wrap').classList.remove('hidden');
+          // Re-enable listen button for replay
+          const btn = document.getElementById('conv-listen-btn');
+          if (btn) { btn.disabled = false; btn.style.opacity = '1'; }
+          document.getElementById('conv-listen-label').textContent = 'Réécouter';
           return;
         }
+
+        this._currentPlayIdx = idx;
+        player.updateCounter(idx, lines.length);
+        document.getElementById('player-pause-icon').className = 'fa-solid fa-pause text-sm';
 
         const bubble = document.querySelector(`[data-line-idx="${idx}"]`);
         if (bubble) {
@@ -459,13 +521,8 @@
         playLine(idx + 1);
       };
 
-      playLine(0);
-    },
-
-    _resetListenBtn() {
-      document.getElementById('conv-listen-icon').className = 'fa-solid fa-play';
-      document.getElementById('conv-listen-label').textContent = 'Écouter la conversation';
-      document.querySelectorAll('[data-line-idx]').forEach(b => b.classList.remove('bubble-speaking'));
+      this.state = 'playing';
+      playLine(startIdx);
     },
 
     _buildBubble(line, idx) {
@@ -478,10 +535,10 @@
         div.innerHTML = `
           <div class="min-w-0">
             <p class="text-[10px] font-bold mb-1 text-right" style="color:#FF6B6B; opacity:.7;">Rosalia</p>
-            <div class="bubble-content rounded-2xl rounded-br-sm px-4 py-3 text-base max-w-sm leading-relaxed"
+            <div class="bubble-content rounded-2xl rounded-br-sm px-4 py-3 text-lg max-w-sm leading-relaxed"
                  style="background:rgba(255,107,107,.1); border:1.5px solid rgba(255,107,107,.25);
                         font-family:'Nunito',sans-serif; color:#2d2d2d;">
-              <p class="text-gray-500 italic text-sm" style="font-family:'Nunito',sans-serif;">${this._esc(line.es)}</p>
+              <p class="text-gray-500 italic text-base" style="font-family:'Nunito',sans-serif;">${this._esc(line.es)}</p>
               <button onclick="conv.revealFr(${idx})" class="btn-reveal">
                 <i class="fa-solid fa-eye text-xs"></i>Voir en français
               </button>
@@ -500,7 +557,7 @@
           <div class="min-w-0">
             <p class="text-[10px] font-bold text-gray-400 mb-1">${this._esc(line.speaker)}</p>
             <div class="bubble-content bg-gray-100 text-gray-800 rounded-2xl rounded-bl-sm
-                        px-4 py-3 text-base max-w-sm leading-relaxed"
+                        px-4 py-3 text-lg max-w-sm leading-relaxed"
                  style="font-family:'Nunito',sans-serif;">
               ${this._esc(line.fr)}
             </div>
@@ -513,6 +570,65 @@
     _esc(str) {
       return String(str || '').replace(/&/g,'&amp;').replace(/</g,'&lt;')
                               .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    }
+  };
+
+  // ════════════════════════════════════════════════════
+  //  Media player controller
+  // ════════════════════════════════════════════════════
+  const player = {
+    _paused: false,
+
+    show() {
+      this._paused = false;
+      document.getElementById('player-pause-icon').className = 'fa-solid fa-pause text-sm';
+      document.getElementById('media-player').classList.remove('hidden');
+    },
+
+    hide() {
+      document.getElementById('media-player').classList.add('hidden');
+      this._paused = false;
+    },
+
+    updateCounter(idx, total) {
+      document.getElementById('player-counter').textContent = `${idx + 1}/${total}`;
+    },
+
+    togglePause() {
+      if (this._paused) {
+        // Resume
+        this._paused = false;
+        document.getElementById('player-pause-icon').className = 'fa-solid fa-pause text-sm';
+        window.speechSynthesis.resume();
+        // If synthesis finished naturally while paused, restart chain from current idx
+        if (!window.speechSynthesis.speaking) {
+          conv._playChain(conv._currentPlayIdx);
+        }
+      } else {
+        // Pause
+        this._paused = true;
+        document.getElementById('player-pause-icon').className = 'fa-solid fa-play text-sm';
+        window.speechSynthesis.pause();
+      }
+    },
+
+    prev() {
+      const idx = Math.max(0, conv._currentPlayIdx - 1);
+      conv._playChain(idx);
+    },
+
+    next() {
+      const lines = conv.data?.conversation?.lines || [];
+      const idx = Math.min(conv._currentPlayIdx + 1, lines.length - 1);
+      conv._playChain(idx);
+    },
+
+    setRate(val) {
+      tts.rate = parseFloat(val);
+      // If currently speaking, restart current line at new rate
+      if (conv.state === 'playing') {
+        conv._playChain(conv._currentPlayIdx);
+      }
     }
   };
 

@@ -115,6 +115,39 @@
     }
     @keyframes spin { 0%{transform:rotate(0)} 100%{transform:rotate(360deg)} }
 
+    /* ── ARTICLE FIRST LETTER ────────────────────────── */
+    .prose-article p:first-child::first-letter {
+      float: left;
+      font-size: 3.8em;
+      line-height: 0.78;
+      font-weight: 700;
+      margin: 0.06em 0.1em 0 0;
+      color: #002654;
+      font-family: 'Merriweather', serif;
+    }
+
+    /* ── READING PROGRESS BAR ────────────────────────── */
+    #reading-progress {
+      position: fixed; top: 0; left: 0; z-index: 100;
+      height: 3px; width: 0%;
+      background: linear-gradient(90deg, #4ECDC4, #FF6B6B);
+      transition: width .1s linear;
+    }
+
+    /* ── COMMENT CARD ─────────────────────────────────── */
+    .comment-card {
+      background: white;
+      border-radius: 16px;
+      padding: 14px 16px;
+      border: 1px solid rgba(0,0,0,.06);
+      box-shadow: 0 1px 6px rgba(0,0,0,.04);
+      transition: box-shadow .15s;
+    }
+    .comment-card:hover { box-shadow: 0 3px 12px rgba(0,0,0,.08); }
+    .like-btn { background: none; border: none; cursor: pointer; padding: 0; color: #9ca3af; }
+    .like-btn:hover { color: #f87171; }
+    .like-btn.liked { color: #ef4444; }
+
     /* ── MISC ─────────────────────────────────────────── */
     .line-clamp-2 {
       display: -webkit-box;
@@ -127,6 +160,7 @@
 </head>
 
 <body class="bg-sand min-h-screen" style="font-family:'Montserrat',sans-serif;">
+<div id="reading-progress"></div>
 
   <!-- ══ NAVBAR ════════════════════════════════════════ -->
   <nav class="bg-frBlue text-white z-50 sticky top-0" style="box-shadow:0 2px 12px rgba(0,0,0,.18);">
@@ -174,6 +208,32 @@
       </div>
     </div>
 
+    <!-- ── META BAR ─────────────────────────────────────── -->
+    <div class="bg-white border-b border-gray-100">
+      <div class="max-w-3xl mx-auto px-4 py-3 flex items-center justify-between flex-wrap gap-2">
+        <div class="flex items-center gap-4">
+          <span class="text-[11px] text-gray-500 flex items-center gap-1.5">
+            <i class="fa-solid fa-calendar-days" style="color:#4ECDC4;"></i>
+            <span id="meta-date"></span>
+          </span>
+          <span class="text-[11px] text-gray-500 flex items-center gap-1.5">
+            <i class="fa-solid fa-clock" style="color:#4ECDC4;"></i>
+            <span id="meta-readtime"></span>
+          </span>
+          <span class="text-[11px] text-gray-500 flex items-center gap-1.5 hidden sm:flex">
+            <i class="fa-solid fa-comment-dots" style="color:#4ECDC4;"></i>
+            <span id="meta-comments-count">5 réactions</span>
+          </span>
+        </div>
+        <div class="flex items-center gap-3">
+          <button onclick="navigator.share ? navigator.share({title: document.title, url: location.href}) : null"
+                  class="text-[11px] text-gray-400 hover:text-frBlue transition flex items-center gap-1.5">
+            <i class="fa-solid fa-share-nodes text-[10px]"></i> Partager
+          </button>
+        </div>
+      </div>
+    </div>
+
     <!-- ── VOCABULARY ─────────────────────────────────── -->
     <section class="max-w-3xl mx-auto px-4 pt-8 pb-4">
       <h2 class="text-[11px] font-bold uppercase tracking-widest text-frBlue mb-4 flex items-center gap-2">
@@ -185,8 +245,22 @@
     <!-- ── ARTICLE TEXT ───────────────────────────────── -->
     <section class="max-w-3xl mx-auto px-4 py-4">
       <div class="bg-white rounded-2xl shadow-card border border-gray-100 px-6 py-7">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="h-px flex-1" style="background:linear-gradient(90deg,#4ECDC4,transparent);"></div>
+          <span class="text-[10px] font-bold uppercase tracking-widest text-gray-400">Article</span>
+          <div class="h-px flex-1" style="background:linear-gradient(270deg,#4ECDC4,transparent);"></div>
+        </div>
         <div id="article-text" class="prose-article"></div>
       </div>
+    </section>
+
+    <!-- ── COMMENTS ─────────────────────────────────────── -->
+    <section class="max-w-3xl mx-auto px-4 pt-2 pb-4">
+      <h2 class="text-[11px] font-bold uppercase tracking-widest text-frBlue mb-4 flex items-center gap-2">
+        <i class="fa-solid fa-comment-dots text-coral"></i>
+        Réactions des lecteurs · <span id="comments-count">5</span>
+      </h2>
+      <div id="comments-container" class="flex flex-col gap-3"></div>
     </section>
 
     <!-- ── CONVERSATION ───────────────────────────────── -->
@@ -694,10 +768,59 @@
       const paragraphs = d.article.split('\n\n').filter(p => p.trim());
       articleEl.innerHTML = paragraphs.map(p => `<p>${conv._esc(p.trim())}</p>`).join('');
 
+      // Meta bar
+      const metaDateEl = document.getElementById('meta-date');
+      if (metaDateEl) metaDateEl.textContent =
+        new Date(d.date + 'T00:00:00').toLocaleDateString('fr-FR', { day:'numeric', month:'long', year:'numeric' });
+      const wordCount = d.article.split(/\s+/).filter(Boolean).length;
+      const readTime = Math.max(2, Math.ceil(wordCount / 200));
+      const metaReadEl = document.getElementById('meta-readtime');
+      if (metaReadEl) metaReadEl.textContent = `${readTime} min de lecture`;
+
+      // Comments
+      this.renderComments(d.comments || []);
+
       conv.init(d);
 
       document.getElementById('loader-screen').classList.add('hidden');
       document.getElementById('article-body').classList.remove('hidden');
+    },
+
+    renderComments(comments) {
+      const avatarColors = ['#FF6B6B', '#4ECDC4', '#002654', '#D4AF37', '#7C6FCD'];
+      const countEl = document.getElementById('comments-count');
+      if (countEl) countEl.textContent = comments.length;
+      const metaCount = document.getElementById('meta-comments-count');
+      if (metaCount) metaCount.textContent = `${comments.length} réaction${comments.length !== 1 ? 's' : ''}`;
+
+      const container = document.getElementById('comments-container');
+      if (!container) return;
+
+      container.innerHTML = comments.map((c, i) => {
+        const initial = (c.username || '?').charAt(0).toUpperCase();
+        const color = avatarColors[i % avatarColors.length];
+        return `
+          <div class="comment-card">
+            <div class="flex items-start gap-3">
+              <div class="w-9 h-9 rounded-full flex items-center justify-center text-white text-sm font-bold shrink-0"
+                   style="background:${color}; min-width:2.25rem; font-family:'Montserrat',sans-serif;">${conv._esc(initial)}</div>
+              <div class="min-w-0 flex-1">
+                <p class="text-[12px] font-bold mb-1" style="color:#002654; font-family:'Montserrat',sans-serif;">@${conv._esc(c.username)}</p>
+                <p class="text-[13px] text-gray-700 leading-relaxed" style="font-family:'Nunito',sans-serif;">${conv._esc(c.comment)}</p>
+                <div class="flex items-center gap-3 mt-2.5">
+                  <button class="like-btn flex items-center gap-1 text-[11px] transition"
+                          onclick="const s=this.querySelector('.lc'); const n=parseInt(s.textContent); const liked=this.classList.toggle('liked'); s.textContent=liked?n+1:n-1;"
+                          style="font-family:'Montserrat',sans-serif;">
+                    <i class="fa-solid fa-heart text-[10px]"></i>
+                    <span class="lc">${c.likes}</span>
+                  </button>
+                  <span style="color:#e5e7eb; font-size:11px;">·</span>
+                  <span class="text-[11px] text-gray-400" style="cursor:pointer; font-family:'Montserrat',sans-serif;">Répondre</span>
+                </div>
+              </div>
+            </div>
+          </div>`;
+      }).join('');
     },
 
     renderError(msg) {
@@ -711,6 +834,17 @@
         </div>`;
     }
   };
+
+  // ════════════════════════════════════════════════════
+  //  Reading progress bar
+  // ════════════════════════════════════════════════════
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const scrolled = doc.scrollTop;
+    const total = doc.scrollHeight - doc.clientHeight;
+    const pct = total > 0 ? (scrolled / total) * 100 : 0;
+    document.getElementById('reading-progress').style.width = pct + '%';
+  }, { passive: true });
 
   // Preload voices (avoids first-speak delay on some browsers)
   window.speechSynthesis.getVoices();

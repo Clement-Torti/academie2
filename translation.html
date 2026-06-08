@@ -611,9 +611,13 @@ FRASE2|pc|Nous avons visité Paris.|Hemos visitado París. (nous)`;
         }
         stats.lastCompletedDate = today;
 
-        // Marquer jour complété
+        // Marquer jour complété (préserver l'articleId dans l'objet)
         const days = JSON.parse(localStorage.getItem('acad2_days') || '{}');
-        days[today] = 'completed';
+        if (typeof days[today] === 'object' && days[today] !== null) {
+            days[today].status = 'completed';
+        } else {
+            days[today] = { status: 'completed', articleId: '' };
+        }
         localStorage.setItem('acad2_days', JSON.stringify(days));
         localStorage.setItem('acad2_stats', JSON.stringify(stats));
 

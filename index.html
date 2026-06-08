@@ -269,13 +269,7 @@
         </div>
 
         <!-- Charts -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            <div class="stat-card">
-                <p class="text-[10px] uppercase tracking-wider text-gray-400 font-bold mb-3">
-                    Vitesse de lecture (mots/min)
-                </p>
-                <canvas id="chart-wpm" height="120"></canvas>
-            </div>
+        <div class="grid grid-cols-1 gap-3">
             <div class="stat-card">
                 <p class="text-[10px] uppercase tracking-wider text-gray-400 font-bold mb-3">
                     Vitesse de traduction (sec/phrase)
@@ -539,22 +533,6 @@ const home = {
                 y: { ticks:{ font:{size:9}, color:'#9ca3af' }, grid:{ color:'#f3f4f6' }, beginAtZero:true }
             }
         };
-
-        // WPM
-        new Chart(document.getElementById('chart-wpm').getContext('2d'), {
-            type: 'line',
-            data: {
-                labels,
-                datasets: [{
-                    data: sessions.map(s => s.readingWpm || 0),
-                    borderColor: '#002654', backgroundColor: 'rgba(0,38,84,.08)',
-                    borderWidth: 2, pointRadius: 3, pointBackgroundColor: '#002654',
-                    tension: .4, fill: true
-                }]
-            },
-            options: { ...baseOpts, plugins: { ...baseOpts.plugins,
-                tooltip: { callbacks: { label: c => `${c.parsed.y} mots/min` } } } }
-        });
 
         // Traduction
         new Chart(document.getElementById('chart-trans').getContext('2d'), {

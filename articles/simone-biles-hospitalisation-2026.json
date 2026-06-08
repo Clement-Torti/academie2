@@ -41,5 +41,32 @@
       { "speaker": "Rosalia", "fr": "J'espère qu'elle va se remettre vite. Elle est très courageuse.", "es": "Espero que se recupere rápido. Es muy valiente." },
       { "speaker": "Léa", "fr": "Moi aussi. Et j'espère qu'on la reverra un jour en compétition !" }
     ]
-  }
+  },
+  "comments": [
+    {
+      "username": "DirectOrNot2026",
+      "comment": "J'adore Simone mais ce genre de post ça m'énerve. Tu dis «j'ai failli mourir» et t'expliques pas. Soit tu en parles, soit t'en parles pas. C'est du teasing sur ta propre santé là... c'est bizarre non?",
+      "likes": 145
+    },
+    {
+      "username": "InfirmiereEtMaman",
+      "comment": "J'ai vécu une urgence médicale seule chez moi une fois. C'est une des pires expériences de ma vie. Quand Simone dit que c'est «la chose la plus effrayante qu'elle ait vécue»... je comprends exactement ce qu'elle ressent. Courage.",
+      "likes": 289
+    },
+    {
+      "username": "SportEthique_FR",
+      "comment": "On célèbre son courage de partager ça sur Instagram. Mais est-ce qu'une athlète de son niveau DEVRAIT raconter ses urgences médicales en story? Quelle pression ça crée pour les jeunes sportives d'être toujours «transparentes» sur leur santé.",
+      "likes": 67
+    },
+    {
+      "username": "AnxieuxDuNord",
+      "comment": "Moi ce qui me fascine c'est qu'elle a montré son rythme cardiaque au moment de dormir. J'ai vérifié le mien après avoir lu l'article. J'ai failli appeler le SAMU. Merci Simone pour l'anxiété bonus 🙃",
+      "likes": 356
+    },
+    {
+      "username": "GymFanClub_FR",
+      "comment": "Cette femme porte la gymnastique mondiale sur ses épaules depuis 2013. Elle a le droit d'être humaine, d'avoir peur, de pas tout expliquer. On t'aime Simone. Repose-toi bien.",
+      "likes": 198
+    }
+  ]
 }

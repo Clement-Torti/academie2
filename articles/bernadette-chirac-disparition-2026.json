@@ -41,5 +41,32 @@
       { "speaker": "Rosalia", "fr": "C'est une belle cause. Elle semble vraiment remarquable.", "es": "Es una causa hermosa. Parece una mujer realmente notable." },
       { "speaker": "Sophie", "fr": "Les Français l'adoraient. Elle a beaucoup fait pour les gens ordinaires." }
     ]
-  }
+  },
+  "comments": [
+    {
+      "username": "LeFrancaisLibre75",
+      "comment": "Sérieusement?? On passe des heures à parler de l'épouse d'un président pendant que des milliers de gens galèrent chaque mois. C'est ça l'information importante en France. Bravo.",
+      "likes": 87
+    },
+    {
+      "username": "CorrezienseDepuis1971",
+      "comment": "Je l'ai vue de mes propres yeux à Tulle au marché dans les années 90. Elle conduisait sa 205 rouge, elle m'a dit bonjour en souriant. Pas de garde du corps, rien. Une dame vraiment simple et accessible.",
+      "likes": 214
+    },
+    {
+      "username": "PolSciNerd_FR",
+      "comment": "On dit qu'elle avait un «instinct politique» remarquable mais soyons honnêtes : elle a été élue 5 fois en Corrèze parce que son mari était président. C'est pas vraiment une carrière indépendante ça, désolé.",
+      "likes": 63
+    },
+    {
+      "username": "Maxime_Perpignan",
+      "comment": "Honnêtement je me souvenais pas du tout de cette femme mais apparemment j'aurais dû. Ma grand-mère l'adorait. Moi je regardais Dragon Ball Z à l'époque, désolé. RIP quand même.",
+      "likes": 341
+    },
+    {
+      "username": "CitoyenOrdinaire_13",
+      "comment": "Elle a perdu sa fille Laurence en 2016 et elle a continué à tenir debout. Elle a transformé cette douleur en engagement pour les adolescents malades. Ce genre de courage là, on en parle jamais assez.",
+      "likes": 178
+    }
+  ]
 }

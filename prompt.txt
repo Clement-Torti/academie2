@@ -33,7 +33,10 @@ SCHÉMA JSON EXACT À RESPECTER
       { "speaker": "Nom", "fr": "Réplique en français" },
       { "speaker": "Rosalia", "fr": "Réplique en français", "es": "Traducción al español" }
     ]
-  }
+  },
+  "comments": [
+    { "username": "pseudo_internet", "comment": "Commentaire d'un utilisateur en français (style réseaux sociaux naturel)", "likes": 42 }
+  ]
 }
 
 ═══════════════════════════════════════
@@ -87,6 +90,21 @@ RÈGLES DÉTAILLÉES PAR CHAMP
 - Si tu n'es pas certain qu'un fichier Commons existe avec ce nom exact, choisis une image générique
   dont l'existence est très probable (drapeau national, logo officiel, monument célèbre bien documenté)
   plutôt qu'une image spécifique dont tu n'es pas sûr
+
+### comments
+- EXACTEMENT 5 commentaires, dans cet ordre de type :
+  1. Un utilisateur EN COLÈRE ou très critique (injuste, énervé, ton acerbe)
+  2. Un utilisateur qui partage une ANECDOTE personnelle en rapport avec le sujet
+  3. Un utilisateur qui DÉBAT ou défend un point de vue opposé à l'article
+  4. Un utilisateur DRÔLE ET INATTENDU (humour décalé, association absurde, totalement hors-sujet)
+  5. Un utilisateur POSITIF ou de soutien (touchant, sincère, mais pas trop fade)
+- Style : français internet naturel — contractions, ponctuation expressive (!!!), majuscules pour l'emphase,
+  emojis rares mais possibles, sans abréviations SMS incompréhensibles
+- Les commentaires réagissent directement au contenu de l'article (faits, personnes, implications)
+- `username` : pseudo créatif et réaliste (CamelCase, underscores, chiffres, PAS d'espaces ni d'accents)
+  Exemples : F1FanFromBirth_69, LectriceDuSoir, CorrezienseDepuis1971
+- `likes` : entier entre 2 et 520, avec une vraie distribution variée (le drôle/inattendu doit avoir le plus)
+- Longueur des commentaires : 25-60 mots par commentaire, ni trop court ni trop long
 
 ═══════════════════════════════════════
 FORMAT DE SORTIE

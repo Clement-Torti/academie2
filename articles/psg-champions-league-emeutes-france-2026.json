@@ -39,5 +39,32 @@
       { "speaker": "Rosalia", "fr": "Tu penses que le défilé de la victoire ce dimanche va aussi mal se passer ?", "es": "¿Crees que el desfile de la victoria del domingo también saldrá mal?" },
       { "speaker": "Léa", "fr": "J'espère pas. 6 000 policiers sont déployés. Croisons les doigts !" }
     ]
-  }
+  },
+  "comments": [
+    {
+      "username": "ParigoVrai_1993",
+      "comment": "Je suis supporter du PSG depuis 30 ans et ces gens-là me donnent honte. Ils ont gâché la victoire la plus importante de l'histoire du club. Un homme est mort. Comment on appelle encore ça une célébration???",
+      "likes": 419
+    },
+    {
+      "username": "GabrielChampsElysees",
+      "comment": "J'étais sur les Champs quand ça a commencé à dégénérer. En 10 minutes ça fumait partout et les gens couraient dans tous les sens. Ma copine a perdu une chaussure en fuyant. On a mis 2h à rentrer chez nous à pied.",
+      "likes": 234
+    },
+    {
+      "username": "SocioloGuy_Paris8",
+      "comment": "Arrêtons de dire «c'est pas des supporters». Le problème est plus profond. Ces explosions de violence post-match révèlent une tension sociale réelle qui cherche n'importe quelle excuse pour sortir. Le foot c'est juste le déclencheur.",
+      "likes": 112
+    },
+    {
+      "username": "MonCousinDeNantes",
+      "comment": "Mon cousin à Bordeaux a allumé un fumigène dans son salon «pour l'ambiance». Sa femme l'a mis dehors. Le PSG a gagné la Ligue des Champions mais lui il a perdu quelque chose de bien plus précieux ce soir-là.",
+      "likes": 478
+    },
+    {
+      "username": "FCParisGloire_27",
+      "comment": "En dehors des idiots et du chaos, on parle quand même d'une victoire HISTORIQUE. Benzema + Mbappé à Paris ça a tout changé. Merci les joueurs, vous êtes des légendes. Ici c'est Paris.",
+      "likes": 322
+    }
+  ]
 }

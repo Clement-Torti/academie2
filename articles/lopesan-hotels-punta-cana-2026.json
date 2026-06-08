@@ -40,5 +40,32 @@
       { "speaker": "Rosalia", "fr": "Oui ! On pourrait aller à l'hôtel pour adultes toutes les deux ?", "es": "¡Sí! ¿Podríamos ir al hotel para adultos las dos juntas?" },
       { "speaker": "Sophie", "fr": "Bonne idée ! Je regarde les prix ce soir et je t'envoie les infos." }
     ]
-  }
+  },
+  "comments": [
+    {
+      "username": "EcoGuerrier_Caraib",
+      "comment": "Encore trois méga-complexes all-inclusive de plus. La faune marine va adorer ça. Bientôt y'aura plus un seul mètre de plage naturelle à Punta Cana. BRAVO l'industrie touristique 👏",
+      "likes": 134
+    },
+    {
+      "username": "BackpackerSolo2023",
+      "comment": "J'ai fait Punta Cana en all-inclusive en 2023. Je me suis ennuyé à mourir : on voit jamais le vrai pays. La prochaine fois je prends des petits hôtels locaux où au moins les gens te parlent vraiment.",
+      "likes": 76
+    },
+    {
+      "username": "EcoTourismeActu",
+      "comment": "Les all-inclusifs rapportent très peu à l'économie locale parce que tout est importé par la chaîne hôtelière. Les vrais bénéficiaires c'est Lopesan, pas les Dominicains. Quelqu'un peut m'expliquer pourquoi on présente ça comme une bonne nouvelle pour le pays?",
+      "likes": 98
+    },
+    {
+      "username": "ChihuahuaLover_Paco",
+      "comment": "Question sérieuse : est-ce qu'on peut amener son chien dans la lagune artificielle ? Je veux pas partir en vacances sans mon Pancho. Il adore l'eau.",
+      "likes": 287
+    },
+    {
+      "username": "VacancesMode_ON",
+      "comment": "Une lagune de 5000m² avec des cénotes artificiels?? Je réserve maintenant même si c'est dans un an. Ces photos vont tout déchirer sur Instagram.",
+      "likes": 54
+    }
+  ]
 }

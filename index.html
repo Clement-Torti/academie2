@@ -33,6 +33,28 @@
         body { overscroll-behavior-y: none; -webkit-tap-highlight-color: transparent; }
         input, textarea { font-size: 16px !important; }
 
+        /* Timeline */
+        .timeline-scroll { overflow-x: auto; overflow-y: hidden; scrollbar-width: none; }
+        .timeline-scroll::-webkit-scrollbar { display: none; }
+        .tl-line {
+            position: absolute; top: 50%; left: 0; right: 0;
+            height: 3px; background: #e5e7eb;
+            transform: translateY(-50%); z-index: 0;
+        }
+        .tl-node { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; flex-shrink: 0; }
+        .tl-btn {
+            width: 52px; height: 52px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            border-bottom: 4px solid rgba(0,0,0,.2);
+            transition: transform .15s, box-shadow .15s;
+        }
+        .tl-btn:active { transform: translateY(2px); box-shadow: none !important; }
+        @keyframes pulse-today {
+            0%,100% { box-shadow: 0 0 0 0 rgba(0,38,84,.35), 0 4px 0 0 rgba(0,0,0,.2); }
+            50%      { box-shadow: 0 0 0 9px rgba(0,38,84,0), 0 4px 0 0 rgba(0,0,0,.2); }
+        }
+        .tl-today { animation: pulse-today 2s infinite; }
+
         /* Article cards */
         .article-card-img { width:100%; height:160px; object-fit:cover; display:block; transition: transform .3s; }
         .article-card:hover .article-card-img { transform: scale(1.04); }
@@ -175,6 +197,22 @@
 <main class="flex-1 overflow-y-auto bg-frCream">
 <div class="max-w-4xl mx-auto px-4 py-6 flex flex-col gap-8 pb-10">
 
+    <!-- ── TIMELINE ─────────────────────────────────────────── -->
+    <section>
+        <h2 class="text-xs font-bold uppercase tracking-widest text-frBlue mb-4">
+            <i class="fa-solid fa-calendar-days mr-1 text-gold"></i> Programme du jour
+        </h2>
+        <div class="bg-white rounded-2xl shadow-card border border-gray-100 py-6 px-4">
+            <div class="timeline-scroll" id="tl-scroll">
+                <div id="timeline-inner"
+                     class="relative flex items-center gap-5 px-4"
+                     style="min-height:90px;">
+                    <div class="tl-line"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- ── ARTICLES ──────────────────────────────────────────── -->
     <section>
         <div class="flex items-center justify-between mb-4">
@@ -255,16 +293,27 @@ const home = {
 
     get stats()  { return JSON.parse(localStorage.getItem('acad2_stats')  || '{"sessions":[],"streak":0,"lastCompletedDate":null}'); },
     get cfg()    { return JSON.parse(localStorage.getItem('acad2_config') || '{"wordsPerDay":800,"sentencesPerSession":7}'); },
+    get days()   { return JSON.parse(localStorage.getItem('acad2_days')   || '{}'); },
     get vocab()  { return JSON.parse(localStorage.getItem('acad_user_vocab') || '[]'); },
 
     // ════════════════════════════════════════════════════════════
     //  INIT
     // ════════════════════════════════════════════════════════════
-    init() {
+    async init() {
         this.renderStreak();
-        this.loadArticles();
         this.renderStats();
         this.renderCharts();
+        try {
+            const catalog = await this.loadCatalog();
+            this.assignTodayArticle(catalog);
+            this.renderTimeline();
+            this.renderArticlesGrid(catalog);
+        } catch (err) {
+            console.warn('catalog.json load failed:', err);
+            this.renderTimeline(); // render sans articleId (bouton désactivé)
+            document.getElementById('articles-loading').classList.add('hidden');
+            document.getElementById('articles-error').classList.remove('hidden');
+        }
     },
 
     renderStreak() {
@@ -274,53 +323,160 @@ const home = {
     },
 
     // ════════════════════════════════════════════════════════════
-    //  ARTICLES
+    //  CATALOG + TIMELINE + ARTICLES
     // ════════════════════════════════════════════════════════════
-    async loadArticles() {
-        const grid    = document.getElementById('articles-grid');
-        const loading = document.getElementById('articles-loading');
-        const errDiv  = document.getElementById('articles-error');
-
+    async loadCatalog() {
         const base = location.protocol === 'file:'
             ? 'https://clement-torti.github.io/academie2/'
             : '';
-
-        try {
-            const res = await fetch(`${base}catalog.json`);
-            if (!res.ok) throw new Error('HTTP ' + res.status);
-            const articles = await res.json();
-
-            loading.classList.add('hidden');
-            const count = articles.length;
-            document.getElementById('articles-count').textContent =
-                `${count} article${count > 1 ? 's' : ''}`;
-
-            if (!count) {
-                grid.style.display = 'grid';
-                grid.innerHTML = '<p class="text-sm text-gray-400 text-center col-span-2 py-4">Aucun article disponible.</p>';
-                return;
-            }
-
-            grid.innerHTML = articles
-                .slice().sort((a, b) => b.date.localeCompare(a.date))
-                .map(a => this._articleCard(a))
-                .join('');
-            grid.style.display = 'grid';
-
-        } catch (err) {
-            loading.classList.add('hidden');
-            errDiv.classList.remove('hidden');
-            console.warn('catalog.json load failed:', err);
-        }
+        const res = await fetch(`${base}catalog.json`);
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        return await res.json();
     },
 
-    _articleCard(a) {
+    assignTodayArticle(catalog) {
+        const today = new Date().toISOString().split('T')[0];
+        const days  = this.days;
+
+        // Si aujourd'hui a déjà un article assigné, ne pas changer
+        if (days[today] && (typeof days[today] === 'object') && days[today].articleId) return;
+
+        // Articles déjà assignés à une journée passée
+        const usedIds = new Set(
+            Object.values(days)
+                .map(d => typeof d === 'object' ? d.articleId : null)
+                .filter(Boolean)
+        );
+
+        // Trier par date décroissante (le plus récent en premier)
+        const sorted = catalog.slice().sort((a, b) => b.date.localeCompare(a.date));
+
+        // Choisir le premier article non encore utilisé
+        let chosen = sorted.find(a => !usedIds.has(a.id));
+
+        // Si tous utilisés, prendre le plus anciennement assigné
+        if (!chosen && sorted.length > 0) {
+            const oldestEntry = Object.entries(days)
+                .filter(([, v]) => typeof v === 'object' && v.articleId)
+                .sort(([a], [b]) => a.localeCompare(b))[0];
+            const oldestId = oldestEntry ? oldestEntry[1].articleId : null;
+            chosen = sorted.find(a => a.id === oldestId) || sorted[0];
+        }
+
+        if (!chosen) return;
+
+        const newDays = { ...days, [today]: { status: 'pending', articleId: chosen.id } };
+        localStorage.setItem('acad2_days', JSON.stringify(newDays));
+    },
+
+    renderTimeline() {
+        const today    = new Date().toISOString().split('T')[0];
+        const days     = this.days;
+        const sessions = (this.stats.sessions || []).slice().sort((a,b) => a.date.localeCompare(b.date));
+
+        const startDate = sessions.length > 0 ? sessions[0].date : today;
+        const msDay    = 86400000;
+        const todayIdx = Math.round((new Date(today) - new Date(startDate)) / msDay) + 1;
+
+        const inner = document.getElementById('timeline-inner');
+        inner.innerHTML = '<div class="tl-line"></div>';
+
+        for (let d = 1; d <= todayIdx + 7; d++) {
+            const date    = new Date(new Date(startDate).getTime() + (d-1) * msDay)
+                .toISOString().split('T')[0];
+            const isToday = date === today;
+            const dayData = days[date];
+            const status  = typeof dayData === 'object'
+                ? (dayData?.status || 'future')
+                : (dayData || (date < today ? 'missed' : 'future'));
+            const articleId = typeof dayData === 'object' ? (dayData?.articleId || '') : '';
+
+            let btnStyle, icon, labelColor;
+            if (status === 'completed') {
+                btnStyle = 'background:#D4AF37; border-color:#8f6900;';
+                icon     = '<i class="fa-solid fa-check text-white text-sm"></i>';
+                labelColor = '#9ca3af';
+            } else if (isToday) {
+                btnStyle = 'background:#002654; border-color:#001333;';
+                icon     = '<i class="fa-solid fa-book-open text-white text-sm"></i>';
+                labelColor = '#002654';
+            } else if (date < today) {
+                btnStyle = 'background:#fee2e2; border-color:#fca5a5;';
+                icon     = '<i class="fa-solid fa-xmark text-red-500 text-sm"></i>';
+                labelColor = '#9ca3af';
+            } else {
+                btnStyle = 'background:#f3f4f6; border-color:#d1d5db;';
+                icon     = `<span class="text-xs font-bold text-gray-400">${d}</span>`;
+                labelColor = '#9ca3af';
+            }
+
+            const canClick  = isToday && !!articleId;
+            const dt        = new Date(date);
+            const dateShort = `${String(dt.getUTCDate()).padStart(2,'0')}/${String(dt.getUTCMonth()+1).padStart(2,'0')}`;
+
+            const node = document.createElement('div');
+            node.className = 'tl-node';
+            node.innerHTML = `
+                <button class="tl-btn ${isToday ? 'tl-today' : ''}"
+                        style="${btnStyle}"
+                        ${canClick ? `onclick="window.location.href='article.html?id=${articleId}'"` : 'disabled'}
+                        title="${date}">
+                    ${icon}
+                </button>
+                <span style="display:flex;flex-direction:column;align-items:center;gap:1px;margin-top:6px;white-space:nowrap;">
+                    ${isToday ? `<span style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:${labelColor};">Auj.</span>` : ''}
+                    <span style="font-size:8px;font-weight:${isToday?'600':'400'};color:${isToday?'#002654':labelColor};letter-spacing:0.03em;">${dateShort}</span>
+                </span>`;
+            inner.appendChild(node);
+        }
+
+        setTimeout(() => {
+            const todayNode = inner.querySelector('.tl-today');
+            if (!todayNode) return;
+            const scroll = document.getElementById('tl-scroll');
+            scroll.scrollTo({ left: todayNode.closest('.tl-node').offsetLeft - scroll.clientWidth / 2 + 26, behavior:'smooth' });
+        }, 120);
+    },
+
+    renderArticlesGrid(catalog) {
+        const grid    = document.getElementById('articles-grid');
+        const loading = document.getElementById('articles-loading');
+        const days    = this.days;
+
+        loading.classList.add('hidden');
+
+        const count = catalog.length;
+        document.getElementById('articles-count').textContent =
+            `${count} article${count > 1 ? 's' : ''}`;
+
+        if (!count) {
+            grid.style.display = 'grid';
+            grid.innerHTML = '<p class="text-sm text-gray-400 text-center col-span-2 py-4">Aucun article disponible.</p>';
+            return;
+        }
+
+        // Calcul des articles lus (articleId dans days avec status completed)
+        const readIds = new Set(
+            Object.values(days)
+                .filter(d => typeof d === 'object' && d.status === 'completed')
+                .map(d => d.articleId)
+                .filter(Boolean)
+        );
+
+        grid.innerHTML = catalog
+            .slice().sort((a, b) => b.date.localeCompare(a.date))
+            .map(a => this._articleCard(a, readIds.has(a.id)))
+            .join('');
+        grid.style.display = 'grid';
+    },
+
+    _articleCard(a, isRead) {
         const d = new Date(a.date + 'T00:00:00');
         const dateStr = d.toLocaleDateString('fr-FR', { day:'numeric', month:'long', year:'numeric' });
         return `
             <a href="article.html?id=${this._esc(a.id)}"
                class="article-card block bg-white rounded-2xl overflow-hidden border border-gray-100"
-               style="box-shadow:0 2px 10px rgba(0,0,0,.07); text-decoration:none;">
+               style="box-shadow:0 2px 10px rgba(0,0,0,.07); text-decoration:none; opacity:${isRead ? '.65' : '1'};">
               <div class="overflow-hidden relative" style="height:160px; background:#f3f4f6;">
                 <img src="${this._esc(a.image)}" alt="${this._esc(a.title)}"
                      class="article-card-img"
@@ -330,6 +486,7 @@ const home = {
                 <span class="absolute top-3 left-3 text-[9px] font-bold uppercase tracking-widest
                              text-white px-2 py-1 rounded-full"
                       style="background:#4ECDC4;">${this._esc(a.category || '')}</span>
+                ${isRead ? '<span class="absolute top-3 right-3 text-[9px] font-bold uppercase tracking-widest text-white px-2 py-1 rounded-full" style="background:#D4AF37;"><i class="fa-solid fa-check mr-1"></i>Lu</span>' : ''}
               </div>
               <div class="p-4">
                 <h3 class="font-bold text-frBlue text-sm leading-snug mb-1 line-clamp-2">${this._esc(a.title)}</h3>

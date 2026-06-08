@@ -73,11 +73,17 @@ RÈGLES DÉTAILLÉES PAR CHAMP
 - La traduction espagnole de Rosalia (champ "es") doit être naturelle, pas une traduction littérale
 
 ### image
-- Trouve une vraie URL d'image publiquement accessible sur internet
-- Préfère Wikipedia Commons : https://upload.wikimedia.org/wikipedia/commons/...
-- Alternative : image Unsplash ou Pexels avec URL directe
 - L'image doit être en rapport direct avec le sujet de l'article
-- Vérifie que l'URL est plausible et correspond réellement à une image existante
+- Utilise OBLIGATOIREMENT ce format Wikipedia Commons (il fonctionne toujours, sans hash) :
+  https://commons.wikimedia.org/wiki/Special:FilePath/{NomDuFichier.jpg}
+  Exemple : https://commons.wikimedia.org/wiki/Special:FilePath/Tour_Eiffel_Wikimedia_Commons.jpg
+- Pour trouver le bon nom de fichier : cherche sur https://commons.wikimedia.org une image libre de droits
+  en rapport avec le sujet, puis copie exactement le nom du fichier tel qu'il apparaît dans l'URL de la page
+  (ex : si la page est https://commons.wikimedia.org/wiki/File:Paris_trocadero.jpg, le nom est Paris_trocadero.jpg)
+- N'utilise JAMAIS le format upload.wikimedia.org/wikipedia/commons/thumb/... car il nécessite un hash MD5
+  que tu ne peux pas calculer correctement, ce qui génère des erreurs 404
+- Si tu ne trouves pas d'image Commons pertinente, utilise une image Unsplash avec ce format :
+  https://images.unsplash.com/photo-{ID}?w=1280&q=80 (remplace {ID} par un ID photo Unsplash réel)
 
 ═══════════════════════════════════════
 FORMAT DE SORTIE

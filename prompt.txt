@@ -64,8 +64,8 @@ RÈGLES DÉTAILLÉES PAR CHAMP
 
 ### conversation
 - Contexte (intro) : situe précisément où sont les personnages et pourquoi ils parlent du sujet. 2-3 phrases max.
-- Nombre de répliques total : entre 30 et 37 lignes
-- Rosalia prend la parole environ 20 fois (elle est le personnage qui parle le plus)
+- Nombre de répliques total : entre 25 et 30 lignes
+- Rosalia prend la parole environ 15 fois (elle est le personnage qui parle le plus)
 - Un interlocuteur est TOUJOURS "Rosalia" (l'apprenante hispanophone)
 - L'autre interlocuteur a un prénom français typique adapté au contexte (Marc, Léa, Sophie, Antoine, etc.)
 - Répliques de Rosalia : OBLIGATOIREMENT les deux champs "fr" ET "es"
@@ -78,6 +78,10 @@ RÈGLES DÉTAILLÉES PAR CHAMP
   son futur déménagement à Strasbourg, ses études de mercadeo, ses goûts (séries, cuisine dominicaine,
   TikTok, sushis, hamburguesas), sa peur d'être recrutée comme étrangère, son apprentissage du français.
   Ne mentionne pas tous ces éléments d'un coup — utilise ceux qui s'intègrent naturellement au thème de l'article.
+- TON OBLIGATOIRE : Rosalia est ENTHOUSIASTE et POSITIVE à propos de son futur en France. Ne jamais présenter
+  le déménagement ou la distance avec la famille comme quelque chose de triste ou d'inquiétant. Si la famille
+  est mentionnée, c'est dans un contexte joyeux (visite prévue, appels fréquents, soutien). Même la peur est
+  formulée comme une petite excitation, pas comme une anxiété.
 - Longueur des répliques : 8 à 20 mots par ligne. Pas de monologues de plus de 3 phrases de suite.
 - La traduction espagnole de Rosalia (champ "es") doit être naturelle, pas une traduction littérale
 

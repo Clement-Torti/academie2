@@ -332,7 +332,7 @@
         <p class="text-white text-sm font-bold">
           <i class="fa-solid fa-microphone mr-2" style="color:#D4AF37;"></i>2ème passage — Focus sur la prononciation
         </p>
-        <p class="text-xs mt-0.5" style="color:rgba(255,255,255,.5);">Les répliques s'affichent directement en français</p>
+        <p class="text-xs mt-0.5" style="color:rgba(255,255,255,.5);">Cette fois, concentre-toi sur la fluidité et la prononciation</p>
       </div>
 
       <!-- ── IMMERSIVE STAGE ─────────────────────────── -->
@@ -649,28 +649,20 @@
       void frEl.offsetWidth;
       frEl.classList.add('stage-anim');
 
-      if (isRosalia && this.round === 1) {
-        // Show Spanish hint, blur French
+      if (isRosalia) {
+        // Show Spanish hint, wait for reveal — both rounds
         esEl.textContent = line.es;
         esEl.classList.remove('hidden');
         frEl.textContent = '…';
         frEl.style.color = 'rgba(255,255,255,0.18)';
         this._setActionBtn('reveal', isLast);
       } else {
-        // Show French directly
+        // Other speaker: show French directly and auto-play TTS
         esEl.classList.add('hidden');
         frEl.textContent = line.fr;
         frEl.style.color = 'white';
-
-        if (!isRosalia) {
-          // Disable button, play TTS, then enable
-          this._setActionBtn('disabled', isLast);
-          setTimeout(() => tts._speak(line.fr, () => this._setActionBtn('next', isLast)), 350);
-        } else {
-          // Round 2 Rosalia: show French, auto-play, enable immediately
-          setTimeout(() => tts._speak(line.fr), 350);
-          this._setActionBtn('next', isLast);
-        }
+        this._setActionBtn('disabled', isLast);
+        setTimeout(() => tts._speak(line.fr, () => this._setActionBtn('next', isLast)), 350);
       }
     },
 

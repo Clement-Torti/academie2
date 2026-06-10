@@ -326,15 +326,6 @@
         </button>
       </div>
 
-      <!-- Round 2 banner -->
-      <div id="conv-round2-banner" class="hidden rounded-xl px-5 py-3 mb-4 text-center"
-           style="background:#002654;">
-        <p class="text-white text-sm font-bold">
-          <i class="fa-solid fa-microphone mr-2" style="color:#D4AF37;"></i>2ème passage — Focus sur la prononciation
-        </p>
-        <p class="text-xs mt-0.5" style="color:rgba(255,255,255,.5);">Cette fois, concentre-toi sur la fluidité et la prononciation</p>
-      </div>
-
       <!-- ── IMMERSIVE STAGE ─────────────────────────── -->
       <div id="conv-stage" class="hidden rounded-2xl overflow-hidden"
            style="background:#0d1117; border:1px solid rgba(255,255,255,.08);">
@@ -455,30 +446,6 @@
         </p>
       </div>
 
-      <!-- REDO button (after listen) -->
-      <div id="conv-redo-wrap" class="hidden mt-6">
-        <div class="rounded-2xl px-5 py-5 text-center"
-             style="background:rgba(0,38,84,.07); border:1px solid rgba(0,38,84,.15);">
-          <p class="text-sm font-bold text-frBlue mb-1">
-            <i class="fa-solid fa-rotate-right mr-2"></i>Prêt pour le 2ème passage ?
-          </p>
-          <p class="text-xs text-gray-500 mb-4">
-            Cette fois, concentre-toi sur la prononciation et la fluidité.
-          </p>
-          <button onclick="conv.startRound2()"
-                  class="bg-frBlue text-white font-bold px-8 py-3 rounded-xl text-sm
-                         transition active:scale-95">
-            <i class="fa-solid fa-microphone mr-2"></i>Refaire la conversation
-          </button>
-          <div class="mt-3">
-            <button onclick="conv.playAll()"
-                    class="text-xs text-gray-400 underline">
-              Réécouter d'abord
-            </button>
-          </div>
-        </div>
-      </div>
-
       <!-- DONE: go to translations -->
       <div id="conv-done-wrap" class="hidden mt-6 text-center">
         <div class="bg-green-50 border border-green-200 rounded-2xl px-5 py-5">
@@ -570,19 +537,6 @@
       this._prevLine = null;
       this._stageSeconds = 0;
       document.getElementById('conv-start').classList.add('hidden');
-      document.getElementById('conv-stage').classList.remove('hidden');
-      this._startTimer();
-      this.nextLine();
-    },
-
-    startRound2() {
-      this.round = 2;
-      this.currentLine = -1;
-      this._prevLine = null;
-      this._stageSeconds = 0;
-      document.getElementById('conv-redo-wrap').classList.add('hidden');
-      document.getElementById('conv-round2-banner').classList.remove('hidden');
-      document.getElementById('stage-prev').textContent = '';
       document.getElementById('conv-stage').classList.remove('hidden');
       this._startTimer();
       this.nextLine();
@@ -707,13 +661,8 @@
     _onRoundComplete() {
       this._stopTimer();
       document.getElementById('conv-stage').classList.add('hidden');
-      if (this.round === 1) {
-        this._markCompleted();
-        document.getElementById('conv-listen-wrap').classList.remove('hidden');
-      } else {
-        document.getElementById('conv-round2-banner').classList.add('hidden');
-        document.getElementById('conv-done-wrap').classList.remove('hidden');
-      }
+      this._markCompleted();
+      document.getElementById('conv-listen-wrap').classList.remove('hidden');
       this.state = 'completed';
     },
 
@@ -752,7 +701,6 @@
       document.getElementById('stage-pause-icon').className = 'fa-solid fa-pause text-lg';
       // Hide trigger, show stage
       document.getElementById('conv-listen-wrap').classList.add('hidden');
-      document.getElementById('conv-redo-wrap').classList.add('hidden');
       document.getElementById('conv-stage').classList.remove('hidden');
       this._startTimer();
       this._currentPlayIdx = 0;
@@ -773,8 +721,7 @@
           document.getElementById('stage-action-area').classList.remove('hidden');
           document.getElementById('stage-listen-controls').classList.add('hidden');
           document.getElementById('conv-stage').classList.add('hidden');
-          document.getElementById('conv-redo-wrap').classList.remove('hidden');
-          document.getElementById('conv-listen-label').textContent = 'Réécouter';
+          document.getElementById('conv-done-wrap').classList.remove('hidden');
           return;
         }
 

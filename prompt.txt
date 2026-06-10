@@ -64,8 +64,8 @@ RÈGLES DÉTAILLÉES PAR CHAMP
 
 ### conversation
 - Contexte (intro) : situe précisément où sont les personnages et pourquoi ils parlent du sujet. 2-3 phrases max.
-- Nombre de répliques total : entre 25 et 30 lignes
-- Rosalia prend la parole environ 15 fois (elle est le personnage qui parle le plus)
+- Nombre de répliques total : environ 2O 
+- Rosalia prend la parole environ 10 fois (elle est le personnage qui parle le plus)
 - Un interlocuteur est TOUJOURS "Rosalia" (l'apprenante hispanophone)
 - L'autre interlocuteur a un prénom français typique adapté au contexte (Marc, Léa, Sophie, Antoine, etc.)
 - Répliques de Rosalia : OBLIGATOIREMENT les deux champs "fr" ET "es"

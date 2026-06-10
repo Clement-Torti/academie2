@@ -156,6 +156,45 @@
       overflow: hidden;
     }
     html { scroll-behavior: smooth; }
+
+    /* ── CONVERSATION STAGE ─────────────────────────── */
+    .live-dot {
+      width: 8px; height: 8px; border-radius: 50%; background: #ef4444;
+      animation: live-pulse 1.5s ease-in-out infinite;
+      display: inline-block; flex-shrink: 0;
+    }
+    @keyframes live-pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50%       { opacity: 0.35; transform: scale(0.75); }
+    }
+
+    .sound-wave-bars { display: flex; align-items: center; gap: 2.5px; height: 28px; }
+    .sound-wave-bars span {
+      display: block; width: 3px; min-height: 3px; border-radius: 2px;
+      background: currentColor;
+      animation: bar-wave 1.1s ease-in-out infinite;
+    }
+    .sound-wave-bars span:nth-child(1) { animation-delay: 0.00s; }
+    .sound-wave-bars span:nth-child(2) { animation-delay: 0.12s; }
+    .sound-wave-bars span:nth-child(3) { animation-delay: 0.24s; }
+    .sound-wave-bars span:nth-child(4) { animation-delay: 0.36s; }
+    .sound-wave-bars span:nth-child(5) { animation-delay: 0.48s; }
+    .sound-wave-bars span:nth-child(6) { animation-delay: 0.36s; }
+    .sound-wave-bars span:nth-child(7) { animation-delay: 0.24s; }
+    .sound-wave-bars span:nth-child(8) { animation-delay: 0.12s; }
+    .sound-wave-bars span:nth-child(9) { animation-delay: 0.00s; }
+    @keyframes bar-wave {
+      0%, 100% { height: 3px; opacity: 0.25; }
+      50%       { height: 22px; opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(14px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .stage-anim { animation: fadeInUp 0.32s cubic-bezier(.2,.8,.4,1) both; }
+
+    #conv-action-btn:disabled { cursor: not-allowed; }
   </style>
 </head>
 
@@ -264,7 +303,7 @@
     </section>
 
     <!-- ── CONVERSATION ───────────────────────────────── -->
-    <section class="max-w-3xl mx-auto px-4 pt-4 pb-[60vh]" id="conversation-section">
+    <section class="max-w-3xl mx-auto px-4 pt-4 pb-10" id="conversation-section">
 
       <h2 class="text-[11px] font-bold uppercase tracking-widest text-frBlue mb-4 flex items-center gap-2">
         <i class="fa-solid fa-comments text-coral"></i> Exercice de conversation
@@ -275,11 +314,8 @@
         <p class="text-[10px] font-bold uppercase tracking-widest text-amber-700 mb-1">
           <i class="fa-solid fa-circle-info mr-1"></i> Contexte
         </p>
-        <p id="conv-intro" class="text-lg text-amber-900 leading-relaxed" style="font-family:'Nunito',sans-serif;"></p>
+        <p id="conv-intro" class="text-base text-amber-900 leading-relaxed" style="font-family:'Nunito',sans-serif;"></p>
       </div>
-
-      <!-- Instruction badge -->
-
 
       <!-- START state -->
       <div id="conv-start" class="text-center py-4">
@@ -290,28 +326,157 @@
         </button>
       </div>
 
-      <!-- Lines container -->
-      <div id="conv-lines" class="hidden flex flex-col gap-4"></div>
-
-      <!-- NEXT button -->
-      <div id="conv-next-wrap" class="hidden mt-5 text-center">
-        <button id="conv-next-btn" onclick="conv.nextLine()"
-                class="bg-frBlue text-white font-bold px-6 py-3 rounded-xl text-sm transition active:scale-95">
-          Phrase suivante <i class="fa-solid fa-arrow-right ml-1"></i>
-        </button>
+      <!-- Round 2 banner -->
+      <div id="conv-round2-banner" class="hidden rounded-xl px-5 py-3 mb-4 text-center"
+           style="background:#002654;">
+        <p class="text-white text-sm font-bold">
+          <i class="fa-solid fa-microphone mr-2" style="color:#D4AF37;"></i>2ème passage — Focus sur la prononciation
+        </p>
+        <p class="text-xs mt-0.5" style="color:rgba(255,255,255,.5);">Les répliques s'affichent directement en français</p>
       </div>
 
-      <!-- LISTEN button -->
+      <!-- ── IMMERSIVE STAGE ─────────────────────────── -->
+      <div id="conv-stage" class="hidden rounded-2xl overflow-hidden"
+           style="background:#0d1117; border:1px solid rgba(255,255,255,.08);">
+
+        <!-- Live bar -->
+        <div class="flex items-center justify-between px-4 py-2.5"
+             style="background:rgba(255,255,255,.04); border-bottom:1px solid rgba(255,255,255,.07);">
+          <div class="flex items-center gap-2">
+            <span class="live-dot"></span>
+            <span class="text-[10px] font-bold uppercase tracking-widest"
+                  style="color:rgba(255,255,255,.45);">En direct</span>
+          </div>
+          <div class="sound-wave-bars" style="color:#D4AF37;">
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span>
+          </div>
+          <div class="flex items-center gap-3">
+            <span id="stage-counter" class="text-[10px] font-mono"
+                  style="color:rgba(255,255,255,.4);">1/1</span>
+            <span id="stage-timer" class="text-[10px] font-mono"
+                  style="color:rgba(255,255,255,.28);">0:00</span>
+          </div>
+        </div>
+
+        <!-- Previous message (faded) -->
+        <div class="px-5 pt-4 pb-0" style="min-height:52px;">
+          <p id="stage-prev" class="text-sm leading-relaxed"
+             style="color:rgba(255,255,255,.25); font-family:'Nunito',sans-serif;
+                    font-style:italic; display:-webkit-box; -webkit-line-clamp:2;
+                    line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;"></p>
+        </div>
+
+        <!-- Thin separator -->
+        <div class="mx-5 my-3" style="height:1px; background:rgba(255,255,255,.06);"></div>
+
+        <!-- Current message -->
+        <div class="px-5 pb-6" style="min-height:200px;">
+          <p id="stage-speaker-name"
+             class="text-[11px] font-bold uppercase tracking-widest mb-3"
+             style="color:#4ECDC4;"></p>
+
+          <!-- Spanish hint (Rosalia round 1 only) -->
+          <p id="stage-es-hint"
+             class="text-xl sm:text-2xl leading-relaxed font-bold mb-3 hidden"
+             style="color:rgba(255,255,255,.4); font-family:'Nunito',sans-serif; font-style:italic;"></p>
+
+          <!-- French text (big) -->
+          <p id="stage-fr-text"
+             class="text-3xl sm:text-4xl leading-snug font-bold stage-anim"
+             style="color:white; font-family:'Nunito',sans-serif;"></p>
+        </div>
+
+        <!-- Controls area : switches between action button and listen controls -->
+        <div class="px-4 pb-4">
+
+          <!-- Action button (rounds 1 & 2) -->
+          <div id="stage-action-area">
+            <button id="conv-action-btn"
+                    class="w-full py-4 rounded-xl font-bold text-base transition active:scale-95"
+                    style="background:#D4AF37; color:#0d1117; font-family:'Montserrat',sans-serif;">
+              Suivant <i class="fa-solid fa-arrow-right ml-2"></i>
+            </button>
+          </div>
+
+          <!-- Listen controls (shown during playAll) -->
+          <div id="stage-listen-controls" class="hidden">
+            <div class="flex items-center justify-between gap-2 rounded-xl px-5 py-3"
+                 style="background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.09);">
+
+              <button onclick="player.prev()"
+                      class="w-10 h-10 rounded-xl flex items-center justify-center transition active:bg-white/20"
+                      style="color:rgba(255,255,255,.7);">
+                <i class="fa-solid fa-backward-step text-base"></i>
+              </button>
+
+              <button onclick="player.togglePause()"
+                      class="w-12 h-12 rounded-xl flex items-center justify-center font-bold transition active:scale-95"
+                      style="background:#D4AF37; color:#0d1117;">
+                <i id="stage-pause-icon" class="fa-solid fa-pause text-lg"></i>
+              </button>
+
+              <button onclick="player.next()"
+                      class="w-10 h-10 rounded-xl flex items-center justify-center transition active:bg-white/20"
+                      style="color:rgba(255,255,255,.7);">
+                <i class="fa-solid fa-forward-step text-base"></i>
+              </button>
+
+              <div style="width:1px; height:26px; background:rgba(255,255,255,.12);"></div>
+
+              <select onchange="player.setRate(this.value)"
+                      class="text-[12px] font-bold outline-none cursor-pointer"
+                      style="background:transparent; border:none; color:rgba(255,255,255,.6);
+                             -webkit-appearance:none; appearance:none;">
+                <option value="0.6"  style="background:#0d1117;">0.6×</option>
+                <option value="0.75" style="background:#0d1117;">0.75×</option>
+                <option value="0.82" selected style="background:#0d1117;">0.82×</option>
+                <option value="1.0"  style="background:#0d1117;">1×</option>
+                <option value="1.25" style="background:#0d1117;">1.25×</option>
+              </select>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div><!-- end conv-stage -->
+
+      <!-- LISTEN trigger -->
       <div id="conv-listen-wrap" class="hidden mt-6 text-center">
-        <button id="conv-listen-btn" onclick="conv.playAll()"
+        <button onclick="conv.playAll()"
                 class="bg-gold text-frBlue font-bold px-8 py-4 rounded-2xl shadow-lg text-sm
                        transition active:scale-95 inline-flex items-center gap-2">
-          <i class="fa-solid fa-play" id="conv-listen-icon"></i>
+          <i class="fa-solid fa-headphones mr-1"></i>
           <span id="conv-listen-label">Écouter la conversation</span>
         </button>
         <p class="text-[11px] text-gray-400 mt-2">
-          <i class="fa-solid fa-lock text-xs mr-1"></i>Écoute requise pour continuer
+          <i class="fa-solid fa-lock text-xs mr-1"></i>Écoute requise avant de continuer
         </p>
+      </div>
+
+      <!-- REDO button (after listen) -->
+      <div id="conv-redo-wrap" class="hidden mt-6">
+        <div class="rounded-2xl px-5 py-5 text-center"
+             style="background:rgba(0,38,84,.07); border:1px solid rgba(0,38,84,.15);">
+          <p class="text-sm font-bold text-frBlue mb-1">
+            <i class="fa-solid fa-rotate-right mr-2"></i>Prêt pour le 2ème passage ?
+          </p>
+          <p class="text-xs text-gray-500 mb-4">
+            Cette fois, concentre-toi sur la prononciation et la fluidité.
+          </p>
+          <button onclick="conv.startRound2()"
+                  class="bg-frBlue text-white font-bold px-8 py-3 rounded-xl text-sm
+                         transition active:scale-95">
+            <i class="fa-solid fa-microphone mr-2"></i>Refaire la conversation
+          </button>
+          <div class="mt-3">
+            <button onclick="conv.playAll()"
+                    class="text-xs text-gray-400 underline">
+              Réécouter d'abord
+            </button>
+          </div>
+        </div>
       </div>
 
       <!-- DONE: go to translations -->
@@ -334,56 +499,6 @@
 
   </div><!-- end #article-body -->
 
-  <!-- ══ MEDIA PLAYER (fixed bottom-left) ═════════════════ -->
-  <div id="media-player" class="hidden fixed bottom-5 left-4 z-50">
-    <div class="flex items-center gap-2 rounded-2xl px-4 py-3 shadow-2xl"
-         style="background:rgba(0,38,84,.95); backdrop-filter:blur(10px);
-                border:1px solid rgba(255,255,255,.1);">
-
-      <!-- Line counter -->
-      <span id="player-counter"
-            class="text-[10px] font-mono w-8 text-center shrink-0"
-            style="color:rgba(255,255,255,.45);">0/0</span>
-
-      <div style="width:1px; height:18px; background:rgba(255,255,255,.15);"></div>
-
-      <!-- Prev -->
-      <button onclick="player.prev()" title="Phrase précédente"
-              class="w-8 h-8 rounded-xl flex items-center justify-center text-white
-                     transition active:bg-white/20">
-        <i class="fa-solid fa-backward-step text-sm"></i>
-      </button>
-
-      <!-- Play / Pause -->
-      <button onclick="player.togglePause()" title="Lecture / Pause"
-              class="w-9 h-9 rounded-xl flex items-center justify-center font-bold
-                     transition active:scale-95"
-              style="background:#D4AF37; color:#002654;">
-        <i id="player-pause-icon" class="fa-solid fa-pause text-sm"></i>
-      </button>
-
-      <!-- Next -->
-      <button onclick="player.next()" title="Phrase suivante"
-              class="w-8 h-8 rounded-xl flex items-center justify-center text-white
-                     transition active:bg-white/20">
-        <i class="fa-solid fa-forward-step text-sm"></i>
-      </button>
-
-      <div style="width:1px; height:18px; background:rgba(255,255,255,.15);"></div>
-
-      <!-- Speed -->
-      <select onchange="player.setRate(this.value)"
-              title="Vitesse de lecture"
-              class="text-white text-[11px] font-bold outline-none cursor-pointer"
-              style="background:transparent; border:none; -webkit-appearance:none; appearance:none;">
-        <option value="0.6"  style="background:#002654;">0.6×</option>
-        <option value="0.75" style="background:#002654;">0.75×</option>
-        <option value="0.82" selected style="background:#002654;">0.82×</option>
-        <option value="1.0"  style="background:#002654;">1×</option>
-        <option value="1.25" style="background:#002654;">1.25×</option>
-      </select>
-    </div>
-  </div>
 
   <script>
   // ════════════════════════════════════════════════════
@@ -432,92 +547,181 @@
     data: null,
     state: 'idle',
     currentLine: -1,
+    round: 1,
     _currentPlayIdx: 0,
-    revealedLines: new Set(),
+    _prevLine: null,
+    _listenPrevLine: null,
+    _stageTimer: null,
+    _stageSeconds: 0,
 
     init(articleData) {
       this.data = articleData;
       this.state = 'idle';
       this.currentLine = -1;
-      this.revealedLines = new Set();
+      this.round = 1;
+      this._prevLine = null;
+      this._listenPrevLine = null;
       document.getElementById('conv-intro').textContent = articleData.conversation.intro;
     },
 
     start() {
-      this.state = 'started';
-      document.getElementById('conv-start').classList.add('hidden');
-      document.getElementById('conv-lines').classList.remove('hidden');
+      this.round = 1;
       this.currentLine = -1;
+      this._prevLine = null;
+      this._stageSeconds = 0;
+      document.getElementById('conv-start').classList.add('hidden');
+      document.getElementById('conv-stage').classList.remove('hidden');
+      this._startTimer();
       this.nextLine();
     },
 
+    startRound2() {
+      this.round = 2;
+      this.currentLine = -1;
+      this._prevLine = null;
+      this._stageSeconds = 0;
+      document.getElementById('conv-redo-wrap').classList.add('hidden');
+      document.getElementById('conv-round2-banner').classList.remove('hidden');
+      document.getElementById('stage-prev').textContent = '';
+      document.getElementById('conv-stage').classList.remove('hidden');
+      this._startTimer();
+      this.nextLine();
+    },
+
+    _startTimer() {
+      if (this._stageTimer) clearInterval(this._stageTimer);
+      const el = document.getElementById('stage-timer');
+      if (el) el.textContent = '0:00';
+      this._stageTimer = setInterval(() => {
+        this._stageSeconds++;
+        const m = Math.floor(this._stageSeconds / 60);
+        const s = this._stageSeconds % 60;
+        const t = document.getElementById('stage-timer');
+        if (t) t.textContent = `${m}:${s.toString().padStart(2, '0')}`;
+      }, 1000);
+    },
+
+    _stopTimer() {
+      if (this._stageTimer) { clearInterval(this._stageTimer); this._stageTimer = null; }
+    },
+
     nextLine() {
+      // Save currently displayed line as "previous" before advancing
+      if (this.currentLine >= 0) {
+        const cur = this.data.conversation.lines[this.currentLine];
+        if (cur) this._prevLine = { ...cur };
+      }
+
       this.currentLine++;
       const lines = this.data.conversation.lines;
 
       if (this.currentLine >= lines.length) {
-        this._onComplete();
+        this._onRoundComplete();
         return;
       }
 
       const line = lines[this.currentLine];
       const isRosalia = line.speaker === 'Rosalia';
-
-      const bubble = this._buildBubble(line, this.currentLine);
-      document.getElementById('conv-lines').appendChild(bubble);
-
-      setTimeout(() => bubble.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 80);
-
-      document.getElementById('conv-next-wrap').classList.remove('hidden');
-      const btn = document.getElementById('conv-next-btn');
       const isLast = this.currentLine === lines.length - 1;
 
-      if (isRosalia) {
+      // Previous message display
+      const prevEl = document.getElementById('stage-prev');
+      if (this._prevLine) {
+        prevEl.textContent = `${this._prevLine.speaker} : « ${this._prevLine.fr} »`;
+      } else {
+        prevEl.textContent = '';
+      }
+
+      // Counter
+      const counterEl = document.getElementById('stage-counter');
+      if (counterEl) counterEl.textContent = `${this.currentLine + 1}/${lines.length}`;
+
+      // Speaker label
+      const speakerEl = document.getElementById('stage-speaker-name');
+      speakerEl.textContent = line.speaker;
+      speakerEl.style.color = isRosalia ? '#FF6B6B' : '#4ECDC4';
+
+      const frEl = document.getElementById('stage-fr-text');
+      const esEl = document.getElementById('stage-es-hint');
+
+      // Reset animation
+      frEl.classList.remove('stage-anim');
+      void frEl.offsetWidth;
+      frEl.classList.add('stage-anim');
+
+      if (isRosalia && this.round === 1) {
+        // Show Spanish hint, blur French
+        esEl.textContent = line.es;
+        esEl.classList.remove('hidden');
+        frEl.textContent = '…';
+        frEl.style.color = 'rgba(255,255,255,0.18)';
+        this._setActionBtn('reveal', isLast);
+      } else {
+        // Show French directly
+        esEl.classList.add('hidden');
+        frEl.textContent = line.fr;
+        frEl.style.color = 'white';
+
+        if (!isRosalia) {
+          // Disable button, play TTS, then enable
+          this._setActionBtn('disabled', isLast);
+          setTimeout(() => tts._speak(line.fr, () => this._setActionBtn('next', isLast)), 350);
+        } else {
+          // Round 2 Rosalia: show French, auto-play, enable immediately
+          setTimeout(() => tts._speak(line.fr), 350);
+          this._setActionBtn('next', isLast);
+        }
+      }
+    },
+
+    _setActionBtn(state, isLast) {
+      const btn = document.getElementById('conv-action-btn');
+      if (!btn) return;
+      if (state === 'disabled') {
         btn.disabled = true;
-        btn.style.opacity = '.35';
-        btn.style.cursor = 'not-allowed';
-        this.state = 'rosalia_hidden';
+        btn.style.opacity = '0.22';
+        btn.innerHTML = '<i class="fa-solid fa-volume-high mr-2"></i>En cours…';
+        btn.onclick = null;
+      } else if (state === 'reveal') {
+        btn.disabled = false;
+        btn.style.opacity = '1';
+        btn.innerHTML = '<i class="fa-solid fa-eye mr-2"></i>Voir en français';
+        btn.onclick = () => conv._revealFr();
       } else {
         btn.disabled = false;
         btn.style.opacity = '1';
-        btn.style.cursor = '';
-        this.state = 'line';
-        // Lire la ligne automatiquement après l'animation de slide-in (350ms)
-        setTimeout(() => tts._speak(line.fr), 380);
+        btn.innerHTML = isLast
+          ? 'Terminer <i class="fa-solid fa-check ml-2"></i>'
+          : 'Suivant <i class="fa-solid fa-arrow-right ml-2"></i>';
+        btn.onclick = () => conv.nextLine();
       }
-
-      btn.innerHTML = isLast
-        ? 'Terminer <i class="fa-solid fa-check ml-1"></i>'
-        : 'Phrase suivante <i class="fa-solid fa-arrow-right ml-1"></i>';
     },
 
-    revealFr(lineIdx) {
-      const line = this.data.conversation.lines[lineIdx];
-      const bubble = document.querySelector(`[data-line-idx="${lineIdx}"]`);
-      if (!bubble) return;
-
-      const revealBtn = bubble.querySelector('.btn-reveal');
-      if (revealBtn) revealBtn.style.display = 'none';
-
-      const frEl = document.createElement('p');
-      frEl.className = 'text-frBlue font-bold mt-2 text-lg leading-relaxed';
-      frEl.style.fontFamily = "'Nunito', sans-serif";
+    _revealFr() {
+      const line = this.data.conversation.lines[this.currentLine];
+      const frEl = document.getElementById('stage-fr-text');
+      const esEl = document.getElementById('stage-es-hint');
+      const isLast = this.currentLine === this.data.conversation.lines.length - 1;
+      esEl.classList.add('hidden');
       frEl.textContent = line.fr;
-      bubble.querySelector('.bubble-content').appendChild(frEl);
-
-      this.revealedLines.add(lineIdx);
-      this.state = 'rosalia_revealed';
-
-      const btn = document.getElementById('conv-next-btn');
-      btn.disabled = false;
-      btn.style.opacity = '1';
-      btn.style.cursor = '';
+      frEl.style.color = 'white';
+      frEl.classList.remove('stage-anim');
+      void frEl.offsetWidth;
+      frEl.classList.add('stage-anim');
+      tts._speak(line.fr);
+      this._setActionBtn('next', isLast);
     },
 
-    _onComplete() {
-      document.getElementById('conv-next-wrap').classList.add('hidden');
-      document.getElementById('conv-listen-wrap').classList.remove('hidden');
-      this._markCompleted();
+    _onRoundComplete() {
+      this._stopTimer();
+      document.getElementById('conv-stage').classList.add('hidden');
+      if (this.round === 1) {
+        this._markCompleted();
+        document.getElementById('conv-listen-wrap').classList.remove('hidden');
+      } else {
+        document.getElementById('conv-round2-banner').classList.add('hidden');
+        document.getElementById('conv-done-wrap').classList.remove('hidden');
+      }
       this.state = 'completed';
     },
 
@@ -525,20 +729,15 @@
       const today = new Date().toISOString().split('T')[0];
       const id    = this.data?.id;
       const days  = JSON.parse(localStorage.getItem('acad2_days') || '{}');
-
-      // Marquer le jour comme complété
       if (typeof days[today] === 'object') {
         days[today].status = 'completed';
       } else {
         days[today] = { status: 'completed', articleId: id };
       }
       localStorage.setItem('acad2_days', JSON.stringify(days));
-
-      // Mettre à jour le streak
       const stats     = JSON.parse(localStorage.getItem('acad2_stats') || '{"sessions":[],"streak":0,"lastCompletedDate":null}');
       const last      = stats.lastCompletedDate;
       const yesterday = new Date(new Date(today + 'T00:00:00').getTime() - 86400000).toISOString().split('T')[0];
-
       if (last !== today) {
         stats.streak = (last === yesterday) ? (stats.streak || 0) + 1 : 1;
         stats.lastCompletedDate = today;
@@ -549,11 +748,22 @@
     },
 
     playAll() {
+      this._listenPrevLine = null;
+      this._stageSeconds = 0;
+      // Switch stage to listen mode
+      document.getElementById('stage-action-area').classList.add('hidden');
+      document.getElementById('stage-listen-controls').classList.remove('hidden');
+      document.getElementById('stage-prev').textContent = '';
+      document.getElementById('stage-fr-text').textContent = '';
+      document.getElementById('stage-speaker-name').textContent = '';
+      document.getElementById('stage-es-hint').classList.add('hidden');
+      document.getElementById('stage-pause-icon').className = 'fa-solid fa-pause text-lg';
+      // Hide trigger, show stage
+      document.getElementById('conv-listen-wrap').classList.add('hidden');
+      document.getElementById('conv-redo-wrap').classList.add('hidden');
+      document.getElementById('conv-stage').classList.remove('hidden');
+      this._startTimer();
       this._currentPlayIdx = 0;
-      // Disable the listen button while playing
-      const btn = document.getElementById('conv-listen-btn');
-      if (btn) { btn.disabled = true; btn.style.opacity = '.4'; }
-      player.show();
       this._playChain(0);
     },
 
@@ -564,29 +774,48 @@
       const playLine = async (idx) => {
         if (tts._speakId !== sessionId) return;
 
-        document.querySelectorAll('[data-line-idx]').forEach(b => b.classList.remove('bubble-speaking'));
-
         if (idx >= lines.length) {
-          // Natural end → unlock done button
-          this.state = 'completed';
-          player.hide();
-          document.getElementById('conv-done-wrap').classList.remove('hidden');
-          // Re-enable listen button for replay
-          const btn = document.getElementById('conv-listen-btn');
-          if (btn) { btn.disabled = false; btn.style.opacity = '1'; }
+          this._stopTimer();
+          this.state = 'listen_done';
+          // Restore action button, hide stage
+          document.getElementById('stage-action-area').classList.remove('hidden');
+          document.getElementById('stage-listen-controls').classList.add('hidden');
+          document.getElementById('conv-stage').classList.add('hidden');
+          document.getElementById('conv-redo-wrap').classList.remove('hidden');
           document.getElementById('conv-listen-label').textContent = 'Réécouter';
           return;
         }
 
         this._currentPlayIdx = idx;
-        player.updateCounter(idx, lines.length);
-        document.getElementById('player-pause-icon').className = 'fa-solid fa-pause text-sm';
 
-        const bubble = document.querySelector(`[data-line-idx="${idx}"]`);
-        if (bubble) {
-          bubble.classList.add('bubble-speaking');
-          bubble.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }
+        // Update stage
+        const line = lines[idx];
+        const isRosalia = line.speaker === 'Rosalia';
+
+        const counterEl = document.getElementById('stage-counter');
+        if (counterEl) counterEl.textContent = `${idx + 1}/${lines.length}`;
+
+        const prevEl = document.getElementById('stage-prev');
+        prevEl.textContent = this._listenPrevLine
+          ? `${this._listenPrevLine.speaker} : « ${this._listenPrevLine.fr} »`
+          : '';
+
+        const speakerEl = document.getElementById('stage-speaker-name');
+        speakerEl.textContent = line.speaker;
+        speakerEl.style.color = isRosalia ? '#FF6B6B' : '#4ECDC4';
+
+        const frEl = document.getElementById('stage-fr-text');
+        frEl.textContent = line.fr;
+        frEl.style.color = 'white';
+        frEl.classList.remove('stage-anim');
+        void frEl.offsetWidth;
+        frEl.classList.add('stage-anim');
+
+        document.getElementById('stage-pause-icon').className = 'fa-solid fa-pause text-lg';
+        this._listenPrevLine = { ...line };
+
+        document.getElementById('conv-stage')
+          .scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 
         await new Promise(resolve => tts._speak(lines[idx].fr, resolve));
 
@@ -597,48 +826,6 @@
 
       this.state = 'playing';
       playLine(startIdx);
-    },
-
-    _buildBubble(line, idx) {
-      const isRosalia = line.speaker === 'Rosalia';
-      const div = document.createElement('div');
-      div.setAttribute('data-line-idx', idx);
-
-      if (isRosalia) {
-        div.className = 'bubble-right flex items-end gap-2 justify-end';
-        div.innerHTML = `
-          <div class="min-w-0">
-            <p class="text-[10px] font-bold mb-1 text-right" style="color:#FF6B6B; opacity:.7;">Rosalia</p>
-            <div class="bubble-content rounded-2xl rounded-br-sm px-4 py-3 text-lg max-w-sm leading-relaxed"
-                 style="background:rgba(255,107,107,.1); border:1.5px solid rgba(255,107,107,.25);
-                        font-family:'Nunito',sans-serif; color:#2d2d2d;">
-              <p class="text-gray-500 italic text-base" style="font-family:'Nunito',sans-serif;">${this._esc(line.es)}</p>
-              <button onclick="conv.revealFr(${idx})" class="btn-reveal">
-                <i class="fa-solid fa-eye text-xs"></i>Voir en français
-              </button>
-            </div>
-          </div>
-          <div class="w-8 h-8 rounded-full flex items-center justify-center shrink-0
-                      text-xs font-bold text-white"
-               style="background:#FF6B6B; min-width:2rem;">R</div>`;
-      } else {
-        const initial = line.speaker.charAt(0).toUpperCase();
-        div.className = 'bubble-left flex items-end gap-2';
-        div.innerHTML = `
-          <div class="w-8 h-8 rounded-full flex items-center justify-center shrink-0
-                      text-xs font-bold text-gray-500 bg-gray-200"
-               style="min-width:2rem;">${this._esc(initial)}</div>
-          <div class="min-w-0">
-            <p class="text-[10px] font-bold text-gray-400 mb-1">${this._esc(line.speaker)}</p>
-            <div class="bubble-content bg-gray-100 text-gray-800 rounded-2xl rounded-bl-sm
-                        px-4 py-3 text-lg max-w-sm leading-relaxed"
-                 style="font-family:'Nunito',sans-serif;">
-              ${this._esc(line.fr)}
-            </div>
-          </div>`;
-      }
-
-      return div;
     },
 
     _esc(str) {
@@ -653,53 +840,41 @@
   const player = {
     _paused: false,
 
-    show() {
-      this._paused = false;
-      document.getElementById('player-pause-icon').className = 'fa-solid fa-pause text-sm';
-      document.getElementById('media-player').classList.remove('hidden');
-    },
-
-    hide() {
-      document.getElementById('media-player').classList.add('hidden');
-      this._paused = false;
-    },
-
-    updateCounter(idx, total) {
-      document.getElementById('player-counter').textContent = `${idx + 1}/${total}`;
-    },
-
     togglePause() {
+      const icon = document.getElementById('stage-pause-icon');
       if (this._paused) {
-        // Resume
         this._paused = false;
-        document.getElementById('player-pause-icon').className = 'fa-solid fa-pause text-sm';
+        if (icon) icon.className = 'fa-solid fa-pause text-lg';
         window.speechSynthesis.resume();
-        // If synthesis finished naturally while paused, restart chain from current idx
         if (!window.speechSynthesis.speaking) {
           conv._playChain(conv._currentPlayIdx);
         }
       } else {
-        // Pause
         this._paused = true;
-        document.getElementById('player-pause-icon').className = 'fa-solid fa-play text-sm';
+        if (icon) icon.className = 'fa-solid fa-play text-lg';
         window.speechSynthesis.pause();
       }
     },
 
     prev() {
       const idx = Math.max(0, conv._currentPlayIdx - 1);
+      conv._listenPrevLine = idx > 0
+        ? { ...conv.data.conversation.lines[idx - 1] }
+        : null;
       conv._playChain(idx);
     },
 
     next() {
       const lines = conv.data?.conversation?.lines || [];
       const idx = Math.min(conv._currentPlayIdx + 1, lines.length - 1);
+      conv._listenPrevLine = idx > 0
+        ? { ...lines[idx - 1] }
+        : null;
       conv._playChain(idx);
     },
 
     setRate(val) {
       tts.rate = parseFloat(val);
-      // If currently speaking, restart current line at new rate
       if (conv.state === 'playing') {
         conv._playChain(conv._currentPlayIdx);
       }

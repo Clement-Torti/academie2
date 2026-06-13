@@ -342,8 +342,8 @@ const home = {
                 .filter(Boolean)
         );
 
-        // Trier par date décroissante (le plus récent en premier)
-        const sorted = catalog.slice().sort((a, b) => b.date.localeCompare(a.date));
+        // Ordre d'ajout au catalogue : index 0 = plus récent, dernier = plus ancien → reverse pour FIFO
+        const sorted = catalog.slice().reverse();
 
         // Choisir le premier article non encore utilisé
         let chosen = sorted.find(a => !usedIds.has(a.id));

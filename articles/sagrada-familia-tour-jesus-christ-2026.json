@@ -1,0 +1,74 @@
+{
+  "id": "sagrada-familia-tour-jesus-christ-2026",
+  "title": "La Sagrada Família inaugure la Tour de Jésus-Christ",
+  "date": "2026-06-13",
+  "category": "Culture",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sagrada_Familia_01_11_2010.jpg",
+    "alt": "La Sagrada Família vue de l'extérieur à Barcelone"
+  },
+  "vocabulary": [
+    { "fr": "inaugurer", "es": "inaugurar" },
+    { "fr": "la crypte", "es": "la cripta" },
+    { "fr": "le centenaire", "es": "el centenario" },
+    { "fr": "bénir", "es": "bendecir" },
+    { "fr": "un chef-d'œuvre", "es": "una obra maestra" },
+    { "fr": "l'offrande florale", "es": "la ofrenda floral" },
+    { "fr": "un drone", "es": "un dron" },
+    { "fr": "le dévouement", "es": "la dedicación" },
+    { "fr": "la messe solennelle", "es": "la misa solemne" }
+  ],
+  "article": "La Sagrada Família, la célèbre basilique de Barcelone, a vécu un moment historique cette semaine. Le 10 juin 2026, la Tour de Jésus-Christ a été officiellement inaugurée devant des dizaines de milliers de personnes. Cette journée marque également le centième anniversaire de la mort d'Antoni Gaudí, l'architecte extraordinaire qui a conçu ce monument unique. Le monde entier avait les yeux tournés vers la capitale catalane pour célébrer la fin d'un chantier qui a duré plus de cent quarante ans.\n\nLa cérémonie a débuté à dix heures du matin avec une offrande florale. Des centaines de personnes ont déposé des fleurs sur la tombe d'Antoni Gaudí, conservée dans la crypte de la basilique. C'est un geste symbolique très fort pour honorer l'architecte catalan. Gaudí est mort en 1926 après avoir été renversé par un tramway à Barcelone. Il avait consacré les quarante dernières années de sa vie à ce projet immense. Il est enterré dans la basilique qu'il avait lui-même conçue.\n\nLe soir, le pape Léon XIV a présidé une grande messe solennelle à l'intérieur de la basilique. Puis il a béni officiellement la Tour de Jésus-Christ lors d'une cérémonie émouvante. Le roi Felipe VI et la reine Letizia d'Espagne étaient présents. Le Premier ministre Pedro Sánchez a également assisté à l'événement. Des chefs d'État et des représentants religieux de nombreux pays ont fait le déplacement. C'est une journée historique pour l'Espagne, pour l'Église catholique mondiale, et pour tous les amoureux de l'architecture.\n\nLa Tour de Jésus-Christ mesure cent soixante-douze mètres et demi de hauteur. C'est la plus haute des dix-huit tours prévues dans le projet original de Gaudí. Avec son inauguration, la Sagrada Família devient officiellement l'église la plus haute du monde. Elle dépasse maintenant la cathédrale d'Ulm, en Allemagne, qui détenait ce record depuis cent trente ans. C'est une immense fierté pour l'architecture catalane et pour la ville de Barcelone.\n\nLa construction de la Sagrada Família a commencé en 1882. Antoni Gaudí a pris la direction du chantier l'année suivante, en 1883. Il savait dès le début qu'il ne vivrait pas assez longtemps pour voir son œuvre terminée. Il a dit un jour, avec humour : « Mon client n'est pas pressé. » La construction a continué après sa mort grâce à ses plans détaillés et à ses maquettes. Des générations d'architectes ont poursuivi son travail avec beaucoup de dévouement. La guerre civile espagnole a détruit une partie des archives, mais les équipes ont reconstruit les plans à partir de rien.\n\nEnviron cent vingt mille personnes se sont rassemblées dans les rues du quartier autour de la basilique. Un impressionnant dispositif de sécurité était en place pour protéger les personnalités officielles. Le soir, un spectacle de drones a illuminé le ciel de Barcelone. Des centaines de drones ont dessiné des figures lumineuses au-dessus de la tour. Des milliers de spectateurs ont admiré ce spectacle féerique depuis les rues et les terrasses du quartier de l'Eixample.\n\nCette inauguration marque le début d'une nouvelle ère pour la Sagrada Família. Pendant des années, certains habitants de Barcelone ont critiqué la longueur du chantier et les nuisances dans leur quartier. Mais aujourd'hui, la basilique est unanimement reconnue comme un chef-d'œuvre architectural mondial. Elle attire des millions de visiteurs chaque année. Le 10 juin 2026 restera dans l'histoire comme le jour où le rêve d'Antoni Gaudí s'est enfin réalisé, cent ans après sa disparition.",
+  "conversation": {
+    "intro": "Rosalia est chez elle à Saint-Domingue. Elle fait un appel vidéo avec son novio Clément, qui est en France. Elle a vu des vidéos de l'inauguration de la Sagrada Família sur TikTok et elle veut tout lui raconter.",
+    "lines": [
+      { "speaker": "Clément", "fr": "Rosalia, t'as vu les infos ce soir ? La Sagrada Família, c'est incroyable !" },
+      { "speaker": "Rosalia", "fr": "Clément, j'ai tout vu sur TikTok ! C'est magique, cette cérémonie avec le pape. Je n'arrive pas à y croire !", "es": "¡Clement, lo vi todo en TikTok! Es mágico, esa ceremonia con el papa. ¡No puedo creerlo!" },
+      { "speaker": "Clément", "fr": "Cent vingt mille personnes dans les rues ! Et le spectacle de drones... t'as vu ça ?" },
+      { "speaker": "Rosalia", "fr": "Oui, les drones ! C'était tellement beau. En République dominicaine, on a suivi ça en direct à la télé aussi.", "es": "¡Sí, los drones! Fue hermosísimo. En la República Dominicana lo seguimos en vivo por la tele también." },
+      { "speaker": "Clément", "fr": "Et le fait que c'est maintenant l'église la plus haute du monde... 172 mètres !" },
+      { "speaker": "Rosalia", "fr": "172 mètres et demi ! J'ai lu ça dans l'article. C'est plus haut que la cathédrale d'Ulm en Allemagne.", "es": "¡172 metros y medio! Lo leí en el artículo. Es más alto que la catedral de Ulm en Alemania." },
+      { "speaker": "Clément", "fr": "T'as bien fait tes recherches, dis-moi ! Tu veux aller la visiter quand tu arrives à Strasbourg ?" },
+      { "speaker": "Rosalia", "fr": "Bien sûr ! Barcelone, c'est pas si loin de Strasbourg, non ? Je veux absolument voir la Sagrada Família en vrai.", "es": "¡Claro que sí! Barcelona no queda tan lejos de Estrasburgo, ¿no? Quiero ver la Sagrada Família en persona como sea." },
+      { "speaker": "Clément", "fr": "C'est à environ 900 kilomètres. On peut y aller en train ou en avion facilement." },
+      { "speaker": "Rosalia", "fr": "Oh génial ! C'est vraiment le meilleur moment pour visiter. Argenis et Jorgelis seraient trop jaloux !", "es": "¡Qué bueno! Es el mejor momento para visitarla. ¡Argenis y Jorgelis se morirían de envidia!" },
+      { "speaker": "Clément", "fr": "Haha ! Tu pourrais les inviter pour les vacances, ils viendraient depuis la République dominicaine." },
+      { "speaker": "Rosalia", "fr": "Ma mère Rosaura veut venir à Strasbourg. Si elle vient en été, on fait un voyage à Barcelone !", "es": "Mi mamá Rosaura quiere venir a Estrasburgo. ¡Si viene en verano, hacemos un viaje a Barcelona!" },
+      { "speaker": "Clément", "fr": "Super idée ! Et Gaudí, t'en savais quoi avant aujourd'hui ?" },
+      { "speaker": "Rosalia", "fr": "Pas grand-chose ! Je savais juste que c'était un grand architecte espagnol. Mais renversé par un tramway en 1926, c'est triste !", "es": "¡No mucho! Solo sabía que era un gran arquitecto español. Pero atropellado por un tranvía en 1926, ¡qué triste!" },
+      { "speaker": "Clément", "fr": "Oui, et il savait qu'il ne verrait jamais la fin. Il a dit : 'Mon client n'est pas pressé.'" },
+      { "speaker": "Rosalia", "fr": "J'adore cette phrase ! Parler de Dieu comme client, c'est poétique. Et c'est une belle métaphore !", "es": "¡Me encanta esa frase! Hablar de Dios como su cliente es muy poético. ¡Y es una bella metáfora!" },
+      { "speaker": "Clément", "fr": "Tu vois, ton français s'améliore vraiment. Tu connais le mot 'métaphore' maintenant !" },
+      { "speaker": "Rosalia", "fr": "Merci Clément ! Je pratique tous les jours. Les articles comme celui-là m'aident beaucoup. Le vocabulaire d'architecture, c'est nouveau pour moi.", "es": "¡Gracias Clément! Practico todos los días. Artículos como este me ayudan muchísimo. El vocabulario de arquitectura es nuevo para mí." },
+      { "speaker": "Clément", "fr": "T'es trop motivée ! Bon, quand t'arrives à Strasbourg, on réserve les billets pour Barcelone ?" },
+      { "speaker": "Rosalia", "fr": "C'est promis ! On mange des tapas et on visite la Sagrada Família ensemble. J'ai tellement hâte !", "es": "¡Prometido! Comemos tapas y visitamos la Sagrada Família juntos. ¡Ya tengo tantas ganas!" }
+    ]
+  },
+  "comments": [
+    {
+      "username": "PiedsHumidesBCN_Real",
+      "comment": "Encore une journée à éviter toute la ville à cause des barrages de police ! 120 000 personnes dans le quartier, c'est bien joli, mais nous on habite là. La rue était IMPRATICABLE toute la journée. Personne ne pense aux résidents !",
+      "likes": 87
+    },
+    {
+      "username": "EtelkaVoyageuse72",
+      "comment": "Mon grand-père était venu à Barcelone en 1992 pour les JO et avait visité le chantier de la Sagrada Família. Il disait toujours que cette basilique ne serait jamais finie. Ce 10 juin, j'ai pensé très fort à lui.",
+      "likes": 234
+    },
+    {
+      "username": "ArchitectureLibre_06",
+      "comment": "Tout ça pour un bâtiment qui n'a rien à voir avec le projet original de Gaudí. On a terminé la tour avec des outils informatiques que Gaudí n'imaginait même pas. Peut-on vraiment parler de son œuvre ? C'est un débat sérieux.",
+      "likes": 156
+    },
+    {
+      "username": "BaguetteFan2000",
+      "comment": "172 mètres c'est bien beau mais ma belle-mère est plus haute moralement. Je réclame une bénédiction papale pour ma famille aussi, merci.",
+      "likes": 489
+    },
+    {
+      "username": "Sophie_du_Languedoc",
+      "comment": "J'ai regardé la cérémonie en direct avec mes enfants. On a pleuré quand le pape a béni la tour. C'est rare dans la vie qu'on assiste à un moment vraiment historique. Merci à tous ceux qui ont continué ce rêve pendant cent ans.",
+      "likes": 312
+    }
+  ]
+}

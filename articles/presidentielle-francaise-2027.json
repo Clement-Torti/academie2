@@ -1,0 +1,74 @@
+{
+  "id": "presidentielle-francaise-2027",
+  "title": "Élection présidentielle 2027 : les principaux candidats",
+  "date": "2026-06-13",
+  "category": "Société",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_France.png",
+    "alt": "Le drapeau tricolore français bleu, blanc et rouge"
+  },
+  "vocabulary": [
+    { "fr": "le scrutin", "es": "la votación, la elección" },
+    { "fr": "le mandat", "es": "el mandato" },
+    { "fr": "l'inéligibilité", "es": "la inelegibilidad" },
+    { "fr": "la primaire", "es": "la elección primaria" },
+    { "fr": "le détournement de fonds", "es": "la malversación de fondos" },
+    { "fr": "le pouvoir d'achat", "es": "el poder adquisitivo" },
+    { "fr": "les intentions de vote", "es": "las intenciones de voto" },
+    { "fr": "le second tour", "es": "la segunda vuelta" },
+    { "fr": "en lice", "es": "en liza, en la carrera" }
+  ],
+  "article": "En France, la prochaine élection présidentielle aura lieu en avril 2027. Il reste encore environ un an avant le scrutin, mais la campagne politique est déjà bien lancée. Le président actuel, Emmanuel Macron, ne peut pas se représenter. La Constitution française interdit en effet à un président de faire plus de deux mandats consécutifs.\n\nCette règle crée une situation inédite. Pour la première fois depuis plusieurs années, personne ne sait encore clairement qui dirigera la France après l'élection. Plusieurs partis politiques ont déjà désigné leur candidat et les sondages montrent une course très ouverte entre des camps politiques très différents.\n\nDu côté du centre droit, deux anciens Premiers ministres sont en lice. Gabriel Attal, figure du parti Renaissance fondé par Emmanuel Macron, a annoncé sa candidature. Édouard Philippe, président du parti Horizons, est également pressenti. Ces deux hommes cherchent à attirer les électeurs du centre qui ont soutenu Macron lors de ses deux mandats.\n\nÀ droite, les choses sont plus claires. Les Républicains, le grand parti de la droite traditionnelle, ont choisi Bruno Retailleau comme candidat officiel. Les membres du parti l'ont élu avec environ 74 % des voix. Retailleau défend des positions conservatrices, notamment sur l'immigration et la sécurité.\n\nÀ l'extrême droite, la situation est plus complexe. Marine Le Pen, ancienne figure incontournable du Rassemblement National, a été condamnée à cinq ans d'inéligibilité pour détournement de fonds publics. Un tribunal d'appel doit rendre sa décision le 7 juillet 2026, ce qui pourrait changer sa situation. En attendant, c'est Jordan Bardella, le jeune président du Rassemblement National, qui s'est imposé comme le grand favori de l'élection. Dans les sondages de mai 2026, il recueille entre 34 et 38 % des intentions de vote, un niveau très élevé aussi tôt avant une élection.\n\nÀ gauche, le paysage est aussi très mouvementé. Jean-Luc Mélenchon, leader de La France Insoumise, souhaite se présenter pour la quatrième fois. Raphaël Glucksmann, figure montante de la gauche modérée proche des socialistes, est aussi un candidat potentiel. Pour éviter une division des voix à gauche, les partis ont décidé d'organiser une primaire commune en octobre 2026. Cette primaire doit désigner un candidat unique, capable de rassembler tous les électeurs progressistes au premier tour.\n\nLe contexte politique de cette élection est donc exceptionnel. Les sondages montrent une avance nette de Bardella depuis plusieurs mois, une situation que les spécialistes jugent inédite aussi tôt avant un scrutin. Cependant, les experts rappellent que beaucoup de choses peuvent changer en un an de campagne.\n\nLes grands thèmes de cette présidentielle se dessinent déjà. L'immigration, le pouvoir d'achat, la sécurité et l'emploi sont au cœur des débats. La question de la place de la France en Europe sera aussi un enjeu important. Chaque candidat cherche à proposer des solutions concrètes à ces préoccupations qui touchent les Français au quotidien.\n\nL'élection se déroulera en deux tours. Si aucun candidat n'obtient plus de 50 % des voix au premier tour, les deux candidats arrivés en tête s'affrontent au second tour, deux semaines plus tard. Ce système oblige les candidats à chercher des alliances et à adapter leur stratégie.\n\nEn 2027, la France entre donc dans une période charnière. La présidentielle est souvent appelée \"la mère de toutes les élections\" car elle détermine la politique du pays pour cinq ans. Cette élection s'annonce comme l'une des plus imprévisibles de ces dernières décennies.",
+  "conversation": {
+    "intro": "Rosalia discute avec son ami Antoine dans un café parisien. Ils regardent les informations télévisées qui parlent de la présidentielle de 2027.",
+    "lines": [
+      { "speaker": "Antoine", "fr": "Eh Rosalia, t'as vu les infos ce soir ? La présidentielle 2027, ça commence déjà à chauffer !" },
+      { "speaker": "Rosalia", "fr": "Oui, j'essaie de comprendre ! C'est dans un an seulement, c'est ça ?", "es": "¡Sí, intento entenderlo! Es en un año solamente, ¿verdad?" },
+      { "speaker": "Antoine", "fr": "Exactement ! Et cette fois, c'est différent. Macron ne peut plus se représenter, donc c'est vraiment ouvert." },
+      { "speaker": "Rosalia", "fr": "Ah oui ! Il ne peut pas faire trois mandats, j'ai lu ça. Donc tout le monde peut gagner en théorie.", "es": "¡Ah sí! No puede hacer tres mandatos, leí eso. Así que en teoría cualquiera puede ganar." },
+      { "speaker": "Antoine", "fr": "C'est ça. Et pour l'instant, c'est Bardella du RN qui est en tête avec presque 36 % dans les sondages." },
+      { "speaker": "Rosalia", "fr": "C'est beaucoup ! Mais c'est qui exactement Bardella ? Je connais surtout Marine Le Pen.", "es": "¡Es mucho! ¿Pero quién es exactamente Bardella? Yo conozco más a Marine Le Pen." },
+      { "speaker": "Antoine", "fr": "Il a remplacé Le Pen à la tête du RN. Elle ne peut peut-être plus se présenter à cause d'une condamnation." },
+      { "speaker": "Rosalia", "fr": "Ah, le détournement de fonds ! J'ai appris ce mot cette semaine en étudiant le français.", "es": "¡Ah, la malversación de fondos! Aprendí esa palabra esta semana estudiando francés." },
+      { "speaker": "Antoine", "fr": "T'as bien appris ! Et à gauche, c'est le chaos. Mélenchon veut y aller une quatrième fois." },
+      { "speaker": "Rosalia", "fr": "J'ai vu qu'ils font une primaire commune en octobre. C'est une bonne idée pour éviter de se diviser !", "es": "Vi que hacen una primaria común en octubre. ¡Es una buena idea para evitar dividirse!" },
+      { "speaker": "Antoine", "fr": "Exactement ! Et au centre, t'as Attal et Philippe qui se battent pour les électeurs de Macron." },
+      { "speaker": "Rosalia", "fr": "Édouard Philippe, c'est l'ancien Premier ministre ? Clement m'en a parlé, il trouve ça fascinant.", "es": "¿Édouard Philippe es el exprimer ministro? Clement me habló de él, le parece fascinante." },
+      { "speaker": "Antoine", "fr": "Lui et Attal, oui. Et les Républicains ont Retailleau, la droite traditionnelle. C'est plein de candidats !" },
+      { "speaker": "Rosalia", "fr": "C'est passionnant. À Strasbourg, je vais pouvoir suivre tout ça en direct !", "es": "Es apasionante. ¡En Estrasburgo voy a poder seguirlo todo en directo!" },
+      { "speaker": "Antoine", "fr": "T'as de la chance ! Dis-moi, t'as compris comment marchent les deux tours ?" },
+      { "speaker": "Rosalia", "fr": "Un peu ! Si personne ne dépasse 50 %, les deux premiers s'affrontent au second tour, c'est ça ?", "es": "¡Un poco! Si nadie supera el 50 %, los dos primeros se enfrentan en la segunda vuelta, ¿verdad?" },
+      { "speaker": "Antoine", "fr": "Exactement ! C'est souvent au second tour que tout bascule. Le premier tour surprend toujours." },
+      { "speaker": "Rosalia", "fr": "J'aime ce système. Il oblige les candidats à chercher des alliances. C'est très stratégique !", "es": "Me gusta ese sistema. Obliga a los candidatos a buscar alianzas. ¡Es muy estratégico!" },
+      { "speaker": "Antoine", "fr": "Tout à fait. Bon, on commande ? Je peux t'expliquer encore plein de choses sur la Ve République." },
+      { "speaker": "Rosalia", "fr": "Oui, avec plaisir ! Ma famille en République dominicaine veut aussi tout savoir. On les appellera ce soir !", "es": "¡Sí, con gusto! Mi familia en República Dominicana también quiere saberlo todo. ¡Los llamamos esta noche!" }
+    ]
+  },
+  "comments": [
+    {
+      "username": "AntiBardellaToujours",
+      "comment": "36 % dans les sondages et tout le monde trouve ça normal ?! C'est une catastrophe annoncée. Si Bardella gagne, c'est fini pour la France républicaine. Honte à ceux qui votent pour ça.",
+      "likes": 31
+    },
+    {
+      "username": "Jeannette_Moreau67",
+      "comment": "J'ai vécu 2002 quand Le Pen père était au second tour. On avait tous voté Chirac pour bloquer le FN. Maintenant c'est Bardella qui mène... J'espère qu'on va se réveiller avant avril 2027.",
+      "likes": 78
+    },
+    {
+      "username": "VraiFrancaisLiberePense",
+      "comment": "Bardella représente des millions de gens normaux qui en ont assez de l'immigration et de l'insécurité. Le traiter d'extrême droite c'est juste une façon de ne pas répondre sur le fond. Débattez d'abord.",
+      "likes": 44
+    },
+    {
+      "username": "BaguettePresidentielle_2027",
+      "comment": "Moi je vote pour le candidat qui s'engage à baisser le prix du café au bar. Deux euros vingt pour un expresso c'est SCANDALEUX. Voilà le vrai programme présidentiel dont la France a besoin.",
+      "likes": 487
+    },
+    {
+      "username": "CiviqueFiere_Nantes",
+      "comment": "Peu importe votre camp, l'important c'est d'aller voter ! La démocratie ne fonctionne que si les citoyens participent. Informez-vous, discutez, et allez aux urnes. C'est notre droit le plus précieux.",
+      "likes": 102
+    }
+  ]
+}

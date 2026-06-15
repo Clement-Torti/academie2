@@ -479,10 +479,16 @@
       return new Promise(resolve => {
         const v = window.speechSynthesis.getVoices();
         if (v.length) return resolve(v);
-        window.speechSynthesis.addEventListener('voiceschanged', function h() {
-          window.speechSynthesis.removeEventListener('voiceschanged', h);
+        let done = false;
+        const finish = () => {
+          if (done) return;
+          done = true;
+          window.speechSynthesis.removeEventListener('voiceschanged', finish);
           resolve(window.speechSynthesis.getVoices());
-        });
+        };
+        window.speechSynthesis.addEventListener('voiceschanged', finish);
+        // If voiceschanged never fires (offline / no network voices), give up after 3s
+        setTimeout(finish, 3000);
       });
     },
 
@@ -616,7 +622,10 @@
         frEl.textContent = line.fr;
         frEl.style.color = 'white';
         this._setActionBtn('disabled', isLast);
-        setTimeout(() => tts._speak(line.fr, () => this._setActionBtn('next', isLast)), 350);
+        const enableNext = () => this._setActionBtn('next', isLast);
+        // Safety: re-enable button after 6s even if TTS never fires (offline / voice load failure)
+        const safeguard = setTimeout(enableNext, 6000);
+        setTimeout(() => tts._speak(line.fr, () => { clearTimeout(safeguard); enableNext(); }), 350);
       }
     },
 
@@ -962,6 +971,8 @@
 
   // Preload voices (avoids first-speak delay on some browsers)
   window.speechSynthesis.getVoices();
+  // When connection is restored, trigger voice reload so next TTS works immediately
+  window.addEventListener('online', () => window.speechSynthesis.getVoices());
   article.init();
   </script>
 

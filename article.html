@@ -621,11 +621,8 @@
         esEl.classList.add('hidden');
         frEl.textContent = line.fr;
         frEl.style.color = 'white';
-        this._setActionBtn('disabled', isLast);
-        const enableNext = () => this._setActionBtn('next', isLast);
-        // Safety: re-enable button after 6s even if TTS never fires (offline / voice load failure)
-        const safeguard = setTimeout(enableNext, 6000);
-        setTimeout(() => tts._speak(line.fr, () => { clearTimeout(safeguard); enableNext(); }), 350);
+        this._setActionBtn('next', isLast);
+        setTimeout(() => tts._speak(line.fr), 350);
       }
     },
 

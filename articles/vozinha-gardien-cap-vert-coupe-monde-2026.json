@@ -1,0 +1,73 @@
+{
+  "id": "vozinha-gardien-cap-vert-coupe-monde-2026",
+  "title": "Vozinha, le gardien de 40 ans qui a arrêté l'Espagne",
+  "date": "2026-06-21",
+  "category": "Sport",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Cape_Verde.png",
+    "alt": "Drapeau du Cap-Vert, pays de Vozinha"
+  },
+  "vocabulary": [
+    { "fr": "un archipel", "es": "un archipiélago" },
+    { "fr": "une éliminatoire", "es": "una eliminatoria" },
+    { "fr": "un arrêt", "es": "una parada (de portero)" },
+    { "fr": "tenir en échec", "es": "frenar / mantener en cero" },
+    { "fr": "faibli", "es": "flaquear" },
+    { "fr": "les tribunes", "es": "las tribunas / las gradas" },
+    { "fr": "les filets", "es": "la red del arco" },
+    { "fr": "la possession du ballon", "es": "la posesión del balón" }
+  ],
+  "article": "Le 16 juin 2026, lors de la Coupe du Monde organisée aux États-Unis, au Canada et au Mexique, le monde du football a découvert un gardien de but hors du commun. Vozinha, 40 ans, a réalisé une performance extraordinaire face à l'Espagne. Il a tenu en échec les champions d'Europe dans un match nul 0-0. Ce résultat historique a propulsé le Cap-Vert sur le devant de la scène internationale. En quelques heures, le nom de ce gardien venu d'un petit archipel africain a fait le tour de la planète.\n\nVozinha est le surnom de Josimar Jose Evora Dias. Ce joueur est originaire du Cap-Vert, un petit archipel de l'Atlantique situé au large des côtes africaines. Le Cap-Vert participait pour la première fois de son histoire à une Coupe du Monde de football. Pour beaucoup d'observateurs, la qualification de cette équipe relevait déjà d'un exploit remarquable. Pourtant, les Capverdiens avaient terminé premiers de leur groupe en éliminatoires, avec sept victoires en dix matchs, quatre points devant le Cameroun.\n\nMais qui est vraiment Vozinha ? Son surnom signifie «petite grand-mère» en portugais. Il le doit à ses grands-parents, qui l'ont élevé pendant que son père était militaire et que sa mère travaillait. À 40 ans, il défend les buts de Chaves, un club de deuxième division portugaise. Sa longue carrière l'a conduit dans de nombreux pays : le Cap-Vert, l'Angola, la Moldavie, Chypre et la Slovaquie. Il représente la sélection nationale depuis 2012, soit depuis plus de quatorze ans.\n\nFace à l'Espagne, Vozinha a multiplié les arrêts décisifs tout au long de la rencontre. Il a notamment repoussé des tirs de Ferran Torres, de Pedri et d'Aymeric Laporte. Au total, il a effectué sept arrêts pendant le match. L'Espagne a largement dominé la possession du ballon, mais le gardien capverdien n'a jamais faibli. En fin de match, les joueurs espagnols semblaient frustrés de ne pas avoir trouvé le chemin des filets. L'arbitre a sifflé la fin de la rencontre sur un score inattendu : 0-0.\n\nAprès le coup de sifflet final, Vozinha s'est effondré en larmes sur le terrain. Les images du gardien pleurant de joie ont immédiatement fait le tour du monde. Sur Instagram, son compte est passé de 500 000 abonnés à près de cinq millions en une seule nuit. La star française Paul Pogba a exprimé son admiration sur les réseaux sociaux, saluant la performance du gardien. Vozinha a également reçu le titre de meilleur joueur du match, une récompense bien méritée pour sa soirée exceptionnelle.\n\nCette performance a également une dimension très humaine et émouvante. Avant le match, Vozinha avait confié que sa mère ne pourrait pas être présente dans les tribunes. Elle n'avait pas réussi à obtenir son visa pour entrer aux États-Unis. Malgré cette absence difficile à vivre, le gardien a puisé dans ses ressources pour donner le meilleur de lui-même. Il a dédié sa performance à sa famille et à tout son peuple. Cette histoire a touché des millions de personnes bien au-delà du monde du football.\n\nLe Cap-Vert a prouvé au monde entier que le football peut réserver de magnifiques surprises. Vozinha, à 40 ans, a démontré que l'expérience et la détermination peuvent surpasser la puissance et la technique. Son histoire personnelle, faite de voyages et de sacrifices, est un symbole fort pour tous les petits pays qui osent rêver grand. Après ce 0-0 historique, le Cap-Vert continue sa route dans la compétition avec fierté et une confiance nouvelle.",
+  "conversation": {
+    "intro": "Antoine et Rosalia discutent devant un écran après avoir regardé le match Cap-Vert contre Espagne. Ils réagissent à la performance exceptionnelle du gardien Vozinha lors de ce 0-0 historique à la Coupe du Monde 2026.",
+    "lines": [
+      { "speaker": "Antoine", "fr": "T'as vu le match Cap-Vert - Espagne hier soir ? C'était dingue !" },
+      { "speaker": "Rosalia", "fr": "Oui, j'ai tout regardé ! Ce gardien est incroyable, j'arrivais pas à y croire.", "es": "Sí, ¡lo vi todo! Ese portero es increíble, no me lo podía creer." },
+      { "speaker": "Antoine", "fr": "Vozinha a 40 ans ! C'est pas possible d'être aussi fort à cet âge-là." },
+      { "speaker": "Rosalia", "fr": "C'est ça qui est fou. L'expérience ça se voit vraiment à haut niveau !", "es": "Eso es lo más loco. La experiencia se nota de verdad a ese nivel." },
+      { "speaker": "Antoine", "fr": "Sept arrêts contre l'Espagne... même les meilleurs gardiens auraient eu du mal." },
+      { "speaker": "Rosalia", "fr": "Et t'as vu comment il pleurait à la fin ? Ça m'a touchée au cœur.", "es": "¿Y viste cómo lloraba al final? Me llegó al alma de verdad." },
+      { "speaker": "Antoine", "fr": "Son Instagram a explosé, il est passé de 500 000 à 5 millions d'abonnés !" },
+      { "speaker": "Rosalia", "fr": "Clement m'a envoyé le lien ce matin ! Il suivait le match depuis Strasbourg.", "es": "¡Clement me mandó el link esta mañana! Él también estuvo viendo el partido desde Estrasburgo." },
+      { "speaker": "Antoine", "fr": "Tu savais que c'était leur toute première Coupe du Monde ?" },
+      { "speaker": "Rosalia", "fr": "Oui ! En République dominicaine on suit beaucoup le football africain. Belle histoire ce pays.", "es": "¡Sí! En República Dominicana seguimos mucho el fútbol africano. Es un país con una historia muy bonita." },
+      { "speaker": "Antoine", "fr": "Il joue en deuxième division portugaise, c'est pas un grand club du tout." },
+      { "speaker": "Rosalia", "fr": "C'est ça qui me plaît. Il prouve qu'on n'a pas besoin d'un grand club pour briller.", "es": "Eso es lo que me gusta. Demuestra que no hace falta jugar en un club grande para brillar." },
+      { "speaker": "Antoine", "fr": "C'est émouvant aussi — sa mère pouvait pas venir à cause du visa." },
+      { "speaker": "Rosalia", "fr": "Dommage pour le visa, mais sa famille a dû hurler de joie devant la télé.", "es": "Qué pena lo del visa, pero su familia habrá gritado de alegría frente a la tele." },
+      { "speaker": "Antoine", "fr": "Pogba a posté un message de soutien aussi, t'as vu ?" },
+      { "speaker": "Rosalia", "fr": "Oui ! Quand une grande star reconnaît les petits pays, ça fait vraiment plaisir.", "es": "¡Sí! Cuando una gran estrella reconoce a los países pequeños, da mucho gusto." },
+      { "speaker": "Antoine", "fr": "T'as un gardien préféré toi dans ta vie ?" },
+      { "speaker": "Rosalia", "fr": "Là Vozinha est clairement mon favori ! Je le suis sur Instagram direct.", "es": "Ahora mismo Vozinha es claramente mi favorito. ¡Lo voy a seguir en Instagram ya mismo!" },
+      { "speaker": "Antoine", "fr": "On regarde le prochain match du Cap-Vert ensemble alors ?" },
+      { "speaker": "Rosalia", "fr": "Bien sûr ! Je prépare à manger et on fait ça chez moi.", "es": "¡Claro que sí! Yo preparo algo de comer y lo vemos en mi casa." }
+    ]
+  },
+  "comments": [
+    {
+      "username": "FutbolEnColere_97",
+      "comment": "Encore une victoire de la médiocrité !! L'Espagne a tiré des dizaines de fois et ce match nul est présenté comme un exploit ? C'est scandaleux. Les gardiens moyens deviennent des héros quand l'adversaire est nul face au but. Arrêtez de nous vendre ça comme un miracle !!!",
+      "likes": 48
+    },
+    {
+      "username": "FanDeButButBut",
+      "comment": "Mon oncle est gardien amateur, il a 43 ans et joue encore tous les dimanches. Il a regardé ce match les larmes aux yeux en disant «l'âge c'est juste un chiffre». Il m'a appelé juste après le coup de sifflet. Ce moment restera dans notre famille.",
+      "likes": 213
+    },
+    {
+      "username": "AnalysteFoot2026",
+      "comment": "Beau match nul, certes, mais soyons honnêtes : l'Espagne n'était pas à 100%, avec plusieurs titulaires absents. Si ce match se rejoue demain, elle gagne 3-0. Ça n'enlève rien au mérite de Vozinha, mais présentons les faits avant de crier au miracle.",
+      "likes": 156
+    },
+    {
+      "username": "GardienDePapie_Officiel",
+      "comment": "Mon grand-père a 40 ans lui aussi. Il garde le frigo le soir avec une concentration remarquable. À quand le documentaire Netflix sur sa carrière ?",
+      "likes": 487
+    },
+    {
+      "username": "CapVerdeCoeurOuvert",
+      "comment": "Ce moment m'a rappelé pourquoi j'aime le football. Un homme de 40 ans, venu d'un petit pays, qui pleure de bonheur sur un terrain de Coupe du Monde... c'est ça la vraie beauté du sport. Vozinha, tu es un exemple pour toute une génération. Merci pour ces frissons.",
+      "likes": 342
+    }
+  ]
+}

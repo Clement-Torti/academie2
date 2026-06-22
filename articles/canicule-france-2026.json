@@ -1,0 +1,73 @@
+{
+  "id": "canicule-france-2026",
+  "title": "La canicule de 2026 : une alerte rouge historique sur la France",
+  "date": "2026-06-22",
+  "category": "Santé",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/European_heatwave_2003_maximum_temperatures.jpg",
+    "alt": "Carte des températures maximales lors de la canicule européenne de 2003"
+  },
+  "vocabulary": [
+    { "fr": "une vague de chaleur", "es": "una ola de calor" },
+    { "fr": "la vigilance rouge", "es": "la alerta roja" },
+    { "fr": "meurtrière", "es": "mortífera" },
+    { "fr": "des décès supplémentaires", "es": "el exceso de fallecidos" },
+    { "fr": "les volets", "es": "las persianas" },
+    { "fr": "vulnérables", "es": "vulnerables" },
+    { "fr": "le réchauffement climatique", "es": "el calentamiento climático" },
+    { "fr": "estival", "es": "estival" }
+  ],
+  "article": "La France vit ce weekend une des pires canicules de son histoire. Depuis le 17 juin 2026, une vague de chaleur intense s'est installée sur la majorité du territoire. Le 21 juin, des températures record ont été mesurées : 42,2°C à Pissos dans les Landes et 42°C à Châteaumeillant dans le Cher. Météo-France a placé 49 départements en vigilance rouge canicule le 22 juin. Les experts comparent cet épisode à la canicule de juillet 2019 et à celle d'août 2003.\n\nLe pic de chaleur est attendu entre le 22 et le 24 juin. Ce lundi, les températures pourraient atteindre 40 à 42°C dans les régions allant de l'Aquitaine septentrionale à la Touraine. En Île-de-France, en Bretagne occidentale et dans la vallée du Rhône, le mercure devrait dépasser les 38 à 40°C. Un léger recul de la chaleur est prévu à partir du 26 juin. En attendant, les autorités demandent à la population de rester vigilante.\n\nPour comprendre la gravité de la situation actuelle, il faut revenir sur la catastrophe de 2003. En août de cette année-là, la France a connu la canicule la plus meurtrière de son histoire moderne. Entre le 1er et le 20 août 2003, on a enregistré 14 802 décès supplémentaires par rapport à la normale. Le 12 août a été la journée la plus mortelle : 2 197 personnes sont décédées en un seul jour. Au total, le mois d'août 2003 a été le plus meurtrier en France depuis 1945, avec 56 500 décès recensés. La France a été le pays européen le plus touché par cette vague de chaleur.\n\nDepuis 2003, la France a mis en place un plan national canicule. Chaque été, des alertes sont déclenchées selon un système de vigilance par couleurs. Les mesures de prévention doivent commencer dès le niveau jaune, pas seulement lors des alertes les plus graves. Les recommandations officielles sont simples : boire de l'eau régulièrement, éviter les sorties pendant les heures les plus chaudes (entre 12h et 16h), fermer les volets le matin et les rouvrir le soir. Il faut aussi vérifier l'état de santé des personnes âgées, des enfants en bas âge et des malades chroniques, qui sont les plus vulnérables.\n\nLa canicule est définie officiellement comme une période d'au moins 3 jours consécutifs avec des températures élevées le jour et la nuit. Mais ce phénomène est de plus en plus fréquent en France. Depuis 1989, le pays a connu 33 vagues de chaleur, contre seulement 9 dans les 35 années précédentes. Plus de la moitié de toutes les vagues de chaleur recensées ont eu lieu après l'an 2000. Depuis 2010, la France a enregistré 19 vagues de chaleur. Entre 2013 et 2022, on a compté en moyenne 12 jours de canicule par an, soit quatre fois plus que dans les années 1980.\n\nCes chiffres montrent une tendance claire liée au changement climatique. Les projections de Météo-France indiquent que les vagues de chaleur seront cinq fois plus fréquentes en 2050 par rapport aux années 1990. La canicule de 2003, qui est encore aujourd'hui une référence en matière d'épisode extrême, pourrait devenir un événement ordinaire dans un scénario de réchauffement à +4°C. En Europe, 95 % des décès liés aux événements météorologiques extrêmes entre 1980 et 2023 sont associés aux vagues de chaleur. La France de 2026 est confrontée à une réalité nouvelle : les canicules ne sont plus des exceptions. Elles font désormais partie du quotidien estival.",
+  "conversation": {
+    "intro": "Rosalia est chez elle en République dominicaine et appelle Clement sur l'application de visio. Elle vient de voir les nouvelles françaises et veut savoir comment il va avec la canicule qui frappe la France ce week-end.",
+    "lines": [
+      { "speaker": "Clement", "fr": "Rosalia, t'as vu les infos ce matin ? Il fait 42 degrés ici aujourd'hui !" },
+      { "speaker": "Rosalia", "fr": "Quoi ? 42 degrés ! C'est comme à Santo Domingo en été, c'est dingue !", "es": "¿Qué? ¡42 grados! Es como en Santo Domingo en verano, ¡es una locura!" },
+      { "speaker": "Clement", "fr": "Ouais, mais nous on n'est pas habitués. Les gens n'ouvrent même pas les fenêtres ici." },
+      { "speaker": "Rosalia", "fr": "Ah oui, j'ai lu qu'il faut fermer les volets le matin. C'est intelligent, non ?", "es": "Ah sí, leí que hay que cerrar las persianas por la mañana. Es inteligente, ¿no?" },
+      { "speaker": "Clement", "fr": "Exactement. Et la chaleur la nuit, c'est le pire. On dort très mal." },
+      { "speaker": "Rosalia", "fr": "En République dominicaine on a le climatiseur partout. Mais j'imagine qu'en France c'est pas pareil.", "es": "En República Dominicana hay aire acondicionado en todos lados. Pero imagino que en Francia no es así." },
+      { "speaker": "Clement", "fr": "Non, la plupart des appartements n'ont pas la clim. On galère vraiment." },
+      { "speaker": "Rosalia", "fr": "C'est une vigilance rouge, ça veut dire quoi exactement ?", "es": "Es una alerta roja, ¿qué significa exactamente eso?" },
+      { "speaker": "Clement", "fr": "C'est le niveau le plus grave. 49 départements sont concernés ce lundi, c'est énorme." },
+      { "speaker": "Rosalia", "fr": "Et tu penses à la canicule de 2003 ? J'ai lu que c'était catastrophique, presque 15 000 morts.", "es": "¿Y piensas en la ola de calor de 2003? Leí que fue catastrófico, casi 15 000 muertos." },
+      { "speaker": "Clement", "fr": "Oui, c'est encore dans les mémoires. Ma grand-mère en parle souvent, elle a eu très peur à l'époque." },
+      { "speaker": "Rosalia", "fr": "2 197 personnes en un seul jour, c'est incroyable. Je comprends pourquoi tout le monde prend ça au sérieux.", "es": "2 197 personas en un solo día, es increíble. Entiendo por qué todo el mundo se toma esto en serio." },
+      { "speaker": "Clement", "fr": "Et ça arrive de plus en plus souvent. Depuis 2010, il y a presque une canicule chaque été." },
+      { "speaker": "Rosalia", "fr": "Le réchauffement climatique, c'est fou. Ça me motive encore plus à apprendre à m'adapter à la vie là-bas !", "es": "¡El calentamiento climático es una locura! Me motiva aún más a aprender a adaptarme a la vida allá." },
+      { "speaker": "Clement", "fr": "À Strasbourg on a souvent du vent, ça aide. Mais là cette semaine, ouf, c'est intense." },
+      { "speaker": "Rosalia", "fr": "Donc toi tu vas faire quoi aujourd'hui ? Tu sors pas ?", "es": "¿Y tú qué vas a hacer hoy? ¿No sales?" },
+      { "speaker": "Clement", "fr": "Non, je reste chez moi jusqu'au soir. Je bois beaucoup d'eau et j'attends que ça passe." },
+      { "speaker": "Rosalia", "fr": "Sage décision. Chez nous on mange des fruits frais et on se repose quand il fait chaud.", "es": "Buena decisión. En mi país comemos frutas frescas y descansamos cuando hace calor." },
+      { "speaker": "Clement", "fr": "Bonne idée. La météo dit que ça devrait baisser le 26 juin, plus que quelques jours." },
+      { "speaker": "Rosalia", "fr": "Parfait ! Je t'envoie de la fraîcheur dominicaine par visio. Prends soin de toi, mon amour !", "es": "¡Perfecto! Te mando frescor dominicano por videollamada. ¡Cuídate mucho, mi amor!" }
+    ]
+  },
+  "comments": [
+    {
+      "username": "RazledeLEtat_2003bis",
+      "comment": "Et les EHPAD ? En 2003 c'était la catastrophe parce que les vieux mouraient seuls dans leur chambre. Vingt ans après, RIEN n'a changé, les personnes âgées restent les premières victimes et l'État dort toujours. Honteux.",
+      "likes": 134
+    },
+    {
+      "username": "OlivierDreux28",
+      "comment": "En 2003 j'avais 12 ans, on était chez mes grands-parents en Creuse. Mon papy avait installé des draps mouillés aux fenêtres. On dormait dans le couloir du sous-sol pour avoir moins chaud. Je n'ai jamais oublié cet été-là.",
+      "likes": 87
+    },
+    {
+      "username": "LeClimat_Objectif33",
+      "comment": "Je veux bien, mais 42°C c'est beaucoup plus supportable ici qu'en Espagne ou au Maroc. Les Français paniquent dès que le thermomètre monte un peu. Investissez dans une bonne clim et arrêtez de faire des drames à chaque été.",
+      "likes": 56
+    },
+    {
+      "username": "CroissantFondant69",
+      "comment": "J'ai mis mon beurre dehors et maintenant il est liquide. Mais d'un autre côté il est parfaitement étalable sans effort. Je vais déposer un brevet pour la cuisine solaire française. Voilà les vrais avantages de la canicule.",
+      "likes": 312
+    },
+    {
+      "username": "VoisinsBienveillants75",
+      "comment": "N'oubliez pas de frapper aux portes de vos voisins âgés. Un simple verre d'eau et dix minutes de conversation peuvent sauver une vie. La solidarité de quartier, c'est ce qui fait la vraie différence en période de canicule.",
+      "likes": 203
+    }
+  ]
+}

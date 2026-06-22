@@ -1,0 +1,74 @@
+{
+  "id": "fete-de-la-musique-strasbourg-2026",
+  "title": "La Fête de la musique 2026 illumine les rues de Strasbourg",
+  "date": "2026-06-22",
+  "category": "Culture",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Fete_de_la_musique.jpg",
+    "alt": "Musiciens jouant dans la rue lors de la Fête de la musique"
+  },
+  "vocabulary": [
+    { "fr": "éclectique", "es": "ecléctico" },
+    { "fr": "se produire", "es": "actuar, tocar en público" },
+    { "fr": "la programmation", "es": "la programación" },
+    { "fr": "le kiosque à musique", "es": "el quiosco de música" },
+    { "fr": "côtoyer", "es": "convivir con, estar al lado de" },
+    { "fr": "la hiérarchie", "es": "la jerarquía" },
+    { "fr": "le solstice d'été", "es": "el solsticio de verano" },
+    { "fr": "les musiques du monde", "es": "las músicas del mundo" },
+    { "fr": "la Grande-Île", "es": "el casco histórico de Estrasburgo" }
+  ],
+  "article": "Chaque année, le 21 juin, la France se transforme en une immense salle de concerts à ciel ouvert. La Fête de la musique est l'un des événements culturels les plus populaires du pays. Ce jour-là, des milliers de musiciens amateurs et professionnels jouent gratuitement dans les rues, les places et les jardins. Tout le monde peut assister aux concerts sans payer, et tout musicien peut se produire librement. En 2026, comme dans toutes les villes de France, Strasbourg a célébré cette belle tradition avec enthousiasme.\n\nLa Fête de la musique est née en 1982, à l'initiative de Jack Lang, alors ministre de la Culture, et de Maurice Fleuret, directeur de la musique et de la danse. Ce dernier avait une vision claire : « La musique sera partout et le concert nulle part. » L'idée était simple mais révolutionnaire. Une grande enquête avait révélé que cinq millions de Français jouaient d'un instrument de musique, dont un jeune sur deux. Pourtant, peu d'entre eux avaient l'occasion de se produire en public. La Fête de la musique leur a offert cet espace d'expression.\n\nDepuis sa création, la Fête de la musique a gardé ses principes fondateurs : gratuite, ouverte à tous, sans hiérarchie entre les genres musicaux. Le rock côtoie le jazz, le classique voisine le rap, et la musique du monde s'invite dans les quartiers. Tous les styles sont les bienvenus, tous les musiciens peuvent participer. Cet esprit démocratique a contribué au succès de l'événement. Aujourd'hui, la Fête de la musique est célébrée dans plus de 120 pays à travers le monde.\n\nÀ Strasbourg, la Fête de la musique 2026 s'est tenue le dimanche 21 juin, de 18h à 23h. La ville a proposé une programmation éclectique sur plusieurs scènes ouvertes dans le centre historique. Cette année, la Place Kléber, habituellement au cœur de l'événement, n'accueillait pas de scène officielle. La programmation municipale s'est redistribuée sur d'autres places de la Grande-Île, comme la Place Gutenberg, la Place du Château, la Place Grimmeissen et la Place Saint-Thomas. Ce changement a donné un caractère plus intime et plus diversifié à l'édition 2026. Les Strasbourgeois ont ainsi pu découvrir des lieux moins habituels.\n\nLe public a pu découvrir une grande variété de styles musicaux. Place Gutenberg, le reggae et les musiques du monde ont animé la soirée avec des artistes comme Manati Vibration et Kasoar. Place Saint-Thomas, le programme allait du classique au rap, en passant par le jazz fusion. Place du Marché Gayot, les amateurs de rock et de soul se sont retrouvés avec des groupes comme The Cosmocopians. Place Saint-Étienne, la techno a résonné jusqu'à 23h grâce au collectif Move Forward.\n\nLes quartiers de la ville ont également célébré à leur façon. Au Parc des Contades, le kiosque à musique traditionnel a accueilli l'orchestre partagé du réseau des écoles de musique de Strasbourg, ainsi qu'un orchestre de jazz manouche. Dans les quartiers de Hautepierre, de la Krutenau et de la Meinau, des scènes locales ont mis en avant des artistes du cru et des associations culturelles. Ces initiatives montrent que la Fête de la musique dépasse le simple spectacle : elle crée du lien entre les habitants.\n\nLa Fête de la musique illustre parfaitement l'attachement des Français à leur patrimoine culturel. Elle montre que la musique peut sortir des salles de spectacle pour investir l'espace public. À Strasbourg comme ailleurs, cet événement rassemble les générations et les cultures. Il rappelle que la création artistique appartient à tout le monde. La prochaine édition est déjà attendue avec impatience, et nul doute que la ville alsacienne saura encore offrir une soirée mémorable.",
+  "conversation": {
+    "intro": "Rosalia vient d'arriver à Strasbourg pour son nouveau déménagement. Ce dimanche 21 juin, elle participe à sa toute première Fête de la musique avec son amie Léa, une Strasbourgeoise qui lui fait découvrir la ville.",
+    "lines": [
+      { "speaker": "Léa", "fr": "C'est dingue, non ? Ce soir la musique est partout dans la ville !" },
+      { "speaker": "Rosalia", "fr": "Oui, c'est incroyable ! J'entends du reggae par là et de la techno par ici. On dirait une fête géante.", "es": "¡Sí, es increíble! Escucho reggae por allá y tecno por aquí. Parece una fiesta gigante." },
+      { "speaker": "Léa", "fr": "T'as jamais vécu quelque chose comme ça en République dominicaine ?" },
+      { "speaker": "Rosalia", "fr": "Non, rien de similaire. On a des concerts, bien sûr, mais pas comme ça, dans toute la ville en même temps. C'est très spécial.", "es": "No, nada parecido. Tenemos conciertos, claro, pero no así, en toda la ciudad al mismo tiempo. Es muy especial." },
+      { "speaker": "Léa", "fr": "La première fois que t'assistes à la Fête de la musique, c'est toujours un choc !" },
+      { "speaker": "Rosalia", "fr": "J'ai tout de suite envoyé une vidéo à ma mère Rosaura et à Jorgelis. Elles n'en revenaient pas !", "es": "Enseguida le mandé un video a mi mamá Rosaura y a Jorgelis. ¡No podían creerlo!" },
+      { "speaker": "Léa", "fr": "Haha ! Bon, t'as envie d'aller où en premier ? Place Gutenberg y'a du reggae." },
+      { "speaker": "Rosalia", "fr": "Oh oui, le reggae j'adore ! En République dominicaine on écoute ça à la plage. Ça me rappelle un peu chez moi.", "es": "¡Oh sí, me encanta el reggae! En la República Dominicana lo escuchamos en la playa. Me recuerda un poco a casa." },
+      { "speaker": "Léa", "fr": "Et après, on peut aller voir la techno Place Saint-Étienne si tu veux." },
+      { "speaker": "Rosalia", "fr": "La techno c'est pas vraiment mon truc. Mais Clement adore ça, alors je vais essayer de comprendre pourquoi !", "es": "La tecno no es muy lo mío. ¡Pero a Clement le encanta, así que voy a intentar entender por qué!" },
+      { "speaker": "Léa", "fr": "Ah c'est vrai, il est fan de musique électronique. Y'a aussi du jazz fusion Place Saint-Thomas." },
+      { "speaker": "Rosalia", "fr": "Ça c'est intéressant ! Le jazz c'est quelque chose que j'aimerais mieux connaître. On en entend peu en République dominicaine.", "es": "¡Eso sí me interesa! El jazz es algo que me gustaría conocer mejor. Se escucha poco en la República Dominicana." },
+      { "speaker": "Léa", "fr": "T'as su que la Place Kléber n'est pas dans le programme cette année ?" },
+      { "speaker": "Rosalia", "fr": "Oui, j'ai vu ça ! C'est bizarre non ? Mais en même temps on découvre d'autres places magnifiques.", "es": "Sí, ¡lo vi! ¿No es raro? Pero al mismo tiempo descubrimos otras plazas preciosas." },
+      { "speaker": "Léa", "fr": "C'est vrai, la Place du Château est sublime. Bon, c'est quoi tes premières impressions de Strasbourg ?" },
+      { "speaker": "Rosalia", "fr": "Je suis amoureuse de cette ville ! Les maisons à colombages, la cathédrale, et maintenant la musique partout dans les rues. Je suis trop contente d'être là.", "es": "¡Estoy enamorada de esta ciudad! Las casas con entramado de madera, la catedral, y ahora música por todas las calles. Estoy felicísima de estar aquí." },
+      { "speaker": "Léa", "fr": "Tu t'en sors bien en français quand les gens parlent vite ?" },
+      { "speaker": "Rosalia", "fr": "Pas toujours ! Ce soir avec le bruit c'est plus difficile. Mais j'apprends chaque jour et ça progresse.", "es": "¡No siempre! Esta noche con el ruido es más difícil. Pero aprendo cada día y voy mejorando." },
+      { "speaker": "Léa", "fr": "T'inquiète, tu parles super bien. Allez, on y va Place Gutenberg ?" },
+      { "speaker": "Rosalia", "fr": "Oui, on y va ! Et après, j'ai repéré un restaurant alsacien pas loin. Tu connais la tarte flambée ?", "es": "¡Sí, vamos! Y después vi un restaurante alsaciano cerca. ¿Conoces la tarta flambeada?" }
+    ]
+  },
+  "comments": [
+    {
+      "username": "StrasbourgeoisEnColere_BAS",
+      "comment": "ENCORE une année sans la Place Kléber ! C'est une honte. La mairie nous enlève notre tradition depuis deux ans de suite. La Fête de la musique sans Kléber c'est comme Noël sans sapin. J'attends des explications CLAIRES.",
+      "likes": 87
+    },
+    {
+      "username": "AlsaceForever_Mireille",
+      "comment": "En 1995, j'ai joué de l'accordéon pour la première fois en public à la Fête de la musique, j'avais 14 ans. Mes mains tremblaient tellement ! Aujourd'hui mon fils joue de la guitare Place Saint-Thomas. La boucle est bouclée.",
+      "likes": 134
+    },
+    {
+      "username": "MusicienPro_RS67",
+      "comment": "J'entends souvent dire que cette fête valorise la musique, mais les musiciens amateurs qui jouent gratuit volent des dates aux professionnels. Les salles perdent du public ce soir-là. C'est pas si innocent comme événement, soyons honnêtes.",
+      "likes": 56
+    },
+    {
+      "username": "Theo_Du_Neuhof_42",
+      "comment": "J'habite juste au-dessus de la Place Gutenberg. Chaque 21 juin je cherche mes bouchons d'oreille. Cette année j'ai essayé d'apprécier le reggae à fond à 22h... c'est une EXPERIENCE. Ma voisine de 85 ans dansait par contre, chapeau madame Huguette.",
+      "likes": 312
+    },
+    {
+      "username": "LucieM_Spectatrice",
+      "comment": "Ce soir j'étais avec mes deux enfants de 5 et 7 ans au Parc des Contades. L'orchestre des écoles de musique les a complètement fascinés. Mon fils a dit qu'il voulait apprendre la trompette. Ces moments-là n'ont vraiment pas de prix.",
+      "likes": 198
+    }
+  ]
+}

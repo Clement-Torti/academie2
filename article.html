@@ -678,6 +678,7 @@
       const days  = JSON.parse(localStorage.getItem('acad2_days') || '{}');
       if (typeof days[today] === 'object') {
         days[today].status = 'completed';
+        days[today].articleId = id;
       } else {
         days[today] = { status: 'completed', articleId: id };
       }

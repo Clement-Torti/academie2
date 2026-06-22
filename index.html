@@ -215,12 +215,13 @@
 
     <!-- ── ARTICLES ──────────────────────────────────────────── -->
     <section>
-        <div class="flex items-center justify-between mb-4">
+        <div class="flex items-center justify-between mb-1">
             <h2 class="text-xs font-bold uppercase tracking-widest text-frBlue flex items-center gap-2">
                 <i class="fa-solid fa-newspaper text-coral"></i> Articles
             </h2>
             <span id="articles-count" class="text-xs text-gray-400"></span>
         </div>
+        <p class="text-[11px] text-gray-400 mb-4">Choisissez un article non lu pour commencer votre leçon du jour.</p>
 
         <!-- Loading -->
         <div id="articles-loading" class="flex justify-center py-8">
@@ -299,7 +300,6 @@ const home = {
         this.renderCharts();
         try {
             const catalog = await this.loadCatalog();
-            this.assignTodayArticle(catalog);
             this.renderTimeline();
             this.renderArticlesGrid(catalog);
         } catch (err) {
@@ -328,41 +328,6 @@ const home = {
         return await res.json();
     },
 
-    assignTodayArticle(catalog) {
-        const today = new Date().toISOString().split('T')[0];
-        const days  = this.days;
-
-        // Si aujourd'hui a déjà un article assigné, ne pas changer
-        if (days[today] && (typeof days[today] === 'object') && days[today].articleId) return;
-
-        // Articles déjà assignés à une journée passée
-        const usedIds = new Set(
-            Object.values(days)
-                .map(d => typeof d === 'object' ? d.articleId : null)
-                .filter(Boolean)
-        );
-
-        // Ordre d'ajout au catalogue : index 0 = plus récent, dernier = plus ancien → reverse pour FIFO
-        const sorted = catalog.slice().reverse();
-
-        // Choisir le premier article non encore utilisé
-        let chosen = sorted.find(a => !usedIds.has(a.id));
-
-        // Si tous utilisés, prendre le plus anciennement assigné
-        if (!chosen && sorted.length > 0) {
-            const oldestEntry = Object.entries(days)
-                .filter(([, v]) => typeof v === 'object' && v.articleId)
-                .sort(([a], [b]) => a.localeCompare(b))[0];
-            const oldestId = oldestEntry ? oldestEntry[1].articleId : null;
-            chosen = sorted.find(a => a.id === oldestId) || sorted[0];
-        }
-
-        if (!chosen) return;
-
-        const newDays = { ...days, [today]: { status: 'pending', articleId: chosen.id } };
-        localStorage.setItem('acad2_days', JSON.stringify(newDays));
-    },
-
     renderTimeline() {
         const today    = new Date().toISOString().split('T')[0];
         const days     = this.days;
@@ -383,7 +348,6 @@ const home = {
             const status  = typeof dayData === 'object'
                 ? (dayData?.status || 'future')
                 : (dayData || (date < today ? 'missed' : 'future'));
-            const articleId = typeof dayData === 'object' ? (dayData?.articleId || '') : '';
 
             let btnStyle, icon, labelColor;
             if (status === 'completed') {
@@ -404,7 +368,9 @@ const home = {
                 labelColor = '#9ca3af';
             }
 
-            const canClick  = isToday && !!articleId;
+            const btnClickAttr = (isToday && status !== 'completed')
+                ? `onclick="document.getElementById('articles-grid').closest('section').scrollIntoView({behavior:'smooth'})"`
+                : 'disabled';
             const dt        = new Date(date);
             const dateShort = `${String(dt.getUTCDate()).padStart(2,'0')}/${String(dt.getUTCMonth()+1).padStart(2,'0')}`;
 
@@ -413,8 +379,8 @@ const home = {
             node.innerHTML = `
                 <button class="tl-btn ${isToday ? 'tl-today' : ''}"
                         style="${btnStyle}"
-                        ${canClick ? `onclick="window.location.href='article.html?id=${articleId}'"` : 'disabled'}
-                        title="${date}">
+                        ${btnClickAttr}
+                        title="${isToday && status !== 'completed' ? 'Choisir un article pour commencer' : date}">
                     ${icon}
                 </button>
                 <span style="display:flex;flex-direction:column;align-items:center;gap:1px;margin-top:6px;white-space:nowrap;">
@@ -467,9 +433,16 @@ const home = {
     _articleCard(a, isRead) {
         const d = new Date(a.date + 'T00:00:00');
         const dateStr = d.toLocaleDateString('fr-FR', { day:'numeric', month:'long', year:'numeric' });
+        const startCta = isRead ? '' : `
+              <div class="mt-3 pt-3 border-t border-gray-100">
+                <span class="flex items-center justify-center gap-1.5 w-full
+                             bg-frBlue text-white text-[11px] font-bold py-2.5 rounded-xl">
+                  <i class="fa-solid fa-play text-[9px]"></i> Commencer la leçon
+                </span>
+              </div>`;
         return `
             <a href="article.html?id=${this._esc(a.id)}"
-               class="article-card block bg-white rounded-2xl overflow-hidden border border-gray-100"
+               class="article-card block bg-white rounded-2xl overflow-hidden border ${isRead ? 'border-gray-100' : 'border-teal'}"
                style="box-shadow:0 2px 10px rgba(0,0,0,.07); text-decoration:none; opacity:${isRead ? '.65' : '1'};">
               <div class="overflow-hidden relative" style="height:160px; background:#f3f4f6;">
                 <img src="${this._esc(a.image)}" alt="${this._esc(a.title)}"
@@ -485,6 +458,7 @@ const home = {
               <div class="p-4">
                 <h3 class="font-bold text-frBlue text-sm leading-snug mb-1 line-clamp-2">${this._esc(a.title)}</h3>
                 <p class="text-[11px] text-gray-400">${dateStr}</p>
+                ${startCta}
               </div>
             </a>`;
     },

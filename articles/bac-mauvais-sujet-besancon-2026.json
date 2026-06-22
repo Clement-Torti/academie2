@@ -1,0 +1,73 @@
+{
+  "id": "bac-mauvais-sujet-besancon-2026",
+  "title": "Bac 2026 : 22 lycéens de Besançon ont composé avec le mauvais sujet",
+  "date": "2026-06-22",
+  "category": "Société",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Baccalaureat_2012.jpg",
+    "alt": "Des lycéens qui passent le baccalauréat dans une salle d'examen"
+  },
+  "vocabulary": [
+    { "fr": "le baccalauréat", "es": "el bachillerato / examen de selectividad francés" },
+    { "fr": "le sujet d'examen", "es": "el enunciado del examen" },
+    { "fr": "le sujet de secours", "es": "el examen de reserva" },
+    { "fr": "le rectorat", "es": "la delegación de educación" },
+    { "fr": "composer", "es": "redactar / hacer un examen escrito" },
+    { "fr": "la correction", "es": "la corrección / calificación" },
+    { "fr": "recomposer", "es": "volver a hacer el examen" },
+    { "fr": "l'académie", "es": "la circunscripción educativa" }
+  ],
+  "article": "Le baccalauréat est l'examen le plus important de la scolarité en France. Chaque année, des centaines de milliers de lycéens le passent à la fin de leur terminale. Il marque la fin du lycée et ouvre les portes des études supérieures. Les épreuves sont organisées par l'Éducation nationale, et les sujets sont secrets jusqu'au jour de l'examen.\n\nCette année, le bac 2026 a été marqué par un incident inhabituel à Besançon, dans le Doubs. Le 18 juin, vingt-deux élèves du lycée Jules Haag ont composé pendant quatre heures sur un sujet d'HGGSP qui ne leur était pas destiné. L'HGGSP est la matière « histoire-géographie, géopolitique et sciences politiques ».\n\nComment est-ce possible ? En France, chaque sujet d'examen a un sujet de secours. Ce sujet de remplacement est prévu en cas de fuite ou de problème avec le sujet principal. Dans ce cas, le rectorat avait donné l'ordre de distribuer uniquement le sujet de secours. Mais dans ce lycée, c'est l'ancien sujet, le sujet d'origine, qui a été distribué par erreur.\n\nLes élèves ont donc travaillé quatre heures sur un texte qui n'était pas prévu pour eux. Le rectorat de l'académie de Besançon a confirmé l'incident. Dans un communiqué, il a déclaré : « Le sujet d'origine n'aurait pas dû être distribué. » Des instructions claires avaient pourtant été envoyées à tous les établissements.\n\nLa bonne nouvelle pour les élèves, c'est que le sujet distribué par erreur n'avait pas fuité sur internet. Il était donc valide. Les autorités ont décidé que les vingt-deux lycéens n'auront pas besoin de recomposer. Leurs copies seront corrigées de façon isolée, avec un jury spécial, pour éviter tout problème de comparaison avec les autres candidats.\n\nCet épisode rappelle que l'organisation du baccalauréat est très complexe. Des milliers de sujets sont préparés, imprimés et transportés en secret chaque année. La logistique est énorme, et une simple erreur de distribution peut créer une situation exceptionnelle. Les lycéens concernés ont heureusement pu garder leur copie sans recomposer.\n\nPour ces vingt-deux élèves, l'expérience a été stressante. Après quatre heures de travail intense, ils ont appris qu'ils avaient composé sur le mauvais sujet. Mais la décision du rectorat les a soulagés. Leur baccalauréat n'est pas remis en cause, et ils pourront obtenir leurs résultats comme tous les autres candidats.",
+  "conversation": {
+    "intro": "Rosalia et son amie française Léa discutent dans un café à Strasbourg. Rosalia a vu passer l'info sur TikTok et elle veut comprendre comment le bac fonctionne en France.",
+    "lines": [
+      { "speaker": "Léa", "fr": "T'as vu ce qui s'est passé à Besançon pour le bac ?" },
+      { "speaker": "Rosalia", "fr": "Oui ! J'ai vu ça sur TikTok ce matin. Des élèves ont composé avec le mauvais sujet, c'est ça ?", "es": "¡Sí! Lo vi en TikTok esta mañana. Unos estudiantes hicieron el examen con el tema equivocado, ¿verdad?" },
+      { "speaker": "Léa", "fr": "Exactement. Vingt-deux élèves à Jules Haag, un lycée de Besançon." },
+      { "speaker": "Rosalia", "fr": "Quatre heures sur le mauvais sujet… ça doit être horrible de l'apprendre après !", "es": "Cuatro horas con el tema equivocado… ¡debe ser horrible enterarse al final!" },
+      { "speaker": "Léa", "fr": "Bah ouais. Mais au moins ils n'ont pas besoin de recomposer." },
+      { "speaker": "Rosalia", "fr": "C'est quoi exactement le bac ? En République dominicaine on a pas vraiment un examen aussi important en fin de lycée.", "es": "¿Qué es exactamente el bac? En República Dominicana no tenemos un examen tan importante al final del bachillerato." },
+      { "speaker": "Léa", "fr": "C'est l'examen de fin de lycée. Sans le bac, tu peux pas aller à l'université en France." },
+      { "speaker": "Rosalia", "fr": "Ah voilà ! Donc c'est vraiment décisif. Un peu comme notre examen pour rentrer à l'université, mais à la fin du lycée.", "es": "¡Ah claro! Entonces es realmente decisivo. Un poco como nuestro examen de ingreso a la universidad, pero al final del colegio." },
+      { "speaker": "Léa", "fr": "Exactement. Et les sujets sont ultra-secrets. Y'a même des sujets de secours en cas de problème." },
+      { "speaker": "Rosalia", "fr": "C'est ça l'erreur ! Le sujet de secours aurait dû être distribué, pas l'autre.", "es": "¡Eso es el error! El tema de reserva era el que debían repartir, no el otro." },
+      { "speaker": "Léa", "fr": "Voilà. Le rectorat avait donné l'ordre, mais le lycée a distribué l'ancien sujet par erreur." },
+      { "speaker": "Rosalia", "fr": "Et le sujet d'origine, il avait fuité sur internet ?", "es": "¿Y el tema original se había filtrado en internet?" },
+      { "speaker": "Léa", "fr": "Non justement ! Donc les copies sont valides. Les élèves vont juste être corrigés à part." },
+      { "speaker": "Rosalia", "fr": "C'est une bonne décision. Moi quand je vais passer des examens à Strasbourg l'année prochaine, j'espère pas avoir ce genre de stress !", "es": "Es una buena decisión. Cuando yo rinda mis exámenes en Estrasburgo el año que viene, ¡espero no tener ese tipo de estrés!" },
+      { "speaker": "Léa", "fr": "Haha t'inquiète, c'est super rare ce genre d'incident. Et toi tu vas étudier quoi exactement ?" },
+      { "speaker": "Rosalia", "fr": "Le marketing ! Le mercadeo comme on dit chez moi. J'adore tout ce qui touche à la communication.", "es": "¡Marketing! El mercadeo como decimos nosotros. Me encanta todo lo relacionado con la comunicación." },
+      { "speaker": "Léa", "fr": "Super ! Et t'as pas peur que l'université française soit trop différente de ce que tu connais ?" },
+      { "speaker": "Rosalia", "fr": "Un peu, oui ! Mais c'est aussi ce qui me plaît. Clement m'a dit que les profs sont très différents, plus directs. J'ai hâte de découvrir.", "es": "¡Un poco, sí! Pero también es lo que me gusta. Clement me dijo que los profesores son muy diferentes, más directos. Tengo muchas ganas de descubrirlo." },
+      { "speaker": "Léa", "fr": "Allez, on commande ? J'ai faim moi !" },
+      { "speaker": "Rosalia", "fr": "Oui ! T'as vu s'ils ont des sushis ici ? C'est ma faiblesse absolue.", "es": "¡Sí! ¿Viste si tienen sushi aquí? Es mi debilidad absoluta." }
+    ]
+  },
+  "comments": [
+    {
+      "username": "ParentEnColere_Dijon",
+      "comment": "C'est INADMISSIBLE. Ces élèves ont travaillé 4 heures pour rien et on nous dit juste « correction isolée » ? Qui est responsable de cette erreur ? Le rectorat doit des explications claires aux familles !!!",
+      "likes": 87
+    },
+    {
+      "username": "AncienLycéenBFC",
+      "comment": "Ça me rappelle mon bac en 2018 où un surveillant avait distribué les sujets de philo avant l'heure officielle. Tout le monde a dû poser les stylos pendant 10 minutes. Le stress était immense. Ces imprévus, c'est vraiment traumatisant le jour J.",
+      "likes": 134
+    },
+    {
+      "username": "DefenseurDuSysteme",
+      "comment": "Arrêtons de dramatiser. Le bac, c'est des millions de copies organisées chaque année. Une erreur sur 22 élèves dans un seul lycée, c'est statistiquement remarquable que ça n'arrive pas plus souvent. Le rectorat a bien géré.",
+      "likes": 56
+    },
+    {
+      "username": "BachelierDuFutur_3000",
+      "comment": "Moi j'aurais composé sur le sujet de secours ET l'original pour être sûr d'avoir les points. #StratégieDeWinner",
+      "likes": 312
+    },
+    {
+      "username": "ProfHGG_Retraite",
+      "comment": "Je suis soulagé que ces jeunes n'aient pas à recomposer. Quatre heures d'effort méritent d'être reconnues. Courage à eux pour la suite, les résultats arrivent bientôt.",
+      "likes": 203
+    }
+  ]
+}

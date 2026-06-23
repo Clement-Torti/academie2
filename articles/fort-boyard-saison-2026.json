@@ -4,43 +4,137 @@
   "date": "2026-06-22",
   "category": "Culture",
   "image": {
-    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Fort_Boyard.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Fort_Boyard.jpg/960px-Fort_Boyard.jpg",
     "alt": "Vue aérienne du Fort Boyard en mer, en Charente-Maritime"
   },
   "vocabulary": [
-    { "fr": "l'épreuve", "es": "la prueba" },
-    { "fr": "remporter", "es": "ganar, llevarse" },
-    { "fr": "inédit", "es": "inédito, nuevo" },
-    { "fr": "le trésor", "es": "el tesoro" },
-    { "fr": "le téléspectateur", "es": "el telespectador" },
-    { "fr": "l'anonyme", "es": "el anónimo" },
-    { "fr": "emblématique", "es": "emblemático" },
-    { "fr": "le personnage", "es": "el personaje" }
+    {
+      "fr": "l'épreuve",
+      "es": "la prueba"
+    },
+    {
+      "fr": "remporter",
+      "es": "ganar, llevarse"
+    },
+    {
+      "fr": "inédit",
+      "es": "inédito, nuevo"
+    },
+    {
+      "fr": "le trésor",
+      "es": "el tesoro"
+    },
+    {
+      "fr": "le téléspectateur",
+      "es": "el telespectador"
+    },
+    {
+      "fr": "l'anonyme",
+      "es": "el anónimo"
+    },
+    {
+      "fr": "emblématique",
+      "es": "emblemático"
+    },
+    {
+      "fr": "le personnage",
+      "es": "el personaje"
+    }
   ],
   "article": "Fort Boyard est l'une des émissions de divertissement les plus célèbres de la télévision française. Chaque été depuis plus de trente ans, des équipes de candidats s'affrontent dans un fort militaire situé en pleine mer pour remporter un trésor. En 2026, le programme entame sa 37e saison avec plusieurs grandes nouveautés très attendues par le public.\n\nLe Fort Boyard est un véritable monument historique français. Construit au XIXe siècle sur un îlot situé entre l'île d'Aix et l'île d'Oléron, en Charente-Maritime, ce fort militaire avait pour mission de défendre l'arsenal de Rochefort contre les attaques ennemies. Sa construction a été longue et difficile, car le site était exposé aux vagues et aux tempêtes de l'Atlantique. Les travaux ont débuté sous Napoléon Ier et se sont terminés plusieurs décennies plus tard. Le fort a ensuite servi de prison avant d'être abandonné. Pendant la Seconde Guerre mondiale, les Allemands ont utilisé le fort comme cible d'entraînement. Aujourd'hui, il appartient au département de la Charente-Maritime et accueille chaque année des milliers de touristes et l'équipe de l'émission télévisée.\n\nC'est en 1990 que France 2 a diffusé le premier épisode de Fort Boyard. L'émission a été créée par Jacques Antoine. Le concept était simple mais efficace : des équipes de six candidats devaient relever des épreuves physiques et intellectuelles pour accumuler des clefs. Ces clefs permettaient ensuite d'entrer dans la salle du trésor et de repartir avec un maximum d'argent. Dès les premières saisons, le programme a connu un succès immédiat. Patrice Laffont a présenté l'émission pendant dix ans, de 1990 à 1999.\n\nAu fil des années, Fort Boyard est devenu l'un des formats télévisés les plus exportés au monde. Des dizaines de pays ont adapté l'émission dans leur propre langue et leur propre culture. Le programme a aussi créé des personnages devenus iconiques : le Père Fouras, gardien du fort et poseur d'énigmes, ainsi que Passe-Partout et Passe-Muraille, les gardiens des cellules. En 2003, Olivier Minne a pris la tête de l'émission et y a consacré plus de 23 ans de sa carrière.\n\nEn 2026, un grand changement s'opère à la présentation. Cyril Féraud, présentateur bien connu des émissions culturelles et de jeux sur France Télévisions, succède à Olivier Minne qui a occupé ce poste pendant plus de vingt ans. Cyril Féraud a exprimé son enthousiasme pour rejoindre cet univers unique et emblématique. La nouvelle saison débute le samedi 4 juillet à 21h10 sur France 2. L'équipe de production a imaginé plusieurs changements importants pour rendre l'émission encore plus dynamique et surprenante.\n\nLa première grande nouveauté est le retour des candidats anonymes. Chaque équipe sera désormais composée de cinq célébrités et d'une personne ordinaire sélectionnée parmi les téléspectateurs. Cette personne représentera le public et pourra participer pleinement à toutes les épreuves. Selon le nouveau présentateur, cet anonyme pourrait bien devenir la star de son équipe. De plus, un nouveau système de gains a été mis en place. Grâce à cinq temps forts spéciaux organisés pendant l'émission, les candidats peuvent désormais remporter jusqu'à 50 000 euros pour leur association.\n\nDe nouvelles épreuves ont aussi été créées pour cette saison, comme l'Escalier Glissant, le Cabinet de Curiosités et les Thermes Cachés du Fort. Un nouveau personnage fait également son apparition : l'Amiral, un général napoléonien haut en couleur qui propose des épreuves spectaculaires liées aux canons du fort. Avec toutes ces nouveautés, la saison 2026 s'annonce comme l'une des plus riches et des plus spectaculaires de l'histoire du programme.",
   "conversation": {
     "intro": "Sophie et Rosalia regardent la télévision dans le salon. Elles voient une bande-annonce pour la nouvelle saison de Fort Boyard. Rosalia ne connaît pas encore cette émission et pose des questions à son amie.",
     "lines": [
-      { "speaker": "Sophie", "fr": "T'as vu ça ? Fort Boyard revient le 4 juillet sur France 2, j'adore cette émission !" },
-      { "speaker": "Rosalia", "fr": "Fort Boyard ? C'est quoi exactement, c'est un jeu télévisé ?", "es": "¿Fort Boyard? ¿Qué es exactamente, un concurso de televisión?" },
-      { "speaker": "Sophie", "fr": "Ouais, des équipes font des épreuves dans un vrai fort en pleine mer. C'est dingue comme décor !" },
-      { "speaker": "Rosalia", "fr": "Un fort en mer ? J'adore ça ! En République dominicaine, on a aussi de vieux forts espagnols. C'est similaire ?", "es": "¿Un fuerte en el mar? ¡Me encanta! En República Dominicana también tenemos viejos fuertes españoles. ¿Es parecido?" },
-      { "speaker": "Sophie", "fr": "Ouais un peu, sauf que là les candidats font des épreuves dedans pour gagner de l'argent pour une association." },
-      { "speaker": "Rosalia", "fr": "C'est une bonne cause alors ! Et qui présente l'émission cette année ?", "es": "¡Es una buena causa entonces! ¿Y quién presenta el programa este año?" },
-      { "speaker": "Sophie", "fr": "C'est Cyril Féraud. Il remplace Olivier Minne qui présentait depuis plus de 20 ans." },
-      { "speaker": "Rosalia", "fr": "20 ans c'est énorme ! Mais Cyril Féraud je connais, il présente aussi des jeux de culture générale, non ?", "es": "¡20 años es una barbaridad! Pero a Cyril Féraud lo conozco, también presenta concursos de cultura general, ¿verdad?" },
-      { "speaker": "Sophie", "fr": "Exactement ! Il est super sympa. Je pense qu'il va apporter quelque chose de nouveau à l'émission." },
-      { "speaker": "Rosalia", "fr": "J'ai l'impression que les Français adorent les jeux télé. Clement regarde toujours ce genre d'émissions le week-end.", "es": "Tengo la impresión de que a los franceses les encantan los concursos de tele. Clement siempre ve ese tipo de programas los fines de semana." },
-      { "speaker": "Sophie", "fr": "Haha oui ! Et cette saison y'a un truc super : ils réintroduisent des anonymes dans les équipes." },
-      { "speaker": "Rosalia", "fr": "Des anonymes ? C'est quoi exactement, des gens normaux comme nous ?", "es": "¿Anónimos? ¿Qué quiere decir exactamente, gente normal como nosotras?" },
-      { "speaker": "Sophie", "fr": "Voilà ! Cinq célébrités plus une personne ordinaire choisie parmi les téléspectateurs. C'est cool non ?" },
-      { "speaker": "Rosalia", "fr": "C'est super ! Si j'étais déjà à Strasbourg, je m'inscrirais peut-être. Ce serait une aventure incroyable !", "es": "¡Qué guay! Si ya estuviera en Estrasburgo, me apuntaría quizás. ¡Sería una aventura increíble!" },
-      { "speaker": "Sophie", "fr": "Et on peut gagner jusqu'à 50 000 euros pour une association. C'est beaucoup plus qu'avant !" },
-      { "speaker": "Rosalia", "fr": "50 000 euros, c'est vraiment beaucoup ! Ça me donnerait encore plus envie de participer pour aider une bonne cause.", "es": "¡50 000 euros, eso es muchísimo! Me daría aún más ganas de participar para ayudar a una buena causa." },
-      { "speaker": "Sophie", "fr": "Il y a aussi un nouveau personnage, un général napoléonien qui fait des épreuves avec des canons. Trop bizarre !" },
-      { "speaker": "Rosalia", "fr": "Haha un général napoléonien ! Je vais raconter ça à Jorgelis, elle va trouver ça hilarant.", "es": "¡Jaja, un general napoleónico! Le voy a contar esto a Jorgelis, le va a parecer graciosísimo." },
-      { "speaker": "Sophie", "fr": "On regarde le premier épisode ensemble le 4 juillet ?" },
-      { "speaker": "Rosalia", "fr": "Avec plaisir ! Ce sera une bonne façon de pratiquer mon français tout en me divertissant.", "es": "¡Con mucho gusto! Será una buena manera de practicar mi francés mientras me entretengo." }
+      {
+        "speaker": "Sophie",
+        "fr": "T'as vu ça ? Fort Boyard revient le 4 juillet sur France 2, j'adore cette émission !"
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Fort Boyard ? C'est quoi exactement, c'est un jeu télévisé ?",
+        "es": "¿Fort Boyard? ¿Qué es exactamente, un concurso de televisión?"
+      },
+      {
+        "speaker": "Sophie",
+        "fr": "Ouais, des équipes font des épreuves dans un vrai fort en pleine mer. C'est dingue comme décor !"
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Un fort en mer ? J'adore ça ! En République dominicaine, on a aussi de vieux forts espagnols. C'est similaire ?",
+        "es": "¿Un fuerte en el mar? ¡Me encanta! En República Dominicana también tenemos viejos fuertes españoles. ¿Es parecido?"
+      },
+      {
+        "speaker": "Sophie",
+        "fr": "Ouais un peu, sauf que là les candidats font des épreuves dedans pour gagner de l'argent pour une association."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "C'est une bonne cause alors ! Et qui présente l'émission cette année ?",
+        "es": "¡Es una buena causa entonces! ¿Y quién presenta el programa este año?"
+      },
+      {
+        "speaker": "Sophie",
+        "fr": "C'est Cyril Féraud. Il remplace Olivier Minne qui présentait depuis plus de 20 ans."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "20 ans c'est énorme ! Mais Cyril Féraud je connais, il présente aussi des jeux de culture générale, non ?",
+        "es": "¡20 años es una barbaridad! Pero a Cyril Féraud lo conozco, también presenta concursos de cultura general, ¿verdad?"
+      },
+      {
+        "speaker": "Sophie",
+        "fr": "Exactement ! Il est super sympa. Je pense qu'il va apporter quelque chose de nouveau à l'émission."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "J'ai l'impression que les Français adorent les jeux télé. Clement regarde toujours ce genre d'émissions le week-end.",
+        "es": "Tengo la impresión de que a los franceses les encantan los concursos de tele. Clement siempre ve ese tipo de programas los fines de semana."
+      },
+      {
+        "speaker": "Sophie",
+        "fr": "Haha oui ! Et cette saison y'a un truc super : ils réintroduisent des anonymes dans les équipes."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Des anonymes ? C'est quoi exactement, des gens normaux comme nous ?",
+        "es": "¿Anónimos? ¿Qué quiere decir exactamente, gente normal como nosotras?"
+      },
+      {
+        "speaker": "Sophie",
+        "fr": "Voilà ! Cinq célébrités plus une personne ordinaire choisie parmi les téléspectateurs. C'est cool non ?"
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "C'est super ! Si j'étais déjà à Strasbourg, je m'inscrirais peut-être. Ce serait une aventure incroyable !",
+        "es": "¡Qué guay! Si ya estuviera en Estrasburgo, me apuntaría quizás. ¡Sería una aventura increíble!"
+      },
+      {
+        "speaker": "Sophie",
+        "fr": "Et on peut gagner jusqu'à 50 000 euros pour une association. C'est beaucoup plus qu'avant !"
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "50 000 euros, c'est vraiment beaucoup ! Ça me donnerait encore plus envie de participer pour aider une bonne cause.",
+        "es": "¡50 000 euros, eso es muchísimo! Me daría aún más ganas de participar para ayudar a una buena causa."
+      },
+      {
+        "speaker": "Sophie",
+        "fr": "Il y a aussi un nouveau personnage, un général napoléonien qui fait des épreuves avec des canons. Trop bizarre !"
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Haha un général napoléonien ! Je vais raconter ça à Jorgelis, elle va trouver ça hilarant.",
+        "es": "¡Jaja, un general napoleónico! Le voy a contar esto a Jorgelis, le va a parecer graciosísimo."
+      },
+      {
+        "speaker": "Sophie",
+        "fr": "On regarde le premier épisode ensemble le 4 juillet ?"
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Avec plaisir ! Ce sera une bonne façon de pratiquer mon français tout en me divertissant.",
+        "es": "¡Con mucho gusto! Será una buena manera de practicar mi francés mientras me entretengo."
+      }
     ]
   },
   "comments": [

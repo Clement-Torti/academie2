@@ -4,43 +4,137 @@
   "date": "2026-06-21",
   "category": "Voyage",
   "image": {
-    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bayahibe_beach.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Dominican-Republic_-_Bayahibe_%2816639402539%29.jpg/960px-Dominican-Republic_-_Bayahibe_%2816639402539%29.jpg",
     "alt": "Plage de sable blanc à Bayahibe, en République dominicaine"
   },
   "vocabulary": [
-    { "fr": "ravager", "es": "arrasar, devastar" },
-    { "fr": "le chaume", "es": "la paja (material para techos)" },
-    { "fr": "les décombres", "es": "los escombros" },
-    { "fr": "le sinistre", "es": "el siniestro, el desastre" },
-    { "fr": "l'évacuation", "es": "la evacuación" },
-    { "fr": "les secours", "es": "los servicios de emergencia" },
-    { "fr": "les vacanciers", "es": "los turistas, los veraneantes" },
-    { "fr": "la propagation", "es": "la propagación" }
+    {
+      "fr": "ravager",
+      "es": "arrasar, devastar"
+    },
+    {
+      "fr": "le chaume",
+      "es": "la paja (material para techos)"
+    },
+    {
+      "fr": "les décombres",
+      "es": "los escombros"
+    },
+    {
+      "fr": "le sinistre",
+      "es": "el siniestro, el desastre"
+    },
+    {
+      "fr": "l'évacuation",
+      "es": "la evacuación"
+    },
+    {
+      "fr": "les secours",
+      "es": "los servicios de emergencia"
+    },
+    {
+      "fr": "les vacanciers",
+      "es": "los turistas, los veraneantes"
+    },
+    {
+      "fr": "la propagation",
+      "es": "la propagación"
+    }
   ],
   "article": "Un incendie meurtrier a ravagé le complexe hôtelier Viva Wyndham Dominicus Beach, situé à Bayahibe, en République dominicaine, dans la nuit du 19 au 20 juin 2026. Une touriste italienne a perdu la vie dans ce drame, et près de 1 700 personnes ont dû être évacuées en urgence. Cet événement tragique a choqué de nombreux touristes présents sur place et a attiré l'attention des médias internationaux.\n\nLe Viva Wyndham Dominicus Beach est un établissement quatre étoiles très prisé par les voyageurs étrangers. Il se trouve à Bayahibe, une ville côtière dans le sud-est de la République dominicaine, connue pour ses eaux turquoise et ses plages de sable blanc. Le complexe propose des formules tout inclus et accueille chaque année des milliers de touristes venus d'Europe et d'Amérique du Nord.\n\nLe feu s'est déclaré vers onze heures du matin, le vendredi 19 juin. Les flammes ont commencé à se propager très rapidement à travers tout le complexe. En effet, les toits de chaume de plusieurs bâtiments et la végétation sèche environnante ont facilité la progression du feu. Des vents forts ont aggravé la situation de manière considérable. En quelques heures seulement, une grande partie des installations a été détruite ou endommagée.\n\nLes services de secours sont intervenus rapidement sur le site. Au total, neuf personnes ont été blessées. Trois d'entre elles ont été transportées dans des établissements hospitaliers proches pour y recevoir des soins médicaux. Six autres ont pu être traitées directement sur place par les équipes médicales présentes. Malheureusement, une touriste italienne n'a pas survécu à ses blessures. Son identité n'a pas été rendue publique par les autorités locales.\n\nLes quelque 1 700 clients présents dans le complexe ont été évacués grâce à la coordination rapide des pompiers et du personnel de l'hôtel. Les touristes ont ensuite été pris en charge et relogés dans des établissements hôteliers voisins. Les hôtels de la région ont ouvert leurs portes pour accueillir les vacanciers déplacés, parfois en quelques minutes seulement. Cependant, l'opération d'évacuation a représenté un défi logistique important pour les équipes sur le terrain.\n\nLes autorités dominicaines ont immédiatement ouvert une enquête officielle pour déterminer l'origine précise du sinistre. À ce stade, la cause exacte reste inconnue et plusieurs hypothèses sont étudiées par les enquêteurs. Les experts doivent analyser les décombres des bâtiments avant de pouvoir formuler leurs conclusions. Le complexe est resté fermé dans l'attente des résultats. Aucune date de réouverture n'a été communiquée par la direction de l'hôtel.\n\nCet incendie soulève des interrogations importantes sur les normes de sécurité dans les hôtels touristiques de la région. Les toits de chaume, très appréciés pour leur aspect traditionnel et leur charme caribéen, présentent un risque élevé en cas d'incendie. Par ailleurs, la combinaison entre la saison sèche et les vents locaux peut favoriser une propagation très rapide des flammes. Plusieurs organisations de tourisme demandent désormais des contrôles plus stricts dans les établissements hôteliers de la zone.\n\nLe tourisme constitue un pilier fondamental de l'économie de la République dominicaine. Des millions de voyageurs visitent le pays chaque année, attirés par ses plages et ses complexes tout inclus. Un drame comme celui-ci peut avoir des répercussions négatives sur l'attractivité touristique du pays. Pourtant, les autorités locales ont rapidement réagi pour rassurer les visiteurs, en mettant en avant la réactivité des secours et la solidarité des hôtels voisins. Ces efforts montrent la volonté du secteur de maintenir la confiance des touristes.",
   "conversation": {
     "intro": "Marc et Rosalia discutent dans un café. Marc a vu les nouvelles du matin et veut en parler avec Rosalia, qui est originaire de la République dominicaine.",
     "lines": [
-      { "speaker": "Marc", "fr": "T'as vu les nouvelles ? Y'a eu un gros incendie en République dominicaine." },
-      { "speaker": "Rosalia", "fr": "Je viens de voir ça sur TikTok ! Le Dominicus Beach, c'est à Bayahibe. Je connais bien !", "es": "¡Acabo de verlo en TikTok! El Dominicus Beach está en Bayahibe. ¡Conozco bien ese lugar!" },
-      { "speaker": "Marc", "fr": "Ah bon ? T'y es déjà allée, à Bayahibe ?" },
-      { "speaker": "Rosalia", "fr": "Oui, avec ma famille ! C'est une plage magnifique. J'arrive pas à y croire.", "es": "¡Sí, con mi familia! Es una playa preciosa. No puedo creerlo." },
-      { "speaker": "Marc", "fr": "Une touriste italienne est morte, et 1 700 personnes ont été évacuées. C'est énorme." },
-      { "speaker": "Rosalia", "fr": "C'est vraiment triste pour elle et sa famille. J'espère que les autres vont bien.", "es": "Es muy triste para ella y su familia. Espero que los demás estén bien." },
-      { "speaker": "Marc", "fr": "T'as de la famille qui habite par là-bas ?" },
-      { "speaker": "Rosalia", "fr": "Non, ma famille est à Santo Domingo. Mais mes cousins vont souvent à Bayahibe se baigner.", "es": "No, mi familia está en Santo Domingo. Pero mis primos van mucho a Bayahibe a bañarse." },
-      { "speaker": "Marc", "fr": "Ils ont dit que les toits de chaume ont favorisé la propagation du feu." },
-      { "speaker": "Rosalia", "fr": "Oui, beaucoup d'hôtels là-bas ont ces toits. C'est joli, mais c'est risqué en cas d'incendie.", "es": "Sí, muchos hoteles allá tienen esos techos. Son bonitos, pero son un riesgo en caso de incendio." },
-      { "speaker": "Marc", "fr": "Et avec les vents forts en plus, ça devait flamber super vite." },
-      { "speaker": "Rosalia", "fr": "Exactement. La saison sèche et le vent, c'est vraiment une mauvaise combinaison.", "es": "Exactamente. La temporada seca y el viento, es una mala combinación de verdad." },
-      { "speaker": "Marc", "fr": "Une enquête officielle a été ouverte pour trouver la cause exacte." },
-      { "speaker": "Rosalia", "fr": "C'est bien. Et moi, à Strasbourg, je vais toujours vérifier les sorties de secours dans les hôtels !", "es": "Qué bueno. ¡Y yo, en Estrasburgo, siempre voy a verificar las salidas de emergencia en los hoteles!" },
-      { "speaker": "Marc", "fr": "Ha ! Bonne habitude. Tu pars quand, exactement ?" },
-      { "speaker": "Rosalia", "fr": "Dans quelques mois avec Clement ! J'ai vraiment hâte, c'est une aventure qui commence.", "es": "¡En unos meses con Clement! Tengo muchas ganas, es una aventura que empieza." },
-      { "speaker": "Marc", "fr": "Tu vas pas trop regretter le soleil et la plage de chez toi ?" },
-      { "speaker": "Rosalia", "fr": "Argenis et Jorgelis viennent me rendre visite à Strasbourg, c'est déjà prévu ! On s'appelle tous les jours.", "es": "¡Argenis y Jorgelis vienen a visitarme a Estrasburgo, ya está planeado! Nos llamamos todos los días." },
-      { "speaker": "Marc", "fr": "Super ! J'espère que les touristes du Dominicus vont s'en remettre vite." },
-      { "speaker": "Rosalia", "fr": "Moi aussi. La République dominicaine est un pays accueillant, tout le monde va se serrer les coudes.", "es": "Yo también. La República Dominicana es un país acogedor, todo el mundo va a apoyarse." }
+      {
+        "speaker": "Marc",
+        "fr": "T'as vu les nouvelles ? Y'a eu un gros incendie en République dominicaine."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Je viens de voir ça sur TikTok ! Le Dominicus Beach, c'est à Bayahibe. Je connais bien !",
+        "es": "¡Acabo de verlo en TikTok! El Dominicus Beach está en Bayahibe. ¡Conozco bien ese lugar!"
+      },
+      {
+        "speaker": "Marc",
+        "fr": "Ah bon ? T'y es déjà allée, à Bayahibe ?"
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Oui, avec ma famille ! C'est une plage magnifique. J'arrive pas à y croire.",
+        "es": "¡Sí, con mi familia! Es una playa preciosa. No puedo creerlo."
+      },
+      {
+        "speaker": "Marc",
+        "fr": "Une touriste italienne est morte, et 1 700 personnes ont été évacuées. C'est énorme."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "C'est vraiment triste pour elle et sa famille. J'espère que les autres vont bien.",
+        "es": "Es muy triste para ella y su familia. Espero que los demás estén bien."
+      },
+      {
+        "speaker": "Marc",
+        "fr": "T'as de la famille qui habite par là-bas ?"
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Non, ma famille est à Santo Domingo. Mais mes cousins vont souvent à Bayahibe se baigner.",
+        "es": "No, mi familia está en Santo Domingo. Pero mis primos van mucho a Bayahibe a bañarse."
+      },
+      {
+        "speaker": "Marc",
+        "fr": "Ils ont dit que les toits de chaume ont favorisé la propagation du feu."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Oui, beaucoup d'hôtels là-bas ont ces toits. C'est joli, mais c'est risqué en cas d'incendie.",
+        "es": "Sí, muchos hoteles allá tienen esos techos. Son bonitos, pero son un riesgo en caso de incendio."
+      },
+      {
+        "speaker": "Marc",
+        "fr": "Et avec les vents forts en plus, ça devait flamber super vite."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Exactement. La saison sèche et le vent, c'est vraiment une mauvaise combinaison.",
+        "es": "Exactamente. La temporada seca y el viento, es una mala combinación de verdad."
+      },
+      {
+        "speaker": "Marc",
+        "fr": "Une enquête officielle a été ouverte pour trouver la cause exacte."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "C'est bien. Et moi, à Strasbourg, je vais toujours vérifier les sorties de secours dans les hôtels !",
+        "es": "Qué bueno. ¡Y yo, en Estrasburgo, siempre voy a verificar las salidas de emergencia en los hoteles!"
+      },
+      {
+        "speaker": "Marc",
+        "fr": "Ha ! Bonne habitude. Tu pars quand, exactement ?"
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Dans quelques mois avec Clement ! J'ai vraiment hâte, c'est une aventure qui commence.",
+        "es": "¡En unos meses con Clement! Tengo muchas ganas, es una aventura que empieza."
+      },
+      {
+        "speaker": "Marc",
+        "fr": "Tu vas pas trop regretter le soleil et la plage de chez toi ?"
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Argenis et Jorgelis viennent me rendre visite à Strasbourg, c'est déjà prévu ! On s'appelle tous les jours.",
+        "es": "¡Argenis y Jorgelis vienen a visitarme a Estrasburgo, ya está planeado! Nos llamamos todos los días."
+      },
+      {
+        "speaker": "Marc",
+        "fr": "Super ! J'espère que les touristes du Dominicus vont s'en remettre vite."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Moi aussi. La République dominicaine est un pays accueillant, tout le monde va se serrer les coudes.",
+        "es": "Yo también. La República Dominicana es un país acogedor, todo el mundo va a apoyarse."
+      }
     ]
   },
   "comments": [

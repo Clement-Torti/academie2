@@ -4,45 +4,145 @@
   "date": "2026-06-13",
   "category": "Société",
   "image": {
-    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/TGV_Duplex.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/TGV_Duplex.jpg/960px-TGV_Duplex.jpg",
     "alt": "Un train TGV Duplex de la SNCF sur une voie ferrée"
   },
   "vocabulary": [
-    { "fr": "une grève", "es": "una huelga" },
-    { "fr": "un syndicat", "es": "un sindicato" },
-    { "fr": "la concurrence", "es": "la competencia" },
-    { "fr": "un salarié", "es": "un empleado" },
-    { "fr": "une filiale", "es": "una filial" },
-    { "fr": "perturbé", "es": "perturbado" },
-    { "fr": "un moratoire", "es": "una moratoria" },
-    { "fr": "licencier", "es": "despedir" },
-    { "fr": "un appel d'offres", "es": "una licitación" },
-    { "fr": "l'inflation", "es": "la inflación" }
+    {
+      "fr": "une grève",
+      "es": "una huelga"
+    },
+    {
+      "fr": "un syndicat",
+      "es": "un sindicato"
+    },
+    {
+      "fr": "la concurrence",
+      "es": "la competencia"
+    },
+    {
+      "fr": "un salarié",
+      "es": "un empleado"
+    },
+    {
+      "fr": "une filiale",
+      "es": "una filial"
+    },
+    {
+      "fr": "perturbé",
+      "es": "perturbado"
+    },
+    {
+      "fr": "un moratoire",
+      "es": "una moratoria"
+    },
+    {
+      "fr": "licencier",
+      "es": "despedir"
+    },
+    {
+      "fr": "un appel d'offres",
+      "es": "una licitación"
+    },
+    {
+      "fr": "l'inflation",
+      "es": "la inflación"
+    }
   ],
   "article": "En France, le train est un moyen de transport essentiel. Des millions de voyageurs prennent le TGV, les Intercités ou les trains régionaux chaque semaine. Ces transports connectent les villes entre elles et permettent aux travailleurs de rejoindre leur lieu de travail. Quand la SNCF est touchée par une grève, les conséquences se font sentir dans tout le pays. La SNCF est la grande compagnie ferroviaire publique française.\n\nLe 10 juin 2026, une grève nationale a paralysé le réseau ferroviaire français pendant 24 heures. Quatre grands syndicats ont lancé cet appel à la grève : la CGT-Cheminots, l'Unsa Ferroviaire, SUD-Rail et la CFDT-Cheminots. C'est une grève unitaire, c'est-à-dire que tous les grands syndicats se sont mis d'accord. Le trafic a été fortement perturbé sur tout le territoire.\n\nLes voyageurs ont subi de nombreuses annulations. En moyenne, un TGV sur trois n'a pas circulé. La moitié des trains Intercités ont été supprimés. Les trains régionaux, appelés TER, ont aussi été très affectés. Ce sont ces trains que le PDG de la SNCF Jean Castex appelle les trains du quotidien. Ce sont eux qui transportent le plus grand nombre de travailleurs chaque matin et chaque soir. La SNCF avait prévenu à l'avance que la journée serait difficile.\n\nLes syndicats ont deux principales demandes. La première est un moratoire sur l'ouverture à la concurrence. Ce mot signifie une pause dans ce processus. Il permet à des entreprises privées de concurrencer la SNCF sur les lignes de train. La deuxième demande porte sur les salaires. Les cheminots veulent une hausse de leur rémunération pour compenser la hausse des prix provoquée par l'inflation.\n\nAu cœur du conflit se trouve la question de l'ouverture à la concurrence. Les régions françaises ont le droit de choisir qui exploite les lignes de train sur leur territoire. Pour cela, elles lancent des appels d'offres. La SNCF peut participer, mais d'autres entreprises aussi. Pour répondre à ces appels d'offres, la SNCF crée de nouvelles filiales privées. Ces filiales sont des sociétés plus petites, comme des PME de quatre ou cinq cents personnes.\n\nEnviron 27 000 salariés de la SNCF sont concernés par ces transferts vers des filiales. Ces employés doivent accepter d'être transférés dans la nouvelle entité. S'ils acceptent, ils perdent les avantages de l'accord d'entreprise de la SNCF après quelques mois. Ils auront moins de jours de repos et des horaires de travail plus longs. S'ils refusent le transfert, ils risquent d'être licenciés. En effet, leur poste est transféré dans un autre territoire, et il n'y a pas d'alternative locale.\n\nLa situation sociale à la SNCF est devenue très grave. Depuis le début de l'année 2026, 13 suicides ont été comptés parmi les agents. Les syndicats font un parallèle avec la crise sociale chez France Telecom il y a quelques années. À cette époque, de nombreux employés avaient aussi subi de profonds changements dans leur travail. La concurrence a déjà démarré sur les lignes TGV, avec des opérateurs comme Trenitalia.\n\nLa loi prévoit l'ouverture à la concurrence de toutes les lignes TER avant fin 2033. Neuf régions sur onze ont déjà lancé ou vont lancer des appels d'offres. Seules l'Occitanie et la Bretagne attendent encore. La SNCF assure que tout est fait pour garantir les droits des salariés lors des transferts. Mais les syndicats restent mobilisés et prêts à lancer de nouvelles grèves. Ce conflit entre modernisation et protection sociale va durer encore plusieurs années.",
   "conversation": {
     "intro": "Rosalia est à Strasbourg pour rendre visite à Clement, son copain français. Ce matin, en prenant le petit-déjeuner, elle voit une notification sur son téléphone au sujet de la grève à la SNCF et pose des questions à Clement pour comprendre la situation.",
     "lines": [
-      { "speaker": "Clement", "fr": "Ah non, t'as vu ça ? Y'a une grosse grève à la SNCF aujourd'hui." },
-      { "speaker": "Rosalia", "fr": "Oui, j'ai vu sur TikTok ! C'est quoi exactement une grève à la SNCF ?", "es": "¡Sí, lo vi en TikTok! ¿Pero qué es exactamente una huelga en la SNCF?" },
-      { "speaker": "Clement", "fr": "C'est quand les cheminots arrêtent de travailler pour protester. Là c'est une grève de 24 heures." },
-      { "speaker": "Rosalia", "fr": "Et c'est grave ? Tous les trains s'arrêtent ?", "es": "¿Y es grave? ¿Todos los trenes se detienen?" },
-      { "speaker": "Clement", "fr": "Pas tous, un TGV sur trois est annulé et les TER sont très perturbés." },
-      { "speaker": "Rosalia", "fr": "Ay, c'est embêtant ça ! Moi qui veux prendre le train pour voyager en France quand j'emménage à Strasbourg...", "es": "¡Ay, qué fastidio! Y yo que quiero tomar el tren para viajar por Francia cuando me mude a Estrasburgo..." },
-      { "speaker": "Clement", "fr": "T'inquiète pas, les grèves arrivent pas tous les jours. Là ils défendent une vraie cause." },
-      { "speaker": "Rosalia", "fr": "Ah oui ? Pourquoi ils font grève exactement ? C'est pour les salaires ?", "es": "¿Ah sí? ¿Por qué hacen huelga exactamente? ¿Es por los sueldos?" },
-      { "speaker": "Clement", "fr": "En partie, mais surtout à cause de la concurrence. Des entreprises privées veulent exploiter les lignes." },
-      { "speaker": "Rosalia", "fr": "C'est comme en République dominicaine ! Chez nous, les bus ont été privatisés et les conditions de travail se sont dégradées.", "es": "¡Es como en República Dominicana! Allá privatizaron los autobuses y las condiciones de trabajo empeoraron." },
-      { "speaker": "Clement", "fr": "Exactement, c'est le même problème partout. Là, 27 000 salariés risquent d'être transférés dans des filiales." },
-      { "speaker": "Rosalia", "fr": "Et s'ils refusent d'être transférés, qu'est-ce qui se passe ?", "es": "¿Y si se niegan a ser transferidos, qué les pasa?" },
-      { "speaker": "Clement", "fr": "Ils peuvent être licenciés. C'est pour ça que l'ambiance est très tendue." },
-      { "speaker": "Rosalia", "fr": "C'est terrible. J'ai lu qu'il y a eu 13 suicides depuis le début de l'année. Ça me choque vraiment.", "es": "Es terrible. Leí que hubo 13 suicidios desde principio de año. Eso me impacta mucho." },
-      { "speaker": "Clement", "fr": "Ouais, c'est dramatique. Les syndicats comparent ça à la crise chez France Telecom il y a vingt ans." },
-      { "speaker": "Rosalia", "fr": "Tu crois que la grève va changer quelque chose ? Ils vont obtenir ce qu'ils veulent ?", "es": "¿Crees que la huelga va a cambiar algo? ¿Van a conseguir lo que quieren?" },
-      { "speaker": "Clement", "fr": "Peut-être un peu. Mais la loi dit que toutes les lignes TER seront en concurrence d'ici 2033." },
-      { "speaker": "Rosalia", "fr": "Bon, quand ma maman Rosaura vient me rendre visite à Strasbourg, je vais vérifier les grèves avant !", "es": "Bueno, cuando mi mamá Rosaura venga a visitarme a Estrasburgo, ¡voy a revisar las huelgas antes de reservar!" },
-      { "speaker": "Clement", "fr": "Ha, bonne idée ! Télécharge aussi l'appli SNCF, elle te prévient en cas de perturbations." },
-      { "speaker": "Rosalia", "fr": "Super ! Je télécharge ça tout de suite. Finalement, je dois apprendre plein de choses sur la vie en France !", "es": "¡Genial! Me la descargo ahora mismo. Al final, ¡hay tanto que aprender sobre la vida en Francia!" }
+      {
+        "speaker": "Clement",
+        "fr": "Ah non, t'as vu ça ? Y'a une grosse grève à la SNCF aujourd'hui."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Oui, j'ai vu sur TikTok ! C'est quoi exactement une grève à la SNCF ?",
+        "es": "¡Sí, lo vi en TikTok! ¿Pero qué es exactamente una huelga en la SNCF?"
+      },
+      {
+        "speaker": "Clement",
+        "fr": "C'est quand les cheminots arrêtent de travailler pour protester. Là c'est une grève de 24 heures."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Et c'est grave ? Tous les trains s'arrêtent ?",
+        "es": "¿Y es grave? ¿Todos los trenes se detienen?"
+      },
+      {
+        "speaker": "Clement",
+        "fr": "Pas tous, un TGV sur trois est annulé et les TER sont très perturbés."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Ay, c'est embêtant ça ! Moi qui veux prendre le train pour voyager en France quand j'emménage à Strasbourg...",
+        "es": "¡Ay, qué fastidio! Y yo que quiero tomar el tren para viajar por Francia cuando me mude a Estrasburgo..."
+      },
+      {
+        "speaker": "Clement",
+        "fr": "T'inquiète pas, les grèves arrivent pas tous les jours. Là ils défendent une vraie cause."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Ah oui ? Pourquoi ils font grève exactement ? C'est pour les salaires ?",
+        "es": "¿Ah sí? ¿Por qué hacen huelga exactamente? ¿Es por los sueldos?"
+      },
+      {
+        "speaker": "Clement",
+        "fr": "En partie, mais surtout à cause de la concurrence. Des entreprises privées veulent exploiter les lignes."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "C'est comme en République dominicaine ! Chez nous, les bus ont été privatisés et les conditions de travail se sont dégradées.",
+        "es": "¡Es como en República Dominicana! Allá privatizaron los autobuses y las condiciones de trabajo empeoraron."
+      },
+      {
+        "speaker": "Clement",
+        "fr": "Exactement, c'est le même problème partout. Là, 27 000 salariés risquent d'être transférés dans des filiales."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Et s'ils refusent d'être transférés, qu'est-ce qui se passe ?",
+        "es": "¿Y si se niegan a ser transferidos, qué les pasa?"
+      },
+      {
+        "speaker": "Clement",
+        "fr": "Ils peuvent être licenciés. C'est pour ça que l'ambiance est très tendue."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "C'est terrible. J'ai lu qu'il y a eu 13 suicides depuis le début de l'année. Ça me choque vraiment.",
+        "es": "Es terrible. Leí que hubo 13 suicidios desde principio de año. Eso me impacta mucho."
+      },
+      {
+        "speaker": "Clement",
+        "fr": "Ouais, c'est dramatique. Les syndicats comparent ça à la crise chez France Telecom il y a vingt ans."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Tu crois que la grève va changer quelque chose ? Ils vont obtenir ce qu'ils veulent ?",
+        "es": "¿Crees que la huelga va a cambiar algo? ¿Van a conseguir lo que quieren?"
+      },
+      {
+        "speaker": "Clement",
+        "fr": "Peut-être un peu. Mais la loi dit que toutes les lignes TER seront en concurrence d'ici 2033."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Bon, quand ma maman Rosaura vient me rendre visite à Strasbourg, je vais vérifier les grèves avant !",
+        "es": "Bueno, cuando mi mamá Rosaura venga a visitarme a Estrasburgo, ¡voy a revisar las huelgas antes de reservar!"
+      },
+      {
+        "speaker": "Clement",
+        "fr": "Ha, bonne idée ! Télécharge aussi l'appli SNCF, elle te prévient en cas de perturbations."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Super ! Je télécharge ça tout de suite. Finalement, je dois apprendre plein de choses sur la vie en France !",
+        "es": "¡Genial! Me la descargo ahora mismo. Al final, ¡hay tanto que aprender sobre la vida en Francia!"
+      }
     ]
   },
   "comments": [

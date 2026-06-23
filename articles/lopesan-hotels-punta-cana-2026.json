@@ -4,46 +4,149 @@
   "date": "2026-03-25",
   "category": "Voyage",
   "image": {
-    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Punta_Cana.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Punta_Cana.jpg/960px-Punta_Cana.jpg",
     "alt": "Vue aérienne de la plage de Punta Cana en République dominicaine"
   },
   "vocabulary": [
-    { "fr": "la chaîne hôtelière", "es": "la cadena hotelera" },
-    { "fr": "l'inauguration", "es": "la inauguración" },
-    { "fr": "le complexe hôtelier", "es": "el complejo hotelero" },
-    { "fr": "doubler la capacité", "es": "duplicar la capacidad" },
-    { "fr": "le segment premium", "es": "el segmento premium" },
-    { "fr": "le centre de conventions", "es": "el centro de convenciones" },
-    { "fr": "la lagune artificielle", "es": "la laguna artificial" },
-    { "fr": "réservé aux adultes", "es": "exclusivo para adultos" },
-    { "fr": "le parc aquatique", "es": "el parque acuático" },
-    { "fr": "le cénote", "es": "el cenote" },
-    { "fr": "tout inclus", "es": "todo incluido" }
+    {
+      "fr": "la chaîne hôtelière",
+      "es": "la cadena hotelera"
+    },
+    {
+      "fr": "l'inauguration",
+      "es": "la inauguración"
+    },
+    {
+      "fr": "le complexe hôtelier",
+      "es": "el complejo hotelero"
+    },
+    {
+      "fr": "doubler la capacité",
+      "es": "duplicar la capacidad"
+    },
+    {
+      "fr": "le segment premium",
+      "es": "el segmento premium"
+    },
+    {
+      "fr": "le centre de conventions",
+      "es": "el centro de convenciones"
+    },
+    {
+      "fr": "la lagune artificielle",
+      "es": "la laguna artificial"
+    },
+    {
+      "fr": "réservé aux adultes",
+      "es": "exclusivo para adultos"
+    },
+    {
+      "fr": "le parc aquatique",
+      "es": "el parque acuático"
+    },
+    {
+      "fr": "le cénote",
+      "es": "el cenote"
+    },
+    {
+      "fr": "tout inclus",
+      "es": "todo incluido"
+    }
   ],
   "article": "La République dominicaine est une destination touristique très populaire dans les Caraïbes. Chaque année, des millions de voyageurs du monde entier visitent ses plages de sable blanc et ses grands hôtels. Le tourisme représente une part importante de l'économie du pays. En 2026, une grande chaîne hôtelière espagnole a annoncé l'ouverture de trois nouveaux complexes luxueux dans la région de Punta Cana.\n\nLe groupe Lopesan Hotel Group a présenté ce projet lors d'un événement à Buenos Aires, en Argentine. Jean Dorville, directeur des ventes pour l'Amérique latine, a présenté les hôtels à des agences de voyages et des tour-opérateurs. Les trois établissements vont ouvrir à partir du mois de mai 2026. Avec ces nouvelles ouvertures, le groupe va presque doubler sa capacité à Punta Cana et passer de plus de mille à plus de deux mille chambres.\n\nLe premier hôtel s'appelle Lopesan Caoba Lagoon Resort, Spa & Casino. Cet établissement est destiné aux voyageurs du segment premium et aux clients professionnels. Il sera connecté à un grand centre de conventions qui ouvrira en 2027. C'est une option idéale pour les conférences internationales et les voyages d'affaires. Jean Dorville a souligné que cet hôtel va attirer des entreprises et des voyageurs de luxe du monde entier.\n\nLe deuxième hôtel est le Lopesan Splash Cove Resort, Spa & Casino. Cet établissement est conçu spécialement pour les familles avec enfants. Il propose des parcs aquatiques modernes, une piscine à vagues et des chambres spacieuses adaptées aux familles nombreuses. Les enfants et les adolescents ont accès à des clubs d'activités avec de nombreux programmes de divertissement. Les parents apprécieront aussi la sécurité et les nombreux services adaptés aux familles.\n\nLe troisième hôtel est le Lopesan Serenity Bay Resort, Spa & Casino. Ce complexe est réservé uniquement aux adultes. Il offre une ambiance calme et une expérience exclusive. Les clients de cet hôtel peuvent aussi accéder aux installations des deux autres complexes, comme les parcs aquatiques, les restaurants et les espaces de loisirs. C'est l'option parfaite pour les couples qui cherchent calme et luxe.\n\nLes trois hôtels partagent plusieurs attractions innovantes. La plus remarquable est une lagune artificielle de plus de cinq mille mètres carrés. Cette lagune fonctionne comme le cœur social des complexes. Autour d'elle, on trouve des cénotes artificiels avec des cascades et des espaces naturels recreés. Ces éléments offrent une expérience unique dans les Caraïbes. Un boulevard avec des restaurants, des boutiques et des espaces de divertissement complète l'ensemble.\n\nLopesan a présenté son concept «Endless Luxury», que l'on peut traduire par «Luxe sans fin». Ce concept inclut la gastronomie illimitée, des boissons premium, une connexion internet totale et des expériences personnalisées pour chaque client. L'objectif est de proposer des vacances complètes sans dépenses supplémentaires. En 2026 et 2027, la chaîne veut toucher différents profils de voyageurs : les familles, les couples, les professionnels et les amateurs de luxe. La République dominicaine continue ainsi de renforcer sa réputation comme grande destination touristique internationale.",
   "conversation": {
     "intro": "Rosalia et son amie Sophie prennent un café à Paris. Sophie montre à Rosalia une actualité sur son téléphone : un groupe espagnol va ouvrir trois nouveaux hôtels à Punta Cana.",
     "lines": [
-      { "speaker": "Sophie", "fr": "Hé Rosalia, regarde ! Trois nouveaux hôtels vont ouvrir à Punta Cana." },
-      { "speaker": "Rosalia", "fr": "Punta Cana ? Mais c'est chez moi ! Ma famille habite pas loin de là.", "es": "¿Punta Cana? ¡Pero si es mi tierra! Mi familia vive cerca de ahí." },
-      { "speaker": "Sophie", "fr": "Ah bon ? C'est une chaîne espagnole qui s'appelle Lopesan." },
-      { "speaker": "Rosalia", "fr": "Je connais pas cette chaîne. C'est quoi comme hôtels ?", "es": "No conozco esa cadena. ¿Qué tipo de hoteles son?" },
-      { "speaker": "Sophie", "fr": "Y'en a un pour les familles, un réservé aux adultes, et un pour les pros." },
-      { "speaker": "Rosalia", "fr": "Un hôtel juste pour adultes ? Ça doit être super tranquille ! Mon novio Clement adorerait ça.", "es": "¿Un hotel solo para adultos? ¡Debe ser muy tranquilo! A mi novio Clement le encantaría." },
-      { "speaker": "Sophie", "fr": "Oui ! Et ils partagent une grande lagune artificielle de cinq mille mètres carrés." },
-      { "speaker": "Rosalia", "fr": "Une lagune artificielle ? C'est quoi exactement ?", "es": "¿Una laguna artificial? ¿Qué es eso exactamente?" },
-      { "speaker": "Sophie", "fr": "C'est une grande piscine naturelle avec des cascades et des cénotes recreés." },
-      { "speaker": "Rosalia", "fr": "Des cénotes ! J'adore ça. Pas comme les vrais mais c'est une belle idée quand même.", "es": "¡Los cenotes! Me encantan. No son los reales pero es una idea bonita igual." },
-      { "speaker": "Sophie", "fr": "Le concept s'appelle «Endless Luxury», gastronomie illimitée et boissons premium incluses." },
-      { "speaker": "Rosalia", "fr": "Ça me rappelle les grands hôtels all-inclusive que ma famille adore là-bas.", "es": "Me recuerda a los grandes hoteles todo incluido que le encantan a mi familia allá." },
-      { "speaker": "Sophie", "fr": "Ils ouvrent en mai 2026. T'aurais envie d'y aller avec Clement ?" },
-      { "speaker": "Rosalia", "fr": "Oui ! Ça serait génial de lui faire découvrir la République dominicaine. Il n'y est jamais allé !", "es": "¡Sí! Sería genial llevarlo a conocer República Dominicana. ¡Nunca ha ido!" },
-      { "speaker": "Sophie", "fr": "Et Jorgelis, elle est pas à Punta Cana justement ?" },
-      { "speaker": "Rosalia", "fr": "Non, elle est à Santo Domingo. Mais Argenis pourrait nous héberger quelques jours !", "es": "No, ella está en Santo Domingo. ¡Pero Argenis podría alojarnos unos días!" },
-      { "speaker": "Sophie", "fr": "T'as de la chance d'avoir de la famille sur place, ça évite les prix d'hôtel !" },
-      { "speaker": "Rosalia", "fr": "C'est vrai ! Mais l'hôtel pour adultes me tente vraiment. Pour une occasion spéciale avec Clement.", "es": "¡Es verdad! Pero el hotel de adultos me llama mucho. Para una ocasión especial con Clement." },
-      { "speaker": "Sophie", "fr": "Je regarde les prix ce soir. On planifie ça pour l'été ?" },
-      { "speaker": "Rosalia", "fr": "Oui, super ! Je demande aussi à ma mère Rosaura ce qu'elle pense des nouveaux hôtels.", "es": "¡Sí, genial! También le pregunto a mi mamá Rosaura qué opina de los nuevos hoteles." }
+      {
+        "speaker": "Sophie",
+        "fr": "Hé Rosalia, regarde ! Trois nouveaux hôtels vont ouvrir à Punta Cana."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Punta Cana ? Mais c'est chez moi ! Ma famille habite pas loin de là.",
+        "es": "¿Punta Cana? ¡Pero si es mi tierra! Mi familia vive cerca de ahí."
+      },
+      {
+        "speaker": "Sophie",
+        "fr": "Ah bon ? C'est une chaîne espagnole qui s'appelle Lopesan."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Je connais pas cette chaîne. C'est quoi comme hôtels ?",
+        "es": "No conozco esa cadena. ¿Qué tipo de hoteles son?"
+      },
+      {
+        "speaker": "Sophie",
+        "fr": "Y'en a un pour les familles, un réservé aux adultes, et un pour les pros."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Un hôtel juste pour adultes ? Ça doit être super tranquille ! Mon novio Clement adorerait ça.",
+        "es": "¿Un hotel solo para adultos? ¡Debe ser muy tranquilo! A mi novio Clement le encantaría."
+      },
+      {
+        "speaker": "Sophie",
+        "fr": "Oui ! Et ils partagent une grande lagune artificielle de cinq mille mètres carrés."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Une lagune artificielle ? C'est quoi exactement ?",
+        "es": "¿Una laguna artificial? ¿Qué es eso exactamente?"
+      },
+      {
+        "speaker": "Sophie",
+        "fr": "C'est une grande piscine naturelle avec des cascades et des cénotes recreés."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Des cénotes ! J'adore ça. Pas comme les vrais mais c'est une belle idée quand même.",
+        "es": "¡Los cenotes! Me encantan. No son los reales pero es una idea bonita igual."
+      },
+      {
+        "speaker": "Sophie",
+        "fr": "Le concept s'appelle «Endless Luxury», gastronomie illimitée et boissons premium incluses."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Ça me rappelle les grands hôtels all-inclusive que ma famille adore là-bas.",
+        "es": "Me recuerda a los grandes hoteles todo incluido que le encantan a mi familia allá."
+      },
+      {
+        "speaker": "Sophie",
+        "fr": "Ils ouvrent en mai 2026. T'aurais envie d'y aller avec Clement ?"
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Oui ! Ça serait génial de lui faire découvrir la République dominicaine. Il n'y est jamais allé !",
+        "es": "¡Sí! Sería genial llevarlo a conocer República Dominicana. ¡Nunca ha ido!"
+      },
+      {
+        "speaker": "Sophie",
+        "fr": "Et Jorgelis, elle est pas à Punta Cana justement ?"
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Non, elle est à Santo Domingo. Mais Argenis pourrait nous héberger quelques jours !",
+        "es": "No, ella está en Santo Domingo. ¡Pero Argenis podría alojarnos unos días!"
+      },
+      {
+        "speaker": "Sophie",
+        "fr": "T'as de la chance d'avoir de la famille sur place, ça évite les prix d'hôtel !"
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "C'est vrai ! Mais l'hôtel pour adultes me tente vraiment. Pour une occasion spéciale avec Clement.",
+        "es": "¡Es verdad! Pero el hotel de adultos me llama mucho. Para una ocasión especial con Clement."
+      },
+      {
+        "speaker": "Sophie",
+        "fr": "Je regarde les prix ce soir. On planifie ça pour l'été ?"
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Oui, super ! Je demande aussi à ma mère Rosaura ce qu'elle pense des nouveaux hôtels.",
+        "es": "¡Sí, genial! También le pregunto a mi mamá Rosaura qué opina de los nuevos hoteles."
+      }
     ]
   },
   "comments": [

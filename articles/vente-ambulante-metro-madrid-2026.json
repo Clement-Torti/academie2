@@ -4,43 +4,137 @@
   "date": "2026-06-13",
   "category": "Société",
   "image": {
-    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Empanada.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Empanada.jpg/960px-Empanada.jpg",
     "alt": "Des empanadas, spécialité culinaire souvent vendue par les marchands ambulants"
   },
   "vocabulary": [
-    { "fr": "la vente ambulante", "es": "la venta ambulante" },
-    { "fr": "un vendeur ambulant", "es": "un vendedor ambulante" },
-    { "fr": "la sécurité alimentaire", "es": "la seguridad alimentaria" },
-    { "fr": "confisquer", "es": "confiscar" },
-    { "fr": "la traçabilité", "es": "la trazabilidad" },
-    { "fr": "une glacière thermique", "es": "una nevera térmica" },
-    { "fr": "les alentours", "es": "los alrededores" },
-    { "fr": "une intoxication alimentaire", "es": "una intoxicación alimentaria" }
+    {
+      "fr": "la vente ambulante",
+      "es": "la venta ambulante"
+    },
+    {
+      "fr": "un vendeur ambulant",
+      "es": "un vendedor ambulante"
+    },
+    {
+      "fr": "la sécurité alimentaire",
+      "es": "la seguridad alimentaria"
+    },
+    {
+      "fr": "confisquer",
+      "es": "confiscar"
+    },
+    {
+      "fr": "la traçabilité",
+      "es": "la trazabilidad"
+    },
+    {
+      "fr": "une glacière thermique",
+      "es": "una nevera térmica"
+    },
+    {
+      "fr": "les alentours",
+      "es": "los alrededores"
+    },
+    {
+      "fr": "une intoxication alimentaire",
+      "es": "una intoxicación alimentaria"
+    }
   ],
   "article": "Dans les grandes villes, certains habitants trouvent des moyens originaux pour gagner leur vie. À Madrid, un phénomène a pris de l'ampleur ces dernières années : la vente de nourriture dans la rue, près des stations de métro. Des vendeurs ambulants, souvent des immigrés latino-américains, proposent des empanadas, des pommes de terre farcies, des boissons fraîches ou des glaces aux voyageurs. Ce commerce informel commence à attirer l'attention des associations professionnelles et des autorités de la ville.\n\nCe phénomène n'est pas nouveau. Depuis longtemps, il est possible de trouver des vendeurs ambulants aux abords des stations de métro madrilènes. Mais aujourd'hui, leur présence est beaucoup plus visible. Les stations de Plaza Elíptica, Entrevías et Oporto sont particulièrement concernées. Ces vendeurs s'installent à l'entrée des stations avec des boîtes ou des glacières thermiques. Ils interpellent les passagers qui entrent et sortent du métro. Certains d'entre eux ont transformé cette activité en véritable gagne-pain quotidien.\n\nCes hommes et ces femmes viennent principalement d'Amérique latine. Certains ont des papiers, d'autres non. Ils achètent leurs produits à des fournisseurs, à des membres de leur famille, ou les préparent eux-mêmes chez eux. Ils travaillent sous le soleil, la chaleur, la pluie et le froid. Les paiements se font en espèces, mais certains acceptent aussi des virements via Bizum.\n\nJuan est colombien. Il a vingt-neuf ans et il vend de la nourriture dans le métro depuis deux ans. Il explique sa situation clairement. Il n'a pas de papiers et il est difficile pour lui d'en obtenir. Il n'a jamais trouvé de travail en restauration. Alors, il a choisi la vente ambulante. Quand il a commencé, ils étaient peu nombreux. Aujourd'hui, il remarque que le nombre de vendeurs a beaucoup augmenté dans toute la ville.\n\nCamila est péruvienne. Elle a trente-neuf ans et elle est arrivée en Espagne en 2023. Elle vend de la nourriture devant une gare de la Comunidad de Madrid. Elle gagne plus de mille deux cents euros par mois, mais elle travaille plus de dix heures par jour. Il lui arrive de perdre ses marchandises quand la police les lui confisque. Cela lui a déjà coûté plus de cent euros en une seule fois. Elle s'est inscrite comme travailleuse indépendante, mais son statut lui permet seulement de transporter des aliments, pas de les vendre. Elle cherche actuellement un emploi dans un bar ou un restaurant.\n\nLes associations professionnelles s'inquiètent de cette situation. Hostelería de España parle d'une irrégularité absolue. Son secrétaire général rappelle que le principal problème est la sécurité alimentaire. Les restaurants légaux respectent des règles très strictes que les vendeurs ambulants ignorent. Il est impossible de connaître l'origine des ingrédients ou les conditions de conservation. En cas d'intoxication, les autorités auraient du mal à identifier la source du problème. La mairie de Madrid mène d'ailleurs des campagnes contre la vente ambulante illégale. Avant la pandémie, le nombre d'amendes délivrées augmentait chaque année. Entre 2018 et 2019, on est passé de seize mille à plus de dix-sept mille procès-verbaux.\n\nCe phénomène s'inscrit dans un contexte plus large. À la fin de l'année 2024, la Communauté de Madrid a enregistré un chiffre historique : plus d'un million de personnes originaires d'Amérique latine vivent dans la région. Il y a vingt-cinq ans, ce nombre était d'environ quatre-vingt mille. Ces nouveaux habitants cherchent des solutions pour survivre, et la vente ambulante en est une. Le débat entre régulation et tolérance reste ouvert.",
   "conversation": {
     "intro": "Léa et Rosalia sont dans un café de Paris. Léa vient de lire un article sur son téléphone. Elle le montre à Rosalia et elles commencent à discuter de la vente ambulante de nourriture dans le métro de Madrid.",
     "lines": [
-      { "speaker": "Léa", "fr": "T'as vu ça ? Il y a des gens qui vendent des empanadas devant le métro à Madrid !" },
-      { "speaker": "Rosalia", "fr": "Ah oui, j'ai lu ça aussi ! C'est impressionnant, ils gagnent plus de mille euros par mois.", "es": "¡Ah sí, también leí eso! Es impresionante, ganan más de mil euros al mes." },
-      { "speaker": "Léa", "fr": "Ouais mais c'est illégal quand même. La police peut leur confisquer tout le stock." },
-      { "speaker": "Rosalia", "fr": "Je comprends, mais ils n'ont pas vraiment d'autre choix. Sans papiers, c'est très difficile de trouver du travail.", "es": "Lo entiendo, pero realmente no tienen otra opción. Sin papeles, es muy difícil encontrar trabajo." },
-      { "speaker": "Léa", "fr": "Les associations de restauration disent que c'est dangereux pour la sécurité alimentaire." },
-      { "speaker": "Rosalia", "fr": "Oui, la traçabilité des aliments c'est super important. On ne sait pas comment ils conservent la nourriture.", "es": "Sí, la trazabilidad de los alimentos es muy importante. No sabemos cómo conservan la comida." },
-      { "speaker": "Léa", "fr": "Exactement. Et si quelqu'un tombe malade, c'est impossible de retrouver la source." },
-      { "speaker": "Rosalia", "fr": "C'est vrai. Mais leur courage est admirable quand même. Ils travaillent dix heures sous le soleil pour survivre.", "es": "Es verdad. Pero su valentía es admirable. Trabajan diez horas bajo el sol para sobrevivir." },
-      { "speaker": "Léa", "fr": "C'est dur. Tu te reconnais un peu dans leur situation ?" },
-      { "speaker": "Rosalia", "fr": "Un peu oui ! Quand j'arriverai en France, j'aurai aussi un peu peur au début. Mais j'ai mon visa étudiant, c'est différent.", "es": "¡Un poco sí! Cuando llegue a Francia también tendré un poco de miedo al principio. Pero tengo mi visa de estudiante, es diferente." },
-      { "speaker": "Léa", "fr": "T'as raison. Et puis à Strasbourg tu connais déjà quelqu'un !" },
-      { "speaker": "Rosalia", "fr": "Oui, Clement est là ! Il m'a promis qu'on cuisinerait ensemble. Je vais lui apprendre les recettes de Rosaura.", "es": "¡Sí, Clement está allí! Me prometió que cocinaríamos juntos. Le voy a enseñar las recetas de Rosaura." },
-      { "speaker": "Léa", "fr": "Haha les recettes de ta mère ! C'est quoi sa spécialité ?" },
-      { "speaker": "Rosalia", "fr": "Les plátanos fritos et le pollo guisado ! Ce sont les meilleurs plats du monde, j'en suis convaincue.", "es": "¡Los plátanos fritos y el pollo guisado! Estoy convencida de que son los mejores platos del mundo." },
-      { "speaker": "Léa", "fr": "Moi j'ai jamais mangé ça. Tu m'invites à Strasbourg alors ?" },
-      { "speaker": "Rosalia", "fr": "Bien sûr ! Argenis et Jorgelis vont aussi venir me voir. On fera une grande fête de cuisine dominicaine !", "es": "¡Claro que sí! Argenis y Jorgelis también vendrán a visitarme. ¡Haremos una gran fiesta de cocina dominicana!" },
-      { "speaker": "Léa", "fr": "Oh c'est trop bien ! Bon, en attendant, on commande quoi ici ?" },
-      { "speaker": "Rosalia", "fr": "Je veux essayer les crêpes ! C'est mon exercice pour découvrir les plats français. Clement dit que j'adore ça.", "es": "¡Quiero probar los crepes! Es mi ejercicio para descubrir los platos franceses. Clement dice que me encantan." },
-      { "speaker": "Léa", "fr": "Haha, il te connaît bien ! Allez, deux crêpes au citron alors." },
-      { "speaker": "Rosalia", "fr": "Parfait ! Et après on continue à parler de l'article. Y'a plein de choses à discuter encore.", "es": "¡Perfecto! Y después seguimos hablando del artículo. Todavía hay muchas cosas que discutir." }
+      {
+        "speaker": "Léa",
+        "fr": "T'as vu ça ? Il y a des gens qui vendent des empanadas devant le métro à Madrid !"
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Ah oui, j'ai lu ça aussi ! C'est impressionnant, ils gagnent plus de mille euros par mois.",
+        "es": "¡Ah sí, también leí eso! Es impresionante, ganan más de mil euros al mes."
+      },
+      {
+        "speaker": "Léa",
+        "fr": "Ouais mais c'est illégal quand même. La police peut leur confisquer tout le stock."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Je comprends, mais ils n'ont pas vraiment d'autre choix. Sans papiers, c'est très difficile de trouver du travail.",
+        "es": "Lo entiendo, pero realmente no tienen otra opción. Sin papeles, es muy difícil encontrar trabajo."
+      },
+      {
+        "speaker": "Léa",
+        "fr": "Les associations de restauration disent que c'est dangereux pour la sécurité alimentaire."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Oui, la traçabilité des aliments c'est super important. On ne sait pas comment ils conservent la nourriture.",
+        "es": "Sí, la trazabilidad de los alimentos es muy importante. No sabemos cómo conservan la comida."
+      },
+      {
+        "speaker": "Léa",
+        "fr": "Exactement. Et si quelqu'un tombe malade, c'est impossible de retrouver la source."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "C'est vrai. Mais leur courage est admirable quand même. Ils travaillent dix heures sous le soleil pour survivre.",
+        "es": "Es verdad. Pero su valentía es admirable. Trabajan diez horas bajo el sol para sobrevivir."
+      },
+      {
+        "speaker": "Léa",
+        "fr": "C'est dur. Tu te reconnais un peu dans leur situation ?"
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Un peu oui ! Quand j'arriverai en France, j'aurai aussi un peu peur au début. Mais j'ai mon visa étudiant, c'est différent.",
+        "es": "¡Un poco sí! Cuando llegue a Francia también tendré un poco de miedo al principio. Pero tengo mi visa de estudiante, es diferente."
+      },
+      {
+        "speaker": "Léa",
+        "fr": "T'as raison. Et puis à Strasbourg tu connais déjà quelqu'un !"
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Oui, Clement est là ! Il m'a promis qu'on cuisinerait ensemble. Je vais lui apprendre les recettes de Rosaura.",
+        "es": "¡Sí, Clement está allí! Me prometió que cocinaríamos juntos. Le voy a enseñar las recetas de Rosaura."
+      },
+      {
+        "speaker": "Léa",
+        "fr": "Haha les recettes de ta mère ! C'est quoi sa spécialité ?"
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Les plátanos fritos et le pollo guisado ! Ce sont les meilleurs plats du monde, j'en suis convaincue.",
+        "es": "¡Los plátanos fritos y el pollo guisado! Estoy convencida de que son los mejores platos del mundo."
+      },
+      {
+        "speaker": "Léa",
+        "fr": "Moi j'ai jamais mangé ça. Tu m'invites à Strasbourg alors ?"
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Bien sûr ! Argenis et Jorgelis vont aussi venir me voir. On fera une grande fête de cuisine dominicaine !",
+        "es": "¡Claro que sí! Argenis y Jorgelis también vendrán a visitarme. ¡Haremos una gran fiesta de cocina dominicana!"
+      },
+      {
+        "speaker": "Léa",
+        "fr": "Oh c'est trop bien ! Bon, en attendant, on commande quoi ici ?"
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Je veux essayer les crêpes ! C'est mon exercice pour découvrir les plats français. Clement dit que j'adore ça.",
+        "es": "¡Quiero probar los crepes! Es mi ejercicio para descubrir los platos franceses. Clement dice que me encantan."
+      },
+      {
+        "speaker": "Léa",
+        "fr": "Haha, il te connaît bien ! Allez, deux crêpes au citron alors."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Parfait ! Et après on continue à parler de l'article. Y'a plein de choses à discuter encore.",
+        "es": "¡Perfecto! Y después seguimos hablando del artículo. Todavía hay muchas cosas que discutir."
+      }
     ]
   },
   "comments": [

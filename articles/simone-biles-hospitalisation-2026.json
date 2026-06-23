@@ -4,47 +4,153 @@
   "date": "2026-06-07",
   "category": "Sport",
   "image": {
-    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Simone_Biles_Paris_Olympics.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Simone_Biles_Paris_Olympics.jpg/960px-Simone_Biles_Paris_Olympics.jpg",
     "alt": "Simone Biles lors des Jeux olympiques de Paris 2024"
   },
   "vocabulary": [
-    { "fr": "inquiéter", "es": "preocupar" },
-    { "fr": "effrayant(e)", "es": "aterrador(a)" },
-    { "fr": "failli mourir", "es": "casi morir" },
-    { "fr": "être hospitalisé(e)", "es": "estar hospitalizado/a" },
-    { "fr": "un bracelet d'hôpital", "es": "una pulsera de hospital" },
-    { "fr": "garder le repos", "es": "guardar reposo" },
-    { "fr": "confier", "es": "confiar / contar" },
-    { "fr": "la vie privée", "es": "la vida privada" },
-    { "fr": "une icône", "es": "un ícono" },
-    { "fr": "le rétablissement", "es": "la recuperación" },
-    { "fr": "dévoiler", "es": "revelar" },
-    { "fr": "une urgence médicale", "es": "una urgencia médica" }
+    {
+      "fr": "inquiéter",
+      "es": "preocupar"
+    },
+    {
+      "fr": "effrayant(e)",
+      "es": "aterrador(a)"
+    },
+    {
+      "fr": "failli mourir",
+      "es": "casi morir"
+    },
+    {
+      "fr": "être hospitalisé(e)",
+      "es": "estar hospitalizado/a"
+    },
+    {
+      "fr": "un bracelet d'hôpital",
+      "es": "una pulsera de hospital"
+    },
+    {
+      "fr": "garder le repos",
+      "es": "guardar reposo"
+    },
+    {
+      "fr": "confier",
+      "es": "confiar / contar"
+    },
+    {
+      "fr": "la vie privée",
+      "es": "la vida privada"
+    },
+    {
+      "fr": "une icône",
+      "es": "un ícono"
+    },
+    {
+      "fr": "le rétablissement",
+      "es": "la recuperación"
+    },
+    {
+      "fr": "dévoiler",
+      "es": "revelar"
+    },
+    {
+      "fr": "une urgence médicale",
+      "es": "una urgencia médica"
+    }
   ],
   "article": "Simone Biles a inquiété ses millions de fans cette semaine. La gymnaste américaine a partagé un message surprenant sur ses réseaux sociaux. Elle a révélé qu'elle a vécu une expérience très grave et très effrayante. Ses abonnés et les médias ont été très choqués par ses mots.\n\nSimone Biles est l'une des meilleures gymnastes de tous les temps. Elle a 29 ans et elle vit aux États-Unis. Elle a remporté onze médailles olympiques au cours de sa carrière exceptionnelle. C'est un record qui fait d'elle une légende du sport mondial. En 2021, elle a pris une décision courageuse : elle s'est retirée des Jeux olympiques de Tokyo pour protéger sa santé mentale. Ce geste fort a inspiré beaucoup de sportifs et de sportives dans le monde entier. Elle est aujourd'hui une véritable icône du sport féminin.\n\nDans sa vie personnelle, Simone Biles est mariée au joueur de football américain Jonathan Owens. Le couple s'est marié en mai 2023. Ils vivent ensemble à Spring, une ville près de Houston, au Texas. Jonathan voyage souvent pour ses entraînements et ses matchs. Ils forment un couple très populaire aux États-Unis.\n\nCette semaine, Jonathan était à Indianapolis pour s'entraîner. Simone était seule chez elle. C'est pendant cette période qu'un incident grave s'est produit. La gymnaste a posté des photos sur Instagram pour informer ses fans. Sur une des photos, on peut voir plusieurs bracelets d'hôpital à son poignet droit. Elle a aussi écrit un long message pour expliquer sa situation à ses abonnés. Cela montre clairement qu'elle a eu besoin de soins médicaux urgents.\n\n\"Normalement, je ne parle pas de ce genre de choses, parce que je protège beaucoup ma vie privée\", a-t-elle écrit. Mais cette fois, elle a fait une exception. \"J'ai failli mourir au début de cette semaine\", a-t-elle confié à ses abonnés. \"C'est l'une des expériences les plus effrayantes de ma vie, si ce n'est la plus effrayante\", a-t-elle ajouté. Elle a promis de dévoiler toute l'histoire un jour, mais elle n'est pas encore prête.\n\nDepuis cet incident, les médecins lui ont conseillé de garder le repos absolu. Simone a donc passé plusieurs jours au lit chez elle, sans faire d'exercice. Elle a partagé d'autres photos sur ses réseaux sociaux : un grand bouquet de fleurs envoyé par ses proches, et une image d'elle allongée avec ses chiens. Elle a aussi montré une capture de son rythme cardiaque avant de dormir. Ces images ont rassuré ses nombreux fans, qui s'inquiétaient pour elle. Pour finir, elle a remercié ses amis et sa famille : \"Vous m'avez appelée, rendu visite ou envoyé des fleurs. Je vous aime beaucoup.\"\n\nEn avril 2026, Simone était à Madrid pour les Laureus Awards, une grande cérémonie sportive. Des journalistes lui ont demandé si elle comptait participer aux Jeux olympiques de Los Angeles en 2028. Elle n'a pas répondu clairement. Elle n'a pas non plus annoncé sa retraite de façon officielle. Mais depuis quelque temps, elle ne participe plus à des compétitions de haut niveau. Ses fans du monde entier lui souhaitent un bon rétablissement et espèrent la revoir bientôt.",
   "conversation": {
     "intro": "Rosalia et Léa se retrouvent dans un café. Rosalia a vu le post de Simone Biles la veille et veut en parler.",
     "lines": [
-      { "speaker": "Rosalia", "fr": "T'as vu ce que Simone Biles a posté cette semaine ? Elle dit qu'elle a failli mourir.", "es": "¿Viste lo que publicó Simone Biles esta semana? Dice que casi muere." },
-      { "speaker": "Léa", "fr": "Oui ! J'y croyais pas quand j'ai lu ça. C'est quoi cette histoire ?" },
-      { "speaker": "Rosalia", "fr": "Elle a pas expliqué. Elle a posté des photos de bracelets d'hôpital et un long message.", "es": "No explicó nada. Solo publicó fotos de pulseras de hospital y un mensaje largo." },
-      { "speaker": "Léa", "fr": "Et son mari était pas là en plus — il était à Indianapolis pour s'entraîner." },
-      { "speaker": "Rosalia", "fr": "Toute seule avec ça... ça fait froid dans le dos. Heureusement ses amis lui ont envoyé des fleurs.", "es": "Completamente sola con eso... da escalofríos. Por suerte sus amigos le mandaron flores." },
-      { "speaker": "Léa", "fr": "Les gens sur internet sont frustrés qu'elle explique pas ce qui s'est passé." },
-      { "speaker": "Rosalia", "fr": "Je comprends pas cette réaction. C'est son droit de protéger sa vie privée. On est pas obligés de tout savoir.", "es": "No entiendo esa reacción. Es su derecho proteger su vida privada. No estamos obligados a saberlo todo." },
-      { "speaker": "Léa", "fr": "Ouais mais elle dit «j'ai failli mourir» et après silence total. C'est un peu frustrant quand même." },
-      { "speaker": "Rosalia", "fr": "Elle a dit qu'elle racontera quand elle sera prête. Moi je respecte ça complètement.", "es": "Dijo que va a contar cuando esté lista. Yo lo respeto completamente." },
-      { "speaker": "Léa", "fr": "T'avais déjà suivi Simone Biles avant cet incident ?" },
-      { "speaker": "Rosalia", "fr": "Oui ! Depuis Tokyo 2021. Elle s'est retirée des JO pour protéger sa santé mentale. J'ai trouvé ça tellement courageux.", "es": "¡Sí! Desde Tokio 2021. Se retiró de los JO para proteger su salud mental. Me pareció tan valiente." },
-      { "speaker": "Léa", "fr": "Beaucoup de gens l'avaient critiquée à l'époque pourtant." },
-      { "speaker": "Rosalia", "fr": "C'est ça qui me choque. Elle prend soin d'elle et les gens l'attaquent. La performance c'est pas tout.", "es": "Eso es lo que me impacta. Se cuida y la gente la ataca. El rendimiento no lo es todo." },
-      { "speaker": "Léa", "fr": "Et là c'est pareil — on lui reproche de pas tout expliquer sur son hospitalisation." },
-      { "speaker": "Rosalia", "fr": "C'est ridicule. Elle a 29 ans et des dizaines de médailles. Elle peut bien décider ce qu'elle partage ou non.", "es": "Es ridículo. Tiene 29 años y decenas de medallas. Puede decidir perfectamente lo que comparte o no." },
-      { "speaker": "Léa", "fr": "T'as raison. Et elle a quand même posté pour rassurer ses fans — c'est sympa ça." },
-      { "speaker": "Rosalia", "fr": "Exactement. Elle aurait pu rester dans le silence total. Au moins on sait qu'elle va mieux.", "es": "Exacto. Podría haber guardado silencio total. Al menos sabemos que está mejor." },
-      { "speaker": "Léa", "fr": "Tu penses qu'elle va revenir en compétition un jour ?" },
-      { "speaker": "Rosalia", "fr": "Je sais pas. Mais qu'elle revienne ou non, c'est déjà une légende. J'espère juste qu'elle se remettra bien.", "es": "No sé. Pero vuelva o no, ya es una leyenda. Solo espero que se recupere bien." },
-      { "speaker": "Léa", "fr": "Ouais. Repose-toi bien, Simone !" }
+      {
+        "speaker": "Rosalia",
+        "fr": "T'as vu ce que Simone Biles a posté cette semaine ? Elle dit qu'elle a failli mourir.",
+        "es": "¿Viste lo que publicó Simone Biles esta semana? Dice que casi muere."
+      },
+      {
+        "speaker": "Léa",
+        "fr": "Oui ! J'y croyais pas quand j'ai lu ça. C'est quoi cette histoire ?"
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Elle a pas expliqué. Elle a posté des photos de bracelets d'hôpital et un long message.",
+        "es": "No explicó nada. Solo publicó fotos de pulseras de hospital y un mensaje largo."
+      },
+      {
+        "speaker": "Léa",
+        "fr": "Et son mari était pas là en plus — il était à Indianapolis pour s'entraîner."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Toute seule avec ça... ça fait froid dans le dos. Heureusement ses amis lui ont envoyé des fleurs.",
+        "es": "Completamente sola con eso... da escalofríos. Por suerte sus amigos le mandaron flores."
+      },
+      {
+        "speaker": "Léa",
+        "fr": "Les gens sur internet sont frustrés qu'elle explique pas ce qui s'est passé."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Je comprends pas cette réaction. C'est son droit de protéger sa vie privée. On est pas obligés de tout savoir.",
+        "es": "No entiendo esa reacción. Es su derecho proteger su vida privada. No estamos obligados a saberlo todo."
+      },
+      {
+        "speaker": "Léa",
+        "fr": "Ouais mais elle dit «j'ai failli mourir» et après silence total. C'est un peu frustrant quand même."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Elle a dit qu'elle racontera quand elle sera prête. Moi je respecte ça complètement.",
+        "es": "Dijo que va a contar cuando esté lista. Yo lo respeto completamente."
+      },
+      {
+        "speaker": "Léa",
+        "fr": "T'avais déjà suivi Simone Biles avant cet incident ?"
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Oui ! Depuis Tokyo 2021. Elle s'est retirée des JO pour protéger sa santé mentale. J'ai trouvé ça tellement courageux.",
+        "es": "¡Sí! Desde Tokio 2021. Se retiró de los JO para proteger su salud mental. Me pareció tan valiente."
+      },
+      {
+        "speaker": "Léa",
+        "fr": "Beaucoup de gens l'avaient critiquée à l'époque pourtant."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "C'est ça qui me choque. Elle prend soin d'elle et les gens l'attaquent. La performance c'est pas tout.",
+        "es": "Eso es lo que me impacta. Se cuida y la gente la ataca. El rendimiento no lo es todo."
+      },
+      {
+        "speaker": "Léa",
+        "fr": "Et là c'est pareil — on lui reproche de pas tout expliquer sur son hospitalisation."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "C'est ridicule. Elle a 29 ans et des dizaines de médailles. Elle peut bien décider ce qu'elle partage ou non.",
+        "es": "Es ridículo. Tiene 29 años y decenas de medallas. Puede decidir perfectamente lo que comparte o no."
+      },
+      {
+        "speaker": "Léa",
+        "fr": "T'as raison. Et elle a quand même posté pour rassurer ses fans — c'est sympa ça."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Exactement. Elle aurait pu rester dans le silence total. Au moins on sait qu'elle va mieux.",
+        "es": "Exacto. Podría haber guardado silencio total. Al menos sabemos que está mejor."
+      },
+      {
+        "speaker": "Léa",
+        "fr": "Tu penses qu'elle va revenir en compétition un jour ?"
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Je sais pas. Mais qu'elle revienne ou non, c'est déjà une légende. J'espère juste qu'elle se remettra bien.",
+        "es": "No sé. Pero vuelva o no, ya es una leyenda. Solo espero que se recupere bien."
+      },
+      {
+        "speaker": "Léa",
+        "fr": "Ouais. Repose-toi bien, Simone !"
+      }
     ]
   },
   "comments": [

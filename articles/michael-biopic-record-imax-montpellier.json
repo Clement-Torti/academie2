@@ -4,45 +4,146 @@
   "date": "2026-06-13",
   "category": "Culture",
   "image": {
-    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Michael_Jackson_in_1988.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Michael_Jackson_in_1988.jpg/960px-Michael_Jackson_in_1988.jpg",
     "alt": "Michael Jackson en concert en 1988"
   },
   "vocabulary": [
-    { "fr": "un biopic", "es": "una película biográfica" },
-    { "fr": "battre un record", "es": "batir un récord" },
-    { "fr": "les entrées", "es": "las entradas (número de espectadores)" },
-    { "fr": "le démarrage", "es": "el estreno / el arranque" },
-    { "fr": "dépasser", "es": "superar" },
-    { "fr": "la pellicule", "es": "la película (material fotográfico)" },
-    { "fr": "un cinéphile", "es": "un cinéfilo" },
-    { "fr": "sans précédent", "es": "sin precedentes" }
+    {
+      "fr": "un biopic",
+      "es": "una película biográfica"
+    },
+    {
+      "fr": "battre un record",
+      "es": "batir un récord"
+    },
+    {
+      "fr": "les entrées",
+      "es": "las entradas (número de espectadores)"
+    },
+    {
+      "fr": "le démarrage",
+      "es": "el estreno / el arranque"
+    },
+    {
+      "fr": "dépasser",
+      "es": "superar"
+    },
+    {
+      "fr": "la pellicule",
+      "es": "la película (material fotográfico)"
+    },
+    {
+      "fr": "un cinéphile",
+      "es": "un cinéfilo"
+    },
+    {
+      "fr": "sans précédent",
+      "es": "sin precedentes"
+    }
   ],
   "article": "Le cinéma français connaît une semaine remarquable. Deux événements retiennent l'attention des amateurs de films. D'abord, le biopic Michael vient de battre un record historique en France. Ensuite, la ville de Montpellier accueille le premier cinéma IMAX 70 mm du pays. Ces deux nouvelles montrent que la salle de cinéma reste un lieu unique, irremplaçable pour vivre des émotions fortes.\n\nDepuis sa sortie le 22 avril 2026, le film Michael a conquis les spectateurs français. Lors de sa première semaine d'exploitation, il a attiré 1 390 446 personnes. C'est le deuxième meilleur démarrage de l'année en France, juste derrière Super Mario Galaxy. Dès ces premiers chiffres, les professionnels du cinéma ont compris que le film allait réaliser un parcours exceptionnel.\n\nLa confirmation est arrivée lors de la septième semaine. En cumulant toutes ses entrées, Michael a dépassé les 5 250 835 spectateurs. Ce chiffre historique efface le record détenu depuis 2007 par La Môme, le biopic consacré à Édith Piaf, qui avait enregistré 5 242 769 entrées. Michael devient ainsi le biopic le plus vu de l'histoire du box-office français.\n\nLe film, réalisé par Antoine Fuqua, raconte la vie de Michael Jackson depuis son enfance dans l'Indiana jusqu'à sa carrière internationale extraordinaire. Il explore les moments publics de la star, mais aussi sa vie privée et les controverses qui ont marqué son parcours. Le rôle principal est tenu par Jaafar Jackson, le neveu du chanteur. Ce choix avait suscité de nombreux débats avant la sortie. Finalement, le public a largement approuvé la performance de l'acteur.\n\nÀ l'échelle mondiale, le succès du film est tout aussi impressionnant. Avec plus de 911 millions de dollars de recettes, Michael est devenu le biopic musical le plus rentable de l'histoire du cinéma. Il dépasse Bohemian Rhapsody, qui racontait l'histoire du groupe Queen, ainsi que Elvis, sorti en 2022. Ces trois films montrent un intérêt croissant du public pour les biopics musicaux.\n\nPendant ce temps, à Montpellier, une autre nouvelle fait parler d'elle. Le cinéma Pathé Odysseum vient d'installer une salle équipée de la technologie IMAX 70 mm. C'est une première en France. Dans toute l'Europe continentale, seules trois salles proposent ce type de projection. Cette technologie utilise une pellicule de film physique, contrairement aux systèmes numériques habituels.\n\nL'écran de cette nouvelle salle est impressionnant. Il mesure 432 mètres carrés, avec un format natif de 1,43. La qualité de l'image est équivalente à une résolution de 18K. À titre de comparaison, les meilleures télévisions disponibles dans le commerce affichent en 4K. Le spectateur est donc plongé dans une expérience visuelle sans précédent en France.\n\nLa salle ouvrira ses portes en juillet 2026, juste avant la sortie de L'Odyssée, le nouveau film du réalisateur britannique Christopher Nolan. Ce film a été tourné entièrement avec des caméras IMAX 15/65 mm, un format extrêmement rare qui maximise la qualité de l'image. Nolan est connu pour des œuvres comme Inception, Interstellar et Oppenheimer.\n\nLes réservations ont ouvert le 12 juin 2026. Les premières séances en version originale sous-titrée se sont vendues en quelques heures. Des cinéphiles venus de toute la France, et même de l'étranger, envisagent de se déplacer à Montpellier pour vivre cette expérience unique. Il est donc conseillé de réserver rapidement pour les séances les plus demandées.\n\nCes deux événements illustrent la vitalité du cinéma en France. Le grand écran séduit encore des millions de spectateurs, qu'il s'agisse d'un biopic historique ou d'une salle technologiquement révolutionnaire.",
   "conversation": {
     "intro": "Rosalia et son ami Théo sont assis dans un café parisien. Ils lisent les actualités sur leurs téléphones et découvrent les deux grandes nouvelles du cinéma français cette semaine.",
     "lines": [
-      { "speaker": "Théo", "fr": "T'as vu les actus ciné de la semaine ? Il y a deux trucs énormes !" },
-      { "speaker": "Rosalia", "fr": "Non, raconte ! J'adore le ciné, t'as piqué ma curiosité.", "es": "¡No, cuéntame! Me encanta el cine, me dejaste con las ganas." },
-      { "speaker": "Théo", "fr": "D'abord, le biopic Michael Jackson a battu un record historique au box-office français !" },
-      { "speaker": "Rosalia", "fr": "Sérieux ?! Jaafar Jackson joue le rôle principal, non ? Le neveu de Michael !", "es": "¿En serio? Jaafar Jackson hace de Michael, ¿verdad? El sobrino. Qué curioso." },
-      { "speaker": "Théo", "fr": "Exactement ! Il a dépassé La Môme, le film sur Piaf. Plus de cinq millions d'entrées !" },
-      { "speaker": "Rosalia", "fr": "C'est incroyable. En République dominicaine, on adore Michael. Ma mère connaît toutes ses chansons !", "es": "Increíble. En República Dominicana adoramos a Michael Jackson. ¡Mi mamá se sabe todas sus canciones!" },
-      { "speaker": "Théo", "fr": "Ha, ça me fait penser à Rosaura ! Et la deuxième actu, c'est à Montpellier." },
-      { "speaker": "Rosalia", "fr": "À Montpellier ? Mais c'est pas loin de Strasbourg ça ! Enfin... presque.", "es": "¿En Montpellier? ¡Pero eso queda cerquita de Estrasburgo! Bueno, más o menos..." },
-      { "speaker": "Théo", "fr": "Le Pathé Odysseum vient d'installer la première salle IMAX 70 mm de France !" },
-      { "speaker": "Rosalia", "fr": "IMAX 70 mm, c'est quoi exactement ? C'est différent des salles IMAX normales ?", "es": "¿IMAX 70 mm, qué es eso exactamente? ¿Es diferente a las salas IMAX normales?" },
-      { "speaker": "Théo", "fr": "Oui, beaucoup plus impressionnant. L'écran fait 432 mètres carrés et l'image vaut du 18K !" },
-      { "speaker": "Rosalia", "fr": "432 mètres carrés... comme un appartement géant pour regarder des films ! Clement va adorer.", "es": "¡432 metros cuadrados! Es como un apartamento gigante para ver pelis. A Clement le va a encantar." },
-      { "speaker": "Théo", "fr": "Justement, la salle ouvre pour L'Odyssée, le nouveau Nolan. Filmé en pellicule IMAX ultra rare." },
-      { "speaker": "Rosalia", "fr": "Je l'ai vu sur TikTok la semaine dernière. La bande-annonce est magnifique, il faut y aller !", "es": "Lo vi la semana pasada en TikTok. ¡El tráiler es una maravilla, hay que ir!" },
-      { "speaker": "Théo", "fr": "Les places à Montpellier se vendent super vite. Il faut réserver maintenant si tu veux y aller." },
-      { "speaker": "Rosalia", "fr": "On va faire un weekend à Montpellier ! Ce sera parfait pour pratiquer mon français.", "es": "¡Vamos a hacer un fin de semana en Montpellier! Perfecto para practicar mi francés." },
-      { "speaker": "Théo", "fr": "Bonne idée ! On réserve maintenant ? Les séances en VO partent en premier." },
-      { "speaker": "Rosalia", "fr": "Oui ! Je vais appeler Clement pour lui annoncer la nouvelle. Il va être trop content.", "es": "¡Sí! Voy a llamarle a Clement para contarle. Se va a poner muy feliz." },
-      { "speaker": "Théo", "fr": "Et pour le biopic Michael, t'as envie de le voir aussi ?" },
-      { "speaker": "Rosalia", "fr": "Évidemment ! Ce sera un voyage dans l'histoire de la musique. Et ça m'aide à comprendre la culture française aussi !", "es": "¡Por supuesto! Será como un viaje a la historia de la música. Y encima me ayuda a entender la cultura francesa." },
-      { "speaker": "Théo", "fr": "Carrément. Bon, on réserve les billets pour Montpellier ?" },
-      { "speaker": "Rosalia", "fr": "Allez, on y va ! Deux billets pour L'Odyssée en IMAX 70 mm, s'il vous plaît !", "es": "¡Venga, vamos! Dos entradas para L'Odyssée en IMAX 70 mm, ¡por favor!" }
+      {
+        "speaker": "Théo",
+        "fr": "T'as vu les actus ciné de la semaine ? Il y a deux trucs énormes !"
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Non, raconte ! J'adore le ciné, t'as piqué ma curiosité.",
+        "es": "¡No, cuéntame! Me encanta el cine, me dejaste con las ganas."
+      },
+      {
+        "speaker": "Théo",
+        "fr": "D'abord, le biopic Michael Jackson a battu un record historique au box-office français !"
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Sérieux ?! Jaafar Jackson joue le rôle principal, non ? Le neveu de Michael !",
+        "es": "¿En serio? Jaafar Jackson hace de Michael, ¿verdad? El sobrino. Qué curioso."
+      },
+      {
+        "speaker": "Théo",
+        "fr": "Exactement ! Il a dépassé La Môme, le film sur Piaf. Plus de cinq millions d'entrées !"
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "C'est incroyable. En République dominicaine, on adore Michael. Ma mère connaît toutes ses chansons !",
+        "es": "Increíble. En República Dominicana adoramos a Michael Jackson. ¡Mi mamá se sabe todas sus canciones!"
+      },
+      {
+        "speaker": "Théo",
+        "fr": "Ha, ça me fait penser à Rosaura ! Et la deuxième actu, c'est à Montpellier."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "À Montpellier ? Mais c'est pas loin de Strasbourg ça ! Enfin... presque.",
+        "es": "¿En Montpellier? ¡Pero eso queda cerquita de Estrasburgo! Bueno, más o menos..."
+      },
+      {
+        "speaker": "Théo",
+        "fr": "Le Pathé Odysseum vient d'installer la première salle IMAX 70 mm de France !"
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "IMAX 70 mm, c'est quoi exactement ? C'est différent des salles IMAX normales ?",
+        "es": "¿IMAX 70 mm, qué es eso exactamente? ¿Es diferente a las salas IMAX normales?"
+      },
+      {
+        "speaker": "Théo",
+        "fr": "Oui, beaucoup plus impressionnant. L'écran fait 432 mètres carrés et l'image vaut du 18K !"
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "432 mètres carrés... comme un appartement géant pour regarder des films ! Clement va adorer.",
+        "es": "¡432 metros cuadrados! Es como un apartamento gigante para ver pelis. A Clement le va a encantar."
+      },
+      {
+        "speaker": "Théo",
+        "fr": "Justement, la salle ouvre pour L'Odyssée, le nouveau Nolan. Filmé en pellicule IMAX ultra rare."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Je l'ai vu sur TikTok la semaine dernière. La bande-annonce est magnifique, il faut y aller !",
+        "es": "Lo vi la semana pasada en TikTok. ¡El tráiler es una maravilla, hay que ir!"
+      },
+      {
+        "speaker": "Théo",
+        "fr": "Les places à Montpellier se vendent super vite. Il faut réserver maintenant si tu veux y aller."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "On va faire un weekend à Montpellier ! Ce sera parfait pour pratiquer mon français.",
+        "es": "¡Vamos a hacer un fin de semana en Montpellier! Perfecto para practicar mi francés."
+      },
+      {
+        "speaker": "Théo",
+        "fr": "Bonne idée ! On réserve maintenant ? Les séances en VO partent en premier."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Oui ! Je vais appeler Clement pour lui annoncer la nouvelle. Il va être trop content.",
+        "es": "¡Sí! Voy a llamarle a Clement para contarle. Se va a poner muy feliz."
+      },
+      {
+        "speaker": "Théo",
+        "fr": "Et pour le biopic Michael, t'as envie de le voir aussi ?"
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Évidemment ! Ce sera un voyage dans l'histoire de la musique. Et ça m'aide à comprendre la culture française aussi !",
+        "es": "¡Por supuesto! Será como un viaje a la historia de la música. Y encima me ayuda a entender la cultura francesa."
+      },
+      {
+        "speaker": "Théo",
+        "fr": "Carrément. Bon, on réserve les billets pour Montpellier ?"
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Allez, on y va ! Deux billets pour L'Odyssée en IMAX 70 mm, s'il vous plaît !",
+        "es": "¡Venga, vamos! Dos entradas para L'Odyssée en IMAX 70 mm, ¡por favor!"
+      }
     ]
   },
   "comments": [

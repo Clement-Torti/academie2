@@ -1,0 +1,171 @@
+{
+  "id": "enfoires-strasbourg-2027",
+  "title": "Les Enfoirés à Strasbourg : sept concerts au Zénith en janvier 2027",
+  "date": "2026-06-22",
+  "category": "Culture",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Le_Z%C3%A9nith_Strasbourg_%2801%29.jpg/960px-Le_Z%C3%A9nith_Strasbourg_%2801%29.jpg",
+    "alt": "Le Zénith de Strasbourg, salle de spectacle qui accueillera les Enfoirés en janvier 2027"
+  },
+  "vocabulary": [
+    {
+      "fr": "caritatif",
+      "es": "caritativo"
+    },
+    {
+      "fr": "les bénévoles",
+      "es": "los voluntarios"
+    },
+    {
+      "fr": "collecter des fonds",
+      "es": "recaudar fondos"
+    },
+    {
+      "fr": "le contrôle judiciaire",
+      "es": "la supervisión judicial"
+    },
+    {
+      "fr": "la représentation",
+      "es": "la representación artística"
+    },
+    {
+      "fr": "l'aide alimentaire",
+      "es": "la ayuda alimentaria"
+    },
+    {
+      "fr": "susciter des réactions",
+      "es": "generar reacciones"
+    },
+    {
+      "fr": "l'association",
+      "es": "la asociación / la ONG"
+    }
+  ],
+  "article": "Chaque année, les Enfoirés montent sur scène pour soutenir les Restaurants du Cœur, l'une des plus grandes associations caritatives de France. Ce groupe d'artistes bénévoles donne des concerts pour collecter des fonds et aider les personnes en difficulté. En 2027, la troupe a choisi la ville de Strasbourg pour accueillir ses représentations annuelles très attendues.\\n\\nLes Restaurants du Cœur ont été fondés en 1985 par l'humoriste Coluche. Pendant une émission de radio, il a lancé un appel à la générosité pour distribuer des repas gratuits aux personnes dans le besoin pendant l'hiver. L'idée a connu un succès immédiat et l'association est devenue une véritable institution nationale. Aujourd'hui, elle compte des milliers de bénévoles dans toute la France. En 1989, le chanteur Jean-Jacques Goldman a fondé les Enfoirés pour financer cette cause. Depuis plus de trente ans, des dizaines de chanteurs et d'acteurs célèbres participent chaque année à cette aventure solidaire unique.\\n\\nEn janvier 2027, les Enfoirés se produiront au Zénith Europe de Strasbourg. La troupe donnera sept représentations entre le 12 et le 18 janvier. Les concerts sont prévus le mardi 12, le mercredi 13, le vendredi 15 et le samedi 16 à 19h30. Le dimanche 17, deux spectacles sont programmés : l'un à 12h30 et l'autre à 19h30. La dernière représentation aura lieu le lundi 18 janvier. C'est la première fois depuis plusieurs années que la ville alsacienne accueille à nouveau la troupe.\\n\\nLes concerts des Enfoirés sont diffusés chaque année sur TF1 et regardés par des millions de téléspectateurs. L'argent collecté lors de ces soirées permet aux Restaurants du Cœur de financer leurs activités toute l'année. En 2025, l'association a distribué plus de 150 millions de repas en France. Ce chiffre illustre l'ampleur des besoins dans le pays. Par ailleurs, la hausse des prix et la crise économique ont augmenté le nombre de personnes qui font appel à l'aide alimentaire. Pour beaucoup de familles, les Restaurants du Cœur sont devenus un soutien indispensable au quotidien.\\n\\nCependant, cette édition 2027 est marquée par une polémique importante. Patrick Bruel, membre historique des Enfoirés depuis de nombreuses années, ne sera pas présent sur scène à Strasbourg. Le chanteur est visé par plusieurs plaintes pour viol et agression sexuelle. Il a été placé sous contrôle judiciaire par la justice française. Face à cette situation, il a lui-même annoncé son retrait de la troupe. Certains estiment que sa présence aurait été incompatible avec les valeurs de solidarité portées par l'association. Cette décision a suscité de nombreuses réactions dans les médias et sur les réseaux sociaux.\\n\\nLes Restaurants du Cœur ont rappelé que la mission des Enfoirés dépasse les individus. L'association a souligné que l'essentiel reste de continuer à soutenir les personnes dans le besoin. D'autres artistes prendront le relais sur scène à Strasbourg en janvier. Les organisateurs ont exprimé leur confiance dans la capacité de la troupe à traverser cette période difficile. Pour eux, la solidarité est et restera la valeur centrale de l'événement.\\n\\nLes concerts des Enfoirés à Strasbourg représentent bien plus qu'un simple spectacle musical. C'est un moment de rassemblement autour d'une cause sociale essentielle. Malgré les polémiques, les artistes et le public restent mobilisés pour défendre les valeurs de partage et d'entraide. En fin de compte, ces représentations rappellent que la solidarité est une force collective, capable de dépasser les difficultés individuelles et de changer des vies.",
+  "conversation": {
+    "intro": "Rosalia est chez elle en République dominicaine. Elle fait un appel vidéo avec Léa, son amie française qui habite à Strasbourg. Léa vient de voir une affiche des Enfoirés dans sa rue et veut tout expliquer à Rosalia.",
+    "lines": [
+      {
+        "speaker": "Léa",
+        "fr": "T'as vu l'affiche dehors ? Les Enfoirés viennent à Strasbourg en janvier !"
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "C'est quoi exactement les Enfoirés ? En République dominicaine on ne connaît pas du tout.",
+        "es": "¿Qué son exactamente los Enfoirés? En la República Dominicana no los conocemos para nada."
+      },
+      {
+        "speaker": "Léa",
+        "fr": "C'est un groupe d'artistes célèbres qui chantent pour aider les Restaurants du Cœur. C'est caritatif."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Ah comme un concert de charité ? Et c'est qui qui a créé ça ?",
+        "es": "¿Algo como un concierto benéfico? ¿Y quién lo creó?"
+      },
+      {
+        "speaker": "Léa",
+        "fr": "Coluche a fondé les Restos du Cœur en 1985. Et en 1989, Jean-Jacques Goldman a lancé les Enfoirés."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Waow, ça fait presque quarante ans ! Et ça marche encore bien ?",
+        "es": "¡Guau, ya llevan casi cuarenta años! ¿Y todavía funciona bien?"
+      },
+      {
+        "speaker": "Léa",
+        "fr": "Oui, des millions de gens regardent ça à la télé chaque année. C'est diffusé sur TF1."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Et les concerts à Strasbourg, c'est quand exactement ?",
+        "es": "¿Y los conciertos en Estrasburgo, cuándo son exactamente?"
+      },
+      {
+        "speaker": "Léa",
+        "fr": "Du 12 au 18 janvier 2027, sept concerts au Zénith. Y'en a même deux dans la même journée le dimanche !"
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "C'est parfait, je serai déjà à Strasbourg avec Clement à cette période-là !",
+        "es": "¡Perfecto, para esas fechas ya estaré en Estrasburgo con Clement!"
+      },
+      {
+        "speaker": "Léa",
+        "fr": "Ah oui, j'avais oublié ! Vous arrivez à quelle date au juste ?"
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "On prévoit d'arriver avant le nouvel an. J'ai trop hâte de découvrir la vie là-bas !",
+        "es": "Planeamos llegar antes de Año Nuevo. ¡Tengo muchísimas ganas de descubrir cómo es la vida allá!"
+      },
+      {
+        "speaker": "Léa",
+        "fr": "Mais t'as entendu la polémique avec Patrick Bruel ?"
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Oui, j'ai lu des articles. Il est accusé de choses très graves, non ?",
+        "es": "Sí, leí varios artículos al respecto. Lo acusan de cosas muy graves, ¿verdad?"
+      },
+      {
+        "speaker": "Léa",
+        "fr": "Ouais, des plaintes pour viol et agression sexuelle. Il est sous contrôle judiciaire et ne participera pas."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "C'est une bonne décision. Les valeurs de l'association sont importantes. On ne peut pas mélanger les deux.",
+        "es": "Es una buena decisión. Los valores de la asociación son importantes. No se pueden mezclar las dos cosas."
+      },
+      {
+        "speaker": "Léa",
+        "fr": "Exactement. Et heureusement, d'autres artistes continueront à défendre la cause sur scène."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Tu connais les artistes qui participent ? J'adore Slimane, il chante tellement bien !",
+        "es": "¿Conoces los artistas que van a participar? ¡Me encanta Slimane, canta increíblemente bien!"
+      },
+      {
+        "speaker": "Léa",
+        "fr": "Oui il est souvent là. Y'a aussi Zazie, Amel Bent, plein d'autres."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Génial ! On y va ensemble ? Et peut-être que mes parents pourront venir visiter Strasbourg à cette occasion.",
+        "es": "¡Genial! ¿Vamos juntas? Quizás mis papás aprovechen para venir a conocer Estrasburgo en esa ocasión."
+      },
+      {
+        "speaker": "Léa",
+        "fr": "Excellente idée ! Je réserve les billets dès qu'ils sont disponibles."
+      }
+    ]
+  },
+  "comments": [
+    {
+      "username": "BretelleRouge_47",
+      "comment": "Patrick Bruel était encore là l'année dernière malgré tout ce qu'on savait déjà. L'association a mis trop de temps à réagir. On protège les stars et on laisse les victimes dans l'ombre. C'est une honte.",
+      "likes": 87
+    },
+    {
+      "username": "MargotDeLorraine_54",
+      "comment": "Ma mère était bénévole aux Restos du Cœur pendant vingt ans. Je me souviens qu'on regardait les Enfoirés en famille chaque année devant la télé. C'était un moment vraiment magique et généreux.",
+      "likes": 134
+    },
+    {
+      "username": "JusticeEtEquilibre",
+      "comment": "L'absence de Patrick Bruel ne devrait pas faire oublier que l'essentiel c'est la mission des Restos du Cœur. Les médias s'acharnent sur la polémique au lieu de parler des millions de repas distribués chaque année.",
+      "likes": 56
+    },
+    {
+      "username": "PhilippeEtSonChat78",
+      "comment": "Sept concerts en une semaine à Strasbourg, c'est bien. Mais sept concerts de mon chat en une soirée, c'est insupportable. Je réclame une association caritative pour les voisins de chats chanteurs.",
+      "likes": 412
+    },
+    {
+      "username": "SolidariteToujours",
+      "comment": "J'ai bénéficié des Restos du Cœur pendant une période difficile de ma vie. Je suis tellement reconnaissant envers tous ces artistes qui donnent de leur temps pour cette cause. Merci, vraiment.",
+      "likes": 203
+    }
+  ]
+}

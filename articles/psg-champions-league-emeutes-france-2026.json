@@ -4,45 +4,145 @@
   "date": "2026-05-31",
   "category": "Société",
   "image": {
-    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris_Parc_des_Princes_1.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Paris_Parc_des_Princes_1.jpg/960px-Paris_Parc_des_Princes_1.jpg",
     "alt": "Vue extérieure du Parc des Princes, stade du PSG à Paris"
   },
   "vocabulary": [
-    { "fr": "les émeutes", "es": "los disturbios" },
-    { "fr": "les affrontements", "es": "los enfrentamientos" },
-    { "fr": "les forces de l'ordre", "es": "las fuerzas del orden" },
-    { "fr": "les blessés", "es": "los heridos" },
-    { "fr": "la garde à vue", "es": "la detención preventiva" },
-    { "fr": "les gaz lacrymogènes", "es": "los gases lacrimógenos" },
-    { "fr": "les fauteurs de troubles", "es": "los alborotadores" },
-    { "fr": "le défilé de la victoire", "es": "el desfile de la victoria" },
-    { "fr": "interpeller", "es": "detener / arrestar" },
-    { "fr": "dégénérer", "es": "degenerar / descontrolarse" }
+    {
+      "fr": "les émeutes",
+      "es": "los disturbios"
+    },
+    {
+      "fr": "les affrontements",
+      "es": "los enfrentamientos"
+    },
+    {
+      "fr": "les forces de l'ordre",
+      "es": "las fuerzas del orden"
+    },
+    {
+      "fr": "les blessés",
+      "es": "los heridos"
+    },
+    {
+      "fr": "la garde à vue",
+      "es": "la detención preventiva"
+    },
+    {
+      "fr": "les gaz lacrymogènes",
+      "es": "los gases lacrimógenos"
+    },
+    {
+      "fr": "les fauteurs de troubles",
+      "es": "los alborotadores"
+    },
+    {
+      "fr": "le défilé de la victoire",
+      "es": "el desfile de la victoria"
+    },
+    {
+      "fr": "interpeller",
+      "es": "detener / arrestar"
+    },
+    {
+      "fr": "dégénérer",
+      "es": "degenerar / descontrolarse"
+    }
   ],
   "article": "Le Paris Saint-Germain a remporté la finale de la Ligue des Champions, samedi 30 mai 2026, en battant Arsenal aux tirs au but. La rencontre s'est jouée à Budapest, en Hongrie. Mais la victoire a déclenché de violents affrontements entre des supporters et la police dans plusieurs villes de France.\n\nAu total, 219 personnes ont été blessées selon les autorités. Le ministre de l'Intérieur Laurent Nuñez a précisé que huit d'entre elles se trouvaient dans un état grave. Cinquante-sept policiers ont également été blessés lors des heurts.\n\nDes milliers d'agents ont été déployés dans Paris pour contenir les débordements, qui ont perturbé les lignes de bus et de métro dans la capitale. Le ministre a annoncé que 780 personnes avaient été interpellées et que plus de 450 se trouvaient en garde à vue.\n\nUn homme a été retrouvé mort après un accident survenu sur le boulevard périphérique de Paris, que des fauteurs de troubles avaient tenté de bloquer dans la nuit. Les circonstances exactes du décès d'un jeune homme de 24 ans, près de la Porte Maillot, restent floues. Certains témoins affirment qu'il circulait à moto lorsqu'il a percuté des blocs de béton.\n\nLa vaste avenue des Champs-Élysées a été envahie par des milliers de personnes peu après la victoire du PSG. Des images montrent des fumigènes allumés, des vélos électriques en feu et des vitrines brisées dans au moins un magasin. La police a utilisé des gaz lacrymogènes pour disperser les groupes dans le centre de la ville.\n\nLa préfecture de police de Paris a procédé à 480 interpellations, dont 277 gardes à vue. Parmi les personnes arrêtées, 82 étaient mineures. Les faits reprochés vont des agressions contre des agents aux dégradations de biens, en passant par le vol et la détention illégale d'armes.\n\nEnviron 6 000 policiers ont été mobilisés pour encadrer le défilé de la victoire du PSG, prévu le dimanche dans la zone de la Tour Eiffel. Le président Emmanuel Macron devait recevoir les joueurs à l'Élysée.\n\nLe ministre de l'Intérieur avait averti que les forces de l'ordre feraient preuve de fermeté. « La grande majorité des gens vient célébrer et ça se passe très bien, mais certains individus, qui ne sont pas des supporters du PSG, qui n'ont même pas regardé le match, viennent provoquer des troubles. Notre réponse est très ferme », a-t-il déclaré.\n\nDes violences similaires avaient éclaté l'an dernier, lors du précédent sacre du PSG en Ligue des Champions.",
   "conversation": {
     "intro": "Léa et Rosalia discutent dans un café parisien des émeutes qui ont éclaté dans Paris après la victoire du PSG en Ligue des Champions.",
     "lines": [
-      { "speaker": "Léa", "fr": "T'as regardé la finale du PSG hier soir ?" },
-      { "speaker": "Rosalia", "fr": "Oui, on l'a regardée avec Clement ! Mais les images des émeutes après m'ont vraiment choquée.", "es": "¡Sí, la vimos con Clement! Pero las imágenes de los disturbios después me impactaron de verdad." },
-      { "speaker": "Léa", "fr": "219 blessés rien qu'en France. C'est complètement fou, non ?" },
-      { "speaker": "Rosalia", "fr": "Et 780 arrestations ! Pourquoi ça dégénère comme ça à chaque fois ? C'est pas normal.", "es": "¡Y 780 arrestados! ¿Por qué se descontrola así cada vez? No es normal." },
-      { "speaker": "Léa", "fr": "Apparemment, c'est pas vraiment des supporters du PSG. Des gens profitent du chaos." },
-      { "speaker": "Rosalia", "fr": "C'est exactement ce qu'a dit le ministre de l'Intérieur, non ?", "es": "Es exactamente lo que dijo el ministro del Interior, ¿verdad?" },
-      { "speaker": "Léa", "fr": "Exactement. Beaucoup n'avaient même pas regardé le match selon lui." },
-      { "speaker": "Rosalia", "fr": "La même chose s'était passée l'an dernier quand le PSG avait déjà gagné.", "es": "Lo mismo pasó el año pasado cuando el PSG también ganó." },
-      { "speaker": "Léa", "fr": "Oui, et cette année un homme de 24 ans est mort sur le périph'. C'est tragique." },
-      { "speaker": "Rosalia", "fr": "C'est tellement triste. Comment des célébrations peuvent finir comme ça ?", "es": "Es muy triste. ¿Cómo pueden las celebraciones terminar así?" },
-      { "speaker": "Léa", "fr": "Les Champs-Élysées en terrain de bataille. Des vélos en feu, des vitrines brisées." },
-      { "speaker": "Rosalia", "fr": "Ça me surprend parce que Paris me paraît si belle et organisée. Clement adore cette ville !", "es": "Me sorprende porque París me parece tan bella y organizada. ¡A Clement le encanta esta ciudad!" },
-      { "speaker": "Léa", "fr": "C'est pas représentatif. La grande majorité des gens fêtaient normalement." },
-      { "speaker": "Rosalia", "fr": "Je vais bientôt vivre à Strasbourg. J'espère que ça se passe pas comme ça là-bas !", "es": "Me voy a vivir pronto a Estrasburgo. ¡Espero que allá no sea así!" },
-      { "speaker": "Léa", "fr": "À Strasbourg c'est très calme, t'inquiète pas. C'est pas Paris !" },
-      { "speaker": "Rosalia", "fr": "Super, ça me rassure ! Mes études de mercadeo commencent en septembre, j'ai trop hâte.", "es": "¡Qué bien, me alegra! Mis estudios de mercadeo empiezan en septiembre, estoy muy emocionada." },
-      { "speaker": "Léa", "fr": "Le défilé de la victoire c'est dimanche. T'aurais envie d'y aller ?" },
-      { "speaker": "Rosalia", "fr": "Oui, pourquoi pas ! 6 000 policiers encadrent ça. Ça devrait bien se passer cette fois.", "es": "¡Sí, por qué no! 6 000 policías lo van a controlar. Debería ir bien esta vez." },
-      { "speaker": "Léa", "fr": "On y va ensemble alors ? Macron reçoit aussi les joueurs à l'Élysée." },
-      { "speaker": "Rosalia", "fr": "Trop bien ! Je filme tout pour TikTok. Mes amies dominicaines vont pas y croire.", "es": "¡Qué chévere! Lo filmo todo para TikTok. Mis amigas dominicanas no lo van a creer." }
+      {
+        "speaker": "Léa",
+        "fr": "T'as regardé la finale du PSG hier soir ?"
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Oui, on l'a regardée avec Clement ! Mais les images des émeutes après m'ont vraiment choquée.",
+        "es": "¡Sí, la vimos con Clement! Pero las imágenes de los disturbios después me impactaron de verdad."
+      },
+      {
+        "speaker": "Léa",
+        "fr": "219 blessés rien qu'en France. C'est complètement fou, non ?"
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Et 780 arrestations ! Pourquoi ça dégénère comme ça à chaque fois ? C'est pas normal.",
+        "es": "¡Y 780 arrestados! ¿Por qué se descontrola así cada vez? No es normal."
+      },
+      {
+        "speaker": "Léa",
+        "fr": "Apparemment, c'est pas vraiment des supporters du PSG. Des gens profitent du chaos."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "C'est exactement ce qu'a dit le ministre de l'Intérieur, non ?",
+        "es": "Es exactamente lo que dijo el ministro del Interior, ¿verdad?"
+      },
+      {
+        "speaker": "Léa",
+        "fr": "Exactement. Beaucoup n'avaient même pas regardé le match selon lui."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "La même chose s'était passée l'an dernier quand le PSG avait déjà gagné.",
+        "es": "Lo mismo pasó el año pasado cuando el PSG también ganó."
+      },
+      {
+        "speaker": "Léa",
+        "fr": "Oui, et cette année un homme de 24 ans est mort sur le périph'. C'est tragique."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "C'est tellement triste. Comment des célébrations peuvent finir comme ça ?",
+        "es": "Es muy triste. ¿Cómo pueden las celebraciones terminar así?"
+      },
+      {
+        "speaker": "Léa",
+        "fr": "Les Champs-Élysées en terrain de bataille. Des vélos en feu, des vitrines brisées."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Ça me surprend parce que Paris me paraît si belle et organisée. Clement adore cette ville !",
+        "es": "Me sorprende porque París me parece tan bella y organizada. ¡A Clement le encanta esta ciudad!"
+      },
+      {
+        "speaker": "Léa",
+        "fr": "C'est pas représentatif. La grande majorité des gens fêtaient normalement."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Je vais bientôt vivre à Strasbourg. J'espère que ça se passe pas comme ça là-bas !",
+        "es": "Me voy a vivir pronto a Estrasburgo. ¡Espero que allá no sea así!"
+      },
+      {
+        "speaker": "Léa",
+        "fr": "À Strasbourg c'est très calme, t'inquiète pas. C'est pas Paris !"
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Super, ça me rassure ! Mes études de mercadeo commencent en septembre, j'ai trop hâte.",
+        "es": "¡Qué bien, me alegra! Mis estudios de mercadeo empiezan en septiembre, estoy muy emocionada."
+      },
+      {
+        "speaker": "Léa",
+        "fr": "Le défilé de la victoire c'est dimanche. T'aurais envie d'y aller ?"
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Oui, pourquoi pas ! 6 000 policiers encadrent ça. Ça devrait bien se passer cette fois.",
+        "es": "¡Sí, por qué no! 6 000 policías lo van a controlar. Debería ir bien esta vez."
+      },
+      {
+        "speaker": "Léa",
+        "fr": "On y va ensemble alors ? Macron reçoit aussi les joueurs à l'Élysée."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Trop bien ! Je filme tout pour TikTok. Mes amies dominicaines vont pas y croire.",
+        "es": "¡Qué chévere! Lo filmo todo para TikTok. Mis amigas dominicanas no lo van a creer."
+      }
     ]
   },
   "comments": [

@@ -4,43 +4,137 @@
   "date": "2026-06-13",
   "category": "Culture",
   "image": {
-    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chateau_de_Versailles.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Chateau_de_Versailles.jpg/960px-Chateau_de_Versailles.jpg",
     "alt": "Le château de Versailles, l'un des 500 sites accessibles avec le Pass Patrimoine"
   },
   "vocabulary": [
-    { "fr": "le patrimoine", "es": "el patrimonio" },
-    { "fr": "un adhérent / une adhérente", "es": "un miembro / una socia" },
-    { "fr": "une adhésion", "es": "una membresía" },
-    { "fr": "la restauration", "es": "la restauración (de edificios)" },
-    { "fr": "valoriser", "es": "poner en valor / valorizar" },
-    { "fr": "un domaine", "es": "un dominio / una finca" },
-    { "fr": "rentabiliser", "es": "rentabilizar / amortizar" },
-    { "fr": "démocratiser", "es": "democratizar" }
+    {
+      "fr": "le patrimoine",
+      "es": "el patrimonio"
+    },
+    {
+      "fr": "un adhérent / une adhérente",
+      "es": "un miembro / una socia"
+    },
+    {
+      "fr": "une adhésion",
+      "es": "una membresía"
+    },
+    {
+      "fr": "la restauration",
+      "es": "la restauración (de edificios)"
+    },
+    {
+      "fr": "valoriser",
+      "es": "poner en valor / valorizar"
+    },
+    {
+      "fr": "un domaine",
+      "es": "un dominio / una finca"
+    },
+    {
+      "fr": "rentabiliser",
+      "es": "rentabilizar / amortizar"
+    },
+    {
+      "fr": "démocratiser",
+      "es": "democratizar"
+    }
   ],
   "article": "En France, visiter les monuments historiques peut coûter cher. Une entrée au château de Versailles dépasse les 20 euros, et une journée dans plusieurs sites représente rapidement une dépense importante pour une famille. C'est dans ce contexte que la Fondation du patrimoine a lancé le Pass Patrimoine. Pour 100 euros par an seulement, les adhérents ont accès à près de 500 monuments, châteaux, musées et jardins répartis dans toute la France.\n\nLa Fondation du patrimoine est une organisation française créée en 1996. Sa mission est de protéger et de valoriser le patrimoine bâti du pays, qu'il soit public ou privé. Chaque année, elle soutient des milliers de projets de restauration dans toutes les régions de France. Grâce aux dons des particuliers et aux partenariats avec des entreprises, la fondation finance des travaux sur des cathédrales, des maisons à colombages, des moulins et d'autres bâtiments historiques qui risquent de tomber en ruine faute de financement.\n\nLe Pass Patrimoine a été lancé en septembre 2026, à l'occasion des Journées Européennes du Patrimoine, qui se tiennent chaque année le troisième week-end de septembre. Ce lancement célèbre également le 30e anniversaire de la fondation. Pour en bénéficier, il suffit de souscrire une adhésion annuelle à la Fondation du patrimoine, fixée à 100 euros. En retour, le membre reçoit une carte qui lui donne accès à l'ensemble du réseau de 500 sites partenaires pendant une année complète.\n\nLa liste des sites partenaires est particulièrement impressionnante. On y trouve des propriétés royales emblématiques comme le château de Versailles, le château de Fontainebleau ou le château de Chambord, au bord de la Loire. Des domaines privés comme le château de Vaux-le-Vicomte et le domaine de Chantilly font également partie du réseau. La Villa Cavrois, chef-d'œuvre de l'architecture Art Déco dans le Nord de la France, ou encore la Villa Ephrussi de Rothschild sur la Côte d'Azur, complètent cette liste de destinations remarquables.\n\nLes objectifs du pass sont clairement définis. D'un côté, il permet à davantage de personnes de découvrir le patrimoine français à un prix accessible. De l'autre, chaque adhésion apporte des ressources financières directement aux sites partenaires, qui utilisent ces fonds pour leurs travaux de conservation et de restauration. La ministre de la Culture a soutenu publiquement cette initiative, y voyant un excellent outil pour démocratiser l'accès à la culture et encourager le tourisme intérieur en France.\n\nLa réaction du public a été très positive dès l'annonce. Sur les réseaux sociaux, de nombreux Français ont salué l'excellent rapport qualité-prix de l'offre. En effet, une seule entrée dans un grand château coûte souvent entre 12 et 20 euros. Avec 100 euros pour une année entière et un accès à 500 sites, il suffit de visiter cinq ou six monuments pour rentabiliser son adhésion. Pour les familles qui aiment sortir le week-end, cette offre est clairement avantageuse.\n\nAu-delà du public français, ce pass pourrait aussi séduire les touristes étrangers souhaitant découvrir la richesse culturelle de la France de façon approfondie. Avec un seul pass, il est possible de voyager de la Loire à la Côte d'Azur en passant par le Nord et l'Île-de-France. La Fondation du patrimoine espère que cette initiative donnera envie à davantage de personnes de visiter des lieux moins connus mais tout aussi remarquables. Le patrimoine français ne se limite pas à Paris : il se trouve dans chaque région, chaque village, chaque pierre ancienne du territoire.",
   "conversation": {
     "intro": "Rosalia et Marie prennent un café à Strasbourg. Rosalia vient de voir une vidéo sur TikTok à propos du Pass Patrimoine et elle est très enthousiaste.",
     "lines": [
-      { "speaker": "Marie", "fr": "T'as vu le nouveau Pass Patrimoine ? C'est 100 euros pour visiter 500 monuments en France !" },
-      { "speaker": "Rosalia", "fr": "Oui, j'en ai vu parler sur TikTok ! Je trouvais que les entrées coûtaient beaucoup trop cher.", "es": "¡Sí, lo vi en TikTok! Siempre pensé que las entradas eran demasiado caras." },
-      { "speaker": "Marie", "fr": "Exactement. Moi j'adorerais visiter Chambord, mais c'est loin de Strasbourg..." },
-      { "speaker": "Rosalia", "fr": "Moi aussi ! En République dominicaine, on n'a pas de châteaux comme ça, donc je trouve ça vraiment magique.", "es": "¡Yo también! En la República Dominicana no tenemos castillos así, me parece algo realmente mágico." },
-      { "speaker": "Marie", "fr": "C'est quoi exactement la Fondation du patrimoine ? T'en sais plus ?" },
-      { "speaker": "Rosalia", "fr": "C'est une asso qui restaure de vieux bâtiments depuis 1996. Le pass, c'est leur idée pour fêter leurs 30 ans !", "es": "Es una organización que restaura edificios históricos desde 1996. ¡El pase es su idea para celebrar sus 30 años!" },
-      { "speaker": "Marie", "fr": "Et en prenant le pass, tu cotises directement à leur cause. C'est malin." },
-      { "speaker": "Rosalia", "fr": "Exactement ! Et Clement et moi on a déjà calculé : cinq châteaux dans l'année et l'adhésion est rentabilisée.", "es": "¡Exacto! Y Clement y yo ya calculamos: con cinco castillos en el año, ya amortizamos la membresía." },
-      { "speaker": "Marie", "fr": "Vous avez prévu d'aller où en premier ?" },
-      { "speaker": "Rosalia", "fr": "On pense aller à Versailles quand ma famille vient nous rendre visite. Ce serait un beau souvenir pour ma mère Rosaura !", "es": "Pensamos ir a Versalles cuando mi familia venga a visitarnos. ¡Sería un recuerdo increíble para mi mamá Rosaura!" },
-      { "speaker": "Marie", "fr": "Ta famille va adorer ! Fontainebleau c'est beau aussi, un peu plus calme que Versailles." },
-      { "speaker": "Rosalia", "fr": "Fontainebleau, je ne connais pas encore ! Il faut que je cherche sur TikTok.", "es": "¡Fontainebleau no lo conozco todavía! Tengo que buscarlo en TikTok." },
-      { "speaker": "Marie", "fr": "Y'a aussi la Villa Cavrois dans le Nord, c'est un chef-d'œuvre d'architecture des années 30." },
-      { "speaker": "Rosalia", "fr": "J'ai vu ça dans l'article ! L'Art Déco, j'adore. C'est si différent des châteaux classiques mais tellement beau.", "es": "¡Vi eso en el artículo! Me encanta el Art Déco. Es tan diferente a los castillos clásicos, pero igual de hermoso." },
-      { "speaker": "Marie", "fr": "Tu vas vraiment profiter à fond du patrimoine français, toi !" },
-      { "speaker": "Rosalia", "fr": "C'est le but ! J'apprends le français justement pour comprendre l'histoire et la culture de mon futur pays.", "es": "¡Para eso estoy aquí! Estoy aprendiendo francés precisamente para entender la historia y la cultura de mi futuro país." },
-      { "speaker": "Marie", "fr": "Alors le pass à 100 euros, c'est fait pour toi !" },
-      { "speaker": "Rosalia", "fr": "Complètement ! Je prends l'adhésion en septembre. Tu viens avec moi pour la première visite ?", "es": "¡Totalmente! Voy a sacar la membresía en septiembre. ¿Me acompañas en la primera visita?" },
-      { "speaker": "Marie", "fr": "Avec plaisir ! On se fait Chambord un week-end ?" },
-      { "speaker": "Rosalia", "fr": "Banco ! Je mets une alarme maintenant pour ne pas oublier les billets de train.", "es": "¡Hecho! Me pongo una alarma ahora mismo para no olvidar comprar los billetes de tren." }
+      {
+        "speaker": "Marie",
+        "fr": "T'as vu le nouveau Pass Patrimoine ? C'est 100 euros pour visiter 500 monuments en France !"
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Oui, j'en ai vu parler sur TikTok ! Je trouvais que les entrées coûtaient beaucoup trop cher.",
+        "es": "¡Sí, lo vi en TikTok! Siempre pensé que las entradas eran demasiado caras."
+      },
+      {
+        "speaker": "Marie",
+        "fr": "Exactement. Moi j'adorerais visiter Chambord, mais c'est loin de Strasbourg..."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Moi aussi ! En République dominicaine, on n'a pas de châteaux comme ça, donc je trouve ça vraiment magique.",
+        "es": "¡Yo también! En la República Dominicana no tenemos castillos así, me parece algo realmente mágico."
+      },
+      {
+        "speaker": "Marie",
+        "fr": "C'est quoi exactement la Fondation du patrimoine ? T'en sais plus ?"
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "C'est une asso qui restaure de vieux bâtiments depuis 1996. Le pass, c'est leur idée pour fêter leurs 30 ans !",
+        "es": "Es una organización que restaura edificios históricos desde 1996. ¡El pase es su idea para celebrar sus 30 años!"
+      },
+      {
+        "speaker": "Marie",
+        "fr": "Et en prenant le pass, tu cotises directement à leur cause. C'est malin."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Exactement ! Et Clement et moi on a déjà calculé : cinq châteaux dans l'année et l'adhésion est rentabilisée.",
+        "es": "¡Exacto! Y Clement y yo ya calculamos: con cinco castillos en el año, ya amortizamos la membresía."
+      },
+      {
+        "speaker": "Marie",
+        "fr": "Vous avez prévu d'aller où en premier ?"
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "On pense aller à Versailles quand ma famille vient nous rendre visite. Ce serait un beau souvenir pour ma mère Rosaura !",
+        "es": "Pensamos ir a Versalles cuando mi familia venga a visitarnos. ¡Sería un recuerdo increíble para mi mamá Rosaura!"
+      },
+      {
+        "speaker": "Marie",
+        "fr": "Ta famille va adorer ! Fontainebleau c'est beau aussi, un peu plus calme que Versailles."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Fontainebleau, je ne connais pas encore ! Il faut que je cherche sur TikTok.",
+        "es": "¡Fontainebleau no lo conozco todavía! Tengo que buscarlo en TikTok."
+      },
+      {
+        "speaker": "Marie",
+        "fr": "Y'a aussi la Villa Cavrois dans le Nord, c'est un chef-d'œuvre d'architecture des années 30."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "J'ai vu ça dans l'article ! L'Art Déco, j'adore. C'est si différent des châteaux classiques mais tellement beau.",
+        "es": "¡Vi eso en el artículo! Me encanta el Art Déco. Es tan diferente a los castillos clásicos, pero igual de hermoso."
+      },
+      {
+        "speaker": "Marie",
+        "fr": "Tu vas vraiment profiter à fond du patrimoine français, toi !"
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "C'est le but ! J'apprends le français justement pour comprendre l'histoire et la culture de mon futur pays.",
+        "es": "¡Para eso estoy aquí! Estoy aprendiendo francés precisamente para entender la historia y la cultura de mi futuro país."
+      },
+      {
+        "speaker": "Marie",
+        "fr": "Alors le pass à 100 euros, c'est fait pour toi !"
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Complètement ! Je prends l'adhésion en septembre. Tu viens avec moi pour la première visite ?",
+        "es": "¡Totalmente! Voy a sacar la membresía en septiembre. ¿Me acompañas en la primera visita?"
+      },
+      {
+        "speaker": "Marie",
+        "fr": "Avec plaisir ! On se fait Chambord un week-end ?"
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Banco ! Je mets une alarme maintenant pour ne pas oublier les billets de train.",
+        "es": "¡Hecho! Me pongo una alarma ahora mismo para no olvidar comprar los billetes de tren."
+      }
     ]
   },
   "comments": [

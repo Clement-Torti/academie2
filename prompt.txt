@@ -87,19 +87,47 @@ RÈGLES DÉTAILLÉES PAR CHAMP
 
 ### image
 - L'image doit être en rapport direct avec le sujet de l'article
-- Utilise OBLIGATOIREMENT ce format Wikipedia Commons (il fonctionne toujours, sans hash) :
-  https://commons.wikimedia.org/wiki/Special:FilePath/{NomDuFichier.jpg}
-  Exemple : https://commons.wikimedia.org/wiki/Special:FilePath/Tour_Eiffel_Wikimedia_Commons.jpg
-- Pour trouver le bon nom de fichier : cherche dans ta mémoire d'entraînement un fichier Commons connu
-  en rapport avec le sujet. Copie exactement le nom du fichier tel qu'il apparaît dans l'URL Commons
-  (ex : si la page est https://commons.wikimedia.org/wiki/File:Paris_trocadero.jpg, le nom est Paris_trocadero.jpg)
-- N'utilise JAMAIS le format upload.wikimedia.org/wikipedia/commons/thumb/... car il nécessite un hash MD5
-  que tu ne peux pas calculer correctement, ce qui génère des erreurs 404
-- N'utilise JAMAIS Unsplash ni aucune autre source (Pexels, Pixabay, etc.) : tu ne peux pas vérifier
-  ces URLs à la génération, et elles retournent souvent une erreur 404
-- Si tu n'es pas certain qu'un fichier Commons existe avec ce nom exact, choisis une image générique
-  dont l'existence est très probable (drapeau national, logo officiel, monument célèbre bien documenté)
-  plutôt qu'une image spécifique dont tu n'es pas sûr
+- Format OBLIGATOIRE :
+  https://commons.wikimedia.org/wiki/Special:FilePath/{NomDuFichier.ext}
+
+- RÈGLE CRITIQUE — NE JAMAIS INVENTER un nom de fichier.
+  Ce format ne fonctionne QUE si le fichier existe EXACTEMENT avec ce nom sur Wikimedia Commons.
+  Si le fichier n'existe pas → 404 dans l'application, l'image ne s'affiche pas.
+  Avant de valider ton choix, pose-toi cette question : "Ai-je vu ce fichier exact dans des données
+  d'entraînement très récentes ?" Si la réponse n'est pas OUI avec certitude → utilise la liste ci-dessous.
+
+- N'utilise JAMAIS upload.wikimedia.org/wikipedia/commons/thumb/... (hash MD5 impossible à calculer)
+- N'utilise JAMAIS Unsplash, Pexels, Pixabay ni aucune autre source externe
+
+- LISTE DE SECOURS — ces fichiers ont été vérifiés manuellement et fonctionnent à 100%.
+  Utilise-en un qui correspond au thème de l'article si tu as le moindre doute sur ton choix principal.
+
+  Société / Politique :
+    Flag_of_France.png          → https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_France.png
+    Chateau_de_Versailles.jpg   → https://commons.wikimedia.org/wiki/Special:FilePath/Chateau_de_Versailles.jpg
+    Napoleon_III_of_France.jpg  → https://commons.wikimedia.org/wiki/Special:FilePath/Napoleon_III_of_France.jpg
+    Bernadette_Chirac_1_(2009)_(cropped).jpg → https://commons.wikimedia.org/wiki/Special:FilePath/Bernadette_Chirac_1_%282009%29_%28cropped%29.jpg
+
+  Sport :
+    Paris_Parc_des_Princes_1.jpg → https://commons.wikimedia.org/wiki/Special:FilePath/Paris_Parc_des_Princes_1.jpg
+    Simone_Biles_Paris_Olympics.jpg → https://commons.wikimedia.org/wiki/Special:FilePath/Simone_Biles_Paris_Olympics.jpg
+
+  Culture / Médias :
+    Fort_Boyard.jpg             → https://commons.wikimedia.org/wiki/Special:FilePath/Fort_Boyard.jpg
+    Michael_Jackson_in_1988.jpg → https://commons.wikimedia.org/wiki/Special:FilePath/Michael_Jackson_in_1988.jpg
+    Popcorn.jpg                 → https://commons.wikimedia.org/wiki/Special:FilePath/Popcorn.jpg
+    Schloss_Charlottenburg_nachts_(Zuschnitt).jpg → https://commons.wikimedia.org/wiki/Special:FilePath/Schloss_Charlottenburg_nachts_%28Zuschnitt%29.jpg
+    DJ_lion_de_belfort_15204918.jpg → https://commons.wikimedia.org/wiki/Special:FilePath/DJ_lion_de_belfort_15204918.jpg
+
+  Transport / Technologie :
+    TGV_Duplex.jpg              → https://commons.wikimedia.org/wiki/Special:FilePath/TGV_Duplex.jpg
+
+  Santé / Environnement :
+    Canicule_Europe_2003.jpg    → https://commons.wikimedia.org/wiki/Special:FilePath/Canicule_Europe_2003.jpg
+
+  Voyage :
+    Punta_Cana.jpg              → https://commons.wikimedia.org/wiki/Special:FilePath/Punta_Cana.jpg
+    Empanada.jpg                → https://commons.wikimedia.org/wiki/Special:FilePath/Empanada.jpg
 
 ### comments
 - EXACTEMENT 5 commentaires, dans cet ordre de type :
@@ -154,7 +182,7 @@ COMMENT UTILISER CE PROMPT
      "id": "rugby-coupe-monde",
      "title": "La France accueille la Coupe du Monde de Rugby",
      "date": "2026-06-10",
-     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Rugby_World_Cup.jpg",
+     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris_Parc_des_Princes_1.jpg",
      "category": "Sport"
    }
 

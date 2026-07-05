@@ -1,0 +1,73 @@
+{
+  "id": "sanctions-ultra-fast-fashion-france",
+  "title": "La France impose un malus écologique à Shein et Temu",
+  "date": "2026-07-04",
+  "category": "Société",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_France.png",
+    "alt": "Drapeau de la France"
+  },
+  "vocabulary": [
+    { "fr": "un malus écologique", "es": "un impuesto medioambiental" },
+    { "fr": "la surconsommation", "es": "el consumo excesivo" },
+    { "fr": "la sobriété", "es": "la sobriedad" },
+    { "fr": "la réutilisation", "es": "la reutilización" },
+    { "fr": "un éco-score", "es": "una puntuación ecológica" },
+    { "fr": "plafonné", "es": "limitado / con tope máximo" },
+    { "fr": "les gaz à effet de serre", "es": "los gases de efecto invernadero" },
+    { "fr": "un influenceur", "es": "un influencer" }
+  ],
+  "article": "La France vient de franchir une étape historique dans la lutte contre la pollution textile. Le 29 juin 2026, le Parlement français a adopté définitivement une loi qui impose de nouvelles sanctions financières aux plateformes d'ultra fast fashion, comme Shein, Temu et AliExpress. Cette décision fait de la France le premier pays d'Europe à agir aussi directement contre ce modèle commercial en ligne. Le texte a été soutenu par une large majorité au Sénat et confirmé par l'Assemblée nationale.\n\nL'ultra fast fashion désigne la vente de vêtements fabriqués très rapidement, en grande quantité et à des prix très bas. Ces plateformes, souvent basées en Chine, proposent parfois des milliers de nouveaux modèles chaque semaine. Les chiffres sont frappants : en France, chaque habitant achète en moyenne plus de 48 vêtements par an. Le bilan environnemental est alarmant. Partout dans le monde, 35 vêtements sont jetés chaque seconde. Le secteur textile est aujourd'hui responsable d'environ 10 % des émissions mondiales de gaz à effet de serre.\n\nLa mesure principale de cette loi est un malus écologique. Ce malus est une pénalité financière ajoutée sur chaque article vendu par ces plateformes. Le montant de départ est encore modeste, mais il augmentera progressivement pour atteindre jusqu'à 20 euros par pièce en 2030. Ce montant est plafonné à 50 % du prix hors taxes du produit. Une partie des recettes générées sera utilisée pour financer des infrastructures de collecte, de réparation et de recyclage des vêtements sur le territoire français.\n\nLes plateformes concernées ont également d'autres obligations importantes. Elles doivent désormais afficher des messages qui encouragent la sobriété, la réparation et la réutilisation des vêtements. Un éco-score textile, semblable au Nutri-Score alimentaire que les Français connaissent bien, deviendra aussi obligatoire pour informer les consommateurs au moment de l'achat. En plus de cela, la publicité pour ces marques est totalement interdite, y compris les collaborations payantes avec les influenceurs sur les réseaux sociaux.\n\nCette loi est le résultat du travail de la députée Anne-Cécile Violland, du parti Horizons, qui a déposé son texte en janvier 2024. L'adoption a pris du temps à cause de désaccords entre l'Assemblée nationale et le Sénat, et à cause de réserves exprimées par la Commission européenne. En parallèle, Shein a déjà été sanctionné : l'enseigne a reçu une amende de 40 millions d'euros en 2025 pour non-conformité de ses produits, puis une condamnation de 21 millions d'euros supplémentaires par l'autorité française de protection des consommateurs.\n\nCependant, la loi ne fait pas l'unanimité. Plusieurs élus de gauche et des associations environnementales regrettent que les sanctions s'appliquent uniquement aux plateformes chinoises. Selon eux, des marques comme H&M, Primark ou Zara ont des pratiques tout aussi nocives et devraient également être visées. Ces critiques jugent le texte trop limité et estiment qu'une vraie réforme doit toucher l'ensemble de l'industrie textile, pas seulement les acteurs les moins chers.\n\nDu côté des consommateurs, les réactions sont partagées. Beaucoup soutiennent cette mesure et y voient un signal fort contre les excès de la surconsommation. D'autres, notamment les jeunes, s'inquiètent de l'impact sur leur budget, car Shein et Temu sont très populaires grâce à leurs prix très accessibles. En France, ces plateformes comptent des millions d'utilisateurs réguliers. Cette loi représente néanmoins un premier pas concret. Beaucoup d'experts affirment qu'il faudra aller encore plus loin pour vraiment transformer les habitudes de consommation et protéger durablement la planète.",
+  "conversation": {
+    "intro": "Léa et Rosalia discutent dans un café à Saint-Domingue. Léa vient de lire un article sur la nouvelle loi française contre l'ultra fast fashion et veut avoir l'avis de Rosalia, qui commande régulièrement sur ces plateformes.",
+    "lines": [
+      { "speaker": "Léa", "fr": "T'as vu la nouvelle loi en France ? Ils vont taxer Shein et Temu maintenant !" },
+      { "speaker": "Rosalia", "fr": "Oui, j'ai vu ça sur TikTok ! Un malus sur chaque vêtement, c'est bien non ?", "es": "¡Sí, lo vi en TikTok! ¿Un recargo por cada prenda? Es buena idea, ¿no?" },
+      { "speaker": "Léa", "fr": "Exact ! Jusqu'à 20 euros par pièce d'ici 2030. La France est la première en Europe." },
+      { "speaker": "Rosalia", "fr": "Vingt euros, c'est beaucoup. Mais j'achète souvent sur Shein parce que c'est pas cher.", "es": "Veinte euros es bastante. Pero compro mucho en Shein porque es barato." },
+      { "speaker": "Léa", "fr": "Moi pareil. Ma sœur commande plusieurs fois par mois, elle va avoir un choc !" },
+      { "speaker": "Rosalia", "fr": "Ici en RD, Shein c'est super populaire aussi. Les filles achètent un tas de vêtements et les portent deux fois.", "es": "Aquí en RD, Shein también es súper popular. Las chicas compran ropa a montones y la usan dos veces." },
+      { "speaker": "Léa", "fr": "T'as vu le chiffre ? 35 vêtements sont jetés chaque seconde dans le monde !" },
+      { "speaker": "Rosalia", "fr": "Non ! C'est choquant. Ma maman garde ses vêtements des années. Mais ma génération achète et jette.", "es": "¡No! Qué impactante. Mi mamá guarda su ropa años enteros. Pero mi generación compra y bota." },
+      { "speaker": "Léa", "fr": "Y'a aussi une interdiction totale de pub. Même les influenceurs ne pourront plus promouvoir Shein." },
+      { "speaker": "Rosalia", "fr": "Ça c'est fort ! J'en vois tellement sur TikTok. Des hauls de cent pièces pour presque rien...", "es": "¡Eso sí que es fuerte! Los veo todo el tiempo en TikTok. Hauls de cien prendas por casi nada..." },
+      { "speaker": "Léa", "fr": "Et ils vont créer un éco-score textile, comme le Nutri-Score pour la nourriture. T'en penses quoi ?" },
+      { "speaker": "Rosalia", "fr": "Super idée ! Comme ça on voit directement si le produit est polluant ou pas. Ça aide vraiment à choisir.", "es": "¡Muy buena idea! Así uno ve de inmediato si el producto contamina o no. Ayuda mucho a elegir." },
+      { "speaker": "Léa", "fr": "Mais des gens de gauche disent que Zara et H&M devraient aussi être visés, pas que Shein." },
+      { "speaker": "Rosalia", "fr": "Je comprends ça. Pourquoi seulement les marques chinoises si Zara fait pareil ? C'est un début quand même.", "es": "Lo entiendo. ¿Por qué solo las marcas chinas si Zara hace lo mismo? Igual es un comienzo." },
+      { "speaker": "Léa", "fr": "Exactement, c'est le grand débat. Et toi, quand tu seras à Strasbourg, tu vas arrêter Shein ?" },
+      { "speaker": "Rosalia", "fr": "Clement va sûrement me surveiller ! Mais je veux vraiment consommer mieux quand je serai en France.", "es": "¡Clement seguro me va a vigilar! Pero de verdad quiero consumir mejor cuando esté en Francia." },
+      { "speaker": "Léa", "fr": "C'est cool ça ! Les marchés vintage et les friperies à Strasbourg sont excellents apparemment." },
+      { "speaker": "Rosalia", "fr": "Ah vraiment ? Je savais pas ! C'est exactement ce genre de truc que j'ai hâte de découvrir. Des adresses ?", "es": "¿En serio? ¡No lo sabía! Es justo el tipo de cosa que tengo ganas de descubrir. ¿Tienes direcciones?" },
+      { "speaker": "Léa", "fr": "Il y en a de super près de la cathédrale. Et un marché vintage le week-end. Tu vas adorer !" },
+      { "speaker": "Rosalia", "fr": "Super, je note ! Clement va être content que je préfère les friperies. On ira dès qu'on arrive !", "es": "¡Genial, lo anoto! Clement va a estar feliz de que prefiera las tiendas de segunda mano. ¡Iremos nada más llegar!" }
+    ]
+  },
+  "comments": [
+    {
+      "username": "FashionVigilante_93",
+      "comment": "Cette loi c'est une blague !!! Ils s'attaquent à Shein mais laissent H&M et Zara tranquilles. C'est de la discrimination économique déguisée en écologie. Les marques européennes font exactement la même chose, mais elles ont des lobbies, visiblement.",
+      "likes": 187
+    },
+    {
+      "username": "AmelieDeNantes44",
+      "comment": "Ma fille de 16 ans commande sur Shein toutes les semaines depuis deux ans. L'autre jour elle a reçu un t-shirt déchiré. Elle l'a mis à la poubelle directement sans jamais le porter. C'est exactement ça le vrai problème.",
+      "likes": 312
+    },
+    {
+      "username": "LibreEchangiste_75",
+      "comment": "Un malus de 20 euros par pièce en 2030, ça va juste pousser les gens à acheter depuis la Belgique ou l'Espagne. Résultat : zéro effet sur l'environnement et on pénalise les ménages modestes qui n'ont pas les moyens d'acheter autrement.",
+      "likes": 94
+    },
+    {
+      "username": "MonsieurTricotin",
+      "comment": "Moi je recycle depuis 30 ans : je porte le même pull depuis 1994. Il a trois trous mais tient encore. Quelqu'un peut expliquer à ma femme que c'est de l'engagement écologique et pas juste de l'avarice ?",
+      "likes": 482
+    },
+    {
+      "username": "Solange_et_ses_Plantes",
+      "comment": "Enfin ! C'est imparfait, oui. Mais c'est un premier signal fort envoyé à toute une industrie. J'espère que d'autres pays européens vont suivre. On ne peut pas continuer à traiter les vêtements comme des objets jetables.",
+      "likes": 156
+    }
+  ]
+}

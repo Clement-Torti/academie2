@@ -1,0 +1,77 @@
+{
+  "id": "fete-nationale-14-juillet",
+  "title": "Le 14 juillet : la grande fête nationale française",
+  "date": "2026-07-04",
+  "category": "Culture",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_France.png",
+    "alt": "Le drapeau tricolore de la République française"
+  },
+  "vocabulary": [
+    { "fr": "le défilé militaire", "es": "el desfile militar" },
+    { "fr": "les feux d'artifice", "es": "los fuegos artificiales" },
+    { "fr": "la prise de la Bastille", "es": "la toma de la Bastilla" },
+    { "fr": "la commémoration", "es": "la conmemoración" },
+    { "fr": "les Champs-Élysées", "es": "los Campos Elíseos" },
+    { "fr": "le bal populaire", "es": "el baile popular" },
+    { "fr": "la caserne", "es": "el cuartel" },
+    { "fr": "le spectacle pyrotechnique", "es": "el espectáculo pirotécnico" },
+    { "fr": "tricolore", "es": "tricolor" },
+    { "fr": "les berges", "es": "las orillas (de un río)" }
+  ],
+  "article": "Chaque année, le 14 juillet, la France célèbre sa fête nationale. Ce jour est l'un des plus importants du calendrier français. Dans tout le pays, des millions de personnes participent aux festivités avec un grand enthousiasme. Les rues se remplissent de drapeaux tricolores et l'ambiance est festive partout.\n\nLe 14 juillet 1789 est une date historique très importante. Ce jour-là, le peuple parisien a pris d'assaut la forteresse de la Bastille. Cette prison symbolisait le pouvoir absolu du roi Louis XVI et l'injustice de la monarchie. La prise de la Bastille a marqué le début de la Révolution française. Cet événement a changé pour toujours le cours de l'histoire de France. Il a aussi inspiré des révolutions dans de nombreux autres pays du monde.\n\nLa journée du 14 juillet commence très tôt le matin avec une cérémonie officielle. Le grand défilé militaire sur les Champs-Élysées est l'un des moments les plus attendus de la journée. Des soldats de toutes les armées françaises défilent devant des milliers de spectateurs. Le président de la République assiste à la cérémonie depuis une tribune officielle. Des avions militaires passent dans le ciel en traçant les couleurs du drapeau tricolore : bleu, blanc et rouge. Ce spectacle impressionne chaque année les Français et les touristes étrangers venus de partout dans le monde.\n\nL'après-midi, les activités se multiplient dans les villes et les villages. Dans beaucoup d'endroits, les pompiers organisent des bals populaires dans leurs casernes. Ces fêtes sont ouvertes à tout le monde et l'entrée est souvent gratuite. On y danse, on boit et on mange ensemble dans une ambiance très joyeuse. Ces bals ont une longue tradition en France. Ils rassemblent des personnes de tous les âges et de toutes les origines sociales. Des concerts, des pique-niques et des animations sont aussi organisés dans les parcs et les places publiques.\n\nLe soir, les feux d'artifice illuminent le ciel dans toute la France. À Paris, le spectacle pyrotechnique autour de la tour Eiffel est le plus grand et le plus célèbre du pays. Des milliers de personnes s'installent sur les berges de la Seine pour regarder ce moment magique. Dans les grandes villes comme Lyon, Marseille, Bordeaux ou encore Strasbourg, des feux d'artifice impressionnants sont également organisés. Les familles se retrouvent dans les parcs et sur les places publiques pour profiter ensemble de ce spectacle.\n\nLe 14 juillet est aussi une journée de réflexion sur les valeurs de la République française. Liberté, Égalité, Fraternité : ces trois mots sont au cœur de l'identité du pays. La fête nationale rappelle que ces valeurs ont été conquises grâce à des hommes et des femmes courageux qui ont lutté pour un monde plus juste. Aujourd'hui, la France est une démocratie solide qui défend ces principes en Europe et dans le monde entier.\n\nEn dehors de Paris, chaque ville et chaque village organise ses propres festivités. Dans certaines régions, des reconstitutions historiques rappellent les événements de 1789. Des marchés artisanaux, des repas partagés et des spectacles de rue animent les rues pendant toute la journée. Même dans les plus petits villages, la fête nationale est célébrée avec fierté et simplicité.\n\nPour les étrangers qui vivent en France ou qui la visitent, le 14 juillet est une occasion unique de découvrir la culture et l'histoire françaises. La chaleur des fêtes populaires, la beauté des feux d'artifice et la fierté des Français face à leur histoire forment un mélange vraiment inoubliable. Cette journée est un symbole fort de ce que la France représente dans le monde : un pays qui aime célébrer, partager et se souvenir de ses racines.",
+  "conversation": {
+    "intro": "Rosalia et son amie française Léa se retrouvent en message vocal le soir du 13 juillet. Rosalia vient de lire un article sur la fête nationale et elle est très curieuse. Elle pose des questions à Léa, qui est native de Strasbourg.",
+    "lines": [
+      { "speaker": "Léa", "fr": "Rosalia ! T'es là ? T'as vu que c'est le 14 juillet demain ?" },
+      { "speaker": "Rosalia", "fr": "Oui, j'ai tout lu là-dessus ! C'est quoi exactement, c'est comme notre Jour de l'Indépendance en République dominicaine ?", "es": "¡Sí, acabo de leer todo sobre eso! ¿Es como nuestro Día de la Independencia en República Dominicana?" },
+      { "speaker": "Léa", "fr": "C'est ça ! En 1789, le peuple a pris la Bastille. C'est là que la Révolution française a commencé." },
+      { "speaker": "Rosalia", "fr": "Wow, 1789 c'est tellement loin ! Et y'a le grand défilé à Paris le matin avec les avions tricolores, c'est ça ?", "es": "¡Vaya, 1789 es muy lejano! ¿Y hay el gran desfile en París por la mañana con los aviones tricolores, verdad?" },
+      { "speaker": "Léa", "fr": "Exactement ! Des soldats, le président, et les avions qui tracent du bleu blanc rouge dans le ciel. C'est impressionnant à la télé." },
+      { "speaker": "Rosalia", "fr": "J'ai vu des vidéos, c'est magnifique ! Ça me donne trop envie de voir ça en vrai. T'y es déjà allée toi ?", "es": "Vi videos, ¡es precioso! Me da muchas ganas de verlo en persona. ¿Tú has ido alguna vez?" },
+      { "speaker": "Léa", "fr": "Non, moi je regarde à la télé. Mais quand tu seras à Strasbourg on ira à Paris pour le 14 juillet ! On y va ensemble." },
+      { "speaker": "Rosalia", "fr": "Oh oui j'adorerais ! Et les bals de pompiers, c'est vrai que ça existe ? Je croyais que c'était une blague au début haha.", "es": "¡Oh sí me encantaría! ¿Y los bailes de bomberos de verdad existen? Al principio creí que era una broma jaja." },
+      { "speaker": "Léa", "fr": "Haha non c'est bien réel ! Les pompiers ouvrent leurs casernes, y'a de la musique et tout le monde peut venir danser. C'est une super tradition." },
+      { "speaker": "Rosalia", "fr": "C'est trop original ! En RD pour la fête nationale on a des concerts et des feux d'artifice, mais pas des bals chez les pompiers.", "es": "¡Es muy original! En RD para la fiesta nacional tenemos conciertos y fuegos artificiales, pero no bailes en casa de los bomberos." },
+      { "speaker": "Léa", "fr": "Et les feux d'artifice ici sont dingues aussi. Surtout à Paris devant la tour Eiffel, c'est vraiment magique." },
+      { "speaker": "Rosalia", "fr": "J'ai montré des vidéos à ma sœur Rosaura et elle était bouche bée ! On regarde souvent des trucs sur la France ensemble, elle est trop curieuse.", "es": "Le mostré videos a mi hermana Rosaura y se quedó con la boca abierta. Siempre vemos cosas sobre Francia juntas, ella tiene mucha curiosidad." },
+      { "speaker": "Léa", "fr": "C'est mignon ça ! Et à Strasbourg y'a aussi un beau feu d'artifice le soir. La ville est trop belle en juillet." },
+      { "speaker": "Rosalia", "fr": "Ah oui, Clement m'a dit qu'il y avait plein de choses à voir à Strasbourg ! C'est quoi les meilleurs endroits pour regarder le feu d'artifice ?", "es": "¡Ah sí, Clément me dijo que hay muchas cosas que ver en Estrasburgo! ¿Cuáles son los mejores sitios para ver los fuegos artificiales?" },
+      { "speaker": "Léa", "fr": "Le bord du Rhin c'est top ! Y'a beaucoup de monde mais l'ambiance est super festive. Tu vas adorer." },
+      { "speaker": "Rosalia", "fr": "Le Rhin ! J'apprends justement le vocabulaire des fleuves en français en ce moment. C'est un grand fleuve qui passe à Strasbourg, c'est ça ?", "es": "¡El Rin! Justamente estoy aprendiendo el vocabulario de los ríos en francés ahora mismo. Es un río grande que pasa por Estrasburgo, ¿verdad?" },
+      { "speaker": "Léa", "fr": "Exactement ! Et t'es trop forte, tu parles déjà super bien Rosalia, vraiment." },
+      { "speaker": "Rosalia", "fr": "Merci, ça me fait plaisir ! Clement m'aide beaucoup, il a créé un site pour que je m'entraîne tous les jours. J'y passe au moins une heure chaque matin.", "es": "¡Gracias, me alegra mucho! Clément me ayuda muchísimo, creó un sitio web para que practique todos los días. Le dedico al menos una hora cada mañana." },
+      { "speaker": "Léa", "fr": "Sérieux ? Il est trop fort ! Bon, t'as prévu quoi pour demain alors ?" },
+      { "speaker": "Rosalia", "fr": "On va regarder le défilé ensemble à la télé et Clement va tout m'expliquer. Et le soir on cherche un feu d'artifice près de chez nous !", "es": "Vamos a ver el desfile juntos en la televisión y Clément me va a explicar todo. ¡Y por la noche buscamos unos fuegos artificiales cerca de casa!" },
+      { "speaker": "Léa", "fr": "C'est parfait ça ! Bonne fête nationale en avance, même si c'est pas encore ton pays haha." },
+      { "speaker": "Rosalia", "fr": "Bientôt ce sera mon pays aussi et j'ai trop hâte ! Bonne fête à toi Léa, profite bien !", "es": "¡Pronto también será mi país y tengo muchísimas ganas! ¡Feliz fiesta para ti, Léa, disfrútalo mucho!" }
+    ]
+  },
+  "comments": [
+    {
+      "username": "BlocageNational_13",
+      "comment": "Encore une fois les routes fermées dès 6h du matin à Paris, impossible de prendre le travail normalement. Le défilé c'est beau hein, mais que quelqu'un pense à ceux qui bossent le 14 juillet ! C'est un cauchemar logistique pour tout le monde.",
+      "likes": 87
+    },
+    {
+      "username": "EnfantDuLac_Bretagne",
+      "comment": "Je me souviens des feux d'artifice au bord du lac dans mon village en Bretagne. Tout le monde apportait une bouteille et une chaise. C'est bête mais c'est mon meilleur souvenir d'été avec mes parents. Ça m'a manqué quand j'ai quitté le village.",
+      "likes": 156
+    },
+    {
+      "username": "HistoireEtDebat",
+      "comment": "La Bastille abritait seulement sept prisonniers ce jour-là, c'est un fait historique. Commémorer ça comme une grande victoire du peuple c'est un peu exagéré. On a construit un mythe national sur un événement beaucoup plus complexe. Ça mériterait un vrai débat.",
+      "likes": 43
+    },
+    {
+      "username": "Pompier75_OffDuty",
+      "comment": "En tant que pompier j'ai une relation très compliquée avec le 14 juillet. D'un côté on ouvre la caserne pour le bal et tout le monde est content. De l'autre on passe la nuit à éteindre les pétards balancés dans les poubelles. Vive la République quand même.",
+      "likes": 341
+    },
+    {
+      "username": "Sylvie_FiereDesonPays",
+      "comment": "Article très bien écrit, merci. Le 14 juillet c'est le seul jour où je vois mes voisins sourire dans le couloir. On s'était presque jamais parlé en dix ans. Cette année on a regardé le feu d'artifice ensemble depuis la fenêtre. C'est bête mais ça compte vraiment.",
+      "likes": 218
+    }
+  ]
+}

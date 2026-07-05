@@ -1,5 +1,12 @@
 [
   {
+    "id": "fete-nationale-14-juillet",
+    "title": "Le 14 juillet : la grande fête nationale française",
+    "date": "2026-07-04",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_France.png",
+    "category": "Culture"
+  },
+  {
     "id": "tour-de-france-2026",
     "title": "Le Tour de France : une légende qui traverse les siècles",
     "date": "2026-07-04",

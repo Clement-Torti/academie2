@@ -1,0 +1,75 @@
+{
+  "id": "double-seisme-venezuela-2026",
+  "title": "Double séisme meurtrier au Venezuela : plus de 2 300 morts",
+  "date": "2026-07-04",
+  "category": "Société",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Venezuela.png",
+    "alt": "Drapeau du Venezuela, pays frappé par un double séisme en juin 2026"
+  },
+  "vocabulary": [
+    { "fr": "un séisme", "es": "un sismo / un terremoto" },
+    { "fr": "les décombres", "es": "los escombros" },
+    { "fr": "une réplique", "es": "una réplica sísmica" },
+    { "fr": "le bilan", "es": "el balance de víctimas" },
+    { "fr": "l'épicentre", "es": "el epicentro" },
+    { "fr": "les secours", "es": "los socorros / la ayuda de emergencia" },
+    { "fr": "portées disparues", "es": "desaparecidas" },
+    { "fr": "la sismicité", "es": "la sismicidad" },
+    { "fr": "s'effondrer", "es": "derrumbarse / colapsar" },
+    { "fr": "sans relâche", "es": "sin descanso / sin parar" }
+  ],
+  "article": "Le 24 juin 2026, le Venezuela a été frappé par deux séismes d'une violence exceptionnelle. Ces tremblements de terre ont provoqué une grave catastrophe humanitaire sans précédent dans le pays. En quelques secondes, des quartiers entiers se sont effondrés, laissant derrière eux des milliers de victimes. Le monde entier a suivi avec inquiétude l'évolution de la situation.\n\nLes deux séismes ont eu lieu à seulement 39 secondes d'intervalle. Le premier a atteint une magnitude de 7,2 sur l'échelle de Richter, et le second a atteint une magnitude de 7,5. L'épicentre se trouvait près de la ville de Yumare, dans l'État de Yaracuy, à environ 160 kilomètres à l'ouest de la capitale Caracas. Les deux secousses ont été ressenties jusqu'aux îles caribéennes voisines. Selon les experts, ce double séisme est le plus destructeur enregistré au Venezuela depuis 1900.\n\nLe bilan humain est particulièrement lourd. Plus de 2 300 personnes ont perdu la vie dans la catastrophe. Plus de 11 000 blessés ont été pris en charge par les services médicaux. Par ailleurs, environ 50 000 personnes sont toujours portées disparues. Les opérations de recherche et de sauvetage se poursuivent dans les décombres. Les équipes de secours travaillent sans relâche malgré des conditions très difficiles. L'accès à l'eau potable et aux médicaments est devenu une urgence absolue pour les survivants. Des milliers de familles sont sans nouvelles de leurs proches.\n\nLes dégâts matériels sont considérables. Près de 59 000 bâtiments ont été endommagés ou détruits. L'aéroport international de Maiquetía, situé près de la capitale, a été fermé après avoir subi de graves dommages. Un pont important reliant Caraballeda au reste de La Guaira s'est effondré lors d'une réplique le 26 juin. Le Programme des Nations Unies pour le Développement estime les dommages directs à environ 6,7 milliards de dollars américains, soit environ 6 % du produit intérieur brut du pays.\n\nPlus de 600 répliques ont été enregistrées depuis le premier séisme. Ces secousses secondaires compliquent les opérations de secours et entretiennent la peur parmi les survivants. Des millions de personnes ont dû quitter leur domicile. L'ONU estime que 6,8 millions de personnes pourraient avoir besoin d'aide humanitaire, dont environ 680 000 enfants. L'UNICEF a lancé un appel d'urgence pour répondre aux besoins des plus vulnérables.\n\nLa communauté internationale s'est rapidement mobilisée. De nombreuses organisations humanitaires ont envoyé de l'aide matérielle et des équipes spécialisées au Venezuela. Cependant, l'accès aux zones les plus touchées reste difficile en raison des routes et des ponts endommagés. La situation humanitaire reste préoccupante, notamment en ce qui concerne les abris d'urgence, la nourriture et l'eau potable. Les Nations Unies ont demandé aux pays membres de contribuer à l'effort de reconstruction.\n\nLa France, quant à elle, est peu exposée aux séismes de grande ampleur. Son territoire métropolitain se trouve sur une zone de sismicité faible à modérée. Les régions les plus exposées sont les Pyrénées, les Alpes et la Provence. Un séisme potentiellement destructeur, de magnitude supérieure à 6, ne survient environ qu'une fois par siècle en France métropolitaine. La base de données Sisfrance recense pourtant 5 743 séismes ressentis sur le territoire en plus d'un millénaire. En comparaison avec des pays comme le Venezuela, le Japon ou la Turquie, la France est donc considérée comme une zone à faible risque sismique. Cela ne veut pas dire que le risque est nul, mais il reste heureusement très limité.",
+  "conversation": {
+    "intro": "Rosalia et son amie Sophie regardent les actualités ensemble sur le canapé. Sophie montre à Rosalia des images terribles des séismes au Venezuela qui passent en boucle sur les réseaux sociaux.",
+    "lines": [
+      { "speaker": "Sophie", "fr": "Rosalia, t'as vu ça ? Y'a eu un tremblement de terre énorme au Venezuela !" },
+      { "speaker": "Rosalia", "fr": "Oui, c'est horrible. J'ai vu les images sur TikTok et j'ai été choquée. Plus de 2 000 morts, c'est inimaginable !", "es": "Sí, es horrible. Vi las imágenes en TikTok y quedé impactada. ¡Más de 2 000 muertos, es inimaginable!" },
+      { "speaker": "Sophie", "fr": "Deux séismes en moins d'une minute... c'est rare ça, non ?" },
+      { "speaker": "Rosalia", "fr": "Très rare, oui. J'ai lu que c'est le pire séisme au Venezuela depuis 1900.", "es": "Muy raro, sí. Leí que es el peor sismo en Venezuela desde 1900." },
+      { "speaker": "Sophie", "fr": "Et toi en République dominicaine, vous avez des tremblements de terre ?" },
+      { "speaker": "Rosalia", "fr": "On est dans la même région caribéenne, il y a des risques. Tout le monde pense à Haïti en 2010, c'était dévastateur.", "es": "Estamos en la misma región caribeña, hay riesgos. Todo el mundo piensa en Haití en 2010, fue devastador." },
+      { "speaker": "Sophie", "fr": "Haïti c'était effrayant. Et là 50 000 personnes disparues... comment c'est possible ?" },
+      { "speaker": "Rosalia", "fr": "Des quartiers entiers se sont effondrés en quelques secondes. Les équipes cherchent encore des survivants sous les décombres.", "es": "Barrios enteros colapsaron en segundos. Los equipos siguen buscando sobrevivientes bajo los escombros." },
+      { "speaker": "Sophie", "fr": "T'as de la famille ou des contacts avec des proches là-bas ?" },
+      { "speaker": "Rosalia", "fr": "Pas directement au Venezuela. Mais j'ai appelé ma mère ce matin, elle suivait aussi les nouvelles.", "es": "No directamente en Venezuela. Pero llamé a mi mamá esta mañana, ella también seguía las noticias." },
+      { "speaker": "Sophie", "fr": "Au fait, est-ce qu'il y a des risques de séismes en France ?" },
+      { "speaker": "Rosalia", "fr": "J'ai lu ça dans l'article, en France c'est très rare ! Strasbourg c'est une zone tranquille, ça me rassure.", "es": "¡Leí eso en el artículo, en Francia es muy raro! Estrasburgo es una zona tranquila, eso me tranquiliza." },
+      { "speaker": "Sophie", "fr": "Ah super, c'est une bonne nouvelle ! Ça fait une raison de plus d'être tranquille là-bas." },
+      { "speaker": "Rosalia", "fr": "Exactement, et Clement me disait la même chose. Strasbourg c'est idéal pour plein de raisons, j'ai hâte d'y être !", "es": "Exactamente, y Clement me decía lo mismo. ¡Estrasburgo es ideal por muchas razones, tengo muchas ganas de estar allá!" },
+      { "speaker": "Sophie", "fr": "Revenons au Venezuela... tu penses que l'aide internationale va changer les choses ?" },
+      { "speaker": "Rosalia", "fr": "J'espère que oui. L'ONU et l'UNICEF sont déjà mobilisés. Mais 6,8 millions de personnes, c'est énorme.", "es": "Espero que sí. La ONU y UNICEF ya están movilizados. Pero 6,8 millones de personas, es enorme." },
+      { "speaker": "Sophie", "fr": "T'as raison. On peut faire quelque chose nous aussi, non ?" },
+      { "speaker": "Rosalia", "fr": "Oui ! Il y a des associations qui collectent des dons. Je cherche ce soir et je t'envoie un lien.", "es": "¡Sí! Hay asociaciones que recaudan donaciones. Busco esta noche y te mando un enlace." },
+      { "speaker": "Sophie", "fr": "Parfait, j'attends ton message. On pourrait regarder les nouvelles ensemble ce soir ?" },
+      { "speaker": "Rosalia", "fr": "Bonne idée ! Viens chez moi vers 20h. J'aurai peut-être fait du riz si t'as faim !", "es": "¡Buena idea! Ven a mi casa hacia las 8. ¡Quizás habré hecho arroz si tienes hambre!" }
+    ]
+  },
+  "comments": [
+    {
+      "username": "MarcG_Eruption47",
+      "comment": "C'est scandaleux, une semaine après et 50 000 personnes sont encore portées disparues ! Où est le gouvernement vénézuélien ? Ces gens meurent sous les décombres pendant que les politiques font des discours vides. C'est une honte absolue.",
+      "likes": 187
+    },
+    {
+      "username": "Sophie_Lesdiguieres",
+      "comment": "J'étais au Pérou en 2007 lors d'un séisme de magnitude 8. Les bâtiments tremblaient pendant 90 secondes et ça semblait durer une éternité. Une pensée immense pour tous ceux qui vivent ça au Venezuela, la peur ne s'oublie pas.",
+      "likes": 94
+    },
+    {
+      "username": "AlainVerdier_Geo",
+      "comment": "Le problème au Venezuela c'est pas juste le séisme, c'est les constructions. Des immeubles comme du papier mâché parce qu'il n'y a plus d'argent public depuis des années. Si les normes antisismiques avaient été respectées, le bilan serait deux fois moins lourd.",
+      "likes": 56
+    },
+    {
+      "username": "TrembleurParisien_75",
+      "comment": "Moi mon immeuble à Paris tremble quand mon voisin du dessus marche trop fort. Du coup j'ai vérifié si on était en zone sismique... non. C'est juste Bernard qui fait ses abdos à 6h du matin.",
+      "likes": 412
+    },
+    {
+      "username": "Celine_Humanitaire31",
+      "comment": "Des milliers de secouristes qui risquent leur vie pour chercher des survivants sous les décombres depuis une semaine. Ces gens sont des héros absolus. Continuez, le monde vous regarde avec admiration et gratitude.",
+      "likes": 143
+    }
+  ]
+}

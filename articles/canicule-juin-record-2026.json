@@ -1,0 +1,143 @@
+{
+  "id": "canicule-juin-record-2026",
+  "title": "Canicule 2026 : retour sur le juin le plus chaud de l'histoire",
+  "date": "2026-06-26",
+  "category": "Santé",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Canicule_Europe_2003.jpg",
+    "alt": "Carte des températures maximales lors de la canicule européenne de 2003"
+  },
+  "vocabulary": [
+    { "fr": "un coup de chaleur", "es": "un golpe de calor" },
+    { "fr": "les normales saisonnières", "es": "las temperaturas normales de la estación" },
+    { "fr": "un îlot de fraîcheur", "es": "una zona fresca" },
+    { "fr": "submergé", "es": "desbordado" },
+    { "fr": "un incendie de forêt", "es": "un incendio forestal" },
+    { "fr": "l'asphalte", "es": "el asfalto" },
+    { "fr": "un record absolu", "es": "un récord histórico absoluto" },
+    { "fr": "l'adaptation climatique", "es": "la adaptación climática" }
+  ],
+  "article": "La France a officiellement vécu le mois de juin le plus chaud de son histoire. Météo-France a confirmé, le 25 juin, que la moyenne nationale des températures dépassait tous les records depuis le début des relevés météorologiques, en 1900. La canicule qui avait frappé le pays à partir du 17 juin a laissé des traces durables dans les statistiques climatiques et dans les mémoires collectives. Un bilan difficile à accepter, mais impossible à ignorer.\n\nLe pic de chaleur a finalement diminué à partir du 26 juin, comme prévu par les météorologues. Un vent venant de l'Atlantique a apporté un peu de fraîcheur sur la façade ouest du pays. Mais les températures sont restées bien au-dessus des normales saisonnières pendant encore plusieurs jours. Au total, la moyenne nationale de juin 2026 a dépassé de 4,2°C la référence calculée sur la période 1991-2020. C'est un record absolu pour un mois de juin depuis que la France mesure les températures.\n\nLes infrastructures françaises ont été fortement perturbées pendant cette période. La SNCF a imposé des limitations de vitesse sur plusieurs lignes, car la chaleur intense peut déformer les rails. Des conducteurs ont signalé de l'asphalte fondu sur les routes du sud-ouest. Plusieurs piscines publiques ont fermé leurs portes après des incidents liés à la surcharge de fréquentation. La consommation d'électricité a atteint un pic historique pour un mois de juin, en raison des climatiseurs qui fonctionnaient en permanence dans tout le pays.\n\nLes services d'urgence ont été submergés dans plusieurs régions. Des dizaines de personnes ont été hospitalisées pour des coups de chaleur graves, notamment dans les grandes villes où la chaleur nocturne empêchait tout repos. Dans le même temps, des incendies de forêt ont ravagé plusieurs milliers d'hectares dans les Landes et dans le Var. À Paris, des milliers de citadins se sont spontanément rassemblés autour des fontaines et dans les parcs pour chercher un peu de fraîcheur. Les plages du nord de la France, habituellement désertes en juin, ont accueilli des foules inhabituelles.\n\nLes climatologues ont rapidement mis ces événements en perspective. L'été 2019 avait déjà été exceptionnel, avec un record national de 45,9°C à Gallargues-le-Montueux. Mais l'ampleur de la canicule de juin 2026 a surpris même les experts. Le fait que des températures aussi extrêmes surviennent en juin, et non en juillet ou en août, est particulièrement préoccupant. Selon les scientifiques, la fenêtre des épisodes caniculaires s'élargit chaque année : ils commencent plus tôt et durent plus longtemps.\n\nFace à ces constats, plusieurs villes françaises ont annoncé des mesures d'urgence concrètes. Certaines mairies ont décidé d'ouvrir des îlots de fraîcheur permanents dans des bibliothèques et des centres municipaux climatisés. Le gouvernement a accéléré son plan d'adaptation climatique et annoncé des aides pour installer des protections solaires dans les écoles et les hôpitaux. Les associations de protection animale ont également lancé des appels pour sensibiliser la population à ne pas laisser les animaux domestiques exposés à la chaleur.\n\nLe retour progressif de la fraîcheur, prévu à partir du 26 juin, est accueilli avec un grand soulagement par toute la population. Mais pour les spécialistes du climat, juin 2026 est désormais une nouvelle référence historique. Il ne s'agit plus d'un événement exceptionnel, mais d'un signal fort : la France doit adapter ses villes, ses bâtiments et ses comportements à un été qui dure plus longtemps et qui brûle plus fort. Cette prise de conscience collective est peut-être le premier pas vers une vraie adaptation climatique.",
+  "conversation": {
+    "intro": "Rosalia est chez elle en République dominicaine et parle avec Léa, une amie française qu'elle a rencontrée dans un groupe d'échange linguistique en ligne. La canicule vient de diminuer et Léa lui raconte comment elle a vécu cette semaine extraordinaire.",
+    "lines": [
+      {
+        "speaker": "Léa",
+        "fr": "Rosalia, t'as vu ? C'est officiel, juin 2026 est le mois de juin le plus chaud depuis 1900 !"
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "J'ai vu ça aux infos ! 4 degrés au-dessus de la normale, c'est vraiment impressionnant.",
+        "es": "¡Lo vi en las noticias! 4 grados por encima de la media, es realmente impresionante."
+      },
+      {
+        "speaker": "Léa",
+        "fr": "Et toi t'as pas de canicule à Santo Domingo ? Je croyais qu'il faisait toujours chaud là-bas."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Si, on a de la chaleur, mais on a le climatiseur partout. Ici c'est normal ! En France vous êtes pas équipés.",
+        "es": "Sí, hace calor, pero tenemos aire acondicionado en todos lados. ¡Aquí es normal! En Francia no están equipados."
+      },
+      {
+        "speaker": "Léa",
+        "fr": "C'est tellement vrai. Moi j'ai pas dormi de toute la semaine. L'appartement était une fournaise."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Et les rails du TGV qui ont fondu, c'est vrai ? J'ai vu ça sur TikTok et j'y croyais pas.",
+        "es": "¿Y los rieles del TGV que se fundieron, es verdad? Lo vi en TikTok y no me lo creía."
+      },
+      {
+        "speaker": "Léa",
+        "fr": "Oui ! Mon cousin a été bloqué trois heures en gare de Bordeaux à cause de ça. Il était furieux."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "C'est incroyable. Et j'ai vu aussi des images d'asphalte fondu sur les routes. Le climat change vraiment vite.",
+        "es": "Es increíble. Y también vi imágenes del asfalto fundido en las carreteras. El clima cambia muy rápido."
+      },
+      {
+        "speaker": "Léa",
+        "fr": "Ouais, et les incendies dans les Landes... t'as vu les images ? C'était impressionnant."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Oui, ça m'a fait penser aux incendies qu'on voit ici aussi parfois. La sécheresse, c'est un problème partout dans le monde.",
+        "es": "Sí, me hizo pensar en los incendios que vemos aquí también a veces. La sequía es un problema en todo el mundo."
+      },
+      {
+        "speaker": "Léa",
+        "fr": "Et à Paris, tout le monde était aux fontaines et dans les parcs. C'était bizarre mais sympa à voir."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Haha, chez nous on fait pareil à la plage ! Mon frère Argenis y va tous les weekends quand il fait chaud.",
+        "es": "Jaja, nosotros hacemos lo mismo en la playa. ¡Mi hermano Argenis va todos los fines de semana cuando hace calor!"
+      },
+      {
+        "speaker": "Léa",
+        "fr": "J'aurais bien aimé être à Punta Cana cette semaine, franchement..."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Tu serais la bienvenue ! Ma mère Rosaura adore recevoir des invités. Et l'eau de mer est à 28 degrés.",
+        "es": "¡Serías bienvenida! A mi mamá Rosaura le encanta recibir invitados. Y el agua del mar está a 28 grados."
+      },
+      {
+        "speaker": "Léa",
+        "fr": "Oh la la, je note pour l'hiver ! En attendant, ma mairie va ouvrir des îlots de fraîcheur cet été."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Bonne idée ! Clement m'a dit que Strasbourg prévoit des choses similaires. Je suis contente que la France s'adapte.",
+        "es": "¡Buena idea! Clement me dijo que Estrasburgo está planeando cosas similares. Me alegra que Francia se esté adaptando."
+      },
+      {
+        "speaker": "Léa",
+        "fr": "Oui, on apprend. Et toi t'apprends quoi de tout ça pour quand tu arrives en France ?"
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "J'apprends à prévoir un ventilateur dans mes bagages ! Et à acheter des volets dès le premier jour.",
+        "es": "¡Aprendo a llevar un ventilador en el equipaje! Y a comprar persianas desde el primer día."
+      },
+      {
+        "speaker": "Léa",
+        "fr": "Sage conseil ! Allez, on se fait un appel vidéo la semaine prochaine pour continuer à pratiquer ?"
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Avec plaisir ! Et toi, profite bien de la fraîcheur qui revient. Bises depuis Santo Domingo !",
+        "es": "¡Con mucho gusto! Y tú, disfruta del fresco que vuelve. ¡Besos desde Santo Domingo!"
+      }
+    ]
+  },
+  "comments": [
+    {
+      "username": "FamillesOublieesEte26",
+      "comment": "Mon père de 84 ans n'a reçu aucun appel de la mairie pendant toute la semaine. Aucun. Les leçons de 2003 n'ont visiblement pas été retenues pour tout le monde. C'est une honte nationale. Ces personnes âgées ne comptent pas ?",
+      "likes": 163
+    },
+    {
+      "username": "JardiniereProvencale",
+      "comment": "J'ai passé toutes mes nuits à arroser mes tomates pour qu'elles survivent. Le 26 juin quand la fraîcheur est arrivée j'ai pleuré de soulagement. Jamais la météo m'avait autant touchée émotionnellement. Ces dix jours m'ont changée.",
+      "likes": 91
+    },
+    {
+      "username": "SceptiqueClimat_33",
+      "comment": "Record depuis 1900, ça fait 126 ans seulement. Avant 1900 il n'y avait pas de mesures fiables sur tout le territoire. Méfions-nous des records qui s'appuient sur des données partielles. Le débat mérite beaucoup plus de nuance.",
+      "likes": 38
+    },
+    {
+      "username": "AsphalteFondu_DordogneMaster",
+      "comment": "J'ai voulu faire cuire un œuf sur le capot de ma voiture le 23 juin pour tenter l'expérience. Résultat : l'œuf a fondu, le capot aussi, et ma femme ne me parle plus. Bilan mitigé. Mais j'ai quand même eu 2 millions de vues sur TikTok.",
+      "likes": 493
+    },
+    {
+      "username": "VoisineSolidaire_Lyon2",
+      "comment": "Pendant toute la semaine, mon voisin du dessus a apporté chaque matin une bouteille d'eau fraîche à la dame du rez-de-chaussée, 89 ans. Sans qu'on lui demande. Ce genre de geste simple et discret, c'est ça qui sauve des vies.",
+      "likes": 247
+    }
+  ]
+}

@@ -1,5 +1,19 @@
 [
   {
+    "id": "tour-de-france-2026",
+    "title": "Le Tour de France : une légende qui traverse les siècles",
+    "date": "2026-07-04",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris_Parc_des_Princes_1.jpg",
+    "category": "Sport"
+  },
+  {
+    "id": "anemie-rosalia-transfusion-2026",
+    "title": "L'anémie expliquée : causes, symptômes et traitements",
+    "date": "2026-07-04",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Red_Blood_Cells.jpg",
+    "category": "Santé"
+  },
+  {
     "id": "canicule-juin-record-2026",
     "title": "Canicule 2026 : retour sur le juin le plus chaud de l'histoire",
     "date": "2026-06-26",

@@ -1,0 +1,73 @@
+{
+  "id": "tour-de-france-2026",
+  "title": "Le Tour de France : une légende qui traverse les siècles",
+  "date": "2026-07-04",
+  "category": "Sport",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris_Parc_des_Princes_1.jpg",
+    "alt": "Le Parc des Princes à Paris, symbole du sport français"
+  },
+  "vocabulary": [
+    { "fr": "le maillot jaune", "es": "el maillot amarillo" },
+    { "fr": "le peloton", "es": "el pelotón" },
+    { "fr": "le dénivelé", "es": "el desnivel acumulado" },
+    { "fr": "le contre-la-montre", "es": "la contrarreloj" },
+    { "fr": "une étape", "es": "una etapa" },
+    { "fr": "l'ascension", "es": "la subida, el ascenso" },
+    { "fr": "le Grand Départ", "es": "la Gran Salida" },
+    { "fr": "s'élancer", "es": "lanzarse, salir disparado" }
+  ],
+  "article": "Le Tour de France est l'une des plus grandes compétitions sportives de la planète. Chaque été, des millions de spectateurs se rassemblent au bord des routes pour acclamer les meilleurs cyclistes du monde. À la télévision, plus de 190 pays diffusent la course en direct. Cette épreuve est bien plus qu'un événement sportif : elle fait partie de l'identité culturelle française, un rendez-vous immanquable depuis plus d'un siècle.\n\nL'histoire du Tour de France commence en 1903. Henri Desgrange, journaliste et ancien cycliste, décide de créer une grande course pour promouvoir son journal sportif, L'Auto. L'idée est simple : faire le tour de la France à vélo. Le 1er juillet 1903, soixante coureurs s'élancent pour un périple de 2 428 kilomètres divisé en six étapes. Après vingt jours de course, Maurice Garin franchit la ligne d'arrivée en premier. Le succès est immédiat et les ventes de L'Auto explosent.\n\nAu fil des décennies, le Tour de France a beaucoup évolué. En 1919, le maillot jaune est introduit pour identifier le leader du classement général. Ce symbole est aujourd'hui reconnu dans le monde entier. Les cols des Alpes et des Pyrénées deviennent des passages incontournables. Les étapes de montagne attirent des foules immenses. Dans les années 1960, la télévision transforme la course en un spectacle mondial et les cyclistes deviennent de véritables stars internationales.\n\nLes champions qui ont marqué l'histoire du Tour sont nombreux. Jacques Anquetil est le premier coureur à gagner cinq fois, suivi par Eddy Merckx, Bernard Hinault et Miguel Indurain. Ces quatre champions ont chacun dominé leur époque. Le Britannique Chris Froome et le Slovène Tadej Pogačar ont ensuite inscrit leur nom dans la légende. Cependant, le dopage a aussi laissé une ombre sur la compétition. Lance Armstrong, vainqueur sept fois entre 1999 et 2005, a vu toutes ses victoires annulées après un scandale retentissant.\n\nEn 2026, le Tour de France célèbre sa 113e édition avec une grande nouveauté. Pour la première fois depuis longtemps, le Grand Départ a lieu à l'étranger, à Barcelone, en Espagne. Le samedi 4 juillet, vingt-deux équipes prennent le départ d'un contre-la-montre par équipes de 19,6 kilomètres dans les rues de la capitale catalane. Barcelone devient ainsi la ville la plus au sud à avoir jamais accueilli le départ du Tour. Les tribunes sont remplies de spectateurs venus des quatre coins de l'Europe.\n\nLe parcours de cette édition est à la fois exigeant et spectaculaire. Après trois étapes en Espagne, le peloton traverse les Pyrénées pour entrer en France. Les coureurs remontent ensuite progressivement vers le nord, en passant par le Massif Central, les Vosges, le Jura et enfin les Alpes. Au total, la course compte vingt et une étapes et couvre 3 333 kilomètres avec 54 450 mètres de dénivelé cumulé. Les amateurs de montagne sont particulièrement gâtés avec cinq arrivées en altitude, dont deux ascensions consécutives du mythique Alpe d'Huez lors des étapes 19 et 20.\n\nLe Tour de France reste une épreuve incomparable dans l'histoire du sport mondial. Chaque édition apporte son lot de surprises, de batailles tactiques et de moments inoubliables. En 2026, avec son départ historique depuis Barcelone, la course rappelle que le cyclisme est un sport universel qui dépasse les frontières. Les passionnés du monde entier ont les yeux rivés sur les routes françaises pour vivre ensemble cette grande aventure humaine.",
+  "conversation": {
+    "intro": "Rosalia et Clément regardent ensemble le début du Tour de France 2026 à la télévision depuis leur appartement à Santo Domingo. La première étape vient de commencer à Barcelone et Rosalia est curieuse d'en savoir plus sur cette grande compétition française.",
+    "lines": [
+      { "speaker": "Clément", "fr": "Rosalia, le Tour de France commence aujourd'hui ! Tu savais que ça part de Barcelone cette année ?" },
+      { "speaker": "Rosalia", "fr": "Non, je savais pas ! Barcelone c'est en Espagne... c'est bizarre pour une course française, non ?", "es": "¡No sabía! Barcelona está en España... ¿no es raro para una carrera francesa, verdad?" },
+      { "speaker": "Clément", "fr": "C'est ce qu'on appelle le Grand Départ. Des fois la course commence à l'étranger pour l'ouvrir sur toute l'Europe." },
+      { "speaker": "Rosalia", "fr": "Ah, c'est une bonne idée ! Et ça dure combien de temps exactement, le Tour de France ?", "es": "¡Ah, es una buena idea! ¿Y cuánto dura exactamente el Tour de Francia?" },
+      { "speaker": "Clément", "fr": "Trois semaines ! Vingt et une étapes, plus de 3 000 kilomètres à travers toute la France." },
+      { "speaker": "Rosalia", "fr": "Trois semaines à vélo, c'est incroyable ! Ces cyclistes sont vraiment forts. Comment c'est né, le Tour de France ?", "es": "¡Tres semanas en bici, es increíble! Estos ciclistas son muy fuertes. ¿Cómo nació el Tour de Francia?" },
+      { "speaker": "Clément", "fr": "Ça date de 1903. Un journaliste, Henri Desgrange, a inventé la course pour vendre plus de journaux." },
+      { "speaker": "Rosalia", "fr": "Ah bon ! Et ça a marché ? Ça m'étonne qu'une course à vélo puisse sauver un journal !", "es": "¡Ah sí! ¿Y funcionó? Me sorprende que una carrera en bici pueda salvar un periódico." },
+      { "speaker": "Clément", "fr": "Oui, énormément ! Le Tour est devenu une institution. Le maillot jaune, ça te parle ?" },
+      { "speaker": "Rosalia", "fr": "Oui ! C'est le symbole du leader, non ? En République dominicaine on ne suit pas vraiment le cyclisme, mais depuis que je suis avec toi j'apprends plein de choses !", "es": "¡Sí! Es el símbolo del líder, ¿verdad? En República Dominicana no seguimos mucho el ciclismo, ¡pero desde que estoy contigo aprendo un montón de cosas!" },
+      { "speaker": "Clément", "fr": "Haha, c'est trop bien. Et puis à Strasbourg, la ville accueille souvent des étapes du Tour !" },
+      { "speaker": "Rosalia", "fr": "Vraiment ?! Alors on pourra peut-être voir une étape en vrai quand on sera là-bas ! Ce serait trop bien !", "es": "¡¿De verdad?! ¡Entonces quizás podamos ver una etapa en vivo cuando estemos allá! ¡Eso sería genial!" },
+      { "speaker": "Clément", "fr": "C'est tout à fait possible. Les gens font des pique-niques au bord de la route, c'est une vraie fête." },
+      { "speaker": "Rosalia", "fr": "Oh j'adore ça ! Je pourrais préparer des empanadas pour le pique-nique. Ma famille serait tellement jalouse quand elle verrait les photos !", "es": "¡Me encanta esa idea! Podría preparar empanadas para el picnic. ¡Mi familia estaría tan celosa cuando viera las fotos!" },
+      { "speaker": "Clément", "fr": "Parfait. Ah regarde, là c'est le contre-la-montre par équipes à Barcelone — ça commence !" },
+      { "speaker": "Rosalia", "fr": "C'est quoi exactement un contre-la-montre par équipes ? Je comprends pas encore tous les termes en français.", "es": "¿Qué es exactamente una contrarreloj por equipos? Todavía no entiendo todos los términos en francés." },
+      { "speaker": "Clément", "fr": "C'est quand toute l'équipe roule ensemble le plus vite possible. Le chrono s'arrête au cinquième coureur arrivé." },
+      { "speaker": "Rosalia", "fr": "Ah, comme une épreuve d'équipe ! C'est logique. Je dois noter tous ces nouveaux mots dans mon cahier de français.", "es": "¡Ah, como una prueba de equipo! Tiene sentido. Debo anotar todas estas palabras nuevas en mi cuaderno de francés." },
+      { "speaker": "Clément", "fr": "À Strasbourg tu pourras parler de sport avec tout le monde. Le cyclisme, c'est très populaire en Alsace." },
+      { "speaker": "Rosalia", "fr": "Super ! Je suis trop impatiente d'y être. Allez, on regarde l'étape ensemble maintenant ?", "es": "¡Genial! Estoy muy impaciente por llegar allá. ¿Vamos, vemos la etapa juntos ahora?" }
+    ]
+  },
+  "comments": [
+    {
+      "username": "TourPuriste_Francois",
+      "comment": "C'est scandaleux que le Tour parte de Barcelone ! Cette course s'appelle le Tour de FRANCE, pas le Tour d'Espagne. On sacrifie notre héritage culturel pour du marketing international, et les organisateurs s'en fichent complètement de la tradition. Honte à eux !!!",
+      "likes": 48
+    },
+    {
+      "username": "VeloDuDimanche_Marie",
+      "comment": "Mon grand-père a vu passer le Tour en 1958 dans les Pyrénées. Il avait grimpé à pied jusqu'au col avec un sandwich et une bouteille de cidre. Il m'a dit que c'était le plus beau jour de sa vie. Ces souvenirs-là n'ont pas de prix.",
+      "likes": 134
+    },
+    {
+      "username": "CyclismeModerne2026",
+      "comment": "L'article oublie de mentionner que le Tour souffre encore de problèmes de dopage. Pogačar gagne tout trop facilement, ça interroge. On a été naïfs avec Armstrong pendant des années. Restons prudents avant de célébrer les performances extraordinaires.",
+      "likes": 87
+    },
+    {
+      "username": "GolfeurReconverti_Paul",
+      "comment": "J'ai regardé le Tour une fois par erreur en cherchant le golf à la télé. J'ai attendu l'arrivée pendant 3 heures. Quand j'ai réalisé qu'il restait encore 2 000 km de course... j'ai éteint la télé et je suis allé faire la sieste. Bon courage aux cyclistes 🥲",
+      "likes": 312
+    },
+    {
+      "username": "FamilleVeloAlsace",
+      "comment": "Mon fils de 9 ans a commencé le vélo en club cette année grâce au Tour de France. Il dit qu'il veut être champion un jour. Ces grandes courses donnent des rêves aux enfants. Merci aux coureurs pour leur courage et leur passion, vous nous inspirez tous !",
+      "likes": 156
+    }
+  ]
+}

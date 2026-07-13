@@ -1,5 +1,12 @@
 [
   {
+    "id": "parcs-attraction-europe",
+    "title": "Les parcs d'attraction en Europe : frissons et magie pour tous",
+    "date": "2026-07-12",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Fort_Boyard.jpg",
+    "category": "Voyage"
+  },
+  {
     "id": "thomas-pesquet-france-espace",
     "title": "Thomas Pesquet : la France à la conquête de la Lune",
     "date": "2026-07-12",

@@ -90,17 +90,28 @@ RÈGLES DÉTAILLÉES PAR CHAMP
 - Format OBLIGATOIRE :
   https://commons.wikimedia.org/wiki/Special:FilePath/{NomDuFichier.ext}
 
-- RÈGLE CRITIQUE — NE JAMAIS INVENTER un nom de fichier.
-  Ce format ne fonctionne QUE si le fichier existe EXACTEMENT avec ce nom sur Wikimedia Commons.
-  Si le fichier n'existe pas → 404 dans l'application, l'image ne s'affiche pas.
-  Avant de valider ton choix, pose-toi cette question : "Ai-je vu ce fichier exact dans des données
-  d'entraînement très récentes ?" Si la réponse n'est pas OUI avec certitude → utilise la liste ci-dessous.
+- PROCÉDURE OBLIGATOIRE — EFFECTUE UNE RECHERCHE WEB AVANT DE CHOISIR L'IMAGE :
 
+  ÉTAPE 1 — Recherche sur Wikimedia Commons :
+  Lance une recherche web avec l'URL suivante (adapte MOT_CLE au sujet de l'article) :
+    https://commons.wikimedia.org/w/index.php?search=MOT_CLE&title=Special:MediaSearch&type=image
+  Exemple pour un article sur le cyclisme : search=cycling+france
+  Exemple pour un article sur la cuisine : search=french+cuisine+food
+
+  ÉTAPE 2 — Sélectionne un fichier depuis les résultats :
+  Identifie dans les résultats un fichier image dont tu peux lire le nom exact (visible dans l'URL ou la page).
+  Construis l'URL finale avec ce nom de fichier exact.
+
+  ÉTAPE 3 — Vérifie que l'URL est accessible :
+  Charge l'URL construite pour confirmer que l'image s'affiche. Si elle retourne une erreur, recommence à l'étape 1 avec d'autres mots-clés.
+
+- RÈGLE CRITIQUE : N'invente JAMAIS un nom de fichier de mémoire.
+  Utilise uniquement un fichier trouvé et confirmé via la recherche web ci-dessus.
 - N'utilise JAMAIS upload.wikimedia.org/wikipedia/commons/thumb/... (hash MD5 impossible à calculer)
 - N'utilise JAMAIS Unsplash, Pexels, Pixabay ni aucune autre source externe
 
-- LISTE DE SECOURS — ces fichiers ont été vérifiés manuellement et fonctionnent à 100%.
-  Utilise-en un qui correspond au thème de l'article si tu as le moindre doute sur ton choix principal.
+- LISTE DE SECOURS — uniquement si la recherche web est indisponible :
+  Utilise-en un qui correspond au thème de l'article.
 
   Société / Politique :
     Flag_of_France.png          → https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_France.png

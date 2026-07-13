@@ -1,0 +1,73 @@
+{
+  "id": "coupe-du-monde-football-2026",
+  "title": "Coupe du Monde 2026 : les Bleus en route pour la gloire ?",
+  "date": "2026-07-12",
+  "category": "Sport",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris_Parc_des_Princes_1.jpg",
+    "alt": "Le Parc des Princes, stade emblématique du football français à Paris"
+  },
+  "vocabulary": [
+    { "fr": "le trophée", "es": "el trofeo" },
+    { "fr": "le décalage horaire", "es": "la diferencia horaria" },
+    { "fr": "les tribunes", "es": "las gradas" },
+    { "fr": "les pronostics", "es": "los pronósticos" },
+    { "fr": "susciter l'admiration", "es": "despertar la admiración" },
+    { "fr": "diluer le niveau", "es": "diluir el nivel" },
+    { "fr": "aux aurores", "es": "de madrugada / al amanecer" },
+    { "fr": "les internautes", "es": "los internautas" }
+  ],
+  "article": "La Coupe du Monde de Football 2026 est enfin arrivée. Pour la première fois de l'histoire, trois nations accueillent ensemble le tournoi le plus populaire de la planète : les États-Unis, le Canada et le Mexique. Avec quarante-huit équipes au lieu des trente-deux habituelles, ce Mondial est le plus grand jamais organisé. L'ambiance est fantastique et les stades affichent complet depuis le coup d'envoi.\n\nLe nouveau format a changé les habitudes des supporters. Les groupes ne comptent désormais plus que trois équipes, et les deux premiers ainsi que les meilleures troisièmes passent au tour suivant. Ce système crée plus de matchs et maintient le suspense plus longtemps. Certains spécialistes ont critiqué cette réforme, estimant qu'elle dilue le niveau de la compétition. Cependant, les audiences télévisées record prouvent que les spectateurs sont plus nombreux et plus enthousiastes que jamais.\n\nL'Équipe de France fait partie des grandes favorites de ce Mondial. Les Bleus ont une relation passionnée avec cette compétition. En 1998, ils ont remporté le titre sur leur propre sol, devant tout le pays, dans un Stade de France qui vibrait de joie. Vingt ans plus tard, en 2018 en Russie, ils ont de nouveau soulevé le trophée mondial. En 2006 en Allemagne et en 2022 au Qatar, ils ont atteint les finales sans parvenir à aller jusqu'au bout. La France connaît donc très bien la pression des grands rendez-vous de ce sport.\n\nCette édition, les Bleus sont menés par Kylian Mbappé, leur capitaine et joueur le plus célèbre. Le public français suit chaque match avec une intensité particulière. Sur les réseaux sociaux, les mèmes sur l'équipe de France sont nombreux et créatifs. L'un des plus partagés montre Mbappé avec une expression totalement neutre après un but spectaculaire, avec la légende : « Mbappé quand il marque son centième but en sélection ». Un autre mème populaire représente l'entraîneur en train de consulter ses notes à chaque action de jeu, avec la légende : « Il a tout prévu ».\n\nLes matchs à venir sont très attendus. Les quarts de finale débutent dans les prochains jours et la France doit affronter un adversaire redoutable. Les pronostics sont partagés et personne ne veut s'avancer. De nombreux supporters français se lèvent aux aurores pour regarder les matchs en direct depuis chez eux, car les rencontres se déroulent aux États-Unis et le décalage horaire peut atteindre neuf heures. La finale est prévue pour le 26 juillet prochain et la tension monte chaque jour davantage.\n\nSur Internet, les anecdotes autour du Mondial circulent à toute vitesse. Un supporter mexicain a parcouru plus de dix mille kilomètres en voiture pour assister à chaque match de son équipe. Des supporters japonais ont, comme à chaque édition, nettoyé les tribunes après leurs matchs, suscitant l'admiration du monde entier. Ces images ont été partagées des millions de fois sur TikTok et font le bonheur des internautes. Les mèmes, les vidéos drôles et les moments de pure émotion se succèdent sans arrêt sur tous les réseaux.\n\nLes villes hôtes comme New York, Los Angeles et Mexico City vivent au rythme du football depuis plusieurs semaines. Les rues sont couvertes de drapeaux, les restaurants affichent des menus aux couleurs des équipes et les chants des supporters résonnent partout. Le Mondial 2026 est une fête mondiale et chaque nation espère voir son équipe soulever le trophée le plus convoité du sport planétaire.",
+  "conversation": {
+    "intro": "Rosalia et Clément regardent les quarts de finale de la Coupe du Monde dans leur appartement à Saint-Domingue. Rosalia a suivi tous les matchs depuis le début du tournoi et elle est très excitée.",
+    "lines": [
+      { "speaker": "Clément", "fr": "T'as vu ? La France est en quarts de finale ! Ils ont été incroyables hier soir." },
+      { "speaker": "Rosalia", "fr": "J'ai regardé le match, c'était incroyable ! Mbappé a encore tout fait tout seul, comme d'habitude.", "es": "¡Vi el partido, fue increíble! Mbappé lo hizo todo él solo, como de costumbre." },
+      { "speaker": "Clément", "fr": "Ouais, il est en feu ce Mondial. Mais les quarts c'est une autre histoire, ça va être chaud." },
+      { "speaker": "Rosalia", "fr": "Tu crois que la France peut aller jusqu'en finale ? Après 2022, j'ai trop envie qu'ils gagnent.", "es": "¿Tú crees que Francia puede llegar a la final? Después de 2022, tengo muchas ganas de que ganen." },
+      { "speaker": "Clément", "fr": "J'espère ! Cette équipe est vraiment forte. Mais la finale de 2022 était tellement stressante…" },
+      { "speaker": "Rosalia", "fr": "J'ai regardé cette finale avec toute ma famille ! Mon grand-père a des origines françaises, alors on supportait la France.", "es": "¡Vi esa final con toda mi familia! Mi abuelo tiene ascendencia francesa, así que todos apoyábamos a Francia." },
+      { "speaker": "Clément", "fr": "Haha vraiment ? Vous supportiez la France depuis Saint-Domingue, c'est trop bien !" },
+      { "speaker": "Rosalia", "fr": "Bien sûr ! Argenis criait tellement fort que les voisins ont frappé à notre porte.", "es": "¡Claro! Argenis gritaba tan fuerte que los vecinos tocaron nuestra puerta." },
+      { "speaker": "Clément", "fr": "Ah non, trop drôle ! Et toi t'as un joueur préféré à part Mbappé ?" },
+      { "speaker": "Rosalia", "fr": "Mbappé évidemment ! Mais j'aime aussi voir comment l'équipe joue ensemble, c'est ça qui me plaît vraiment.", "es": "¡Mbappé por supuesto! Pero también me encanta ver cómo el equipo juega junto, eso es lo que me gusta de verdad." },
+      { "speaker": "Clément", "fr": "C'est vrai, ils sont très collectifs cette année. T'as regardé les matchs en français ?" },
+      { "speaker": "Rosalia", "fr": "Oui, j'essaie de suivre les commentateurs ! C'est difficile mais excellent pour apprendre, ils parlent très vite.", "es": "Sí, ¡intento seguir a los comentaristas! Es difícil pero excelente para aprender, hablan muy rápido." },
+      { "speaker": "Clément", "fr": "Super idée ça ! Le foot c'est plein d'expressions utiles. T'as compris la règle du hors-jeu ?" },
+      { "speaker": "Rosalia", "fr": "Le hors-jeu, j'ai mis du temps à comprendre. Rosaura dit que c'est impossible à expliquer même en espagnol !", "es": "El fuera de juego tardé mucho en entenderlo. ¡Rosaura dice que es imposible de explicar incluso en español!" },
+      { "speaker": "Clément", "fr": "Haha même moi j'ai du mal à l'expliquer ! À quelle heure commence le match ce soir ?" },
+      { "speaker": "Rosalia", "fr": "À deux heures du matin ! Mais je reste debout, c'est trop important. J'ai déjà préparé à manger.", "es": "¡A las dos de la madrugada! Pero me quedo despierta, es demasiado importante. Ya preparé algo para picar." },
+      { "speaker": "Clément", "fr": "T'es vraiment la meilleure. Qu'est-ce que t'as préparé ?" },
+      { "speaker": "Rosalia", "fr": "Du mangu et des tostones pour l'énergie ! Et des hamburgers pour fêter si la France gagne.", "es": "¡Mangú y tostones para tener energía! Y hamburguesas para celebrar si Francia gana." },
+      { "speaker": "Clément", "fr": "J'adore ton plan ! Et si la France gagne, on commande aussi des sushis pour célébrer." },
+      { "speaker": "Rosalia", "fr": "Marché conclu ! Allez les Bleus, on y croit tous les deux !", "es": "¡Trato hecho! ¡Vamos los Azules, los dos creemos en ellos!" }
+    ]
+  },
+  "comments": [
+    {
+      "username": "FranceFan_1998",
+      "comment": "Encore la même chose ! On croit toujours que la France va tout écraser mais à chaque quart de finale on tremble pendant 120 minutes. C'est ça le foot français : faire vieillir ses supporters prématurément. Le cœur tient plus !",
+      "likes": 87
+    },
+    {
+      "username": "TitoDesMercureaux",
+      "comment": "Mon grand-père m'a emmené voir France-Brésil en 1998, j'avais 8 ans. Je me souviens encore du Stade de France, la foule, l'odeur de l'herbe coupée. C'est mon plus beau souvenir d'enfance. Ces Mondiaux, ça forge une vie entière.",
+      "likes": 213
+    },
+    {
+      "username": "CritiqueduBallonRond",
+      "comment": "Soyons honnêtes, le nouveau format à 48 équipes c'est une catastrophe sportive. On dilue le niveau pour faire rentrer des équipes qui n'ont rien à faire là. C'est du football show business, pas du sport. La FIFA pense aux billets, pas aux fans.",
+      "likes": 156
+    },
+    {
+      "username": "LePetitHeron75",
+      "comment": "Moi je regarde le Mondial uniquement pour les mèmes qui suivent. Franchement les buts et les passes c'est bien, mais les gifs de supporters qui pleurent c'est de l'art pur. Mon compte TikTok ne dort pas de juin à juillet.",
+      "likes": 489
+    },
+    {
+      "username": "SupporteurDesBleus_31",
+      "comment": "Peu importe le résultat final, il faut reconnaître que cette équipe joue avec le cœur. Des millions de personnes se lèvent la nuit pour les voir jouer depuis l'autre bout du monde. Ça, ça dit tout sur ce que représentent les Bleus.",
+      "likes": 312
+    }
+  ]
+}

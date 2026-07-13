@@ -1,0 +1,75 @@
+{
+  "id": "cacerolazo-protestations-republique-dominicaine",
+  "title": "Le cacerolazo : quand les casseroles font entendre les Dominicains",
+  "date": "2026-07-12",
+  "category": "Société",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Punta_Cana.jpg",
+    "alt": "Vue de la République dominicaine, pays où le cacerolazo est devenu un symbole de contestation populaire"
+  },
+  "vocabulary": [
+    { "fr": "le cacerolazo", "es": "el cacerolazo (protesta golpeando ollas)" },
+    { "fr": "manifester", "es": "manifestar" },
+    { "fr": "le mécontentement", "es": "el descontento, el malestar" },
+    { "fr": "la contestation", "es": "la protesta, el rechazo" },
+    { "fr": "la pénurie", "es": "la escasez, la penuria" },
+    { "fr": "la corruption", "es": "la corrupción" },
+    { "fr": "le rassemblement", "es": "la concentración, la reunión" },
+    { "fr": "revendiquer", "es": "reivindicar, reclamar" },
+    { "fr": "la prise de conscience", "es": "la toma de conciencia" },
+    { "fr": "l'insécurité", "es": "la inseguridad" }
+  ],
+  "article": "En Amérique latine, protester ne signifie pas toujours descendre dans la rue avec des pancartes. Parfois, il suffit d'une simple casserole. Le cacerolazo est une forme de manifestation populaire dans laquelle les citoyens frappent des ustensiles de cuisine pour exprimer leur mécontentement. Ce phénomène, que l'on connaissait surtout en Amérique du Sud, a gagné en visibilité en République dominicaine ces dernières années. Il est devenu un symbole fort de la contestation citoyenne face au gouvernement.\n\nLe cacerolazo est né il y a plusieurs décennies. Il a été utilisé pour la première fois au Chili dans les années 1970, pendant le gouvernement de Salvador Allende. À l'époque, des femmes descendaient dans les rues et frappaient leurs casseroles pour protester contre la pénurie de nourriture. Par la suite, cette pratique s'est répandue dans toute l'Amérique latine. L'Argentine, le Venezuela, la Colombie et d'autres pays ont adopté ce mode d'expression populaire. Aujourd'hui, la République dominicaine a, à son tour, fait de ce geste un symbole de résistance.\n\nCes dernières années, le pays a traversé plusieurs crises qui ont alimenté le mécontentement populaire. Les Dominicains souffrent de longues coupures d'électricité, parfois de plusieurs heures par jour. La corruption dans les institutions publiques est régulièrement dénoncée par des organisations civiles et des journalistes. Par ailleurs, l'insécurité est devenue une préoccupation majeure pour une grande partie de la population. Le président Abinader, réélu en 2024, fait face à une opinion publique de plus en plus exigeante. Ces problèmes, qui s'accumulent depuis des années, ont poussé de nombreux citoyens à descendre dans la rue.\n\nEn 2024 et 2025, plusieurs épisodes de cacerolazo ont eu lieu dans la capitale, Santo Domingo. Des milliers de personnes sont sorties dans les rues à la même heure pour frapper leurs casseroles. L'organisation de ces rassemblements s'est faite en grande partie grâce aux réseaux sociaux. TikTok et Instagram ont permis de diffuser rapidement les appels à la mobilisation. En quelques heures, des vidéos de citoyens en colère ont été partagées par des centaines de milliers de personnes. Les images ont même circulé bien au-delà des frontières du pays.\n\nLa question de l'insécurité a été au cœur de plusieurs de ces manifestations. Des enlèvements, des agressions et des crimes violents ont été signalés dans plusieurs quartiers de Santo Domingo. Les habitants réclament une meilleure présence policière dans les zones dangereuses et une réponse judiciaire plus rapide. Beaucoup de familles expriment leur colère et leur inquiétude face à une situation qui ne semble pas s'améliorer malgré les promesses répétées des responsables politiques.\n\nLe cacerolazo est une forme de protestation particulière. Il ne nécessite aucun budget ni aucune organisation complexe. Tout le monde peut y participer, même les personnes âgées ou les enfants. En frappant leurs casseroles, les citoyens montrent qu'ils sont solidaires et qu'ils refusent de rester silencieux. C'est aussi une manière de rendre la protestation visible et audible dans tout le quartier, sans avoir besoin de se déplacer loin de chez soi. Pourtant, certains observateurs se demandent si frapper des casseroles peut vraiment changer les choses.\n\nLa société civile dominicaine est aujourd'hui plus dynamique que jamais. Les jeunes générations s'impliquent davantage dans les débats politiques et les actions collectives. Cette mobilisation montre une véritable volonté de changement. La question reste ouverte : ces protestations populaires vont-elles déboucher sur des réformes concrètes ? Le gouvernement doit désormais répondre à ces attentes citoyennes de manière claire et efficace. En attendant, les Dominicains continuent de frapper leurs casseroles, bien décidés à se faire entendre.",
+  "conversation": {
+    "intro": "Rosalía est dans son appartement à Santo Domingo. Sa camarade de cours de français, Léa, l'appelle en vidéo depuis la France. Léa a vu des vidéos de cacerolazos sur TikTok et veut en savoir plus.",
+    "lines": [
+      { "speaker": "Léa", "fr": "J'ai vu sur TikTok des gens frapper des casseroles dans les rues. C'est quoi ?" },
+      { "speaker": "Rosalía", "fr": "C'est le cacerolazo ! On frappe des casseroles pour protester. T'as ça en France aussi ?", "es": "¡Es el cacerolazo! Golpeamos ollas para protestar. ¿Ustedes hacen eso en Francia también?" },
+      { "speaker": "Léa", "fr": "On préfère les pancartes en France. Depuis quand, le cacerolazo chez vous ?" },
+      { "speaker": "Rosalía", "fr": "C'est devenu fréquent ces dernières années. La corruption et l'insécurité poussent les gens à manifester. Mon quartier l'a fait !", "es": "Se ha vuelto frecuente en los últimos años. La corrupción y la inseguridad empujan a la gente a manifestarse. ¡Mi barrio lo hizo!" },
+      { "speaker": "Léa", "fr": "Ton quartier, c'est sérieux ! Tu as participé, toi ?" },
+      { "speaker": "Rosalía", "fr": "Oui, avec ma maman Rosa depuis le balcon ! Rosaura, ma petite sœur, avait vu l'appel sur TikTok. C'était fort !", "es": "¡Sí, con mi mamá Rosa desde el balcón! Rosaura, mi hermana menor, había visto la convocatoria en TikTok. ¡Fue increíble!" },
+      { "speaker": "Léa", "fr": "TikTok pour organiser des manifestations... C'est vraiment l'époque ! C'est quoi le problème principal ?" },
+      { "speaker": "Rosalía", "fr": "Surtout l'insécurité — des enlèvements dans plusieurs quartiers. Les gens veulent des actes, pas des discours.", "es": "Sobre todo la inseguridad — hay secuestros en varios barrios. La gente quiere hechos, no discursos." },
+      { "speaker": "Léa", "fr": "C'est grave. Et le président Abinader réagit comment ?" },
+      { "speaker": "Rosalía", "fr": "Il annonce des mesures, mais personne ne lui fait plus confiance. Le cacerolazo, c'est dire 'on en a marre' !", "es": "Anuncia medidas, pero nadie le tiene confianza ya. ¡El cacerolazo es decir 'ya basta'!" },
+      { "speaker": "Léa", "fr": "En France on a eu les Gilets jaunes. Tu penses que ça peut changer les choses ?" },
+      { "speaker": "Rosalía", "fr": "Pas directement, mais ça montre qu'on n'est pas passifs. Ça crée de la solidarité. T'as suivi les Gilets jaunes ?", "es": "No directamente, pero muestra que no somos pasivos. Crea solidaridad. ¿Seguiste los Chalecos Amarillos?" },
+      { "speaker": "Léa", "fr": "Un peu, de loin. Tu vas continuer à manifester avant de partir pour Strasbourg ?" },
+      { "speaker": "Rosalía", "fr": "Bien sûr, tant que je suis ici ! Et j'espère que la situation va s'améliorer. J'ai tellement hâte d'être à Strasbourg !", "es": "¡Por supuesto, mientras siga aquí! Y espero que la situación mejore. ¡Tengo muchísimas ganas de estar en Estrasburgo!" },
+      { "speaker": "Léa", "fr": "C'est beau. Et Clément, il a participé au cacerolazo avec toi ?" },
+      { "speaker": "Rosalía", "fr": "Oui, depuis le balcon — il était surpris au début ! Après il a adoré. Lui et ses grands mots !", "es": "¡Sí, desde el balcón — al principio estaba sorprendido! Después le encantó. ¡Él y sus palabras rebuscadas!" },
+      { "speaker": "Léa", "fr": "Ha ha ! Les informaticiens... Ton français progresse vraiment, tu m'expliques tout super bien !" },
+      { "speaker": "Rosalía", "fr": "Merci ! Clément m'a créé un site pour pratiquer chaque jour. Ça m'aide vraiment — tu vois les progrès ?", "es": "¡Gracias! Clément me creó un sitio para practicar todos los días. Me ayuda mucho — ¿notas los avances?" },
+      { "speaker": "Léa", "fr": "Oui, vraiment ! Si t'as une vidéo du cacerolazo, envoie-moi — je vais montrer ça à mes amis !" },
+      { "speaker": "Rosalía", "fr": "Rosaura en a filmé une, je te l'envoie ! Quand je serai à Strasbourg, tu m'emmènes à une manifestation française ?", "es": "¡Rosaura filmó una, te la mando ahora! Cuando esté en Estrasburgo, ¿me llevas a una manifestación francesa?" }
+    ]
+  },
+  "comments": [
+    {
+      "username": "CitoyenEnColere_2025",
+      "comment": "Ça fait des années qu'on frappe des casseroles et rien ne change ! Le gouvernement s'en fout complètement de nos manifestations. Ils continuent à se remplir les poches pendant que nous on souffre des coupures de courant toute la nuit. C'est du théâtre, rien de plus.",
+      "likes": 87
+    },
+    {
+      "username": "MamaDeSantoDomingo",
+      "comment": "Mon fils avait quatre ans lors du premier cacerolazo de notre rue. Il ne comprenait pas pourquoi on tapait sur les casseroles, alors j'ai dit que c'était pour faire fuir les moustiques. Maintenant il a douze ans et il manifeste avec nous !",
+      "likes": 134
+    },
+    {
+      "username": "PragmatisteDesCaraibes",
+      "comment": "Frapper sur des casseroles, c'est sympa comme symbole, mais est-ce que ça fait vraiment avancer les choses ? Il faudrait s'organiser politiquement, voter pour des candidats sérieux, créer des associations. Le bruit ne suffit pas pour changer un système entier.",
+      "likes": 62
+    },
+    {
+      "username": "ChefCuisinierDesMilices",
+      "comment": "Attendez... des gens utilisent mes casseroles pour manifester ??? Maintenant je comprends pourquoi ma poêle en téflon est toute cabossée. Je pensais que c'était ma femme qui faisait la cuisine comme un marteau-piqueur. Restituez-moi mes ustensiles en bon état !!!",
+      "likes": 389
+    },
+    {
+      "username": "Solidaire_RD_2025",
+      "comment": "Ce qui me touche avec le cacerolazo, c'est que tout le monde peut participer. Les personnes âgées, les enfants, les familles entières. C'est une protestation inclusive et pacifique. Dans ces moments-là, on se sent vraiment unis comme peuple. La République dominicaine mérite mieux.",
+      "likes": 203
+    }
+  ]
+}

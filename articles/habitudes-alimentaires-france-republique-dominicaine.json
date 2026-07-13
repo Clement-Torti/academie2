@@ -1,0 +1,73 @@
+{
+  "id": "habitudes-alimentaires-france-republique-dominicaine",
+  "title": "Manger en France et en République dominicaine : deux cultures culinaires",
+  "date": "2026-07-12",
+  "category": "Culture",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Empanada.jpg",
+    "alt": "Empanada, plat traditionnel des Caraïbes et d'Amérique latine"
+  },
+  "vocabulary": [
+    { "fr": "les habitudes alimentaires", "es": "los hábitos alimenticios" },
+    { "fr": "copieux", "es": "abundante / copioso" },
+    { "fr": "un plat incontournable", "es": "un plato imprescindible" },
+    { "fr": "la gastronomie", "es": "la gastronomía" },
+    { "fr": "les épices", "es": "las especias" },
+    { "fr": "savoureux", "es": "sabroso / delicioso" },
+    { "fr": "le patrimoine culinaire", "es": "el patrimonio culinario" },
+    { "fr": "la convivialité", "es": "la convivencia / el buen ambiente" }
+  ],
+  "article": "La nourriture dit beaucoup d'une culture. En France et en République dominicaine, les habitudes alimentaires sont très différentes. Pourtant, dans les deux pays, les repas occupent une place centrale dans la vie sociale et familiale. Manger ensemble, c'est une valeur partagée des deux côtés de l'Atlantique.\n\nEn France, la journée commence souvent par un petit-déjeuner léger. Les Français mangent une tartine de pain grillé avec du beurre et de la confiture, et ils boivent du café ou du thé. Certains s'arrêtent dans une boulangerie pour acheter un croissant ou une viennoiserie. Le petit-déjeuner français est rapide et simple. Le déjeuner, au contraire, est un moment clé. En France, beaucoup de travailleurs et d'élèves ont une pause d'une heure pour manger à midi. Ce repas comprend souvent une entrée, un plat principal et un dessert. Les Français aiment prendre le temps de manger ensemble et discuter à table.\n\nLa gastronomie française est reconnue dans le monde entier pour sa finesse et sa variété. Des plats comme le bœuf bourguignon, la quiche lorraine ou la ratatouille font partie du patrimoine culinaire national. L'UNESCO a d'ailleurs inscrit le repas gastronomique des Français au patrimoine culturel immatériel de l'humanité en 2010. La France propose aussi une grande diversité régionale. La cuisine alsacienne est célèbre pour sa choucroute garnie et sa tarte flambée. En Provence, on prépare la bouillabaisse. Dans le sud-ouest, le foie gras et le cassoulet sont incontournables.\n\nEn République dominicaine, les habitudes alimentaires sont très différentes. Le petit-déjeuner y est beaucoup plus copieux. Les Dominicains mangent souvent du mangú, c'est-à-dire une purée de plantains, accompagnée d'œufs, de fromage frit et de salami. Ce repas donne de l'énergie pour toute la matinée. Ce n'est pas un repas pris debout en vitesse : c'est un moment assis et savoureux, souvent en famille.\n\nLe plat national de la République dominicaine s'appelle la bandera dominicana, ce qui signifie le drapeau dominicain. Ce plat symbolique est servi au déjeuner. Il comprend du riz blanc, des haricots rouges, de la viande mijotée et des légumes. Dans presque chaque foyer dominicain, on prépare ce plat au moins trois fois par semaine. Il y a d'autres plats incontournables. Le sancocho est une soupe épaisse avec plusieurs types de viandes, souvent préparée en famille le week-end. Le mondongo est une soupe à base de tripes, très appréciée par les connaisseurs. Les Dominicains consomment aussi beaucoup de fruits tropicaux frais.\n\nUn point de différence important concerne les épices et les condiments. En République dominicaine, la cuisine est parfumée mais pas très piquante. Les Dominicains utilisent le sofrito, un mélange d'ail, d'oignons, de poivrons et d'herbes fraîches, pour donner du goût à leurs plats. En France, les épices exotiques sont peu utilisées. Par contre, les herbes aromatiques comme le thym, le laurier ou le persil sont essentielles dans la cuisine française traditionnelle.\n\nMalgré leurs différences, les deux cultures culinaires partagent un point commun fondamental : le repas est un moment de partage. Que ce soit autour d'un sancocho en famille le dimanche à Saint-Domingue ou d'un dîner entre amis à Paris, la table est un espace de convivialité. Les traditions culinaires évoluent avec le temps, les influences s'échangent, et les deux gastronomies s'enrichissent l'une l'autre. Aujourd'hui, on trouve des restaurants dominicains à Paris et des boulangeries françaises à Saint-Domingue. La cuisine est peut-être le meilleur pont entre les cultures. Elle parle une langue universelle.",
+  "conversation": {
+    "intro": "Rosalia vient d'emménager à Strasbourg avec son copain Clément. Dans l'immeuble, elle rencontre Sophie, leur voisine. Elles discutent dans le couloir et la conversation tombe vite sur la cuisine.",
+    "lines": [
+      { "speaker": "Sophie", "fr": "T'es arrivée depuis combien de temps à Strasbourg ?" },
+      { "speaker": "Rosalia", "fr": "J'ai emménagé il y a trois semaines seulement. C'est encore tout nouveau pour moi !", "es": "Llegué hace solo tres semanas. ¡Todo todavía es muy nuevo para mí!" },
+      { "speaker": "Sophie", "fr": "Et tu t'habitues à la nourriture française ? C'est très différent de chez toi, non ?" },
+      { "speaker": "Rosalia", "fr": "Oui, beaucoup ! Le petit-déjeuner ici me surprend. Vous mangez très léger le matin, j'ai du mal !", "es": "¡Sí, mucho! El desayuno aquí me sorprende. Ustedes comen muy ligero en la mañana, ¡me cuesta!" },
+      { "speaker": "Sophie", "fr": "C'est vrai, moi c'est café et tartine. C'est quoi un vrai petit-déj chez toi ?" },
+      { "speaker": "Rosalia", "fr": "On mange du mangú le matin, une purée de plantains avec des œufs. Tu connais les plantains ?", "es": "Comemos mangú por la mañana, un puré de plátano con huevos. ¿Tú conoces los plátanos?" },
+      { "speaker": "Sophie", "fr": "Vaguement... ça ressemble à des bananes, non ? Ça a l'air super nourrissant !" },
+      { "speaker": "Rosalia", "fr": "Oui exactement ! C'est plus épais et moins sucré. Ça donne de l'énergie pour toute la matinée.", "es": "¡Sí, exactamente! Es más espeso y menos dulce. Da energía para toda la mañana." },
+      { "speaker": "Sophie", "fr": "Et vous mangez quoi le midi ? Vous avez un plat typique ?" },
+      { "speaker": "Rosalia", "fr": "Oui ! La bandera dominicana, c'est riz, haricots et viande. Ma mère Rosa la prépare presque chaque jour.", "es": "¡Sí! La bandera dominicana, arroz, habichuelas y carne. Mi mamá Rosa la prepara casi todos los días." },
+      { "speaker": "Sophie", "fr": "Le drapeau dominicain ? C'est un joli nom pour un plat !" },
+      { "speaker": "Rosalia", "fr": "Haha oui ! Et j'adore cuisiner, alors j'essaie de refaire ces plats ici. Clément goûte tout avec enthousiasme !", "es": "¡Haha sí! Y me encanta cocinar, así que intento recrear estos platos aquí. ¡Clément lo prueba todo con entusiasmo!" },
+      { "speaker": "Sophie", "fr": "Et lui, il te fait découvrir des plats français ?" },
+      { "speaker": "Rosalia", "fr": "Oui ! J'ai déjà mangé la tarte flambée ici à Strasbourg. C'était délicieux, j'ai adoré. Et les croissants, je suis accro !", "es": "¡Sí! Ya comí la tarte flambée aquí en Estrasburgo. Estaba deliciosa, me encantó. ¡Y los croissants, soy adicta!" },
+      { "speaker": "Sophie", "fr": "Hahaha j'aurais répondu pareil ! Et les escargots, t'as déjà essayé ?" },
+      { "speaker": "Rosalia", "fr": "Ah non, les escargots c'est non ! J'ai dit à Clément que c'est une ligne que je ne franchis pas.", "es": "¡Ah no, los caracoles son un no rotundo! Le dije a Clément que esa es una línea que no cruzo." },
+      { "speaker": "Sophie", "fr": "Je comprends ! Et il y a des plats dominicains qui me feraient peut-être peur aussi ?" },
+      { "speaker": "Rosalia", "fr": "Peut-être le mondongo, une soupe de tripes. Mais le sancocho tu adorerais, c'est comme un pot-au-feu !", "es": "Quizás el mondongo, que lleva tripas. ¡Pero el sancocho te encantaría, es como un pot-au-feu!" },
+      { "speaker": "Sophie", "fr": "Haha, on fait un échange alors ! Je t'invite samedi pour une tarte flambée maison." },
+      { "speaker": "Rosalia", "fr": "J'adore l'idée ! Je peux apporter un dessert dominicain. Tu vas découvrir quelque chose de spécial, promis !", "es": "¡Me encanta la idea! Puedo traer un postre dominicano. ¡Vas a descubrir algo especial, te lo prometo!" }
+    ]
+  },
+  "comments": [
+    {
+      "username": "GastronauFrancais_42",
+      "comment": "Encore un article qui met sur le même niveau la gastronomie française et n'importe quelle autre cuisine. Notre patrimoine culinaire est reconnu par l'UNESCO, ce n'est pas un hasard. On ne peut pas juste comparer ça à du riz aux haricots !",
+      "likes": 18
+    },
+    {
+      "username": "MarieChristine_Caraibe",
+      "comment": "Mon mari est dominicain et la première fois que j'ai goûté le sancocho chez sa famille, j'ai pleuré tellement c'était bon. Sa mère m'a donné la recette et maintenant c'est moi qui le prépare le dimanche. C'est devenu notre tradition.",
+      "likes": 94
+    },
+    {
+      "username": "AlimentationCritique",
+      "comment": "L'article idéalise les repas à la française mais la réalité c'est que la moitié des Français mangent un sandwich devant leur ordinateur. La pause déjeuner d'une heure et le repas trois plats, c'est de plus en plus rare. Soyons honnêtes.",
+      "likes": 167
+    },
+    {
+      "username": "PhilosopheDuPlateau_TV",
+      "comment": "J'ai lu « bandera dominicana » et j'ai passé dix minutes à chercher pourquoi les Dominicains mangeaient leur drapeau. Ma contribution intellectuelle du jour s'arrête là. Merci pour cet article enrichissant.",
+      "likes": 378
+    },
+    {
+      "username": "Sandrine_CuisineEtVoyages",
+      "comment": "J'ai vécu un an à Saint-Domingue et je confirme : la générosité dans les assiettes dominicaines est incroyable. J'ai appris à faire le mangú avec ma voisine Carmen et ça a changé ma vie. La cuisine, c'est vraiment le meilleur moyen de tisser des liens.",
+      "likes": 211
+    }
+  ]
+}

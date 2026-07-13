@@ -1,0 +1,73 @@
+{
+  "id": "thomas-pesquet-france-espace",
+  "title": "Thomas Pesquet : la France à la conquête de la Lune",
+  "date": "2026-07-12",
+  "category": "Technologie",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_France.png",
+    "alt": "Drapeau de la France, symbole de l'ambition spatiale française"
+  },
+  "vocabulary": [
+    { "fr": "la conquête de l'espace", "es": "la conquista del espacio" },
+    { "fr": "un lanceur", "es": "un cohete lanzador" },
+    { "fr": "une sortie extravéhiculaire", "es": "una caminata espacial" },
+    { "fr": "l'équateur", "es": "el ecuador" },
+    { "fr": "en orbite", "es": "en órbita" },
+    { "fr": "sous l'impulsion de", "es": "bajo el impulso de" },
+    { "fr": "dépendre de", "es": "depender de" },
+    { "fr": "à la portée de", "es": "al alcance de" }
+  ],
+  "article": "Thomas Pesquet est l'astronaute français le plus célèbre de sa génération. Né à Rouen en 1978, il a étudié l'aéronautique avant de devenir pilote de ligne pour Air France. En 2009, il a réussi une sélection très difficile et a rejoint l'équipe des astronautes de l'Agence Spatiale Européenne, l'ESA. Aujourd'hui, son parcours exceptionnel a fait de lui une véritable icône nationale, admirée par des millions de Français de tous âges.\n\nLa France a une longue histoire dans la conquête de l'espace. Dès 1961, sous l'impulsion du général de Gaulle, le gouvernement a créé le Centre National d'Études Spatiales, le CNES. Quatre ans plus tard, en novembre 1965, la France a lancé son premier satellite, Astérix. Elle est ainsi devenue le troisième pays au monde capable d'envoyer un objet dans l'espace, après les États-Unis et l'Union soviétique. Ce succès remarquable a confirmé l'ambition spatiale française.\n\nDans les années 1970, plusieurs pays européens ont décidé de construire ensemble un lanceur commun pour ne plus dépendre des autres puissances. C'est ainsi qu'est né le projet Ariane. La première fusée Ariane a décollé le 24 décembre 1979, depuis le Centre Spatial Guyanais de Kourou, en Guyane française. Cette base de lancement est idéalement située près de Cayenne, à proximité de l'équateur, ce qui facilite les lancements vers l'espace. En 2024, Ariane 6 a pris le relais et continue d'envoyer des satellites en orbite.\n\nLa première mission de Thomas Pesquet s'appelait Proxima. Il a décollé en novembre 2016 et a passé cent quatre-vingt-dix-sept jours à bord de la Station spatiale internationale. Pendant ce séjour, il a réalisé deux sorties dans l'espace et a participé à plus de cinquante expériences scientifiques. Ses photographies de la Terre, partagées chaque jour sur les réseaux sociaux, ont ému des millions de personnes dans le monde entier.\n\nSa deuxième mission, Alpha, a commencé en avril 2021. Cette fois, Thomas Pesquet a marqué l'histoire en devenant le premier astronaute français à commander la Station spatiale internationale. Au total, après ses deux missions, il a passé trois cent quatre-vingt-seize jours dans l'espace, ce qui constitue un record européen. Il a également effectué six sorties extravéhiculaires pour une durée totale de trente-neuf heures.\n\nSur Terre, Thomas Pesquet est extrêmement populaire. Selon un sondage du Journal du Dimanche, il est classé deuxième personnalité préférée des Français, juste derrière le chanteur Jean-Jacques Goldman. Les Français apprécient son enthousiasme, sa simplicité et sa façon de rendre la science accessible à tous. Il est souvent invité dans des émissions de télévision et dans des écoles pour partager ses aventures spatiales avec les jeunes générations.\n\nUne troisième mission attend désormais Thomas Pesquet. Il a été désigné commandant de la mission commerciale PAM-6, organisée par l'entreprise américaine Vast en partenariat avec la NASA. Le départ est prévu au plus tôt à l'été 2027. Si cette mission se confirme, ce serait la première fois qu'un non-Américain commande un vaisseau spatial américain dans l'histoire de la conquête spatiale.\n\nMais son ambition ne s'arrête pas là. L'ESA a annoncé que des astronautes européens participeront aux prochaines missions Artemis, dont l'objectif est de retourner sur la Lune avant 2030. Thomas Pesquet est parmi les candidats potentiels pour représenter la France dans cette aventure lunaire historique. Pour des millions de jeunes Français, il est la preuve que l'espace est à la portée de tous ceux qui travaillent avec passion et persévérance.",
+  "conversation": {
+    "intro": "Rosalia regarde une vidéo sur Thomas Pesquet depuis son appartement à Santo Domingo. Elle appelle Léa, une amie française rencontrée dans un cours de français en ligne, pour partager son enthousiasme.",
+    "lines": [
+      { "speaker": "Léa", "fr": "Hey Rosalia ! T'as regardé quoi ce soir ?" },
+      { "speaker": "Rosalia", "fr": "J'ai regardé une vidéo sur Thomas Pesquet, l'astronaute français ! C'est incroyable ce qu'il a accompli.", "es": "¡Vi un video sobre Thomas Pesquet, el astronauta francés! Es increíble lo que ha logrado." },
+      { "speaker": "Léa", "fr": "Ah oui, le grand Thomas ! C'est notre fierté nationale, lui." },
+      { "speaker": "Rosalia", "fr": "Il a déjà fait deux missions dans l'espace, non ? Et il a commandé la Station spatiale internationale !", "es": "¿Ya hizo dos misiones en el espacio, verdad? ¡Y comandó la Estación Espacial Internacional!" },
+      { "speaker": "Léa", "fr": "Exactement ! Premier Français à l'avoir fait. On était tous super fiers quand c'est arrivé." },
+      { "speaker": "Rosalia", "fr": "Et il va avoir une troisième mission en 2027 ? Et après peut-être la Lune ? C'est énorme !", "es": "¿Y va a tener una tercera misión en 2027? ¿Y después quizás la Luna? ¡Es enorme!" },
+      { "speaker": "Léa", "fr": "Oui, la mission PAM-6 d'abord, puis Artemis pour aller sur la Lune avant 2030. C'est dingue non ?" },
+      { "speaker": "Rosalia", "fr": "C'est magnifique ! Clement m'a dit que les Français adorent la science. Ça me donne envie d'apprendre encore plus !", "es": "¡Es magnífico! Clement me dijo que los franceses adoran la ciencia. ¡Eso me da ganas de aprender cada vez más!" },
+      { "speaker": "Léa", "fr": "T'as regardé ça en français alors ? Ton niveau doit bien progresser !" },
+      { "speaker": "Rosalia", "fr": "Oui ! Mon novio m'a créé un site pour pratiquer tous les jours. Je comprends de mieux en mieux.", "es": "¡Sí! Mi novio me creó un sitio para practicar todos los días. Cada vez entiendo mejor." },
+      { "speaker": "Léa", "fr": "Et tu savais que les fusées Ariane décollent depuis la Guyane française ? C'est en Amérique du Sud !" },
+      { "speaker": "Rosalia", "fr": "Oui, depuis Kourou près de Cayenne ! C'est une partie de la France en Amérique du Sud, j'ai trouvé ça fascinant !", "es": "¡Sí, desde Kourou cerca de Cayena! Es una parte de Francia en América del Sur, ¡me parece fascinante!" },
+      { "speaker": "Léa", "fr": "Depuis l'équateur c'est plus efficace pour lancer des satellites. Les ingénieurs ont bien choisi l'endroit !" },
+      { "speaker": "Rosalia", "fr": "Je rêve de visiter Kourou un jour ! Et depuis Strasbourg, on peut voyager partout en France, non ?", "es": "¡Sueño con visitar Kourou algún día! Y desde Estrasburgo, se puede viajar a todas partes de Francia, ¿verdad?" },
+      { "speaker": "Léa", "fr": "Bien sûr ! Y'a des vols depuis Strasbourg parfois. T'es toujours sur Strasbourg pour les études ?" },
+      { "speaker": "Rosalia", "fr": "Oui, je vais m'inscrire à l'université populaire pour des cours de français. J'ai tellement hâte !", "es": "Sí, voy a inscribirme en la universidad popular para clases de francés. ¡Tengo muchísimas ganas!" },
+      { "speaker": "Léa", "fr": "Tu vas adorer ! Et Thomas Pesquet, t'as un préféré parmi ses photos depuis l'ISS ?" },
+      { "speaker": "Rosalia", "fr": "Toutes ! Mais surtout les Caraïbes vues du ciel. On voit tellement bien les îles... peut-être même la République dominicaine !", "es": "¡Todas! Pero sobre todo el Caribe visto desde el cielo. Se ven tan bien las islas... ¡quizás hasta la República Dominicana!" },
+      { "speaker": "Léa", "fr": "Haha probablement oui ! Bon, on se regarde son documentaire ensemble bientôt ?" },
+      { "speaker": "Rosalia", "fr": "Oui, avec plaisir ! Dis-moi quand t'es libre et on organise une soirée documentaire !", "es": "¡Sí, con mucho gusto! ¡Dime cuándo estás libre y organizamos una noche de documentales!" }
+    ]
+  },
+  "comments": [
+    {
+      "username": "SylvainB_Retraité",
+      "comment": "Encore Thomas Pesquet à la une ! Franchement, ras-le-bol. Le CNES coûte une fortune aux contribuables et pendant ce temps on ferme des hôpitaux. Priorités, les gens !!!",
+      "likes": 47
+    },
+    {
+      "username": "NatachaDurand73",
+      "comment": "Mon fils avait 8 ans pendant la mission Alpha. Il a suivi chaque sortie spatiale et regardé toutes les vidéos depuis l'ISS. Aujourd'hui il veut être ingénieur aéronautique. Thomas Pesquet lui a vraiment donné le goût des sciences.",
+      "likes": 134
+    },
+    {
+      "username": "EcoLogique_Maxime",
+      "comment": "Je comprends l'enthousiasme, mais quelle est l'empreinte carbone d'un lancement ? Des fusées qui brûlent des tonnes de kérosène pour quelques expériences... Y'a des priorités sur Terre avant de viser la Lune.",
+      "likes": 88
+    },
+    {
+      "username": "PierreTarte_Flambée",
+      "comment": "Pesquet dans l'espace, Ariane depuis Cayenne, les fusées près de l'équateur... Moi je comprends rien à tout ça mais je sais qu'il fait de belles photos. Abonné à son Insta depuis 2016, c'est ma seule contribution à la science.",
+      "likes": 312
+    },
+    {
+      "username": "Marguerite_de_l_Est",
+      "comment": "Ce qui me touche avec Thomas Pesquet, c'est qu'il vient de Rouen, une ville ordinaire. Ça prouve que n'importe quel enfant curieux peut un jour regarder la Terre depuis l'espace. Il donne de l'espoir à toute une génération.",
+      "likes": 209
+    }
+  ]
+}

@@ -581,7 +581,7 @@
       }
 
       const line = lines[this.currentLine];
-      const isRosalia = line.speaker === 'Rosalia';
+      const isRosalia = line.speaker.normalize('NFD').replace(/[̀-ͯ]/g, '') === 'Rosalia';
       const isLast = this.currentLine === lines.length - 1;
 
       // Previous message display
@@ -736,7 +736,7 @@
 
         // Update stage
         const line = lines[idx];
-        const isRosalia = line.speaker === 'Rosalia';
+        const isRosalia = line.speaker.normalize('NFD').replace(/[̀-ͯ]/g, '') === 'Rosalia';
 
         const counterEl = document.getElementById('stage-counter');
         if (counterEl) counterEl.textContent = `${idx + 1}/${lines.length}`;

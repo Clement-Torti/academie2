@@ -1,0 +1,73 @@
+{
+  "id": "cartes-pokemon",
+  "title": "Les cartes Pokémon, un phénomène mondial qui ne s'arrête pas",
+  "date": "2026-07-18",
+  "category": "Culture",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pokemon_cards_and_sets.jpg",
+    "alt": "Une collection de cartes Pokémon posées sur une table"
+  },
+  "vocabulary": [
+    { "fr": "collectionner", "es": "coleccionar" },
+    { "fr": "un booster", "es": "un sobre de cartas" },
+    { "fr": "la rareté", "es": "la rareza" },
+    { "fr": "une enchère", "es": "una subasta" },
+    { "fr": "un tournoi", "es": "un torneo" },
+    { "fr": "un deck", "es": "un mazo" },
+    { "fr": "une extension", "es": "una expansión" },
+    { "fr": "l'unboxing", "es": "la apertura de sobres" }
+  ],
+  "article": "Les cartes Pokémon existent depuis presque trente ans et elles sont plus populaires que jamais. En 1996, la compagnie japonaise Nintendo a lancé un jeu de cartes à collectionner basé sur sa célèbre franchise de jeux vidéo. Aujourd'hui, des millions de personnes dans le monde achètent, échangent et collectionnent ces petits rectangles colorés. Ce phénomène touche aussi bien les enfants que les adultes, et il ne montre aucun signe de ralentissement. Les cartes Pokémon sont devenues une véritable culture populaire mondiale.\n\nLe principe du jeu est simple à comprendre. Chaque carte représente un Pokémon, une créature imaginaire avec des caractéristiques et des pouvoirs spéciaux. Les joueurs construisent des decks de soixante cartes et s'affrontent lors de tournois officiels. Les cartes ont des niveaux de rareté différents : communes, peu communes, rares et ultra-rares. Plus une carte est rare, plus elle est difficile à trouver dans les boosters. Ces petits paquets de dix cartes sont vendus dans les boutiques spécialisées et les grandes surfaces du monde entier.\n\nLe marché des cartes Pokémon a explosé pendant la pandémie de 2020. Beaucoup de personnes ont recommencé à collectionner leurs cartes d'enfance pendant les confinements. Certaines cartes de première édition, comme le célèbre Dracaufeu, peuvent valoir plusieurs milliers d'euros lors des ventes aux enchères. En 2021, une carte Pikachu illustrateur produite en seulement quelques exemplaires a atteint le prix record de cinq millions de dollars. Ce chiffre étonnant a surpris même les collectionneurs les plus expérimentés.\n\nEn France, les cartes Pokémon sont arrivées à la fin des années quatre-vingt-dix et ont immédiatement séduit des millions d'enfants. Ces enfants sont aujourd'hui des adultes qui reviennent au jeu avec beaucoup de nostalgie. Des boutiques spécialisées dans les jeux de cartes ont ouvert dans toutes les grandes villes françaises, notamment à Paris, Lyon et Strasbourg. Des événements officiels, appelés championnats régionaux et nationaux, attirent des centaines de participants chaque week-end. La communauté française est l'une des plus actives en Europe.\n\nLes réseaux sociaux ont joué un rôle essentiel dans ce retour en force. Sur YouTube et TikTok, des vidéos d'ouverture de boosters accumulent des dizaines de millions de vues à travers le monde. Les créateurs de contenu achètent des boîtes entières et filment leur réaction en découvrant chaque carte. Cette pratique, appelée l'unboxing, passionne les fans qui espèrent voir apparaître une carte ultra-rare à l'écran. En France, plusieurs créateurs se sont entièrement spécialisés dans ce type de contenu et vivent désormais de cette passion.\n\nLes illustrateurs des cartes Pokémon sont de véritables artistes reconnus dans le monde entier. Chaque nouvelle extension introduit des illustrations originales et très soignées, parfois inspirées de l'art japonais traditionnel. Certains fans collectionnent les cartes d'un illustrateur précis plutôt que celles d'un Pokémon particulier. La dimension artistique est devenue un argument de vente important pour l'éditeur officiel. Les cartes les plus soignées s'arrachent souvent en quelques secondes lors de leur mise en vente.\n\nCependant, certains collectionneurs expriment des inquiétudes face à la hausse des prix. Les boîtes collector et les cartes rares sont parfois épuisées en quelques minutes dans les boutiques. Des revendeurs achètent de grandes quantités de produits pour les proposer à des prix bien plus élevés sur internet. Cette situation crée des frustrations dans la communauté. Pourtant, la passion pour Pokémon reste intacte. Les cartes ne sont pas seulement un jeu : elles représentent des souvenirs d'enfance et une culture partagée par plusieurs générations à travers le monde.",
+  "conversation": {
+    "intro": "Rosalía et Julien discutent en vidéo. Rosalía a vu des vidéos d'ouverture de boosters Pokémon sur TikTok et veut tout comprendre. Julien, fan et collectionneur depuis l'enfance, est ravi de lui expliquer.",
+    "lines": [
+      { "speaker": "Julien", "fr": "T'as vu les vidéos d'unboxing Pokémon sur TikTok en ce moment ? Y'a des trucs complètement dingues !" },
+      { "speaker": "Rosalia", "fr": "Oui ! J'en ai regardé plein hier soir, c'est super addictif. C'est quoi exactement ce jeu ?", "es": "¡Sí! Vi un montón anoche, es súper adictivo. ¿Qué es exactamente este juego?" },
+      { "speaker": "Julien", "fr": "C'est un jeu de cartes à collectionner, tu construis un deck et tu joues contre d'autres. Mais beaucoup de gens collectionnent juste pour avoir les cartes, sans jouer." },
+      { "speaker": "Rosalia", "fr": "Et certaines cartes valent vraiment des milliers d'euros ? J'ai vu quelqu'un qui criait de joie en ouvrant un paquet !", "es": "¿Y algunas cartas valen de verdad miles de euros? ¡Vi a alguien que gritaba de alegría al abrir un sobre!" },
+      { "speaker": "Julien", "fr": "Carrément ! Y'a des cartes de première édition qui valent une fortune. Moi j'ai commencé à collecter quand j'avais 8 ans." },
+      { "speaker": "Rosalia", "fr": "Tu as encore tes cartes d'enfance ? C'est trop beau de garder quelque chose depuis si longtemps. Et elles valent combien maintenant ?", "es": "¿Todavía tienes tus cartas de la infancia? Qué bonito guardar algo durante tanto tiempo. ¿Y cuánto valen ahora?" },
+      { "speaker": "Julien", "fr": "J'ai même retrouvé un Dracaufeu première édition dans mes vieilles affaires l'année dernière ! Je le garde, y'a pas de prix pour ça." },
+      { "speaker": "Rosalia", "fr": "Oh mon dieu, un Dracaufeu ! Clement va adorer cette histoire. Toi t'as vraiment l'âme d'un collectionneur.", "es": "¡Dios mío, un Charizard! A Clement le va a encantar esa historia. Tienes alma de verdadero coleccionista." },
+      { "speaker": "Julien", "fr": "Haha merci ! Et toi, t'as joué à Pokémon quand t'étais petite ?" },
+      { "speaker": "Rosalia", "fr": "Oui, on avait ces cartes à Santo Domingo ! On les échangeait dans la cour de l'école. J'adorais Évoli, il est trop mignon. Et toi, c'est lequel ton préféré ?", "es": "¡Sí, teníamos esas cartas en Santo Domingo! Las intercambiábamos en el patio. Me encantaba Eevee, es adorable. ¿Y cuál es el tuyo?" },
+      { "speaker": "Julien", "fr": "Dracaufeu, classique. Mais Pikachu reste l'icône absolue pour les collectionneurs." },
+      { "speaker": "Rosalia", "fr": "J'ai aussi vu qu'il y a une appli maintenant, Pokémon TCG Pocket. Tu l'as essayée ? C'est bien pour apprendre à jouer ?", "es": "También vi que hay una app, Pokémon TCG Pocket. ¿La probaste? ¿Sirve para aprender a jugar?" },
+      { "speaker": "Julien", "fr": "Ouais, j'ai téléchargé ! C'est pas pareil que les cartes physiques, mais c'est pratique pour jouer partout." },
+      { "speaker": "Rosalia", "fr": "Super ! Je vais la télécharger ce soir. Et Clement m'a dit qu'il y a des boutiques de jeux à Strasbourg, j'ai trop hâte de les découvrir !", "es": "¡Genial! La voy a descargar esta noche. Y Clement me dijo que hay tiendas de juegos en Estrasburgo, ¡tengo muchas ganas de conocerlas!" },
+      { "speaker": "Julien", "fr": "À Stras y'a une super scène cartes, t'as de la chance. Y'a des tournois presque tous les week-ends." },
+      { "speaker": "Rosalia", "fr": "Un tournoi ! C'est un peu intimidant mais ça m'attire vraiment. Tu m'apprendrais les règles avant que j'arrive en France ?", "es": "¡Un torneo! Da un poco de miedo pero me atrae mucho. ¿Me enseñarías las reglas antes de que llegue a Francia?" },
+      { "speaker": "Julien", "fr": "Bien sûr ! Et quand tu seras là, on pourra aller à un tournoi ensemble. C'est une super ambiance, très sympa." },
+      { "speaker": "Rosalia", "fr": "J'adore cette idée ! Ce sera ma petite sortie fun à Strasbourg. On pourrait y aller avec Clement aussi, non ?", "es": "¡Me encanta esa idea! Será mi pequeña salida divertida en Estrasburgo. ¿Podríamos ir con Clement también, no?" },
+      { "speaker": "Julien", "fr": "Carrément, plus on est de fous ! Et si tu trouves une belle carte dans un booster, tu m'envoies une photo direct." },
+      { "speaker": "Rosalia", "fr": "Promis ! Et si tu retrouves d'autres cartes rares dans tes vieilles affaires, tu me dis aussi. On fait équipe !", "es": "¡Prometido! Y si encuentras más cartas raras entre tus cosas viejas, avísame. ¡Hacemos equipo!" }
+    ]
+  },
+  "comments": [
+    {
+      "username": "FrancoisEnColere93",
+      "comment": "Ces revendeurs qui vident les rayons en cinq minutes pour tout revendre le triple sur internet, c'est une honte absolue. J'ai essayé d'acheter une boîte pour l'anniversaire de mon fils, épuisé partout. Pokémon devrait imposer une limite d'achat par personne, c'est du bon sens élémentaire !",
+      "likes": 87
+    },
+    {
+      "username": "Margaux_nostalgie_TCG",
+      "comment": "J'ai retrouvé mes cartes Pokémon dans une boîte à chaussures au grenier de ma mère. Un Mewtwo holographique en parfait état que j'avais complètement oublié ! Mon neveu de 9 ans l'a regardé avec des étoiles dans les yeux. Je lui ai donné. Je ne regrette pas une seconde.",
+      "likes": 203
+    },
+    {
+      "username": "ThomasRationaliste42",
+      "comment": "Payer cinq millions pour un bout de carton illustré, c'est de la spéculation pure et simple. Ce hobby avait quelque chose de beau au départ, mais quand les financiers s'en emparent, ça perd son âme. Les vraies cartes de jeu ne valent rien, seul l'investissement compte désormais.",
+      "likes": 56
+    },
+    {
+      "username": "PikaWho_retraite",
+      "comment": "J'ai acheté mon premier booster à 47 ans pour voir ce que c'était. J'ai eu dix cartes communes. Mon chat en a mangé trois. L'autre jour il a vomi une carte rare. C'est donc lui le vrai collectionneur de la maison et je ne suis que son assistant.",
+      "likes": 412
+    },
+    {
+      "username": "LolaEtSonEevee",
+      "comment": "Mon fils de 7 ans et moi on ouvre un booster ensemble chaque samedi matin. Il m'explique chaque Pokémon avec une passion incroyable, c'est lui le prof et moi l'élève. Ces moments valent bien plus que n'importe quelle carte rare. Merci Pokémon pour ces souvenirs qu'on construit ensemble.",
+      "likes": 318
+    }
+  ]
+}

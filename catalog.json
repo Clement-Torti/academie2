@@ -1,5 +1,19 @@
 [
   {
+    "id": "youtube-francais",
+    "title": "Le YouTube français : créateurs et contenus qui font le buzz",
+    "date": "2026-07-18",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Youtube_Creator_Award.jpg",
+    "category": "Culture"
+  },
+  {
+    "id": "jeux-centroamericains-caraibes-saint-domingue-2026",
+    "title": "Saint-Domingue accueille les Jeux centraméricains des Caraïbes",
+    "date": "2026-07-18",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Estadio_Ol%C3%ADmpico_F%C3%A9lix_S%C3%A1nchez.jpg",
+    "category": "Sport"
+  },
+  {
     "id": "tornade-grele-saint-etienne-2026",
     "title": "Tornade et grêlons géants frappent la région de Saint-Étienne",
     "date": "2026-07-18",

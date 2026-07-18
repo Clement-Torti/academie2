@@ -1,0 +1,72 @@
+{
+  "id": "jeux-centroamericains-caraibes-saint-domingue-2026",
+  "title": "Saint-Domingue accueille les Jeux centraméricains des Caraïbes",
+  "date": "2026-07-18",
+  "category": "Sport",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Estadio_Ol%C3%ADmpico_F%C3%A9lix_S%C3%A1nchez.jpg",
+    "alt": "Le stade Olímpico Félix Sánchez à Saint-Domingue, principal site des XXV Jeux centraméricains et des Caraïbes"
+  },
+  "vocabulary": [
+    { "fr": "accueillir", "es": "acoger" },
+    { "fr": "le centenaire", "es": "el centenario" },
+    { "fr": "la mascotte", "es": "la mascota" },
+    { "fr": "la délégation", "es": "la delegación" },
+    { "fr": "endémique", "es": "endémico/a" },
+    { "fr": "la résilience", "es": "la resiliencia" },
+    { "fr": "l'hospitalité", "es": "la hospitalidad" }
+  ],
+  "article": "Du 24 juillet au 8 août 2026, la ville de Saint-Domingue accueille les XXV Jeux centraméricains et des Caraïbes. C'est l'un des plus grands événements sportifs de toute la région. Cette édition est très particulière car elle marque le centenaire de la compétition. En effet, les premiers Jeux centraméricains et des Caraïbes ont eu lieu en 1926, exactement cent ans auparavant. La République dominicaine est donc fière d'organiser ce moment historique.\n\nPour cette édition anniversaire, plus de six mille athlètes participent aux compétitions. Ils viennent de trente-sept nations d'Amérique centrale et des Caraïbes. Au programme, quarante sports différents sont proposés, avec cinq cent un événements répartis en cinquante-six disciplines. C'est l'édition la plus complète de l'histoire de ces Jeux. Des disciplines populaires comme l'athlétisme, la natation, le basketball et le baseball sont bien représentées. En parallèle, des sports plus récents comme l'esport et le skateboard font leur apparition pour la première fois dans cette grande compétition régionale.\n\nLe principal stade de l'événement est le Estadio Olímpico Félix Sánchez, le plus grand stade de la capitale dominicaine. C'est là que s'est déroulée la cérémonie d'ouverture le 24 juillet 2026. Le spectacle a été inspiré par le thème officiel des Jeux : « Cent ans d'union, une seule région, un seul cœur ». La cérémonie a mis en valeur la culture dominicaine et caribéenne. Le président de la République, Luis Abinader, a officiellement déclaré les Jeux ouverts devant des milliers de spectateurs.\n\nLa mascotte officielle de ces Jeux s'appelle Colí. Il s'agit d'un tody hispaniolan, un petit oiseau très coloré et endémique de l'île d'Hispaniola. Ce choix symbolique représente l'authenticité dominicaine, la résilience de la population et l'hospitalité naturelle du pays. La mascotte reflète aussi l'engagement des organisateurs pour le respect de l'environnement et la durabilité de l'événement. Colí est rapidement devenu très populaire auprès des sportifs et des nombreux supporters qui suivent les Jeux.\n\nAvant l'ouverture des Jeux, une flamme sportive a traversé tout le pays lors d'un grand relais symbolique. Ce parcours a été nommé « Route Wiche García Saleta », en hommage à Juan Ulises García Saleta, surnommé Wiche, fondateur de l'olympisme dominicain. La flamme est partie du Palais national de Saint-Domingue le 6 mai 2026. Pendant plusieurs semaines, elle a parcouru différentes régions de la République dominicaine, rassemblant des milliers de personnes sur son passage, avant d'arriver au stade Félix Sánchez lors de la cérémonie d'ouverture.\n\nCes Jeux se distinguent aussi par le retour et l'arrivée de nouvelles disciplines sportives. Le cricket revient à la compétition après plusieurs années d'absence. Le squash et le ski nautique font également leur retour dans le programme. De plus, l'esport et le skateboard entrent pour la première fois dans l'histoire des Jeux centraméricains et des Caraïbes. Ces changements montrent que la compétition cherche à s'adapter aux nouvelles tendances du sport international.\n\nPour la République dominicaine, accueillir ces Jeux centenaires représente une grande fierté nationale. C'est la troisième fois que le pays organise cet événement sportif majeur dans son histoire. Des installations modernes ont été construites et rénovées pour accueillir dans les meilleures conditions les milliers d'athlètes et de visiteurs internationaux. Saint-Domingue espère aussi profiter de cet événement exceptionnel pour promouvoir son tourisme et sa riche culture auprès du monde entier. Les sportifs dominicains, eux, rêvent de briller devant leur public lors de cette édition unique et historique.",
+  "conversation": {
+    "intro": "Rosalia est chez elle avec Clément quand Antoine, un ami français de Clément, les appelle par vidéo. Antoine a vu les nouvelles sur les Jeux centraméricains et des Caraïbes qui se déroulent en ce moment même à Saint-Domingue. Il veut que Rosalia lui raconte l'ambiance dans la ville.",
+    "lines": [
+      { "speaker": "Antoine", "fr": "Rosalia, t'as vu ? Les Jeux centraméricains et des Caraïbes se passent chez toi !" },
+      { "speaker": "Rosalia", "fr": "Oui ! On n'arrête pas d'en parler ici, c'est une ambiance de folie dans toute la ville.", "es": "¡Sí! No paramos de hablar de eso, el ambiente está de locura en toda la ciudad." },
+      { "speaker": "Antoine", "fr": "C'est quoi exactement ces Jeux ? Je connais pas bien ça." },
+      { "speaker": "Rosalia", "fr": "C'est comme les Jeux olympiques de la région. C'est la vingt-cinquième édition et c'est le centième anniversaire !", "es": "Es como los Juegos Olímpicos de la región. ¡Es la vigesimoquinta edición y además el centenario!" },
+      { "speaker": "Antoine", "fr": "Cent ans ! Et ça se passe dans quel stade exactement ?" },
+      { "speaker": "Rosalia", "fr": "Au Estadio Olímpico Félix Sánchez, le plus grand stade du pays. C'est pas loin de chez moi !", "es": "En el Estadio Olímpico Félix Sánchez, el estadio más grande del país. ¡Queda cerca de mi casa!" },
+      { "speaker": "Antoine", "fr": "T'as déjà eu l'occasion d'aller voir des épreuves en vrai ?" },
+      { "speaker": "Rosalia", "fr": "Pas encore, mais Clément et moi on a regardé la cérémonie d'ouverture. C'était magnifique, vraiment très bien fait !", "es": "Todavía no, pero Clément y yo vimos la ceremonia de apertura. ¡Fue preciosa, muy bien montada!" },
+      { "speaker": "Antoine", "fr": "J'ai vu qu'y'a une mascotte, c'est quel animal ?" },
+      { "speaker": "Rosalia", "fr": "C'est un oiseau endémique d'Hispaniola qui s'appelle Colí. Il est trop mignon, tout le monde l'adore ici !", "es": "Es un pájaro endémico de La Española que se llama Colí. ¡Es adorable, aquí todo el mundo lo quiere!" },
+      { "speaker": "Antoine", "fr": "Y'a combien d'athlètes qui participent à ces Jeux ?" },
+      { "speaker": "Rosalia", "fr": "Plus de six mille athlètes venus de trente-sept pays ! Et quarante sports au programme, même l'esport et le skateboard.", "es": "¡Más de seis mil atletas de treinta y siete países! Y cuarenta deportes en el programa, incluso los esports y el skateboard." },
+      { "speaker": "Antoine", "fr": "L'esport dans les Jeux centraméricains, c'est original. Les Dominicains sont forts dans quel sport ?" },
+      { "speaker": "Rosalia", "fr": "Le baseball bien sûr, c'est notre sport national ! Mon père est dingue de ça, il rate jamais un match.", "es": "¡El béisbol por supuesto, es nuestro deporte nacional! Mi papá está loco con eso, no se pierde ningún partido." },
+      { "speaker": "Antoine", "fr": "Trop cool ! Vous avez prévu d'aller voir des matchs de baseball ?" },
+      { "speaker": "Rosalia", "fr": "On espère y aller avec Clément si on trouve des billets. Ce serait parfait avant notre déménagement à Strasbourg !", "es": "Esperamos ir con Clément si conseguimos entradas. ¡Sería perfecto antes de nuestra mudanza a Estrasburgo!" },
+      { "speaker": "Antoine", "fr": "Et l'ambiance dans la ville ces derniers jours, ça change quoi ?" },
+      { "speaker": "Rosalia", "fr": "Des drapeaux de partout, des touristes caribéens dans toutes les rues. Saint-Domingue est transformée, c'est très festif !", "es": "Banderas por todas partes, turistas caribeños en todas las calles. ¡Santo Domingo está transformada, es muy festivo!" },
+      { "speaker": "Antoine", "fr": "J'aurais bien aimé venir voir ça en vrai !" },
+      { "speaker": "Rosalia", "fr": "La prochaine fois tu viens ! Et quand tu nous rends visite à Strasbourg, raconte-nous tout ce que t'as raté ici.", "es": "¡La próxima vez vienes! Y cuando nos visites en Estrasburgo, cuéntanos todo lo que te perdiste aquí." }
+    ]
+  },
+  "comments": [
+    {
+      "username": "TicketsEnColere_2026",
+      "comment": "ENCORE une fois les billets partent en quelques minutes et les revendeurs s'en mettent plein les poches au double du prix ! J'ai essayé pendant 3 heures sur le site officiel pour la finale de baseball, résultat zéro. On parle de jeux régionaux et même les locaux peuvent pas y accéder, c'est une HONTE.",
+      "likes": 47
+    },
+    {
+      "username": "Memoire_1986_RD",
+      "comment": "Mon père a assisté aux Jeux centraméricains à Saint-Domingue en 1986, quand la RD avait déjà accueilli l'événement. Il me raconte encore comment l'ambiance dans les rues était magique. Quarante ans plus tard, c'est à mon tour de vivre ce moment. On a prévu d'y aller avec lui samedi pour l'athlétisme.",
+      "likes": 134
+    },
+    {
+      "username": "SportVraiSportPhy",
+      "comment": "Je suis désolé mais l'esport dans des Jeux athlétiques c'est du grand n'importe quoi. On parle d'un événement qui célèbre 100 ans de sport physique et on y met des gars assis devant des ordinateurs ? Prochaine étape c'est les échecs en compétition officielle j'imagine. Le sport c'est le sport, pas les jeux vidéo.",
+      "likes": 89
+    },
+    {
+      "username": "BirdWatcher_Caraibes",
+      "comment": "Moi depuis l'annonce de la mascotte Colí j'arrive plus à regarder les Jeux normalement. Je passe l'intégralité des épreuves à scanner les tribunes pour voir si quelqu'un a un déguisement de tody hispaniolan. J'en ai trouvé un hier dans les tribunes de natation. Il avait l'air très fier. Je le respecte.",
+      "likes": 387
+    },
+    {
+      "username": "OrgueilleDominicain",
+      "comment": "Voir mon pays accueillir ces Jeux pour la troisième fois de l'histoire, c'est une émotion difficile à décrire. Les jeunes athlètes dominicains qui s'entraînent depuis des années pour briller devant leur propre public, ça me touche vraiment. Peu importe les médailles, cette édition restera gravée dans notre mémoire collective. Viva la RD !",
+      "likes": 212
+    }
+  ]
+}

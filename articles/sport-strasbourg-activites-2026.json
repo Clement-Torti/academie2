@@ -1,0 +1,73 @@
+{
+  "id": "sport-strasbourg-activites-2026",
+  "title": "Faire du sport à Strasbourg : une ville faite pour bouger",
+  "date": "2026-07-18",
+  "category": "Sport",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Strasbourg_Orangerie_parc_park_%285995185403%29.jpg",
+    "alt": "Le parc de l'Orangerie à Strasbourg, l'un des espaces verts préférés des joggeurs strasbourgeois"
+  },
+  "vocabulary": [
+    { "fr": "les vitaboucles", "es": "los circuitos de fitness señalizados al aire libre" },
+    { "fr": "balisé(e)", "es": "señalizado(a), marcado(a)" },
+    { "fr": "transfrontalier(ère)", "es": "transfronterizo(a)" },
+    { "fr": "l'aviron", "es": "el remo" },
+    { "fr": "l'escalade", "es": "la escalada" },
+    { "fr": "la voie verte", "es": "la vía verde (carril bici o sendero ecológico)" },
+    { "fr": "fédérer", "es": "federar, agrupar" },
+    { "fr": "la cotisation", "es": "la cuota de inscripción o de membresía" }
+  ],
+  "article": "Strasbourg est une ville qui invite à bouger. Entre ses parcs verdoyants, ses nombreuses pistes cyclables et ses associations sportives dynamiques, la cité alsacienne offre de multiples possibilités pour pratiquer une activité physique régulière. Que l'on soit débutant ou sportif confirmé, il est facile de trouver une discipline adaptée à ses envies, à son budget et à son emploi du temps.\n\nPour les amateurs de course à pied, les espaces verts de Strasbourg sont idéaux. Le parc de l'Orangerie, situé en plein centre-ville, propose une boucle de 2,2 kilomètres très appréciée des joggeurs. Le parc du Contades, le parc de Pourtalès sur 25 hectares et le parc de la Citadelle sont aussi parfaits pour courir au milieu de la nature. Pour les plus motivés, les vitaboucles proposent des parcours balisés de 6 à 9 kilomètres, avec des exercices sportifs variés installés dans différents quartiers de la ville.\n\nLe vélo tient une place essentielle dans la vie quotidienne à Strasbourg. La ville est reconnue comme l'une des plus cyclistes de France, avec un réseau étendu de pistes cyclables bien entretenues. La voie verte du canal de la Bruche permet de rouler en toute sécurité jusqu'à la campagne alsacienne. Le Jardin des Deux-Rives, un espace transfrontalier de 150 hectares entre la France et l'Allemagne, est parfait pour une sortie à vélo en famille. Le système de vélos en libre-service facilite également les déplacements quotidiens dans la ville.\n\nLes sports aquatiques sont aussi très accessibles à Strasbourg. Les Bains Municipaux proposent des cours de natation, d'aquagym et de swimcross, une discipline originale qui combine la natation avec des exercices de fitness. Le Rowing Club de Strasbourg accueille les débutants pour des sorties sur l'Ill et le canal Rhône-Rhin. L'aviron est un sport complet qui améliore la coordination, l'équilibre et la force musculaire. Le canoë-kayak est aussi pratiqué sur les cours d'eau de la ville, avec le club ASPCA.\n\nCeux qui cherchent des activités plus originales ne sont pas en reste. Roc en Stock est la plus grande salle d'escalade indoor d'Alsace. Elle a été récemment rénovée et accueille des grimpeurs de tous les niveaux, même les enfants dès deux ans. Le parkour, qui consiste à franchir des obstacles urbains de manière acrobatique sans équipement, se pratique avec le groupe PK Stras. Le yoga antigravity, réalisé dans des hamacs de tissu suspendus au plafond, est une activité tendance très appréciée pour soulager les articulations et améliorer l'équilibre.\n\nPour s'inscrire dans un club, les options ne manquent pas. L'Office des Sports de Strasbourg fédère plus de 200 associations sportives représentant 126 disciplines différentes. L'ASPTT Strasbourg est l'un des clubs les plus importants de la ville. Il propose plus de 30 sports en loisirs ou en compétition, du tennis à la boxe en passant par la natation et les arts martiaux. La Strasbourgeoise réunit plus de 750 membres autour d'une quinzaine de disciplines. Les cotisations sont souvent très raisonnables.\n\nPratiquer une activité physique à Strasbourg est donc accessible à tous les profils. La ville organise régulièrement des événements sportifs ouverts au public, comme la Strasbourgeoise, une grande course féminine et solidaire qui attire des milliers de participantes chaque année. Le site Strasbourg.eu permet de rechercher facilement une activité selon son quartier, son niveau et ses disponibilités. Pour les nouveaux arrivants, le sport est une excellente façon de découvrir la ville et de rencontrer des habitants.",
+  "conversation": {
+    "intro": "Rosalia tombe sur un article sur les activités sportives à Strasbourg en naviguant sur internet. Elle envoie le lien à Sophie, une Strasbourgeoise rencontrée dans un groupe Facebook pour les futurs habitants de la ville, et elles échangent en visio.",
+    "lines": [
+      { "speaker": "Sophie", "fr": "Alors, t'as vu l'article sur les sports à Strasbourg ? Y'a tellement d'options !" },
+      { "speaker": "Rosalia", "fr": "Oui ! J'étais vraiment surprise par le nombre d'activités. À Santo Domingo, c'est beaucoup moins organisé.", "es": "¡Sí! Me sorprendió mucho la cantidad de actividades. En Santo Domingo todo está mucho menos organizado." },
+      { "speaker": "Sophie", "fr": "Moi je cours au parc de l'Orangerie deux fois par semaine, c'est mon truc préféré." },
+      { "speaker": "Rosalia", "fr": "La boucle de 2,2 km, j'ai vu ! C'est vrai que les parcs sont beaux à l'automne là-bas ?", "es": "¡Vi la vuelta de 2,2 km! ¿Es verdad que los parques son bonitos en otoño allí?" },
+      { "speaker": "Sophie", "fr": "Complètement ! Les arbres sont tout dorés, c'est magnifique. Et l'été, des gens font du yoga dans les parcs." },
+      { "speaker": "Rosalia", "fr": "Le yoga j'ai essayé une fois, j'étais vraiment pas douée haha. Mais l'escalade ça m'a l'air super !", "es": "Una vez probé el yoga y no era nada buena jaja. ¡Pero la escalada me parece genial!" },
+      { "speaker": "Sophie", "fr": "Roc en Stock c'est parfait pour débuter ! Ils ont des cours pour tous les niveaux sans équipement." },
+      { "speaker": "Rosalia", "fr": "En RD on a peu de salles d'escalade. Clement et moi on veut absolument essayer dès qu'on arrive !", "es": "En RD hay pocas salas de escalada. ¡Clement y yo queremos ir sí o sí en cuanto lleguemos!" },
+      { "speaker": "Sophie", "fr": "Vous allez adorer ! Et via l'Office des Sports, les tarifs sont vraiment accessibles." },
+      { "speaker": "Rosalia", "fr": "Plus de 200 associations, c'est énorme ! Et le sport c'est une bonne façon de rencontrer des gens, non ?", "es": "¡Más de 200 asociaciones, es una barbaridad! Y el deporte es una buena forma de conocer gente, ¿verdad?" },
+      { "speaker": "Sophie", "fr": "Exactement ! Moi j'ai rencontré mes meilleures amies dans mon club de natation, y'a deux ans." },
+      { "speaker": "Rosalia", "fr": "C'est exactement ce que j'espère. Je suis un peu timide au départ mais le sport aide à briser la glace.", "es": "Es justo lo que espero. Soy un poco tímida al principio pero el deporte ayuda a romper el hielo." },
+      { "speaker": "Sophie", "fr": "Et t'auras le vélo aussi ! C'est le moyen de transport numéro un à Strasbourg, tout le monde l'utilise." },
+      { "speaker": "Rosalia", "fr": "On va explorer les alentours à vélo avec Clement le week-end. T'as essayé l'aviron toi ?", "es": "Vamos a explorar los alrededores en bici con Clement los fines de semana. ¿Tú has probado el remo?" },
+      { "speaker": "Sophie", "fr": "Oui ! J'ai fait une initiation sur l'Ill. La vue sur la ville depuis l'eau, c'est vraiment magique." },
+      { "speaker": "Rosalia", "fr": "Ça donne trop envie ! On devrait aller ensemble à Roc en Stock quand j'arrive. T'es partante ?", "es": "¡Me dan muchas ganas! Deberíamos ir juntas a Roc en Stock cuando llegue. ¿Te apuntas?" },
+      { "speaker": "Sophie", "fr": "Avec plaisir ! Je t'emmènerai dans tous les bons spots sportifs de la ville." },
+      { "speaker": "Rosalia", "fr": "Parfait ! Clement dit que Strasbourg est super dynamique. J'ai vraiment hâte de commencer cette nouvelle vie !", "es": "¡Genial! Clement dice que Strasbourg es súper dinámica. ¡Tengo muchísimas ganas de empezar esta nueva vida!" },
+      { "speaker": "Sophie", "fr": "C'est dans combien de temps ton arrivée ?" },
+      { "speaker": "Rosalia", "fr": "Début 2027 si tout va bien ! Le temps de finir mes études et d'obtenir mon visa. C'est bientôt !", "es": "¡A principios de 2027 si todo va bien! El tiempo de terminar mis estudios y conseguir el visado. ¡Ya queda poco!" }
+    ]
+  },
+  "comments": [
+    {
+      "username": "StrasbourgDecu67",
+      "comment": "Super l'article mais c'est du vent ! Les piscines municipales sont déjà surchargées et les clubs affichent complet depuis des mois. On parle de sport pour tous mais les listes d'attente sont interminables. Un peu d'honnêteté s'il vous plaît !!!",
+      "likes": 87
+    },
+    {
+      "username": "MarathonienneDeContades",
+      "comment": "J'ai commencé à courir à l'Orangerie il y a trois ans, complètement nulle. Aujourd'hui j'ai terminé mon premier semi-marathon ! La boucle de 2,2 km c'est vraiment magique pour progresser, je la recommande à tous les débutants.",
+      "likes": 234
+    },
+    {
+      "username": "VeloSceptique_68",
+      "comment": "Très bien tout ça, mais cet article présente le sport en club comme la seule solution. Beaucoup de gens préfèrent courir seuls ou faire du yoga chez eux sans payer de cotisation. Pourquoi toujours promouvoir les associations payantes ?",
+      "likes": 56
+    },
+    {
+      "username": "AquagymMotiveOuPas",
+      "comment": "J'ai testé l'aquagym aux Bains Municipaux en pensant que c'était tranquille. Résultat : j'ai failli me noyer à côté de trois mamies de 80 ans qui faisaient des sauts parfaits. Respect total à ces championnes, je suis humilié 😂",
+      "likes": 478
+    },
+    {
+      "username": "NouvelleVieStras2025",
+      "comment": "Je suis arrivée il y a six mois sans connaître personne. J'ai rejoint La Strasbourgeoise et ça a tout changé pour moi. Des activités accessibles et des rencontres incroyables. Merci Strasbourg pour cette communauté si chaleureuse !",
+      "likes": 312
+    }
+  ]
+}

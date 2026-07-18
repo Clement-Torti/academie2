@@ -1,0 +1,152 @@
+{
+  "id": "sos-libido-strasbourgeoises-2026",
+  "title": "SOS libido : quand le désir s'absente",
+  "date": "2026-05-02",
+  "category": "Santé",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Petite_France_Strasbourg.jpg",
+    "alt": "La Petite France à Strasbourg, quartier pittoresque au bord de l'Ill"
+  },
+  "vocabulary": [
+    {
+      "fr": "la libido",
+      "es": "la libido"
+    },
+    {
+      "fr": "le désir",
+      "es": "el deseo"
+    },
+    {
+      "fr": "l'intimité",
+      "es": "la intimidad"
+    },
+    {
+      "fr": "le tabou",
+      "es": "el tabú"
+    },
+    {
+      "fr": "briser le silence",
+      "es": "romper el silencio"
+    },
+    {
+      "fr": "témoigner",
+      "es": "dar testimonio"
+    },
+    {
+      "fr": "épuisant(e)",
+      "es": "agotador(a)"
+    },
+    {
+      "fr": "normaliser",
+      "es": "normalizar"
+    },
+    {
+      "fr": "hormonal(e)",
+      "es": "hormonal"
+    },
+    {
+      "fr": "la pression",
+      "es": "la presión"
+    }
+  ],
+  "article": "Pokaa est un magazine en ligne dédié à la vie à Strasbourg. En mai 2026, le site a publié un article sur un sujet que beaucoup de femmes vivent en silence : l'absence de désir sexuel. Quatre femmes strasbourgeoises ont accepté de témoigner de manière anonyme. Leurs témoignages sont honnêtes, courageux, et utiles pour toutes celles qui vivent la même chose.\n\nLe désir sexuel, ou libido, peut varier beaucoup d'une personne à l'autre. Il peut aussi changer au cours de la vie selon de nombreux facteurs. Il est donc tout à fait normal de traverser des périodes où cette envie diminue ou disparaît. Mais quand cette absence dure longtemps et devient une source d'inquiétude, il est important d'en parler.\n\nLes quatre femmes de l'article expliquent les raisons de leur baisse de désir. Pour certaines, c'est la fatigue et le stress du quotidien. Après une longue journée de travail épuisante, il ne reste souvent plus d'énergie pour l'intimité. Pour d'autres, ce sont des changements hormonaux. La prise de contraceptifs, par exemple, peut fortement influencer la libido. Une des femmes raconte qu'elle a complètement perdu son désir après avoir changé de pilule.\n\nLes tensions dans la relation de couple sont aussi mentionnées. Quand la communication entre partenaires est difficile, le désir peut disparaître. Comme le dit une des femmes : « On ne peut pas désirer quelqu'un avec qui on ne se sent pas bien. »\n\nL'un des messages les plus importants de cet article est le suivant : beaucoup de femmes vivent cette situation, mais très peu en parlent. Elles se sentent seules et ont l'impression que quelque chose ne va pas chez elles. C'est un tabou difficile à briser.\n\nPourtant, les quatre femmes encouragent toutes à briser ce silence. Parler de la libido sans honte, que ce soit avec une amie de confiance, un médecin, ou son partenaire, est souvent le premier pas vers un mieux-être. Les spécialistes rappellent que les causes peuvent être très simples à traiter : un changement de contraceptif, un manque de sommeil, ou un déséquilibre hormonal facile à corriger.\n\nLa communication dans le couple est aussi présentée comme une clé essentielle. Exprimer ses besoins, ses envies et ses limites à son partenaire peut transformer une relation. Ces conversations sont parfois difficiles à commencer, mais elles sont très bénéfiques.\n\nEn parlant ouvertement de ces sujets, des magazines comme Pokaa aident à normaliser des réalités que beaucoup vivent en silence. L'absence de désir n'est pas une anomalie ni une faiblesse. C'est une expérience humaine, et il est temps d'en parler librement.",
+  "conversation": {
+    "intro": "Rosalia et Camille sont dans un café du centre-ville de Strasbourg. Camille a lu l'article de Pokaa sur la libido et en parle à Rosalia.",
+    "lines": [
+      {
+        "speaker": "Camille",
+        "fr": "T'as vu le dernier article sur Pokaa ? Quatre filles de Stras qui parlent de leur libido..."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Non, j'ai pas vu ! C'est quoi exactement Pokaa ? C'est un magazine de Strasbourg ?",
+        "es": "¡No, no lo vi! ¿Qué es exactamente Pokaa? ¿Es una revista de Estrasburgo?"
+      },
+      {
+        "speaker": "Camille",
+        "fr": "Oui, c'est un média en ligne sur tout ce qui se passe à Stras. L'article parle de femmes qui n'ont plus envie de rien dans leur vie intime."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Ah intéressant... Elles parlent de ça publiquement ? Ça me surprend un peu, chez moi en RD c'est vraiment tabou ce genre de sujets. Et toi tu as trouvé l'article comment ?",
+        "es": "Ah interesante... ¿Hablan de eso públicamente? Me sorprende un poco, donde yo soy, en RD, este tipo de temas es realmente tabú. ¿Y tú cómo encontraste el artículo?"
+      },
+      {
+        "speaker": "Camille",
+        "fr": "Par Instagram. J'ai trouvé ça courageux de leur part. Et franchement, j'avais pas réalisé que c'était si répandu."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "C'est vrai qu'on entend pas souvent parler de ça. Ils expliquent pourquoi ça arrive ? C'est quoi les raisons qu'ils donnent ?",
+        "es": "Es verdad que no escuchas hablar de eso con frecuencia. ¿Explican por qué pasa? ¿Cuáles son las razones que dan?"
+      },
+      {
+        "speaker": "Camille",
+        "fr": "Plein de choses : le stress, la fatigue, les hormones... Une des filles a changé de pilule et voilà, plus rien."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Ah ouais les hormones ça change vraiment tout ! Et pour la fatigue je comprends bien, tu rentres crevée du travail et t'as plus envie de rien... Et pour la relation de couple, elles disaient quoi ?",
+        "es": "¡Ah sí, las hormonas lo cambian todo realmente! Y para la fatiga lo entiendo bien, llegas agotada del trabajo y ya no tienes ganas de nada... ¿Y sobre la relación de pareja, qué decían?"
+      },
+      {
+        "speaker": "Camille",
+        "fr": "Que la communication c'est super important. Si ça va pas entre les deux, le désir peut disparaître complètement."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "C'est logique ça. La communication c'est vraiment la base d'un couple. Mais c'est pas toujours facile d'aborder ces sujets avec son partenaire, t'as un conseil ?",
+        "es": "Eso es lógico. La comunicación es realmente la base de una pareja. Pero no siempre es fácil abordar estos temas con tu pareja, ¿tienes algún consejo?"
+      },
+      {
+        "speaker": "Camille",
+        "fr": "Trouver le bon moment, quand vous êtes tous les deux détendus. Et ne pas en faire un reproche, juste expliquer ce qu'on ressent."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Oui bonne idée, le timing c'est tout ! Clément et moi on essaie d'être ouverts là-dessus. Tu penses que c'est un problème surtout pour les femmes, ou les hommes aussi peuvent vivre ça ?",
+        "es": "Sí, buena idea, ¡el momento lo es todo! Clément y yo intentamos ser abiertos en eso. ¿Crees que es un problema sobre todo para las mujeres, o los hombres también pueden vivirlo?"
+      },
+      {
+        "speaker": "Camille",
+        "fr": "Je pense que ça touche tout le monde, mais les femmes en parlent encore moins. C'est plus tabou pour elles."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "C'est vraiment dommage ça. Il faudrait normaliser tout ça. L'article donne des pistes pour aller mieux ?",
+        "es": "Es realmente una lástima. Habría que normalizar todo eso. ¿El artículo da pistas para mejorar?"
+      },
+      {
+        "speaker": "Camille",
+        "fr": "Oui ! Consulter un médecin d'abord pour les causes hormonales, et aussi prendre soin de soi. Dormir mieux, moins stresser, faire du sport..."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Et surtout parler, j'imagine. C'est bien que des magazines comme Pokaa abordent ces sujets ouvertement. Tu connais d'autres articles intéressants sur des thèmes de santé comme ça ?",
+        "es": "Y sobre todo hablar, me imagino. Está bien que revistas como Pokaa aborden estos temas abiertamente. ¿Conoces otros artículos interesantes sobre temas de salud como ese?"
+      }
+    ]
+  },
+  "comments": [
+    {
+      "username": "MamieDiscrète_67",
+      "comment": "J'ai 62 ans et je peux confirmer : de ma génération, on n'en parlait JAMAIS. Ces femmes sont courageuses. Ma fille m'a envoyé l'article et on a eu notre première vraie discussion là-dessus. Merci Pokaa.",
+      "likes": 412
+    },
+    {
+      "username": "DrSophieMeyer_Gyneco",
+      "comment": "En tant que gynécologue je veux rappeler : la baisse de libido peut souvent s'expliquer par des causes simples et traitables (changement de contraceptif, manque de fer, fatigue chronique). N'hésitez pas à en parler lors de votre prochaine consultation !",
+      "likes": 538
+    },
+    {
+      "username": "Ludo_Strasbourg",
+      "comment": "Je l'ai lu avec ma copine ce soir. On a eu une des meilleures conversations de notre relation depuis. C'est bête qu'il faut un article pour ouvrir ces discussions, mais tant mieux.",
+      "likes": 298
+    },
+    {
+      "username": "Noemie_B_",
+      "comment": "Je pensais vraiment que j'étais la seule à vivre ça. Lire ces témoignages c'est à la fois triste et tellement libérateur. Je vais enfin en parler à mon médecin.",
+      "likes": 203
+    }
+  ]
+}

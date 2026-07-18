@@ -1,0 +1,75 @@
+{
+  "id": "carnaval-strasbourg-2026-affiche-ia",
+  "title": "L'affiche du carnaval de Strasbourg créée par une IA",
+  "date": "2026-07-18",
+  "category": "Culture",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Carnaval_Strasbourg_(73377499).jpeg",
+    "alt": "Participants déguisés au carnaval de Strasbourg"
+  },
+  "vocabulary": [
+    { "fr": "une affiche", "es": "un cartel / un póster" },
+    { "fr": "la polémique", "es": "la polémica" },
+    { "fr": "choquer", "es": "escandalizar / impactar" },
+    { "fr": "la paresse", "es": "la pereza" },
+    { "fr": "une illustratrice", "es": "una ilustradora" },
+    { "fr": "nuire à", "es": "perjudicar / dañar" },
+    { "fr": "la mairie", "es": "el ayuntamiento" },
+    { "fr": "un délai", "es": "un plazo" },
+    { "fr": "une commande", "es": "un encargo" },
+    { "fr": "générer", "es": "generar" }
+  ],
+  "article": "L'intelligence artificielle envahit de nombreux secteurs professionnels, et le monde de l'art n'y échappe pas. À Strasbourg, une polémique inattendue a secoué la communauté artistique au début de l'année 2026. Il a été révélé que l'affiche officielle du carnaval avait été générée par un outil d'intelligence artificielle. Cette nouvelle a provoqué la colère de nombreux artistes et illustrateurs, qui ont dénoncé ce choix comme un mauvais signal pour toute la profession créative.\n\nLe carnaval de Strasbourg est une fête très appréciée des habitants de la ville et de toute l'Alsace. Chaque année, des milliers de personnes défilent dans les rues pour profiter des festivités en famille. Pour annoncer l'édition 2026, la mairie a confié la création de l'affiche promotionnelle à une agence de communication locale appelée Welcome Bizance. C'est cette agence qui a proposé de recourir à l'intelligence artificielle générative pour produire le visuel, sans faire appel à un illustrateur humain.\n\nLe moment choisi pour cette révélation a amplifié la polémique. En effet, la nouvelle est tombée pendant la 11e édition des Rencontres de l'illustration de Strasbourg, un festival annuel qui célèbre le travail des illustrateurs professionnels. Strasbourg se présente d'ailleurs comme un haut lieu de l'illustration en France, avec une communauté créative très dynamique. Pour beaucoup d'artistes présents à cet événement, apprendre que la mairie avait utilisé une IA pour une commande officielle était très difficile à accepter.\n\nL'illustratrice Amandine Piu est l'une des voix les plus entendues dans ce débat. Elle avait signé plusieurs affiches du carnaval de Strasbourg jusqu'en 2020, et elle ne comprend pas le choix de recourir à l'IA. Elle a déclaré : \"Je pense qu'ils ne sont pas obligés d'utiliser l'IA, clairement. C'est de la paresse.\" Par ailleurs, plusieurs illustrateurs ont remarqué que l'affiche générée ressemblait à son style graphique, ce qui a soulevé des questions sur un possible plagiat de son travail.\n\nL'agence Welcome Bizance a tenté de justifier son choix. Son directeur a expliqué que l'agence disposait de seulement neuf jours pour livrer le projet, avec un budget très limité. Selon lui, demander à plusieurs illustrateurs de soumettre chacun une proposition aurait coûté trop cher. En effet, dans le milieu de l'illustration, chaque artiste est rémunéré pour sa proposition, même si son projet n'est pas retenu. Face à ces contraintes, l'IA semblait être la solution la plus rapide et la moins chère.\n\nLa polémique a eu des conséquences concrètes sur la politique culturelle de la ville. Suite aux vives critiques des artistes et de nombreux médias, la nouvelle équipe municipale de Strasbourg a pris une position claire. Le département de la culture a annoncé son refus d'utiliser l'intelligence artificielle générative pour les communications officielles de la ville. Un responsable municipal a déclaré : \"On ne peut pas d'un côté dire qu'on veut soutenir les artistes et de l'autre côté autoriser l'utilisation d'un outil qui nuit à l'écosystème de la création.\"\n\nCette affaire dépasse les frontières de Strasbourg et pose des questions importantes pour toute la société. En France et en Europe, de nombreux artistes et graphistes réclament des règles claires sur l'utilisation de l'IA dans les commandes publiques et privées. Certains défenseurs de l'IA estiment qu'elle permet de réduire les coûts et d'accélérer la production de visuels. Pourtant, pour la majorité des créateurs, elle représente surtout une menace directe pour leurs revenus et pour la valeur de leur travail. Il reste à trouver un équilibre entre l'innovation technologique et la protection des métiers artistiques.",
+  "conversation": {
+    "intro": "Léa et Rosalia discutent dans un café à Santo Domingo. Léa montre à Rosalia un article sur son téléphone à propos de l'affiche du carnaval de Strasbourg créée par une IA. Le sujet intéresse particulièrement Rosalia, qui se prépare à déménager à Strasbourg.",
+    "lines": [
+      { "speaker": "Léa", "fr": "Hé, t'as vu ça ? L'affiche du carnaval de Strasbourg a été faite par une IA !" },
+      { "speaker": "Rosalia", "fr": "Sérieusement ? Et les artistes de la ville, ils ont réagi comment ?", "es": "¿En serio? ¿Y los artistas de la ciudad cómo reaccionaron?" },
+      { "speaker": "Léa", "fr": "Ils sont hors d'eux ! Il y avait justement un festival pour les illustrateurs à ce moment-là." },
+      { "speaker": "Rosalia", "fr": "C'est vraiment une mauvaise coïncidence. Célébrer les illustrateurs et utiliser l'IA en même temps...", "es": "Es realmente una mala coincidencia. Celebrar a los ilustradores y usar la IA al mismo tiempo..." },
+      { "speaker": "Léa", "fr": "Exactement ! Une illustratrice, Amandine Piu, a dit que c'était de la paresse pure et simple." },
+      { "speaker": "Rosalia", "fr": "Elle a raison. Je comprends les contraintes de budget, mais quand même, c'est pas cool du tout !", "es": "Tiene razón. Entiendo las limitaciones de presupuesto, pero aun así, ¡no está bien para nada!" },
+      { "speaker": "Léa", "fr": "L'agence dit qu'ils avaient seulement neuf jours et pas assez de budget pour un illustrateur." },
+      { "speaker": "Rosalia", "fr": "Neuf jours c'est court, oui. Mais c'est pas une raison pour prendre le travail d'un artiste !", "es": "Nueve días es poco, sí. ¡Pero eso no es razón para quitarle el trabajo a un artista!" },
+      { "speaker": "Léa", "fr": "La mairie a finalement dit non à l'IA après la polémique. C'est une bonne nouvelle, non ?" },
+      { "speaker": "Rosalia", "fr": "Oui, ça c'est bien ! On peut pas soutenir les artistes et en même temps leur faire du mal.", "es": "Sí, ¡eso está bien! No puedes apoyar a los artistas y al mismo tiempo hacerles daño." },
+      { "speaker": "Léa", "fr": "T'as bien résumé ! Dis, ton français progresse vraiment vite ces derniers temps." },
+      { "speaker": "Rosalia", "fr": "Merci ! Clement m'a fait un site pour m'entraîner chaque jour, c'est vraiment super efficace !", "es": "¡Gracias! Clement me hizo un sitio para practicar cada día, ¡es súper efectivo de verdad!" },
+      { "speaker": "Léa", "fr": "Ah trop bien ça. Et Strasbourg, c'est quand même un haut lieu de l'illustration en France." },
+      { "speaker": "Rosalia", "fr": "Oui, ça m'a surprise ! C'est rassurant de voir que la ville protège ses artistes. Je vais bientôt habiter là-bas !", "es": "Sí, ¡me sorprendió! Es reconfortante ver que la ciudad protege a sus artistas. ¡Pronto voy a vivir allá!" },
+      { "speaker": "Léa", "fr": "Exactement ! Et avec ton expérience en marketing, t'auras de belles opportunités là-bas." },
+      { "speaker": "Rosalia", "fr": "J'espère ! J'ai un peu peur d'être recrutée comme étrangère, mais Clement dit que c'est plutôt un avantage.", "es": "¡Espero que sí! Tengo un poco de miedo de que me contraten solo por ser extranjera, pero Clement dice que es más bien una ventaja." },
+      { "speaker": "Léa", "fr": "Il a raison. Et voir les artistes se battre pour leurs droits, c'est un bon signe pour la ville." },
+      { "speaker": "Rosalia", "fr": "Tout à fait. Et des articles comme celui-là m'aident vraiment à apprendre du vocabulaire en français !", "es": "Totalmente. ¡Y artículos como este me ayudan de verdad a aprender vocabulario en francés!" },
+      { "speaker": "Léa", "fr": "Super méthode ! Et on va au carnaval ensemble l'année prochaine alors ?" },
+      { "speaker": "Rosalia", "fr": "Évidemment ! Et j'espère que l'affiche sera faite par un vrai illustrateur cette fois !", "es": "¡Por supuesto! ¡Y espero que el cartel sea hecho por un ilustrador de verdad esta vez!" }
+    ]
+  },
+  "comments": [
+    {
+      "username": "PinceauEnColere",
+      "comment": "C'est scandaleux ! La ville se vante d'être la capitale de l'illustration et elle crache sur ses propres artistes avec une vulgaire image d'IA. C'est une honte absolue, et les responsables ne méritent pas leur poste.",
+      "likes": 87
+    },
+    {
+      "username": "Lucie_Alsace_Design",
+      "comment": "J'ai justement postulé pour la communication du carnaval l'année dernière et on m'a dit qu'il n'y avait pas de budget. Maintenant je vois que le budget était là, mais pour payer un abonnement à une appli d'IA. Merci beaucoup.",
+      "likes": 134
+    },
+    {
+      "username": "TechOptimiste42",
+      "comment": "Je suis illustrateur et je trouve la réaction exagérée. L'IA est un outil comme un autre. Le vrai problème c'est les budgets ridicules imposés aux agences, pas la technologie en elle-même. On devrait se battre contre ça plutôt.",
+      "likes": 45
+    },
+    {
+      "username": "MoiCestGerard_Alsace",
+      "comment": "Ma chatte Riesling avait griffonné quelque chose avec sa patte sur mon carnet, on aurait pu l'utiliser comme affiche. Elle travaille pour des croquettes et elle rend en dix minutes. Appelez-moi pour le carnaval 2027.",
+      "likes": 312
+    },
+    {
+      "username": "FanDesRuelles_67",
+      "comment": "Contente de voir que la nouvelle équipe municipale a écouté les artistes. Les illustrateurs de Strasbourg sont incroyables et ils méritent vraiment d'être soutenus. Cette polémique aura au moins servi à quelque chose.",
+      "likes": 203
+    }
+  ]
+}

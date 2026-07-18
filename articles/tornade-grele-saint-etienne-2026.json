@@ -1,0 +1,75 @@
+{
+  "id": "tornade-grele-saint-etienne-2026",
+  "title": "Tornade et grêlons géants frappent la région de Saint-Étienne",
+  "date": "2026-07-18",
+  "category": "Société",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hailstones_(11_August_2010)_(Elk_Park_Pass,_northeast_of_Butte,_Montana,_USA)_5.jpg",
+    "alt": "Gros grêlons tombés lors d'une tempête"
+  },
+  "vocabulary": [
+    { "fr": "un grêlon", "es": "un granizo" },
+    { "fr": "une tornade", "es": "un tornado" },
+    { "fr": "les secours", "es": "los equipos de socorro" },
+    { "fr": "une toiture", "es": "un tejado" },
+    { "fr": "une rafale de vent", "es": "una ráfaga de viento" },
+    { "fr": "les dégâts", "es": "los daños" },
+    { "fr": "sinistré(e)", "es": "damnificado(a)" },
+    { "fr": "une alerte orange", "es": "una alerta naranja" },
+    { "fr": "une indemnisation", "es": "una indemnización" },
+    { "fr": "une cellule orageuse", "es": "una célula tormentosa" }
+  ],
+  "article": "Le jeudi 16 juillet 2026, un épisode météorologique exceptionnel a frappé la région de Saint-Étienne, dans le département de la Loire. Une mini-tornade accompagnée de grêlons géants a causé des dégâts importants dans plusieurs communes du secteur. Cet événement a rappelé une fois de plus que la France est de plus en plus touchée par des phénomènes climatiques extrêmes en période estivale.\n\nLa tornade a touché principalement la commune de Villars, située au nord de Saint-Étienne. Les vents ont arraché de nombreux arbres et endommagé des toitures. Deux familles ont dû quitter leur logement en urgence, car leurs toits ont été complètement détruits. Environ 1 000 habitants se sont retrouvés sans électricité à cause de poteaux électriques renversés par les rafales. Sur l'autoroute A72, deux camions ont été retournés par la violence du vent, bloquant la circulation pendant plusieurs heures. Les rafales ont atteint entre 80 et 100 km/h, avec des pointes locales allant jusqu'à 120 km/h.\n\nEn même temps, des grêlons de grande taille sont tombés sur plusieurs communes voisines. À Andrézieux-Bouthéon et à Saint-Just-Saint-Rambert, les habitants ont observé des grêlons dépassant trois centimètres de diamètre. Selon les témoignages recueillis sur place, certains grêlons étaient aussi gros que des balles de golf. Ces énormes morceaux de glace ont abîmé de nombreuses voitures, brisé des fenêtres et détruit des cultures agricoles dans toute la plaine du Forez.\n\nLes dégâts ont également touché des commerces locaux. Le magasin Auchan Drive de Villars a été sévèrement endommagé. La tempête a renversé des arbres et des poteaux électriques dans le parking. Un magasin King Jouet situé à proximité a aussi subi des dommages importants. La résidence Emeis, un EHPAD du secteur, a vu plusieurs de ses fenêtres brisées. Heureusement, les résidents âgés n'ont pas été blessés grâce à la réaction rapide du personnel soignant.\n\nLes services de secours ont réagi très vite. Dès 19 heures, les pompiers de la Loire avaient réalisé 142 interventions avec 88 sapeurs-pompiers mobilisés. Ils ont sécurisé des bâtiments dangereux, dégagé des routes bloquées par des arbres tombés et assisté les familles déplacées. Des équipes ont également travaillé toute la nuit pour rétablir l'électricité. La préfecture de la Loire a maintenu une alerte orange pour les orages, avec des précipitations estimées à 20 à 40 millimètres par heure et une forte activité électrique.\n\nLa procédure de reconnaissance de catastrophe naturelle a été rapidement engagée par les autorités locales. Cette décision est très importante pour les habitants et les entreprises sinistrées. Elle leur permet d'accéder plus facilement aux indemnisations de leurs assurances et de recevoir une aide de l'État. Les élus locaux ont salué la réactivité des secours et ont promis de rendre visite aux familles touchées dans les jours suivants.\n\nCet épisode n'est cependant pas un cas isolé. La France connaît de plus en plus souvent des épisodes météorologiques intenses en été. Les experts de Météo-France expliquent comment ces orages se forment. Des masses d'air chaud et humide rencontrent des courants d'air froid en altitude et créent des cellules orageuses très actives. Ces conditions produisent parfois des tornades et de la grêle de grande taille. Le changement climatique accentue la fréquence de ces phénomènes extrêmes en France et en Europe. La région Auvergne-Rhône-Alpes est particulièrement exposée à cause de son relief montagneux. Face à ces risques grandissants, les autorités appellent la population à ne jamais prendre les alertes météo à la légère.",
+  "conversation": {
+    "intro": "Antoine a vu les informations sur la tornade qui a frappé la région de Saint-Étienne la veille. Il contacte Rosalia en ligne pour lui raconter ce qui s'est passé. Rosalia, qui prépare son déménagement à Strasbourg, s'intéresse de près à la météo en France.",
+    "lines": [
+      { "speaker": "Antoine", "fr": "Tu as vu les infos ? Y'a eu une tornade près de Saint-Étienne hier soir !" },
+      { "speaker": "Rosalia", "fr": "Sérieusement ? Une vraie tornade en France ? Je croyais que c'était plutôt en Amérique !", "es": "¿En serio? ¿Un tornado de verdad en Francia? Pensaba que eso era más bien en América." },
+      { "speaker": "Antoine", "fr": "Ouais, une mini-tornade à Villars. Des arbres arrachés, des camions renversés sur l'autoroute... c'est fou." },
+      { "speaker": "Rosalia", "fr": "C'est impressionnant ! Il y a eu des blessés ? J'espère que tout le monde va bien.", "es": "¡Qué fuerte! ¿Hubo heridos? Espero que todo el mundo esté bien." },
+      { "speaker": "Antoine", "fr": "Pas de blessés graves, heureusement. Mais des familles ont dû partir de chez elles à cause des toits détruits." },
+      { "speaker": "Rosalia", "fr": "Il paraît qu'il y avait des grêlons énormes aussi, non ? J'ai vu des vidéos sur TikTok !", "es": "¿Y dicen que había granizos enormes también? ¡Vi unos videos en TikTok, eran impresionantes!" },
+      { "speaker": "Antoine", "fr": "Oui, des grêlons aussi gros que des balles de golf ! C'est vraiment rare chez nous, normalement." },
+      { "speaker": "Rosalia", "fr": "Dans les Caraïbes on a des cyclones, mais la grêle c'est très rare chez nous !", "es": "En el Caribe tenemos ciclones, pero el granizo es muy raro por allá." },
+      { "speaker": "Antoine", "fr": "Les cyclones, c'est encore plus dangereux, non ?" },
+      { "speaker": "Rosalia", "fr": "Oui, mais on y est habitués ! On sait lire les alertes et on sait comment se protéger.", "es": "Sí, pero estamos acostumbrados. Sabemos leer las alertas y sabemos cómo protegernos." },
+      { "speaker": "Antoine", "fr": "Et toi, tu arrives à Strasbourg l'année prochaine ? Là-bas, y'a des orages aussi en été." },
+      { "speaker": "Rosalia", "fr": "Oui, j'attends ça avec impatience ! La neige, le froid... c'est tellement différent de Santo Domingo !", "es": "¡Sí, lo espero con muchas ganas! La nieve, el frío... es tan diferente a Santo Domingo." },
+      { "speaker": "Antoine", "fr": "Et un orage comme ça, tu aurais peur ?" },
+      { "speaker": "Rosalia", "fr": "Peur ? Non, plutôt excitée ! Je vais faire attention, mais c'est une nouvelle aventure.", "es": "¿Miedo? ¡No, más bien emocionada! Voy a tener cuidado, claro, pero es una aventura nueva." },
+      { "speaker": "Antoine", "fr": "T'as vu que les autorités ont lancé la procédure de catastrophe naturelle ? Ça aide les gens pour les assurances." },
+      { "speaker": "Rosalia", "fr": "C'est bien ça. En France il y a de bons systèmes de protection. Ça me rassure pour mon avenir là-bas !", "es": "Eso está bien. En Francia hay buenos sistemas de protección. ¡Me tranquiliza para mi futuro allá!" },
+      { "speaker": "Antoine", "fr": "À Strasbourg y'a pas trop de tornades, mais des gros orages l'été, oui !" },
+      { "speaker": "Rosalia", "fr": "Je vais regarder comment fonctionne le système d'alerte météo. T'as une application à me recommander ?", "es": "Voy a ver cómo funciona el sistema de alertas del tiempo. ¿Tienes alguna app que me recomiendas?" },
+      { "speaker": "Antoine", "fr": "Météo-France, c'est l'appli officielle. Tu peux suivre les alertes par département." },
+      { "speaker": "Rosalia", "fr": "Parfait, je la télécharge maintenant ! Et je regarde aussi pour le Bas-Rhin. C'est concret tout ça !", "es": "¡Perfecto, la descargo ahora mismo! Y miro también para el Bas-Rhin. ¡Ya se vuelve real todo esto!" }
+    ]
+  },
+  "comments": [
+    {
+      "username": "MeteoRageuse_42",
+      "comment": "C'est SCANDALEUX que personne n'ait anticipé ça ! Une alerte orange, c'était insuffisant pour des grêlons pareils. Les autorités auraient dû fermer l'A72 AVANT que les camions se renversent. On attend toujours que le drame arrive pour réagir. Incompétence totale.",
+      "likes": 18
+    },
+    {
+      "username": "LoiretteDepuis1985",
+      "comment": "J'étais pile au Auchan Drive quand ça a commencé. J'ai eu juste le temps de rentrer dans ma voiture que les grêlons frappaient le pare-brise. Ma voisine a sa voiture complètement cabossée, elle est dévastée. Ces images vont me rester longtemps.",
+      "likes": 87
+    },
+    {
+      "username": "GrelleOuPas_Loire",
+      "comment": "Arrêtons avec les catastrophes naturelles pour chaque orage ! Des grêlons de 3 cm et du vent à 100 km/h c'est certes impressionnant, mais ça arrive chaque été dans la Loire. La procédure d'indemnisation va encore coûter une fortune aux contribuables pour des dégâts assurables.",
+      "likes": 34
+    },
+    {
+      "username": "CanardGlace_du_Forez",
+      "comment": "Des grêlons gros comme des balles de golf... j'aurais pu ouvrir un parcours de golf spontané dans mon jardin. Malheureusement ma voiture ressemble maintenant plus à une passoire qu'à un véhicule. Bon, au moins je n'ai pas eu à arroser les plantes.",
+      "likes": 312
+    },
+    {
+      "username": "SapeurPompier_PasDeRetraite",
+      "comment": "Respect infini aux 88 pompiers qui ont réalisé 142 interventions en quelques heures. Ces femmes et ces hommes méritent toute notre reconnaissance — on ne les voit que dans les moments difficiles, mais ils sont là à chaque fois. Chapeau bas.",
+      "likes": 198
+    }
+  ]
+}

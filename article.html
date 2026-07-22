@@ -347,6 +347,12 @@
                   style="color:rgba(255,255,255,.4);">1/1</span>
             <span id="stage-timer" class="text-[10px] font-mono"
                   style="color:rgba(255,255,255,.28);">0:00</span>
+            <button id="tts-retry-btn" onclick="conv.retryAudio()"
+                    title="Relancer le son"
+                    class="w-7 h-7 rounded-lg flex items-center justify-center transition active:bg-white/20"
+                    style="color:rgba(255,255,255,.45);">
+              <i class="fa-solid fa-rotate-right text-xs"></i>
+            </button>
           </div>
         </div>
 
@@ -772,6 +778,24 @@
 
       this.state = 'playing';
       playLine(startIdx);
+    },
+
+    retryAudio() {
+      player._paused = false;
+      const icon = document.getElementById('stage-pause-icon');
+      if (icon) icon.className = 'fa-solid fa-pause text-lg';
+      tts.stop();
+      const btn = document.getElementById('tts-retry-btn');
+      if (btn) {
+        btn.style.color = '#D4AF37';
+        setTimeout(() => { btn.style.color = 'rgba(255,255,255,.45)'; }, 600);
+      }
+      if (this.state === 'playing') {
+        setTimeout(() => conv._playChain(this._currentPlayIdx), 300);
+      } else if (this.currentLine >= 0) {
+        const line = this.data?.conversation?.lines?.[this.currentLine];
+        if (line) setTimeout(() => tts._speak(line.fr), 300);
+      }
     },
 
     _esc(str) {

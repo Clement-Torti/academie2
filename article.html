@@ -680,14 +680,18 @@
 
     _markCompleted() {
       const today = new Date().toISOString().split('T')[0];
-      const id    = this.data?.id;
+      const id    = this.data?.id || new URLSearchParams(location.search).get('id');
       const days  = JSON.parse(localStorage.getItem('acad2_days') || '{}');
-      if (typeof days[today] === 'object') {
+      if (typeof days[today] === 'object' && days[today] !== null) {
         days[today].status = 'completed';
         days[today].articleId = id;
       } else {
         days[today] = { status: 'completed', articleId: id };
       }
+
+      // Also track in a flat list so manual "mark as read" and cross-day lookups work
+      const read = JSON.parse(localStorage.getItem('acad2_read_ids') || '[]');
+      if (id && !read.includes(id)) { read.push(id); localStorage.setItem('acad2_read_ids', JSON.stringify(read)); }
       localStorage.setItem('acad2_days', JSON.stringify(days));
       const stats     = JSON.parse(localStorage.getItem('acad2_stats') || '{"sessions":[],"streak":0,"lastCompletedDate":null}');
       const last      = stats.lastCompletedDate;

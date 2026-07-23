@@ -286,10 +286,11 @@
 <script>
 const home = {
 
-    get stats()  { return JSON.parse(localStorage.getItem('acad2_stats')  || '{"sessions":[],"streak":0,"lastCompletedDate":null}'); },
-    get cfg()    { return JSON.parse(localStorage.getItem('acad2_config') || '{"wordsPerDay":800,"sentencesPerSession":7}'); },
-    get days()   { return JSON.parse(localStorage.getItem('acad2_days')   || '{}'); },
-    get vocab()  { return JSON.parse(localStorage.getItem('acad_user_vocab') || '[]'); },
+    get stats()    { return JSON.parse(localStorage.getItem('acad2_stats')    || '{"sessions":[],"streak":0,"lastCompletedDate":null}'); },
+    get cfg()      { return JSON.parse(localStorage.getItem('acad2_config')  || '{"wordsPerDay":800,"sentencesPerSession":7}'); },
+    get days()     { return JSON.parse(localStorage.getItem('acad2_days')    || '{}'); },
+    get vocab()    { return JSON.parse(localStorage.getItem('acad_user_vocab') || '[]'); },
+    get readIds()  { return new Set(JSON.parse(localStorage.getItem('acad2_read_ids') || '[]')); },
 
     // ════════════════════════════════════════════════════════════
     //  INIT
@@ -415,13 +416,11 @@ const home = {
             return;
         }
 
-        // Calcul des articles lus (articleId dans days avec status completed)
-        const readIds = new Set(
-            Object.values(days)
-                .filter(d => typeof d === 'object' && d.status === 'completed')
-                .map(d => d.articleId)
-                .filter(Boolean)
-        );
+        // Articles lus : combinaison de acad2_read_ids (liste plate) + days (sessions)
+        const readIds = this.readIds;
+        Object.values(days)
+            .filter(d => d !== null && typeof d === 'object' && d.status === 'completed' && d.articleId)
+            .forEach(d => readIds.add(d.articleId));
 
         const unread = catalog
             .slice().sort((a, b) => b.date.localeCompare(a.date))
@@ -438,6 +437,15 @@ const home = {
 
         grid.innerHTML = unread.map(a => this._articleCard(a, false)).join('');
         grid.style.display = 'grid';
+    },
+
+    markAsRead(articleId) {
+        const read = JSON.parse(localStorage.getItem('acad2_read_ids') || '[]');
+        if (!read.includes(articleId)) {
+            read.push(articleId);
+            localStorage.setItem('acad2_read_ids', JSON.stringify(read));
+        }
+        this.loadCatalog().then(catalog => this.renderArticlesGrid(catalog)).catch(() => {});
     },
 
     _articleCard(a) {
@@ -460,11 +468,17 @@ const home = {
               <div class="p-4">
                 <h3 class="font-bold text-frBlue text-sm leading-snug mb-1 line-clamp-2">${this._esc(a.title)}</h3>
                 <p class="text-[11px] text-gray-400">${dateStr}</p>
-                <div class="mt-3 pt-3 border-t border-gray-100">
+                <div class="mt-3 pt-3 border-t border-gray-100 flex flex-col gap-2">
                   <span class="flex items-center justify-center gap-1.5 w-full
                                bg-frBlue text-white text-[11px] font-bold py-2.5 rounded-xl">
                     <i class="fa-solid fa-play text-[9px]"></i> Commencer la leçon
                   </span>
+                  <button onclick="event.preventDefault();event.stopPropagation();home.markAsRead('${this._esc(a.id)}')"
+                          class="flex items-center justify-center gap-1.5 w-full text-[10px] font-bold
+                                 text-gray-400 hover:text-green-600 py-1.5 rounded-lg transition
+                                 hover:bg-green-50 active:scale-95">
+                    <i class="fa-solid fa-check text-[9px]"></i> Déjà lu
+                  </button>
                 </div>
               </div>
             </a>`;

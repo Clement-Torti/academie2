@@ -1,0 +1,75 @@
+{
+  "id": "chef-dominicaine-selection-espagnole-coupe-monde-2026",
+  "title": "Une cheffe dominicaine aux fourneaux de la Sélection espagnole",
+  "date": "2026-07-25",
+  "category": "Sport",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mega_Adventures_Dominican_Food.jpg",
+    "alt": "Plats typiques de la cuisine dominicaine"
+  },
+  "vocabulary": [
+    { "fr": "la gastronomie", "es": "la gastronomía" },
+    { "fr": "les glucides", "es": "los carbohidratos" },
+    { "fr": "déguster", "es": "degustar / saborear" },
+    { "fr": "un incontournable", "es": "algo imprescindible" },
+    { "fr": "mettre en lumière", "es": "poner en evidencia" },
+    { "fr": "le mangu", "es": "el mangú" },
+    { "fr": "le sancocho", "es": "el sancocho" },
+    { "fr": "un contrat", "es": "un contrato" },
+    { "fr": "les Caraïbes", "es": "el Caribe" },
+    { "fr": "une compétition", "es": "una competición" }
+  ],
+  "article": "La Coupe du Monde 2026 a réservé bien des surprises, notamment en dehors du terrain. Cette année, la Fédération espagnole de football a fait un choix inhabituel pour nourrir ses joueurs pendant le tournoi. Au lieu d'engager un grand chef européen, elle a confié la cuisine à María Antonia Sánchez, une cheffe dominicaine de trente-huit ans originaire de Saint-Domingue. Son histoire a rapidement passionné les médias du monde entier et mis en lumière la richesse de la cuisine des Caraïbes.\n\nMaría Antonia a grandi dans une famille où la cuisine occupait une place très importante. Sa mère lui a transmis les secrets des plats traditionnels dominicains dès son plus jeune âge. Elle a ensuite étudié la gastronomie à l'Université Autonome de Saint-Domingue, avant de travailler dans des restaurants réputés aux États-Unis et en Espagne. Elle a ainsi développé un style culinaire unique, qui mélange les saveurs des Caraïbes avec les techniques de la cuisine européenne moderne.\n\nLa Fédération espagnole a contacté María Antonia en janvier 2026. Le directeur sportif de l'équipe voulait apporter quelque chose de nouveau aux joueurs avant la compétition. Il pensait qu'une cuisine plus colorée et plus variée pouvait améliorer leur moral et leur énergie pendant les matchs. Après une semaine de tests et de dégustations, les responsables de la Fédération ont signé un contrat avec la cheffe pour toute la durée du tournoi.\n\nAvant le coup d'envoi de la Coupe du Monde, María Antonia a adapté ses recettes aux besoins des footballeurs professionnels. Elle a travaillé avec les médecins et les nutritionnistes de l'équipe pour trouver le bon équilibre entre les protéines, les glucides et les légumes. Plusieurs plats dominicains sont devenus des incontournables du quotidien des joueurs. Le mangu, une purée de plantains verts, a été très apprécié pour ses glucides lents et son goût original. Le sancocho, une soupe épaisse à base de viandes et de légumes, a également beaucoup plu à toute l'équipe.\n\nPendant la compétition, les joueurs ont régulièrement exprimé leur enthousiasme pour la cuisine de María Antonia. Plusieurs d'entre eux ont publié des vidéos sur les réseaux sociaux en train de déguster ses plats. Ces vidéos ont reçu des millions de vues et ont contribué à faire connaître la cuisine dominicaine à un très large public international. La Sélection espagnole a réalisé un excellent parcours dans la compétition, et certains journalistes sportifs ont même dit que la qualité de l'alimentation avait joué un rôle dans les belles performances de l'équipe.\n\nAprès le tournoi, María Antonia est retournée en République dominicaine avec une réputation internationale. De nombreux chefs et institutions culinaires du monde entier l'ont contactée pour des collaborations. Elle a accordé plusieurs interviews à des chaînes de télévision internationales et a exprimé son désir d'ouvrir un restaurant gastronomique à Madrid dans les prochains mois. Elle souhaite continuer à faire rayonner la culture culinaire de son pays à travers le monde.\n\nL'histoire de María Antonia Sánchez illustre parfaitement la richesse des échanges culturels dans le monde du sport. Elle prouve qu'un talent peut venir de n'importe quel pays et apporter quelque chose d'inédit à une équipe de haut niveau. Sa présence pendant la Coupe du Monde 2026 a ouvert de nombreux débats sur le rôle de la gastronomie dans la performance sportive. Elle a aussi contribué à valoriser les cuisines des Caraïbes sur la scène internationale.",
+  "conversation": {
+    "intro": "Marc et Rosalia discutent dans un café après avoir lu un article sur María Antonia Sánchez. Rosalia, qui est dominicaine, reconnaît immédiatement les plats mentionnés et ne peut pas s'empêcher de partager son enthousiasme.",
+    "lines": [
+      { "speaker": "Marc", "fr": "Hé Rosalia, t'as vu cet article ? Une cheffe dominicaine a cuisiné pour la Sélection espagnole à la Coupe du Monde !" },
+      { "speaker": "Rosalia", "fr": "Oui, j'ai lu ça ce matin et je suis tellement fière ! C'est incroyable de voir une Dominicaine reconnue à ce niveau-là. Tu savais que c'est du mangu et du sancocho qu'elle a préparé ?", "es": "¡Sí, lo leí esta mañana y estoy tan orgullosa! Es increíble ver a una dominicana reconocida a ese nivel. ¿Sabías que preparó mangú y sancocho?" },
+      { "speaker": "Marc", "fr": "J'ai pas reconnu les noms. C'est quoi exactement le mangu ?" },
+      { "speaker": "Rosalia", "fr": "C'est une purée de plantains verts, ça se mange au petit-déjeuner avec des œufs et du fromage frit. C'est le plat dominicain par excellence ! Toi tu aimes les trucs salés le matin ?", "es": "Es un puré de plátano verde, se come en el desayuno con huevos y queso frito. ¡Es el plato dominicano por excelencia! ¿A ti te gustan las cosas saladas por la mañana?" },
+      { "speaker": "Marc", "fr": "Bof, moi c'est plutôt café-croissant. Mais ça a l'air vraiment bon ce que tu décris !" },
+      { "speaker": "Rosalia", "fr": "C'est délicieux, je t'assure ! Et le sancocho c'est une soupe avec de la viande et des légumes, ça réchauffe vraiment. Ma maman le prépare tous les dimanches en famille, c'est un rituel.", "es": "¡Está delicioso, te lo juro! Y el sancocho es una sopa con carne y vegetales, reconforta mucho. Mi mamá lo prepara todos los domingos en familia, es un ritual." },
+      { "speaker": "Marc", "fr": "Sympa ! Et toi tu sais préparer ces plats ?" },
+      { "speaker": "Rosalia", "fr": "Bien sûr, j'ai appris avec ma maman depuis petite ! J'adore cuisiner. Et quand je serai à Strasbourg, je vais en préparer pour tout le monde — Clement aime déjà le sancocho.", "es": "¡Claro, aprendí con mi mamá desde pequeña! Me encanta cocinar. Y cuando esté en Estrasburgo voy a prepararlo para todo el mundo — a Clement ya le encanta el sancocho." },
+      { "speaker": "Marc", "fr": "Haha, j'attends ça avec impatience ! Tu penses que la cuisine a vraiment aidé l'équipe espagnole à mieux jouer ?" },
+      { "speaker": "Rosalia", "fr": "Oui je crois ! Quand tu manges bien tu as plus d'énergie et tu te sens mieux dans ta tête. Et puis découvrir une nouvelle cuisine change l'ambiance dans le groupe.", "es": "¡Sí, lo creo! Cuando comes bien tienes más energía y te sientes mejor mentalmente. Y además descubrir una nueva cocina cambia el ambiente en el grupo." },
+      { "speaker": "Marc", "fr": "C'est un bon argument. Et tu vois un lien avec toi aussi ? Elle est dominicaine et elle a réussi en Europe." },
+      { "speaker": "Rosalia", "fr": "Vraiment oui, ça m'inspire beaucoup ! Elle a étudié, travaillé dur, et maintenant tout le monde la connaît. Ça me donne encore plus envie de me lancer à Strasbourg et de montrer ce que je vaux.", "es": "¡Sí, de verdad, me inspira mucho! Estudió, trabajó duro y ahora todo el mundo la conoce. Me da aún más ganas de lanzarme en Estrasburgo y demostrar lo que valgo." },
+      { "speaker": "Marc", "fr": "Elle veut ouvrir un restaurant à Madrid après ça. T'irais le visiter ?" },
+      { "speaker": "Rosalia", "fr": "Absolument, j'irais direct ! Et je lui poserais plein de questions sur son parcours. C'est une femme inspirante, elle prouve qu'on peut aller loin avec sa passion.", "es": "¡Por supuesto, iría directo! Y le haría montones de preguntas sobre su trayectoria. Es una mujer inspiradora, demuestra que se puede llegar lejos con la pasión." },
+      { "speaker": "Marc", "fr": "Je suis sûr que toi aussi tu vas cartonner à Strasbourg ! Et tu vas convertir tous les Alsaciens à la cuisine dominicaine ?" },
+      { "speaker": "Rosalia", "fr": "Haha c'est le plan ! Je commence par les amis de Clement. Je cherche aussi des recettes healthy dominicaines sur TikTok en ce moment, c'est super bon.", "es": "¡Jaja, ese es el plan! Empiezo por los amigos de Clement. También estoy buscando recetas saludables dominicanas en TikTok ahora mismo, están buenísimas." },
+      { "speaker": "Marc", "fr": "Healthy et dominicain, c'est compatible ?" },
+      { "speaker": "Rosalia", "fr": "Complètement ! Y'a plein de plats avec des légumes, des légumineuses, du poisson. La cuisine dominicaine c'est pas que du riz frit, hein ! Et toi t'as un plat étranger préféré ?", "es": "¡Completamente! Hay muchos platos con verduras, legumbres, pescado. La cocina dominicana no es solo arroz frito. ¿Y tú tienes un plato extranjero favorito?" },
+      { "speaker": "Marc", "fr": "Les sushis, sans hésiter. Bon écoute, avec tout ce que tu m'as décrit, t'as intérêt à m'inviter à Strasbourg pour goûter !" },
+      { "speaker": "Rosalia", "fr": "Compte sur moi, tu es invité ! On va faire un vrai repas dominicain — mangu le matin, sancocho le soir. Et après tu me parles des meilleurs restaurants de Strasbourg !", "es": "¡Cuenta con eso, estás invitado! Vamos a hacer una comida dominicana de verdad — mangú en la mañana, sancocho en la noche. ¡Y después me hablas de los mejores restaurantes de Estrasburgo!" }
+    ]
+  },
+  "comments": [
+    {
+      "username": "FedFoot_EnColere77",
+      "comment": "Encore une fois on préfère aller chercher quelqu'un à l'étranger plutôt que de valoriser nos propres chefs espagnols ! La Fédération aurait pu soutenir la gastronomie locale. C'est un manque de respect total envers nos professionnels qui cherchent du travail.",
+      "likes": 47
+    },
+    {
+      "username": "Marcos_Cuisine_Madrid",
+      "comment": "Marrant, j'ai mangé du sancocho dominicain pour la première fois chez un collègue il y a quelques années. Je suis retourné chez lui plusieurs fois tellement c'était bon. La cuisine caraïbéenne est vraiment sous-estimée en Europe.",
+      "likes": 134
+    },
+    {
+      "username": "SportNutrition_Analyste",
+      "comment": "Soyons sérieux : attribuer les performances d'une équipe de foot à la nourriture c'est un peu tiré par les cheveux. Les joueurs de haut niveau ont des régimes ultra-contrôlés depuis des années. L'histoire est sympa mais le lien de causalité est franchement discutable.",
+      "likes": 89
+    },
+    {
+      "username": "GoalKeeperDePapaNoel",
+      "comment": "Donc si je comprends bien, la solution pour gagner la Coupe du Monde c'est de faire venir une cheffe des Caraïbes ? Je vais immédiatement appeler la Fédération française. Ils ont pas demandé mon avis, mais le sancocho c'est clairement mieux que les sandwichs triangle du PSG.",
+      "likes": 312
+    },
+    {
+      "username": "IsabellaDelCaribe_FR",
+      "comment": "Cette femme mérite tellement cette reconnaissance. Partir de la République dominicaine, étudier, travailler dur et finir par cuisiner pour une équipe nationale lors d'un Mondial... C'est le genre d'histoire qui rappelle pourquoi il faut toujours croire en ses rêves. Bravo María Antonia !",
+      "likes": 203
+    }
+  ]
+}

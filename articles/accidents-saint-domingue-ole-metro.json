@@ -1,0 +1,75 @@
+{
+  "id": "accidents-saint-domingue-ole-metro",
+  "title": "Deux accidents marquent une journée difficile à Saint-Domingue",
+  "date": "2026-07-25",
+  "category": "Société",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Metro_santo_domingo_22nov2006.JPG",
+    "alt": "Le métro de Saint-Domingue, République dominicaine"
+  },
+  "vocabulary": [
+    { "fr": "un début d'incendie", "es": "un amago de incendio" },
+    { "fr": "évacuer", "es": "evacuar" },
+    { "fr": "les pompiers", "es": "los bomberos" },
+    { "fr": "un sinistre", "es": "un siniestro" },
+    { "fr": "les voies", "es": "las vías (del metro)" },
+    { "fr": "un traumatisme crânien", "es": "un traumatismo craneal" },
+    { "fr": "une fracture", "es": "una fractura" },
+    { "fr": "stable", "es": "estable" },
+    { "fr": "un accident vasculaire cérébral", "es": "un accidente cerebrovascular" },
+    { "fr": "écarter", "es": "descartar" }
+  ],
+  "article": "Le mercredi 22 juillet 2026 a été une journée marquée par deux incidents graves dans la capitale dominicaine. Un début d'incendie a touché le supermarché Olé de l'avenue Jacobo Majluta, et un touriste allemand est tombé sur les voies du métro de Saint-Domingue. Ces deux événements ont mobilisé les services d'urgence et ont retenu l'attention des habitants.\n\nVers dix-sept heures, une alerte incendie a été déclenchée dans la succursale du supermarché Olé située dans la commune de Santo Domingo Norte. Selon les premières informations, le feu a pris naissance dans un salon de beauté installé à l'intérieur de l'établissement commercial. Une forte odeur de fumée s'est rapidement propagée dans les allées. Le personnel et les clients ont été évacués immédiatement. Aucune victime n'a été signalée.\n\nPlusieurs unités des sapeurs-pompiers se sont rendues rapidement sur les lieux, accompagnées du système d'urgence 9-1-1 et de la police nationale. L'électricité du bâtiment a été coupée pour permettre l'intervention en toute sécurité. Les pompiers ont réussi à contrôler le feu dans la soirée. Les équipes ont délimité une zone sécurisée autour du supermarché pour faciliter leur travail.\n\nLa chaîne Supermercados Olé a publié un communiqué officiel pour rassurer ses clients. L'entreprise a confirmé que l'ensemble du personnel et des clients avait été évacué sans blessure. Elle a aussi annoncé la fermeture temporaire de la succursale de Jacobo Majluta, le temps de réaliser un bilan complet des dégâts matériels. Les autorités n'ont pas encore déterminé les causes exactes du sinistre.\n\nLe même soir, un autre incident a provoqué la suspension temporaire de la ligne 1 du métro de Saint-Domingue. Un touriste allemand de soixante-trois ans est tombé sur les voies à la station Juan Pablo Duarte, vers vingt-deux heures quinze. L'homme a été transporté d'urgence à l'hôpital traumatologique Dr. Ney Arias Lora. Le service a été interrompu pendant les opérations de secours, avant de reprendre normalement.\n\nLes médecins ont établi un bilan médical préoccupant. Le patient présentait un traumatisme crânien modéré, un traumatisme thoracique et une fracture ouverte de la cheville. Il a subi une première opération chirurgicale. Une seconde intervention est prévue pour stabiliser la fracture. Malgré la gravité des blessures, l'état du patient est stable. Il est conscient et orienté.\n\nLes autorités médicales ont rapidement écarté toute tentative de suicide. Le directeur de l'hôpital, le docteur Víctor Rosario, a expliqué que l'homme avait subi un accident vasculaire cérébral plusieurs mois auparavant. Cette condition préalable a provoqué une perte soudaine de force musculaire, ce qui a causé sa chute sur les rails. L'unité de psychotraumatologie a confirmé qu'il n'existait aucun antécédent psychiatrique ni aucune intention de se blesser.\n\nLa famille du touriste a été informée de l'accident dès les premières heures. Des proches ont pris un vol depuis l'Allemagne pour venir le soutenir en République dominicaine. L'ambassade allemande a également été contactée pour faciliter les démarches administratives. Le patient reste sous surveillance médicale et sous la protection des autorités locales.\n\nCes deux événements surviennent dans une période de forte activité touristique dans le pays. Ils mettent en lumière l'importance des protocoles de sécurité dans les lieux publics. L'Empresa de Transporte Masivo, qui gère le métro de Saint-Domingue, a rappelé l'existence de mesures d'urgence pour ce type de situation. La chaîne Olé, de son côté, a assuré que la sécurité de ses clients reste sa priorité absolue.",
+  "conversation": {
+    "intro": "Rosalia et Clément sont chez eux à Saint-Domingue. Clément a vu les nouvelles du jour sur son téléphone et parle à Rosalia de deux accidents qui se sont produits en ville ce mercredi.",
+    "lines": [
+      { "speaker": "Clément", "fr": "Hé Rosalia, t'as vu ce qui s'est passé aujourd'hui au supermarché Olé de Jacobo Majluta ?" },
+      { "speaker": "Rosalia", "fr": "Oui, j'ai vu ça sur TikTok ! Y'avait un incendie, c'est ça ? Apparemment ça a commencé dans le salon de beauté à l'intérieur.", "es": "Sí, lo vi en TikTok. ¡Había un incendio! Parece que empezó en el salón de belleza que está adentro." },
+      { "speaker": "Clément", "fr": "Exactement. Les pompiers ont mis des heures à contrôler le feu. Mais heureusement, tout le monde a été évacué sans blessure." },
+      { "speaker": "Rosalia", "fr": "Ouf, c'est un soulagement ! Cet Olé-là, je le connais bien, j'y vais souvent avec ma mère. T'imagines si ça avait mal tourné ?", "es": "¡Uf, qué alivio! Ese Olé lo conozco bien, voy seguido ahí con mi mamá. ¿Te imaginas si hubiera pasado algo peor?" },
+      { "speaker": "Clément", "fr": "C'est vrai, c'est un supermarché très fréquenté. Et t'as vu l'autre accident ? Celui du métro ?" },
+      { "speaker": "Rosalia", "fr": "Oui ! Un touriste allemand qui est tombé sur les voies, c'est ça ? J'ai lu que c'était un problème de santé, pas un suicide. Il avait eu un AVC avant.", "es": "¡Sí! ¿Un turista alemán que se cayó a las vías? Leí que fue por un problema de salud, no un suicidio. Había tenido un ACV antes." },
+      { "speaker": "Clément", "fr": "Exactement. Le directeur de l'hôpital a expliqué que c'est son ancienne maladie qui a provoqué la chute. Il est stable maintenant." },
+      { "speaker": "Rosalia", "fr": "Ça me soulage vraiment. Sa famille est venue le rejoindre en République dominicaine, au moins. Tu sais quelle station c'était ?", "es": "Eso me tranquiliza mucho. Su familia vino a acompañarlo en República Dominicana, eso está bien. ¿Sabes en qué estación fue?" },
+      { "speaker": "Clément", "fr": "À Juan Pablo Duarte. Le service a été suspendu un moment, mais ça a repris normalement." },
+      { "speaker": "Rosalia", "fr": "Ah, cette station-là ! Je la prends souvent pour aller chez ma sœur Rosaura. C'est bizarre d'imaginer que quelque chose comme ça peut arriver là-bas.", "es": "¡Ah, esa estación! La tomo seguido para ir a casa de mi hermana Rosaura. Es raro imaginar que algo así puede pasar ahí." },
+      { "speaker": "Clément", "fr": "C'est ça les accidents, ils arrivent sans prévenir. Le pauvre homme avait 63 ans en plus." },
+      { "speaker": "Rosalia", "fr": "Oui, voyager seul à cet âge avec des problèmes de santé, c'est risqué. J'espère qu'il va bien récupérer et qu'il garde un bon souvenir de la RD quand même.", "es": "Sí, viajar solo a esa edad con problemas de salud es arriesgado. Espero que se recupere bien y que guarde un buen recuerdo de RD." },
+      { "speaker": "Clément", "fr": "Moi aussi. En tout cas, deux accidents le même jour, c'est beaucoup pour une seule journée." },
+      { "speaker": "Rosalia", "fr": "T'as raison. Ça me rappelle qu'il faut vraiment faire attention dans les lieux publics. À Strasbourg aussi y'aura des situations comme ça, non ?", "es": "Tienes razón. Me recuerda que hay que tener cuidado en los lugares públicos. En Estrasburgo también habrá situaciones así, ¿no?" },
+      { "speaker": "Clément", "fr": "Bien sûr, ça arrive partout. Mais les services d'urgence en France sont très réactifs, t'inquiète pas." },
+      { "speaker": "Rosalia", "fr": "C'est rassurant ! Et puis là-bas, si j'ai un problème de santé, j'aurai la sécurité sociale. Ici c'est pas pareil du tout.", "es": "¡Qué tranquilidad! Y allá, si tengo algún problema de salud, tendré la seguridad social. Aquí no es lo mismo para nada." },
+      { "speaker": "Clément", "fr": "Exactement, c'est un des grands avantages de vivre en France. La santé est vraiment accessible pour tout le monde." },
+      { "speaker": "Rosalia", "fr": "Bon, en attendant, t'as faim ? On va faire les courses — mais pas chez Olé Jacobo pour l'instant, haha ! Y'a un autre supermarché pas loin.", "es": "Bueno, mientras tanto, ¿tienes hambre? Vamos a hacer las compras, ¡pero no en el Olé Jacobo por ahora, jaja! Hay otro supermercado cerca." },
+      { "speaker": "Clément", "fr": "Ha ha, bonne idée ! On y va. Et espérons que la journée de demain sera plus calme !" },
+      { "speaker": "Rosalia", "fr": "Exactement, allez ! Et j'espère vraiment que le touriste allemand va s'en sortir et rentrer vite chez lui.", "es": "¡Exacto, vamos! Y de verdad espero que el turista alemán se mejore y pueda volver pronto a casa." }
+    ]
+  },
+  "comments": [
+    {
+      "username": "CasimiroDomingo91",
+      "comment": "C'est scandaleux qu'un salon de beauté non réglementé puisse opérer DANS un grand supermarché ! Qui a autorisé ça ? Les contrôles de sécurité en RD sont une blague. Un jour il y aura des morts et là seulement on réagira, comme toujours !!!",
+      "likes": 87
+    },
+    {
+      "username": "Mariangel_Reyes_SD",
+      "comment": "J'étais justement dans ce supermarché deux heures avant l'incendie avec mes enfants. On y va presque tous les samedis. En lisant la nouvelle le soir, j'ai eu des frissons. Ça fait vraiment réfléchir.",
+      "likes": 234
+    },
+    {
+      "username": "ElEnfocado_RD",
+      "comment": "Tout le monde critique le métro mais c'est quand même une infrastructure qui fonctionne et transporte des milliers de personnes chaque jour. Un accident isolé ne remet pas en cause le système. Les agents ont réagi vite, félicitations à eux.",
+      "likes": 45
+    },
+    {
+      "username": "ProfesorDelCaos77",
+      "comment": "Je veux bien comprendre que c'était une mauvaise journée pour Saint-Domingue... mais mon chat aussi est tombé dans l'escalier hier. Coïncidence ? Je ne pense pas. Le destin frappait fort ce mercredi.",
+      "likes": 412
+    },
+    {
+      "username": "LuzMilagros_SD",
+      "comment": "Chapeau aux pompiers et aux équipes du SAMU qui ont tout géré avec calme et efficacité. Et bon rétablissement au touriste allemand — j'espère que malgré tout il gardera un beau souvenir de notre pays et de notre chaleur humaine.",
+      "likes": 156
+    }
+  ]
+}

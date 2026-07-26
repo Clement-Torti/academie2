@@ -1,0 +1,73 @@
+{
+  "id": "bars-strasbourg-difficultes-economiques",
+  "title": "Les bars strasbourgeois face à la crise du pouvoir d'achat",
+  "date": "2026-07-25",
+  "category": "Économie",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/StrasBarVaubLap1.jpg",
+    "alt": "Terrasse d'un bar dans le quartier Vauban à Strasbourg"
+  },
+  "vocabulary": [
+    { "fr": "l'oseille", "es": "la pasta / el dinero (argot)" },
+    { "fr": "les fournitures", "es": "los suministros" },
+    { "fr": "la fréquentation", "es": "la afluencia de clientes" },
+    { "fr": "un mocktail", "es": "un cóctel sin alcohol" },
+    { "fr": "les contraintes", "es": "las limitaciones / restricciones" },
+    { "fr": "le stationnement", "es": "el estacionamiento / aparcamiento" },
+    { "fr": "la terrasse", "es": "la terraza" },
+    { "fr": "répercuter", "es": "repercutir / trasladar (un coste)" }
+  ],
+  "article": "En France, les bars et les restaurants traversent une période difficile. Les gérants font face à des dépenses plus élevées, à une clientèle qui dépense moins et à des contraintes administratives croissantes. À Strasbourg, cinq responsables d'établissements ont accepté de témoigner des difficultés qu'ils vivent au quotidien. Leurs témoignages dressent un tableau nuancé d'une profession sous pression.\n\nDepuis quelques années, les coûts liés aux fournitures et à l'énergie ont fortement augmenté. Pourtant, la grande majorité des gérants a choisi de ne pas répercuter ces hausses sur les prix des consommations. Nathan Stock, patron de L'Établi, résume cette stratégie avec lucidité : « Si on devait augmenter les prix aujourd'hui, plus personne ne viendrait au bar. » Geoffroy Lebold, qui dirige Le Tigre, n'a pas augmenté ses prix depuis trois ans. Son bar utilise un four à bois, ce qui lui permet de réduire sa dépendance à l'électricité et d'amortir une partie des hausses de coûts.\n\nDu côté des clients, les gérants constatent une baisse des consommations moyennes. Les gens sortent, mais ils dépensent moins à chaque visite. Mathieu, le responsable de Hacienda Bernadette, l'observe clairement : « Les gens n'ont plus d'oseille, surtout en fin de mois. » Yannick, patron de La Kulture, ne juge pas ses clients pour autant. Il reconnaît que leurs inquiétudes face au coût de la vie sont légitimes. La hausse des prix de l'alimentation, du loyer et de l'énergie pèse directement sur les habitudes de sortie des Strasbourgeois.\n\nUn autre changement important concerne les boissons sans alcool. Franck Meunier, qui gère le bar Meteor, remarque une demande croissante pour les mocktails et les bières sans alcool. Cette tendance ne surprend plus personne dans le secteur. Mathieu confirme de son côté que son établissement réalise de bonnes recettes même sans les ventes d'alcool. Pour lui, proposer une large gamme de boissons non alcoolisées est devenu indispensable pour fidéliser une clientèle aux attentes variées.\n\nLes gérants se plaignent également des contraintes imposées par les autorités locales. Nathan Stock critique notamment la suppression de places de stationnement à proximité des bars. Selon lui, cette décision a nui directement à la fréquentation de son établissement à l'heure du déjeuner. Des clients qui venaient en voiture ont tout simplement arrêté de venir. Franck Meunier partage cette analyse et plaide pour le maintien de places de parking près du centre-ville, afin de ne pas pénaliser les établissements qui accueillent une clientèle venant de la périphérie.\n\nLa réglementation autour des terrasses est une autre source de frustration. Mathieu est obligé de fermer sa terrasse à 23 heures, alors que d'autres rues de Strasbourg bénéficient d'une tolérance jusqu'à minuit et demi. Il estime que cette différence de traitement lui cause des pertes considérables en période estivale, quand la terrasse est le principal attrait de son bar. Nathan Stock, lui, dénonce plus largement le cadre réglementaire strasbourgeois, qu'il juge plus rigide que dans d'autres villes françaises.\n\nMalgré ces difficultés, tous les gérants n'ont pas perdu espoir. Le Tigre approche de son huitième anniversaire dans un état d'esprit positif. Le bar Meteor enregistre même une légère hausse de fréquentation. Ces témoignages montrent que résister est possible, à condition de s'adapter en permanence et de rester à l'écoute de sa clientèle. Les gérants appellent néanmoins les élus locaux à mieux entendre leurs besoins, car les bars indépendants contribuent pleinement à la vie sociale et culturelle de Strasbourg.",
+  "conversation": {
+    "intro": "Rosalia et Léa discutent en ligne d'un article publié par le média local Pokaa sur les difficultés des bars strasbourgeois. Léa vit à Strasbourg et suit l'actualité de sa ville de près. Rosalia, qui va bientôt s'y installer avec son novio Clement, s'intéresse à tout ce qui concerne sa future ville.",
+    "lines": [
+      { "speaker": "Léa", "fr": "Hé, t'as vu l'article sur les bars de Strasbourg ? C'est un peu inquiétant pour les gérants..." },
+      { "speaker": "Rosalia", "fr": "J'ai vu ça, oui ! Clement me l'a envoyé ce matin. Les gens ont moins d'argent pour sortir, c'est ça ?", "es": "¡Sí, lo vi! Clement me lo mandó esta mañana. ¿La gente tiene menos dinero para salir, verdad?" },
+      { "speaker": "Léa", "fr": "Exactement. Plusieurs gérants disent que leurs clients dépensent moins à chaque visite." },
+      { "speaker": "Rosalia", "fr": "Et ils n'ont pas augmenté leurs prix non plus, c'est courageux ! En République dominicaine, les restos augmentent tout le temps leurs prix.", "es": "¡Y encima no subieron los precios, eso es valiente! En República Dominicana, los restaurantes suben los precios constantemente." },
+      { "speaker": "Léa", "fr": "Ouais, les gérants ont peur de perdre des clients si ils augmentent. C'est vraiment une situation compliquée." },
+      { "speaker": "Rosalia", "fr": "Je comprends. À Santo Domingo aussi, si le prix monte trop, les gens arrêtent d'y aller. Mais c'est difficile pour le gérant...", "es": "Lo entiendo. En Santo Domingo también, si el precio sube mucho, la gente deja de ir. Pero es difícil para el dueño..." },
+      { "speaker": "Léa", "fr": "Et en plus, la mairie a supprimé des places de parking près des bars. Ça c'est vraiment un problème selon Nathan Stock, le patron de L'Établi." },
+      { "speaker": "Rosalia", "fr": "Ah oui, j'ai lu ça ! C'est bizarre comme décision. Les clients qui viennent en voiture, ils vont se garer où ?", "es": "¡Ah sí, leí eso! Es una decisión rara. ¿Los clientes que vienen en carro, dónde van a estacionarse?" },
+      { "speaker": "Léa", "fr": "Ben voilà. Et les terrasses doivent fermer à 23h dans certaines rues, alors que d'autres peuvent rester ouvertes jusqu'à minuit et demi !" },
+      { "speaker": "Rosalia", "fr": "C'est vraiment pas juste ! En été la terrasse c'est tout pour un bar, non ? D'ailleurs Clement m'a dit que les étés à Strasbourg sont courts mais tellement agréables.", "es": "¡Eso no es nada justo! En verano la terraza lo es todo para un bar, ¿no? Además, Clement me dijo que los veranos en Estrasburgo son cortos pero muy agradables." },
+      { "speaker": "Léa", "fr": "Ah oui, nos étés sont trop bien. T'as hâte de découvrir ça ?" },
+      { "speaker": "Rosalia", "fr": "Tellement ! Clement m'a montré des photos des quais avec les terrasses et c'est magnifique. Je rêve de prendre un verre là-bas avec toi cet été !", "es": "¡Muchísimo! Clement me mostró fotos de los muelles con las terrazas y es increíble. ¡Sueño con tomar algo ahí contigo este verano!" },
+      { "speaker": "Léa", "fr": "Haha, c'est prévu ! Bon, t'as vu la partie sur les boissons sans alcool ? Y'a de plus en plus de mocktails dans les bars." },
+      { "speaker": "Rosalia", "fr": "Oui ! C'est une super tendance ça. Moi j'aime bien sortir mais je bois pas beaucoup d'alcool. Donc c'est cool de savoir qu'il y a des options sympas.", "es": "¡Sí! Es una tendencia genial. A mí me gusta salir pero no bebo mucho alcohol. Así que está bueno saber que hay opciones interesantes." },
+      { "speaker": "Léa", "fr": "C'est vrai, les mocktails sont de plus en plus créatifs. Certains bars font des trucs vraiment bons." },
+      { "speaker": "Rosalia", "fr": "Ça me donne trop envie de les essayer ! Tu connais des bons bars à Strasbourg ? J'essaie de faire une petite liste pour quand j'arriverai.", "es": "¡Me dan muchas ganas de probarlos! ¿Conoces buenos bares en Estrasburgo? Estoy haciendo una listita para cuando llegue." },
+      { "speaker": "Léa", "fr": "Bien sûr ! Je t'enverrai mes adresses. Le quartier de la Krutenau, c'est top pour les bars en terrasse." },
+      { "speaker": "Rosalia", "fr": "Ohhh j'ai vu des vidéos de ce quartier sur TikTok, ça a l'air super vivant ! Je veux tellement découvrir tous ces endroits en vrai.", "es": "Ohhh he visto videos de ese barrio en TikTok, ¡parece súper animado! Quiero tanto descubrir todos esos lugares en persona." },
+      { "speaker": "Léa", "fr": "Tu vas adorer, j'en suis sûre. Bon, cet article ça t'inquiète pas un peu pour Strasbourg ?" },
+      { "speaker": "Rosalia", "fr": "Ah non, au contraire ! Clement dit que c'est une période difficile mais que ça va changer. Et pour moi c'est surtout excitant de commencer une nouvelle vie là-bas. J'ai tellement hâte !", "es": "¡Ah no, al contrario! Clement dice que es un período difícil pero que va a cambiar. Y para mí lo emocionante es empezar una nueva vida allá. ¡Tengo tantas ganas!" }
+    ]
+  },
+  "comments": [
+    {
+      "username": "LePontDesZombies",
+      "comment": "C'est scandaleux ! La mairie détruit le tissu commercial de Strasbourg en supprimant des parkings et en imposant des horaires aberrants. Ces bars font vivre des quartiers entiers et on les traite comme des problèmes à régler. RÉVOLTANT.",
+      "likes": 187
+    },
+    {
+      "username": "StrasbourgeoisDepuis1992",
+      "comment": "Mon oncle a tenu un bar pendant vingt ans rue du Vieux-Marché-aux-Poissons. Il a fermé en 2023 après avoir tenu bon pendant le Covid. C'est exactement ces mêmes problèmes qui l'ont épuisé : les coûts qui montent, les clients qui dépensent moins. Je pense souvent à lui.",
+      "likes": 94
+    },
+    {
+      "username": "EconomisteDuDimanche67",
+      "comment": "Franchement, ces gérants font le mauvais calcul. Si leurs coûts ont fortement augmenté, leurs marges s'effondrent en bloquant les prix. À un moment, faut oser augmenter et assumer. Les clients qui partent pour 50 centimes de plus, c'était pas des fidèles de toute façon.",
+      "likes": 61
+    },
+    {
+      "username": "Mocktail_Philosophe",
+      "comment": "Mocktail. MOCKTAIL. En 2026 on boit des jus de fruit avec un nom anglais et on appelle ça une révolution. Je réclame la réhabilitation immédiate du diabolo menthe. Il mérite infiniment plus de respect que ça !!!",
+      "likes": 412
+    },
+    {
+      "username": "FideleDesTerrasses",
+      "comment": "Merci à tous ces gérants qui se battent pour rester ouverts malgré tout. Ces endroits, c'est là où on fête les bons moments, où on se retrouve après une longue semaine. Continuez à tenir, on vous soutient et on continuera à venir.",
+      "likes": 203
+    }
+  ]
+}

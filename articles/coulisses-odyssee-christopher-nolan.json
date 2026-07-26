@@ -1,0 +1,75 @@
+{
+  "id": "coulisses-odyssee-christopher-nolan",
+  "title": "Les coulisses du film L'Odyssée de Christopher Nolan",
+  "date": "2026-07-25",
+  "category": "Culture",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/ChristopherNolan-byPhilipRomano.jpg",
+    "alt": "Christopher Nolan, réalisateur du film L'Odyssée"
+  },
+  "vocabulary": [
+    { "fr": "épique", "es": "épico / épica" },
+    { "fr": "périlleux", "es": "peligroso / peligrosa" },
+    { "fr": "le tournage", "es": "el rodaje" },
+    { "fr": "les effets pratiques", "es": "los efectos prácticos" },
+    { "fr": "l'antagoniste", "es": "el antagonista" },
+    { "fr": "la pellicule", "es": "el rollo de película" },
+    { "fr": "la bande originale", "es": "la banda sonora" },
+    { "fr": "la controverse", "es": "la polémica / la controversia" },
+    { "fr": "l'épopée", "es": "la epopeya" },
+    { "fr": "salué par la critique", "es": "aclamado por la crítica" }
+  ],
+  "article": "Christopher Nolan est l'un des réalisateurs les plus respectés de sa génération. Après le triomphe d'Oppenheimer en 2023, le cinéaste britannique a choisi d'adapter l'un des plus anciens récits du monde : L'Odyssée d'Homère. Ce poème épique grec, vieux de près de trois mille ans, raconte le long et périlleux voyage d'Ulysse après la guerre de Troie. Le résultat est un film colossal qui a captivé le monde entier avant même sa sortie en salles.\n\nPour donner vie à ce mythe, Nolan a réuni un casting exceptionnel. Matt Damon joue Ulysse, le héros grec qui cherche à rentrer chez lui après dix ans de guerre. Tom Holland incarne son fils Télémaque, et Anne Hathaway joue Pénélope, l'épouse fidèle qui attend son retour à Ithaque. Zendaya interprète la déesse Athéna, et Charlize Theron joue Calypso. Robert Pattinson, enfin, tient le rôle de l'antagoniste Antinous. Un casting aussi étoilé est rare, même pour Hollywood.\n\nL'une des caractéristiques les plus remarquables du film est sa technique. L'Odyssée est le premier long-métrage tourné entièrement avec des caméras IMAX 70mm. Nolan et son directeur de la photographie Hoyte van Hoytema ont développé des caméras spéciales, plus légères et plus silencieuses, capables de filmer en extérieur et lors des scènes de dialogue. Plus de deux millions de pieds de pellicule ont été utilisés au total. Ce choix donne au film une qualité visuelle et une profondeur exceptionnelles.\n\nLe tournage s'est déroulé sur 91 jours, dans six pays différents. L'équipe a filmé au Maroc pour les scènes de Troie, en Grèce pour la rencontre avec le Cyclope, en Italie pour les îles Éoliennes, en Islande pour les séquences des Enfers, en Écosse pour représenter Ithaque, et à Malte pour la grotte de Calypso. Les États-Unis ont aussi accueilli des scènes dans les studios Universal à Los Angeles.\n\nComme souvent dans ses films, Nolan a préféré les effets pratiques aux effets numériques. Le Cyclope a été conçu grâce à un mélange d'animatroniques, de marionnettes géantes et de la performance physique de l'acteur Bill Irwin sur le plateau. Le Cheval de Troie était une vraie construction : une structure de onze mètres de haut et de quatre tonnes, transportée en 27 caisses jusqu'au Maroc. Les dieux, eux, ne sont jamais montrés directement : leur puissance est représentée par des phénomènes naturels comme la tempête ou la brume.\n\nMatt Damon s'est préparé physiquement et mentalement pour son rôle. Il a perdu du poids pour atteindre 76 kilos et a laissé pousser sa barbe pendant toute une année. Nolan avait refusé toute fausse barbe pour rester fidèle à l'authenticité du personnage. La bande originale du film, composée par Ludwig Göransson, est elle aussi unique. Le musicien a intégré des instruments de l'Antiquité, comme la lyre et l'aulos, ainsi que des chants traditionnels albanais et des synthétiseurs modernes. James Blake et Travis Scott ont contribué au morceau de fin.\n\nL'Odyssée a été présenté en première mondiale le 6 juillet 2026 à Londres, avant une sortie officielle le 17 juillet. En quelques semaines, le film a rapporté 389 millions de dollars dans le monde entier. Il est devenu le plus grand succès commercial de Christopher Nolan depuis Oppenheimer. Malgré une controverse autour du tournage dans le Sahara Occidental, le film a été salué par la critique comme une œuvre ambitieuse et spectaculaire, digne de l'épopée qu'il adapte.",
+  "conversation": {
+    "intro": "Rosalia et Clement rentrent du cinéma. Ils viennent de voir L'Odyssée de Christopher Nolan au Palacio del Cine à Santo Domingo. C'est le premier film de Nolan que Rosalia voit en salle.",
+    "lines": [
+      { "speaker": "Clement", "fr": "Alors, t'as aimé ? C'était pas trop long pour toi ?" },
+      { "speaker": "Rosalia", "fr": "Franchement j'ai adoré ! Je pensais que ça allait être ennuyeux, mais c'était incroyable.", "es": "¡Sinceramente me encantó! Pensaba que iba a ser aburrido, pero fue increíble." },
+      { "speaker": "Clement", "fr": "Matt Damon était top dans le rôle d'Ulysse, non ? Il a vraiment l'air d'un guerrier avec cette barbe." },
+      { "speaker": "Rosalia", "fr": "Oui ! Il a laissé pousser sa vraie barbe pendant un an, t'imagines ? Nolan refusait les fausses barbes.", "es": "¡Sí! Dejó crecer su barba real durante un año entero, ¿te imaginas? Nolan se negaba a usar barba postiza." },
+      { "speaker": "Clement", "fr": "Exactement. Et le truc impressionnant, c'est que tout le film a été tourné avec des caméras IMAX 70mm." },
+      { "speaker": "Rosalia", "fr": "Les images en Islande, mon dieu, c'était magnifique ! Et toi, t'as préféré quelle scène ?", "es": "Las imágenes en Islandia, ¡Dios mío, eran preciosas! ¿Y tú, cuál fue tu escena favorita?" },
+      { "speaker": "Clement", "fr": "La scène du Cyclope, sans hésiter. C'était fait comment selon toi ?" },
+      { "speaker": "Rosalia", "fr": "Des vraies marionnettes géantes avec un acteur sur place ! Aucun effet numérique. Je suis bluffée.", "es": "¡Marionetas gigantes de verdad con un actor en el set! Sin efectos digitales. Me quedé sin palabras." },
+      { "speaker": "Clement", "fr": "Nolan fait toujours ça. Sur Oppenheimer c'était pareil, presque aucun CGI. Y'a une vraie philosophie derrière." },
+      { "speaker": "Rosalia", "fr": "Ma sœur Rosaura m'a écrit pendant le film, elle voulait savoir si c'était bien. Bien sûr que oui !", "es": "Mi hermana Rosaura me escribió durante la peli para saber si valía la pena. ¡Le dije que sí enseguida!" },
+      { "speaker": "Clement", "fr": "Et la musique ? Ludwig Göransson a fait un travail dingue." },
+      { "speaker": "Rosalia", "fr": "Oui, c'était totalement différent. On entendait des sons anciens, des instruments que j'avais jamais entendus.", "es": "Sí, era totalmente diferente. Se escuchaban sonidos antiguos, instrumentos que nunca había oído antes." },
+      { "speaker": "Clement", "fr": "T'as reconnu le morceau de fin avec Travis Scott ?" },
+      { "speaker": "Rosalia", "fr": "C'était lui ? Je savais pas ! C'est quoi le titre de ce morceau ?", "es": "¿Era él? ¡No lo sabía! ¿Cómo se llama esa canción?" },
+      { "speaker": "Clement", "fr": "When I'm Home. Nolan l'a co-écrit lui-même. Classe, non ?" },
+      { "speaker": "Rosalia", "fr": "Zendaya en déesse Athéna, elle était parfaite. Élégante et forte à la fois. J'adore cette actrice.", "es": "Zendaya como diosa Atenea era perfecta. Elegante y fuerte a la vez. Me encanta esa actriz." },
+      { "speaker": "Clement", "fr": "Par contre y'a eu une controverse autour du tournage au Sahara Occidental. T'en avais entendu parler ?" },
+      { "speaker": "Rosalia", "fr": "Vaguement. C'est compliqué ces questions politiques. Mais le film lui-même m'a vraiment transportée.", "es": "Vagamente. Es complicado eso de la política. Pero la película en sí me transportó de verdad." },
+      { "speaker": "Clement", "fr": "On le reverra en IMAX à Strasbourg quand on sera là-bas. Ce sera encore mieux." },
+      { "speaker": "Rosalia", "fr": "Oh oui ! J'ai trop hâte de voir ça à Strasbourg. On invite Chloé et son copain ?", "es": "¡Ay sí! Tengo muchas ganas de verlo en Estrasburgo. ¿Invitamos a Chloé y a su novio?" }
+    ]
+  },
+  "comments": [
+    {
+      "username": "Sahara_VraieHistoire",
+      "comment": "C'est inadmissible. Nolan tourne dans un territoire occupé illégalement et tout le monde s'en fout parce que le film est beau ? La culture ne peut pas servir d'excuse à l'effacement d'un peuple. J'aurais attendu un geste de sa part, une déclaration au minimum. Déçu.",
+      "likes": 87
+    },
+    {
+      "username": "HellenicDreameur",
+      "comment": "J'ai étudié l'Iliade et l'Odyssée pendant mes études et je pleurais dans la salle. Voir Ulysse sur grand écran avec un tel budget, c'est exactement ce que j'espérais depuis vingt ans. La scène avec Circé m'a complètement dévasté, je savais ce qui allait arriver et j'étais quand même bouche bée.",
+      "likes": 134
+    },
+    {
+      "username": "VFX_NotDead_2026",
+      "comment": "Je suis fatigué de cette guerre anti-CGI. Des centaines d'artistes visuels talentueux travaillent dans les VFX et se retrouvent dépréciés chaque fois que Nolan dit «j'utilise pas d'effets numériques» comme si c'était une vertu. Le résultat est beau, ok. Mais le discours est condescendant envers toute une industrie.",
+      "likes": 203
+    },
+    {
+      "username": "PenelopeATisseEncore",
+      "comment": "J'ai tissé une écharpe pendant deux heures en regardant ce film en hommage à Pénélope. Ma mère m'a regardé comme si j'avais perdu la tête. Finalement j'ai défait la moitié par accident. Je comprends maintenant ce que ressentait ce personnage. Dix ans. Dix ans.",
+      "likes": 487
+    },
+    {
+      "username": "EpiquePourDeVrai",
+      "comment": "Je suis sorti de la salle avec les larmes aux yeux et les jambes qui tremblaient. Ce film m'a rappelé pourquoi j'aime le cinéma. Nolan a réussi à rendre ce mythe universel, humain, touchant. Ulysse veut juste rentrer chez lui. C'est simple. C'est beau. Merci.",
+      "likes": 312
+    }
+  ]
+}

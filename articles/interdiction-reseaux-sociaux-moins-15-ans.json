@@ -1,0 +1,167 @@
+{
+  "id": "interdiction-reseaux-sociaux-moins-15-ans",
+  "title": "La France interdit les réseaux sociaux aux moins de 15 ans",
+  "date": "2026-07-25",
+  "category": "Société",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Douyin_user.jpg",
+    "alt": "Une personne qui utilise une application de réseau social sur son smartphone"
+  },
+  "vocabulary": [
+    {
+      "fr": "un mineur",
+      "es": "un menor de edad"
+    },
+    {
+      "fr": "l'interdiction",
+      "es": "la prohibición"
+    },
+    {
+      "fr": "le consentement parental",
+      "es": "el consentimiento de los padres"
+    },
+    {
+      "fr": "le cyberharcèlement",
+      "es": "el ciberacoso"
+    },
+    {
+      "fr": "la santé mentale",
+      "es": "la salud mental"
+    },
+    {
+      "fr": "l'addiction",
+      "es": "la adicción"
+    },
+    {
+      "fr": "encadrer",
+      "es": "supervisar, regular"
+    },
+    {
+      "fr": "contourner",
+      "es": "saltarse, eludir"
+    }
+  ],
+  "article": "Depuis plusieurs années, la question des réseaux sociaux et des jeunes est au cœur des débats en France. Des millions d'enfants utilisent chaque jour TikTok, Instagram ou Snapchat, souvent sans que leurs parents le sachent vraiment. Face à cette réalité inquiétante, le gouvernement français a décidé d'agir avec une mesure forte : interdire l'accès aux réseaux sociaux aux enfants de moins de 15 ans. Cette décision fait beaucoup parler, et les avis sont très partagés dans la société.\n\nEn France, on estime que plus de sept millions de mineurs utilisent les réseaux sociaux régulièrement. Beaucoup ont créé leur premier compte avant même l'âge de 13 ans, malgré les conditions générales d'utilisation des plateformes qui l'interdisent déjà. Des rapports officiels montrent que certains enfants passent en moyenne trois à quatre heures par jour sur ces applications. Les études réalisées ces dernières années révèlent une augmentation inquiétante de l'anxiété, de la dépression et du cyberharcèlement chez les adolescents. Ce phénomène a été qualifié de problème de santé publique par plusieurs spécialistes. Le gouvernement a donc décidé qu'il fallait agir de manière urgente.\n\nLa nouvelle loi adoptée par l'Assemblée nationale impose des règles claires aux plateformes numériques. Désormais, aucun enfant de moins de 15 ans ne peut créer un compte sur un réseau social sans le consentement explicite d'un de ses parents. Les entreprises comme Meta, ByteDance ou Snap doivent vérifier l'âge des nouveaux utilisateurs grâce à des outils techniques fiables. En cas de non-respect de cette règle, elles risquent une amende pouvant atteindre 1 % de leur chiffre d'affaires mondial.\n\nLes partisans de cette loi sont nombreux. Pour eux, les réseaux sociaux créent une pression sociale très forte sur les adolescents, qui comparent constamment leur vie à celle des autres. Des associations de parents d'élèves et des médecins soutiennent cette interdiction. Ils rappellent que le cerveau d'un enfant de 14 ans n'est pas encore complètement développé. Il n'est donc pas capable de gérer tous les mécanismes addictifs que les plateformes ont été conçues pour créer.\n\nCependant, certains doutent de l'efficacité réelle de cette mesure. Le principal problème est technique : comment vérifier vraiment l'âge d'un utilisateur sur internet ? Un enfant peut facilement entrer une fausse date de naissance, ou utiliser les informations d'un parent. Cette méthode de contournement est connue de presque tous les adolescents. De plus, des outils comme les VPN permettent de contourner facilement les restrictions. Pour que la loi soit efficace, les plateformes devront investir massivement dans des technologies de vérification d'identité sérieuses.\n\nD'autres critiques vont plus loin. Ils pensent que cette interdiction risque de pousser les jeunes vers des applications alternatives, moins connues et surtout moins modérées. Un adolescent qui ne peut pas accéder à Instagram ira peut-être sur une plateforme étrangère sans aucune règle de sécurité. Pour ces experts, la vraie solution est l'éducation : apprendre aux enfants à utiliser les réseaux sociaux de manière responsable, en les accompagnant plutôt qu'en fermant les portes.\n\nLa France n'est pas le seul pays à prendre ce type de mesure. L'Australie a adopté une loi similaire en 2024, qui interdit les réseaux sociaux aux moins de 16 ans. Plusieurs pays européens réfléchissent aussi à des législations comparables. Si cette loi française montre des résultats positifs dans les prochaines années, elle pourrait servir de modèle pour d'autres nations. Le débat sur la place du numérique dans la vie des enfants est loin d'être terminé.",
+  "conversation": {
+    "intro": "Rosalía et Emma se retrouvent pour leur conversation hebdomadaire en ligne. Rosalía vient de lire un article sur l'interdiction des réseaux sociaux pour les moins de 15 ans en France. Emma travaille dans une école primaire à Paris et connaît bien le sujet.",
+    "lines": [
+      {
+        "speaker": "Emma",
+        "fr": "T'as vu ? Le gouvernement veut interdire les réseaux sociaux aux moins de 15 ans ici en France !"
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "J'ai vu ça ce matin ! Je trouve ça super intéressant. Mais comment ils vont vérifier l'âge ?",
+        "es": "¡Lo vi esta mañana! Me parece súper interesante. ¿Pero cómo van a verificar la edad?"
+      },
+      {
+        "speaker": "Emma",
+        "fr": "C'est justement le gros problème. Les plateformes devront utiliser des systèmes de vérification, mais c'est compliqué."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "En République dominicaine, y'a rien de tel. Les enfants ont TikTok à 10 ans sans problème !",
+        "es": "En República Dominicana no existe nada así. Los niños tienen TikTok desde los 10 años y nadie dice nada."
+      },
+      {
+        "speaker": "Emma",
+        "fr": "Je travaille dans une école primaire et je vois des gamins de 11 ans déjà accrocs à Instagram. C'est impressionnant."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Oh, c'est jeune ! Et toi, tu es pour cette interdiction ? Je pense que c'est bien, mais difficile à appliquer.",
+        "es": "¡Oh, qué jóvenes! ¿Y tú estás a favor de esta prohibición? Creo que está bien, pero debe ser difícil de aplicar."
+      },
+      {
+        "speaker": "Emma",
+        "fr": "Je suis pour, oui. Mais franchement, n'importe quel enfant peut mettre une fausse date de naissance."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "C'est exactement ce que je pensais ! À 13 ans, moi j'aurais fait la même chose. Ma petite sœur Rosaura aussi.",
+        "es": "¡Es exactamente lo que pensé! A mis 13 años yo hubiera hecho lo mismo. Mi hermana Rosaura también."
+      },
+      {
+        "speaker": "Emma",
+        "fr": "Haha, t'aurais pas résisté ! Et les VPN en plus, y'a plein de façons de contourner ça."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Oui ! Pourtant je comprends pourquoi la loi existe. Le cyberharcèlement, la pression sur les corps... c'est réel.",
+        "es": "¡Sí! Pero entiendo por qué existe la ley. El ciberacoso, la presión sobre los cuerpos... es algo real."
+      },
+      {
+        "speaker": "Emma",
+        "fr": "Exactement. Et les algorithmes sont faits pour rendre les gens accros, c'est prouvé."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Clément me dit toujours ça ! Il s'y connaît en informatique et explique bien comment ça marche. C'est un peu effrayant.",
+        "es": "¡Clément siempre me dice eso! Como trabaja en informática, entiende bien cómo funciona. La verdad que da un poco de miedo."
+      },
+      {
+        "speaker": "Emma",
+        "fr": "Et toi, t'utilises TikTok pour apprendre le français non ?"
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Oui, c'est une de mes méthodes préférées ! Mais je surveille mon temps d'écran pour ne pas y passer des heures.",
+        "es": "¡Sí, es uno de mis métodos favoritos para aprender! Pero controlo mi tiempo en pantalla para no pasarme horas sin darme cuenta."
+      },
+      {
+        "speaker": "Emma",
+        "fr": "C'est la bonne approche. Les adultes peuvent choisir comment ils utilisent les réseaux, c'est différent pour les enfants."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Voilà ! Et j'ai hâte de voir comment ça se passe à Strasbourg. Est-ce que les jeunes respectent vraiment la loi ?",
+        "es": "¡Exacto! Y tengo muchas ganas de ver cómo funciona en Estrasburgo. ¿Los jóvenes realmente respetan la ley?"
+      },
+      {
+        "speaker": "Emma",
+        "fr": "Honnêtement ça dépend. Les parents sont plus impliqués qu'avant ici, je pense."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "C'est bien. Ma maman ne savait pas quoi faire avec les réseaux sociaux de Rosaura. Elle était vraiment perdue !",
+        "es": "Eso está bien. Mi mamá no sabía qué hacer con las redes sociales de Rosaura. ¡Estaba totalmente perdida!"
+      },
+      {
+        "speaker": "Emma",
+        "fr": "Cette loi, c'est aussi pour aider les parents qui se sentent dépassés par les technologies."
+      },
+      {
+        "speaker": "Rosalia",
+        "fr": "Tout à fait. Bon, la semaine prochaine tu m'expliques comment la loi fonctionne concrètement ? Je veux tout savoir avant Strasbourg !",
+        "es": "Totalmente. Bueno, ¿la semana que viene me explicas cómo funciona la ley en la práctica? ¡Quiero saberlo todo antes de llegar a Estrasburgo!"
+      }
+    ]
+  },
+  "comments": [
+    {
+      "username": "ParentEnRage77",
+      "comment": "C'est une honte que ces multinationales aient attendu une loi pour protéger les enfants ! Ça fait des années qu'on le réclame. Elles préfèrent engranger des milliards plutôt que de protéger nos gosses. Enfin une mesure, mais c'est tellement trop tard !",
+      "likes": 87
+    },
+    {
+      "username": "MamanDe3_Grenobloise",
+      "comment": "Mon fils de 12 ans a créé un compte Instagram en mentant sur son âge. Je l'ai découvert six mois plus tard. Il avait commencé à se comparer à des influenceurs avec des corps irréels. Cette loi arrive trop tard pour nous, mais j'espère qu'elle protégera d'autres enfants.",
+      "likes": 143
+    },
+    {
+      "username": "DigitalNatifsLibres",
+      "comment": "Je ne suis pas d'accord. Interdire ne résout rien, ça repousse juste le problème à 16 ans. Ce qu'il faut, c'est enseigner l'esprit critique dès l'école primaire. Mes enfants utilisent les réseaux depuis 13 ans et ils vont très bien, parce que je les ai éduqués.",
+      "likes": 54
+    },
+    {
+      "username": "ConspirationDesAlgorithmes",
+      "comment": "Super, maintenant les ados vont utiliser le compte TikTok de leur grand-mère. Ça va être magnifique : @MamieGilberte_69 qui poste des vidéos de tricot avec 2 millions d'abonnés de 14 ans. On n'avait clairement pas anticipé ça au gouvernement...",
+      "likes": 312
+    },
+    {
+      "username": "PsyScolaire_Nantes",
+      "comment": "En tant que psychologue scolaire, je vois chaque semaine des adolescents détruits par le cyberharcèlement et la pression des réseaux. Cette loi ne résoudra pas tout, mais c'est un premier pas courageux. Merci à ceux qui ont eu la force de l'imposer malgré les lobbies.",
+      "likes": 198
+    }
+  ]
+}

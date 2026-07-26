@@ -1,0 +1,55 @@
+{
+  "id": "petition-argentine-mondial-football",
+  "title": "Une pétition pour exclure l'Argentine du Mondial rassemble 23 millions de votes",
+  "date": "2026-07-25",
+  "category": "Sport",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Argentina_Campe%C3%B3n_2022%2C_Obelisco.jpg",
+    "alt": "La foule réunie sous l'Obélisque de Buenos Aires lors des célébrations de l'équipe d'Argentine"
+  },
+  "vocabulary": [
+    { "fr": "la pétition", "es": "la petición" },
+    { "fr": "exclure", "es": "excluir" },
+    { "fr": "le Mondial", "es": "el Mundial de fútbol" },
+    { "fr": "les manifestants", "es": "los manifestantes" },
+    { "fr": "la finale", "es": "la final" },
+    { "fr": "rassembler", "es": "reunir" },
+    { "fr": "la controverse", "es": "la controversia" },
+    { "fr": "l'arbitrage", "es": "el arbitraje" },
+    { "fr": "le communiqué officiel", "es": "el comunicado oficial" },
+    { "fr": "l'enquête", "es": "la investigación" }
+  ],
+  "article": "Le football est bien plus qu'un sport. Pour des millions de personnes dans le monde, c'est une passion, une identité et une raison de se battre. Ce phénomène se manifeste de manière spectaculaire avec une pétition qui secoue le monde du football international. En quelques jours, vingt-trois millions de personnes ont signé un texte pour demander l'exclusion de l'Argentine des prochains championnats du monde. Une situation sans précédent qui provoque des débats passionnés dans de nombreux pays.\n\nTout a commencé après la finale du dernier Mondial de football. L'équipe d'Argentine a remporté le titre dans des circonstances très contestées. De nombreux supporters adverses ont estimé que l'arbitrage était partial et que plusieurs décisions importantes ont favorisé les Argentins. Des vidéos de ces moments ont rapidement circulé sur les réseaux sociaux. En quelques heures, des millions d'internautes ont partagé ces images avec indignation. C'est dans ce contexte tendu qu'un groupe de supporters a lancé une pétition en ligne pour demander à la FIFA de retirer l'Argentine de la prochaine compétition mondiale.\n\nLa réaction en Argentine n'a pas tardé. Des millions de citoyens ont exprimé leur colère face à ce qu'ils considèrent comme une attaque injuste contre leur pays et leur équipe nationale. Des manifestants se sont rassemblés en masse sous l'Obélisque de Buenos Aires, le monument le plus symbolique de la capitale argentine. Les foules ont scandé des slogans et brandi des drapeaux tout au long de la nuit. Beaucoup réclament non pas l'exclusion de leur équipe, mais la répétition de la finale pour prouver la valeur des champions du monde.\n\nLa FIFA a publié un communiqué officiel pour répondre à cette polémique grandissante. L'organisation internationale du football rappelle que les résultats des matchs officiels ne peuvent pas être annulés. Elle reconnaît cependant que certaines décisions d'arbitrage ont suscité des interrogations légitimes. La FIFA a annoncé l'ouverture d'une enquête interne pour analyser les actions des arbitres pendant la finale. Des experts et anciens arbitres internationaux participeront à ce processus. Les conclusions de cette enquête seront rendues publiques dans les semaines à venir. Cette décision n'a pas suffi à calmer les partisans les plus engagés.\n\nDu côté des joueurs argentins, les réactions sont très diverses. Certains ont préféré rester silencieux et se concentrer sur leur préparation physique. D'autres ont exprimé leur soutien aux manifestants de Buenos Aires via les réseaux sociaux. Le capitaine de l'équipe nationale a pris la parole lors d'une conférence de presse. Il a défendu avec force l'honneur de son équipe et de son pays. « Nous avons gagné sur le terrain, selon les règles », a-t-il déclaré. Il a également appelé au calme et au respect entre les supporters des différentes nations, afin de préserver l'esprit du sport.\n\nCette affaire révèle une tension plus profonde dans le monde du football contemporain. De plus en plus, les décisions des arbitres sont scrutées à la loupe grâce aux technologies modernes. Les caméras multiples et les ralentis permettent d'analyser chaque action en détail. Pourtant, le football reste un sport humain où les erreurs font partie du jeu. Par ailleurs, les réseaux sociaux amplifient les controverses et permettent aux émotions de se propager très rapidement. Ce qui était autrefois un débat de café est devenu aujourd'hui une mobilisation mondiale en quelques clics.\n\nL'avenir de l'Argentine dans les compétitions internationales reste donc incertain. La pétition continue de rassembler des signatures chaque jour. Cependant, les spécialistes du droit sportif sont formels : exclure une nation d'une compétition pour des raisons liées à un résultat contesté est pratiquement impossible selon les règles actuelles. En effet, aucun précédent de ce type n'existe dans l'histoire du football mondial. Ce débat passionné rappelle toutefois combien ce sport est au cœur des identités nationales. La passion des supporters, qu'ils soient argentins ou adversaires, montre que le football dépasse largement le simple cadre sportif.",
+  "conversation": {
+    "intro": "Rosalía discute en ligne avec Théo, son partenaire d'échange linguistique. Il est français et habite à Strasbourg. Ils parlent de l'actualité footballistique qui fait le buzz en ce moment.",
+    "lines": [
+      { "speaker": "Théo", "fr": "T'as vu cette histoire de pétition pour sortir l'Argentine du Mondial ? C'est dingue non !" },
+      { "speaker": "Rosalía", "fr": "Oui, j'en ai entendu parler ! Vingt-trois millions de votes, c'est vraiment énorme. Vous en pensez quoi en France ?", "es": "Sí, ¡me enteré! Veintitrés millones de votos es muchísimo. ¿Qué piensan en Francia de esto?" },
+      { "speaker": "Théo", "fr": "Ici y'a des avis très partagés. Les uns trouvent ça injuste, les autres soutiennent la pétition." },
+      { "speaker": "Rosalía", "fr": "Je comprends les deux côtés. Mais les Argentins ont bien le droit de manifester pour leur équipe, non ?", "es": "Entiendo los dos lados. Pero los argentinos tienen todo el derecho de manifestarse por su equipo, ¿no?" },
+      { "speaker": "Théo", "fr": "C'est vrai. Et toi t'es fan de foot ? En République dominicaine on suit le football aussi ?" },
+      { "speaker": "Rosalía", "fr": "Pas vraiment, je suis pas une grande fan. Mais ma famille adore ! Mon frère Argenis regarde tous les matchs.", "es": "Yo no mucho, no soy muy fanática. ¡Pero mi familia sí! Mi hermano Argenis ve todos los partidos." },
+      { "speaker": "Théo", "fr": "Ah c'est marrant ça. Et l'Argentine c'est populaire là-bas ?" },
+      { "speaker": "Rosalía", "fr": "Oui, beaucoup de Dominicains supportent l'Argentine surtout depuis Messi. Et toi tu as une équipe préférée ?", "es": "Sí, muchos dominicanos apoyan a Argentina, sobre todo desde Messi. ¿Y tú tienes un equipo favorito?" },
+      { "speaker": "Théo", "fr": "Moi c'est l'équipe de France évidemment ! Bon, la FIFA va pas exclure l'Argentine, c'est impossible juridiquement." },
+      { "speaker": "Rosalía", "fr": "Oui j'ai lu ça aussi, les experts disent que c'est contre les règles. Mais les manifestations sous l'Obélisque, c'était impressionnant !", "es": "Sí, también leí eso, los expertos dicen que va en contra de las reglas. ¡Pero las manifestaciones bajo el Obelisco fueron impresionantes!" },
+      { "speaker": "Théo", "fr": "Carrément ! Cet obélisque c'est un peu comme notre Tour Eiffel pour les Argentins." },
+      { "speaker": "Rosalía", "fr": "Exactement ! Et quand j'arrive à Strasbourg, je vais découvrir plein de beaux monuments aussi. J'ai tellement hâte !", "es": "¡Exacto! Y cuando llegue a Estrasburgo también voy a descubrir un montón de monumentos bonitos. ¡Tengo muchas ganas!" },
+      { "speaker": "Théo", "fr": "Ah oui ? Tu arrives quand exactement ?" },
+      { "speaker": "Rosalía", "fr": "À la fin de l'année 2026, après mes études. Clément et moi on a tout planifié pour s'installer là-bas.", "es": "A finales del 2026, después de mis estudios. Clément y yo lo tenemos todo planeado para instalarnos allá." },
+      { "speaker": "Théo", "fr": "Super ! Et tu regarderas peut-être des matchs à Strasbourg ? Il y a le RC Strasbourg ici !" },
+      { "speaker": "Rosalía", "fr": "Ah bon, je savais pas ! Peut-être que j'irai voir un match pour m'intégrer, même si c'est pas trop mon truc.", "es": "¡Ah, no sabía! Quizás vaya a ver un partido para integrarme, aunque no sea muy lo mío." },
+      { "speaker": "Théo", "fr": "Bonne idée ! Et pour la polémique Argentine, tu penses que ça va durer longtemps ?" },
+      { "speaker": "Rosalía", "fr": "Je pense que les gens vont oublier assez vite. Et les Argentins sont fiers de leur équipe, c'est normal !", "es": "Creo que la gente va a olvidar bastante rápido. ¡Y los argentinos están orgullosos de su equipo, es normal!" },
+      { "speaker": "Théo", "fr": "T'as pas tort ! Bon on se retrouve la semaine prochaine pour notre échange alors ?" },
+      { "speaker": "Rosalía", "fr": "Avec plaisir ! La même heure mardi prochain, ça te va ?", "es": "¡Con mucho gusto! ¿El mismo horario el martes que viene te viene bien?" }
+    ]
+  },
+  "comments": [
+    { "username": "FurioEnerveduFoot", "comment": "Vingt-trois millions de votes pour exclure une nation entière parce qu'un arbitre a fait une erreur ??? C'est le niveau intellectuel des réseaux sociaux en 2026. Une pétition en ligne c'est pas une décision juridique, ça ne veut RIEN dire. Arrêtez de prendre ça au sérieux !", "likes": 187 },
+    { "username": "VoyageurDuConeSud", "comment": "J'étais à Buenos Aires en 2022 quand ils ont gagné la Coupe du Monde. L'ambiance sous l'Obélisque cette nuit-là était indescriptible, des centaines de milliers de personnes dans les rues. Voir les mêmes Argentins manifester aujourd'hui contre une pétition me touche vraiment.", "likes": 94 },
+    { "username": "AnalysteFoot_Serieux", "comment": "Ceux qui signent ont peut-être tort sur la méthode, mais le fond est réel. L'arbitrage de cette finale était clairement problématique. La FIFA doit se remettre en question au lieu d'ouvrir une enquête de façade comme d'habitude.", "likes": 63 },
+    { "username": "LePinguinArbitre", "comment": "Solution simple : on rejoue la finale mais avec des arbitres robots programmés pour être neutres. Et si les robots font aussi des erreurs, on recommence avec des pingouins. Au moins les pingouins sont impartiaux. 🐧", "likes": 512 },
+    { "username": "FootPassion_Forever", "comment": "Ce que j'aime dans le foot c'est exactement ça : la passion des supporters qui n'abandonnent jamais. Que vous soyez pour ou contre l'Argentine, cette mobilisation prouve que le football rassemble des émotions vraies. C'est pour ça qu'on aime ce sport.", "likes": 38 }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "id": "cabane-livres-orangerie-strasbourg-vandalisme",
+  "title": "La cabane à livres du parc de l'Orangerie vandalisée",
+  "date": "2026-07-24",
+  "category": "Société",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Boite_a_livres_parc_de_mutzig.jpg",
+    "alt": "Une cabane à livres dans un parc en Alsace"
+  },
+  "vocabulary": [
+    { "fr": "vandaliser", "es": "vandalizar" },
+    { "fr": "un ouvrage", "es": "una obra, un libro" },
+    { "fr": "saccager", "es": "destrozar, devastar" },
+    { "fr": "irrécupérable", "es": "irrecuperable" },
+    { "fr": "un bénévole", "es": "un voluntario" },
+    { "fr": "inaugurer", "es": "inaugurar" },
+    { "fr": "la solidarité", "es": "la solidaridad" },
+    { "fr": "condamner", "es": "condenar" },
+    { "fr": "un incendie criminel", "es": "un incendio intencionado" },
+    { "fr": "la détermination", "es": "la determinación" }
+  ],
+  "article": "Les habitants de Strasbourg ont appris avec tristesse une nouvelle qui a choqué tout le quartier centre-est. La cabane à livres du parc de l'Orangerie, un lieu de partage culturel très aimé des promeneurs, a été vandalisée à deux reprises en l'espace de deux jours seulement. Les actes ont eu lieu les 20 et 21 juillet 2026. Les bénévoles qui gèrent cet espace ont découvert un spectacle de désolation.\n\nPrès de 200 ouvrages sur les 300 présents dans la cabane ont été endommagés ou détruits. Environ deux tiers des livres ont été jetés au sol et saccagés par les vandales. Plusieurs volumes ont également été lancés dans le lac de l'Orangerie, ce qui les a rendus définitivement irrécupérables.\n\nLa cabane est gérée par l'Association de défense des intérêts des quartiers centre-est de Strasbourg, plus connue sous l'acronyme ADIQ. C'est l'équipe de bénévoles qui a découvert les dégâts en arrivant sur place et qui a immédiatement alerté les autorités. Benoît Kah, vice-président de l'association, a décrit la situation avec beaucoup d'émotion. Selon lui, les quinze bénévoles impliqués dans ce projet au quotidien étaient complètement \"sous le choc\" après avoir constaté les dégâts.\n\nLa réaction des élus locaux a été rapide et ferme. Nicolas Matt, élu d'opposition à la ville de Strasbourg, a vivement condamné ces actes. Il a rappelé que détruire des livres est un symbole particulièrement grave. Selon lui, \"s'attaquer à des livres nous renvoie à des images associées aux pires moments de notre humanité\". Catherine Trautmann, la maire de Strasbourg, a de son côté exprimé son soutien à l'ADIQ et à tous les bénévoles touchés par cette situation.\n\nCe n'est pas la première fois que la cabane doit faire face à des actes malveillants. Inaugurée il y a quinze ans, elle est rapidement devenue un lieu incontournable du quartier, apprécié par les familles et les promeneurs. En 2015, elle avait déjà été victime de deux incendies criminels qui l'avaient entièrement détruite. Grâce à la mobilisation des habitants et des artisans des Compagnons du Devoir, elle avait été reconstruite en 2016. Une caméra de surveillance avait aussi été installée à ce moment-là pour mieux protéger le lieu.\n\nMalgré ces nouvelles dégradations, l'ADIQ a choisi de rester debout et de ne pas fermer la cabane. Elle restera ouverte tout l'été, y compris pendant la nuit. Cette décision courageuse montre la détermination des bénévoles à ne pas laisser le vandalisme gagner. Des habitants du quartier ont déjà proposé d'apporter des livres neufs ou d'occasion pour remplacer ceux qui ont été perdus ou détruits lors de ces deux actes.\n\nLa cabane à livres est un exemple parfait de ce qu'on appelle le partage culturel. Le principe est simple : n'importe qui peut déposer un livre et en emporter un autre, sans rien payer. Des centaines de cabanes de ce type existent aujourd'hui dans toute la France. On les trouve dans les parcs, devant les écoles, dans les rues commerçantes ou près des gares. Elles permettent à chacun d'accéder à la lecture, peu importe son âge ou ses revenus.\n\nCet événement à Strasbourg pose une question que beaucoup de Français se posent aujourd'hui. Comment protéger ces espaces culturels ouverts au public contre les actes de vandalisme répétés ? Faut-il renforcer la surveillance ou, au contraire, impliquer encore davantage les habitants dans la gestion de ces lieux ? La réponse ne sera peut-être pas simple, mais l'élan de solidarité des habitants du quartier de l'Orangerie montre que la culture reste un combat qui vaut vraiment la peine d'être mené.",
+  "conversation": {
+    "intro": "Rosalía parcourt les actualités de Strasbourg sur son téléphone pendant une pause. Elle tombe sur un article qui la choque et en parle immédiatement à Clément, son petit ami français.",
+    "lines": [
+      { "speaker": "Clément", "fr": "T'as l'air surprise, qu'est-ce qu'il y a ?" },
+      { "speaker": "Rosalia", "fr": "J'ai lu un article sur Strasbourg et ça m'a vraiment choquée. Y'a une cabane à livres dans un parc qui a été saccagée, presque 200 livres détruits.", "es": "Leí un artículo sobre Estrasburgo y me quedé en shock. Vandalizaron una cabaña de libros en un parque, casi 200 libros destruidos." },
+      { "speaker": "Clément", "fr": "La cabane à livres du parc de l'Orangerie ? Je connais bien, j'y suis passé plein de fois." },
+      { "speaker": "Rosalia", "fr": "C'est ça ! Et ils ont même jeté des livres dans le lac. Pourquoi on s'en prendrait à des livres ?", "es": "¡Exacto! Y además tiraron libros al lago. ¿Por qué alguien atacaría libros?" },
+      { "speaker": "Clément", "fr": "C'est vraiment stupide. En plus c'est un espace pour tout le monde, géré par des bénévoles." },
+      { "speaker": "Rosalia", "fr": "Je comprends pas cette logique. Chez moi aussi y'a du vandalisme, mais s'attaquer à des livres... c'est un autre niveau.", "es": "No entiendo esa lógica. En mi país también hay vandalismo, pero atacar libros... eso es otro nivel." },
+      { "speaker": "Clément", "fr": "Un élu a déclaré que ça rappelle les pires moments de l'humanité. Et je pense qu'il a pas tort." },
+      { "speaker": "Rosalia", "fr": "Il a complètement raison. On pense que c'est des trucs qui arrivent dans les films, mais non, c'est réel.", "es": "Tiene toda la razón. Uno cree que eso solo pasa en las películas, pero no, es real." },
+      { "speaker": "Clément", "fr": "La bonne nouvelle, c'est que la cabane reste ouverte même la nuit tout l'été." },
+      { "speaker": "Rosalia", "fr": "Ah oui, j'ai vu ça ! Les bénévoles ne veulent pas abandonner. J'aime beaucoup leur état d'esprit, c'est vraiment beau.", "es": "Ah sí, vi eso. Los voluntarios no quieren rendirse. Me encanta su actitud, es muy bonito." },
+      { "speaker": "Clément", "fr": "T'as déjà utilisé une cabane à livres avant ?" },
+      { "speaker": "Rosalia", "fr": "Non, mais j'ai vraiment hâte ! J'aime lire, surtout la littérature jeunesse. Je pourrai déposer un livre et en prendre un en français pour pratiquer.", "es": "No, ¡pero tengo muchas ganas! Me encanta leer, sobre todo literatura juvenil. Podré dejar un libro y coger uno en francés para practicar." },
+      { "speaker": "Clément", "fr": "T'as des livres en espagnol que tu pourrais apporter ?" },
+      { "speaker": "Rosalia", "fr": "Oui, j'ai quelques livres ici, dont Sombra y Hueso que j'adore. Ce serait sympa de les partager avec des gens qui apprennent l'espagnol.", "es": "Sí, tengo varios libros aquí, entre ellos Sombra y Hueso que me encanta. Sería genial compartirlos con gente que aprende español." },
+      { "speaker": "Clément", "fr": "Excellente idée ! Les promeneurs du parc adoreraient trouver un livre en espagnol." },
+      { "speaker": "Rosalia", "fr": "Je connais pas encore le parc de l'Orangerie mais ça a l'air vraiment beau. Tu m'y emmèneras bientôt ?", "es": "Todavía no conozco el parque de l'Orangerie pero parece muy bonito. ¿Me llevarás pronto?" },
+      { "speaker": "Clément", "fr": "Bien sûr ! On y va dès ton arrivée. Il y a un lac, des cygnes, des enfants, c'est très animé." },
+      { "speaker": "Rosalia", "fr": "Super ! Et si la cabane est remise en état, on pourra apporter des livres pour aider à la remplir. J'aimerais vraiment participer à ça.", "es": "¡Genial! Y si la cabaña está arreglada, podemos llevar libros para ayudar a rellenarla. Me encantaría participar en eso." },
+      { "speaker": "Clément", "fr": "Les bénévoles seront ravis d'avoir du soutien de personnes qui arrivent à Strasbourg." },
+      { "speaker": "Rosalia", "fr": "Et c'est une belle façon de s'intégrer dès le début, non ? Participer à quelque chose de local et de concret.", "es": "Y es una bonita forma de integrarse desde el principio, ¿verdad? Participar en algo local y concreto." }
+    ]
+  },
+  "comments": [
+    {
+      "username": "OutreDeRage_Orangerie",
+      "comment": "C'est honteux et lâche ! Ces gens-là méritent une peine sévère. On détruit le bien commun, le travail de bénévoles qui donnent de leur temps, pour rien. La société va vraiment très mal quand on en arrive à brûler et saccager des livres dans un parc public.",
+      "likes": 187
+    },
+    {
+      "username": "PromeneuseduDimanche67",
+      "comment": "Je passe devant cette cabane tous les dimanches avec mes enfants. On y a pris des dizaines de livres au fil des années. Ma fille a découvert sa série préférée grâce à elle. Apprendre ça m'a fendu le cœur. On va y déposer des livres ce week-end.",
+      "likes": 312
+    },
+    {
+      "username": "AlternativeCulturelle21",
+      "comment": "Je comprends l'émotion mais installer encore plus de caméras ne résoudra rien. Le vrai problème c'est le manque d'éducation et de lien social dans nos quartiers. Il faudrait des animateurs, des médiateurs, pas de la surveillance supplémentaire.",
+      "likes": 74
+    },
+    {
+      "username": "PoissonsOrangerie_Choques",
+      "comment": "En tant que représentant des poissons du lac de l'Orangerie, je proteste formellement. Non seulement on nous nourrit moins depuis l'été, mais maintenant on nous envoie des romans dans la tête. Rendez-nous les miettes de pain, gardez vos livres hors de l'eau.",
+      "likes": 489
+    },
+    {
+      "username": "CoeurBenevolat_Strasbourg",
+      "comment": "Chapeau bas à tous les bénévoles de l'ADIQ qui ne baissent pas les bras. Garder la cabane ouverte malgré tout, c'est un acte de résistance magnifique. On va venir déposer des livres ce week-end. La culture, ça ne se détruit pas.",
+      "likes": 243
+    }
+  ]
+}

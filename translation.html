@@ -264,11 +264,11 @@ FRASE2|pc|Nous avons visité Paris.|Hemos visitado París. (nous)`;
                         for (const line of raw.trim().split('\n')) {
                             const parts = line.trim().split('|').map(s => s.trim());
                             if (parts.length === 4 && /^FRASE\d+$/i.test(parts[0]))
-                                newSentences.push({ tense:parts[1], french:parts[2], spanish:parts[3], number:0 });
+                                newSentences.push({ tense:parts[1], french:parts[2].replace(/\*/g, ''), spanish:parts[3], number:0 });
                             else if (parts.length === 3 && /^FRASE\d+$/i.test(parts[0]))
-                                newSentences.push({ french:parts[1], spanish:parts[2], number:0 });
+                                newSentences.push({ french:parts[1].replace(/\*/g, ''), spanish:parts[2], number:0 });
                             else if (parts.length === 2 && parts[0].length > 3 && parts[1].length > 3)
-                                newSentences.push({ french:parts[0], spanish:parts[1], number:0 });
+                                newSentences.push({ french:parts[0].replace(/\*/g, ''), spanish:parts[1], number:0 });
                         }
                     }
                     if (newSentences.length >= selected.length) break;
@@ -515,7 +515,7 @@ FRASE2|pc|Nous avons visité Paris.|Hemos visitado París. (nous)`;
             if (parts.length !== 2 || !parts[0] || !parts[1]) throw new Error('fmt');
 
             const origFr = s.french;
-            s.french  = parts[0];
+            s.french  = parts[0].replace(/\*/g, '');
             s.spanish = parts[1];
 
             const spEl = document.getElementById('trans-spanish');

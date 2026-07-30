@@ -194,7 +194,9 @@ const trans = {
 
         // Load stored sentences, prune expired ones
         let stored = JSON.parse(localStorage.getItem(SENTENCES_KEY) || '[]');
-        stored = stored.filter(s => s.number <= 14);
+        stored = stored.filter(s => s.number <= 14)
+            .map(s => s.french && s.french.includes('*') ? { ...s, french: s.french.replace(/\*/g, '') } : s);
+        localStorage.setItem(SENTENCES_KEY, JSON.stringify(stored));
 
         let newSentences = [];
 

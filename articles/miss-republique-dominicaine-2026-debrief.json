@@ -1,0 +1,73 @@
+{
+  "id": "miss-republique-dominicaine-2026-debrief",
+  "title": "Miss République Dominicaine 2026 : le débrief d'une soirée mouvementée",
+  "date": "2026-08-02",
+  "category": "Culture",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mouawad_Miss_Universe_%22The_Power_of_Unity%22_Crown.png",
+    "alt": "La couronne officielle du concours Miss Univers"
+  },
+  "vocabulary": [
+    { "fr": "se dérouler", "es": "desarrollarse" },
+    { "fr": "un couac", "es": "un tropiezo" },
+    { "fr": "la polémique", "es": "la polémica" },
+    { "fr": "le sacre", "es": "la coronación" },
+    { "fr": "une dauphine", "es": "una finalista (subcampeona)" },
+    { "fr": "décisif / décisive", "es": "decisivo / decisiva" },
+    { "fr": "le verdict", "es": "el veredicto" },
+    { "fr": "incontournable", "es": "ineludible" }
+  ],
+  "article": "Chaque année, les Dominicains suivent avec passion le concours de Miss République Dominicaine Univers. Cette année, l'édition 2026 a fait beaucoup parler d'elle. Entre le sacre de la nouvelle reine, les critiques du public et quelques couacs techniques, la soirée n'est pas passée inaperçue.\n\nLa grande finale s'est déroulée jeudi soir dans la salle Carlos Piantini du Théâtre National Eduardo Brito, à Saint-Domingue. Trente candidates venues de tout le pays ont défilé devant le jury, dans une mise en scène pensée pour mettre en valeur l'identité dominicaine. La soirée était animée par Fátima Bosch, l'actuelle Miss Univers d'origine mexicaine. Elle a d'ailleurs surpris le public avec un salut en dominicain, « Qué lo qué República Dominicana », ce qui a beaucoup plu aux spectateurs présents dans la salle comme à ceux qui suivaient la diffusion depuis chez eux.\n\nÀ la fin de la soirée, c'est Melissa Núñez, une candidate de 28 ans originaire de Concepción de La Vega, qui a remporté la couronne. Elle succède ainsi à Jennifer Ventura, la Miss sortante, et devient officiellement la nouvelle représentante du pays. Grâce à ce sacre, Melissa Núñez représentera la République dominicaine lors de la 75e édition de Miss Univers. La finale internationale aura lieu le 24 novembre 2026, au Coliseo de Puerto Rico José Miguel Agrelot, à San Juan, un rendez-vous que toute la région attend déjà avec impatience.\n\nDerrière la gagnante, plusieurs candidates ont aussi marqué la soirée. Valentina Campion, de Samaná, a obtenu la première place de dauphine. Floralba Caba, de Monseñor Nouel, a terminé deuxième dauphine. Camila Issa Svelti, Melissa Domínguez et Elena Izzo complètent le top cinq de ce classement final. Valentina Campion a également reçu le prix de Miss Popularité, décerné par le vote du public, une distinction qui montre à quel point elle avait conquis les téléspectateurs tout au long du concours.\n\nLe choix du jury a immédiatement provoqué une vive polémique sur les réseaux sociaux. De nombreux internautes estiment que Valentina Campion méritait davantage la couronne que Melissa Núñez, et les commentaires en ce sens se sont multipliés dès la fin de la cérémonie. Une hypothèse revient souvent dans les discussions en ligne : la ronde des questions, animée par Fátima Bosch elle-même, aurait fait toute la différence au moment du calcul des points. Cette étape reste en effet décisive dans ce genre de concours, puisqu'elle permet au jury d'évaluer l'aisance et la spontanéité des candidates.\n\nEn plus de la polémique sur le résultat, la production a connu plusieurs couacs pendant la diffusion en direct. Le déroulement du spectacle a subi des changements de script à la dernière minute, ce qui a visiblement déstabilisé certains présentateurs. Un artiste annoncé dans le programme n'est finalement jamais monté sur scène, sans explication officielle donnée au public. L'un des producteurs de l'événement était également absent au moment crucial de la soirée. Ces incidents ont été largement commentés par les téléspectateurs, qui suivaient la gala en direct depuis chez eux et qui n'ont pas manqué de le signaler sur les réseaux sociaux.\n\nMalgré ces critiques, le concours de Miss République Dominicaine Univers reste un rendez-vous incontournable pour de nombreux Dominicains. Chaque édition suscite des débats passionnés sur les réseaux sociaux, entre soutien aux favorites et déception face au verdict final. Melissa Núñez devra maintenant se préparer pour représenter fièrement son pays sur la scène internationale, dans un contexte où toute la République dominicaine attend déjà de voir comment se comportera la nouvelle reine face à la concurrence mondiale.",
+  "conversation": {
+    "intro": "Rosalia et son amie Léa se retrouvent pour un café à Saint-Domingue. Le concours Miss République Dominicaine Univers, très commenté sur les réseaux sociaux dominicains, devient vite le sujet principal de leur conversation.",
+    "lines": [
+      { "speaker": "Léa", "fr": "Alors, t'as regardé le concours de Miss République Dominicaine hier soir ?" },
+      { "speaker": "Rosalia", "fr": "Bien sûr ! Je l'ai suivi en direct avec toute ma famille, c'était trop intense.", "es": "¡Claro! Lo seguí en vivo con toda mi familia, ¡fue súper intenso!" },
+      { "speaker": "Léa", "fr": "Et alors, qui a gagné à la fin ?" },
+      { "speaker": "Rosalia", "fr": "Melissa Núñez a gagné, elle vient de La Vega. Mais tout le monde parle surtout de la polémique.", "es": "Ganó Melissa Núñez, es de La Vega. Pero todo el mundo habla sobre todo de la polémica." },
+      { "speaker": "Léa", "fr": "Ah bon, quelle polémique exactement ?" },
+      { "speaker": "Rosalia", "fr": "Beaucoup de gens pensaient que Valentina Campion méritait la couronne. Elle a eu le prix de Miss Popularité.", "es": "Mucha gente pensaba que Valentina Campion merecía la corona. Ella ganó el premio a Miss Popularidad." },
+      { "speaker": "Léa", "fr": "C'est un peu triste pour elle, non ?" },
+      { "speaker": "Rosalia", "fr": "Un peu, oui, mais elle a quand même gagné le cœur du public. Moi je trouve ça beau.", "es": "Un poco, sí, pero de todas formas se ganó el corazón del público. A mí me parece bonito." },
+      { "speaker": "Léa", "fr": "Et y'a eu des erreurs pendant l'émission, j'ai vu ça passer sur les réseaux." },
+      { "speaker": "Rosalia", "fr": "Oui exactement ! Ils ont changé le script à la dernière minute, et un artiste n'est jamais monté sur scène.", "es": "¡Sí, exacto! Cambiaron el guion a última hora, y un artista nunca subió al escenario." },
+      { "speaker": "Léa", "fr": "Sérieux ? En direct, devant tout le pays ?" },
+      { "speaker": "Rosalia", "fr": "Ouais, c'était un peu gênant, mais bon, ça arrive même dans les grandes émissions.", "es": "Sí, fue un poco vergonzoso, pero bueno, eso pasa hasta en los programas grandes." },
+      { "speaker": "Léa", "fr": "Et c'est qui qui animait la soirée, du coup ?" },
+      { "speaker": "Rosalia", "fr": "Fátima Bosch, l'actuelle Miss Univers ! Elle nous a salués avec « Qué lo qué República Dominicana ».", "es": "¡Fátima Bosch, la Miss Universo actual! Nos saludó con 'Qué lo qué República Dominicana'." },
+      { "speaker": "Léa", "fr": "Ah trop drôle, elle a essayé de parler comme vous !" },
+      { "speaker": "Rosalia", "fr": "Oui, j'ai adoré ce moment. Ça m'a fait super plaisir de voir notre culture représentée comme ça.", "es": "Sí, amé ese momento. Me dio mucha alegría ver nuestra cultura representada así." },
+      { "speaker": "Léa", "fr": "Tu suis ce genre de concours depuis toujours, toi ?" },
+      { "speaker": "Rosalia", "fr": "Depuis toute petite, avec ma mère et ma sœur Rosaura. C'est presque une tradition chez nous.", "es": "Desde muy pequeña, con mi mamá y mi hermana Rosaura. Es casi una tradición en casa." },
+      { "speaker": "Léa", "fr": "Et à Strasbourg, tu crois que tu vas continuer à suivre ça ?" },
+      { "speaker": "Rosalia", "fr": "Carrément ! Je regarderai ça en streaming avec Clément, et j'appellerai ma famille juste après pour tout commenter ensemble.", "es": "¡Por supuesto! Lo veré en streaming con Clément, y llamaré a mi familia justo después para comentarlo todo juntas." }
+    ]
+  },
+  "comments": [
+    {
+      "username": "CasimiroDomingo91",
+      "comment": "Le jury a complètement ignoré la volonté du peuple ! Valentina Campion méritait cette couronne à 100%, tout le monde le sait. C'est une honte, ce concours est truqué depuis des années et personne ne fait rien pour changer ça !!!",
+      "likes": 178
+    },
+    {
+      "username": "Mariangel_Reyes_SD",
+      "comment": "J'étais avec toute ma famille devant la télé jeudi soir, comme chaque année depuis que je suis petite. Ma grand-mère criait le nom de sa favorite à chaque candidate, c'était un vrai moment de fête à la maison.",
+      "likes": 267
+    },
+    {
+      "username": "ElEnfocado_RD",
+      "comment": "Je ne comprends pas toutes ces critiques contre Melissa Núñez. Elle a été excellente pendant toute la soirée, élégante et sûre d'elle. Le jury a fait son travail, et franchement elle représentera très bien notre pays à Miss Univers.",
+      "likes": 52
+    },
+    {
+      "username": "ProfesorDelCaos77",
+      "comment": "Pendant que tout le pays débat de la couronne, moi je me demande surtout pourquoi l'artiste annoncé n'est jamais venu... il est peut-être encore coincé dans les embouteillages de Santo Domingo, ça fait deux jours maintenant.",
+      "likes": 498
+    },
+    {
+      "username": "LuzMilagros_SD",
+      "comment": "Bravo à toutes les candidates, elles ont toutes travaillé très dur pour arriver jusque-là. Félicitations sincères à Melissa Núñez, et courage à Valentina pour la suite, le public dominicain t'adore déjà énormément.",
+      "likes": 189
+    }
+  ]
+}

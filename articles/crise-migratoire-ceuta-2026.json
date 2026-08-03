@@ -1,0 +1,73 @@
+{
+  "id": "crise-migratoire-ceuta-2026",
+  "title": "Une crise migratoire sans précédent frappe l'enclave espagnole de Ceuta",
+  "date": "2026-08-02",
+  "category": "Société",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ceuta_border_fence.jpg",
+    "alt": "La clôture frontalière qui sépare Ceuta du Maroc"
+  },
+  "vocabulary": [
+    { "fr": "franchir (la frontière)", "es": "cruzar (la frontera)" },
+    { "fr": "l'enclave", "es": "el enclave" },
+    { "fr": "l'afflux", "es": "la afluencia" },
+    { "fr": "intenable", "es": "insostenible" },
+    { "fr": "la ruée", "es": "la estampida, la oleada" },
+    { "fr": "les passeurs", "es": "los traficantes de personas" },
+    { "fr": "l'errance", "es": "el deambular" },
+    { "fr": "déployer", "es": "desplegar" }
+  ],
+  "article": "Depuis le 30 juillet 2026, une crise migratoire sans précédent secoue la ville espagnole de Ceuta. En seulement deux jours, environ 60 000 personnes venues du Maroc ont franchi la frontière de façon illégale. Selon le ministère espagnol de l'Intérieur, près de 50 000 migrants sont entrés dans l'enclave au plus fort de la crise. Ceuta est un petit territoire de 20 kilomètres carrés. Sa population habituelle est de 85 000 habitants. L'arrivée soudaine de dizaines de milliers de personnes représente donc plus des deux tiers de cette population en à peine quarante-huit heures.\n\nLa plupart des migrants ont traversé la frontière à la nage, le long des digues des plages d'El Tarajal et de Benzú. D'autres ont préféré marcher le long du rivage pour rejoindre le territoire espagnol. Ce passage massif s'est révélé très dangereux pour les personnes concernées. Le gouvernement espagnol évoque 18 morts pendant les tentatives de traversée. Cependant, le président de la ville de Ceuta parle plutôt de 34 décès. Il a qualifié la situation d'« intenable » face aux journalistes venus sur place.\n\nFace à cet afflux soudain, le gouvernement espagnol a réagi très rapidement. Le Premier ministre Pedro Sánchez a parlé d'une « attaque » et d'une « violation de l'intégrité territoriale » de l'Espagne. Les autorités ont alors déployé l'armée de terre, la Garde civile, la police nationale et les services de sauvetage en mer. Le poste-frontière de Beni Ensar, situé à Melilla, a aussi été fermé temporairement par précaution, le temps de reprendre le contrôle de la situation.\n\nL'Espagne et le Maroc ont ensuite coordonné leurs actions pour contenir cette crise. Les deux pays ont organisé le retour progressif des migrants vers le territoire marocain. Dès le 31 juillet, plus de 48 000 personnes étaient déjà reparties de leur plein gré ou après négociation. Le 2 août, la majorité des migrants avait fait demi-tour, épuisée par plusieurs jours d'errance, par le manque de sommeil et par la faim. Pour les habitants de Ceuta, le choc a tout de même été immense. Les commerces ont dû fermer plusieurs jours et certains quartiers sont restés bloqués par la foule. De nombreux volontaires ont malgré tout distribué de l'eau et de la nourriture aux personnes épuisées.\n\nLa raison exacte de cette ruée soudaine reste incertaine pour l'instant. Plusieurs migrants ont expliqué avoir suivi des rumeurs qui circulaient sur les réseaux sociaux, annonçant à tort une ouverture de la frontière. Pedro Sánchez estime, de son côté, que des passeurs ont volontairement mal interprété une récente décision de justice sur l'expulsion de migrants arrivés par bateau, pour pousser des milliers de personnes à tenter leur chance vers l'Europe.\n\nCet épisode rappelle fortement la crise migratoire de 2021, quand plusieurs milliers de personnes avaient déjà franchi la même frontière en quelques jours. À l'époque, un conflit diplomatique entre l'Espagne et le Maroc au sujet du Sahara occidental avait déclenché cette vague soudaine. Cinq ans plus tard, Ceuta reste donc un point de tension permanent entre l'Europe et l'Afrique du Nord, malgré les efforts diplomatiques des deux gouvernements.\n\nCette nouvelle crise relance surtout le débat sur la politique migratoire européenne. Beaucoup s'interrogent sur les moyens de mieux protéger les frontières extérieures de l'Union, mais aussi sur les conditions de vie qui poussent tant de personnes à prendre de tels risques. Pour les habitants comme pour les autorités, les prochaines semaines s'annoncent incertaines, entre reconstruction du quotidien et recherche de solutions durables.",
+  "conversation": {
+    "intro": "Rosalia regarde les informations avec son amie Léa dans l'appartement de cette dernière à Strasbourg. Le journal télévisé parle de la crise migratoire à Ceuta, ce qui pousse Rosalia à réfléchir à son propre parcours vers la France.",
+    "lines": [
+      { "speaker": "Léa", "fr": "Rosalia, t'as vu les infos ? Il y a une crise énorme à Ceuta, en Espagne." },
+      { "speaker": "Rosalia", "fr": "Oui, j'ai vu ça ce matin ! Presque 50 000 personnes en deux jours, c'est énorme.", "es": "Sí, lo vi esta mañana. ¡Casi 50 000 personas en dos días, es una locura!" },
+      { "speaker": "Léa", "fr": "Exactement. Ils ont traversé à la nage depuis le Maroc, en pleine nuit." },
+      { "speaker": "Rosalia", "fr": "C'est tellement triste qu'il y ait eu des morts. Ça montre à quel point les gens sont désespérés.", "es": "Es tan triste que haya habido muertos. Muestra hasta qué punto la gente está desesperada." },
+      { "speaker": "Léa", "fr": "Oui, le président de Ceuta parle même de 34 décès. C'est terrible." },
+      { "speaker": "Rosalia", "fr": "Ça me fait réfléchir à mon propre parcours. Moi j'ai la chance de faire les choses dans les règles.", "es": "Eso me hace pensar en mi propio camino. Yo tengo la suerte de hacer las cosas de forma legal." },
+      { "speaker": "Léa", "fr": "C'est vrai, toi tu passes par les études et le visa, c'est un chemin complètement différent." },
+      { "speaker": "Rosalia", "fr": "Exactement ! J'apprends le français depuis un an, je vais étudier à Strasbourg, tout est organisé.", "es": "¡Exacto! Llevo un año aprendiendo francés, voy a estudiar en Estrasburgo, todo está organizado." },
+      { "speaker": "Léa", "fr": "Et t'as pas peur qu'on te voie différemment parce que t'es étrangère ?" },
+      { "speaker": "Rosalia", "fr": "Un peu, mais Clement me dit toujours que c'est plutôt un atout. Ça me rend curieuse et motivée.", "es": "Un poco, pero Clement siempre me dice que es más bien una ventaja. Me pone curiosa y motivada." },
+      { "speaker": "Léa", "fr": "Il a raison ! Et l'Espagne a déployé l'armée pour gérer la situation, apparemment." },
+      { "speaker": "Rosalia", "fr": "Oui j'ai lu ça. Et il paraît que des passeurs ont propagé de fausses rumeurs sur l'ouverture de la frontière.", "es": "Sí, leí eso. Y parece que unos traficantes propagaron falsos rumores sobre la apertura de la frontera." },
+      { "speaker": "Léa", "fr": "C'est ça, Sánchez a même parlé d'une attaque contre l'intégrité du pays." },
+      { "speaker": "Rosalia", "fr": "C'est un mot fort. Mais je comprends, l'arrivée de 50 000 personnes en deux jours, c'est un vrai choc.", "es": "Es una palabra fuerte. Pero lo entiendo, la llegada de 50 000 personas en dos días es un verdadero shock." },
+      { "speaker": "Léa", "fr": "Et le pire, c'est que la moitié était déjà repartie vers le Maroc dès le lendemain." },
+      { "speaker": "Rosalia", "fr": "J'espère que ça va pousser l'Europe à mieux s'organiser, pour éviter d'autres drames comme celui-là.", "es": "Espero que esto empuje a Europa a organizarse mejor, para evitar otros dramas como este." },
+      { "speaker": "Léa", "fr": "Je l'espère aussi. Bon, sinon, t'en es où avec ton dossier pour Strasbourg ?" },
+      { "speaker": "Rosalia", "fr": "Ça avance super bien ! J'ai reçu deux documents importants cette semaine, je suis trop contente.", "es": "¡Va superbién! Recibí dos documentos importantes esta semana, estoy súper contenta." },
+      { "speaker": "Léa", "fr": "Génial ! On devrait fêter ça, non ?" },
+      { "speaker": "Rosalia", "fr": "Carrément ! On se fait un petit resto ce week-end pour célébrer tout ça ?", "es": "¡Totalmente! ¿Nos vamos a un restaurante este fin de semana para celebrarlo?" }
+    ]
+  },
+  "comments": [
+    {
+      "username": "CeutaEnColere_85",
+      "comment": "Encore une fois on nous ressort le même scénario qu'en 2021 !! Cinq ans après, TOUJOURS aucune solution européenne sérieuse. Nos commerces ferment, nos quartiers sont bloqués, et personne à Bruxelles ne bouge le petit doigt. Ras-le-bol.",
+      "likes": 289
+    },
+    {
+      "username": "MarocaineDepuisToujours",
+      "comment": "Mon cousin a tenté la traversée en 2018, il a mis trois jours à rentrer chez nous, épuisé et sans un sou. Cette histoire des gens qui marchent le long du rivage, ça m'a rappelé exactement son récit. Ça brise le cœur.",
+      "likes": 156
+    },
+    {
+      "username": "RealPolitikEurope67",
+      "comment": "Tout le monde crie à l'horreur mais personne ne parle des passeurs qui exploitent ces gens avec de fausses rumeurs. Le vrai problème c'est eux, pas les militaires espagnols qui font juste leur travail pour sécuriser la frontière.",
+      "likes": 63
+    },
+    {
+      "username": "PapyPecheur_Cadix",
+      "comment": "Perso je retiens surtout que la plage de Benzú est magnifique. J'y étais en vacances l'année dernière, l'eau était limpide. Bon voilà, sinon courage à tout le monde dans cette histoire !",
+      "likes": 512
+    },
+    {
+      "username": "SolidariteCeuta",
+      "comment": "Immense respect pour tous les bénévoles qui ont distribué de l'eau et de la nourriture sans hésiter une seconde. Dans les pires moments, il y a toujours des gens formidables qui montrent le meilleur de l'humanité.",
+      "likes": 347
+    }
+  ]
+}

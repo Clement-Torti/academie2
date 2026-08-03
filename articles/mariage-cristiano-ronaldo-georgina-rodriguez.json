@@ -1,0 +1,73 @@
+{
+  "id": "mariage-cristiano-ronaldo-georgina-rodriguez",
+  "title": "Le mariage de Cristiano Ronaldo et Georgina Rodríguez fait rêver la presse",
+  "date": "2026-08-02",
+  "category": "Société",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cristiano_Ronaldo_2018.jpg",
+    "alt": "Cristiano Ronaldo, footballeur portugais, en 2018"
+  },
+  "vocabulary": [
+    { "fr": "les fiançailles", "es": "el compromiso (matrimonial)" },
+    { "fr": "une bague en diamant", "es": "un anillo de diamante" },
+    { "fr": "un mannequin", "es": "una modelo" },
+    { "fr": "médiatisé", "es": "expuesto en los medios" },
+    { "fr": "l'intimité", "es": "la intimidad" },
+    { "fr": "une rumeur", "es": "un rumor" },
+    { "fr": "la discrétion", "es": "la discreción" },
+    { "fr": "une réception", "es": "un banquete (de boda)" }
+  ],
+  "article": "Cristiano Ronaldo et Georgina Rodríguez préparent enfin leur mariage. Le couple est ensemble depuis dix ans et toute la presse internationale parle de cet événement très attendu. Cependant, personne ne connaît encore la date exacte ni le lieu exact de la cérémonie. Les journaux publient chaque semaine une nouvelle rumeur à ce sujet, et les fans du monde entier suivent chaque détail avec impatience.\n\nCristiano Ronaldo, le célèbre footballeur portugais, a rencontré Georgina Rodríguez en 2016. À cette époque, Georgina travaillait comme vendeuse dans une boutique de luxe à Madrid. Elle est ensuite devenue mannequin et elle a des origines espagnoles et argentines. Le couple a annoncé ses fiançailles en août 2025, après presque neuf ans de relation. Pour cette occasion, Georgina a publié une photo sur les réseaux sociaux. On y voit une bague en diamant de forme ovale, offerte par Cristiano. Cette bague vaut plusieurs millions d'euros et elle a immédiatement fait le tour des médias people.\n\nAujourd'hui, Cristiano et Georgina ont plusieurs enfants ensemble. Ils forment une grande famille et ils vivent entre plusieurs pays, en fonction de la carrière du footballeur. Malgré leur vie très médiatisée, le couple essaie toujours de protéger son intimité. C'est pourquoi Cristiano et Georgina n'ont pas encore révélé les détails officiels de leur mariage, ce qui alimente encore plus la curiosité du public et des journalistes spécialisés dans la vie des célébrités.\n\nSelon la presse portugaise, le mariage aurait lieu le samedi premier août 2026, à dix-sept heures précises. Le lieu choisi serait la Quinta da Regaleira, un domaine magnifique situé à Sintra, au Portugal, connu pour son architecture romantique et ses jardins mystérieux. Les invités devraient porter une tenue noire pour l'occasion. L'émission de télévision V+Fama affirme avoir reçu une invitation officielle avec toutes ces informations. Cependant, la direction du domaine a refusé de confirmer ou de démentir cette information lorsque des journalistes l'ont contactée.\n\nD'autres médias donnent pourtant une version totalement différente de l'événement. Selon le journal britannique The Sun, le mariage aurait plutôt lieu le 8 août 2026, sur l'île de Madère. La cérémonie religieuse se déroulerait à la cathédrale de Funchal, la capitale de l'île. C'est justement l'île où Cristiano Ronaldo est né et où il a grandi avant de devenir une star mondiale du football. La réception suivrait ensuite à l'hôtel Savoy Palace, un établissement de grand luxe. Cet hôtel aurait réservé plusieurs espaces privés pour les invités. Il fermerait même certaines zones le vendredi et le samedi pour garantir une totale discrétion.\n\nFace à ces rumeurs contradictoires, des proches du couple ont fini par réagir publiquement. Ils affirment que Cristiano et Georgina préfèrent organiser une cérémonie discrète, loin des caméras et des paparazzis. Le footballeur aurait aussi expliqué qu'il souhaite se marier seulement après la Coupe du Monde 2026, prévue en juillet. Ainsi, il pourra se concentrer entièrement sur cette compétition majeure avant de célébrer son union avec Georgina, sans aucune distraction supplémentaire.\n\nJusqu'à présent, ni Cristiano Ronaldo ni Georgina Rodríguez n'ont confirmé officiellement une date ou un lieu précis pour leur mariage. Les fans du monde entier attendent donc toujours une annonce officielle du couple. Cette histoire d'amour, commencée il y a dix ans dans des circonstances presque anonymes, continue de fasciner les médias internationaux. Le mystère qui entoure ce mariage rend d'ailleurs l'attente encore plus excitante pour un public toujours plus nombreux.",
+  "conversation": {
+    "intro": "Rosalia et Clément sont installés sur leur canapé à Saint-Domingue, en train de scroller sur leur téléphone. Rosalia tombe sur un article à propos du mariage de Cristiano Ronaldo et Georgina Rodríguez et devient surexcitée.",
+    "lines": [
+      { "speaker": "Rosalia", "fr": "Clément, regarde ça ! Il paraît que Cristiano Ronaldo et Georgina vont enfin se marier !", "es": "¡Clément, mira esto! ¡Parece que Cristiano Ronaldo y Georgina por fin se van a casar!" },
+      { "speaker": "Clément", "fr": "Ah oui, j'ai vu ça passer aussi. Mais personne ne sait vraiment où ni quand, non ?" },
+      { "speaker": "Rosalia", "fr": "Exactement, y'a plein de rumeurs différentes ! Un site dit que c'est à Sintra, au Portugal, le premier août.", "es": "Exacto, hay un montón de rumores diferentes. Una página dice que es en Sintra, Portugal, el primero de agosto." },
+      { "speaker": "Clément", "fr": "Sintra ? C'est joli là-bas, j'y suis allé une fois avec mes parents quand j'étais petit." },
+      { "speaker": "Rosalia", "fr": "Sérieux ?! Raconte-moi, c'est comment ? Moi j'imagine un truc super romantique avec des jardins.", "es": "¿En serio?! Cuéntame, ¿cómo es? Yo me imagino algo súper romántico con jardines." },
+      { "speaker": "Clément", "fr": "Ouais, y'a un château magique avec des tours et des grottes. Ça collerait bien à une histoire de conte de fées." },
+      { "speaker": "Rosalia", "fr": "Trop beau ! Mais du coup y'a un autre article qui dit que c'est plutôt à Madère, le 8 août. Je sais plus qui croire.", "es": "¡Qué lindo! Pero hay otro artículo que dice que es más bien en Madeira, el 8 de agosto. Ya no sé a quién creerle." },
+      { "speaker": "Clément", "fr": "Madère, c'est là où il est né, non ? Ça aurait du sens pour lui de se marier là-bas." },
+      { "speaker": "Rosalia", "fr": "Oui exactement ! En plus y'a une cathédrale magnifique à Funchal. J'ai vu des photos, c'est superbe.", "es": "¡Sí, exacto! Además hay una catedral hermosa en Funchal. Vi fotos, es preciosa." },
+      { "speaker": "Clément", "fr": "Et après, la fête, ce serait où ?" },
+      { "speaker": "Rosalia", "fr": "Dans un hôtel de luxe je crois, le Savoy Palace. Ils auraient même fermé certaines parties pour que ce soit privé.", "es": "Creo que en un hotel de lujo, el Savoy Palace. Hasta habrían cerrado ciertas zonas para que fuera privado." },
+      { "speaker": "Clément", "fr": "Ça se comprend, avec toute la presse qui les suit partout, ils veulent sûrement un peu de calme." },
+      { "speaker": "Rosalia", "fr": "C'est ça ! Moi je trouve ça hyper romantique de vouloir un truc intime malgré toute la célébrité.", "es": "¡Eso es! A mí me parece súper romántico querer algo íntimo a pesar de toda la fama." },
+      { "speaker": "Clément", "fr": "Toi, tu suis toujours ce genre d'histoires, hein ? Tu regardes ça comme tes novelas." },
+      { "speaker": "Rosalia", "fr": "Complètement ! Georgina et Cristiano, c'est comme un vrai feuilleton, ça me passionne autant que mes séries.", "es": "¡Totalmente! Georgina y Cristiano son como una verdadera telenovela, me apasiona igual que mis series." },
+      { "speaker": "Clément", "fr": "Et toi alors, tu rêves de quoi pour notre mariage à nous, un jour ?" },
+      { "speaker": "Rosalia", "fr": "Moi je veux un truc simple mais joyeux, avec toute ma famille et tes parents aussi, à Strasbourg peut-être.", "es": "Yo quiero algo simple pero alegre, con toda mi familia y tus papás también, tal vez en Estrasburgo." },
+      { "speaker": "Clément", "fr": "Ça me va très bien, tant que tu es heureuse ce jour-là, c'est le principal." },
+      { "speaker": "Rosalia", "fr": "Ha ha, t'es trop mignon. Bon, on regarde si y'a une date officielle demain ?", "es": "Jaja, eres muy tierno. Bueno, ¿revisamos mañana si ya hay una fecha oficial?" },
+      { "speaker": "Clément", "fr": "Carrément, je suis sûr que toute la France va en parler aussi bientôt !" }
+    ]
+  },
+  "comments": [
+    {
+      "username": "RonaldoFan_Discret22",
+      "comment": "C'est n'importe quoi ces médias qui inventent une date différente chaque semaine juste pour faire du clic ! Ronaldo et Georgina ont droit à leur vie privée, arrêtez de les harceler avec vos fausses invitations !!!",
+      "likes": 76
+    },
+    {
+      "username": "LauraDuPortugal",
+      "comment": "Moi aussi je me suis mariée à Sintra il y a trois ans, dans un petit domaine pas loin de la Quinta da Regaleira. L'endroit est tellement magique, je comprends totalement pourquoi ils choisiraient cet endroit.",
+      "likes": 143
+    },
+    {
+      "username": "PortoFC_Historien",
+      "comment": "Franchement je pense que la version de Madère est bien plus crédible que celle de Sintra. Il est né là-bas, toute sa famille y habite encore, ça n'a aucun sens de se marier ailleurs pour un homme aussi attaché à ses racines.",
+      "likes": 58
+    },
+    {
+      "username": "MemeLordCR7_2026",
+      "comment": "Perso je regarde surtout si Cristiano va faire son fameux Siuuu pendant la cérémonie devant le prêtre. Ça serait légendaire. Georgina, dis oui juste après le triple saut de ton futur mari !",
+      "likes": 498
+    },
+    {
+      "username": "CoeurRomantique_Val",
+      "comment": "Après tant d'années ensemble et tant d'épreuves médiatiques, ils méritent vraiment ce bonheur. J'espère que peu importe où et quand, ce jour sera à la hauteur de leur belle histoire d'amour. Félicitations aux futurs mariés !",
+      "likes": 231
+    }
+  ]
+}

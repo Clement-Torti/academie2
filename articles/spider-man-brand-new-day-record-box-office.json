@@ -1,0 +1,73 @@
+{
+  "id": "spider-man-brand-new-day-record-box-office",
+  "title": "Spider-Man: Brand New Day frôle le record du box-office",
+  "date": "2026-08-02",
+  "category": "Culture",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tom_Holland_by_Gage_Skidmore.jpg",
+    "alt": "Tom Holland, l'acteur qui interprète Spider-Man"
+  },
+  "vocabulary": [
+    { "fr": "le box-office", "es": "la taquilla" },
+    { "fr": "battre un record", "es": "batir un récord" },
+    { "fr": "les recettes", "es": "la recaudación" },
+    { "fr": "l'avant-première", "es": "el preestreno" },
+    { "fr": "l'anonymat", "es": "el anonimato" },
+    { "fr": "le grand méchant", "es": "el villano principal" },
+    { "fr": "réunir", "es": "reunir" },
+    { "fr": "chargé (un scénario chargé)", "es": "recargado" }
+  ],
+  "article": "Le nouveau film Spider-Man sort en salles le 31 juillet 2026 et bat presque un record historique du box-office. Spider-Man: Brand New Day, avec Tom Holland dans le rôle principal, connaît le meilleur week-end d'ouverture de l'année pour un film. Le succès surprend même les experts du cinéma, pourtant habitués aux gros chiffres des films Marvel.\n\nEn Amérique du Nord, le film rapporte 355 millions de dollars pendant son premier week-end. C'est presque autant que le record absolu d'Avengers: Endgame, qui avait rapporté 357 millions de dollars en 2019. Spider-Man: Brand New Day devient donc le deuxième meilleur démarrage de l'histoire du cinéma américain. Le précédent record de l'année, détenu par le film d'animation Super Mario Galaxy, est battu très largement: le nouveau Spider-Man rapporte plus du double.\n\nLes résultats à l'international sont également impressionnants. Le film récolte 572 millions de dollars supplémentaires dans le reste du monde, dont 121 millions rien qu'en Chine. Au total, les recettes mondiales du week-end d'ouverture atteignent 927 millions de dollars. Par ailleurs, les avant-premières du mardi et du mercredi ont déjà généré 72 millions de dollars, un record absolu pour ce type de séances.\n\nL'histoire se déroule quatre ans après les événements du film précédent. Un sort lancé par le Docteur Strange avait effacé l'identité de Spider-Man de la mémoire du monde entier. Peter Parker vit donc dans l'anonymat, mais ses pouvoirs commencent à évoluer de façon inattendue. Il se retrouve mêlé à une aventure compliquée avec le Département de Contrôle des Dégâts, le clan de ninjas la Main, le Punisher et même Hulk. Un personnage mystérieux, interprété par l'actrice Sadie Sink, joue le rôle du grand méchant de l'histoire, mais son identité reste secrète jusqu'à la sortie du film. Le réalisateur Destin Daniel Cretton dirige un casting impressionnant, avec Zendaya, Jacob Batalon, Jon Bernthal et Mark Ruffalo. Les premières critiques décrivent un scénario un peu trop chargé, mais saluent des scènes d'action spectaculaires et un vrai plaisir de retrouver ces personnages.\n\nCe succès arrive à un moment important pour l'univers cinématographique Marvel, le MCU. Depuis plusieurs années, le studio traverse la Phase 6, aussi appelée la Saga du Multivers. Certains critiques parlaient d'une fatigue du public envers les super-héros, avec trop de films et de séries sortis en peu de temps. Le triomphe de Brand New Day prouve pourtant que le public reste très attaché à ces personnages, quand l'histoire et la réalisation sont soignées.\n\nLa suite des événements s'annonce spectaculaire. En décembre 2026, Avengers: Doomsday réunira non seulement les Avengers, mais aussi les Quatre Fantastiques et même les X-Men dans un seul film. Robert Downey Jr, qui incarnait Iron Man, fait son retour dans le MCU sous les traits d'un nouveau personnage: le Docteur Fatalis, un scientifique brillant devenu un puissant ennemi. Ce choix surprend beaucoup de fans, habitués à voir cet acteur incarner un héros plutôt qu'un ennemi. Puis, en 2027, Avengers: Secret Wars viendra conclure cette longue saga commencée il y a plus de quinze ans, avec des dizaines de personnages réunis dans une seule histoire.\n\nLe retour triomphal de Spider-Man confirme donc la solidité du MCU avant ces deux rendez-vous très attendus. Les fans du monde entier attendent maintenant de découvrir comment Marvel va réunir tous ces héros dans une seule et même histoire. Une chose est sûre: le box-office prouve que l'univers Marvel est loin d'être fatigué.",
+  "conversation": {
+    "intro": "Rosalia et Clement sortent du cinéma Palacio del Cine à Santo Domingo après avoir vu Spider-Man: Brand New Day en avant-première. Rosalia est une grande fan de Tom Holland et ne tient plus en place.",
+    "lines": [
+      { "speaker": "Clement", "fr": "Alors, verdict ? T'as trouvé ça comment ?" },
+      { "speaker": "Rosalia", "fr": "J'ai adoré ! Sadie Sink en méchante mystérieuse, je ne m'y attendais pas du tout.", "es": "¡Me encantó! Sadie Sink como villana misteriosa, no me lo esperaba para nada." },
+      { "speaker": "Clement", "fr": "Ouais, ils gardent bien le secret sur son identité jusqu'à la fin. T'as une théorie ?" },
+      { "speaker": "Rosalia", "fr": "Aucune idée, mais mon frère Argenis va devenir fou quand je vais lui raconter ça.", "es": "Ni idea, pero mi hermano Argenis se va a volver loco cuando se lo cuente." },
+      { "speaker": "Clement", "fr": "Tu savais que le film a failli battre le record d'Avengers: Endgame ce week-end ?" },
+      { "speaker": "Rosalia", "fr": "Sérieux ?! 355 millions de dollars en un week-end, c'est fou comme chiffre.", "es": "¿En serio?! 355 millones de dólares en un fin de semana, es una locura ese número." },
+      { "speaker": "Clement", "fr": "Et à l'international, ça dépasse les 900 millions au total. Le public n'est clairement pas fatigué des super-héros." },
+      { "speaker": "Rosalia", "fr": "Ça se comprend, j'étais collée à l'écran du début à la fin. Cette scène avec Hulk et le Punisher ensemble, incroyable.", "es": "Se entiende, estuve pegada a la pantalla de principio a fin. Esa escena con Hulk y el Punisher juntos, increíble." },
+      { "speaker": "Clement", "fr": "Et t'as vu, ils annoncent déjà Avengers: Doomsday pour décembre." },
+      { "speaker": "Rosalia", "fr": "Oui ! Et Robert Downey Jr qui revient, mais en méchant cette fois ! Je capte pas encore bien.", "es": "¡Sí! Y Robert Downey Jr que regresa, ¡pero de villano esta vez! Todavía no lo proceso bien." },
+      { "speaker": "Clement", "fr": "Moi non plus, franchement. Après tout Iron Man, le voir jouer Doctor Doom c'est space." },
+      { "speaker": "Rosalia", "fr": "Il paraît qu'ils réunissent les Avengers, les Quatre Fantastiques et les X-Men dans le même film !", "es": "¡Dicen que reúnen a los Avengers, los Cuatro Fantásticos y los X-Men en la misma película!" },
+      { "speaker": "Clement", "fr": "Ça va être un sacré bazar à l'écran. Trop de personnages, tu crois pas ?" },
+      { "speaker": "Rosalia", "fr": "Peut-être, mais moi j'adore ça. Plus il y a de monde, plus je suis contente.", "es": "Puede ser, pero a mí me encanta eso. Cuantos más personajes, más feliz estoy." },
+      { "speaker": "Clement", "fr": "On ira le voir direct en décembre alors, même si on est encore ici ou déjà à Strasbourg ?" },
+      { "speaker": "Rosalia", "fr": "Peu importe où on est, ce film-là je le rate pas ! Et en 2027 y'a Secret Wars en plus.", "es": "No importa dónde estemos, ¡esa película no me la pierdo! Y en 2027 encima está Secret Wars." },
+      { "speaker": "Clement", "fr": "T'as raison de profiter, la saga se termine bientôt avec ce film-là." },
+      { "speaker": "Rosalia", "fr": "Justement, du coup on doit fêter ça comme il faut. On invite Jorgelis à venir le voir avec nous demain ?", "es": "Justo por eso, hay que celebrarlo como se debe. ¿Invitamos a Jorgelis a verla con nosotros mañana?" },
+      { "speaker": "Clement", "fr": "Bonne idée, je lui envoie un message tout de suite." },
+      { "speaker": "Rosalia", "fr": "Parfait, comme ça on regarde tous ensemble la bande-annonce de Doomsday après.", "es": "Perfecto, así después vemos todos juntos el tráiler de Doomsday." }
+    ]
+  },
+  "comments": [
+    {
+      "username": "MarreDuMarvel_77",
+      "comment": "Encore un record battu, la belle affaire !!! Le ticket de cinéma est passé à 15 dollars alors que Disney refait toujours la même histoire depuis 2002. On applaudit des chiffres mais personne ne parle du prix du popcorn qui coûte plus cher que le film lui-même. Ça suffit.",
+      "likes": 76
+    },
+    {
+      "username": "FileDattenteDepuisMinuit",
+      "comment": "J'ai fait la queue de 22h à 2h du matin pour la première séance avec mon frère. On a dormi trois heures avant le boulot mais ça valait totalement le coup, l'ambiance dans la salle était dingue, tout le monde criait pendant les scènes d'action.",
+      "likes": 145
+    },
+    {
+      "username": "CinephileRealiste93",
+      "comment": "Sérieusement, arrêtez de confondre recettes et qualité. Avec l'inflation et le prix des billets qui explose chaque année, comparer ces chiffres à ceux d'il y a dix ans n'a aucun sens. Le film est correct, sympa à regarder, mais loin d'être le chef-d'œuvre que tout le monde décrit.",
+      "likes": 58
+    },
+    {
+      "username": "TonteDePelouseChampionne",
+      "comment": "Perso je retiens surtout que le méchant reste secret jusqu'à la fin, exactement comme mon voisin qui refuse de me dire pourquoi il tond sa pelouse à 7h du matin le dimanche. Un vrai mystère Marvel dans mon quartier, quelqu'un a une théorie ?",
+      "likes": 412
+    },
+    {
+      "username": "SpiderFanDepuis2002",
+      "comment": "Je suis né la même année que le premier Spider-Man de Sam Raimi et j'ai grandi avec ce personnage. Le voir encore aussi populaire vingt ans après, ça me touche énormément. Merci à toute l'équipe pour ce moment de cinéma partagé en famille ce week-end.",
+      "likes": 289
+    }
+  ]
+}

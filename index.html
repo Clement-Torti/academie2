@@ -95,10 +95,21 @@
                 <span id="streak-display" class="text-xs font-bold font-mono">0 jour</span>
             </div>
         </div>
-        <button onclick="home.showConfig()"
-                class="bg-white/10 active:bg-white/20 text-white w-9 h-9 rounded-lg flex items-center justify-center transition">
-            <i class="fa-solid fa-sliders text-gold text-sm"></i>
-        </button>
+        <div class="flex items-center gap-2">
+            <a href="oral.html" id="oral-btn" title="Expression orale"
+               class="relative bg-white/10 active:bg-white/20 text-white w-9 h-9 rounded-lg flex items-center justify-center transition">
+                <i id="oral-icon" class="fa-solid fa-microphone-lines text-teal text-sm"></i>
+                <span id="oral-warning"
+                      class="hidden absolute -top-1 -right-1 w-4 h-4 rounded-full bg-frRed border border-frBlue
+                             flex items-center justify-center animate-pulse">
+                    <i class="fa-solid fa-exclamation text-white" style="font-size:8px;"></i>
+                </span>
+            </a>
+            <button onclick="home.showConfig()"
+                    class="bg-white/10 active:bg-white/20 text-white w-9 h-9 rounded-lg flex items-center justify-center transition">
+                <i class="fa-solid fa-sliders text-gold text-sm"></i>
+            </button>
+        </div>
     </div>
     <div class="h-1 w-full flex">
         <div class="w-1/3 bg-blue-600"></div>
@@ -291,12 +302,14 @@ const home = {
     get days()     { return JSON.parse(localStorage.getItem('acad2_days')    || '{}'); },
     get vocab()    { return JSON.parse(localStorage.getItem('acad_user_vocab') || '[]'); },
     get readIds()  { return new Set(JSON.parse(localStorage.getItem('acad2_read_ids') || '[]')); },
+    get oral()     { try { return JSON.parse(localStorage.getItem('acad2_oral') || '[]'); } catch { return []; } },
 
     // ════════════════════════════════════════════════════════════
     //  INIT
     // ════════════════════════════════════════════════════════════
     async init() {
         this.renderStreak();
+        this.renderOralWarning();
         this.renderStats();
         this.renderCharts();
         try {
@@ -315,6 +328,33 @@ const home = {
         const s = this.stats.streak || 0;
         document.getElementById('streak-display').textContent =
             `${s} jour${s > 1 ? 's' : ''}`;
+    },
+
+    // Alerte rouge si aucune expression orale n'a été complétée aujourd'hui
+    renderOralWarning() {
+        const btn  = document.getElementById('oral-btn');
+        const icon = document.getElementById('oral-icon');
+        const warn = document.getElementById('oral-warning');
+        if (!btn) return;
+
+        // Date locale (les sessions sont stockées en ISO/UTC)
+        const today = new Date();
+        const isToday = (iso) => {
+            const d = new Date(iso);
+            return d.getFullYear() === today.getFullYear()
+                && d.getMonth()    === today.getMonth()
+                && d.getDate()     === today.getDate();
+        };
+        const doneToday = this.oral.some(s => s.at && isToday(s.at));
+
+        warn.classList.toggle('hidden', doneToday);
+        btn.classList.toggle('bg-white/10',  doneToday);
+        btn.classList.toggle('bg-frRed',    !doneToday);
+        icon.classList.toggle('text-teal',   doneToday);
+        icon.classList.toggle('text-white', !doneToday);
+        btn.title = doneToday
+            ? 'Expression orale — faite aujourd\'hui ✓'
+            : 'Expression orale — pas encore faite aujourd\'hui !';
     },
 
     // ════════════════════════════════════════════════════════════
@@ -653,6 +693,7 @@ home.init();
 window.addEventListener('pageshow', (event) => {
     if (event.persisted) {
         home.renderStreak();
+        home.renderOralWarning();
         home.renderStats();
         home.renderCharts();
         home.renderTimeline();

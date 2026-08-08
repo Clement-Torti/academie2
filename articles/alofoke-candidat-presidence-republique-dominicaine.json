@@ -1,0 +1,54 @@
+{
+  "id": "alofoke-candidat-presidence-republique-dominicaine",
+  "title": "Alofoke, l'animateur radio qui veut devenir président",
+  "date": "2026-08-08",
+  "category": "Société",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Alofoke_en_2022_para_PicanteFM.png",
+    "alt": "Santiago Matías, connu sous le nom d'Alofoke, pendant une interview en 2022"
+  },
+  "vocabulary": [
+    { "fr": "un animateur radio", "es": "un locutor de radio" },
+    { "fr": "se lancer en politique", "es": "meterse en política" },
+    { "fr": "un chef d'entreprise", "es": "un empresario" },
+    { "fr": "recueillir des signatures", "es": "recoger firmas" },
+    { "fr": "un sondage", "es": "una encuesta" },
+    { "fr": "une réforme constitutionnelle", "es": "una reforma constitucional" },
+    { "fr": "le droit de vote", "es": "el derecho al voto" },
+    { "fr": "la vie nocturne", "es": "la vida nocturna" },
+    { "fr": "les urnes", "es": "las urnas" }
+  ],
+  "article": "En République dominicaine, la politique et le divertissement se rencontrent souvent. Aujourd'hui, un animateur radio très connu veut aller encore plus loin. Santiago Matías, que tout le monde appelle Alofoke, a annoncé qu'il sera candidat à la présidence en 2028. La nouvelle a surpris le pays entier. Elle occupe les journaux, les radios et surtout les réseaux sociaux. Depuis plusieurs semaines, les Dominicains ne parlent presque que de ça.\n\nAlofoke est né à Saint-Domingue en 1981. Il a d'abord travaillé dans la musique urbaine. En 2006, il a créé Alofoke Music, une plateforme pour les artistes du pays. Ce petit projet est ensuite devenu Alofoke Media Group. Aujourd'hui, ce groupe possède une station de radio, des chaînes numériques et des émissions très suivies. Son programme, l'Alofoke Radio Show, réunit chaque jour des milliers de spectateurs. Ses interviews d'artistes et de personnalités font régulièrement la une des sites d'information. En effet, ce chef d'entreprise est aujourd'hui l'un des communicateurs les plus influents du pays.\n\nLe 22 juillet 2026, il a fait une annonce importante. Il va créer son propre parti politique. Plusieurs organisations lui avaient pourtant proposé leur candidature. Il a refusé plus de quinze offres, dont celle du Parti réformiste social-chrétien. Selon lui, la République dominicaine a besoin d'idées et de principes nouveaux. Il veut donc construire un projet loin des pratiques traditionnelles.\n\nCependant, le chemin est long et compliqué. Pour obtenir la reconnaissance de la Junte centrale électorale, il doit recueillir au moins 87 303 signatures valides. Ce chiffre représente deux pour cent des votes valides de l'élection de 2024. La demande doit aussi arriver douze mois avant le scrutin. Les élections municipales sont prévues le 20 février 2028. Alofoke a donc jusqu'au mois de février 2027 environ. Il a promis de parcourir toutes les provinces et de filmer chaque étape. Il a même demandé à ses abonnés de proposer un nom pour le futur parti.\n\nSes premières propositions font déjà beaucoup débat. Il veut donner le droit de vote aux policiers et aux militaires en service. Pourtant, l'article 208 de la Constitution l'interdit aujourd'hui. Une réforme constitutionnelle serait donc nécessaire. Il propose aussi de faciliter l'importation légale d'armes pour les citoyens et les entreprises. Il trouve les prix actuels beaucoup trop élevés. Enfin, il défend la fin des limites sur la vente d'alcool la nuit. Pour lui, la sécurité ne doit pas supprimer la vie nocturne du pays.\n\nCes idées divisent fortement l'opinion publique. Certains Dominicains y voient un discours direct et sincère. Ils apprécient un homme qui parle sans langue de bois. D'autres parlent au contraire d'un projet dangereux et mal préparé. Plusieurs journalistes rappellent aussi que gouverner n'est pas la même chose qu'animer une émission. Par ailleurs, Alofoke n'a pas encore présenté un programme de gouvernement complet. Le contexte l'aide quand même beaucoup. Un sondage publié en juillet 2026 montre que 55,6 % des personnes interrogées ne soutiennent aucun parti. Beaucoup d'électeurs regardent maintenant les personnalités plutôt que les organisations.\n\nLes analystes, eux, restent prudents. Une grande audience sur internet ne donne pas automatiquement une majorité dans les urnes. Le candidat devra construire une véritable structure dans tout le pays. Il devra aussi convaincre des électeurs qui ne regardent jamais ses émissions. L'aventure ne fait donc que commencer. Les prochains mois diront si ce projet est solide ou non. En attendant, une chose est sûre : le nom d'Alofoke est déjà entré dans la conversation politique dominicaine.",
+  "conversation": {
+    "intro": "Rosalia et Léa se parlent en visio un dimanche après-midi. Elles se sont connues sur une application d'échange de langues et discutent une heure chaque semaine. Aujourd'hui, Rosalia veut expliquer une actualité qui fait énormément de bruit dans son pays.",
+    "lines": [
+      { "speaker": "Léa", "fr": "Alors, raconte ! T'as l'air super contente aujourd'hui, il se passe quoi chez toi ?" },
+      { "speaker": "Rosalia", "fr": "Chez moi, tout le monde parle de la même chose. Un animateur radio très connu veut devenir président !", "es": "En mi país todo el mundo habla de lo mismo. ¡Un locutor de radio súper conocido quiere ser presidente!" },
+      { "speaker": "Léa", "fr": "Un animateur radio ? Sérieux ? Attends, il veut vraiment se présenter ?" },
+      { "speaker": "Rosalia", "fr": "Oui ! Il s'appelle Santiago Matías, mais chez nous on dit juste Alofoke. Il est partout dans les médias.", "es": "¡Sí! Se llama Santiago Matías, pero nosotros le decimos Alofoke nada más. Está en todos lados en los medios." },
+      { "speaker": "Léa", "fr": "En France aussi y'a des gens des médias qui essaient, mais ça marche rarement." },
+      { "speaker": "Rosalia", "fr": "Ici c'est un peu différent. Les gens en ont marre des partis traditionnels, et lui, il parle comme tout le monde.", "es": "Aquí es un poco distinto. La gente está harta de los partidos de siempre, y él habla como cualquiera de nosotros." },
+      { "speaker": "Léa", "fr": "Et toi, t'y crois ? Il a une vraie chance ou c'est juste du buzz ?" },
+      { "speaker": "Rosalia", "fr": "Honnêtement, je ne sais pas. Il doit créer son parti et récolter plus de 87 000 signatures. C'est énorme, non ?", "es": "La verdad, no sé. Tiene que crear su partido y conseguir más de 87 mil firmas. Es un montón, ¿verdad?" },
+      { "speaker": "Léa", "fr": "Ah oui, carrément. Et il a combien de temps pour réunir tout ça ?" },
+      { "speaker": "Rosalia", "fr": "Jusqu'à février 2027, à peu près. Mon père dit que c'est impossible, mais moi je ne suis pas si sûre.", "es": "Hasta febrero de 2027, más o menos. Mi papá dice que es imposible, pero yo no estoy tan segura." },
+      { "speaker": "Léa", "fr": "Ton père s'intéresse beaucoup à la politique de votre pays, alors ?" },
+      { "speaker": "Rosalia", "fr": "Beaucoup ! On en discute tout le temps à table, avec mes frères aussi. Ça finit toujours en grand débat.", "es": "¡Muchísimo! Lo hablamos siempre en la mesa, con mis hermanos también. Siempre termina en un debate enorme." },
+      { "speaker": "Léa", "fr": "Ha ha, j'imagine trop la scène. Et ses propositions, elles disent quoi exactement ?" },
+      { "speaker": "Rosalia", "fr": "Certaines me plaisent, d'autres pas du tout. Il veut faciliter l'accès aux armes, et ça, franchement, ça me dérange.", "es": "Algunas me gustan, otras para nada. Quiere facilitar el acceso a las armas y eso, sinceramente, me incomoda." },
+      { "speaker": "Léa", "fr": "Ouais, c'est le genre de sujet où il faut vraiment être prudent." },
+      { "speaker": "Rosalia", "fr": "Par contre, comme étudiante en mercadeo, je trouve sa communication géniale. Il a compris TikTok mieux que nos politiques.", "es": "Eso sí, como estudiante de mercadeo, su comunicación me parece buenísima. Entendió TikTok mejor que nuestros políticos." },
+      { "speaker": "Léa", "fr": "C'est vrai que la communication politique, c'est devenu un vrai métier aujourd'hui." },
+      { "speaker": "Rosalia", "fr": "Complètement ! Et toi, tu suis les campagnes en France, ou ça t'ennuie un peu ?", "es": "¡Totalmente! ¿Y tú sigues las campañas en Francia, o te aburren un poco?" },
+      { "speaker": "Léa", "fr": "Ça m'intéresse ! On a la présidentielle en 2027, ça commence déjà à s'agiter. On en reparle dimanche ?" },
+      { "speaker": "Rosalia", "fr": "Avec plaisir ! Je serai bientôt à Strasbourg, alors je prépare du vocabulaire politique et je t'envoie mes questions.", "es": "¡Encantada! Pronto estaré en Estrasburgo, así que preparo vocabulario político y te mando mis preguntas." }
+    ]
+  },
+  "comments": [
+    { "username": "CiudadanoCansado_809", "comment": "Franchement, on touche le fond !!! Un pays ne se dirige pas comme une émission de radio. Il n'a AUCUN programme, aucune expérience, juste des abonnés et des punchlines. Et pendant ce temps les vrais problèmes du pays attendent. C'est du grand n'importe quoi.", "likes": 187 },
+    { "username": "TataDeSantiago", "comment": "Moi j'écoute son émission depuis 2014 dans le taxi de mon oncle tous les matins. Il posait déjà des questions que personne n'osait poser aux artistes. Je ne sais pas s'il ferait un bon président, mais son culot, ça fait dix ans que je le vois.", "likes": 94 },
+    { "username": "LecteurDuMatin_44", "comment": "L'article présente ça comme une folie, mais 55,6 % des gens ne se reconnaissent dans aucun parti. Le problème n'est peut-être pas lui. Quand les partis traditionnels déçoivent pendant vingt ans, il ne faut pas s'étonner que quelqu'un d'autre remplisse le vide.", "likes": 213 },
+    { "username": "MonVoisinLeGlouton", "comment": "Le seul point du programme que j'ai vraiment compris, c'est la fin des restrictions sur l'alcool la nuit. Je propose donc un ticket présidentiel Alofoke-Kebab 2028. Programme : la vie nocturne, la sauce blanche et la paix dans le monde. J'ai déjà imprimé les affiches 🍔", "likes": 456 },
+    { "username": "MaestraDeFrances", "comment": "Je vis en République dominicaine depuis huit ans et je n'avais jamais vu autant de jeunes discuter de politique. Mes élèves de 17 ans en parlent entre eux à la récréation ! Peu importe la suite, ça, c'est déjà une très bonne nouvelle pour le pays.", "likes": 268 }
+  ]
+}

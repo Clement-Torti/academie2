@@ -1,0 +1,75 @@
+{
+  "id": "fourmis-cafards-maisons-saint-domingue-2026",
+  "title": "Fourmis et cafards : les maisons de Saint-Domingue envahies",
+  "date": "2026-08-08",
+  "category": "Société",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Drymaplaneta_semivitta_on_kitchen_bench.jpg",
+    "alt": "Un cafard sur un plan de travail de cuisine"
+  },
+  "vocabulary": [
+    { "fr": "une fourmi", "es": "una hormiga" },
+    { "fr": "un cafard (une blatte)", "es": "una cucaracha" },
+    { "fr": "les nuisibles", "es": "las plagas" },
+    { "fr": "la fumigation", "es": "la fumigación" },
+    { "fr": "les égouts", "es": "las alcantarillas" },
+    { "fr": "les ordures", "es": "la basura" },
+    { "fr": "une boîte hermétique", "es": "un envase hermético" },
+    { "fr": "se multiplier", "es": "multiplicarse" },
+    { "fr": "une infestation", "es": "una infestación" },
+    { "fr": "l'eau stagnante", "es": "el agua estancada" }
+  ],
+  "article": "Depuis le début de l'été, de nombreux habitants de Saint-Domingue font le même constat. Les fourmis et les cafards sont de plus en plus présents dans les maisons. Le phénomène touche presque tous les quartiers de la capitale dominicaine. Il concerne aussi bien les immeubles modernes du Polygone central que les logements plus anciens. Sur les réseaux sociaux dominicains, les vidéos de cuisines envahies se comptent par centaines. Beaucoup de familles pensaient vivre un problème isolé. Elles découvrent aujourd'hui que tout le voisinage vit la même chose.\n\nLes entreprises de contrôle des nuisibles confirment cette impression. Plusieurs sociétés de la capitale expliquent que leur téléphone ne s'arrête plus depuis le mois de mai. Les demandes de fumigation contre les cafards et les fourmis ont fortement augmenté. Certaines entreprises proposent aujourd'hui un premier rendez-vous à dix jours. Avant, un client obtenait une visite en deux ou trois jours seulement. Yésica Peña, qui habite le quartier populaire de Villa Consuelo, en fait l'expérience. Elle raconte qu'elle trouve une file de fourmis sur son plan de travail tous les matins. Elle a essayé les produits vendus au supermarché, sans grand succès. Ses voisins vivent exactement la même situation depuis plusieurs semaines. Pour elle, le problème vient surtout de la collecte des ordures dans le quartier.\n\nLes spécialistes donnent d'abord une explication climatique. La chaleur accélère le métabolisme des insectes et raccourcit leur cycle de reproduction. Une femelle qui pondait autrefois en trois semaines pond donc beaucoup plus vite. Les fortes pluies de cette saison jouent également un rôle important. L'eau stagnante reste dans les seaux, les pots de fleurs et les cours intérieures. Ensuite le soleil revient, et l'humidité crée un environnement parfait pour les insectes.\n\nLa ville elle-même favorise ce phénomène. Le béton et l'asphalte gardent la chaleur pendant une grande partie de la nuit. Les scientifiques appellent cela des îlots de chaleur urbains. Par ailleurs, les ordures restent parfois plusieurs jours sur les trottoirs. Les égouts bouchés offrent aux cafards un abri idéal et une nourriture facile. Les associations de gestion des nuisibles urbains rappellent que les zones denses et mal desservies sont toujours les plus touchées.\n\nLes fourmis posent un problème un peu différent. Elles cherchent surtout le sucre et l'eau dans les cuisines. Elles entrent par les fissures des murs, par les fenêtres et par les tuyaux. Certaines espèces s'installent même dans les appareils électriques, comme les climatiseurs ou les box internet. Les habitants racontent qu'elles reviennent quelques jours après chaque traitement. En effet, tuer les ouvrières ne suffit pas : il faut atteindre le nid.\n\nLes autorités sanitaires rappellent que ces insectes ne sont pas seulement désagréables. Les cafards transportent des bactéries sur leurs pattes et contaminent les aliments. Ils aggravent aussi l'asthme et les allergies chez les jeunes enfants. Cependant, les médecins précisent qu'il ne faut pas céder à la panique. Une bonne hygiène de la cuisine réduit déjà beaucoup le risque.\n\nLes conseils des professionnels restent simples et peu coûteux. Il faut fermer les poubelles, vider l'eau stagnante et nettoyer les cours régulièrement. Il faut aussi ranger le sucre, la farine et le café dans des boîtes hermétiques. Enfin, il vaut mieux boucher les fissures autour des tuyaux et sous les éviers. Ces gestes ne font pas disparaître le problème, pourtant ils limitent vraiment l'infestation. Pour beaucoup de familles de Saint-Domingue, l'été 2026 restera celui de la guerre contre les insectes.",
+  "conversation": {
+    "intro": "Rosalia et Clément sont dans leur cuisine à Saint-Domingue, tard le soir. Clément vient de découvrir une file de fourmis sur le plan de travail. C'est la troisième fois cette semaine, et le sujet fait la une des journaux locaux.",
+    "lines": [
+      { "speaker": "Clément", "fr": "Rosalia, viens voir ! Y'a encore une file de fourmis qui traverse tout le plan de travail." },
+      { "speaker": "Rosalia", "fr": "Ah non, pas encore ! C'est la troisième fois cette semaine. Elles vont direct sur le sucre, c'est dingue.", "es": "¡Ay no, otra vez! Es la tercera vez esta semana. Van directo al azúcar, es una locura." },
+      { "speaker": "Clément", "fr": "Je comprends pas, on a tout nettoyé hier soir pourtant. J'ai même passé la serpillière." },
+      { "speaker": "Rosalia", "fr": "Ça change rien. Ma mère dit qu'avec cette chaleur, tout le quartier a le même problème depuis juin.", "es": "No cambia nada. Mi mamá dice que con este calor, todo el barrio tiene el mismo problema desde junio." },
+      { "speaker": "Clément", "fr": "J'ai lu un article là-dessus ce matin. Apparemment les cafards aussi se multiplient partout dans la capitale." },
+      { "speaker": "Rosalia", "fr": "Les cafards, c'est ce qui me dégoûte le plus. Quand j'en vois un voler dans la cuisine, je crie.", "es": "Las cucarachas son lo que más asco me da del mundo. Cuando veo una volando en la cocina, grito, de verdad." },
+      { "speaker": "Clément", "fr": "Ha ha, je confirme, je t'ai déjà entendue. L'article disait que la chaleur et les pluies accélèrent leur reproduction." },
+      { "speaker": "Rosalia", "fr": "Ça a du sens. Il pleut très fort, l'eau reste dans les cours, et après il fait trente-cinq degrés.", "es": "Tiene sentido. Llueve durísimo, el agua se queda en los patios, y después hace treinta y cinco grados." },
+      { "speaker": "Clément", "fr": "Et y'a aussi les poubelles qui traînent dans la rue et les égouts bouchés, d'après le journal." },
+      { "speaker": "Rosalia", "fr": "Ça c'est tellement vrai. Dans ma rue, le camion des ordures passe quand il veut, franchement.", "es": "Eso es tan cierto. En mi calle, el camión de la basura pasa cuando le da la gana. Las fundas se quedan dos días al sol." },
+      { "speaker": "Clément", "fr": "Du coup, on appelle une entreprise de fumigation ? Il paraît qu'elles sont complètement débordées en ce moment." },
+      { "speaker": "Rosalia", "fr": "Oui, mais on prend une entreprise sérieuse, hein ? Je veux pas d'un produit dangereux à côté de mes casseroles.", "es": "Sí, pero buscamos una empresa seria, ¿okay? No quiero un producto peligroso al lado de mis ollas." },
+      { "speaker": "Clément", "fr": "D'accord, je demande un devis demain matin. On essaie d'avoir un rendez-vous samedi si c'est possible." },
+      { "speaker": "Rosalia", "fr": "Parfait. Et en attendant, je mets tout dans des boîtes hermétiques : le sucre, la farine, le café.", "es": "Perfecto. Y mientras tanto, meto todo en envases herméticos: el azúcar, la harina, el café." },
+      { "speaker": "Clément", "fr": "Bonne idée. Tu sais qu'à Strasbourg tu verras beaucoup moins d'insectes ? L'hiver règle le problème tout seul." },
+      { "speaker": "Rosalia", "fr": "Sérieux ? Ça me rend trop contente ! Une cuisine sans cafards, pour moi c'est presque un rêve.", "es": "¿En serio? ¡Eso me pone súper contenta! Una cocina sin cucarachas, para mí es casi un sueño." },
+      { "speaker": "Clément", "fr": "Je te promets. Par contre en été y'a quelques moustiques, mais vraiment rien à voir avec ici." },
+      { "speaker": "Rosalia", "fr": "Ça je gère sans problème ! Et toi, chez tes parents près de Vichy, y'avait des fourmis ?", "es": "¡Eso lo manejo sin problema! Y tú, en casa de tus papás cerca de Vichy, ¿había hormigas cuando eras chiquito?" },
+      { "speaker": "Clément", "fr": "Un peu dans le jardin, mais jamais dans la maison. Ma mère mettait juste du vinaigre blanc sur les rebords." },
+      { "speaker": "Rosalia", "fr": "Le vinaigre blanc ! J'ai vu ça dans une vidéo de nettoyage sur TikTok. On teste ce soir !", "es": "¡El vinagre blanco! Vi eso en un video de limpieza en TikTok. Lo probamos esta noche y llamamos mañana." }
+    ]
+  },
+  "comments": [
+    {
+      "username": "VecinoDeVillaConsuelo",
+      "comment": "Le problème c'est PAS le climat, arrêtez avec ça !!! Le camion des ordures passe une fois par semaine quand il veut bien passer. On paie nos impôts pour quoi exactement ? Les cafards, c'est la mairie qui les élève, pas la chaleur.",
+      "likes": 198
+    },
+    {
+      "username": "Mildred_Encarnacion",
+      "comment": "L'an dernier j'ai trouvé un nid de fourmis DANS mon climatiseur. Le technicien a ouvert l'appareil et il y en avait des milliers. Il m'a dit qu'il voyait ça trois fois par semaine maintenant. J'ai changé de climatiseur, elles sont revenues.",
+      "likes": 267
+    },
+    {
+      "username": "IngenieroSanchez_RD",
+      "comment": "On exagère beaucoup dans cet article. Les cafards existent à Saint-Domingue depuis toujours, ce n'est pas une nouveauté de 2026. La vraie différence, c'est que tout le monde filme maintenant. Avant on écrasait l'insecte et on passait à autre chose.",
+      "likes": 61
+    },
+    {
+      "username": "ElRoachWhisperer",
+      "comment": "Moi j'ai arrêté de lutter. J'ai donné un prénom au cafard de ma salle de bain, il s'appelle Ramón. Il paie pas le loyer mais il écoute quand je parle de mes problèmes. Franchement, meilleur colocataire que le précédent.",
+      "likes": 489
+    },
+    {
+      "username": "DonaAltagracia_1962",
+      "comment": "Merci pour les conseils, surtout celui des boîtes hermétiques. Ma petite-fille est asthmatique et je ne savais pas que les cafards pouvaient aggraver ça. J'ai nettoyé toute la cuisine ce matin et bouché les fissures sous l'évier. On fait ce qu'on peut.",
+      "likes": 143
+    }
+  ]
+}

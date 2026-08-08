@@ -1,0 +1,58 @@
+{
+  "id": "medievales-wangenbourg-2026",
+  "title": "Une fête médiévale géante à 45 minutes de Strasbourg",
+  "date": "2026-08-08",
+  "category": "Culture",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ch%C3%A2teau_de_Wangenbourg_2017.jpg",
+    "alt": "Le donjon du château de Wangenbourg, en Alsace, entouré de forêt"
+  },
+  "vocabulary": [
+    { "fr": "une forteresse", "es": "una fortaleza" },
+    { "fr": "un bénévole", "es": "un voluntario" },
+    { "fr": "un costume", "es": "un disfraz" },
+    { "fr": "l'embrasement du château", "es": "la iluminación en llamas del castillo" },
+    { "fr": "le tir à l'arc", "es": "el tiro con arco" },
+    { "fr": "un festin", "es": "un banquete, un festín" },
+    { "fr": "à la broche", "es": "al asador" },
+    { "fr": "une parade costumée", "es": "un desfile de disfraces" },
+    { "fr": "bisannuel", "es": "bienal, cada dos años" }
+  ],
+  "article": "En Alsace, l'été ne se limite pas aux vignobles et aux villages fleuris. C'est aussi la grande saison des fêtes populaires. Cette année, un événement particulier attend les curieux à quarante-cinq minutes de Strasbourg. Les Médiévales de Wangenbourg-Engenthal reviennent les samedi 29 et dimanche 30 août. Il s'agit de la neuvième édition de cette fête médiévale familiale. Les organisateurs annoncent bien plus qu'une simple animation de village. Ils promettent un véritable retour dans le passé, avec des trolls, des elfes et même un dragon.\n\nL'événement fait partie des grands rendez-vous de la route des châteaux forts d'Alsace. Il se déroule au pied du château de Wangenbourg, une forteresse construite à 480 mètres d'altitude. Le site domine le territoire Mossig et Vignoble, entre la plaine et les Vosges. La fête est bisannuelle : elle n'a lieu que tous les deux ans. Elle est donc très attendue par les habitants de la région. Le comité des fêtes et d'animation de Wangenbourg-Engenthal l'organise, en partenariat avec la commune.\n\nL'ampleur de la manifestation impressionne. Près de 150 bénévoles participent à la préparation et à l'accueil du public. Une soixantaine d'artistes sont impliqués dans les différents spectacles. Par ailleurs, 200 costumes ont été confectionnés à la main pour l'occasion. Chaque édition possède son propre thème. Cette année, les organisateurs ont choisi « Aux origines des légendes ». Le public entre donc dans un univers de contes, de créatures imaginaires et de vieilles histoires racontées autour du feu.\n\nLe programme s'étale sur tout le week-end. Le village médiéval et le marché ouvrent le samedi à 17 heures, avec un spectacle inaugural. Ensuite, les visiteurs découvrent des interventions musicales d'autrefois, des danses et du tir à l'arc. Des jeux sont proposés pour tous les âges, des plus petits aux grands-parents. Une parade costumée traverse également le site pendant le week-end. Certaines animations sont éphémères et ne passent qu'une seule fois. Il faut donc bien regarder le programme avant d'arriver.\n\nLe soir, la fête change complètement d'ambiance. Des spectacles de feu illuminent les vieilles pierres de la forteresse. L'embrasement du château reste le moment le plus attendu du public. En effet, le bâtiment semble alors prendre feu devant les spectateurs. Beaucoup de familles viennent uniquement pour cette image. Un grand spectacle de reconstitution clôture enfin l'événement. Les organisateurs espèrent accueillir environ 4000 visiteurs sur les deux journées.\n\nLa table occupe aussi une place importante dans cette fête. Les Médiévales préparent un vrai festin, comme au Moyen Âge. Un banquet médiéval est proposé, mais la réservation est obligatoire. On trouve également du sanglier à la broche et des grillades. Les tartes flambées alsaciennes sont bien sûr au menu, pour rappeler la région. Enfin, une petite restauration permet de manger rapidement entre deux spectacles. Les prix restent raisonnables, car l'événement veut rester accessible aux familles.\n\nCe type de fête connaît un vrai succès partout en France. Les fêtes médiévales attirent des familles, des passionnés d'histoire et des touristes étrangers. Elles permettent de découvrir le patrimoine autrement, sans passer par un musée. Pour les habitants, c'est aussi une façon de faire vivre un village de montagne. Pourtant, l'organisation demande énormément de temps et d'énergie aux bénévoles. Cependant, le résultat récompense chaque fois tous les efforts. Ceux qui manqueront cette édition devront patienter deux longues années. La prochaine fête aura lieu en 2028, avec un nouveau thème.",
+  "conversation": {
+    "intro": "Rosalia et Clément sont dans leur appartement à Santo Domingo. Clément lui montre un article sur une fête médiévale organisée près de Strasbourg, la ville où ils vont s'installer. Rosalia n'a jamais vu ce genre d'événement en République dominicaine.",
+    "lines": [
+      { "speaker": "Clément", "fr": "Regarde ça, y'a une fête médiévale à 45 minutes de Strasbourg. Avec un vrai château." },
+      { "speaker": "Rosalia", "fr": "Attends, c'est quoi une fête médiévale exactement ? Les gens s'habillent comme au Moyen Âge ?", "es": "Espera, ¿qué es exactamente una fiesta medieval? ¿La gente se viste como en la Edad Media?" },
+      { "speaker": "Clément", "fr": "Exactement. Musique, danses, tir à l'arc, marché, et le soir des spectacles de feu." },
+      { "speaker": "Rosalia", "fr": "Ils ont fait 200 costumes à la main ! Chez nous on a le carnaval, mais c'est complètement différent.", "es": "¡Hicieron 200 disfraces a mano! Allá tenemos el carnaval, pero es completamente diferente." },
+      { "speaker": "Clément", "fr": "Ouais, là c'est vraiment de la reconstitution historique. Ils veulent que tu croies au voyage dans le temps." },
+      { "speaker": "Rosalia", "fr": "Et ils annoncent un dragon ! Franchement, ça me fait rire, mais j'ai trop envie de voir ça.", "es": "¡Y anuncian un dragón! La verdad me da risa, pero tengo muchísimas ganas de verlo." },
+      { "speaker": "Clément", "fr": "C'est surtout pour les enfants le dragon. Mais l'embrasement du château, ça c'est impressionnant." },
+      { "speaker": "Rosalia", "fr": "Ça veut dire quoi \"embrasement\" ? On dirait que le château brûle pour de vrai ?", "es": "¿Qué significa \"embrasement\"? ¿Parece que el castillo se quema de verdad?" },
+      { "speaker": "Clément", "fr": "Voilà, c'est ça. Ils mettent des lumières rouges et de la fumée, et on dirait un incendie." },
+      { "speaker": "Rosalia", "fr": "Ça doit être magnifique en photo. Mes sœurs vont halluciner quand je vais leur envoyer ça.", "es": "Debe verse increíble en foto. Mis hermanas se van a quedar locas cuando les mande eso." },
+      { "speaker": "Clément", "fr": "Par contre, cette édition c'est fin août. On sera encore ici à ce moment-là." },
+      { "speaker": "Rosalia", "fr": "Ah non, quel dommage ! Mais l'article dit que c'est tous les deux ans, donc on ira en 2028.", "es": "¡Ay no, qué lástima! Pero el artículo dice que es cada dos años, así que iremos en 2028." },
+      { "speaker": "Clément", "fr": "Deux ans ça passe vite, tu verras. Et en attendant, y'a plein d'autres fêtes en Alsace." },
+      { "speaker": "Rosalia", "fr": "Tant mieux ! Je veux tout faire dès notre arrivée. Et la nourriture là-bas, c'est quoi ?", "es": "¡Qué bueno! Quiero hacer todo desde que lleguemos. ¿Y la comida allá, qué es?" },
+      { "speaker": "Clément", "fr": "Sanglier à la broche, grillades, tartes flambées. Et un banquet médiéval sur réservation." },
+      { "speaker": "Rosalia", "fr": "Du sanglier ? Tu sais que je suis difficile avec la viande. Mais bon, je goûterai un petit morceau.", "es": "¿Jabalí? Tú sabes que soy exigente con la carne. Pero bueno, probaré un pedacito." },
+      { "speaker": "Clément", "fr": "T'inquiète, y'a toujours de la tarte flambée. Et tu peux manger avant si t'as faim." },
+      { "speaker": "Rosalia", "fr": "Bonne idée, tu me connais bien. Quand j'ai faim, je deviens vraiment insupportable !", "es": "Buena idea, me conoces bien. ¡Cuando tengo hambre me pongo insoportable!" },
+      { "speaker": "Clément", "fr": "Je confirme. Bon, et le château, tu veux qu'on aille le voir avant la fête ?" },
+      { "speaker": "Rosalia", "fr": "Oui ! On pourrait y monter un dimanche, tranquilles, juste pour la vue et la forêt.", "es": "¡Sí! Podríamos subir un domingo, tranquilos, solo por la vista y el bosque." },
+      { "speaker": "Clément", "fr": "Ça marche. Je note Wangenbourg dans la liste des sorties du premier printemps." },
+      { "speaker": "Rosalia", "fr": "Parfait. Et toi, tu es déjà allé à une fête médiévale quand tu étais petit ?", "es": "Perfecto. ¿Y tú, ya fuiste a una fiesta medieval cuando eras pequeño?" },
+      { "speaker": "Clément", "fr": "Une fois, près de Vichy. J'avais huit ans et je voulais absolument une épée en bois." },
+      { "speaker": "Rosalia", "fr": "Trop mignon ! Alors en 2028, on t'achète ton épée. Et moi je prends la couronne.", "es": "¡Qué lindo! Entonces en 2028 te compramos tu espada. Y yo me llevo la corona." }
+    ]
+  },
+  "comments": [
+    { "username": "RandonneurDesVosges", "comment": "Encore un article qui envoie 4000 personnes sur un site fragile ! Le château est déjà abîmé, les sentiers sont saturés et personne ne parle jamais de l'état des lieux le lundi matin. Le patrimoine c'est bien, le respecter ce serait mieux.", "likes": 63 },
+    { "username": "MamanDeTroisPetits", "comment": "On y était à la dernière édition avec les enfants et franchement c'était magique. Mon fils de six ans a parlé du dragon pendant trois mois. Il a même dormi avec son costume de chevalier. On revient en 2028 c'est sûr !", "likes": 218 },
+    { "username": "Prof_Histoire_67", "comment": "Je vais faire mon rabat-joie, mais soyons honnêtes : trolls, elfes et dragons n'ont rien de médiéval. C'est de l'heroic fantasy, pas de l'histoire. C'est sympa comme fête populaire, d'accord, mais arrêtons de dire que ça fait découvrir le patrimoine.", "likes": 149 },
+    { "username": "SanglierAnonyme2026", "comment": "Bonjour, je représente le syndicat des sangliers de la forêt de Wangenbourg. Nous souhaitons signaler que le programme mentionne un banquet et que nous n'avons jamais été consultés. Nous demandons une réunion urgente. Merci de votre compréhension.", "likes": 487 },
+    { "username": "ArrivedeStrasbourg", "comment": "150 bénévoles pour un village de cette taille, c'est juste énorme. Ces gens donnent leurs week-ends toute l'année pour faire vivre leur commune, et ça mérite vraiment qu'on le dise. Bravo à eux, j'ai déjà pris mes billets.", "likes": 172 }
+  ]
+}

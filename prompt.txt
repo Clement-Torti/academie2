@@ -7,8 +7,7 @@ RÈGLES GÉNÉRALES
 ═══════════════════════════════════════
 
 1. LANGUE DE SORTIE : Tout le contenu est en français (champs "fr"), sauf les traductions espagnoles (champs "es").
-2. NIVEAU DE FRANÇAIS : B1/B1+. Phrases de longueur variable (10 à 25 mots). Vocabulaire courant avec quelques mots plus précis lorsque le contexte le permet. Utiliser des connecteurs simples (cependant, pourtant, donc, en effet, par ailleurs). Les temps composés courants sont autorisés. Éviter le vocabulaire très technique, littéraire ou académique. Le lecteur est un étudiant hispanophone de niveau intermédiaire.
-3. NE PAS INVENTER : base-toi uniquement sur les faits du texte fourni. Tu peux simplifier, résumer, reformuler, mais pas inventer d'informations fausses.
+2. NIVEAU DE FRANÇAIS : B1+. Phrases de longueur variable (10 à 25 mots). Vocabulaire courant avec quelques mots plus précis lorsque le contexte le permet. Utiliser des connecteurs simples (cependant, pourtant, donc, en effet, par ailleurs). Les temps composés courants sont autorisés. Éviter le vocabulaire très technique, littéraire ou académique. Le lecteur est un étudiant hispanophone de niveau intermédiaire.
 
 ═══════════════════════════════════════
 SCHÉMA JSON EXACT À RESPECTER
@@ -55,7 +54,7 @@ RÈGLES DÉTAILLÉES PAR CHAMP
 - Le champ "es" est la traduction naturelle en espagnol (pas forcément mot à mot)
 
 ### article
-- Longueur : 550 à 650 mots EXACTEMENT. Compte les mots avant de soumettre.
+- Longueur : 700 à 800 mots EXACTEMENT. Compte les mots avant de soumettre.
 - Structure : 5 à 7 paragraphes logiques, séparés par \n\n (deux barres obliques inverses + n dans le JSON)
 - Chaque phrase : sujet + verbe + complément. Pas de phrases composées avec plusieurs virgules.
 - Temps privilégiés : présent de l'indicatif et passé composé

@@ -1416,9 +1416,11 @@ Responde SOLO con este JSON:
     //  MODE MANUEL — relais vers une IA plus performante
     // ════════════════════════════════════════════════════
     CLAUDE_URL: 'https://claude.ai/new',
-    // Au-delà, l'URL risque d'être tronquée ou refusée : on ouvre alors
-    // Claude sans préremplissage et l'utilisateur colle depuis le presse-papiers.
-    MAX_URL_LEN: 6000,
+    // Le prompt part dans ?q= pour être prérempli. L'encodage gonfle le texte
+    // d'environ 55 % (accents et sauts de ligne), d'où une limite large.
+    // Au-delà, on ouvre Claude sans préremplissage et l'utilisateur colle
+    // depuis le presse-papiers.
+    MAX_URL_LEN: 9000,
 
     buildManualPrompt(text) {
       return `Tu es professeur de français langue étrangère (FLE). Tu corriges une étudiante hispanophone de niveau B1.
@@ -1429,43 +1431,30 @@ Elle devait écrire EN FRANÇAIS ce commentaire donné en espagnol :
 Voici SON TEXTE EN FRANÇAIS :
 """${text}"""
 
-PRIORITÉ N°1 — LE SENS DE LA TRADUCTION
-Compare son texte à l'espagnol IDÉE PAR IDÉE, avant même de regarder la grammaire.
-Une phrase peut être parfaitement correcte en français et rester FAUSSE parce qu'elle ne dit
-pas ce que dit l'espagnol. Ces erreurs-là sont les plus graves : signale-les TOUJOURS, en premier,
-avec "type": "sens". Cherche en particulier :
-- les contresens : le français dit autre chose que l'espagnol ;
-- les faux-amis (entender = comprendre et non « entendre », éxito = succès, largo = long,
-  quitar = enlever, sensible = sensé/sensible selon le cas, contestar = répondre) ;
-- les expressions traduites mot à mot qui ne veulent rien dire en français ;
-- le mot mal choisi, même quand la phrase reste grammaticale ;
-- les idées de l'espagnol oubliées, ou au contraire inventées.
+PRIORITÉ N°1 — LE SENS
+Compare son texte à l'espagnol idée par idée AVANT de regarder la grammaire. Une phrase peut être correcte en français et fausse quand même, parce qu'elle ne dit pas ce que dit l'espagnol. Ces erreurs sont les plus graves : signale-les toujours, en premier, avec "type":"sens".
+Cherche : les contresens ; les faux-amis (entender = comprendre et non « entendre », éxito = succès, largo = long, quitar = enlever, contestar = répondre) ; les traductions mot à mot qui ne veulent rien dire ; le mot mal choisi même dans une phrase grammaticale ; les idées espagnoles oubliées ou inventées.
+Exemple à ne pas manquer :
+  espagnol « no entiendo tanto ruido por unos colores »
+  écrit    « je n'entends pas le bruit pour des couleurs »
+  → contresens : « entender » = comprendre, et « tanto ruido » est figuré.
+    correction « je ne comprends pas tout ce bruit pour des couleurs »
 
-Exemple d'erreur de sens à ne surtout pas manquer :
-  espagnol : « no entiendo tanto ruido por unos colores »
-  écrit    : « je n'entends pas le bruit pour des couleurs »
-  → contresens : « entender » signifie comprendre, et « tanto ruido » est ici figuré (tout ce tapage).
-    correction : « je ne comprends pas tout ce bruit pour des couleurs »
+RÈGLES
+- Signale toutes les vraies erreurs, sans limite de nombre : le sens d'abord, la langue ensuite.
+- N'invente rien. Une forme correcte ou une variante stylistique valable n'est pas une erreur.
+- NE SIGNALE JAMAIS la ponctuation (virgule, point, guillemets, parenthèses…) ni les majuscules de début de phrase.
+- Pour la langue : conjugaison, accords, grammaire, orthographe, vocabulaire, prépositions, ordre des mots. Les accents comptent s'ils changent le sens (a/à, ou/où) ou rendent le mot faux.
+- "original" : fragment EXACT copié mot pour mot de son texte (2 à 6 mots), sinon il sera ignoré. Pour une idée oubliée, prends le fragment à l'endroit où elle manquait.
+- "context" : la phrase complète et exacte contenant ce fragment.
+- "hint" : piste EN ESPAGNOL sans donner la réponse (pour le sens, renvoie au mot espagnol : « ¿Qué significa "entender"? »).
+- "explanation" : la règle EN ESPAGNOL, 25 mots max.
+- "type" : sens, conjugaison, grammaire, accord, orthographe, vocabulaire, syntaxe ou preposition.
+- "score" : 0-100 (fidélité au sens + correction de la langue).
+- "globalComment" : EN ESPAGNOL, 2 phrases (ce qu'elle a réussi, puis le point à travailler).
+- "correctedText" : son texte entier réécrit correctement, en gardant ses idées.
 
-RÈGLES D'ANALYSE
-- Signale TOUTES les vraies erreurs, sans limite de nombre : d'abord le sens, ensuite la langue.
-- N'invente aucune erreur. Si une forme est correcte, ne la signale pas. Une variante stylistique valable n'est pas une erreur.
-- NE SIGNALE JAMAIS la ponctuation (virgules, points, points-virgules, deux-points, guillemets, parenthèses, points d'exclamation ou d'interrogation) ni les majuscules en début de phrase.
-- Pour la langue, concentre-toi sur : conjugaison, accords, grammaire, orthographe des mots, vocabulaire, prépositions, ordre des mots.
-- Les accents comptent quand ils changent le sens (a/à, ou/où) ou rendent le mot faux.
-- "original" : le fragment EXACT copié mot pour mot de son texte (2 à 6 mots). Il doit apparaître littéralement dans son texte, sinon il sera ignoré.
-  Pour une idée espagnole totalement oubliée, prends le fragment de son texte à l'endroit où elle aurait dû se trouver.
-- "context" : la phrase COMPLÈTE et EXACTE de son texte qui contient ce fragment.
-- "hint" : une piste EN ESPAGNOL qui aide à trouver l'erreur SANS donner la réponse.
-  Pour une erreur de sens, renvoie-la au mot espagnol d'origine (ex : « ¿Qué significa exactamente "entender"? »).
-- "explanation" : la règle expliquée EN ESPAGNOL, 25 mots maximum.
-- "type" : exactement une valeur parmi sens, conjugaison, grammaire, accord, orthographe, vocabulaire, syntaxe, preposition.
-- "score" : 0 à 100 (fidélité au contenu espagnol + correction de la langue).
-- "globalComment" : EN ESPAGNOL, 2 phrases — ce qu'elle a réussi, puis le principal point à travailler.
-- "correctedText" : son texte entier réécrit correctement, en gardant ses idées et son style.
-
-RÉPONSE
-Réponds UNIQUEMENT avec ce JSON, sans aucun texte autour et sans bloc de code :
+Réponds UNIQUEMENT avec ce JSON, sans texte autour ni bloc de code :
 {"score":0,"globalComment":"","correctedText":"","errors":[{"original":"","correction":"","context":"","type":"","hint":"","explanation":""}]}`;
     },
 

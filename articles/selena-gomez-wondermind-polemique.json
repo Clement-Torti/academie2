@@ -50,5 +50,8 @@
     { "username": "AvocatDuDiable_Nico", "comment": "Franchement, on tape sur elle parce qu'elle est célèbre. Des startups qui promettent une appli et qui ne la sortent jamais, il y en a des centaines chaque année, personne n'en parle. Attendons le jugement avant de sortir les fourches, non ?", "likes": 87 },
     { "username": "MonHamsterEstZen", "comment": "Moi j'ai lancé mon programme de fitness mental l'an dernier : mon hamster court dans sa roue et je le regarde vingt minutes par jour. Résultat garanti, zéro investisseur, zéro procès. Je cherche un partenariat avec JP Morgan si jamais 🐹", "likes": 471 },
     { "username": "ThomasQuiEcoute", "comment": "Ce qui me touche, c'est que Selena Gomez a vraiment aidé des gens en parlant de sa bipolarité à la télé. Ça, personne ne peut le lui enlever. J'espère juste que cette histoire ne va pas décourager ceux qui commençaient enfin à demander de l'aide.", "likes": 142 }
-  ]
+  ],
+  "writingExercise": {
+    "es": "Esta noticia me deja un sabor amargo. Seguí a Wondermind desde el principio porque hablar de salud mental me parece necesario. Recuerdo que leí la newsletter durante meses y los ejercicios diarios me gustaban mucho. Pero si los inversores dicen la verdad, la aplicación nunca existió y eso lo cambia todo. Una empresa valorada en noventa y cinco millones de dólares debería tener algo real detrás. No dudo de la sinceridad de Selena Gomez, ella ha contado su enfermedad con mucha valentía. Sin embargo, el problema no es su historia personal, es la gestión. ¿Creéis que este juicio va a perjudicar el tema de la salud mental?"
+  }
 }

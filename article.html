@@ -195,6 +195,109 @@
     .stage-anim { animation: fadeInUp 0.32s cubic-bezier(.2,.8,.4,1) both; }
 
     #conv-action-btn:disabled { cursor: not-allowed; }
+
+    /* ── WRITING EXERCISE ─────────────────────────────── */
+    .write-card {
+      background: white;
+      border-radius: 16px;
+      border: 1px solid rgba(0,0,0,.06);
+      box-shadow: 0 2px 12px rgba(0,0,0,.06);
+    }
+    .write-es-box {
+      background: #FFF8E6;
+      border: 1.5px dashed #D4AF37;
+      border-radius: 12px;
+    }
+    #write-input {
+      width: 100%;
+      min-height: 190px;
+      resize: vertical;
+      border: 1.5px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 14px 16px;
+      font-family: 'Nunito', sans-serif;
+      font-size: 15px;
+      line-height: 1.8;
+      color: #2d2d2d;
+      outline: none;
+      transition: border-color .15s, box-shadow .15s;
+      background: #fff;
+    }
+    #write-input:focus {
+      border-color: #4ECDC4;
+      box-shadow: 0 0 0 4px rgba(78,205,196,.14);
+    }
+    #write-input:disabled { background: #fafafa; color: #6b7280; }
+
+    .write-btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      background: #FF6B6B; color: white;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700; font-size: 13px;
+      border: none; border-radius: 14px;
+      padding: 13px 26px;
+      cursor: pointer;
+      box-shadow: 0 4px 14px rgba(255,107,107,.32);
+      transition: transform .12s, box-shadow .12s, background .15s;
+    }
+    .write-btn:active:not(:disabled) { transform: scale(.96); box-shadow: none; }
+    .write-btn:disabled { background: #d1d5db; box-shadow: none; cursor: not-allowed; }
+    .write-btn-ghost {
+      background: white; color: #002654;
+      border: 1.5px solid #e5e7eb;
+      box-shadow: none;
+    }
+    .write-btn-ghost:active:not(:disabled) { background: #f9fafb; }
+
+    /* Stepper */
+    .write-dots { display: flex; align-items: center; gap: 5px; flex-wrap: wrap; }
+    .write-dot {
+      width: 7px; height: 7px; border-radius: 50%;
+      background: #e5e7eb; transition: all .2s;
+    }
+    .write-dot.done    { background: #4ECDC4; }
+    .write-dot.current { background: #FF6B6B; width: 20px; border-radius: 4px; }
+
+    .err-badge {
+      display: inline-block;
+      font-size: 9px; font-weight: 800;
+      text-transform: uppercase; letter-spacing: .12em;
+      padding: 4px 9px; border-radius: 999px;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .err-sentence {
+      font-family: 'Nunito', sans-serif;
+      font-size: 15px; line-height: 1.9; color: #374151;
+    }
+    .err-frag {
+      background: rgba(255,107,107,.14);
+      color: #b91c1c;
+      font-weight: 800;
+      border-radius: 4px;
+      padding: 1px 4px;
+      text-decoration: underline wavy #FF6B6B;
+      text-underline-offset: 4px;
+    }
+
+    .corr-row {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 9px;
+      font-family: 'Nunito', sans-serif; font-size: 15px;
+    }
+    .corr-row del { color: #9ca3af; text-decoration: line-through; }
+    .corr-row .fix {
+      font-weight: 800; color: #0f766e;
+      background: rgba(78,205,196,.18);
+      border-radius: 5px; padding: 2px 8px;
+    }
+
+    @keyframes writeReveal {
+      from { opacity: 0; transform: translateY(8px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .write-anim { animation: writeReveal .3s cubic-bezier(.2,.8,.4,1) both; }
+
+    .write-diff-ins { color: #0f766e; font-weight: 800; background: rgba(78,205,196,.16); border-radius: 3px; padding: 0 2px; }
   </style>
 </head>
 
@@ -300,6 +403,53 @@
         Réactions des lecteurs · <span id="comments-count">5</span>
       </h2>
       <div id="comments-container" class="flex flex-col gap-3"></div>
+    </section>
+
+    <!-- ── WRITING EXERCISE ───────────────────────────── -->
+    <section class="max-w-3xl mx-auto px-4 pt-6 pb-4" id="writing-section">
+      <h2 class="text-[11px] font-bold uppercase tracking-widest text-frBlue mb-4 flex items-center gap-2">
+        <i class="fa-solid fa-pen-nib text-gold"></i> Exercice d'expression écrite
+      </h2>
+
+      <div class="write-card px-5 py-6 sm:px-6">
+
+        <!-- Consigne -->
+        <p class="text-[13px] text-gray-600 leading-relaxed mb-4" style="font-family:'Nunito',sans-serif;">
+          À ton tour de réagir ! Voici le commentaire que tu veux publier, écrit en espagnol.
+          <strong class="text-frBlue">Réécris-le en français</strong> avec tes propres mots — environ 100 mots, niveau B1.
+        </p>
+
+        <!-- Spanish source -->
+        <div class="write-es-box px-4 py-4 mb-5">
+          <p class="text-[10px] font-bold uppercase tracking-widest text-amber-700 mb-2 flex items-center gap-1.5">
+            <i class="fa-solid fa-language"></i> Ton commentaire en espagnol
+          </p>
+          <p id="write-es-text" class="text-[14.5px] text-amber-900 leading-relaxed italic"
+             style="font-family:'Nunito',sans-serif;"></p>
+        </div>
+
+        <!-- Editor -->
+        <div id="write-editor">
+          <label for="write-input" class="block text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-2">
+            <i class="fa-solid fa-pen mr-1"></i> Ta version en français
+          </label>
+          <textarea id="write-input" placeholder="Écris ici ton commentaire en français…"
+                    oninput="writing.onInput()" spellcheck="false" autocapitalize="sentences"></textarea>
+
+          <div class="flex items-center justify-between gap-3 mt-3 flex-wrap">
+            <span id="write-count" class="text-[11px] font-bold text-gray-400">0 mot · objectif ≈ 100</span>
+            <button id="write-verify-btn" class="write-btn" onclick="writing.verify()" disabled>
+              <i class="fa-solid fa-wand-magic-sparkles"></i> Vérifier
+            </button>
+          </div>
+
+          <p id="write-hint-msg" class="text-[11px] text-gray-400 mt-2.5 leading-relaxed"></p>
+        </div>
+
+        <!-- Correction stepper -->
+        <div id="write-correction" class="hidden"></div>
+
+      </div>
     </section>
 
     <!-- ── CONVERSATION ───────────────────────────────── -->
@@ -809,6 +959,390 @@
   };
 
   // ════════════════════════════════════════════════════
+  //  WRITING EXERCISE  (expression écrite + correction IA)
+  // ════════════════════════════════════════════════════
+  const writing = {
+    data: null,
+    id: null,
+    esText: '',
+    errors: [],
+    result: null,
+    step: 0,
+    revealed: false,
+    busy: false,
+    keyIdx: 0,
+
+    ERR_STYLES: {
+      conjugaison: { bg:'#EEF2FF', fg:'#4338CA', label:'Conjugaison' },
+      grammaire:   { bg:'#FEF3C7', fg:'#B45309', label:'Grammaire'   },
+      accord:      { bg:'#FCE7F3', fg:'#BE185D', label:'Accord'      },
+      orthographe: { bg:'#E0F2FE', fg:'#0369A1', label:'Orthographe' },
+      vocabulaire: { bg:'#DCFCE7', fg:'#15803D', label:'Vocabulaire' },
+      syntaxe:     { bg:'#F3E8FF', fg:'#7E22CE', label:'Syntaxe'     },
+      preposition: { bg:'#FFEDD5', fg:'#C2410C', label:'Préposition' },
+      autre:       { bg:'#F3F4F6', fg:'#4B5563', label:'À revoir'    }
+    },
+
+    // ── Gemini plumbing (même convention que translation.html) ──
+    getKeys() {
+      try { return JSON.parse(localStorage.getItem('acad_gemini_keys') || '[]').filter(k => k?.trim()); }
+      catch { return []; }
+    },
+
+    async callGemini(prompt, { json = true, maxTokens = 3000, temperature = 0.3 } = {}) {
+      const keys = this.getKeys();
+      if (!keys.length) throw new Error('NO_KEY');
+
+      const body = {
+        contents: [{ role:'user', parts:[{ text: prompt }] }],
+        generationConfig: { temperature, maxOutputTokens: maxTokens }
+      };
+      if (json) body.generationConfig.responseMimeType = 'application/json';
+
+      let lastErr = null;
+      for (let i = 0; i < keys.length; i++) {
+        const key = keys[(this.keyIdx + i) % keys.length];
+        try {
+          const res = await fetch(
+            `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key=${key}`,
+            { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(body) }
+          );
+          if (res.ok) {
+            const d = await res.json();
+            const txt = d?.candidates?.[0]?.content?.parts?.[0]?.text;
+            if (txt) { this.keyIdx = (this.keyIdx + i) % keys.length; return txt; }
+            lastErr = new Error('EMPTY');
+          } else if (res.status === 429 || res.status === 403 || res.status === 400) {
+            lastErr = new Error('HTTP ' + res.status);
+          } else {
+            lastErr = new Error('HTTP ' + res.status);
+          }
+        } catch (e) { lastErr = e; }
+      }
+      throw lastErr || new Error('FAILED');
+    },
+
+    _parseJson(raw) {
+      try { return JSON.parse(raw); } catch {}
+      const m = String(raw).match(/\{[\s\S]*\}/);
+      if (m) { try { return JSON.parse(m[0]); } catch {} }
+      return null;
+    },
+
+    // ── Init ────────────────────────────────────────────
+    // L'exercice n'existe que si l'article fournit writingExercise.es.
+    // Les anciens articles sans ce champ n'affichent tout simplement pas la section.
+    init(d) {
+      const es = d?.writingExercise?.es;
+      if (!es || !String(es).trim()) {
+        document.getElementById('writing-section')?.remove();
+        return;
+      }
+
+      this.data = d;
+      this.id = d.id || new URLSearchParams(location.search).get('id') || 'unknown';
+      this.esText = String(es).trim();
+      document.getElementById('write-es-text').textContent = '« ' + this.esText + ' »';
+
+      // Restaure un brouillon éventuel
+      const draft = localStorage.getItem(`acad2_writing_draft_${this.id}`);
+      if (draft) {
+        const input = document.getElementById('write-input');
+        if (input) input.value = draft;
+      }
+      this.onInput();
+    },
+
+    // ── Éditeur ─────────────────────────────────────────
+    _words(s) { return String(s || '').trim().split(/\s+/).filter(Boolean).length; },
+
+    onInput() {
+      const input = document.getElementById('write-input');
+      if (!input) return;
+      const n = this._words(input.value);
+
+      const countEl = document.getElementById('write-count');
+      if (countEl) {
+        countEl.textContent = `${n} mot${n > 1 ? 's' : ''} · objectif ≈ 100`;
+        countEl.style.color = n === 0 ? '#9ca3af'
+                            : n < 70   ? '#9ca3af'
+                            : n <= 130 ? '#0f766e'
+                            : '#b45309';
+      }
+
+      const btn = document.getElementById('write-verify-btn');
+      const ready = n >= 25 && !!this.esText && !this.busy;
+      if (btn) btn.disabled = !ready;
+
+      const msg = document.getElementById('write-hint-msg');
+      if (msg && !this.busy) {
+        msg.textContent = !this.esText ? ''
+                        : n === 0      ? ''
+                        : n < 25       ? 'Encore un peu… écris au moins 25 mots pour lancer la correction.'
+                        : n < 70       ? 'Tu peux développer un peu plus pour approcher les 100 mots.'
+                        : '';
+      }
+
+      localStorage.setItem(`acad2_writing_draft_${this.id}`, input.value);
+    },
+
+    // ── Vérification IA ─────────────────────────────────
+    async verify() {
+      const input = document.getElementById('write-input');
+      const text = (input?.value || '').trim();
+      if (!text) return;
+
+      if (!this.getKeys().length) {
+        document.getElementById('write-hint-msg').innerHTML =
+          `<span class="text-red-500 font-bold">Aucune clé API Gemini.</span>
+           Ajoute-la dans les réglages de <a href="index.html" class="underline">l'accueil</a>.`;
+        return;
+      }
+
+      this.busy = true;
+      const btn = document.getElementById('write-verify-btn');
+      btn.disabled = true;
+      btn.innerHTML = `<i class="fa-solid fa-circle-notch fa-spin"></i> Correction en cours…`;
+      input.disabled = true;
+      document.getElementById('write-hint-msg').textContent = '';
+
+      const prompt = `Eres un profesor de francés (FLE) que corrige a una estudiante hispanohablante de nivel B1.
+
+Ella debía escribir EN FRANCÉS este comentario dado en español:
+"""${this.esText}"""
+
+Este es SU TEXTO EN FRANCÉS:
+"""${text}"""
+
+Analízalo y devuelve la corrección.
+
+Reglas de análisis:
+- Detecta como máximo 8 errores, los MÁS IMPORTANTES primero (los que impiden la comprensión antes que los detalles).
+- No inventes errores: si algo es correcto, no lo señales. Las variantes estilísticas válidas NO son errores.
+- Ignora los acentos ausentes solo si la palabra sigue siendo inequívoca; si cambia el sentido (a/à, ou/où), sí es un error.
+- "original" debe ser el fragmento EXACTO y literal copiado del texto de la estudiante (2 a 6 palabras), tal cual, sin modificarlo.
+- "context" debe ser la frase COMPLETA y EXACTA del texto de la estudiante que contiene ese fragmento.
+- "hint" es una pista en ESPAÑOL que ayuda a encontrar el error SIN dar la respuesta (ej: "Fíjate en el tiempo verbal después de 'hier'").
+- "explanation" es la regla explicada en ESPAÑOL, breve (máximo 25 palabras) y concreta.
+- "type" es exactamente uno de: conjugaison, grammaire, accord, orthographe, vocabulaire, syntaxe, preposition.
+- "score" de 0 a 100 sobre la calidad global (fidelidad al contenido español + corrección lingüística).
+- "globalComment" en ESPAÑOL, 2 frases: lo que hizo bien y lo principal a mejorar.
+- "correctedText" es su texto completo reescrito correctamente, conservando sus ideas y su estilo (no lo reescribas de cero).
+
+Responde SOLO con este JSON:
+{
+  "score": 0,
+  "globalComment": "",
+  "correctedText": "",
+  "errors": [
+    { "original": "", "correction": "", "context": "", "type": "", "hint": "", "explanation": "" }
+  ]
+}`;
+
+      try {
+        const raw = await this.callGemini(prompt, { temperature: 0.2, maxTokens: 3000 });
+        const parsed = this._parseJson(raw);
+        if (!parsed) throw new Error('PARSE');
+
+        this.result = parsed;
+        this.errors = (parsed.errors || []).filter(e => e && e.original && e.correction);
+        this.step = 0;
+        this.revealed = false;
+
+        document.getElementById('write-editor').classList.add('hidden');
+        document.getElementById('write-correction').classList.remove('hidden');
+        this.renderStep();
+      } catch (e) {
+        console.error('writing.verify', e);
+        document.getElementById('write-hint-msg').innerHTML =
+          e.message === 'NO_KEY'
+            ? `<span class="text-red-500 font-bold">Clé API Gemini manquante.</span>`
+            : `<span class="text-red-500 font-bold">La correction a échoué.</span> Réessaie dans un instant.`;
+      } finally {
+        this.busy = false;
+        input.disabled = false;
+        btn.innerHTML = `<i class="fa-solid fa-wand-magic-sparkles"></i> Vérifier`;
+        this.onInput();
+      }
+    },
+
+    // ── Affichage progressif ────────────────────────────
+    _dots() {
+      const total = this.errors.length;
+      return `<div class="write-dots">${
+        Array.from({ length: total }, (_, i) =>
+          `<span class="write-dot ${i < this.step ? 'done' : i === this.step ? 'current' : ''}"></span>`
+        ).join('')
+      }</div>`;
+    },
+
+    // Surligne le fragment fautif dans la phrase de l'étudiante.
+    // L'IA ne recopie pas toujours le fragment au caractère près : on tolère
+    // la casse et les espaces, et en dernier recours on affiche le fragment à part.
+    _highlight(context, original) {
+      const ctx = String(context || '');
+      const org = String(original || '');
+      if (!ctx) return `<mark class="err-frag">${conv._esc(org)}</mark>`;
+      if (!org) return conv._esc(ctx);
+
+      let i = ctx.indexOf(org);
+      let len = org.length;
+
+      if (i < 0) i = ctx.toLowerCase().indexOf(org.toLowerCase());
+
+      if (i < 0) {
+        const pattern = org.trim().split(/\s+/)
+          .map(w => w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('\\s+');
+        try {
+          const m = pattern && ctx.match(new RegExp(pattern, 'i'));
+          if (m) { i = m.index; len = m[0].length; }
+        } catch { /* motif inexploitable */ }
+      }
+
+      if (i < 0) {
+        return conv._esc(ctx) +
+               ` <mark class="err-frag">${conv._esc(org)}</mark>`;
+      }
+
+      return conv._esc(ctx.slice(0, i)) +
+             `<mark class="err-frag">${conv._esc(ctx.slice(i, i + len))}</mark>` +
+             conv._esc(ctx.slice(i + len));
+    },
+
+    renderStep() {
+      const box = document.getElementById('write-correction');
+
+      if (!this.errors.length) { this.renderSummary(true); return; }
+      if (this.step >= this.errors.length) { this.renderSummary(false); return; }
+
+      const err = this.errors[this.step];
+      const st  = this.ERR_STYLES[String(err.type || '').toLowerCase()] || this.ERR_STYLES.autre;
+      const isLast = this.step === this.errors.length - 1;
+
+      box.innerHTML = `
+        <div class="write-anim">
+          <div class="flex items-center justify-between gap-3 mb-4 flex-wrap">
+            <div class="flex items-center gap-3">
+              <span class="text-[11px] font-bold uppercase tracking-widest text-frBlue">
+                Erreur ${this.step + 1} <span class="text-gray-300">/ ${this.errors.length}</span>
+              </span>
+              <span class="err-badge" style="background:${st.bg}; color:${st.fg};">${st.label}</span>
+            </div>
+            ${this._dots()}
+          </div>
+
+          <p class="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-2">
+            Dans ta phrase
+          </p>
+          <p class="err-sentence mb-4">${this._highlight(err.context || err.original, err.original)}</p>
+
+          ${!this.revealed ? `
+            <div class="rounded-xl px-4 py-3.5 mb-5" style="background:#FFF8E6; border:1px solid #F3E0A8;">
+              <p class="text-[13px] text-amber-900 leading-relaxed" style="font-family:'Nunito',sans-serif;">
+                <i class="fa-solid fa-lightbulb text-amber-500 mr-1.5"></i>
+                ${conv._esc(err.hint || 'Regarde attentivement la partie soulignée.')}
+              </p>
+            </div>
+            <p class="text-[11px] text-gray-400 mb-3 leading-relaxed">
+              Prends le temps de corriger mentalement avant de continuer.
+            </p>
+            <button class="write-btn w-full sm:w-auto" onclick="writing.reveal()">
+              <i class="fa-solid fa-eye"></i> Montrer la correction
+            </button>
+          ` : `
+            <div class="write-anim">
+              <div class="rounded-xl px-4 py-4 mb-3" style="background:#F0FDFA; border:1px solid #99E6DF;">
+                <div class="corr-row mb-2.5">
+                  <del>${conv._esc(err.original)}</del>
+                  <i class="fa-solid fa-arrow-right text-teal text-xs"></i>
+                  <span class="fix">${conv._esc(err.correction)}</span>
+                </div>
+                <p class="text-[13px] text-gray-600 leading-relaxed" style="font-family:'Nunito',sans-serif;">
+                  ${conv._esc(err.explanation || '')}
+                </p>
+              </div>
+              <button class="write-btn w-full sm:w-auto mt-2" onclick="writing.next()">
+                ${isLast
+                  ? '<i class="fa-solid fa-flag-checkered"></i> Voir le bilan'
+                  : '<i class="fa-solid fa-arrow-right"></i> Erreur suivante'}
+              </button>
+            </div>
+          `}
+        </div>`;
+
+      box.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    },
+
+    reveal() { this.revealed = true; this.renderStep(); },
+
+    next() {
+      this.step++;
+      this.revealed = false;
+      this.renderStep();
+    },
+
+    renderSummary(perfect) {
+      const box = document.getElementById('write-correction');
+      const r = this.result || {};
+      const score = Math.max(0, Math.min(100, parseInt(r.score, 10) || 0));
+      const color = score >= 80 ? '#0f766e' : score >= 55 ? '#B45309' : '#DC2626';
+      const nErr = this.errors.length;
+
+      box.innerHTML = `
+        <div class="write-anim text-center">
+          <div class="inline-flex items-center justify-center w-24 h-24 rounded-full mb-4"
+               style="border:5px solid ${color}22; background:${color}0d;">
+            <div>
+              <p class="text-3xl font-extrabold leading-none" style="color:${color};">${score}</p>
+              <p class="text-[9px] font-bold uppercase tracking-widest text-gray-400 mt-1">/ 100</p>
+            </div>
+          </div>
+
+          <p class="text-[13px] font-bold text-frBlue mb-1.5">
+            ${perfect ? 'Parfait, aucune erreur !' : `${nErr} erreur${nErr > 1 ? 's' : ''} revue${nErr > 1 ? 's' : ''}`}
+          </p>
+          <p class="text-[13px] text-gray-600 leading-relaxed max-w-lg mx-auto mb-6"
+             style="font-family:'Nunito',sans-serif;">${conv._esc(r.globalComment || '')}</p>
+        </div>
+
+        ${r.correctedText ? `
+          <div class="rounded-xl px-4 py-4 mb-5 text-left" style="background:#F0FDFA; border:1px solid #99E6DF;">
+            <p class="text-[10px] font-bold uppercase tracking-widest mb-2" style="color:#0f766e;">
+              <i class="fa-solid fa-check-double mr-1"></i> Version corrigée
+            </p>
+            <p class="text-[14.5px] text-gray-700 leading-[1.9]" style="font-family:'Nunito',sans-serif;">
+              ${conv._esc(r.correctedText)}
+            </p>
+          </div>` : ''}
+
+        <div class="flex flex-col sm:flex-row gap-3">
+          ${nErr ? `
+            <button class="write-btn write-btn-ghost flex-1" onclick="writing.replay()">
+              <i class="fa-solid fa-rotate-left"></i> Revoir les erreurs
+            </button>` : ''}
+          <button class="write-btn flex-1" onclick="writing.backToEditor()">
+            <i class="fa-solid fa-pen"></i> Réécrire
+          </button>
+        </div>`;
+
+      box.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    },
+
+    replay() {
+      this.step = 0;
+      this.revealed = false;
+      this.renderStep();
+    },
+
+    backToEditor() {
+      document.getElementById('write-correction').classList.add('hidden');
+      document.getElementById('write-editor').classList.remove('hidden');
+      this.onInput();
+      document.getElementById('write-input').focus();
+    }
+  };
+
+  // ════════════════════════════════════════════════════
   //  Media player controller
   // ════════════════════════════════════════════════════
   const player = {
@@ -930,6 +1464,7 @@
       this.renderComments(d.comments || []);
 
       conv.init(d);
+      writing.init(d);
 
       document.getElementById('loader-screen').classList.add('hidden');
       document.getElementById('article-body').classList.remove('hidden');

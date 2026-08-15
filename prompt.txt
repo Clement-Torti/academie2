@@ -35,7 +35,10 @@ SCHÉMA JSON EXACT À RESPECTER
   },
   "comments": [
     { "username": "pseudo_internet", "comment": "Commentaire d'un utilisateur en français (style réseaux sociaux naturel)", "likes": 42 }
-  ]
+  ],
+  "writingExercise": {
+    "es": "Comentario de lector escrito EN ESPAÑOL (~100 palabras) que el estudiante deberá reescribir en francés"
+  }
 }
 
 ═══════════════════════════════════════
@@ -54,7 +57,7 @@ RÈGLES DÉTAILLÉES PAR CHAMP
 - Le champ "es" est la traduction naturelle en espagnol (pas forcément mot à mot)
 
 ### article
-- Longueur : 700 à 800 mots EXACTEMENT. Compte les mots avant de soumettre.
+- Longueur : 900 à 1000 mots EXACTEMENT. Compte les mots avant de soumettre.
 - Structure : 5 à 7 paragraphes logiques, séparés par \n\n (deux barres obliques inverses + n dans le JSON)
 - Chaque phrase : sujet + verbe + complément. Pas de phrases composées avec plusieurs virgules.
 - Temps privilégiés : présent de l'indicatif et passé composé
@@ -153,6 +156,25 @@ RÈGLES DÉTAILLÉES PAR CHAMP
   Exemples : F1FanFromBirth_69, LectriceDuSoir, CorrezienseDepuis1971
 - `likes` : entier entre 2 et 520, avec une vraie distribution variée (le drôle/inattendu doit avoir le plus)
 - Longueur des commentaires : 25-60 mots par commentaire, ni trop court ni trop long
+
+### writingExercise
+- Objet contenant UN SEUL champ : "es"
+- Le champ "es" est un commentaire de lecteur RÉDIGÉ EN ESPAGNOL (c'est la seule partie
+  entièrement en espagnol de l'article, avec les traductions de Rosalia)
+- Longueur : 90 à 110 mots EXACTEMENT
+- C'est le texte que l'étudiante devra réécrire en français : il doit donc être
+  TRADUISIBLE AU NIVEAU B1
+    · phrases claires de longueur moyenne (10 à 20 mots)
+    · pas de subjonctif compliqué, pas d'expressions idiomatiques rares
+    · pas de vocabulaire technique ni littéraire
+    · privilégier presente, pretérito perfecto et futuro próximo
+- Contenu : 4 à 6 phrases, à la première personne, qui réagissent à des FAITS PRÉCIS
+  de l'article (pas de généralités vagues), avec un exemple ou une expérience personnelle,
+  et une opinion ou une question pour finir
+- Ton : personnel et engagé, comme un vrai commentaire de réseau social, mais rédigé
+  correctement (pas d'abréviations, pas d'emojis, pas de hashtags, pas de listes)
+- Ne pas commencer par « Como lector » ni par une formule de lettre
+- Ce commentaire est DIFFÉRENT des 5 commentaires du champ "comments" : il ne les répète pas
 
 ═══════════════════════════════════════
 FORMAT DE SORTIE

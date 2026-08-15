@@ -1017,6 +1017,7 @@
     MODE: 'manual',
 
     ERR_STYLES: {
+      sens:        { bg:'#FEE2E2', fg:'#B91C1C', label:'Sens'        },
       conjugaison: { bg:'#EEF2FF', fg:'#4338CA', label:'Conjugaison' },
       grammaire:   { bg:'#FEF3C7', fg:'#B45309', label:'Grammaire'   },
       accord:      { bg:'#FCE7F3', fg:'#BE185D', label:'Accord'      },
@@ -1195,6 +1196,7 @@
     // Bilan rédigé localement : pas besoin de solliciter l'IA une fois de plus.
     _buildComment(score, errors, words) {
       const NAMES = {
+        sens:'el sentido de la traducción',
         conjugaison:'la conjugación', grammaire:'la gramática', accord:'las concordancias',
         orthographe:'la ortografía', vocabulaire:'el vocabulario', syntaxe:'el orden de las palabras',
         preposition:'las preposiciones', autre:'varios puntos'
@@ -1217,6 +1219,20 @@
         : `Tu texto de ${words} palabras necesita una revisión: varias frases dificultan la comprensión.`;
 
       return `${opening} Tus ${errors.length} errores se concentran sobre todo en ${focus}: repásalos con calma, uno por uno.`;
+    },
+
+    // Les erreurs de sens passent devant : une phrase qui ne veut pas dire ce
+    // que dit l'espagnol est plus grave qu'un accord manqué. Tri stable, donc
+    // l'ordre du texte est conservé à l'intérieur de chaque groupe.
+    _sortErrors(errors) {
+      return errors
+        .map((e, i) => [e, i])
+        .sort((a, b) => {
+          const sa = String(a[0].type || '').toLowerCase() === 'sens' ? 0 : 1;
+          const sb = String(b[0].type || '').toLowerCase() === 'sens' ? 0 : 1;
+          return sa - sb || a[1] - b[1];
+        })
+        .map(p => p[0]);
     },
 
     // Filet de sécurité : l'IA signale parfois une virgule ou un point malgré
@@ -1252,24 +1268,33 @@
 
       const prompt = `Eres un profesor de francés muy riguroso. Un colega ha señalado supuestos errores en el texto de una estudiante. ALGUNOS SON FALSOS: el texto ya era correcto.
 
+La estudiante debía traducir al francés este comentario español:
+"""${this.esText}"""
+
 TEXTO DE LA ESTUDIANTE:
 """${part}"""
 
 ERRORES SEÑALADOS POR TU COLEGA:
 ${list}
 
-Para cada uno, decide si es un error REAL de francés.
+Para cada uno, decide si es un error REAL.
 
 Marca "valid": false (= error falso) si se cumple CUALQUIERA de estos casos:
 - "original" y "corrección propuesta" son idénticos o equivalentes;
-- el fragmento "original" ya era correcto en francés tal como estaba;
+- el fragmento "original" ya era correcto Y traduce bien la idea española;
 - el motivo dice que la forma es correcta, concuerda bien o está bien escrita;
-- es solo una preferencia de estilo o una reformulación;
+- es solo una preferencia de estilo o una reformulación equivalente;
 - solo cambia la puntuación o una mayúscula;
 - el fragmento "original" no aparece literalmente en el texto de arriba.
 
-Marca "valid": true SOLO si estás seguro de que hay un error real de francés.
-EN CASO DE DUDA, marca "valid": false. Es mucho peor mostrar un error falso que olvidar uno.
+ATENCIÓN, excepción importante: un error de SENTIDO ("type": "sens") es VÁLIDO aunque el
+francés sea perfectamente correcto. Lo que cuenta es si dice lo mismo que el español.
+Ejemplo: « je n'entends pas » es francés correcto, pero traduce mal « no entiendo »
+(= je ne comprends pas): ese error es REAL, marca "valid": true.
+Antes de rechazar un error de sentido, vuelve a leer la frase española correspondiente.
+
+Marca "valid": true SOLO si estás seguro de que hay un error real.
+EN CASO DE DUDA sobre la gramática, marca "valid": false. Es mucho peor mostrar un error falso que olvidar uno.
 
 Responde SOLO con este JSON, un objeto por cada error señalado:
 {"verdicts":[{"n":1,"valid":true},{"n":2,"valid":false}]}`;
@@ -1305,8 +1330,24 @@ TEXTO COMPLETO que ha escrito (solo como CONTEXTO, no lo corrijas entero):
 CORRIGE ÚNICAMENTE ESTA PARTE (parte ${idx + 1} de ${total}):
 """${part}"""
 
+PRIORIDAD Nº1 — EL SENTIDO DE LA TRADUCCIÓN
+Compara su texto con el español IDEA POR IDEA, antes de mirar la gramática.
+Una frase puede ser correcta en francés y aun así ser FALSA porque no dice lo que dice el español.
+Esos errores son los más graves: señálalos SIEMPRE, primero, con "type": "sens". Busca sobre todo:
+- contrasentidos: el francés dice otra cosa que el español;
+- falsos amigos (entender = comprendre, NO « entendre »; éxito = succès; largo = long; quitar = enlever);
+- expresiones traducidas literalmente que no significan nada en francés;
+- la palabra mal elegida, aunque la frase sea gramaticalmente correcta;
+- ideas del español olvidadas o inventadas.
+
+Ejemplo de error de sentido que NO debes pasar por alto:
+  español : « no entiendo tanto ruido por unos colores »
+  escrito : « je n'entends pas le bruit pour des couleurs »
+  → contrasentido: « entender » es comprendre, y « tanto ruido » aquí es figurado.
+    corrección: « je ne comprends pas tout ce bruit pour des couleurs »
+
 Reglas de análisis:
-- Señala TODOS los errores que encuentres EN ESTA PARTE, hasta un máximo de 6, los más importantes primero.
+- Señala TODOS los errores que encuentres EN ESTA PARTE, hasta un máximo de 6: primero el sentido, después la lengua.
 - No inventes errores: si algo es correcto, no lo señales. Las variantes estilísticas válidas NO son errores.
 - PROHIBIDO señalar errores de PUNTUACIÓN: comas, puntos, punto y coma, dos puntos, comillas,
   paréntesis, signos de exclamación o interrogación, y mayúsculas al principio de frase.
@@ -1319,7 +1360,7 @@ Reglas de análisis:
 - "context" debe ser la frase COMPLETA y EXACTA de ESTA PARTE que contiene ese fragmento.
 - "hint" es una pista en ESPAÑOL que ayuda a encontrar el error SIN dar la respuesta.
 - "explanation" es la regla explicada en ESPAÑOL, máximo 25 palabras.
-- "type" es exactamente uno de: conjugaison, grammaire, accord, orthographe, vocabulaire, syntaxe, preposition.
+- "type" es exactamente uno de: sens, conjugaison, grammaire, accord, orthographe, vocabulaire, syntaxe, preposition.
 - "score" de 0 a 100 para ESTA PARTE únicamente.
 - "correctedPart" es ESTA PARTE reescrita correctamente, conservando sus ideas y su estilo.
 
@@ -1388,17 +1429,37 @@ Elle devait écrire EN FRANÇAIS ce commentaire donné en espagnol :
 Voici SON TEXTE EN FRANÇAIS :
 """${text}"""
 
+PRIORITÉ N°1 — LE SENS DE LA TRADUCTION
+Compare son texte à l'espagnol IDÉE PAR IDÉE, avant même de regarder la grammaire.
+Une phrase peut être parfaitement correcte en français et rester FAUSSE parce qu'elle ne dit
+pas ce que dit l'espagnol. Ces erreurs-là sont les plus graves : signale-les TOUJOURS, en premier,
+avec "type": "sens". Cherche en particulier :
+- les contresens : le français dit autre chose que l'espagnol ;
+- les faux-amis (entender = comprendre et non « entendre », éxito = succès, largo = long,
+  quitar = enlever, sensible = sensé/sensible selon le cas, contestar = répondre) ;
+- les expressions traduites mot à mot qui ne veulent rien dire en français ;
+- le mot mal choisi, même quand la phrase reste grammaticale ;
+- les idées de l'espagnol oubliées, ou au contraire inventées.
+
+Exemple d'erreur de sens à ne surtout pas manquer :
+  espagnol : « no entiendo tanto ruido por unos colores »
+  écrit    : « je n'entends pas le bruit pour des couleurs »
+  → contresens : « entender » signifie comprendre, et « tanto ruido » est ici figuré (tout ce tapage).
+    correction : « je ne comprends pas tout ce bruit pour des couleurs »
+
 RÈGLES D'ANALYSE
-- Signale TOUTES les vraies erreurs, sans limite de nombre, les plus importantes d'abord.
+- Signale TOUTES les vraies erreurs, sans limite de nombre : d'abord le sens, ensuite la langue.
 - N'invente aucune erreur. Si une forme est correcte, ne la signale pas. Une variante stylistique valable n'est pas une erreur.
 - NE SIGNALE JAMAIS la ponctuation (virgules, points, points-virgules, deux-points, guillemets, parenthèses, points d'exclamation ou d'interrogation) ni les majuscules en début de phrase.
-- Concentre-toi sur : conjugaison, accords, grammaire, orthographe des mots, vocabulaire, prépositions, ordre des mots.
+- Pour la langue, concentre-toi sur : conjugaison, accords, grammaire, orthographe des mots, vocabulaire, prépositions, ordre des mots.
 - Les accents comptent quand ils changent le sens (a/à, ou/où) ou rendent le mot faux.
 - "original" : le fragment EXACT copié mot pour mot de son texte (2 à 6 mots). Il doit apparaître littéralement dans son texte, sinon il sera ignoré.
+  Pour une idée espagnole totalement oubliée, prends le fragment de son texte à l'endroit où elle aurait dû se trouver.
 - "context" : la phrase COMPLÈTE et EXACTE de son texte qui contient ce fragment.
 - "hint" : une piste EN ESPAGNOL qui aide à trouver l'erreur SANS donner la réponse.
+  Pour une erreur de sens, renvoie-la au mot espagnol d'origine (ex : « ¿Qué significa exactamente "entender"? »).
 - "explanation" : la règle expliquée EN ESPAGNOL, 25 mots maximum.
-- "type" : exactement une valeur parmi conjugaison, grammaire, accord, orthographe, vocabulaire, syntaxe, preposition.
+- "type" : exactement une valeur parmi sens, conjugaison, grammaire, accord, orthographe, vocabulaire, syntaxe, preposition.
 - "score" : 0 à 100 (fidélité au contenu espagnol + correction de la langue).
 - "globalComment" : EN ESPAGNOL, 2 phrases — ce qu'elle a réussi, puis le principal point à travailler.
 - "correctedText" : son texte entier réécrit correctement, en gardant ses idées et son style.
@@ -1549,10 +1610,10 @@ Réponds UNIQUEMENT avec ce JSON, sans aucun texte autour et sans bloc de code :
       }
 
       // Mêmes garde-fous qu'en mode Gemini
-      const errors = (p.errors || []).filter(e =>
+      const errors = this._sortErrors((p.errors || []).filter(e =>
         e && e.original && e.correction &&
         !this._isPunctuationOnly(e.original, e.correction) &&
-        this._findFragment(text, e.original));
+        this._findFragment(text, e.original)));
 
       if (!Array.isArray(p.errors) && p.score === undefined) {
         errEl.textContent = "Cette réponse ne contient ni score ni liste d'erreurs. Vérifie que tu as copié la bonne partie.";
@@ -1621,8 +1682,8 @@ Réponds UNIQUEMENT avec ce JSON, sans aucun texte autour et sans bloc de code :
 
         if (!parts.some(p => p.ok)) throw new Error('ALL_FAILED');
 
-        // Fusion des morceaux, dans l'ordre du texte
-        const errors = parts.flatMap(p => p.errors);
+        // Fusion des morceaux, dans l'ordre du texte, sens en tête
+        const errors = this._sortErrors(parts.flatMap(p => p.errors));
         const correctedText = parts.map(p => p.correctedPart).join(' ');
 
         const words = this._words(text);

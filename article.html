@@ -989,7 +989,16 @@
       catch { return []; }
     },
 
-    async callGemini(prompt, { json = true, maxTokens = 3000, temperature = 0.3 } = {}) {
+    _sleep(ms) { return new Promise(r => setTimeout(r, ms)); },
+
+    // Google renvoie très souvent 429/503 sur le quota gratuit : les comptes
+    // payants sont prioritaires. Patienter quelques secondes et relancer suffit
+    // presque toujours. On essaie donc toutes les clés, puis on attend de plus
+    // en plus longtemps avant de recommencer.
+    RETRY_STATUS: [429, 500, 502, 503, 504],
+    RETRY_WAITS: [1500, 3500, 7000],
+
+    async callGemini(prompt, { json = true, maxTokens = 3000, temperature = 0.3, attempts = 3 } = {}) {
       const keys = this.getKeys();
       if (!keys.length) throw new Error('NO_KEY');
 
@@ -1000,25 +1009,42 @@
       if (json) body.generationConfig.responseMimeType = 'application/json';
 
       let lastErr = null;
-      for (let i = 0; i < keys.length; i++) {
-        const key = keys[(this.keyIdx + i) % keys.length];
-        try {
-          const res = await fetch(
-            `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key=${key}`,
-            { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(body) }
-          );
-          if (res.ok) {
-            const d = await res.json();
-            const txt = d?.candidates?.[0]?.content?.parts?.[0]?.text;
-            if (txt) { this.keyIdx = (this.keyIdx + i) % keys.length; return txt; }
-            lastErr = new Error('EMPTY');
-          } else if (res.status === 429 || res.status === 403 || res.status === 400) {
+
+      for (let attempt = 0; attempt < attempts; attempt++) {
+        let retryable = false;
+
+        for (let i = 0; i < keys.length; i++) {
+          const key = keys[(this.keyIdx + i) % keys.length];
+          try {
+            const res = await fetch(
+              `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key=${key}`,
+              { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(body) }
+            );
+            if (res.ok) {
+              const d = await res.json();
+              const txt = d?.candidates?.[0]?.content?.parts?.[0]?.text;
+              if (txt) { this.keyIdx = (this.keyIdx + i) % keys.length; return txt; }
+              lastErr = new Error('EMPTY');   // réponse vide/tronquée : ça vaut le coup de réessayer
+              retryable = true;
+              continue;
+            }
             lastErr = new Error('HTTP ' + res.status);
-          } else {
-            lastErr = new Error('HTTP ' + res.status);
+            if (this.RETRY_STATUS.includes(res.status)) { retryable = true; continue; } // surcharge
+            if (res.status === 403) continue;   // clé invalide ou quota épuisé : on passe à la suivante
+            break;                              // 400 & co : insister ne sert à rien
+          } catch (e) {
+            lastErr = e;        // panne réseau
+            retryable = true;
           }
-        } catch (e) { lastErr = e; }
+        }
+
+        if (!retryable) break;
+        if (attempt < attempts - 1) {
+          this._notifyRetry?.();
+          await this._sleep(this.RETRY_WAITS[Math.min(attempt, this.RETRY_WAITS.length - 1)]);
+        }
       }
+
       throw lastErr || new Error('FAILED');
     },
 
@@ -1149,7 +1175,81 @@
       return `${opening} Tus ${errors.length} errores se concentran sobre todo en ${focus}: repásalos con calma, uno por uno.`;
     },
 
-    async _analyzeChunk(part, fullText, idx, total) {
+    // Filet de sécurité : l'IA signale parfois une virgule ou un point malgré
+    // la consigne. Si original et correction ne diffèrent que par la ponctuation
+    // (ou une majuscule en début de phrase), on jette l'erreur.
+    // Les apostrophes et traits d'union sont conservés : « je ai » → « j'ai »
+    // et « est ce que » → « est-ce que » sont de vraies erreurs.
+    _isPunctuationOnly(a, b) {
+      const strip = s => String(s || '')
+        .normalize('NFC')                      // « é » composé == « é » précomposé
+        .replace(/[   ]/g, ' ') // espaces insécables
+        .replace(/[‘’′]/g, "'") // apostrophes typographiques
+        .replace(/[.,;:!?…"«»()\[\]]/g, '')
+        .replace(/\s+/g, ' ')
+        .trim();
+      const na = strip(a), nb = strip(b);
+      if (!na || !nb) return true;
+      // Majuscule de début de phrase ignorée, mais pas les majuscules internes :
+      // « les français » → « les Français » reste une vraie erreur.
+      const low1 = s => s.charAt(0).toLowerCase() + s.slice(1);
+      return low1(na) === low1(nb);
+    },
+
+    // 2e passe : on renvoie les erreurs trouvées à l'IA pour qu'elle les
+    // conteste. Tâche courte et fermée (valider/rejeter), donc bien plus
+    // fiable pour un petit modèle que la détection initiale.
+    // En cas de doute la consigne est de rejeter : mieux vaut rater une erreur
+    // que d'en inventer une.
+    async _verifyErrors(part, errors) {
+      const list = errors.map((e, i) =>
+        `${i + 1}. original: "${e.original}" | corrección propuesta: "${e.correction}" | motivo: ${e.explanation || '—'}`
+      ).join('\n');
+
+      const prompt = `Eres un profesor de francés muy riguroso. Un colega ha señalado supuestos errores en el texto de una estudiante. ALGUNOS SON FALSOS: el texto ya era correcto.
+
+TEXTO DE LA ESTUDIANTE:
+"""${part}"""
+
+ERRORES SEÑALADOS POR TU COLEGA:
+${list}
+
+Para cada uno, decide si es un error REAL de francés.
+
+Marca "valid": false (= error falso) si se cumple CUALQUIERA de estos casos:
+- "original" y "corrección propuesta" son idénticos o equivalentes;
+- el fragmento "original" ya era correcto en francés tal como estaba;
+- el motivo dice que la forma es correcta, concuerda bien o está bien escrita;
+- es solo una preferencia de estilo o una reformulación;
+- solo cambia la puntuación o una mayúscula;
+- el fragmento "original" no aparece literalmente en el texto de arriba.
+
+Marca "valid": true SOLO si estás seguro de que hay un error real de francés.
+EN CASO DE DUDA, marca "valid": false. Es mucho peor mostrar un error falso que olvidar uno.
+
+Responde SOLO con este JSON, un objeto por cada error señalado:
+{"verdicts":[{"n":1,"valid":true},{"n":2,"valid":false}]}`;
+
+      try {
+        // Passe secondaire : si Google est saturé, on n'insiste pas (une seule
+        // relance) et on rend les erreurs telles quelles plutôt que de faire
+        // patienter l'étudiante. Les filtres locaux ont déjà écarté le pire.
+        const raw = await this.callGemini(prompt, { temperature: 0, maxTokens: 900, attempts: 2 });
+        const p = this._parseJson(raw);
+        const verdicts = p?.verdicts;
+        if (!Array.isArray(verdicts) || !verdicts.length) return { errors, verified: false };
+
+        const rejected = new Set(
+          verdicts.filter(v => v && v.valid === false).map(v => parseInt(v.n, 10))
+        );
+        return { errors: errors.filter((_, i) => !rejected.has(i + 1)), verified: true };
+      } catch (e) {
+        console.error('writing._verifyErrors', e);
+        return { errors, verified: false };
+      }
+    },
+
+    async _analyzeChunk(part, fullText, idx, total, onVerify) {
       const prompt = `Eres un profesor de francés (FLE) que corrige a una estudiante hispanohablante de nivel B1.
 
 Ella debía escribir EN FRANCÉS este comentario dado en español:
@@ -1164,6 +1264,12 @@ CORRIGE ÚNICAMENTE ESTA PARTE (parte ${idx + 1} de ${total}):
 Reglas de análisis:
 - Señala TODOS los errores que encuentres EN ESTA PARTE, hasta un máximo de 6, los más importantes primero.
 - No inventes errores: si algo es correcto, no lo señales. Las variantes estilísticas válidas NO son errores.
+- PROHIBIDO señalar errores de PUNTUACIÓN: comas, puntos, punto y coma, dos puntos, comillas,
+  paréntesis, signos de exclamación o interrogación, y mayúsculas al principio de frase.
+  Si la ÚNICA diferencia entre "original" y "correction" es la puntuación o una mayúscula,
+  NO es un error: ignóralo por completo y busca otro.
+- Céntrate ÚNICAMENTE en: conjugación, concordancias, gramática, ortografía de las palabras,
+  vocabulario, preposiciones y orden de las palabras.
 - Ignora los acentos ausentes solo si la palabra sigue siendo inequívoca; si cambia el sentido (a/à, ou/où), sí es un error.
 - "original" debe ser un fragmento EXACTO y literal copiado de ESTA PARTE (2 a 6 palabras), sin modificarlo.
 - "context" debe ser la frase COMPLETA y EXACTA de ESTA PARTE que contiene ese fragmento.
@@ -1181,12 +1287,30 @@ Responde SOLO con este JSON:
           const raw = await this.callGemini(prompt, { temperature: 0.2, maxTokens: 2000 });
           const p = this._parseJson(raw);
           if (p) {
+            // Filtres locaux, avant même de solliciter la 2e passe :
+            //  · original == correction (l'IA « corrige » une forme déjà juste)
+            //  · différence de simple ponctuation
+            //  · fragment introuvable dans le texte (hallucination)
+            let errors = (p.errors || []).filter(e =>
+              e && e.original && e.correction &&
+              !this._isPunctuationOnly(e.original, e.correction) &&
+              this._findFragment(part, e.original));
+
+            let verified = true;
+            if (errors.length) {
+              if (onVerify) onVerify();
+              const v = await this._verifyErrors(part, errors);
+              errors = v.errors;
+              verified = v.verified;
+            }
+
             return {
               ok: true,
+              verified,
               words: this._words(part),
               score: Math.max(0, Math.min(100, parseInt(p.score, 10) || 0)),
               correctedPart: String(p.correctedPart || part).trim(),
-              errors: (p.errors || []).filter(e => e && e.original && e.correction)
+              errors
             };
           }
         } catch (e) {
@@ -1195,7 +1319,7 @@ Responde SOLO con este JSON:
         }
       }
       // Morceau perdu : on garde le texte original pour ne pas trouer le bilan.
-      return { ok: false, words: this._words(part), score: null, correctedPart: part, errors: [] };
+      return { ok: false, verified: true, words: this._words(part), score: null, correctedPart: part, errors: [] };
     },
 
     // ── Vérification IA ─────────────────────────────────
@@ -1218,17 +1342,23 @@ Responde SOLO con este JSON:
       document.getElementById('write-hint-msg').textContent = '';
 
       const chunks = this._splitChunks(text);
-      let done = 0;
+      let done = 0, checking = 0, retries = 0;
       const setProgress = () => {
-        btn.innerHTML = chunks.length > 1
-          ? `<i class="fa-solid fa-circle-notch fa-spin"></i> Analyse ${Math.min(done + 1, chunks.length)}/${chunks.length}…`
-          : `<i class="fa-solid fa-circle-notch fa-spin"></i> Correction en cours…`;
+        const label = retries > 0 && done < chunks.length
+          ? 'Serveur occupé, nouvel essai…'
+          : checking > 0 && done < chunks.length
+            ? 'Double vérification…'
+            : chunks.length > 1
+              ? `Analyse ${Math.min(done + 1, chunks.length)}/${chunks.length}…`
+              : 'Correction en cours…';
+        btn.innerHTML = `<i class="fa-solid fa-circle-notch fa-spin"></i> ${label}`;
       };
+      this._notifyRetry = () => { retries++; setProgress(); };
       setProgress();
 
       try {
         const parts = await Promise.all(chunks.map((c, i) =>
-          this._analyzeChunk(c, text, i, chunks.length)
+          this._analyzeChunk(c, text, i, chunks.length, () => { checking++; setProgress(); })
             .then(r => { done++; setProgress(); return r; })
         ));
 
@@ -1238,17 +1368,28 @@ Responde SOLO con este JSON:
         const errors = parts.flatMap(p => p.errors);
         const correctedText = parts.map(p => p.correctedPart).join(' ');
 
+        const words = this._words(text);
         const scored = parts.filter(p => p.score !== null);
         const wSum = scored.reduce((s, p) => s + p.words, 0) || 1;
-        const score = Math.round(scored.reduce((s, p) => s + p.score * p.words, 0) / wSum);
+        const modelScore = Math.round(scored.reduce((s, p) => s + p.score * p.words, 0) / wSum);
+
+        // L'IA note AVANT que les faux positifs soient écartés : sa note peut
+        // donc contredire ce qui s'affiche. On la mélange à une note calculée
+        // sur les erreurs réellement retenues, pour rester cohérent.
+        const density = words ? (errors.length / words) * 100 : 0;
+        const localScore = Math.max(20, Math.min(100, Math.round(100 - density * 5)));
+        let score = Math.round(modelScore * 0.5 + localScore * 0.5);
+        if (!errors.length) score = Math.max(score, 90);
 
         const failed = parts.filter(p => !p.ok).length;
+        const unverified = parts.filter(p => p.ok && !p.verified).length;
 
         this.result = {
           score,
           correctedText,
-          globalComment: this._buildComment(score, errors, this._words(text)),
+          globalComment: this._buildComment(score, errors, words),
           partial: failed > 0 ? failed : 0,
+          unverified,
           chunks: chunks.length
         };
         this.errors = errors;
@@ -1263,8 +1404,11 @@ Responde SOLO con este JSON:
         document.getElementById('write-hint-msg').innerHTML =
           e.message === 'NO_KEY'
             ? `<span class="text-red-500 font-bold">Clé API Gemini manquante.</span>`
-            : `<span class="text-red-500 font-bold">La correction a échoué.</span> Réessaie dans un instant.`;
+            : `<span class="text-red-500 font-bold">La correction n'a pas abouti.</span>
+               Google limite les requêtes gratuites quand ses serveurs sont chargés.
+               Attends quelques secondes et relance : ça finit presque toujours par passer.`;
       } finally {
+        this._notifyRetry = null;
         this.busy = false;
         input.disabled = false;
         btn.innerHTML = `<i class="fa-solid fa-wand-magic-sparkles"></i> Vérifier`;
@@ -1282,37 +1426,41 @@ Responde SOLO con este JSON:
       }</div>`;
     },
 
+    // Localise un fragment dans un texte. L'IA ne le recopie pas toujours au
+    // caractère près : on tolère la casse et les espaces multiples.
+    _findFragment(haystack, needle) {
+      const H = String(haystack || ''), N = String(needle || '');
+      if (!H || !N) return null;
+
+      let i = H.indexOf(N);
+      if (i >= 0) return { index: i, length: N.length };
+
+      i = H.toLowerCase().indexOf(N.toLowerCase());
+      if (i >= 0) return { index: i, length: N.length };
+
+      const pattern = N.trim().split(/\s+/)
+        .map(w => w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('\\s+');
+      try {
+        const m = pattern && H.match(new RegExp(pattern, 'i'));
+        if (m) return { index: m.index, length: m[0].length };
+      } catch { /* motif inexploitable */ }
+
+      return null;
+    },
+
     // Surligne le fragment fautif dans la phrase de l'étudiante.
-    // L'IA ne recopie pas toujours le fragment au caractère près : on tolère
-    // la casse et les espaces, et en dernier recours on affiche le fragment à part.
     _highlight(context, original) {
       const ctx = String(context || '');
       const org = String(original || '');
       if (!ctx) return `<mark class="err-frag">${conv._esc(org)}</mark>`;
       if (!org) return conv._esc(ctx);
 
-      let i = ctx.indexOf(org);
-      let len = org.length;
+      const f = this._findFragment(ctx, org);
+      if (!f) return conv._esc(ctx) + ` <mark class="err-frag">${conv._esc(org)}</mark>`;
 
-      if (i < 0) i = ctx.toLowerCase().indexOf(org.toLowerCase());
-
-      if (i < 0) {
-        const pattern = org.trim().split(/\s+/)
-          .map(w => w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('\\s+');
-        try {
-          const m = pattern && ctx.match(new RegExp(pattern, 'i'));
-          if (m) { i = m.index; len = m[0].length; }
-        } catch { /* motif inexploitable */ }
-      }
-
-      if (i < 0) {
-        return conv._esc(ctx) +
-               ` <mark class="err-frag">${conv._esc(org)}</mark>`;
-      }
-
-      return conv._esc(ctx.slice(0, i)) +
-             `<mark class="err-frag">${conv._esc(ctx.slice(i, i + len))}</mark>` +
-             conv._esc(ctx.slice(i + len));
+      return conv._esc(ctx.slice(0, f.index)) +
+             `<mark class="err-frag">${conv._esc(ctx.slice(f.index, f.index + f.length))}</mark>` +
+             conv._esc(ctx.slice(f.index + f.length));
     },
 
     renderStep() {
@@ -1416,6 +1564,13 @@ Responde SOLO con este JSON:
               <i class="fa-solid fa-triangle-exclamation mr-1"></i>
               ${r.partial} partie${r.partial > 1 ? 's' : ''} du texte sur ${r.chunks} n'${r.partial > 1 ? 'ont' : 'a'} pas pu être analysée${r.partial > 1 ? 's' : ''}.
               Relance la vérification pour la compléter.
+            </p>` : ''}
+
+          ${r.unverified ? `
+            <p class="text-[11px] text-gray-400 max-w-lg mx-auto mb-4 leading-relaxed">
+              <i class="fa-solid fa-circle-info mr-1"></i>
+              Serveurs Google saturés : la double vérification des erreurs n'a pas pu être faite.
+              Un signalement peut être inexact.
             </p>` : ''}
           <div class="mb-2"></div>
         </div>

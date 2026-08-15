@@ -208,7 +208,7 @@
       border: 1.5px dashed #D4AF37;
       border-radius: 12px;
     }
-    #write-input {
+    #write-input, #write-ai-response {
       width: 100%;
       min-height: 190px;
       resize: vertical;
@@ -223,11 +223,41 @@
       transition: border-color .15s, box-shadow .15s;
       background: #fff;
     }
-    #write-input:focus {
+    #write-input:focus, #write-ai-response:focus {
       border-color: #4ECDC4;
       box-shadow: 0 0 0 4px rgba(78,205,196,.14);
     }
     #write-input:disabled { background: #fafafa; color: #6b7280; }
+
+    #write-ai-response {
+      min-height: 120px;
+      font-family: ui-monospace, 'SFMono-Regular', Menlo, monospace;
+      font-size: 12px;
+      line-height: 1.6;
+      color: #4b5563;
+    }
+
+    .write-prompt-box {
+      background: #0d1117;
+      color: #c9d1d9;
+      border-radius: 10px;
+      padding: 12px 14px;
+      font-family: ui-monospace, 'SFMono-Regular', Menlo, monospace;
+      font-size: 11px;
+      line-height: 1.65;
+      white-space: pre-wrap;
+      word-break: break-word;
+      max-height: 240px;
+      overflow-y: auto;
+    }
+    .write-step-num {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 22px; height: 22px; border-radius: 50%;
+      background: #002654; color: white;
+      font-size: 11px; font-weight: 800;
+      font-family: 'Montserrat', sans-serif;
+      flex-shrink: 0;
+    }
 
     .write-btn {
       display: inline-flex; align-items: center; justify-content: center; gap: 8px;
@@ -248,6 +278,7 @@
       box-shadow: none;
     }
     .write-btn-ghost:active:not(:disabled) { background: #f9fafb; }
+    .write-btn-sm { padding: 8px 14px; font-size: 11px; border-radius: 10px; }
 
     /* Stepper */
     .write-dots { display: flex; align-items: center; gap: 5px; flex-wrap: wrap; }
@@ -445,6 +476,9 @@
 
           <p id="write-hint-msg" class="text-[11px] text-gray-400 mt-2.5 leading-relaxed"></p>
         </div>
+
+        <!-- Passage de relais vers une IA externe -->
+        <div id="write-handoff" class="hidden"></div>
 
         <!-- Correction stepper -->
         <div id="write-correction" class="hidden"></div>
@@ -971,6 +1005,16 @@
     revealed: false,
     busy: false,
     keyIdx: 0,
+    manualPrompt: '',
+
+    // ── MODE DE CORRECTION ──────────────────────────────
+    //  'manual' : on copie un prompt que l'utilisateur passe à une IA plus
+    //             performante (ChatGPT, Claude…), puis il colle la réponse.
+    //  'gemini' : correction automatique via l'API Gemini (découpage en
+    //             morceaux + double vérification). Toute cette logique est
+    //             conservée intacte plus bas : il suffit de remettre 'gemini'
+    //             ici pour la réactiver.
+    MODE: 'manual',
 
     ERR_STYLES: {
       conjugaison: { bg:'#EEF2FF', fg:'#4338CA', label:'Conjugaison' },
@@ -1322,8 +1366,221 @@ Responde SOLO con este JSON:
       return { ok: false, verified: true, words: this._words(part), score: null, correctedPart: part, errors: [] };
     },
 
-    // ── Vérification IA ─────────────────────────────────
-    async verify() {
+    // ── Point d'entrée du bouton « Vérifier » ───────────
+    verify() {
+      return this.MODE === 'gemini' ? this.verifyWithGemini() : this.startHandoff();
+    },
+
+    // ════════════════════════════════════════════════════
+    //  MODE MANUEL — relais vers une IA plus performante
+    // ════════════════════════════════════════════════════
+    CLAUDE_URL: 'https://claude.ai/new',
+    // Au-delà, l'URL risque d'être tronquée ou refusée : on ouvre alors
+    // Claude sans préremplissage et l'utilisateur colle depuis le presse-papiers.
+    MAX_URL_LEN: 6000,
+
+    buildManualPrompt(text) {
+      return `Tu es professeur de français langue étrangère (FLE). Tu corriges une étudiante hispanophone de niveau B1.
+
+Elle devait écrire EN FRANÇAIS ce commentaire donné en espagnol :
+"""${this.esText}"""
+
+Voici SON TEXTE EN FRANÇAIS :
+"""${text}"""
+
+RÈGLES D'ANALYSE
+- Signale TOUTES les vraies erreurs, sans limite de nombre, les plus importantes d'abord.
+- N'invente aucune erreur. Si une forme est correcte, ne la signale pas. Une variante stylistique valable n'est pas une erreur.
+- NE SIGNALE JAMAIS la ponctuation (virgules, points, points-virgules, deux-points, guillemets, parenthèses, points d'exclamation ou d'interrogation) ni les majuscules en début de phrase.
+- Concentre-toi sur : conjugaison, accords, grammaire, orthographe des mots, vocabulaire, prépositions, ordre des mots.
+- Les accents comptent quand ils changent le sens (a/à, ou/où) ou rendent le mot faux.
+- "original" : le fragment EXACT copié mot pour mot de son texte (2 à 6 mots). Il doit apparaître littéralement dans son texte, sinon il sera ignoré.
+- "context" : la phrase COMPLÈTE et EXACTE de son texte qui contient ce fragment.
+- "hint" : une piste EN ESPAGNOL qui aide à trouver l'erreur SANS donner la réponse.
+- "explanation" : la règle expliquée EN ESPAGNOL, 25 mots maximum.
+- "type" : exactement une valeur parmi conjugaison, grammaire, accord, orthographe, vocabulaire, syntaxe, preposition.
+- "score" : 0 à 100 (fidélité au contenu espagnol + correction de la langue).
+- "globalComment" : EN ESPAGNOL, 2 phrases — ce qu'elle a réussi, puis le principal point à travailler.
+- "correctedText" : son texte entier réécrit correctement, en gardant ses idées et son style.
+
+RÉPONSE
+Réponds UNIQUEMENT avec ce JSON, sans aucun texte autour et sans bloc de code :
+{"score":0,"globalComment":"","correctedText":"","errors":[{"original":"","correction":"","context":"","type":"","hint":"","explanation":""}]}`;
+    },
+
+    async _copy(txt) {
+      try {
+        await navigator.clipboard.writeText(txt);
+        return true;
+      } catch {
+        // Repli pour file:// et navigateurs sans Clipboard API
+        try {
+          const ta = document.createElement('textarea');
+          ta.value = txt;
+          ta.style.cssText = 'position:fixed;top:-9999px;opacity:0;';
+          document.body.appendChild(ta);
+          ta.select();
+          const ok = document.execCommand('copy');
+          document.body.removeChild(ta);
+          return ok;
+        } catch { return false; }
+      }
+    },
+
+    // Doit être appelé de façon SYNCHRONE depuis le clic, sinon le navigateur
+    // bloque l'ouverture d'onglet.
+    _openClaude(prompt) {
+      const full = `${this.CLAUDE_URL}?q=${encodeURIComponent(prompt)}`;
+      const prefilled = full.length <= this.MAX_URL_LEN;
+      const w = window.open(prefilled ? full : this.CLAUDE_URL, '_blank');
+      if (w) { try { w.opener = null; } catch {} }
+      return { opened: !!w, prefilled: prefilled && !!w };
+    },
+
+    startHandoff() {
+      const input = document.getElementById('write-input');
+      const text = (input?.value || '').trim();
+      if (!text) return;
+
+      this.manualPrompt = this.buildManualPrompt(text);
+
+      // 1. Onglet d'abord (synchrone), 2. presse-papiers ensuite
+      const nav = this._openClaude(this.manualPrompt);
+      this._copy(this.manualPrompt).then(copied => this.renderHandoff({ ...nav, copied }));
+      this.renderHandoff({ ...nav, copied: null });
+    },
+
+    reopenClaude() {
+      const nav = this._openClaude(this.manualPrompt);
+      this._copy(this.manualPrompt).then(copied => this.renderHandoff({ ...nav, copied }));
+    },
+
+    async copyPrompt() {
+      const copied = await this._copy(this.manualPrompt);
+      const el = document.getElementById('write-copy-btn');
+      if (el) {
+        el.innerHTML = copied
+          ? `<i class="fa-solid fa-check"></i> Copié`
+          : `<i class="fa-solid fa-xmark"></i> Échec`;
+        setTimeout(() => {
+          if (el) el.innerHTML = `<i class="fa-regular fa-copy"></i> Copier le prompt`;
+        }, 1800);
+      }
+    },
+
+    renderHandoff({ opened, prefilled, copied }) {
+      const box = document.getElementById('write-handoff');
+      const saved = document.getElementById('write-ai-response')?.value || '';
+
+      const status = !opened
+        ? `Ton navigateur a bloqué l'ouverture de l'onglet. ${copied === false ? 'Copie le prompt ci-dessous à la main,' : 'Le prompt est copié :'} ouvre Claude et colle-le.`
+        : prefilled
+          ? `Le prompt est déjà rempli dans Claude. Envoie-le, puis reviens coller sa réponse ici.`
+          : `Ton texte est un peu long pour être passé par l'adresse. ${copied === false ? 'Copie le prompt ci-dessous,' : 'Le prompt est copié :'} colle-le dans Claude, puis reviens ici.`;
+
+      document.getElementById('write-editor').classList.add('hidden');
+      box.classList.remove('hidden');
+
+      box.innerHTML = `
+        <div class="write-anim">
+
+          <div class="flex items-start gap-3 mb-6">
+            <span class="write-step-num">1</span>
+            <div class="min-w-0 flex-1">
+              <p class="text-[13px] font-bold text-frBlue mb-1">Fais corriger ton texte</p>
+              <p class="text-[12px] text-gray-500 leading-relaxed">${conv._esc(status)}</p>
+
+              <div class="flex gap-2 mt-3 flex-wrap">
+                <button class="write-btn write-btn-ghost write-btn-sm" onclick="writing.reopenClaude()">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Rouvrir Claude
+                </button>
+                <button id="write-copy-btn" class="write-btn write-btn-ghost write-btn-sm" onclick="writing.copyPrompt()">
+                  <i class="fa-regular fa-copy"></i> Copier le prompt
+                </button>
+              </div>
+
+              <details class="mt-3">
+                <summary class="text-[11px] text-gray-400 cursor-pointer select-none hover:text-gray-600 transition">
+                  Voir le prompt
+                </summary>
+                <div class="write-prompt-box mt-2">${conv._esc(this.manualPrompt)}</div>
+              </details>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <span class="write-step-num">2</span>
+            <div class="min-w-0 flex-1">
+              <p class="text-[13px] font-bold text-frBlue mb-1">Colle la réponse de l'IA</p>
+              <p class="text-[12px] text-gray-500 leading-relaxed mb-2.5">
+                Copie tout ce que l'IA a répondu et colle-le ci-dessous.
+              </p>
+              <textarea id="write-ai-response" spellcheck="false"
+                        placeholder='{"score": 82, "globalComment": "…", "correctedText": "…", "errors": [ … ]}'
+                        oninput="document.getElementById('write-apply-btn').disabled = !this.value.trim()"
+                        >${conv._esc(saved)}</textarea>
+              <p id="write-ai-error" class="text-[11.5px] text-red-500 mt-2 leading-relaxed"></p>
+
+              <div class="flex flex-col sm:flex-row gap-3 mt-3">
+                <button class="write-btn write-btn-ghost flex-1" onclick="writing.backToEditor()">
+                  <i class="fa-solid fa-pen"></i> Modifier mon texte
+                </button>
+                <button id="write-apply-btn" class="write-btn flex-1" onclick="writing.applyManual()" ${saved.trim() ? '' : 'disabled'}>
+                  <i class="fa-solid fa-list-check"></i> Voir la correction
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>`;
+
+      box.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    },
+
+    applyManual() {
+      const raw = (document.getElementById('write-ai-response')?.value || '').trim();
+      const errEl = document.getElementById('write-ai-error');
+      const text = (document.getElementById('write-input')?.value || '').trim();
+      errEl.textContent = '';
+
+      const p = this._parseJson(raw);
+      if (!p) {
+        errEl.textContent = "Je n'arrive pas à lire cette réponse. Copie bien tout le JSON renvoyé par l'IA, des accolades { jusqu'à }.";
+        return;
+      }
+
+      // Mêmes garde-fous qu'en mode Gemini
+      const errors = (p.errors || []).filter(e =>
+        e && e.original && e.correction &&
+        !this._isPunctuationOnly(e.original, e.correction) &&
+        this._findFragment(text, e.original));
+
+      if (!Array.isArray(p.errors) && p.score === undefined) {
+        errEl.textContent = "Cette réponse ne contient ni score ni liste d'erreurs. Vérifie que tu as copié la bonne partie.";
+        return;
+      }
+
+      let score = Math.max(0, Math.min(100, parseInt(p.score, 10) || 0));
+      if (!errors.length) score = Math.max(score, 90);
+
+      this.result = {
+        score,
+        correctedText: String(p.correctedText || '').trim(),
+        globalComment: String(p.globalComment || '').trim() || this._buildComment(score, errors, this._words(text)),
+        partial: 0,
+        unverified: 0,
+        chunks: 1
+      };
+      this.errors = errors;
+      this.step = 0;
+      this.revealed = false;
+
+      document.getElementById('write-handoff').classList.add('hidden');
+      document.getElementById('write-correction').classList.remove('hidden');
+      this.renderStep();
+    },
+
+    // ── Correction automatique Gemini (conservée) ───────
+    async verifyWithGemini() {
       const input = document.getElementById('write-input');
       const text = (input?.value || '').trim();
       if (!text) return;
@@ -1606,6 +1863,7 @@ Responde SOLO con este JSON:
 
     backToEditor() {
       document.getElementById('write-correction').classList.add('hidden');
+      document.getElementById('write-handoff').classList.add('hidden');
       document.getElementById('write-editor').classList.remove('hidden');
       this.onInput();
       document.getElementById('write-input').focus();

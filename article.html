@@ -416,7 +416,7 @@
         <!-- Consigne -->
         <p class="text-[13px] text-gray-600 leading-relaxed mb-4" style="font-family:'Nunito',sans-serif;">
           À ton tour de réagir ! Voici le commentaire que tu veux publier, écrit en espagnol.
-          <strong class="text-frBlue">Réécris-le en français</strong> avec tes propres mots — environ 100 mots, niveau B1.
+          <strong class="text-frBlue">Réécris-le en français</strong> avec tes propres mots.
         </p>
 
         <!-- Spanish source -->
@@ -1086,6 +1086,118 @@
       localStorage.setItem(`acad2_writing_draft_${this.id}`, input.value);
     },
 
+    // ── Découpage du texte ──────────────────────────────
+    // L'API gratuite est bien plus fiable sur un texte court : on l'interroge
+    // sur 2 ou 3 morceaux plutôt qu'en un seul appel, ce qui permet de
+    // remonter beaucoup plus d'erreurs sans dégrader la qualité.
+    _splitChunks(text) {
+      const total = this._words(text);
+      let n = total > 130 ? 3 : total > 55 ? 2 : 1;
+      if (n === 1) return [text];
+
+      const sentences = (text.match(/[^.!?…]+[.!?…]+[»"']?\s*|[^.!?…]+$/g) || [text])
+        .map(s => s.trim()).filter(Boolean);
+
+      // On ne peut pas faire plus de morceaux que de phrases
+      n = Math.min(n, sentences.length);
+      if (n < 2) return [text];
+
+      const target = total / n;
+      const chunks = [];
+      let cur = [], curW = 0;
+
+      for (let i = 0; i < sentences.length; i++) {
+        cur.push(sentences[i]);
+        curW += this._words(sentences[i]);
+        const sentLeft  = sentences.length - i - 1;
+        const chunkLeft = n - chunks.length - 1;
+        // On ferme le morceau si le quota est atteint, ou s'il faut garder
+        // au moins une phrase pour chacun des morceaux restants.
+        if (chunkLeft > 0 && (curW >= target || sentLeft <= chunkLeft)) {
+          chunks.push(cur.join(' '));
+          cur = []; curW = 0;
+        }
+      }
+      if (cur.length) chunks.push(cur.join(' '));
+      return chunks.filter(Boolean);
+    },
+
+    // Bilan rédigé localement : pas besoin de solliciter l'IA une fois de plus.
+    _buildComment(score, errors, words) {
+      const NAMES = {
+        conjugaison:'la conjugación', grammaire:'la gramática', accord:'las concordancias',
+        orthographe:'la ortografía', vocabulaire:'el vocabulario', syntaxe:'el orden de las palabras',
+        preposition:'las preposiciones', autre:'varios puntos'
+      };
+      if (!errors.length) {
+        return `Has escrito ${words} palabras sin ningún error: tu texto es claro y fiel al comentario español. ¡Sigue así!`;
+      }
+      const counts = {};
+      errors.forEach(e => {
+        const k = String(e.type || 'autre').toLowerCase();
+        counts[NAMES[k] ? k : 'autre'] = (counts[NAMES[k] ? k : 'autre'] || 0) + 1;
+      });
+      const top = Object.entries(counts).sort((a, b) => b[1] - a[1]).slice(0, 2).map(e => NAMES[e[0]]);
+      const focus = top.length > 1 ? `${top[0]} y ${top[1]}` : top[0];
+
+      const opening = score >= 80
+        ? `Muy buen trabajo: has escrito ${words} palabras y tu mensaje se entiende sin dificultad.`
+        : score >= 55
+        ? `Buen esfuerzo: tus ${words} palabras transmiten la idea, aunque algunas frases cuestan de leer.`
+        : `Tu texto de ${words} palabras necesita una revisión: varias frases dificultan la comprensión.`;
+
+      return `${opening} Tus ${errors.length} errores se concentran sobre todo en ${focus}: repásalos con calma, uno por uno.`;
+    },
+
+    async _analyzeChunk(part, fullText, idx, total) {
+      const prompt = `Eres un profesor de francés (FLE) que corrige a una estudiante hispanohablante de nivel B1.
+
+Ella debía escribir EN FRANCÉS este comentario dado en español:
+"""${this.esText}"""
+
+TEXTO COMPLETO que ha escrito (solo como CONTEXTO, no lo corrijas entero):
+"""${fullText}"""
+
+CORRIGE ÚNICAMENTE ESTA PARTE (parte ${idx + 1} de ${total}):
+"""${part}"""
+
+Reglas de análisis:
+- Señala TODOS los errores que encuentres EN ESTA PARTE, hasta un máximo de 6, los más importantes primero.
+- No inventes errores: si algo es correcto, no lo señales. Las variantes estilísticas válidas NO son errores.
+- Ignora los acentos ausentes solo si la palabra sigue siendo inequívoca; si cambia el sentido (a/à, ou/où), sí es un error.
+- "original" debe ser un fragmento EXACTO y literal copiado de ESTA PARTE (2 a 6 palabras), sin modificarlo.
+- "context" debe ser la frase COMPLETA y EXACTA de ESTA PARTE que contiene ese fragmento.
+- "hint" es una pista en ESPAÑOL que ayuda a encontrar el error SIN dar la respuesta.
+- "explanation" es la regla explicada en ESPAÑOL, máximo 25 palabras.
+- "type" es exactamente uno de: conjugaison, grammaire, accord, orthographe, vocabulaire, syntaxe, preposition.
+- "score" de 0 a 100 para ESTA PARTE únicamente.
+- "correctedPart" es ESTA PARTE reescrita correctamente, conservando sus ideas y su estilo.
+
+Responde SOLO con este JSON:
+{"score":0,"correctedPart":"","errors":[{"original":"","correction":"","context":"","type":"","hint":"","explanation":""}]}`;
+
+      for (let attempt = 0; attempt < 2; attempt++) {
+        try {
+          const raw = await this.callGemini(prompt, { temperature: 0.2, maxTokens: 2000 });
+          const p = this._parseJson(raw);
+          if (p) {
+            return {
+              ok: true,
+              words: this._words(part),
+              score: Math.max(0, Math.min(100, parseInt(p.score, 10) || 0)),
+              correctedPart: String(p.correctedPart || part).trim(),
+              errors: (p.errors || []).filter(e => e && e.original && e.correction)
+            };
+          }
+        } catch (e) {
+          if (e.message === 'NO_KEY') throw e;
+          console.error(`writing chunk ${idx + 1}`, e);
+        }
+      }
+      // Morceau perdu : on garde le texte original pour ne pas trouer le bilan.
+      return { ok: false, words: this._words(part), score: null, correctedPart: part, errors: [] };
+    },
+
     // ── Vérification IA ─────────────────────────────────
     async verify() {
       const input = document.getElementById('write-input');
@@ -1102,50 +1214,44 @@
       this.busy = true;
       const btn = document.getElementById('write-verify-btn');
       btn.disabled = true;
-      btn.innerHTML = `<i class="fa-solid fa-circle-notch fa-spin"></i> Correction en cours…`;
       input.disabled = true;
       document.getElementById('write-hint-msg').textContent = '';
 
-      const prompt = `Eres un profesor de francés (FLE) que corrige a una estudiante hispanohablante de nivel B1.
-
-Ella debía escribir EN FRANCÉS este comentario dado en español:
-"""${this.esText}"""
-
-Este es SU TEXTO EN FRANCÉS:
-"""${text}"""
-
-Analízalo y devuelve la corrección.
-
-Reglas de análisis:
-- Detecta como máximo 8 errores, los MÁS IMPORTANTES primero (los que impiden la comprensión antes que los detalles).
-- No inventes errores: si algo es correcto, no lo señales. Las variantes estilísticas válidas NO son errores.
-- Ignora los acentos ausentes solo si la palabra sigue siendo inequívoca; si cambia el sentido (a/à, ou/où), sí es un error.
-- "original" debe ser el fragmento EXACTO y literal copiado del texto de la estudiante (2 a 6 palabras), tal cual, sin modificarlo.
-- "context" debe ser la frase COMPLETA y EXACTA del texto de la estudiante que contiene ese fragmento.
-- "hint" es una pista en ESPAÑOL que ayuda a encontrar el error SIN dar la respuesta (ej: "Fíjate en el tiempo verbal después de 'hier'").
-- "explanation" es la regla explicada en ESPAÑOL, breve (máximo 25 palabras) y concreta.
-- "type" es exactamente uno de: conjugaison, grammaire, accord, orthographe, vocabulaire, syntaxe, preposition.
-- "score" de 0 a 100 sobre la calidad global (fidelidad al contenido español + corrección lingüística).
-- "globalComment" en ESPAÑOL, 2 frases: lo que hizo bien y lo principal a mejorar.
-- "correctedText" es su texto completo reescrito correctamente, conservando sus ideas y su estilo (no lo reescribas de cero).
-
-Responde SOLO con este JSON:
-{
-  "score": 0,
-  "globalComment": "",
-  "correctedText": "",
-  "errors": [
-    { "original": "", "correction": "", "context": "", "type": "", "hint": "", "explanation": "" }
-  ]
-}`;
+      const chunks = this._splitChunks(text);
+      let done = 0;
+      const setProgress = () => {
+        btn.innerHTML = chunks.length > 1
+          ? `<i class="fa-solid fa-circle-notch fa-spin"></i> Analyse ${Math.min(done + 1, chunks.length)}/${chunks.length}…`
+          : `<i class="fa-solid fa-circle-notch fa-spin"></i> Correction en cours…`;
+      };
+      setProgress();
 
       try {
-        const raw = await this.callGemini(prompt, { temperature: 0.2, maxTokens: 3000 });
-        const parsed = this._parseJson(raw);
-        if (!parsed) throw new Error('PARSE');
+        const parts = await Promise.all(chunks.map((c, i) =>
+          this._analyzeChunk(c, text, i, chunks.length)
+            .then(r => { done++; setProgress(); return r; })
+        ));
 
-        this.result = parsed;
-        this.errors = (parsed.errors || []).filter(e => e && e.original && e.correction);
+        if (!parts.some(p => p.ok)) throw new Error('ALL_FAILED');
+
+        // Fusion des morceaux, dans l'ordre du texte
+        const errors = parts.flatMap(p => p.errors);
+        const correctedText = parts.map(p => p.correctedPart).join(' ');
+
+        const scored = parts.filter(p => p.score !== null);
+        const wSum = scored.reduce((s, p) => s + p.words, 0) || 1;
+        const score = Math.round(scored.reduce((s, p) => s + p.score * p.words, 0) / wSum);
+
+        const failed = parts.filter(p => !p.ok).length;
+
+        this.result = {
+          score,
+          correctedText,
+          globalComment: this._buildComment(score, errors, this._words(text)),
+          partial: failed > 0 ? failed : 0,
+          chunks: chunks.length
+        };
+        this.errors = errors;
         this.step = 0;
         this.revealed = false;
 
@@ -1301,8 +1407,17 @@ Responde SOLO con este JSON:
           <p class="text-[13px] font-bold text-frBlue mb-1.5">
             ${perfect ? 'Parfait, aucune erreur !' : `${nErr} erreur${nErr > 1 ? 's' : ''} revue${nErr > 1 ? 's' : ''}`}
           </p>
-          <p class="text-[13px] text-gray-600 leading-relaxed max-w-lg mx-auto mb-6"
+          <p class="text-[13px] text-gray-600 leading-relaxed max-w-lg mx-auto mb-4"
              style="font-family:'Nunito',sans-serif;">${conv._esc(r.globalComment || '')}</p>
+
+          ${r.partial ? `
+            <p class="text-[11.5px] text-amber-700 bg-amber-50 border border-amber-200 rounded-lg
+                      px-3 py-2 max-w-lg mx-auto mb-4 leading-relaxed">
+              <i class="fa-solid fa-triangle-exclamation mr-1"></i>
+              ${r.partial} partie${r.partial > 1 ? 's' : ''} du texte sur ${r.chunks} n'${r.partial > 1 ? 'ont' : 'a'} pas pu être analysée${r.partial > 1 ? 's' : ''}.
+              Relance la vérification pour la compléter.
+            </p>` : ''}
+          <div class="mb-2"></div>
         </div>
 
         ${r.correctedText ? `

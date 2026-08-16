@@ -301,6 +301,28 @@
       font-family: 'Nunito', sans-serif;
       font-size: 15px; line-height: 1.9; color: #374151;
     }
+
+    /* Texte complet de l'étudiante pendant la correction :
+       tout reste lisible, mais l'œil est guidé vers la zone concernée. */
+    .err-fulltext {
+      font-family: 'Nunito', sans-serif;
+      font-size: 15px; line-height: 2;
+      background: #fafafa;
+      border: 1px solid #eee;
+      border-radius: 12px;
+      padding: 14px 16px;
+      max-height: 300px;
+      overflow-y: auto;
+      transition: color .2s;
+    }
+    .err-dim   { color: #b6bcc6; }
+    .err-focus {
+      color: #1f2937;
+      background: rgba(255, 243, 205, .75);
+      border-radius: 5px;
+      padding: 2px 0;
+      box-shadow: 0 0 0 3px rgba(255, 243, 205, .75);
+    }
     .err-frag {
       background: rgba(255,107,107,.14);
       color: #b91c1c;
@@ -1006,6 +1028,7 @@
     busy: false,
     keyIdx: 0,
     manualPrompt: '',
+    userText: '',
 
     // ── MODE DE CORRECTION ──────────────────────────────
     //  'manual' : on copie un prompt que l'utilisateur passe à une IA plus
@@ -1612,6 +1635,7 @@ Réponds UNIQUEMENT avec ce JSON, sans texte autour ni bloc de code :
       let score = Math.max(0, Math.min(100, parseInt(p.score, 10) || 0));
       if (!errors.length) score = Math.max(score, 90);
 
+      this.userText = text;
       this.result = {
         score,
         correctedText: String(p.correctedText || '').trim(),
@@ -1691,6 +1715,7 @@ Réponds UNIQUEMENT avec ce JSON, sans texte autour ni bloc de code :
         const failed = parts.filter(p => !p.ok).length;
         const unverified = parts.filter(p => p.ok && !p.verified).length;
 
+        this.userText = text;
         this.result = {
           score,
           correctedText,
@@ -1755,6 +1780,67 @@ Réponds UNIQUEMENT avec ce JSON, sans texte autour ni bloc de code :
       return null;
     },
 
+    // Situe l'erreur dans le texte complet : d'abord la phrase (context),
+    // puis le fragment À L'INTÉRIEUR de cette phrase. Passer par la phrase
+    // évite de surligner la mauvaise occurrence quand le fragment revient
+    // plusieurs fois dans le texte.
+    _locate(fullText, err) {
+      const txt = String(fullText || '');
+      if (!txt) return null;
+
+      const ctx = this._findFragment(txt, err.context || '');
+      const sentStart = ctx ? ctx.index : 0;
+      const sentLen   = ctx ? ctx.length : txt.length;
+
+      const inSent = this._findFragment(txt.substr(sentStart, sentLen), err.original);
+      if (inSent) {
+        return { sentStart, sentLen, fragStart: sentStart + inSent.index, fragLen: inSent.length };
+      }
+
+      // L'IA a pu recopier une phrase approximative : on retombe sur une
+      // recherche du fragment dans tout le texte.
+      const any = this._findFragment(txt, err.original);
+      if (any) {
+        return ctx
+          ? { sentStart, sentLen, fragStart: any.index, fragLen: any.length }
+          : { sentStart: any.index, sentLen: any.length, fragStart: any.index, fragLen: any.length };
+      }
+      return null;
+    },
+
+    // Rend le texte entier : atténué partout, la phrase concernée remise en
+    // avant, et le fragment fautif surligné.
+    _renderFullText(err) {
+      const txt = String(this.userText || '');
+      if (!txt) return this._highlight(err.context || err.original, err.original);
+
+      const loc = this._locate(txt, err);
+      if (!loc) {
+        return `<span class="err-dim">${conv._esc(txt)}</span>
+                <mark class="err-frag">${conv._esc(err.original)}</mark>`;
+      }
+
+      const { sentStart, sentLen, fragStart, fragLen } = loc;
+      const sentEnd = sentStart + sentLen;
+      const fragEnd = fragStart + fragLen;
+
+      // Le fragment peut déborder de la phrase repérée : on élargit plutôt
+      // que de produire des tranches incohérentes.
+      const focusStart = Math.min(sentStart, fragStart);
+      const focusEnd   = Math.max(sentEnd, fragEnd);
+
+      const esc = s => conv._esc(s);
+      return [
+        `<span class="err-dim">${esc(txt.slice(0, focusStart))}</span>`,
+        `<span class="err-focus" id="err-focus">`,
+        esc(txt.slice(focusStart, fragStart)),
+        `<mark class="err-frag">${esc(txt.slice(fragStart, fragEnd))}</mark>`,
+        esc(txt.slice(fragEnd, focusEnd)),
+        `</span>`,
+        `<span class="err-dim">${esc(txt.slice(focusEnd))}</span>`
+      ].join('');
+    },
+
     // Surligne le fragment fautif dans la phrase de l'étudiante.
     _highlight(context, original) {
       const ctx = String(context || '');
@@ -1793,9 +1879,9 @@ Réponds UNIQUEMENT avec ce JSON, sans texte autour ni bloc de code :
           </div>
 
           <p class="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-2">
-            Dans ta phrase
+            Dans ton texte
           </p>
-          <p class="err-sentence mb-4">${this._highlight(err.context || err.original, err.original)}</p>
+          <div class="err-fulltext mb-4">${this._renderFullText(err)}</div>
 
           ${!this.revealed ? `
             <div class="rounded-xl px-4 py-3.5 mb-5" style="background:#FFF8E6; border:1px solid #F3E0A8;">
@@ -1832,6 +1918,13 @@ Réponds UNIQUEMENT avec ce JSON, sans texte autour ni bloc de code :
         </div>`;
 
       box.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+      // Si le texte dépasse la hauteur du cadre, amène l'erreur en vue.
+      const focus = document.getElementById('err-focus');
+      const frame = focus && focus.closest('.err-fulltext');
+      if (frame && frame.scrollHeight > frame.clientHeight) {
+        frame.scrollTop = Math.max(0, focus.offsetTop - frame.clientHeight / 2);
+      }
     },
 
     reveal() { this.revealed = true; this.renderStep(); },

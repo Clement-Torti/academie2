@@ -37,7 +37,7 @@ SCHÉMA JSON EXACT À RESPECTER
     { "username": "pseudo_internet", "comment": "Commentaire d'un utilisateur en français (style réseaux sociaux naturel)", "likes": 42 }
   ],
   "writingExercise": {
-    "es": "Comentario de lector escrito EN ESPAÑOL (~100 palabras) que el estudiante deberá reescribir en francés"
+    "es": "Comentario de lector escrito EN ESPAÑOL (~50 palabras) que el estudiante deberá reescribir en francés"
   }
 }
 
@@ -161,16 +161,17 @@ RÈGLES DÉTAILLÉES PAR CHAMP
 - Objet contenant UN SEUL champ : "es"
 - Le champ "es" est un commentaire de lecteur RÉDIGÉ EN ESPAGNOL (c'est la seule partie
   entièrement en espagnol de l'article, avec les traductions de Rosalia)
-- Longueur : 90 à 110 mots EXACTEMENT
+- Longueur : 45 à 55 mots EXACTEMENT (compte les mots avant de soumettre)
 - C'est le texte que l'étudiante devra réécrire en français : il doit donc être
   TRADUISIBLE AU NIVEAU B1
     · phrases claires de longueur moyenne (10 à 20 mots)
     · pas de subjonctif compliqué, pas d'expressions idiomatiques rares
     · pas de vocabulaire technique ni littéraire
     · privilégier presente, pretérito perfecto et futuro próximo
-- Contenu : 4 à 6 phrases, à la première personne, qui réagissent à des FAITS PRÉCIS
-  de l'article (pas de généralités vagues), avec un exemple ou une expérience personnelle,
-  et une opinion ou une question pour finir
+- Contenu : 3 à 4 phrases, à la première personne, qui réagissent à des FAITS PRÉCIS
+  de l'article (pas de généralités vagues), avec une opinion ou une question pour finir
+- Le format est court : va droit au but. Une seule idée forte vaut mieux que
+  trois idées survolées. Pas d'introduction ni de formule d'ouverture.
 - Ton : personnel et engagé, comme un vrai commentaire de réseau social, mais rédigé
   correctement (pas d'abréviations, pas d'emojis, pas de hashtags, pas de listes)
 - Ne pas commencer par « Como lector » ni par une formule de lettre

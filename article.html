@@ -468,7 +468,7 @@
                     oninput="writing.onInput()" spellcheck="false" autocapitalize="sentences"></textarea>
 
           <div class="flex items-center justify-between gap-3 mt-3 flex-wrap">
-            <span id="write-count" class="text-[11px] font-bold text-gray-400">0 mot · objectif ≈ 100</span>
+            <span id="write-count" class="text-[11px] font-bold text-gray-400">0 mot · objectif ≈ 50</span>
             <button id="write-verify-btn" class="write-btn" onclick="writing.verify()" disabled>
               <i class="fa-solid fa-wand-magic-sparkles"></i> Vérifier
             </button>
@@ -1134,23 +1134,23 @@
 
       const countEl = document.getElementById('write-count');
       if (countEl) {
-        countEl.textContent = `${n} mot${n > 1 ? 's' : ''} · objectif ≈ 100`;
+        countEl.textContent = `${n} mot${n > 1 ? 's' : ''} · objectif ≈ 50`;
         countEl.style.color = n === 0 ? '#9ca3af'
-                            : n < 70   ? '#9ca3af'
-                            : n <= 130 ? '#0f766e'
+                            : n < 35   ? '#9ca3af'
+                            : n <= 65  ? '#0f766e'
                             : '#b45309';
       }
 
       const btn = document.getElementById('write-verify-btn');
-      const ready = n >= 25 && !!this.esText && !this.busy;
+      const ready = n >= 15 && !!this.esText && !this.busy;
       if (btn) btn.disabled = !ready;
 
       const msg = document.getElementById('write-hint-msg');
       if (msg && !this.busy) {
         msg.textContent = !this.esText ? ''
                         : n === 0      ? ''
-                        : n < 25       ? 'Encore un peu… écris au moins 25 mots pour lancer la correction.'
-                        : n < 70       ? 'Tu peux développer un peu plus pour approcher les 100 mots.'
+                        : n < 15       ? 'Encore un peu… écris au moins 15 mots pour lancer la correction.'
+                        : n < 35       ? 'Tu peux développer un peu plus pour approcher les 50 mots.'
                         : '';
       }
 

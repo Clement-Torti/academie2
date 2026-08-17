@@ -197,22 +197,21 @@
     #conv-action-btn:disabled { cursor: not-allowed; }
 
     /* ── RAPPEL ESPAGNOL APRÈS RÉVÉLATION ────────────── */
-    /* Avant la révélation, l'espagnol est la consigne : grand et central.
-       Après, il reste affiché pour la comparaison, mais passe sous le
-       français et cède la vedette. */
-    #stage-current { display: flex; flex-direction: column; }
-
-    #stage-es-hint.es-recap {
-      order: 1;                       /* bascule sous le texte français */
-      font-size: .95rem;
-      font-weight: 600;
-      color: rgba(255,255,255,.66);   /* nettement lisible, contrairement au .4 de la consigne */
-      margin: 16px 0 0;
-      padding-top: 13px;
-      border-top: 1px solid rgba(255,255,255,.10);
-      animation: fadeInUp .32s cubic-bezier(.2,.8,.4,1) both;
+    /* Avant la révélation, l'espagnol est la consigne, grande et centrale.
+       Après, il se replie en haut du bandeau — à l'emplacement qui servait
+       au message précédent — pour rester consultable sans rien décaler. */
+    #stage-es-recap {
+      color: rgba(255,255,255,.62);
+      font-family: 'Nunito', sans-serif;
+      font-style: italic;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      animation: fadeInUp .3s cubic-bezier(.2,.8,.4,1) both;
     }
-    #stage-es-hint.es-recap::before {
+    #stage-es-recap::before {
       content: 'ES';
       display: inline-block;
       font-family: 'Montserrat', sans-serif;
@@ -592,12 +591,10 @@
           </div>
         </div>
 
-        <!-- Previous message (faded) -->
+        <!-- Rappel espagnol après révélation (occupe l'emplacement déjà
+             réservé : rien ne bouge quand il apparaît) -->
         <div class="px-5 pt-4 pb-0" style="min-height:52px;">
-          <p id="stage-prev" class="text-sm leading-relaxed"
-             style="color:rgba(255,255,255,.25); font-family:'Nunito',sans-serif;
-                    font-style:italic; display:-webkit-box; -webkit-line-clamp:2;
-                    line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;"></p>
+          <p id="stage-es-recap" class="text-sm leading-relaxed hidden"></p>
         </div>
 
         <!-- Thin separator -->
@@ -764,8 +761,7 @@
     currentLine: -1,
     round: 1,
     _currentPlayIdx: 0,
-    _prevLine: null,
-    _listenPrevLine: null,
+
     _stageTimer: null,
     _stageSeconds: 0,
 
@@ -774,15 +770,12 @@
       this.state = 'idle';
       this.currentLine = -1;
       this.round = 1;
-      this._prevLine = null;
-      this._listenPrevLine = null;
       document.getElementById('conv-intro').textContent = articleData.conversation.intro;
     },
 
     start() {
       this.round = 1;
       this.currentLine = -1;
-      this._prevLine = null;
       this._stageSeconds = 0;
       document.getElementById('conv-start').classList.add('hidden');
       document.getElementById('conv-stage').classList.remove('hidden');
@@ -811,7 +804,6 @@
       // Save currently displayed line as "previous" before advancing
       if (this.currentLine >= 0) {
         const cur = this.data.conversation.lines[this.currentLine];
-        if (cur) this._prevLine = { ...cur };
       }
 
       this.currentLine++;
@@ -826,13 +818,8 @@
       const isRosalia = line.speaker.normalize('NFD').replace(/[̀-ͯ]/g, '') === 'Rosalia';
       const isLast = this.currentLine === lines.length - 1;
 
-      // Previous message display
-      const prevEl = document.getElementById('stage-prev');
-      if (this._prevLine) {
-        prevEl.textContent = `${this._prevLine.speaker} : « ${this._prevLine.fr} »`;
-      } else {
-        prevEl.textContent = '';
-      }
+      // Le rappel espagnol ne concerne que la réplique révélée
+      document.getElementById('stage-es-recap').classList.add('hidden');
 
       // Counter
       const counterEl = document.getElementById('stage-counter');
@@ -854,14 +841,13 @@
       if (isRosalia) {
         // Show Spanish hint, wait for reveal — both rounds
         esEl.textContent = line.es;
-        esEl.classList.remove('hidden', 'es-recap');
+        esEl.classList.remove('hidden');
         frEl.textContent = '…';
         frEl.style.color = 'rgba(255,255,255,0.18)';
         this._setActionBtn('reveal', isLast);
       } else {
         // Other speaker: show French directly and auto-play TTS
         esEl.classList.add('hidden');
-        esEl.classList.remove('es-recap');
         frEl.textContent = line.fr;
         frEl.style.color = 'white';
         this._setActionBtn('next', isLast);
@@ -897,9 +883,11 @@
       const frEl = document.getElementById('stage-fr-text');
       const esEl = document.getElementById('stage-es-hint');
       const isLast = this.currentLine === this.data.conversation.lines.length - 1;
-      // L'espagnol reste affiché pour permettre la comparaison
-      esEl.classList.remove('hidden');
-      esEl.classList.add('es-recap');
+      // L'espagnol se replie en haut : consultable, sans rien décaler
+      esEl.classList.add('hidden');
+      const recapEl = document.getElementById('stage-es-recap');
+      recapEl.textContent = line.es || '';
+      recapEl.classList.toggle('hidden', !line.es);
       frEl.textContent = line.fr;
       frEl.style.color = 'white';
       frEl.classList.remove('stage-anim');
@@ -945,16 +933,14 @@
     },
 
     playAll() {
-      this._listenPrevLine = null;
       this._stageSeconds = 0;
       // Switch stage to listen mode
       document.getElementById('stage-action-area').classList.add('hidden');
       document.getElementById('stage-listen-controls').classList.remove('hidden');
-      document.getElementById('stage-prev').textContent = '';
       document.getElementById('stage-fr-text').textContent = '';
       document.getElementById('stage-speaker-name').textContent = '';
       document.getElementById('stage-es-hint').classList.add('hidden');
-      document.getElementById('stage-es-hint').classList.remove('es-recap');
+      document.getElementById('stage-es-recap').classList.add('hidden');
       document.getElementById('stage-pause-icon').className = 'fa-solid fa-pause text-lg';
       // Hide trigger, show stage
       document.getElementById('conv-listen-wrap').classList.add('hidden');
@@ -991,10 +977,10 @@
         const counterEl = document.getElementById('stage-counter');
         if (counterEl) counterEl.textContent = `${idx + 1}/${lines.length}`;
 
-        const prevEl = document.getElementById('stage-prev');
-        prevEl.textContent = this._listenPrevLine
-          ? `${this._listenPrevLine.speaker} : « ${this._listenPrevLine.fr} »`
-          : '';
+        // Pendant l'écoute, le bandeau affiche l'espagnol de la réplique lue
+        const recapEl = document.getElementById('stage-es-recap');
+        recapEl.textContent = line.es || '';
+        recapEl.classList.toggle('hidden', !line.es);
 
         const speakerEl = document.getElementById('stage-speaker-name');
         speakerEl.textContent = line.speaker;
@@ -1008,7 +994,6 @@
         frEl.classList.add('stage-anim');
 
         document.getElementById('stage-pause-icon').className = 'fa-solid fa-pause text-lg';
-        this._listenPrevLine = { ...line };
 
         document.getElementById('conv-stage')
           .scrollIntoView({ behavior: 'smooth', block: 'nearest' });
@@ -2070,20 +2055,12 @@ Réponds UNIQUEMENT avec ce JSON, sans texte autour ni bloc de code :
     },
 
     prev() {
-      const idx = Math.max(0, conv._currentPlayIdx - 1);
-      conv._listenPrevLine = idx > 0
-        ? { ...conv.data.conversation.lines[idx - 1] }
-        : null;
-      conv._playChain(idx);
+      conv._playChain(Math.max(0, conv._currentPlayIdx - 1));
     },
 
     next() {
       const lines = conv.data?.conversation?.lines || [];
-      const idx = Math.min(conv._currentPlayIdx + 1, lines.length - 1);
-      conv._listenPrevLine = idx > 0
-        ? { ...lines[idx - 1] }
-        : null;
-      conv._playChain(idx);
+      conv._playChain(Math.min(conv._currentPlayIdx + 1, lines.length - 1));
     },
 
     setRate(val) {

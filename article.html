@@ -196,6 +196,36 @@
 
     #conv-action-btn:disabled { cursor: not-allowed; }
 
+    /* ── RAPPEL ESPAGNOL APRÈS RÉVÉLATION ────────────── */
+    /* Avant la révélation, l'espagnol est la consigne : grand et central.
+       Après, il reste affiché pour la comparaison, mais passe sous le
+       français et cède la vedette. */
+    #stage-current { display: flex; flex-direction: column; }
+
+    #stage-es-hint.es-recap {
+      order: 1;                       /* bascule sous le texte français */
+      font-size: .95rem;
+      font-weight: 600;
+      color: rgba(255,255,255,.66);   /* nettement lisible, contrairement au .4 de la consigne */
+      margin: 16px 0 0;
+      padding-top: 13px;
+      border-top: 1px solid rgba(255,255,255,.10);
+      animation: fadeInUp .32s cubic-bezier(.2,.8,.4,1) both;
+    }
+    #stage-es-hint.es-recap::before {
+      content: 'ES';
+      display: inline-block;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 9px; font-weight: 800; letter-spacing: .12em;
+      font-style: normal;
+      color: rgba(255,255,255,.38);
+      border: 1px solid rgba(255,255,255,.18);
+      border-radius: 4px;
+      padding: 1px 5px;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+
     /* ── WRITING EXERCISE ─────────────────────────────── */
     .write-card {
       background: white;
@@ -574,7 +604,7 @@
         <div class="mx-5 my-3" style="height:1px; background:rgba(255,255,255,.06);"></div>
 
         <!-- Current message -->
-        <div class="px-5 pb-6" style="min-height:200px;">
+        <div id="stage-current" class="px-5 pb-6" style="min-height:200px;">
           <p id="stage-speaker-name"
              class="text-[11px] font-bold uppercase tracking-widest mb-3"
              style="color:#4ECDC4;"></p>
@@ -824,13 +854,14 @@
       if (isRosalia) {
         // Show Spanish hint, wait for reveal — both rounds
         esEl.textContent = line.es;
-        esEl.classList.remove('hidden');
+        esEl.classList.remove('hidden', 'es-recap');
         frEl.textContent = '…';
         frEl.style.color = 'rgba(255,255,255,0.18)';
         this._setActionBtn('reveal', isLast);
       } else {
         // Other speaker: show French directly and auto-play TTS
         esEl.classList.add('hidden');
+        esEl.classList.remove('es-recap');
         frEl.textContent = line.fr;
         frEl.style.color = 'white';
         this._setActionBtn('next', isLast);
@@ -866,7 +897,9 @@
       const frEl = document.getElementById('stage-fr-text');
       const esEl = document.getElementById('stage-es-hint');
       const isLast = this.currentLine === this.data.conversation.lines.length - 1;
-      esEl.classList.add('hidden');
+      // L'espagnol reste affiché pour permettre la comparaison
+      esEl.classList.remove('hidden');
+      esEl.classList.add('es-recap');
       frEl.textContent = line.fr;
       frEl.style.color = 'white';
       frEl.classList.remove('stage-anim');
@@ -921,6 +954,7 @@
       document.getElementById('stage-fr-text').textContent = '';
       document.getElementById('stage-speaker-name').textContent = '';
       document.getElementById('stage-es-hint').classList.add('hidden');
+      document.getElementById('stage-es-hint').classList.remove('es-recap');
       document.getElementById('stage-pause-icon').className = 'fa-solid fa-pause text-lg';
       // Hide trigger, show stage
       document.getElementById('conv-listen-wrap').classList.add('hidden');

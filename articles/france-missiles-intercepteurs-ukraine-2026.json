@@ -1,0 +1,114 @@
+{
+  "id": "france-missiles-intercepteurs-ukraine-2026",
+  "title": "La France enverra de nouveaux missiles intercepteurs à l'Ukraine",
+  "date": "2026-08-23",
+  "category": "Société",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/MBDA_Aster_p1220947.jpg?width=1200",
+    "alt": "Un missile Aster, fabriqué par le groupe européen MBDA, exposé sur un stand"
+  },
+  "vocabulary": [
+    {
+      "fr": "une frappe",
+      "es": "un ataque, un bombardeo"
+    },
+    {
+      "fr": "s'épuiser",
+      "es": "agotarse"
+    },
+    {
+      "fr": "un abri",
+      "es": "un refugio"
+    },
+    {
+      "fr": "les stocks",
+      "es": "las existencias, las reservas"
+    },
+    {
+      "fr": "faute de",
+      "es": "por falta de"
+    },
+    {
+      "fr": "un enjeu",
+      "es": "lo que está en juego, un reto"
+    },
+    {
+      "fr": "vider",
+      "es": "vaciar"
+    }
+  ],
+  "article": "Emmanuel Macron a annoncé samedi que la France livrerait de nouveaux missiles intercepteurs à l'Ukraine. Le président français s'est exprimé au lendemain d'une frappe russe sur un centre commercial de Kryvyï Rih, qui a fait au moins seize morts et cent trente blessés, dont vingt-trois enfants. L'annonce est intervenue après un entretien téléphonique de près de deux heures avec Volodymyr Zelensky.\n\nIl s'agit de missiles Aster, conçus avec l'Italie et tirés depuis le système SAMP/T Mamba, souvent présenté comme l'équivalent européen du Patriot américain. Ils interceptent des drones, des avions et des missiles de croisière jusqu'à cent vingt kilomètres. Faute de munitions, la défense antiaérienne ukrainienne s'épuise, alors que Moscou lance chaque nuit de nouvelles salves.\n\nParis et Rome ont par ailleurs autorisé la fabrication de ces missiles sous licence en Ukraine, ce qui permettrait à Kiev de moins dépendre de ses alliés. Néanmoins, la décision divise. Certains responsables s'inquiètent des stocks français, jugés insuffisants, tandis que d'autres rappellent que les usines européennes produisent encore trop lentement pour suivre le rythme de la guerre.\n\nUne réunion de la coalition des volontaires devait se tenir lundi afin de convaincre d'autres pays de participer à l'effort. L'enjeu dépasse largement Kiev : jusqu'où les Européens accepteront-ils de vider leurs arsenaux pour un conflit dont personne n'annonce la fin ? En France, chaque annonce relance le même débat, entre devoir de solidarité et priorités intérieures.",
+  "dictation": {
+    "text": "Un missile intercepteur ne détruit rien au sol, il protège le ciel d'une ville. Les équipes qui les utilisent travaillent souvent la nuit, et elles ont moins d'une minute pour décider. Quand l'alerte est donnée, les habitants descendent dans les abris, où ils attendent parfois plusieurs heures avant de remonter. Les munitions que la France a promises seront livrées progressivement, car les usines ne suivent pas encore la demande. Ces engins coûtent très cher, ce qui explique que les gouvernements hésitent à vider leurs réserves. Pourtant, sans eux, les écoles et les hôpitaux resteraient exposés.",
+    "units": [
+      "Un missile intercepteur ne détruit rien au sol,",
+      "il protège le ciel d'une ville.",
+      "Les équipes qui les utilisent travaillent souvent la nuit,",
+      "et elles ont moins d'une minute pour décider.",
+      "Quand l'alerte est donnée, les habitants descendent",
+      "dans les abris, où ils attendent",
+      "parfois plusieurs heures avant de remonter.",
+      "Les munitions que la France a promises",
+      "seront livrées progressivement, car les usines",
+      "ne suivent pas encore la demande.",
+      "Ces engins coûtent très cher,",
+      "ce qui explique que les gouvernements hésitent",
+      "à vider leurs réserves. Pourtant, sans eux,",
+      "les écoles et les hôpitaux resteraient exposés."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Ce que dit l'article",
+      "prompt": "Raconte-moi avec tes mots ce que la France a décidé de faire cette semaine.",
+      "relances": [
+        "Quels sont les deux ou trois faits les plus importants ?",
+        "Comment expliquerais-tu ce système de défense à une amie ?",
+        "Quel passage de l'article t'a le plus surprise ?",
+        "Pourquoi l'Ukraine manque-t-elle de munitions aujourd'hui, selon toi ?"
+      ]
+    },
+    {
+      "title": "Envoyer des armes",
+      "prompt": "Que penses-tu de la décision de la France d'envoyer ces missiles à l'Ukraine ?",
+      "relances": [
+        "Quels arguments donnerais-tu à quelqu'un qui n'est pas d'accord ?",
+        "Qu'est-ce qui devrait passer en premier, la défense ou l'école ?",
+        "Comment réagirais-tu si ton pays prenait la même décision ?",
+        "Où placerais-tu la limite de cette aide ?"
+      ]
+    },
+    {
+      "title": "La guerre dans ton quotidien",
+      "prompt": "Comment suis-tu ce genre d'actualité au quotidien, et avec qui en parles-tu ?",
+      "relances": [
+        "Quelle information t'a marquée ces derniers mois ?",
+        "Comment ta famille réagit-elle quand tu parles de ça ?",
+        "Que ressens-tu quand tu vois ces images à la télévision ?",
+        "Pourquoi choisis-tu d'en parler ou de changer de sujet ?"
+      ]
+    },
+    {
+      "title": "En parler en France",
+      "prompt": "À ton arrivée à Strasbourg, comment imagines-tu les discussions politiques avec les Français ?",
+      "relances": [
+        "Comment parle-t-on de ces sujets en République dominicaine ?",
+        "Quelles questions poserais-tu à un voisin français ?",
+        "Qu'est-ce qui te semblerait difficile dans ce genre de discussion ?",
+        "Comment ferais-tu pour donner ton avis sans te fâcher ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "ContribuableEnColere_67",
+      "comment": "Encore des millions qui partent en fumée pendant qu'on ferme des lits d'hôpital chez nous !!! Personne ne demande jamais son avis au contribuable. Et qu'on m'explique avec quel argent on va reconstituer nos propres stocks après ça. Ras-le-bol.",
+      "likes": 412
+    },
+    {
+      "username": "MarinaDeLEst",
+      "comment": "Ma cousine habite à Kryvyï Rih. Elle m'a envoyé un vocal vendredi soir depuis un parking souterrain, avec sa petite qui pleurait à côté. Alors quand je lis que les livraisons prennent des mois, croyez-moi, ça me parle autrement 😔",
+      "likes": 27
+    }
+  ]
+}

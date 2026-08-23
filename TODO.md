@@ -14,6 +14,14 @@
 - [x] Export / import / réinitialisation
 - [x] `AIRelay` : ouverture de Claude préremplie, copie, parsing JSON tolérant
 
+### article.html — lecture façon publication Instagram
+- [x] Image à gauche, article à droite, commentaires dessous (deux colonnes > 860 px)
+- [x] Titre + catégorie incrustés en bas de l'image (blanc, contour noir, ombre)
+- [x] En-tête de compte, barre d'actions, mentions j'aime, champ de commentaire
+- [x] Commentaires au format Instagram (pseudo en gras, « j'aime », cœur cliquable)
+- [x] Empilement sur mobile, sans défilement interne
+- [x] Hauteur de carte explicite : évite le cycle de calcul largeur/hauteur du grid
+
 ### article.html — dictée
 - [x] Retrait de l'exercice écrit ES→FR et de l'exercice de conversation
 - [x] Source de la dictée : `dictation.text` / `dictation.units`

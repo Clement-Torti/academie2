@@ -1,0 +1,96 @@
+{
+  "id": "gta-6-netflix-avant-premiere-2026",
+  "title": "GTA 6 : Netflix décroche l'avant-première mondiale",
+  "date": "2026-08-23",
+  "category": "Culture",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Netflix_headquarters.jpg?width=1200",
+    "alt": "Le siège de l'entreprise Netflix, aux États-Unis"
+  },
+  "vocabulary": [
+    { "fr": "une avant-première", "es": "un preestreno, un avance" },
+    { "fr": "un partenariat", "es": "una alianza, una colaboración" },
+    { "fr": "un abonné", "es": "un suscriptor" },
+    { "fr": "dévoiler", "es": "revelar, dar a conocer" },
+    { "fr": "un coup marketing", "es": "una jugada de marketing" },
+    { "fr": "la sortie", "es": "el lanzamiento, el estreno" },
+    { "fr": "gratuitement", "es": "gratis, de forma gratuita" },
+    { "fr": "reprocher quelque chose à quelqu'un", "es": "reprocharle algo a alguien" }
+  ],
+  "article": "Le six août, Rockstar Games a annoncé une chose que personne n'avait vue venir : les premières images longues de Grand Theft Auto VI seront dévoilées sur Netflix. Le programme, intitulé « An Extended Look », sera visible par les abonnés le jeudi vingt-sept août, six heures avant sa mise en ligne gratuite sur YouTube. Jamais un éditeur de jeux vidéo n'avait confié une révélation aussi attendue à une plateforme de streaming.\n\nCe choix n'a rien d'anodin. Depuis vingt ans, ce genre de bande-annonce appartenait à YouTube, où chacun la découvrait en même temps que les autres. En signant ce partenariat, Netflix cherche à s'installer au cœur des grands moments culturels, tandis que Rockstar s'offre une visibilité immédiate auprès de centaines de millions de foyers. Le jeu, lui, sortira le dix-neuf novembre sur PlayStation 5 et Xbox.\n\nLes joueurs, en revanche, n'ont pas tous applaudi. Beaucoup reprochent au studio de placer derrière un abonnement payant ce qui relevait jusqu'ici du plaisir collectif et gratuit. D'autres rappellent que la vidéo arrivera de toute façon sur YouTube le soir même, si bien que ces six heures d'avance ne changeraient rien, sinon la conversation en ligne.\n\nReste une question qui dépasse largement le jeu vidéo : si les plateformes achètent désormais les annonces elles-mêmes, que restera-t-il de gratuit dans la culture populaire ?",
+  "dictation": {
+    "text": "Ce jeudi soir, des millions de joueurs ont allumé leur écran en même temps. Certains avaient invité des amis, d'autres préféraient regarder seuls, sans être dérangés. La vidéo qu'ils attendaient depuis des mois n'a duré que quelques minutes, mais on en a parlé toute la nuit. Ceux qui n'étaient pas abonnés ont attendu quelques heures de plus, un peu agacés. Les images se sont répandues partout, et chacun a voulu donner son avis. Dans les commentaires, ces discussions sont vite devenues interminables. Certains ont trouvé le procédé malin, tandis que d'autres se sont sentis trahis. À la fin, personne ne se souvenait vraiment de ce qui avait été montré.",
+    "units": [
+      "Ce jeudi soir, des millions de joueurs",
+      "ont allumé leur écran en même temps.",
+      "Certains avaient invité des amis,",
+      "d'autres préféraient regarder seuls, sans être dérangés.",
+      "La vidéo qu'ils attendaient depuis des mois",
+      "n'a duré que quelques minutes,",
+      "mais on en a parlé toute la nuit.",
+      "Ceux qui n'étaient pas abonnés",
+      "ont attendu quelques heures de plus, un peu agacés.",
+      "Les images se sont répandues partout,",
+      "et chacun a voulu donner son avis.",
+      "Dans les commentaires, ces discussions sont vite devenues interminables.",
+      "Certains ont trouvé le procédé malin,",
+      "tandis que d'autres se sont sentis trahis.",
+      "À la fin, personne ne se souvenait",
+      "vraiment de ce qui avait été montré."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Raconte-moi l'annonce",
+      "prompt": "Explique-moi ce que Rockstar et Netflix ont annoncé, comme si je n'avais rien lu.",
+      "relances": [
+        "Qu'est-ce qui est vraiment nouveau dans cette façon de faire ?",
+        "Pourquoi Netflix accepte-t-il ce genre de partenariat ?",
+        "Qu'est-ce que les joueurs reprochent exactement au studio ?",
+        "Si tu devais tout résumer en une phrase, laquelle ?"
+      ]
+    },
+    {
+      "title": "Payer pour six heures",
+      "prompt": "Mettre une bande-annonce derrière un abonnement payant, tu trouves ça normal ou pas ?",
+      "relances": [
+        "Donne-moi un bon argument pour le camp d'en face.",
+        "Tu répondrais quoi à quelqu'un qui trouve l'idée géniale ?",
+        "Ces six heures d'avance changent quoi, concrètement ?",
+        "Quelle autre marque pourrait faire pareil demain ?"
+      ]
+    },
+    {
+      "title": "Attendre une sortie",
+      "prompt": "Raconte-moi la dernière fois que tu as attendu la sortie de quelque chose avec impatience.",
+      "relances": [
+        "Comment tu l'as découverte, et avec qui ?",
+        "Qu'est-ce que tu ressentais juste avant de lancer la vidéo ?",
+        "Ça valait l'attente, ou tu as été déçue ?",
+        "Tu en as parlé à qui, ensuite ?"
+      ]
+    },
+    {
+      "title": "Ce coup marketing et toi",
+      "prompt": "Avec ton diplôme de marketing, comment tu défendrais cette opération devant un client ?",
+      "relances": [
+        "Quel serait le risque principal pour la marque ?",
+        "Tu ferais quoi de différent, à leur place ?",
+        "Ça marcherait aussi en République dominicaine, à ton avis ?",
+        "Comment tu raconterais cet exemple pendant un entretien à Strasbourg ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "PadManu_78",
+      "comment": "Donc maintenant il faut un abonnement payant pour voir... une publicité. Parce que soyons clairs, une bande-annonce c'est de la pub et rien d'autre. On transforme une pub en événement exclusif et tout le monde applaudit ?! On marche vraiment sur la tête !!!",
+      "likes": 417
+    },
+    {
+      "username": "TataGinette_DeVichy",
+      "comment": "Mon fils de dix-neuf ans m'a suppliée de reprendre l'abonnement qu'on avait résilié au printemps. J'ai dit oui sans réfléchir, je croyais sincèrement qu'il voulait regarder un documentaire animalier avec moi. Vingt minutes de voitures et de palmiers plus tard, j'ai compris mon erreur 😅",
+      "likes": 63
+    }
+  ]
+}

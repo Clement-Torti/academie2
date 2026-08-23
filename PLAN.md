@@ -58,8 +58,30 @@ academie2/
 
 ## 2. Leçon (`article.html`)
 
-### 2.1 Lecture
-Hero, vocabulaire cliquable (TTS), article, réactions de lecteurs.
+### 2.1 Lecture — publication façon Instagram
+Une seule carte reprend la mise en page d'un post Instagram sur ordinateur :
+
+- **à gauche** la photo, avec la catégorie puis le titre incrustés en bas
+  (blanc, contour noir via `-webkit-text-stroke` + `paint-order: stroke fill`,
+  ombre portée) — lisible sur une photo claire comme sur un fond noir ;
+- **à droite** l'en-tête du compte, puis l'article en guise de légende, et
+  **les commentaires dessous** dans la même colonne défilante ;
+- en pied de colonne : barre d'actions, mentions « j'aime », date, champ de
+  commentaire (décoratif, comme les liens « Répondre »).
+
+Points d'implémentation qui comptent :
+- Deux colonnes au-delà de 860 px, empilées en dessous (image carrée en haut).
+- La carte a une **hauteur explicite** (`min(80vh, 680px)`) et la ligne de
+  grille est en `minmax(0, 1fr)`. Sans ça, la hauteur du panneau dépend de sa
+  largeur, qui dépend de celle du média, qui — avec `aspect-ratio` — dépend de
+  sa hauteur : Chrome résout ce cycle par un média de 1398 px et un panneau de
+  1 px. `min-height: 0` à chaque niveau est ce qui permet au panneau de défiler
+  au lieu de rogner le texte.
+- Le vocabulaire clé vient **après** la publication (c'est elle qui porte le
+  titre), avant la dictée.
+
+La dictée floute la publication et le vocabulaire (`#article-section`,
+`#vocab-section`) le temps de l'exercice.
 
 ### 2.2 Dictée — 15 à 20 minutes, correction comprise
 

@@ -32,12 +32,179 @@
     }
   </script>
   <style>
-    /* ── HERO ─────────────────────────────────────────── */
-    .hero-img { width:100%; height:280px; object-fit:cover; display:block; }
-    @media(min-width:640px){ .hero-img { height:380px; } }
-    .hero-overlay {
-      position:absolute; inset:0;
-      background: linear-gradient(to top, rgba(0,0,0,.78) 0%, rgba(0,0,0,.25) 55%, transparent 100%);
+    /* ── PUBLICATION (mise en page « post Instagram ») ──
+       Bureau : image à gauche, texte à droite, commentaires dessous
+       dans la même colonne. Mobile : tout s'empile.              */
+    .ig-post {
+      background: #fff;
+      border: 1px solid #dbdbdb;
+      border-radius: 14px;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1fr;
+      box-shadow: 0 2px 14px rgba(0,0,0,.05);
+    }
+    @media (min-width: 860px) {
+      /* minmax(0,…) : sans lui, une piste « fr » peut dépasser le conteneur
+         si son contenu a une largeur minimale importante.
+         Hauteur explicite : la carte ne dépend plus de la longueur du texte,
+         donc pas de dépendance circulaire, et le cadrage de la photo reste
+         proche du portrait 4/5 d'Instagram. */
+      .ig-post {
+        grid-template-columns: minmax(0, 1.06fr) minmax(0, 1fr);
+        /* minmax(0,1fr) sur la ligne : sans ça la ligne se dimensionne sur le
+           contenu du panneau et déborde de la carte au lieu de le faire défiler. */
+        grid-template-rows: minmax(0, 1fr);
+        height: min(80vh, 680px);
+      }
+    }
+
+    /* Média */
+    .ig-media { position: relative; background: #111; aspect-ratio: 1 / 1; }
+    @media (min-width: 860px) {
+      /* Sur deux colonnes, c'est le panneau qui donne la hauteur (plafonnée) et
+         le média la remplit. Garder « aspect-ratio » ici créerait un cycle :
+         largeur du média → largeur du panneau → hauteur du panneau → hauteur
+         de la ligne → hauteur du média → largeur du média. */
+      .ig-media { aspect-ratio: auto; }
+    }
+    .ig-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .ig-media-shade {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top,
+        rgba(0,0,0,.88) 0%, rgba(0,0,0,.38) 46%, rgba(0,0,0,.06) 72%, transparent 100%);
+    }
+    .ig-media-txt { position: absolute; left: 0; right: 0; bottom: 0; padding: 20px 20px 22px; }
+    .ig-chip {
+      display: inline-block; background: #4ECDC4; color: #fff;
+      font-size: 9.5px; font-weight: 800; text-transform: uppercase; letter-spacing: .14em;
+      padding: 4px 11px; border-radius: 999px; margin-bottom: 11px;
+      box-shadow: 0 2px 10px rgba(0,0,0,.45);
+    }
+    /* Titre posé sur la photo : blanc, cerné de noir, avec une ombre portée.
+       « paint-order » fait passer le contour SOUS le remplissage, sinon il
+       ronge les lettres. */
+    .ig-headline {
+      color: #fff; font-family: 'Montserrat', sans-serif;
+      font-weight: 800; font-size: 1.24rem; line-height: 1.28;
+      -webkit-text-stroke: 1.1px rgba(0,0,0,.9);
+      paint-order: stroke fill;
+      text-shadow: 0 2px 3px rgba(0,0,0,.85), 0 6px 20px rgba(0,0,0,.6);
+    }
+    @media (min-width: 860px) {
+      .ig-headline { font-size: 1.42rem; -webkit-text-stroke-width: 1.25px; }
+    }
+
+    /* Colonne de droite */
+    .ig-panel {
+      display: flex; flex-direction: column; min-width: 0;
+      border-top: 1px solid #efefef;
+    }
+    @media (min-width: 860px) {
+      /* min-height:0 à chaque niveau, sinon le contenu impose sa hauteur
+         minimale et la zone défilante ne peut pas se réduire. */
+      .ig-panel {
+        border-top: none; border-left: 1px solid #efefef;
+        min-height: 0; overflow: hidden;
+      }
+    }
+
+    .ig-head {
+      display: flex; align-items: center; gap: 11px;
+      padding: 12px 14px; border-bottom: 1px solid #efefef;
+    }
+    .ig-av {
+      flex-shrink: 0; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      background: #002654; color: #D4AF37;
+      width: 34px; height: 34px; font-size: 14px;
+      font-family: 'Montserrat', sans-serif; font-weight: 800;
+    }
+    .ig-av.sm { width: 28px; height: 28px; font-size: 11px; }
+    .ig-user {
+      font-family: 'Montserrat', sans-serif; font-size: 12.5px; font-weight: 800;
+      color: #111; display: flex; align-items: center; gap: 5px;
+    }
+    .ig-verified { color: #4ECDC4; font-size: 10.5px; }
+    .ig-sub { font-size: 10.5px; color: #8e8e8e; }
+    .ig-follow {
+      margin-left: auto; font-family: 'Montserrat', sans-serif;
+      font-size: 11.5px; font-weight: 800; color: #002654;
+    }
+    .ig-dots { color: #8e8e8e; font-size: 13px; }
+
+    /* Zone défilante : légende + commentaires */
+    .ig-body { position: relative; display: flex; flex: 1; min-height: 0; }
+    .ig-scroll { flex: 1; min-width: 0; padding: 14px; }
+    @media (min-width: 860px) {
+      .ig-scroll { overflow-y: auto; }
+      /* Voile en bas : indique qu'il reste du texte à faire défiler */
+      .ig-body::after {
+        content: ''; position: absolute; left: 0; right: 0; bottom: 0;
+        height: 32px; pointer-events: none;
+        background: linear-gradient(to top, #fff, rgba(255,255,255,0));
+      }
+    }
+
+    .ig-caption { display: flex; gap: 11px; }
+    .ig-caption-body { min-width: 0; flex: 1; }
+    .ig-user-inline {
+      font-family: 'Montserrat', sans-serif; font-size: 12.5px; font-weight: 800; color: #111;
+    }
+    .ig-text {
+      font-family: 'Merriweather', serif;
+      font-size: 13.8px; line-height: 1.85; color: #2d2d2d; margin-top: 6px;
+    }
+    .ig-text p + p { margin-top: .95em; }
+    .ig-meta {
+      font-family: 'Montserrat', sans-serif; font-size: 10.5px; font-weight: 600;
+      color: #8e8e8e; margin-top: 11px;
+    }
+
+    /* Commentaires */
+    .ig-com-head {
+      font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 800;
+      text-transform: uppercase; letter-spacing: .11em; color: #8e8e8e;
+      margin: 18px 0 12px; padding-top: 14px; border-top: 1px solid #efefef;
+    }
+    .ig-com { display: flex; gap: 11px; margin-bottom: 14px; }
+    .ig-com-txt { font-family: 'Nunito', sans-serif; font-size: 13.5px; line-height: 1.6; color: #262626; }
+    .ig-com-txt b {
+      font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 800; margin-right: 5px;
+    }
+    .ig-com-meta {
+      display: flex; gap: 13px; margin-top: 4px;
+      font-family: 'Montserrat', sans-serif; font-size: 10.5px; font-weight: 700; color: #8e8e8e;
+    }
+    .ig-heart {
+      flex-shrink: 0; color: #c7c7c7; cursor: pointer; font-size: 11.5px; padding-top: 4px;
+      transition: transform .12s, color .12s;
+    }
+    .ig-heart:active { transform: scale(1.35); }
+    .ig-heart.liked { color: #ed4956; }
+
+    /* Barre d'actions */
+    .ig-actions { border-top: 1px solid #efefef; padding: 11px 14px 12px; }
+    .ig-action-row {
+      display: flex; align-items: center; gap: 17px;
+      font-size: 18px; color: #262626; margin-bottom: 9px;
+    }
+    .ig-action-row i { cursor: pointer; transition: transform .12s, color .12s; }
+    .ig-action-row i:active { transform: scale(1.2); }
+    .ig-action-row .ig-spacer { margin-left: auto; }
+    .ig-likes { font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 700; color: #262626; }
+    .ig-when {
+      font-family: 'Montserrat', sans-serif; font-size: 10px; color: #8e8e8e;
+      margin-top: 4px; text-transform: uppercase; letter-spacing: .06em;
+    }
+    .ig-add {
+      display: flex; align-items: center; gap: 11px;
+      border-top: 1px solid #efefef; padding: 11px 14px;
+      color: #8e8e8e; font-family: 'Nunito', sans-serif; font-size: 13.5px;
+    }
+    .ig-add-post {
+      margin-left: auto; font-family: 'Montserrat', sans-serif;
+      font-size: 12px; font-weight: 800; color: #a8cdea;
     }
 
     /* ── VOCAB CARD ───────────────────────────────────── */
@@ -56,16 +223,6 @@
     .vocab-speaker { color: #4ECDC4; transition: color .15s, transform .15s; }
     .vocab-card:hover .vocab-speaker { color: #002654; transform: scale(1.2); }
 
-    /* ── ARTICLE PROSE ────────────────────────────────── */
-    .prose-article {
-      font-family: 'Merriweather', serif;
-      font-size: 1.02rem;
-      line-height: 1.95;
-      color: #2d2d2d;
-    }
-    .prose-article p + p { margin-top: 1.35em; text-indent: 1.5em; }
-    .prose-article p:first-child { text-indent: 0; }
-
     /* ── LOADER ───────────────────────────────────────── */
     .loader {
       border: 4px solid #f0ece6;
@@ -75,17 +232,6 @@
       animation: spin 1s linear infinite;
     }
     @keyframes spin { 0%{transform:rotate(0)} 100%{transform:rotate(360deg)} }
-
-    /* ── ARTICLE FIRST LETTER ────────────────────────── */
-    .prose-article p:first-child::first-letter {
-      float: left;
-      font-size: 3.8em;
-      line-height: 0.78;
-      font-weight: 700;
-      margin: 0.06em 0.1em 0 0;
-      color: #002654;
-      font-family: 'Merriweather', serif;
-    }
 
     /* ── READING PROGRESS BAR ────────────────────────── */
     #reading-progress {
@@ -467,51 +613,81 @@
   <!-- ══ ARTICLE BODY (hidden until loaded) ════════════ -->
   <div id="article-body" class="hidden">
 
-    <!-- ── HERO ──────────────────────────────────────── -->
-    <div id="hero-section" class="relative overflow-hidden" style="min-height:260px; background:#1a1a2e;">
-      <img id="hero-img" src="" alt="" class="hero-img">
-      <div class="hero-overlay"></div>
-      <div class="absolute bottom-0 left-0 right-0 px-5 pb-6 pt-12">
-        <span id="hero-category"
-              class="inline-block text-[10px] font-bold uppercase tracking-widest
-                     bg-teal text-white px-3 py-1 rounded-full mb-3">
-        </span>
-        <h1 id="hero-title"
-            class="text-2xl sm:text-3xl font-bold text-white leading-tight"
-            style="text-shadow: 0 2px 10px rgba(0,0,0,.5); max-width:600px;">
-        </h1>
-      </div>
-    </div>
+    <!-- ── PUBLICATION : image à gauche, texte à droite, commentaires dessous ── -->
+    <section class="max-w-5xl mx-auto px-4 pt-6 pb-4" id="article-section">
+      <article class="ig-post">
 
-    <!-- ── META BAR ─────────────────────────────────────── -->
-    <div class="bg-white border-b border-gray-100">
-      <div class="max-w-3xl mx-auto px-4 py-3 flex items-center justify-between flex-wrap gap-2">
-        <div class="flex items-center gap-4">
-          <span class="text-[11px] text-gray-500 flex items-center gap-1.5">
-            <i class="fa-solid fa-calendar-days" style="color:#4ECDC4;"></i>
-            <span id="meta-date"></span>
-          </span>
-          <span class="text-[11px] text-gray-500 flex items-center gap-1.5">
-            <i class="fa-solid fa-clock" style="color:#4ECDC4;"></i>
-            <span id="meta-readtime"></span>
-          </span>
-          <span class="text-[11px] text-gray-500 flex items-center gap-1.5">
-            <i class="fa-solid fa-align-left" style="color:#4ECDC4;"></i>
-            <span id="meta-words"></span>
-          </span>
-          <span class="text-[11px] text-gray-500 flex items-center gap-1.5 hidden sm:flex">
-            <i class="fa-solid fa-comment-dots" style="color:#4ECDC4;"></i>
-            <span id="meta-comments-count">5 réactions</span>
-          </span>
+        <!-- Média -->
+        <div class="ig-media">
+          <img id="hero-img" src="" alt="">
+          <div class="ig-media-shade"></div>
+          <div class="ig-media-txt">
+            <span id="hero-category" class="ig-chip"></span>
+            <h1 id="hero-title" class="ig-headline"></h1>
+          </div>
         </div>
-        <div class="flex items-center gap-3">
-          <button onclick="navigator.share ? navigator.share({title: document.title, url: location.href}) : null"
-                  class="text-[11px] text-gray-400 hover:text-frBlue transition flex items-center gap-1.5">
-            <i class="fa-solid fa-share-nodes text-[10px]"></i> Partager
-          </button>
+
+        <!-- Colonne de droite -->
+        <div class="ig-panel">
+
+          <div class="ig-head">
+            <div class="ig-av"><i class="fa-solid fa-landmark"></i></div>
+            <div class="min-w-0">
+              <p class="ig-user">
+                lacademie2 <i class="fa-solid fa-circle-check ig-verified"></i>
+              </p>
+              <p class="ig-sub">Actualité française</p>
+            </div>
+            <span class="ig-follow">Suivre</span>
+            <i class="fa-solid fa-ellipsis ig-dots"></i>
+          </div>
+
+          <div class="ig-body">
+            <div class="ig-scroll">
+
+              <!-- Légende = l'article -->
+              <div class="ig-caption">
+                <div class="ig-av sm"><i class="fa-solid fa-landmark" style="font-size:11px;"></i></div>
+                <div class="ig-caption-body">
+                  <span class="ig-user-inline">
+                    lacademie2 <i class="fa-solid fa-circle-check ig-verified"></i>
+                  </span>
+                  <div id="article-text" class="ig-text"></div>
+                  <p class="ig-meta">
+                    <span id="meta-readtime"></span> · <span id="meta-words"></span>
+                  </p>
+                </div>
+              </div>
+
+              <!-- Commentaires -->
+              <div id="ig-comments">
+                <p class="ig-com-head" id="ig-comments-count"></p>
+                <div id="comments-container"></div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="ig-actions">
+            <div class="ig-action-row">
+              <i class="fa-regular fa-heart" onclick="article.togglePostLike(this)"></i>
+              <i class="fa-regular fa-comment"></i>
+              <i class="fa-regular fa-paper-plane"></i>
+              <i class="fa-regular fa-bookmark ig-spacer"></i>
+            </div>
+            <p class="ig-likes" id="ig-likes"></p>
+            <p class="ig-when" id="meta-date"></p>
+          </div>
+
+          <div class="ig-add">
+            <i class="fa-regular fa-face-smile"></i>
+            <span>Ajouter un commentaire…</span>
+            <span class="ig-add-post">Publier</span>
+          </div>
+
         </div>
-      </div>
-    </div>
+      </article>
+    </section>
 
     <!-- ── VOCABULARY ─────────────────────────────────── -->
     <section class="max-w-3xl mx-auto px-4 pt-8 pb-4" id="vocab-section">
@@ -519,27 +695,6 @@
         <i class="fa-solid fa-book-open text-teal"></i> Vocabulaire clé
       </h2>
       <div id="vocab-grid" class="grid grid-cols-2 sm:grid-cols-3 gap-3"></div>
-    </section>
-
-    <!-- ── ARTICLE TEXT ───────────────────────────────── -->
-    <section class="max-w-3xl mx-auto px-4 py-4" id="article-section">
-      <div class="bg-white rounded-2xl shadow-card border border-gray-100 px-6 py-7">
-        <div class="flex items-center gap-3 mb-5">
-          <div class="h-px flex-1" style="background:linear-gradient(90deg,#4ECDC4,transparent);"></div>
-          <span class="text-[10px] font-bold uppercase tracking-widest text-gray-400">Article</span>
-          <div class="h-px flex-1" style="background:linear-gradient(270deg,#4ECDC4,transparent);"></div>
-        </div>
-        <div id="article-text" class="prose-article"></div>
-      </div>
-    </section>
-
-    <!-- ── COMMENTS ─────────────────────────────────────── -->
-    <section class="max-w-3xl mx-auto px-4 pt-2 pb-4" id="comments-section">
-      <h2 class="text-[11px] font-bold uppercase tracking-widest text-frBlue mb-4 flex items-center gap-2">
-        <i class="fa-solid fa-comment-dots text-coral"></i>
-        Réactions des lecteurs · <span id="comments-count">5</span>
-      </h2>
-      <div id="comments-container" class="flex flex-col gap-3"></div>
     </section>
 
     <!-- ── DICTÉE ─────────────────────────────────────── -->
@@ -1897,9 +2052,10 @@ Réponds UNIQUEMENT avec ce JSON, sans texte autour ni bloc de code :
       document.getElementById('nav-date').textContent =
         dateObj.toLocaleDateString('fr-FR', { day:'numeric', month:'long', year:'numeric' });
 
+      // Média : si l'image ne charge pas, le fond sombre garde le titre lisible
       const img = document.getElementById('hero-img');
       img.src = d.image.url;
-      img.alt = d.image.alt;
+      img.alt = d.image.alt || d.title;
       img.onerror = () => { img.style.display = 'none'; };
       document.getElementById('hero-title').textContent = d.title;
       document.getElementById('hero-category').textContent = d.category || '';
@@ -1923,16 +2079,20 @@ Réponds UNIQUEMENT avec ce JSON, sans texte autour ni bloc de code :
       const paragraphs = d.article.split('\n\n').filter(p => p.trim());
       articleEl.innerHTML = paragraphs.map(p => `<p>${nb(p.trim())}</p>`).join('');
 
-      // Meta bar
-      const metaDateEl = document.getElementById('meta-date');
-      if (metaDateEl) metaDateEl.textContent =
-        new Date(d.date + 'T00:00:00').toLocaleDateString('fr-FR', { day:'numeric', month:'long', year:'numeric' });
+      // Pied de la publication
       const wordCount = d.article.split(/\s+/).filter(Boolean).length;
       const readTime = Math.max(1, Math.ceil(wordCount / 180));
-      const metaReadEl = document.getElementById('meta-readtime');
-      if (metaReadEl) metaReadEl.textContent = `${readTime} min de lecture`;
-      const metaWordsEl = document.getElementById('meta-words');
-      if (metaWordsEl) metaWordsEl.textContent = `${wordCount} mots`;
+      document.getElementById('meta-readtime').textContent = `${readTime} min de lecture`;
+      document.getElementById('meta-words').textContent = `${wordCount} mots`;
+      document.getElementById('meta-date').textContent =
+        new Date(d.date + 'T00:00:00')
+          .toLocaleDateString('fr-FR', { day:'numeric', month:'long', year:'numeric' });
+
+      // « Aimé par » : on s'appuie sur les mentions des commentaires
+      const likes = (d.comments || []).reduce((a, c) => a + (parseInt(c.likes, 10) || 0), 0);
+      document.getElementById('ig-likes').innerHTML = likes
+        ? `Aimé par <b>rosalia</b> et <b>${likes.toLocaleString('fr-FR')} autres personnes</b>`
+        : `<b>Sois la première à aimer</b>`;
 
       this.renderComments(d.comments || []);
 
@@ -1943,45 +2103,53 @@ Réponds UNIQUEMENT avec ce JSON, sans texte autour ni bloc de code :
     },
 
     renderComments(comments) {
-      const avatarColors = ['#FF6B6B', '#4ECDC4', '#002654', '#D4AF37', '#7C6FCD'];
-      const countEl = document.getElementById('comments-count');
-      if (countEl) countEl.textContent = comments.length;
-      const metaCount = document.getElementById('meta-comments-count');
-      if (metaCount) metaCount.textContent = `${comments.length} réaction${comments.length !== 1 ? 's' : ''}`;
-
+      const countEl = document.getElementById('ig-comments-count');
       const container = document.getElementById('comments-container');
       if (!container) return;
 
       if (!comments.length) {
-        document.getElementById('comments-section')?.remove();
+        document.getElementById('ig-comments')?.remove();
         return;
       }
+      if (countEl) countEl.textContent =
+        `${comments.length} commentaire${comments.length > 1 ? 's' : ''}`;
 
+      const colors = ['#FF6B6B', '#4ECDC4', '#002654', '#D4AF37', '#7C6FCD'];
       container.innerHTML = comments.map((c, i) => {
         const initial = (c.username || '?').charAt(0).toUpperCase();
-        const color = avatarColors[i % avatarColors.length];
+        const n = parseInt(c.likes, 10) || 0;
         return `
-          <div class="comment-card">
-            <div class="flex items-start gap-3">
-              <div class="w-9 h-9 rounded-full flex items-center justify-center text-white text-sm font-bold shrink-0"
-                   style="background:${color}; min-width:2.25rem; font-family:'Montserrat',sans-serif;">${esc(initial)}</div>
-              <div class="min-w-0 flex-1">
-                <p class="text-[12px] font-bold mb-1" style="color:#002654; font-family:'Montserrat',sans-serif;">@${esc(c.username)}</p>
-                <p class="text-[13px] text-gray-700 leading-relaxed" style="font-family:'Nunito',sans-serif;">${esc(c.comment)}</p>
-                <div class="flex items-center gap-3 mt-2.5">
-                  <button class="like-btn flex items-center gap-1 text-[11px] transition"
-                          onclick="const s=this.querySelector('.lc'); const n=parseInt(s.textContent); const liked=this.classList.toggle('liked'); s.textContent=liked?n+1:n-1;"
-                          style="font-family:'Montserrat',sans-serif;">
-                    <i class="fa-solid fa-heart text-[10px]"></i>
-                    <span class="lc">${c.likes}</span>
-                  </button>
-                  <span style="color:#e5e7eb; font-size:11px;">·</span>
-                  <span class="text-[11px] text-gray-400" style="cursor:pointer; font-family:'Montserrat',sans-serif;">Répondre</span>
-                </div>
+          <div class="ig-com">
+            <div class="ig-av sm" style="background:${colors[i % colors.length]}; color:#fff;">
+              ${esc(initial)}
+            </div>
+            <div class="ig-caption-body">
+              <p class="ig-com-txt"><b>${esc(c.username)}</b>${esc(c.comment)}</p>
+              <div class="ig-com-meta">
+                <span>1 j</span>
+                <span class="ig-com-likes" data-n="${n}">${n} j'aime</span>
+                <span>Répondre</span>
               </div>
             </div>
+            <i class="fa-regular fa-heart ig-heart" onclick="article.toggleCommentLike(this)"></i>
           </div>`;
       }).join('');
+    },
+
+    // Le cœur d'un commentaire : purement local, mais ça rend la page vivante.
+    toggleCommentLike(el) {
+      const on = !el.classList.contains('liked');
+      el.className = `fa-${on ? 'solid' : 'regular'} fa-heart ig-heart${on ? ' liked' : ''}`;
+      const s = el.closest('.ig-com')?.querySelector('.ig-com-likes');
+      if (!s) return;
+      const n = (parseInt(s.dataset.n, 10) || 0) + (on ? 1 : 0);
+      s.textContent = `${n} j'aime`;
+    },
+
+    togglePostLike(el) {
+      const on = !el.classList.contains('liked');
+      el.className = `fa-${on ? 'solid' : 'regular'} fa-heart${on ? ' liked' : ''}`;
+      el.style.color = on ? '#ed4956' : '';
     },
 
     renderError(msg) {

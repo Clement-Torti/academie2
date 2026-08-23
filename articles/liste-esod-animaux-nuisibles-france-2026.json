@@ -1,0 +1,115 @@
+{
+  "id": "liste-esod-animaux-nuisibles-france-2026",
+  "title": "Nuisibles : la nouvelle liste des animaux que l'on peut tuer",
+  "date": "2026-08-23",
+  "category": "Société",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Renard_roux_-Vulpes_vulpes_(51646829556).jpg?width=1200",
+    "alt": "Un renard roux dans un pré, l'une des neuf espèces classées ESOD en France"
+  },
+  "vocabulary": [
+    {
+      "fr": "un piège",
+      "es": "una trampa"
+    },
+    {
+      "fr": "les dégâts",
+      "es": "los daños, los destrozos"
+    },
+    {
+      "fr": "nuisible",
+      "es": "dañino, perjudicial"
+    },
+    {
+      "fr": "réguler",
+      "es": "regular, controlar (una población)"
+    },
+    {
+      "fr": "un recours",
+      "es": "un recurso (legal)"
+    },
+    {
+      "fr": "être partagé",
+      "es": "estar dividido, no saber qué pensar"
+    },
+    {
+      "fr": "trancher",
+      "es": "zanjar, decidir"
+    }
+  ],
+  "article": "Le ministère de la Transition écologique a publié, le 21 août, un nouvel arrêté qui fixe pour trois ans la liste des animaux « susceptibles d'occasionner des dégâts », les ESOD. Neuf espèces indigènes y figurent : la belette, la fouine, la martre, le renard, le corbeau freux, la corneille noire, la pie bavarde, le geai des chênes et l'étourneau sansonnet. L'annexe précise, département par département, qui peut être détruit et comment : au piège ou au fusil, presque toute l'année, le renard pouvant en outre être déterré.\n\nLe mot « nuisible » a officiellement disparu des textes en 2016, mais la pratique demeure. S'y ajoutent des espèces venues d'ailleurs, comme le ragondin ou le rat musqué, que l'on régule partout et sans limite. Chasseurs et agriculteurs réclamaient cet arrêté depuis le 1er juillet, date à laquelle les destructions avaient été suspendues faute de cadre légal.\n\nLe texte est néanmoins très contesté. Une étude du Muséum national d'histoire naturelle estime que près d'un million sept cent mille animaux sont tués chaque année de cette manière, alors que l'efficacité de ces campagnes n'est pas démontrée : elles coûteraient parfois plus cher que les dégâts qu'elles prétendent éviter. Des associations de protection animale ont aussitôt annoncé des recours devant le Conseil d'État, qui leur a déjà donné raison à plusieurs reprises.\n\nReste la question de fond, celle dont on parle le moins : sur quelles données décide-t-on qu'une espèce nuit, et qui devrait trancher ?",
+  "dictation": {
+    "text": "Un renard adulte avale des milliers de campagnols chaque année, ce qui rend service aux cultures. Les scientifiques que l'on a consultés le rappellent souvent, mais leurs avis ne sont pas toujours suivis. Dans certains villages, les habitants sont partagés, car ils ont vu des poules disparaître et des nids se vider. Les pièges que les communes ont installés se remplissent surtout la nuit, quand personne ne les regarde. Ces bêtes ont mauvaise réputation, or elles tiennent aussi un rôle dans l'équilibre des campagnes. On les accuse volontiers, faute de mieux, sans jamais compter précisément ce qu'elles ont détruit.",
+    "units": [
+      "Un renard adulte avale des milliers de campagnols",
+      "chaque année, ce qui rend service aux cultures.",
+      "Les scientifiques que l'on a consultés",
+      "le rappellent souvent, mais leurs avis",
+      "ne sont pas toujours suivis.",
+      "Dans certains villages, les habitants sont partagés,",
+      "car ils ont vu des poules disparaître",
+      "et des nids se vider.",
+      "Les pièges que les communes ont installés",
+      "se remplissent surtout la nuit,",
+      "quand personne ne les regarde.",
+      "Ces bêtes ont mauvaise réputation,",
+      "or elles tiennent aussi un rôle dans l'équilibre des campagnes.",
+      "On les accuse volontiers, faute de mieux,",
+      "sans jamais compter précisément ce qu'elles ont détruit."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Ce que dit l'article",
+      "prompt": "Raconte-moi avec tes mots ce que la France vient de décider au sujet de ces animaux.",
+      "relances": [
+        "Quelles espèces figurent sur cette liste, à peu près ?",
+        "Comment expliquerais-tu le mot « nuisible » à une amie ?",
+        "Qu'est-ce qui t'a le plus étonnée dans cet article ?",
+        "Pourquoi les chasseurs attendaient-ils ce texte, selon toi ?"
+      ]
+    },
+    {
+      "title": "Faut-il les tuer",
+      "prompt": "Selon toi, faut-il continuer à détruire ces animaux, ou faudrait-il arrêter complètement ?",
+      "relances": [
+        "Quels arguments donnerais-tu à un agriculteur en colère ?",
+        "Comment répondrais-tu à celui qui parle d'équilibre naturel ?",
+        "Où placerais-tu la limite entre protéger et détruire ?",
+        "Si tu devais trancher, quelle décision prendrais-tu et pourquoi ?"
+      ]
+    },
+    {
+      "title": "Les animaux et toi",
+      "prompt": "Quels animaux sauvages croises-tu à Saint-Domingue, et comment les gens les regardent-ils ?",
+      "relances": [
+        "Raconte-moi une rencontre précise avec un animal.",
+        "Y a-t-il des bêtes que ta famille chasse ou éloigne ?",
+        "Qu'est-ce qui gêne le plus les gens de ton quartier ?",
+        "Comment réagirais-tu si un animal entrait chez toi ?"
+      ]
+    },
+    {
+      "title": "Ville, campagne, France",
+      "prompt": "Comment imagines-tu la nature autour de Strasbourg, comparée à celle que tu connais ?",
+      "relances": [
+        "Quelles différences attends-tu entre les deux pays ?",
+        "Qu'aimerais-tu découvrir dans la campagne alsacienne ?",
+        "Comment parlerais-tu de ce sujet avec un voisin chasseur ?",
+        "Que feras-tu pour connaître les animaux de la région ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "AgriculteurDuGers_31",
+      "comment": "Facile de défendre le renard quand on vit en ville et qu'on achète ses œufs au supermarché !!! Venez voir mon poulailler après une visite, on en reparlera. Ceux qui font des recours n'ont JAMAIS mis un pied dans une exploitation.",
+      "likes": 386
+    },
+    {
+      "username": "MamieCorbeau_Ariege",
+      "comment": "Chez nous, une corneille a pris l'habitude de voler les clés de mon voisin sur la table du jardin. Trois trousseaux perdus en deux ans. Il a fini par installer un parasol… et par en rire. Franchement, elles sont plus intelligentes que nous 🐦‍⬛",
+      "likes": 41
+    }
+  ]
+}

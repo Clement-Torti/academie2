@@ -1,0 +1,118 @@
+{
+  "id": "michel-lotito-homme-qui-mangeait-metal",
+  "title": "Michel Lotito, l'homme qui a mangé un avion",
+  "date": "2026-08-23",
+  "category": "Société",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Parked_Cessna_150.jpg",
+    "alt": "Un petit avion Cessna 150 blanc garé sur un terrain d'aviation"
+  },
+  "vocabulary": [
+    {
+      "fr": "la ferraille",
+      "es": "la chatarra"
+    },
+    {
+      "fr": "avaler",
+      "es": "tragar"
+    },
+    {
+      "fr": "un exploit",
+      "es": "una hazaña"
+    },
+    {
+      "fr": "hors norme",
+      "es": "fuera de lo común"
+    },
+    {
+      "fr": "un trouble",
+      "es": "un trastorno"
+    },
+    {
+      "fr": "retenir son souffle",
+      "es": "aguantar la respiración"
+    },
+    {
+      "fr": "empêcher",
+      "es": "impedir"
+    },
+    {
+      "fr": "ironie du sort",
+      "es": "ironía del destino"
+    }
+  ],
+  "article": "Michel Lotito, né en 1950 à Villard-Bonnot, en Isère, est entré dans l'histoire pour une raison qui laisse encore perplexe : il mangeait du métal. Dès l'âge de neuf ans, il avalait des morceaux de verre et de ferraille sans que cela paraisse l'incommoder. À partir de 1966, il en a fait un numéro de cabaret, sous le nom de Monsieur Mangetout.\n\nSon exploit le plus célèbre reste un avion. Entre 1978 et 1980, il a démonté puis ingéré un petit Cessna, découpé à la scie électrique en morceaux minuscules. Il ne mâchait pas : il avalait, comme on avale un comprimé, après avoir bu de la paraffine et énormément d'eau. En 1997, on estimait qu'il avait absorbé près de neuf tonnes de métal, dont dix-huit bicyclettes, dix-sept caddies et sept téléviseurs.\n\nLes médecins qui l'ont examiné ont découvert une paroi stomacale et intestinale anormalement épaisse, ainsi que des sucs gastriques d'une puissance rare. Son cas relevait néanmoins du pica, ce trouble qui pousse à consommer ce qui n'est pas comestible. Ironie du sort, la banane et l'œuf dur le rendaient malade, tandis qu'un guidon de vélo ne lui faisait rien. Il est mort en 2007, à cinquante-sept ans, de causes naturelles.\n\nReste une question gênante que personne ne posait à l'époque : fallait-il applaudir un tel numéro ? Certains y voient un artiste hors norme, en revanche d'autres estiment qu'on a simplement transformé une maladie en spectacle payant.",
+  "dictation": {
+    "text": "Ce soir-là, la salle était pleine et personne ne savait vraiment à quoi s'attendre. L'homme est monté sur scène, a posé ses outils, puis a bu un grand verre d'eau. Les spectateurs qu'il avait installés au premier rang ont retenu leur souffle. Certains riaient, d'autres se cachaient les yeux, tandis que les enfants, eux, ont applaudi. Les morceaux de métal qu'il a avalés ce soir-là pesaient presque un kilo. À la fin, on lui a demandé si ses parents avaient essayé de l'en empêcher. Il a souri, ses mains sont restées calmes, et il a répondu que son estomac avait toujours décidé pour lui.",
+    "units": [
+      "Ce soir-là, la salle était pleine",
+      "et personne ne savait vraiment à quoi s'attendre.",
+      "L'homme est monté sur scène, a posé ses outils,",
+      "puis a bu un grand verre d'eau.",
+      "Les spectateurs qu'il avait installés au premier rang",
+      "ont retenu leur souffle. Certains riaient,",
+      "d'autres se cachaient les yeux,",
+      "tandis que les enfants, eux, ont applaudi.",
+      "Les morceaux de métal qu'il a avalés ce soir-là",
+      "pesaient presque un kilo. À la fin,",
+      "on lui a demandé si ses parents avaient essayé",
+      "de l'en empêcher. Il a souri,",
+      "ses mains sont restées calmes, et il a répondu",
+      "que son estomac avait toujours décidé pour lui."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Qui était Monsieur Mangetout",
+      "prompt": "Raconte-moi l'histoire de cet homme comme si tu la racontais à une amie qui n'a rien lu.",
+      "relances": [
+        "Qu'est-ce qui t'a le plus étonnée dans cette histoire ?",
+        "Comment il s'y prenait, concrètement, pour avaler tout ça ?",
+        "Qu'est-ce que les médecins ont trouvé chez lui ?",
+        "Si tu devais résumer sa vie en une phrase, laquelle ?"
+      ]
+    },
+    {
+      "title": "Maladie ou spectacle",
+      "prompt": "À ton avis, est-ce qu'on avait le droit de faire payer le public pour voir un homme malade ?",
+      "relances": [
+        "Donne-moi un argument pour le camp d'en face.",
+        "Est-ce qu'aujourd'hui un tel numéro serait encore possible ?",
+        "En quoi c'est différent d'une vidéo virale sur TikTok ?",
+        "Qui devrait décider : lui, les médecins ou le public ?"
+      ]
+    },
+    {
+      "title": "Ce que tu refuses de manger",
+      "prompt": "Parle-moi de ta relation à la nourriture : qu'est-ce que tu refuses d'avaler, et pourquoi ?",
+      "relances": [
+        "Raconte-moi une fois où on t'a servi quelque chose d'impossible.",
+        "Qu'est-ce qui te dégoûte le plus : le goût ou la texture ?",
+        "Comment tu réagis quand tu as faim et que rien ne te plaît ?",
+        "Est-ce que tu as déjà changé d'avis sur un plat ?"
+      ]
+    },
+    {
+      "title": "Notre goût du bizarre",
+      "prompt": "Pourquoi, d'après toi, les gens sont-ils autant attirés par ce genre de numéro bizarre ?",
+      "relances": [
+        "Quel record insolite tu as déjà vu passer quelque part ?",
+        "Qu'est-ce qui a remplacé le cabaret aujourd'hui, selon toi ?",
+        "Où mettrais-tu la limite entre curiosité et voyeurisme ?",
+        "Comment tu imagines ce genre de spectacle dans vingt ans ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "InfirmiereEnColere_44",
+      "comment": "Franchement ça me met hors de moi qu'on parle d'EXPLOIT. Cet homme souffrait d'un trouble alimentaire et on l'a mis sur une scène pour vendre des billets. Personne ne l'a soigné, tout le monde a applaudi. C'est ça le vrai scandale de l'histoire.",
+      "likes": 411
+    },
+    {
+      "username": "PapyDeVillardBonnot",
+      "comment": "Mon oncle l'a vu à Grenoble dans les années quatre-vingt. Il m'a toujours raconté la même chose : le silence dans la salle, le bruit de la scie, et le monsieur qui buvait des litres d'eau entre deux morceaux. Après ça mon oncle n'a plus jamais touché aux moules 😅",
+      "likes": 87
+    }
+  ]
+}

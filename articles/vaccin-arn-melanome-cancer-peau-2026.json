@@ -1,0 +1,119 @@
+{
+  "id": "vaccin-arn-melanome-cancer-peau-2026",
+  "title": "Cancer de la peau : un vaccin personnalisé franchit une étape décisive",
+  "date": "2026-08-23",
+  "category": "Santé",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Fiole_de_vaccin_Moderna_(10_doses).jpg?width=1200",
+    "alt": "Une fiole de vaccin à ARN messager posée sur une table de laboratoire"
+  },
+  "vocabulary": [
+    {
+      "fr": "un vaccin thérapeutique",
+      "es": "una vacuna terapéutica"
+    },
+    {
+      "fr": "une récidive",
+      "es": "una recaída, una recidiva"
+    },
+    {
+      "fr": "une tumeur",
+      "es": "un tumor"
+    },
+    {
+      "fr": "sur mesure",
+      "es": "hecho a medida, personalizado"
+    },
+    {
+      "fr": "un essai clinique",
+      "es": "un ensayo clínico"
+    },
+    {
+      "fr": "se méfier de",
+      "es": "desconfiar de, tener cuidado con"
+    },
+    {
+      "fr": "coûter cher",
+      "es": "costar caro, salir caro"
+    },
+    {
+      "fr": "une tache",
+      "es": "una mancha"
+    }
+  ],
+  "article": "Le dix-neuf août, deux laboratoires, Moderna et Merck, ont annoncé le résultat que le monde médical attendait depuis des années : un vaccin contre le mélanome, la forme la plus grave du cancer de la peau, a franchi avec succès sa dernière phase d'essais. Administré avec une immunothérapie déjà utilisée aujourd'hui, il réduit nettement le risque que la maladie revienne après l'opération.\n\nIl ne s'agit pas d'un vaccin préventif, comme celui de la grippe, mais d'un vaccin thérapeutique fabriqué sur mesure pour chaque malade. On analyse la tumeur retirée par le chirurgien, puis on apprend au système immunitaire à reconnaître les cellules qui auraient échappé à l'opération. L'essai a suivi plus de mille cent patients, dont une partie recevait le vaccin en plus du traitement habituel.\n\nLes spécialistes se montrent néanmoins prudents. Fabriquer une seule dose demande de six à huit semaines de laboratoire, ce qui coûte cher et suppose une organisation dont très peu d'hôpitaux disposent. Le prix n'a pas encore été fixé, si bien que beaucoup redoutent un progrès réservé aux pays les plus riches, tandis que d'autres chercheurs rappellent qu'aucune donnée définitive sur la survie n'a été publiée.\n\nLes mêmes équipes testent désormais cette méthode contre les cancers du poumon, du rein et du pancréas. Faut-il alors parler d'une révolution, ou d'une médecine sur mesure que nos systèmes de santé ne pourront jamais payer pour tout le monde ?",
+  "dictation": {
+    "text": "Chaque année, la maladie est découverte chez des milliers de personnes qui ne s'en méfiaient pas. Les médecins le répètent, ces taches que l'on remarque sur ses bras ou dans son dos doivent être montrées sans attendre. La femme que j'ai rencontrée l'été dernier avait longtemps hésité, puis elle s'est enfin décidée. On lui a retiré la tumeur, et les examens qu'elle a passés ensuite se sont révélés rassurants. Elle a compris ce jour-là que ses habitudes devaient changer. Aujourd'hui, elle se protège du soleil, elle a jeté ses vieilles crèmes, et elle en parle à tout le monde.",
+    "units": [
+      "Chaque année, la maladie est découverte",
+      "chez des milliers de personnes",
+      "qui ne s'en méfiaient pas. Les médecins le répètent,",
+      "ces taches que l'on remarque",
+      "sur ses bras ou dans son dos",
+      "doivent être montrées sans attendre.",
+      "La femme que j'ai rencontrée l'été dernier",
+      "avait longtemps hésité, puis elle s'est enfin décidée.",
+      "On lui a retiré la tumeur,",
+      "et les examens qu'elle a passés ensuite",
+      "se sont révélés rassurants. Elle a compris ce jour-là",
+      "que ses habitudes devaient changer.",
+      "Aujourd'hui, elle se protège du soleil,",
+      "elle a jeté ses vieilles crèmes,",
+      "et elle en parle à tout le monde."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Raconte-moi cette annonce",
+      "prompt": "Explique-moi ce que ces deux laboratoires ont annoncé, comme si je n'avais rien lu.",
+      "relances": [
+        "Quelle est la différence avec un vaccin contre la grippe ?",
+        "Comment ce vaccin est-il fabriqué, exactement ?",
+        "Pourquoi les spécialistes restent-ils prudents ?",
+        "Si tu devais tout résumer en une phrase, laquelle ?"
+      ]
+    },
+    {
+      "title": "Une médecine hors de prix",
+      "prompt": "Un traitement fabriqué pour une seule personne coûte très cher : est-ce que la société doit le payer ?",
+      "relances": [
+        "Donne-moi le meilleur argument du camp opposé.",
+        "Qui devrait décider qui reçoit ce traitement ?",
+        "Vaut-il mieux soigner dix personnes ou en sauver une ?",
+        "Que répondrais-tu à un malade à qui on le refuse ?"
+      ]
+    },
+    {
+      "title": "Le soleil et toi",
+      "prompt": "Raconte-moi ta relation avec le soleil, entre les plages dominicaines et les conseils des médecins.",
+      "relances": [
+        "Qu'est-ce qu'on t'a appris là-dessus quand tu étais petite ?",
+        "Tu te protèges vraiment, ou tu oublies souvent ?",
+        "Décris-moi une journée de plage typique chez toi.",
+        "Qu'est-ce qui te ferait changer tes habitudes ?"
+      ]
+    },
+    {
+      "title": "Se soigner en France",
+      "prompt": "Comment imagines-tu tes rendez-vous chez le médecin une fois installée à Strasbourg ?",
+      "relances": [
+        "Qu'est-ce qui t'inquiète le plus, la langue ou les papiers ?",
+        "Quelles différences vois-tu avec la République dominicaine ?",
+        "Quelles phrases veux-tu absolument savoir dire au médecin ?",
+        "À qui demanderais-tu de l'aide la première fois ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "MarcheAuPasCitoyen",
+      "comment": "Encore une annonce faite par communiqué de presse, avec des laboratoires dont l'action grimpe le jour même !!! On nous vend une révolution alors qu'on ne connaît NI le prix, NI les résultats complets. Six à huit semaines de fabrication par patient, sérieusement ? Ce truc ne sortira jamais de l'hôpital privé.",
+      "likes": 388
+    },
+    {
+      "username": "NathalieDuJardin_71",
+      "comment": "Ma sœur a été opérée d'un mélanome au dos il y a quatre ans, repéré par hasard par sa coiffeuse. Depuis, elle vit avec la peur du contrôle annuel. Alors franchement, même imparfait, même cher, même dans dix ans : moi je dis oui à tout ce qui peut réduire cette angoisse.",
+      "likes": 96
+    }
+  ]
+}

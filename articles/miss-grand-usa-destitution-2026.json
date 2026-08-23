@@ -1,0 +1,114 @@
+{
+  "id": "miss-grand-usa-destitution-2026",
+  "title": "Miss Grand USA destituée quelques jours après son sacre",
+  "date": "2026-08-23",
+  "category": "Société",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Crown_Miss_Thailand_2014.jpg?width=1200",
+    "alt": "La couronne scintillante d'un concours de beauté"
+  },
+  "vocabulary": [
+    {
+      "fr": "destituer",
+      "es": "destituir"
+    },
+    {
+      "fr": "une couronne",
+      "es": "una corona"
+    },
+    {
+      "fr": "une dauphine",
+      "es": "una finalista, la subcampeona"
+    },
+    {
+      "fr": "un règlement",
+      "es": "un reglamento"
+    },
+    {
+      "fr": "un délit de fuite",
+      "es": "darse a la fuga tras un accidente"
+    },
+    {
+      "fr": "invoquer",
+      "es": "alegar, invocar"
+    },
+    {
+      "fr": "un tremplin",
+      "es": "un trampolín"
+    }
+  ],
+  "article": "Mekyla Li n'aura porté la couronne de Miss Grand USA que quelques jours. Sacrée le 10 août 2026 lors d'une finale organisée aux États-Unis, la jeune Américaine a été destituée par l'organisation du concours, qui a invoqué les termes du contrat signé par toutes les candidates, sans en dire davantage.\n\nLa presse américaine, en revanche, a rapidement avancé deux explications. La première tient à une affaire judiciaire : Mekyla Li serait poursuivie pour un délit de fuite commis en novembre 2024, après un accident au cours duquel une personne a été gravement blessée. La seconde concerne son état civil : elle aurait été mariée en 2018, alors que le règlement du concours international exige des candidates qu'elles n'aient jamais été mariées. L'intéressée, elle, n'a pas réagi publiquement.\n\nLa couronne est revenue à la première dauphine, Victoria Oluwakotanmi, une Américaine d'origine nigériane, ancienne réserviste de la marine et ingénieure de formation. C'est donc elle qui représentera les États-Unis à l'élection internationale, prévue le 10 octobre en Inde.\n\nL'affaire relance un débat ancien. Faut-il encore écarter une candidate parce qu'elle a été mariée, tandis que ces concours se présentent désormais comme des tremplins pour des femmes engagées et indépendantes ? Certains y voient une règle d'un autre âge, dès lors qu'aucun candidat masculin ne subit pareille exigence. D'autres répondent qu'un contrat reste un contrat, et que les vérifications auraient simplement dû être faites avant la finale.",
+  "dictation": {
+    "text": "Dans la plupart des concours de beauté, les candidates signent un contrat très détaillé, qu'elles ont rarement le temps de relire. On y trouve des règles sur l'âge, sur la vie privée, sur les photographies publiées en ligne. Ces engagements sont ensuite contrôlés, mais les vérifications arrivent souvent trop tard. Quand une organisation retire une couronne, elle se protège, et la gagnante se retrouve seule face aux critiques. Les dauphines, elles, ont appris à préparer un discours au cas où. Certaines racontent qu'elles ont attendu ce moment pendant des années, sans jamais imaginer qu'il arriverait ainsi, en une seule soirée.",
+    "units": [
+      "Dans la plupart des concours de beauté,",
+      "les candidates signent un contrat très détaillé,",
+      "qu'elles ont rarement le temps de relire.",
+      "On y trouve des règles sur l'âge,",
+      "sur la vie privée, sur les photographies publiées en ligne.",
+      "Ces engagements sont ensuite contrôlés,",
+      "mais les vérifications arrivent souvent trop tard.",
+      "Quand une organisation retire une couronne, elle se protège,",
+      "et la gagnante se retrouve seule face aux critiques.",
+      "Les dauphines, elles, ont appris",
+      "à préparer un discours au cas où.",
+      "Certaines racontent qu'elles ont attendu",
+      "ce moment pendant des années,",
+      "sans jamais imaginer qu'il arriverait ainsi, en une seule soirée."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Raconter l'affaire",
+      "prompt": "Raconte-moi avec tes mots ce qui est arrivé à cette Miss américaine et pourquoi.",
+      "relances": [
+        "Quelles sont les deux raisons évoquées par la presse ?",
+        "Comment l'organisation a-t-elle justifié sa décision ?",
+        "Qui porte la couronne aujourd'hui, et d'où vient-elle ?",
+        "Quel détail t'a le plus surprise dans cette histoire ?"
+      ]
+    },
+    {
+      "title": "Une règle dépassée",
+      "prompt": "Selon toi, interdire un concours à une femme qui a été mariée, est-ce encore défendable ?",
+      "relances": [
+        "Quels arguments donnerais-tu à quelqu'un qui n'est pas d'accord ?",
+        "Une organisation privée peut-elle imposer n'importe quelle règle ?",
+        "Aurait-il fallu vérifier avant la finale, à ton avis ?",
+        "Et l'accident de voiture, faut-il le traiter autrement ?"
+      ]
+    },
+    {
+      "title": "Concours et apparences",
+      "prompt": "Parle-moi d'un concours, d'un casting ou d'un examen que tu as vécu ou suivi de près.",
+      "relances": [
+        "Comment t'étais-tu préparée à ce moment-là ?",
+        "Qu'est-ce qui t'a semblé injuste, ou au contraire juste ?",
+        "Que ressent-on quand on attend les résultats ?",
+        "Referais-tu la même chose aujourd'hui, et pourquoi ?"
+      ]
+    },
+    {
+      "title": "Miss France, Miss Dominicana",
+      "prompt": "Comment imagines-tu la place de ces concours en France, comparée à la République dominicaine ?",
+      "relances": [
+        "Qui regarde ces émissions chez toi, et dans quelle ambiance ?",
+        "En quoi Miss France te paraît-elle différente de Miss Dominicana ?",
+        "De quoi parleras-tu de ce sujet avec tes futurs collègues strasbourgeois ?",
+        "Ton diplôme de mercadeo t'aide-t-il à comprendre ce spectacle ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "MarianneDuNord_67",
+      "comment": "Franchement, on marche sur la tête !!! Une organisation qui se fiche complètement d'un délit de fuite pendant des mois, mais qui panique parce que madame a été mariée en 2018 ? La priorité est totalement inversée. Ce règlement date d'un autre siècle, POINT.",
+      "likes": 384
+    },
+    {
+      "username": "TataGeorgette_Vosges",
+      "comment": "Ma nièce a fait une élection régionale il y a trois ans. Vingt pages de contrat, une clause sur les photos de vacances, et personne pour lui expliquer quoi que ce soit. Elle a abandonné au bout d'un mois. Là au moins, la dauphine récupère la couronne 👑",
+      "likes": 57
+    }
+  ]
+}

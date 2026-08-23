@@ -3,7 +3,7 @@
    ───────────────────────────────────────────────────────────────
    Fichier GÉNÉRÉ, ne pas modifier à la main :
 
-       python3 make-local.py vaccin-arn-melanome-cancer-peau-2026 liste-esod-animaux-nuisibles-france-2026 france-missiles-intercepteurs-ukraine-2026 gta-6-netflix-avant-premiere-2026 michel-lotito-homme-qui-mangeait-metal
+       python3 make-local.py miss-grand-usa-destitution-2026 journee-mondiale-hashtag-2026 vaccin-arn-melanome-cancer-peau-2026 liste-esod-animaux-nuisibles-france-2026 france-missiles-intercepteurs-ukraine-2026 gta-6-netflix-avant-premiere-2026 michel-lotito-homme-qui-mangeait-metal
 
    En file://, le navigateur refuse de lire articles/*.json ; les
    pages retombent donc sur GitHub Pages. Les articles embarqués
@@ -14,6 +14,236 @@
    ═══════════════════════════════════════════════════════════════ */
 window.ACAD2_LOCAL = {
   "articles": [
+    {
+      "id": "miss-grand-usa-destitution-2026",
+      "title": "Miss Grand USA destituée quelques jours après son sacre",
+      "date": "2026-08-23",
+      "category": "Société",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Crown_Miss_Thailand_2014.jpg?width=1200",
+        "alt": "La couronne scintillante d'un concours de beauté"
+      },
+      "vocabulary": [
+        {
+          "fr": "destituer",
+          "es": "destituir"
+        },
+        {
+          "fr": "une couronne",
+          "es": "una corona"
+        },
+        {
+          "fr": "une dauphine",
+          "es": "una finalista, la subcampeona"
+        },
+        {
+          "fr": "un règlement",
+          "es": "un reglamento"
+        },
+        {
+          "fr": "un délit de fuite",
+          "es": "darse a la fuga tras un accidente"
+        },
+        {
+          "fr": "invoquer",
+          "es": "alegar, invocar"
+        },
+        {
+          "fr": "un tremplin",
+          "es": "un trampolín"
+        }
+      ],
+      "article": "Mekyla Li n'aura porté la couronne de Miss Grand USA que quelques jours. Sacrée le 10 août 2026 lors d'une finale organisée aux États-Unis, la jeune Américaine a été destituée par l'organisation du concours, qui a invoqué les termes du contrat signé par toutes les candidates, sans en dire davantage.\n\nLa presse américaine, en revanche, a rapidement avancé deux explications. La première tient à une affaire judiciaire : Mekyla Li serait poursuivie pour un délit de fuite commis en novembre 2024, après un accident au cours duquel une personne a été gravement blessée. La seconde concerne son état civil : elle aurait été mariée en 2018, alors que le règlement du concours international exige des candidates qu'elles n'aient jamais été mariées. L'intéressée, elle, n'a pas réagi publiquement.\n\nLa couronne est revenue à la première dauphine, Victoria Oluwakotanmi, une Américaine d'origine nigériane, ancienne réserviste de la marine et ingénieure de formation. C'est donc elle qui représentera les États-Unis à l'élection internationale, prévue le 10 octobre en Inde.\n\nL'affaire relance un débat ancien. Faut-il encore écarter une candidate parce qu'elle a été mariée, tandis que ces concours se présentent désormais comme des tremplins pour des femmes engagées et indépendantes ? Certains y voient une règle d'un autre âge, dès lors qu'aucun candidat masculin ne subit pareille exigence. D'autres répondent qu'un contrat reste un contrat, et que les vérifications auraient simplement dû être faites avant la finale.",
+      "dictation": {
+        "text": "Dans la plupart des concours de beauté, les candidates signent un contrat très détaillé, qu'elles ont rarement le temps de relire. On y trouve des règles sur l'âge, sur la vie privée, sur les photographies publiées en ligne. Ces engagements sont ensuite contrôlés, mais les vérifications arrivent souvent trop tard. Quand une organisation retire une couronne, elle se protège, et la gagnante se retrouve seule face aux critiques. Les dauphines, elles, ont appris à préparer un discours au cas où. Certaines racontent qu'elles ont attendu ce moment pendant des années, sans jamais imaginer qu'il arriverait ainsi, en une seule soirée.",
+        "units": [
+          "Dans la plupart des concours de beauté,",
+          "les candidates signent un contrat très détaillé,",
+          "qu'elles ont rarement le temps de relire.",
+          "On y trouve des règles sur l'âge,",
+          "sur la vie privée, sur les photographies publiées en ligne.",
+          "Ces engagements sont ensuite contrôlés,",
+          "mais les vérifications arrivent souvent trop tard.",
+          "Quand une organisation retire une couronne, elle se protège,",
+          "et la gagnante se retrouve seule face aux critiques.",
+          "Les dauphines, elles, ont appris",
+          "à préparer un discours au cas où.",
+          "Certaines racontent qu'elles ont attendu",
+          "ce moment pendant des années,",
+          "sans jamais imaginer qu'il arriverait ainsi, en une seule soirée."
+        ]
+      },
+      "oralTopics": [
+        {
+          "title": "Raconter l'affaire",
+          "prompt": "Raconte-moi avec tes mots ce qui est arrivé à cette Miss américaine et pourquoi.",
+          "relances": [
+            "Quelles sont les deux raisons évoquées par la presse ?",
+            "Comment l'organisation a-t-elle justifié sa décision ?",
+            "Qui porte la couronne aujourd'hui, et d'où vient-elle ?",
+            "Quel détail t'a le plus surprise dans cette histoire ?"
+          ]
+        },
+        {
+          "title": "Une règle dépassée",
+          "prompt": "Selon toi, interdire un concours à une femme qui a été mariée, est-ce encore défendable ?",
+          "relances": [
+            "Quels arguments donnerais-tu à quelqu'un qui n'est pas d'accord ?",
+            "Une organisation privée peut-elle imposer n'importe quelle règle ?",
+            "Aurait-il fallu vérifier avant la finale, à ton avis ?",
+            "Et l'accident de voiture, faut-il le traiter autrement ?"
+          ]
+        },
+        {
+          "title": "Concours et apparences",
+          "prompt": "Parle-moi d'un concours, d'un casting ou d'un examen que tu as vécu ou suivi de près.",
+          "relances": [
+            "Comment t'étais-tu préparée à ce moment-là ?",
+            "Qu'est-ce qui t'a semblé injuste, ou au contraire juste ?",
+            "Que ressent-on quand on attend les résultats ?",
+            "Referais-tu la même chose aujourd'hui, et pourquoi ?"
+          ]
+        },
+        {
+          "title": "Miss France, Miss Dominicana",
+          "prompt": "Comment imagines-tu la place de ces concours en France, comparée à la République dominicaine ?",
+          "relances": [
+            "Qui regarde ces émissions chez toi, et dans quelle ambiance ?",
+            "En quoi Miss France te paraît-elle différente de Miss Dominicana ?",
+            "De quoi parleras-tu de ce sujet avec tes futurs collègues strasbourgeois ?",
+            "Ton diplôme de mercadeo t'aide-t-il à comprendre ce spectacle ?"
+          ]
+        }
+      ],
+      "comments": [
+        {
+          "username": "MarianneDuNord_67",
+          "comment": "Franchement, on marche sur la tête !!! Une organisation qui se fiche complètement d'un délit de fuite pendant des mois, mais qui panique parce que madame a été mariée en 2018 ? La priorité est totalement inversée. Ce règlement date d'un autre siècle, POINT.",
+          "likes": 384
+        },
+        {
+          "username": "TataGeorgette_Vosges",
+          "comment": "Ma nièce a fait une élection régionale il y a trois ans. Vingt pages de contrat, une clause sur les photos de vacances, et personne pour lui expliquer quoi que ce soit. Elle a abandonné au bout d'un mois. Là au moins, la dauphine récupère la couronne 👑",
+          "likes": 57
+        }
+      ]
+    },
+    {
+      "id": "journee-mondiale-hashtag-2026",
+      "title": "Le hashtag fête ses dix-neuf ans, entre gloire et lassitude",
+      "date": "2026-08-23",
+      "category": "Technologie",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hashtag_climateaction_%2847971590826%29.jpg?width=1200",
+        "alt": "Un graffiti représentant un hashtag et le mot climateaction sur un mur de Bristol"
+      },
+      "vocabulary": [
+        {
+          "fr": "un dièse",
+          "es": "una almohadilla, un numeral"
+        },
+        {
+          "fr": "un mot-clé",
+          "es": "una palabra clave"
+        },
+        {
+          "fr": "se répandre",
+          "es": "difundirse, extenderse"
+        },
+        {
+          "fr": "une mobilisation",
+          "es": "una movilización"
+        },
+        {
+          "fr": "s'éteindre",
+          "es": "apagarse, extinguirse"
+        },
+        {
+          "fr": "un réflexe",
+          "es": "un reflejo, una costumbre"
+        },
+        {
+          "fr": "s'éroder",
+          "es": "erosionarse, desgastarse"
+        }
+      ],
+      "article": "Le vingt-trois août, les réseaux sociaux célèbrent la Journée mondiale du hashtag. La date renvoie au 23 août 2007, quand un consultant américain, Chris Messina, a proposé sur Twitter d'utiliser le signe dièse devant un mot afin de regrouper les messages portant sur un même thème. L'entreprise avait jugé l'idée trop technique ; onze ans plus tard, elle en faisait une célébration annuelle.\n\nLe procédé s'est répandu bien au-delà de Twitter. Sur Instagram, sur TikTok ou sur LinkedIn, le mot-clé précédé d'un dièse sert à classer, à chercher et à se rendre visible. Des mobilisations entières sont nées de cette petite manipulation typographique, alors que rien, au départ, ne la destinait à porter des causes politiques. Le mot lui-même est entré dans le langage parlé, si bien qu'on l'entend aujourd'hui dans des conversations qui n'ont rien à voir avec Internet.\n\nNéanmoins, son pouvoir s'érode. Les plateformes ont réduit son poids dans leurs algorithmes, et Instagram a reconnu que les hashtags ne permettaient plus de gagner de l'audience. En revanche, les marques continuent d'en accumuler sous chaque publication, tandis que certains militants dénoncent un activisme confortable, qui s'arrête au clavier.\n\nFaut-il alors célébrer ce symbole ou lui dire adieu ? Ceux qui l'ont vu naître rappellent qu'il n'appartient à personne : aucune entreprise ne l'a déposé, ce qui reste rare dans l'économie numérique. Le débat porte désormais sur son usage. Un dièse suffit-il encore à faire bouger quelque chose, ou n'est-il devenu qu'un réflexe machinal, répété des millions de fois ?",
+      "dictation": {
+        "text": "Un mot précédé d'un dièse ne coûte rien, et pourtant il peut voyager autour du monde en quelques heures. Les phrases que les internautes ont choisies deviennent parfois des slogans, où chacun reconnaît sa propre colère ou son propre espoir. Beaucoup de campagnes ont commencé ainsi, sans budget, sans agence, sans stratégie. Comme l'attention se déplace sans arrêt, elles se sont éteintes aussi vite qu'elles étaient apparues. Les associations le savent bien, et elles répètent qu'il faut transformer ces messages en actions concrètes, sinon on oublie tout en une semaine. Ce petit signe reste donc un outil, et jamais une victoire en soi.",
+        "units": [
+          "Un mot précédé d'un dièse ne coûte rien,",
+          "et pourtant il peut voyager",
+          "autour du monde en quelques heures.",
+          "Les phrases que les internautes ont choisies",
+          "deviennent parfois des slogans, où chacun reconnaît",
+          "sa propre colère ou son propre espoir.",
+          "Beaucoup de campagnes ont commencé ainsi,",
+          "sans budget, sans agence, sans stratégie.",
+          "Comme l'attention se déplace sans arrêt,",
+          "elles se sont éteintes aussi vite qu'elles étaient apparues.",
+          "Les associations le savent bien,",
+          "et elles répètent qu'il faut transformer",
+          "ces messages en actions concrètes,",
+          "sinon on oublie tout en une semaine.",
+          "Ce petit signe reste donc un outil,",
+          "et jamais une victoire en soi."
+        ]
+      },
+      "oralTopics": [
+        {
+          "title": "Ce que raconte l'article",
+          "prompt": "Raconte-moi avec tes mots comment le hashtag est né et pourquoi on le fête aujourd'hui.",
+          "relances": [
+            "Quels sont les trois faits les plus importants du texte ?",
+            "Comment expliquerais-tu ce qu'est un hashtag à ta grand-mère ?",
+            "Qu'est-ce qui t'a le plus étonnée dans cette histoire ?",
+            "Pourquoi les plateformes ont-elles changé d'avis, selon toi ?"
+          ]
+        },
+        {
+          "title": "Un outil ou un réflexe",
+          "prompt": "À ton avis, un hashtag peut-il vraiment changer quelque chose dans la vie réelle ?",
+          "relances": [
+            "Quel exemple donnerais-tu pour défendre ton opinion ?",
+            "Que répondrais-tu à quelqu'un qui parle d'activisme de canapé ?",
+            "Où placerais-tu la limite entre soutenir et faire semblant ?",
+            "Qu'est-ce qui manque à une campagne en ligne pour réussir ?"
+          ]
+        },
+        {
+          "title": "Tes propres réseaux",
+          "prompt": "Comment utilises-tu les hashtags quand tu publies ou quand tu cherches quelque chose ?",
+          "relances": [
+            "Raconte-moi la dernière chose que tu as cherchée ainsi.",
+            "Quels comptes suis-tu et pourquoi ceux-là ?",
+            "Combien de temps passes-tu sur TikTok chaque jour ?",
+            "Qu'est-ce que tu ne publierais jamais en ligne ?"
+          ]
+        },
+        {
+          "title": "Chercher un emploi en ligne",
+          "prompt": "Comment comptes-tu utiliser les réseaux sociaux pour t'installer et travailler à Strasbourg ?",
+          "relances": [
+            "Quelles différences vois-tu avec la République dominicaine ?",
+            "Comment te présenterais-tu en français sur un profil professionnel ?",
+            "Ton diplôme de mercadeo peut-il t'aider dans ce domaine ?",
+            "Quels groupes en ligne chercherais-tu en arrivant en Alsace ?"
+          ]
+        }
+      ],
+      "comments": [
+        {
+          "username": "PascalSansFiltre",
+          "comment": "Une journée mondiale pour un SYMBOLE de clavier, on marche sur la tête !!! Pendant qu'on met des dièses partout, personne ne descend plus dans la rue. Franchement, mettre cent hashtags sous une photo n'a jamais sauvé personne. Qu'on arrête ce cirque.",
+          "likes": 386
+        },
+        {
+          "username": "Lucie_CommunityManager",
+          "comment": "Je gère les réseaux d'une petite librairie et j'ai testé pendant six mois : zéro hashtag d'un côté, trente de l'autre. Résultat quasi identique. Par contre le jour où j'ai filmé mon chat endormi sur les romans policiers, quinze mille vues 🐱",
+          "likes": 74
+        }
+      ]
+    },
     {
       "id": "vaccin-arn-melanome-cancer-peau-2026",
       "title": "Cancer de la peau : un vaccin personnalisé franchit une étape décisive",

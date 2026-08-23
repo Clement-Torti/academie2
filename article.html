@@ -72,9 +72,14 @@
     .ig-media-shade {
       position: absolute; inset: 0;
       background: linear-gradient(to top,
-        rgba(0,0,0,.88) 0%, rgba(0,0,0,.38) 46%, rgba(0,0,0,.06) 72%, transparent 100%);
+        rgba(0,0,0,.86) 0%, rgba(0,0,0,.74) 20%, rgba(0,0,0,.34) 54%,
+        rgba(0,0,0,.05) 78%, transparent 100%);
     }
-    .ig-media-txt { position: absolute; left: 0; right: 0; bottom: 0; padding: 20px 20px 22px; }
+    .ig-media-txt {
+      position: absolute; left: 0; right: 0; bottom: 9%;
+      padding: 0 20px;
+    }
+    @media (min-width: 860px) { .ig-media-txt { bottom: 13%; padding: 0 22px; } }
     .ig-chip {
       display: inline-block; background: #4ECDC4; color: #fff;
       font-size: 9.5px; font-weight: 800; text-transform: uppercase; letter-spacing: .14em;

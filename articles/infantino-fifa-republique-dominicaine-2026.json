@@ -1,0 +1,119 @@
+{
+  "id": "infantino-fifa-republique-dominicaine-2026",
+  "title": "Le patron de la FIFA à Punta Cana, malgré la crise",
+  "date": "2026-08-23",
+  "category": "Sport",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gianni_Infantino_(2020).jpg?width=1200",
+    "alt": "Gianni Infantino, le président de la FIFA, lors d'une conférence internationale"
+  },
+  "vocabulary": [
+    {
+      "fr": "un déplacement",
+      "es": "un viaje, un desplazamiento"
+    },
+    {
+      "fr": "anodin",
+      "es": "insignificante, sin importancia"
+    },
+    {
+      "fr": "renoncer à",
+      "es": "renunciar a"
+    },
+    {
+      "fr": "secouer",
+      "es": "sacudir"
+    },
+    {
+      "fr": "une filiale",
+      "es": "una filial"
+    },
+    {
+      "fr": "la tromperie",
+      "es": "el engaño"
+    },
+    {
+      "fr": "briguer un mandat",
+      "es": "aspirar a un mandato"
+    },
+    {
+      "fr": "servir de décor",
+      "es": "servir de telón de fondo"
+    }
+  ],
+  "article": "Le président de la FIFA, Gianni Infantino, s'est rendu en République dominicaine le 22 août, à l'occasion d'un tournoi réservé aux joueurs de moins de quatorze ans, organisé à Punta Cana par l'Union caribéenne de football. Il y a rencontré le ministre des Sports, le président de la fédération dominicaine et celui du Comité olympique, avant de publier plusieurs photos souriantes sur ses réseaux sociaux.\n\nCe déplacement n'avait pourtant rien d'anodin. Quelques jours plus tôt, le patron de la Concacaf, Victor Montagliani, lui avait écrit pour lui demander d'y renoncer : selon lui, la crise qui secoue la FIFA allait détourner les caméras des jeunes joueurs. Infantino est venu quand même, sans répondre aux journalistes qui l'attendaient sur place.\n\nÀ l'origine de cette tempête, un projet révélé fin juillet par la presse britannique. La FIFA envisageait de confier ses activités commerciales à une filiale valorisée vingt milliards de dollars, dont un cinquième aurait été vendu à des investisseurs privés. Les dirigeants européens et asiatiques ont parlé de tromperie, dès lors que le dossier avait été préparé en secret pendant plus d'un an. Le projet a été retiré le 1er août, mais la confiance, elle, n'est pas revenue.\n\nInfantino briguera néanmoins un quatrième mandat lors du congrès prévu en mars à Rabat. La question qu'il laisse derrière lui reste entière : le football mondial doit-il rester entre les mains de ses fédérations, ou peut-il s'ouvrir à des actionnaires ?",
+  "dictation": {
+    "text": "Pendant une semaine, de jeunes joueurs venus de plusieurs îles se sont retrouvés sur les terrains de la côte. Ils ont dormi dans le même hôtel, ils ont mangé à la même table, et certains ont pris l'avion pour la première fois. Leurs entraîneurs, eux, ont surtout apprécié les échanges techniques qu'ils avaient préparés depuis des mois. Quand les dirigeants sont arrivés, les caméras se sont tournées vers eux, et les questions ont porté sur la crise. Ces adolescents, on les avait pourtant invités pour jouer, pas pour servir de décor. La compétition s'est achevée dans l'indifférence, sans qu'aucun journaliste ne parle vraiment des matchs.",
+    "units": [
+      "Pendant une semaine, de jeunes joueurs",
+      "venus de plusieurs îles se sont retrouvés",
+      "sur les terrains de la côte.",
+      "Ils ont dormi dans le même hôtel,",
+      "ils ont mangé à la même table,",
+      "et certains ont pris l'avion pour la première fois.",
+      "Leurs entraîneurs, eux, ont surtout apprécié",
+      "les échanges techniques qu'ils avaient préparés depuis des mois.",
+      "Quand les dirigeants sont arrivés,",
+      "les caméras se sont tournées vers eux,",
+      "et les questions ont porté sur la crise.",
+      "Ces adolescents, on les avait pourtant invités",
+      "pour jouer, pas pour servir de décor.",
+      "La compétition s'est achevée dans l'indifférence,",
+      "sans qu'aucun journaliste ne parle vraiment des matchs."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Ce que raconte l'article",
+      "prompt": "Raconte-moi avec tes propres mots ce qui s'est passé à Punta Cana ce week-end.",
+      "relances": [
+        "Qui Infantino a-t-il rencontré exactement sur place ?",
+        "Pourquoi Montagliani voulait-il empêcher cette visite ?",
+        "Explique-moi en quoi consistait le projet retiré.",
+        "Quel détail de cette histoire te surprend le plus ?"
+      ]
+    },
+    {
+      "title": "Vendre le football",
+      "prompt": "Selon toi, faut-il ouvrir le football mondial à des investisseurs privés ou pas du tout ?",
+      "relances": [
+        "Qu'est-ce qu'un investisseur privé changerait concrètement ?",
+        "Que répondrais-tu à quelqu'un qui trouve l'idée moderne ?",
+        "Le secret autour du projet te dérange-t-il ? Pourquoi ?",
+        "Imagine que le projet revienne dans deux ans : et alors ?"
+      ]
+    },
+    {
+      "title": "Le sport dans ta vie",
+      "prompt": "Quelle place le sport occupe-t-il chez toi, dans ta famille et dans ton quartier ?",
+      "relances": [
+        "Raconte-moi un match que tu as vraiment vécu.",
+        "Le baseball et le football, comment les gens les comparent-ils ?",
+        "As-tu déjà pratiqué un sport en club ? Raconte.",
+        "Qu'est-ce qui te plaît ou t'ennuie dans le football ?"
+      ]
+    },
+    {
+      "title": "Supporters d'ici et d'ailleurs",
+      "prompt": "Comment imagines-tu l'ambiance d'un stade français quand tu vivras à Strasbourg ?",
+      "relances": [
+        "Qu'est-ce qui serait différent d'un stade dominicain ?",
+        "Irais-tu voir un match toute seule ? Pourquoi ?",
+        "Quel événement sportif aimerais-tu vivre en France ?",
+        "Comment le sport peut-il t'aider à rencontrer des gens ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "TifosiDuDimanche_74",
+      "comment": "On lui demande POLIMENT de ne pas venir gâcher un tournoi d'enfants et il débarque quand même avec ses photos Instagram !!! Vendre un cinquième du foot à des investisseurs, en cachette, pendant un an... et il ose se représenter en mars. Qu'il parte, tout simplement.",
+      "likes": 412
+    },
+    {
+      "username": "PapaDeDeuxGardiens",
+      "comment": "Mon fils a joué un tournoi régional l'an dernier, et un élu est venu faire son discours à la mi-temps. Les gamins ont attendu vingt minutes sous la pluie, trempés. Personne n'a retenu le score, mais tout le monde se souvient du micro qui grésillait 😅",
+      "likes": 76
+    }
+  ]
+}

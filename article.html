@@ -812,8 +812,6 @@
   </div><!-- end #article-body -->
 
 
-  <!-- Aperçu local : articles pas encore poussés (voir make-local.py) -->
-  <script src="articles-local.js" onerror="window.ACAD2_LOCAL=null"></script>
   <script src="carnet.js"></script>
 
   <script>
@@ -2027,11 +2025,6 @@ Réponds UNIQUEMENT avec ce JSON, sans texte autour ni bloc de code :
         this.renderError('Aucun article spécifié.');
         return;
       }
-
-      // Aperçu local : l'article est embarqué dans articles-local.js, donc
-      // lisible même en file://, où fetch() ne peut pas ouvrir le disque.
-      const local = (window.ACAD2_LOCAL?.articles || []).find(a => a && a.id === id);
-      if (local) { this.data = local; this.render(); return; }
 
       const base = location.protocol === 'file:'
         ? 'https://clement-torti.github.io/academie2/'

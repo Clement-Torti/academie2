@@ -34,8 +34,6 @@ academie2/
 ├── carnet.html       ← Carnet d'erreurs : progression, points, sauvegarde
 ├── carnet.js         ← Module partagé : carnet + relais IA (Carnet, AIRelay)
 ├── translation.html  ← Ancienne phase de traductions (plus dans le parcours)
-├── make-local.py     ← [temporaire] embarque un article pas encore poussé
-├── articles-local.js ← [temporaire] généré : aperçu local en file://
 ├── prompt.txt        ← Prompt de génération d'un article JSON
 ├── contexte.txt      ← Fiche personnage (Rosalía) pour les contenus
 ├── catalog.json      ← Index des articles
@@ -205,26 +203,7 @@ fois-ci (`resolved`).
 
 ---
 
-## 7. Aperçu local d'un article non poussé
-
-Ouvert par double-clic (`file://`), le navigateur refuse de lire `catalog.json`
-et `articles/*.json` du disque : les pages retombent alors sur GitHub Pages, où
-un article tout neuf n'existe pas encore. Un `<script src>` échappe à cette
-restriction, d'où le contournement :
-
-```bash
-python3 make-local.py mon-nouvel-article   # génère articles-local.js
-python3 make-local.py                      # vide l'aperçu, une fois poussé
-```
-
-`index.html` place ces articles en tête du catalogue (badge rouge « local ») et
-reste utilisable même si GitHub est injoignable ; `article.html` et `oral.html`
-les servent avant toute requête réseau. Sans le fichier, ou avec un aperçu
-vide, tout revient au comportement normal.
-
----
-
-## 8. Dépendances CDN
+## 7. Dépendances CDN
 
 Tailwind, Google Fonts (Merriweather / Montserrat / Nunito), Font Awesome,
 Chart.js. `carnet.js` est un simple `<script src>` local : tout fonctionne
@@ -232,7 +211,7 @@ aussi en `file://` (les `fetch` d'articles retombent alors sur GitHub Pages).
 
 ---
 
-## 9. Points d'attention
+## 8. Points d'attention
 
 - Ne jamais couper une unité de dictée au milieu d'un groupe indissociable.
 - L'article reste flouté tant que la dictée n'est pas terminée.

@@ -302,8 +302,6 @@
 </main>
 
 <script src="carnet.js"></script>
-<!-- Aperçu local : articles pas encore poussés (voir make-local.py) -->
-<script src="articles-local.js" onerror="window.ACAD2_LOCAL=null"></script>
 <script>
 const home = {
 
@@ -313,14 +311,6 @@ const home = {
     get vocab()    { return JSON.parse(localStorage.getItem('acad_user_vocab') || '[]'); },
     get readIds()  { return new Set(JSON.parse(localStorage.getItem('acad2_read_ids') || '[]')); },
     get oral()     { try { return JSON.parse(localStorage.getItem('acad2_oral') || '[]'); } catch { return []; } },
-
-    // Articles embarqués dans articles-local.js : ils n'existent pas encore
-    // sur GitHub Pages, mais doivent apparaître quand on travaille en local.
-    get localArticles() {
-        const l = window.ACAD2_LOCAL;
-        return (l && Array.isArray(l.articles) ? l.articles : [])
-            .filter(a => a && a.id && a.title);
-    },
 
     // ════════════════════════════════════════════════════════════
     //  INIT
@@ -379,31 +369,12 @@ const home = {
     //  CATALOG + TIMELINE + ARTICLES
     // ════════════════════════════════════════════════════════════
     async loadCatalog() {
-        const local = this.localArticles;
-        this._localIds = new Set(local.map(a => a.id));
-
-        // En file://, le navigateur refuse de lire le catalogue du disque :
-        // on retombe sur GitHub Pages, puis on ajoute les articles locaux.
         const base = location.protocol === 'file:'
             ? 'https://clement-torti.github.io/academie2/'
             : '';
-        let remote = [];
-        try {
-            const res = await fetch(`${base}catalog.json`);
-            if (!res.ok) throw new Error('HTTP ' + res.status);
-            remote = await res.json();
-        } catch (e) {
-            if (!local.length) throw e;   // rien à afficher du tout
-            console.warn('catalogue distant indisponible, aperçu local seul', e);
-        }
-
-        return [
-            ...local.map(a => ({
-                id: a.id, title: a.title, date: a.date,
-                image: a.image?.url || '', category: a.category
-            })),
-            ...remote.filter(c => !this._localIds.has(c.id))
-        ];
+        const res = await fetch(`${base}catalog.json`);
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        return await res.json();
     },
 
     renderTimeline() {
@@ -528,7 +499,6 @@ const home = {
     _articleCard(a) {
         const d = new Date(a.date + 'T00:00:00');
         const dateStr = d.toLocaleDateString('fr-FR', { day:'numeric', month:'long', year:'numeric' });
-        const isLocal = this._localIds?.has(a.id);
         return `
             <a href="article.html?id=${this._esc(a.id)}"
                class="article-card block bg-white rounded-2xl overflow-hidden border border-teal"
@@ -542,10 +512,6 @@ const home = {
                 <span class="absolute top-3 left-3 text-[9px] font-bold uppercase tracking-widest
                              text-white px-2 py-1 rounded-full"
                       style="background:#4ECDC4;">${this._esc(a.category || '')}</span>
-                ${isLocal ? `
-                <span class="absolute top-3 right-3 text-[9px] font-bold uppercase tracking-widest
-                             text-white px-2 py-1 rounded-full" title="Pas encore poussé sur GitHub"
-                      style="background:#ED2939;"><i class="fa-solid fa-flask mr-1"></i>local</span>` : ''}
               </div>
               <div class="p-4">
                 <h3 class="font-bold text-frBlue text-sm leading-snug mb-1 line-clamp-2">${this._esc(a.title)}</h3>

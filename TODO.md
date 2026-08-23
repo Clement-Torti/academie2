@@ -70,17 +70,7 @@
 
 ---
 
-### Aperçu local (temporaire)
-- [x] `make-local.py` : embarque un article non poussé dans `articles-local.js`
-- [x] index.html : articles locaux en tête du catalogue, badge « local »
-- [x] index.html : liste utilisable même si GitHub Pages est injoignable
-- [x] article.html / oral.html : aperçu local servi avant le réseau
-
----
-
 ## Pendant / améliorations futures
-- [ ] Après avoir poussé l'article de la rentrée : `python3 make-local.py`
-      (et supprimer `make-local.py` / `articles-local.js` si le besoin disparaît)
 - [ ] `translation.html` n'est plus dans le parcours : à supprimer ou à rebrancher
 - [ ] Les 72 articles existants restent en B1 et sans texte de dictée dédié
       (le repli automatique s'en charge) — à régénérer petit à petit

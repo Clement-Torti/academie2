@@ -404,8 +404,6 @@
 </div>
 </main>
 
-<!-- Aperçu local : articles pas encore poussés (voir make-local.py) -->
-<script src="articles-local.js" onerror="window.ACAD2_LOCAL=null"></script>
 <script src="carnet.js"></script>
 <script>
 const oral = {
@@ -480,22 +478,16 @@ const oral = {
         if (!id) return;
         this.articleId = id;
 
-        // Aperçu local d'abord (seul moyen de lire un article en file://)
-        const local = (window.ACAD2_LOCAL?.articles || []).find(a => a && a.id === id);
-        if (local) {
-            this.articleData = local;
-        } else {
-            const base = location.protocol === 'file:'
-                ? 'https://clement-torti.github.io/academie2/'
-                : '';
-            try {
-                const res = await fetch(`${base}articles/${id}.json`);
-                if (!res.ok) throw new Error('HTTP ' + res.status);
-                this.articleData = await res.json();
-            } catch (e) {
-                console.warn('article introuvable', e);
-                return;
-            }
+        const base = location.protocol === 'file:'
+            ? 'https://clement-torti.github.io/academie2/'
+            : '';
+        try {
+            const res = await fetch(`${base}articles/${id}.json`);
+            if (!res.ok) throw new Error('HTTP ' + res.status);
+            this.articleData = await res.json();
+        } catch (e) {
+            console.warn('article introuvable', e);
+            return;
         }
 
         const d = this.articleData;

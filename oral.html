@@ -6,7 +6,7 @@
     <title>Expression orale — L'Académie 2</title>
     <link rel="icon" type="image/x-icon" href="../academie/academie.png">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Montserrat:wght@400;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
@@ -14,7 +14,7 @@
         tailwind.config = {
             theme: {
                 extend: {
-                    fontFamily: { sans:['Montserrat','sans-serif'], serif:['Merriweather','serif'] },
+                    fontFamily: { sans:['Montserrat','sans-serif'], serif:['Merriweather','serif'], chat:['Nunito','sans-serif'] },
                     colors: {
                         frBlue:  '#002654',
                         frRed:   '#ED2939',
@@ -31,7 +31,7 @@
 
     <style>
         body { overscroll-behavior-y: none; -webkit-tap-highlight-color: transparent; font-family:'Montserrat',sans-serif; }
-        input, textarea { font-size: 16px !important; }
+        input, textarea, select { font-size: 16px !important; }
 
         .stat-card { background:white; border-radius:1rem; padding:1rem; box-shadow:0 2px 8px rgba(0,0,0,.07); border:1px solid #f1f1f1; }
 
@@ -47,6 +47,10 @@
         .chrono-btn:disabled { opacity:.35; }
         @keyframes chronoPulse { 0%,100%{opacity:1} 50%{opacity:.45} }
         .chrono-running .chrono-dot { animation: chronoPulse 1.2s infinite; }
+
+        .goal-bar { height:5px; border-radius:999px; background:rgba(255,255,255,.15); overflow:hidden; }
+        .goal-bar > i { display:block; height:100%; width:0%; border-radius:999px;
+                        background:linear-gradient(90deg,#4ECDC4,#D4AF37); transition:width .4s ease; }
 
         /* Sliders */
         input[type=range].lvl {
@@ -67,6 +71,74 @@
 
         @keyframes slideIn { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:translateY(0); } }
         .animate-slide-in { animation: slideIn .3s ease-out forwards; }
+
+        /* ── Sujets ─────────────────────────────────────── */
+        .topic-card {
+            text-align:left; width:100%;
+            background:white; border:1.5px solid #e9edf2; border-radius:16px;
+            padding:14px 16px; transition:border-color .15s, box-shadow .15s, transform .12s;
+        }
+        .topic-card:active { transform:scale(.99); }
+        .topic-card.sel { border-color:#002654; box-shadow:0 0 0 4px rgba(0,38,84,.08); }
+        .topic-title { font-size:13.5px; font-weight:800; color:#002654; }
+        .topic-prompt { font-family:'Nunito',sans-serif; font-size:13px; color:#4b5563; line-height:1.6; margin-top:3px; }
+        .relance {
+            display:inline-block; font-family:'Nunito',sans-serif; font-size:12.5px;
+            background:#F3F6F9; color:#374151; border:1px solid #e5e9ee;
+            border-radius:999px; padding:5px 11px; margin:3px 3px 0 0; cursor:pointer;
+            transition:background .15s, color .15s, opacity .15s;
+        }
+        .relance.used { background:#002654; color:#fff; border-color:#002654; opacity:.55; text-decoration:line-through; }
+
+        .vocab-chip {
+            display:inline-block; font-family:'Nunito',sans-serif; font-size:12.5px; font-weight:700;
+            background:#F0FDFA; color:#0f766e; border:1px solid #99E6DF;
+            border-radius:999px; padding:4px 10px; margin:3px 3px 0 0; cursor:pointer;
+            transition:opacity .15s;
+        }
+        .vocab-chip.used { opacity:.4; text-decoration:line-through; }
+
+        /* ── Notation des erreurs ───────────────────────── */
+        .err-input {
+            width:100%; background:#fff; border:1.5px solid #e5e7eb; border-radius:12px;
+            padding:11px 13px; font-family:'Nunito',sans-serif; font-size:15px; color:#1f2937;
+            outline:none; transition:border-color .15s, box-shadow .15s;
+        }
+        .err-input:focus { border-color:#FF6B6B; box-shadow:0 0 0 4px rgba(255,107,107,.12); }
+        .cat-chip {
+            font-family:'Montserrat',sans-serif; font-size:9.5px; font-weight:800;
+            text-transform:uppercase; letter-spacing:.07em;
+            padding:5px 9px; border-radius:999px; cursor:pointer;
+            border:1.5px solid transparent; transition:transform .1s;
+        }
+        .cat-chip:active { transform:scale(.94); }
+        .cat-chip.sel { border-color:#002654; }
+        .noted-row {
+            display:flex; align-items:flex-start; gap:9px;
+            padding:9px 0; border-top:1px solid #f1f3f5;
+        }
+        .noted-time { font-family:ui-monospace,Menlo,monospace; font-size:10.5px; color:#9ca3af; padding-top:3px; flex-shrink:0; }
+        .noted-txt { font-family:'Nunito',sans-serif; font-size:14px; color:#374151; line-height:1.5; min-width:0; flex:1; }
+        .noted-txt del { color:#b91c1c; text-decoration:line-through; }
+        .noted-txt ins { color:#0f766e; text-decoration:none; font-weight:800; }
+        .rev-card { background:#fff; border:1px solid #eef1f4; border-radius:14px; padding:14px; }
+        .rev-label { font-size:9.5px; font-weight:800; text-transform:uppercase; letter-spacing:.1em; color:#9ca3af; }
+        .rev-select {
+            width:100%; background:#fff; border:1.5px solid #e5e7eb; border-radius:10px;
+            padding:9px 11px; font-family:'Montserrat',sans-serif; font-size:12px; font-weight:700;
+            color:#1f2937; outline:none;
+        }
+        .o-btn {
+            display:inline-flex; align-items:center; justify-content:center; gap:8px;
+            background:#FF6B6B; color:#fff; font-family:'Montserrat',sans-serif;
+            font-weight:800; font-size:12.5px; border:none; border-radius:14px;
+            padding:12px 20px; cursor:pointer; transition:transform .12s, opacity .12s;
+        }
+        .o-btn:active:not(:disabled) { transform:scale(.96); }
+        .o-btn:disabled { background:#d1d5db; cursor:not-allowed; }
+        .o-btn-ghost { background:#fff; color:#002654; border:1.5px solid #e5e7eb; }
+        .o-btn-blue { background:#002654; }
+        .o-btn-sm { padding:8px 13px; font-size:11px; border-radius:10px; }
     </style>
 </head>
 
@@ -86,9 +158,15 @@
                 <i class="fa-solid fa-microphone-lines text-gold"></i> Expression orale
             </h1>
         </div>
-        <div class="flex items-center gap-1.5 bg-white/10 px-3 py-1 rounded-full border border-white/10">
-            <i class="fa-solid fa-chart-simple text-teal text-xs"></i>
-            <span id="nav-count" class="text-xs font-bold font-mono">0</span>
+        <div class="flex items-center gap-2">
+            <a href="carnet.html" title="Carnet d'erreurs"
+               class="bg-white/10 active:bg-white/20 text-white w-9 h-9 rounded-lg flex items-center justify-center transition">
+                <i class="fa-solid fa-book-bookmark text-gold text-sm"></i>
+            </a>
+            <div class="flex items-center gap-1.5 bg-white/10 px-3 py-1 rounded-full border border-white/10">
+                <i class="fa-solid fa-chart-simple text-teal text-xs"></i>
+                <span id="nav-count" class="text-xs font-bold font-mono">0</span>
+            </div>
         </div>
     </div>
     <div class="h-1 w-full flex">
@@ -102,7 +180,25 @@
      CONTENU
 ═══════════════════════════════════════════════════════════════ -->
 <main class="flex-1 overflow-y-auto bg-frCream">
-<div class="max-w-4xl mx-auto px-4 py-6 flex flex-col gap-8 pb-16">
+<div class="max-w-4xl mx-auto px-4 py-6 flex flex-col gap-8 pb-24">
+
+    <!-- ── SUJETS DE L'ARTICLE ──────────────────────────────── -->
+    <section id="topics-section" class="hidden">
+        <div class="flex items-center justify-between mb-4 gap-3">
+            <h2 class="text-xs font-bold uppercase tracking-widest text-frBlue">
+                <i class="fa-solid fa-list-check mr-1 text-gold"></i> Choisis un sujet
+            </h2>
+            <a id="topics-article-link" href="#"
+               class="text-[10px] font-bold uppercase tracking-wider text-gray-400 hover:text-frBlue transition">
+                <i class="fa-solid fa-newspaper mr-1"></i> <span id="topics-article-title">l'article</span>
+            </a>
+        </div>
+        <p class="text-[11px] text-gray-400 mb-4">
+            Objectif : tenir <strong class="text-frBlue">plus de 20 minutes</strong>.
+            Les relances sont là pour repartir quand la conversation retombe.
+        </p>
+        <div id="topics-list" class="flex flex-col gap-3"></div>
+    </section>
 
     <!-- ── SESSION ──────────────────────────────────────────── -->
     <section>
@@ -120,12 +216,18 @@
             </label>
 
             <!-- Chrono -->
-            <div id="chrono-box" class="rounded-2xl bg-frBlue text-white py-6 px-4 flex flex-col items-center gap-1">
+            <div id="chrono-box" class="rounded-2xl bg-frBlue text-white py-6 px-5 flex flex-col items-center gap-1">
                 <div class="flex items-center gap-2">
                     <span class="chrono-dot w-2 h-2 rounded-full bg-teal" id="chrono-dot" style="opacity:.3;"></span>
                     <span id="chrono-state" class="text-[10px] uppercase tracking-widest font-bold text-white/60">Prêt</span>
                 </div>
                 <div id="chrono-display" class="chrono-display text-5xl sm:text-6xl font-bold">00:00</div>
+                <div class="w-full mt-3">
+                    <div class="goal-bar"><i id="goal-fill"></i></div>
+                    <p id="goal-label" class="text-[10px] font-bold uppercase tracking-widest text-white/45 mt-2 text-center">
+                        Objectif 20 minutes
+                    </p>
+                </div>
             </div>
 
             <!-- Contrôles -->
@@ -140,13 +242,48 @@
                     <i class="fa-solid fa-flag-checkered"></i> Terminer
                 </button>
             </div>
+
+            <!-- Aide-mémoire pendant la conversation -->
+            <div id="live-panel" class="hidden flex flex-col gap-4 pt-1">
+                <div id="live-topic" class="rounded-xl px-4 py-3.5" style="background:#F7FAFC; border:1px solid #eef2f6;"></div>
+                <div id="live-vocab" class="hidden rounded-xl px-4 py-3.5" style="background:#F0FDFA; border:1px solid #cdefeb;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── NOTATION DES ERREURS (en direct) ─────────────────── -->
+    <section id="notes-section" class="hidden">
+        <div class="flex items-center justify-between mb-4 gap-3">
+            <h2 class="text-xs font-bold uppercase tracking-widest text-frBlue">
+                <i class="fa-solid fa-pen-to-square mr-1 text-coral"></i> Erreurs notées
+            </h2>
+            <span id="notes-count" class="text-xs text-gray-400">0</span>
+        </div>
+        <p class="text-[11px] text-gray-400 mb-4">
+            Note au fil de l'eau, sans t'arrêter de parler avec elle : tu classeras à la fin.
+            <strong>Entrée</strong> pour ajouter.
+        </p>
+
+        <div class="bg-white rounded-2xl shadow-card border border-gray-100 p-5 flex flex-col gap-3">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                <input type="text" id="note-wrong" class="err-input" placeholder="Ce qu'elle a dit…">
+                <input type="text" id="note-right" class="err-input" placeholder="Ce qu'il fallait dire (optionnel)">
+            </div>
+
+            <div id="cat-chips" class="flex flex-wrap gap-1.5"></div>
+
+            <button class="o-btn w-full" onclick="oral.addNote()">
+                <i class="fa-solid fa-plus"></i> Ajouter l'erreur
+            </button>
+
+            <div id="noted-list" class="mt-1"></div>
         </div>
     </section>
 
     <!-- ── ÉVALUATION ───────────────────────────────────────── -->
     <section id="eval-section" class="hidden animate-slide-in">
         <h2 class="text-xs font-bold uppercase tracking-widest text-frBlue mb-4">
-            <i class="fa-solid fa-star-half-stroke mr-1 text-gold"></i> Évaluation
+            <i class="fa-solid fa-star-half-stroke mr-1 text-gold"></i> Bilan de la session
         </h2>
 
         <div class="bg-white rounded-2xl shadow-card border border-gray-100 p-5 flex flex-col gap-6">
@@ -156,10 +293,25 @@
                     <span class="text-[10px] uppercase tracking-wider text-gray-400 font-bold">Durée</span>
                     <span id="eval-duration" class="text-lg font-bold text-frBlue chrono-display">00:00</span>
                 </div>
+                <div class="flex flex-col items-center">
+                    <span class="text-[10px] uppercase tracking-wider text-gray-400 font-bold">Erreurs</span>
+                    <span id="eval-errors" class="text-lg font-bold text-coral">0</span>
+                </div>
                 <div class="flex flex-col items-end">
                     <span class="text-[10px] uppercase tracking-wider text-gray-400 font-bold">Score</span>
                     <span id="eval-score" class="text-lg font-bold text-gold">9 / 12</span>
                 </div>
+            </div>
+
+            <!-- Revue des erreurs -->
+            <div>
+                <p class="text-[11px] font-bold uppercase tracking-widest text-frBlue mb-1">
+                    <i class="fa-solid fa-list-ul mr-1 text-coral"></i> Revue des erreurs
+                </p>
+                <p class="text-[11px] text-gray-400 mb-3 leading-relaxed">
+                    Repassez-les ensemble : corrige, classe, et rattache chaque erreur à un point du carnet.
+                </p>
+                <div id="review-list" class="flex flex-col gap-3"></div>
             </div>
 
             <div id="sliders" class="flex flex-col gap-6"></div>
@@ -167,13 +319,26 @@
             <div class="flex flex-col gap-2">
                 <button onclick="oral.save()"
                         class="w-full bg-frBlue text-white font-bold py-3.5 rounded-xl text-sm transition hover:bg-blue-900 active:translate-y-0.5">
-                    <i class="fa-solid fa-floppy-disk mr-1"></i> Enregistrer la session
+                    <i class="fa-solid fa-floppy-disk mr-1"></i> Enregistrer la session et le carnet
                 </button>
                 <button onclick="oral.cancel()"
                         class="w-full text-gray-400 hover:text-gray-600 font-bold py-2 rounded-xl text-xs transition">
                     Annuler
                 </button>
             </div>
+        </div>
+    </section>
+
+    <!-- ── CARNET : CHANGEMENTS ─────────────────────────────── -->
+    <section id="carnet-section" class="hidden animate-slide-in">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-frBlue mb-4">
+            <i class="fa-solid fa-book-bookmark mr-1 text-gold"></i> Ton carnet
+        </h2>
+        <div class="bg-white rounded-2xl shadow-card border border-gray-100 p-5">
+            <div id="carnet-changelog"></div>
+            <button onclick="oral.newSession()" class="o-btn o-btn-blue w-full mt-5">
+                <i class="fa-solid fa-rotate-right"></i> Nouvelle session
+            </button>
         </div>
     </section>
 
@@ -222,6 +387,7 @@
                             <th class="text-left  px-4 py-3">Date</th>
                             <th class="text-left  px-4 py-3">Sujet</th>
                             <th class="text-center px-3 py-3">Durée</th>
+                            <th class="text-center px-2 py-3" title="Erreurs notées">Err.</th>
                             <th class="text-center px-2 py-3" title="Attitude">Att.</th>
                             <th class="text-center px-2 py-3" title="Résilience">Rés.</th>
                             <th class="text-center px-2 py-3" title="Fluidité">Flu.</th>
@@ -238,10 +404,14 @@
 </div>
 </main>
 
+<!-- Aperçu local : articles pas encore poussés (voir make-local.py) -->
+<script src="articles-local.js" onerror="window.ACAD2_LOCAL=null"></script>
+<script src="carnet.js"></script>
 <script>
 const oral = {
 
     STORE: 'acad2_oral',
+    GOAL_MS: 20 * 60 * 1000,
 
     CRITERIA: [
         {
@@ -266,11 +436,25 @@ const oral = {
 
     LEVELS: ['Insuffisant', 'En progrès', 'Bien', 'Excellent'],
 
+    // Catégories mises en avant pendant la conversation : il faut pouvoir
+    // classer d'un seul geste, le reste se règle à la revue.
+    QUICK_CATS: ['prononciation','conjugaison','genre','preposition','vocabulaire',
+                 'fauxami','syntaxe','accord','fluidite','autre'],
+
     // Chrono state
     elapsedMs: 0,
     startedAt: null,
     ticker:    null,
     chart:     null,
+
+    // Session courante
+    articleId: null,
+    articleData: null,
+    topics: [],
+    topicIdx: -1,
+    notes: [],
+    quickCat: 'autre',
+    log: null,
 
     get sessions() {
         try { return JSON.parse(localStorage.getItem(this.STORE) || '[]'); }
@@ -282,9 +466,162 @@ const oral = {
     //  INIT
     // ════════════════════════════════════════════════════════════
     init() {
+        Carnet.injectStyles();
         this.renderSliders();
+        this.renderCatChips();
         this.renderChart();
         this.renderHistory();
+        this.renderNoted();
+        this.loadArticle();
+    },
+
+    async loadArticle() {
+        const id = new URLSearchParams(location.search).get('id');
+        if (!id) return;
+        this.articleId = id;
+
+        // Aperçu local d'abord (seul moyen de lire un article en file://)
+        const local = (window.ACAD2_LOCAL?.articles || []).find(a => a && a.id === id);
+        if (local) {
+            this.articleData = local;
+        } else {
+            const base = location.protocol === 'file:'
+                ? 'https://clement-torti.github.io/academie2/'
+                : '';
+            try {
+                const res = await fetch(`${base}articles/${id}.json`);
+                if (!res.ok) throw new Error('HTTP ' + res.status);
+                this.articleData = await res.json();
+            } catch (e) {
+                console.warn('article introuvable', e);
+                return;
+            }
+        }
+
+        const d = this.articleData;
+        this.topics = this._topics(d);
+
+        document.getElementById('topics-section').classList.remove('hidden');
+        document.getElementById('topics-article-title').textContent = d.title;
+        document.getElementById('topics-article-link').href = `article.html?id=${encodeURIComponent(id)}`;
+        this.renderTopics();
+    },
+
+    // Sujets fournis par l'article, sinon repli générique construit
+    // sur son titre : toujours de quoi tenir une conversation longue.
+    _topics(d) {
+        const given = d.oralTopics || d.oral || d.speakingTopics;
+        if (Array.isArray(given) && given.length) {
+            return given.map(t => ({
+                title:   String(t.title || t.sujet || 'Sujet').trim(),
+                prompt:  String(t.prompt || t.question || '').trim(),
+                relances: (t.relances || t.followUps || t.questions || [])
+                    .map(r => String(r).trim()).filter(Boolean)
+            })).filter(t => t.title || t.prompt);
+        }
+
+        const t = d.title || 'ce sujet';
+        return [
+            {
+                title: "Raconte-moi l'article",
+                prompt: `Explique-moi « ${t} » comme si je n'avais rien lu.`,
+                relances: ["Qu'est-ce qui t'a le plus surprise ?",
+                           "Il y avait des chiffres : tu t'en souviens ?",
+                           "Résume-moi ça en trois phrases.",
+                           "Et le titre, tu l'aurais écrit comment, toi ?"]
+            },
+            {
+                title: "Ton avis",
+                prompt: "Tu es d'accord avec ce que dit l'article ? Pourquoi ?",
+                relances: ["Qu'est-ce que tu aurais fait à leur place ?",
+                           "Donne-moi un argument contre ton propre avis.",
+                           "Qui a raison, selon toi, et qui a tort ?",
+                           "Ça te met en colère ou ça te laisse indifférente ?"]
+            },
+            {
+                title: "Ton expérience",
+                prompt: "Ça te rappelle quelque chose que tu as vécu ? Raconte-moi.",
+                relances: ["C'était quand, exactement ?",
+                           "Qui était avec toi ?",
+                           "Tu recommencerais ?",
+                           "Et ta famille, elle en pense quoi ?"]
+            },
+            {
+                title: "France / République dominicaine",
+                prompt: "Comment ça se passe en République dominicaine sur ce sujet ?",
+                relances: ["Qu'est-ce qui change le plus entre les deux pays ?",
+                           "Qu'est-ce que les Français ne comprendraient pas ?",
+                           "Qu'est-ce que tu préfères, là-bas ou ici ?",
+                           "Explique-le-moi comme à quelqu'un qui n'y est jamais allé."]
+            },
+            {
+                title: "Et toi, à Strasbourg ?",
+                prompt: "Ce sujet peut te concerner quand tu vivras en France ?",
+                relances: ["Tu ferais quoi, concrètement ?",
+                           "À qui tu demanderais de l'aide ?",
+                           "Qu'est-ce que tu dirais dans un entretien là-dessus ?",
+                           "Ça te donne envie ou ça t'inquiète un peu ?"]
+            }
+        ];
+    },
+
+    renderTopics() {
+        const box = document.getElementById('topics-list');
+        box.innerHTML = this.topics.map((t, i) => `
+            <button class="topic-card ${this.topicIdx === i ? 'sel' : ''}" onclick="oral.pickTopic(${i})">
+                <div class="flex items-start justify-between gap-3">
+                    <div class="min-w-0">
+                        <p class="topic-title">${this._nb(t.title)}</p>
+                        ${t.prompt ? `<p class="topic-prompt">${this._nb(t.prompt)}</p>` : ''}
+                    </div>
+                    <span class="shrink-0 text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full"
+                          style="background:${this.topicIdx === i ? '#002654' : '#F3F6F9'};
+                                 color:${this.topicIdx === i ? '#fff' : '#9ca3af'};">
+                        ${this.topicIdx === i ? 'choisi' : `${t.relances.length} relances`}
+                    </span>
+                </div>
+            </button>`).join('');
+    },
+
+    pickTopic(i) {
+        this.topicIdx = i;
+        const t = this.topics[i];
+        document.getElementById('subject-input').value = t.title;
+        this.renderTopics();
+        this.renderLiveTopic();
+    },
+
+    renderLiveTopic() {
+        const box = document.getElementById('live-topic');
+        const t = this.topics[this.topicIdx];
+        if (!t) {
+            box.innerHTML = `<p class="topic-prompt">Sujet libre. Relance-la dès qu'elle s'arrête :
+                             « pourquoi ? », « raconte-moi », « et toi ? ».</p>`;
+            return;
+        }
+        box.innerHTML = `
+            <p class="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-1">
+                <i class="fa-solid fa-comment-dots mr-1"></i> ${this._nb(t.title)}
+            </p>
+            ${t.prompt ? `<p class="topic-prompt mb-2">${this._nb(t.prompt)}</p>` : ''}
+            <div>${t.relances.map(r =>
+                `<span class="relance" onclick="this.classList.toggle('used')">${this._nb(r)}</span>`
+            ).join('')}</div>`;
+    },
+
+    renderLiveVocab() {
+        const box = document.getElementById('live-vocab');
+        const vocab = this.articleData?.vocabulary || [];
+        if (!vocab.length) { box.classList.add('hidden'); return; }
+        box.classList.remove('hidden');
+        box.innerHTML = `
+            <p class="text-[10px] font-bold uppercase tracking-widest mb-1" style="color:#0f766e;">
+                <i class="fa-solid fa-comment mr-1"></i> Mots à lui faire placer
+            </p>
+            <div>${vocab.map(v =>
+                `<span class="vocab-chip" onclick="this.classList.toggle('used')"
+                       title="${Carnet.esc(v.es)}">${Carnet.esc(v.fr)}</span>`
+            ).join('')}</div>`;
     },
 
     // ════════════════════════════════════════════════════════════
@@ -306,7 +643,19 @@ const oral = {
     },
 
     tick() {
-        document.getElementById('chrono-display').textContent = this.fmt(this.currentMs());
+        const ms = this.currentMs();
+        document.getElementById('chrono-display').textContent = this.fmt(ms);
+
+        const pct = Math.min(100, (ms / this.GOAL_MS) * 100);
+        document.getElementById('goal-fill').style.width = pct + '%';
+
+        const label = document.getElementById('goal-label');
+        if (ms >= this.GOAL_MS) {
+            label.innerHTML = `<span style="color:#4ECDC4;">
+                <i class="fa-solid fa-circle-check mr-1"></i>Objectif atteint · ${this.fmt(ms - this.GOAL_MS)} de plus</span>`;
+        } else {
+            label.textContent = `Objectif 20 minutes · reste ${this.fmt(this.GOAL_MS - ms)}`;
+        }
     },
 
     play() {
@@ -315,6 +664,10 @@ const oral = {
         this.ticker    = setInterval(() => this.tick(), 200);
         this.tick();
         this.setChronoUI('running');
+        document.getElementById('live-panel').classList.remove('hidden');
+        document.getElementById('notes-section').classList.remove('hidden');
+        this.renderLiveTopic();
+        this.renderLiveVocab();
     },
 
     pause() {
@@ -333,12 +686,14 @@ const oral = {
         this.setChronoUI('finished');
 
         document.getElementById('eval-duration').textContent = this.fmt(this.currentMs());
+        document.getElementById('eval-errors').textContent   = this.notes.length;
         this.CRITERIA.forEach(c => {
             const input = document.getElementById(`slider-${c.key}`);
             input.value = 3;
             this.onSlide(c.key);
         });
         this.updateScore();
+        this.renderReview();
 
         const sec = document.getElementById('eval-section');
         sec.classList.remove('hidden');
@@ -350,10 +705,23 @@ const oral = {
         this.ticker    = null;
         this.startedAt = null;
         this.elapsedMs = 0;
+        this.notes     = [];
+        this.log       = null;
         document.getElementById('chrono-display').textContent = '00:00';
-        document.getElementById('subject-input').value = '';
+        document.getElementById('goal-fill').style.width = '0%';
+        document.getElementById('goal-label').textContent = 'Objectif 20 minutes';
+        document.getElementById('subject-input').value = this.topics[this.topicIdx]?.title || '';
         document.getElementById('eval-section').classList.add('hidden');
+        document.getElementById('notes-section').classList.add('hidden');
+        document.getElementById('live-panel').classList.add('hidden');
+        this.renderNoted();
         this.setChronoUI('idle');
+    },
+
+    newSession() {
+        document.getElementById('carnet-section').classList.add('hidden');
+        this.reset();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     },
 
     setChronoUI(state) {
@@ -387,6 +755,178 @@ const oral = {
     },
 
     // ════════════════════════════════════════════════════════════
+    //  NOTATION EN DIRECT
+    // ════════════════════════════════════════════════════════════
+    renderCatChips() {
+        document.getElementById('cat-chips').innerHTML = this.QUICK_CATS.map(k => {
+            const c = Carnet.cat(k);
+            return `<span class="cat-chip ${this.quickCat === k ? 'sel' : ''}"
+                          style="background:${c.bg}; color:${c.fg};"
+                          title="${Carnet.esc(c.hint)}"
+                          onclick="oral.setQuickCat('${k}')">${Carnet.esc(c.label)}</span>`;
+        }).join('');
+    },
+
+    setQuickCat(k) {
+        this.quickCat = k;
+        this.renderCatChips();
+        document.getElementById('note-wrong').focus();
+    },
+
+    addNote() {
+        const w = document.getElementById('note-wrong');
+        const r = document.getElementById('note-right');
+        const wrong = w.value.trim(), right = r.value.trim();
+        if (!wrong && !right) { w.focus(); return; }
+
+        this.notes.push({
+            wrong, right,
+            category: this.quickCat,
+            label: '',
+            pointId: null,
+            atMs: this.currentMs()
+        });
+        w.value = ''; r.value = '';
+        w.focus();
+        this.renderNoted();
+    },
+
+    dropNote(i) {
+        this.notes.splice(i, 1);
+        this.renderNoted();
+        if (!document.getElementById('eval-section').classList.contains('hidden')) this.renderReview();
+    },
+
+    renderNoted() {
+        const box = document.getElementById('noted-list');
+        document.getElementById('notes-count').textContent =
+            `${this.notes.length} erreur${this.notes.length > 1 ? 's' : ''}`;
+
+        if (!this.notes.length) {
+            box.innerHTML = `<p class="text-[12px] text-gray-400 pt-2">Rien de noté pour l'instant.</p>`;
+            return;
+        }
+
+        box.innerHTML = this.notes.map((n, i) => {
+            const c = Carnet.cat(n.category);
+            return `
+                <div class="noted-row">
+                    <span class="noted-time">${this.fmt(n.atMs)}</span>
+                    <span class="noted-txt">
+                        ${n.wrong ? `<del>${Carnet.esc(n.wrong)}</del>` : ''}
+                        ${n.wrong && n.right ? ' → ' : ''}
+                        ${n.right ? `<ins>${Carnet.esc(n.right)}</ins>` : ''}
+                    </span>
+                    <span class="cat-chip" style="background:${c.bg}; color:${c.fg};">${Carnet.esc(c.label)}</span>
+                    <button onclick="oral.dropNote(${i})" class="text-gray-300 hover:text-red-500 transition shrink-0">
+                        <i class="fa-solid fa-xmark text-xs"></i>
+                    </button>
+                </div>`;
+        }).join('');
+    },
+
+    // ════════════════════════════════════════════════════════════
+    //  REVUE DES ERREURS
+    // ════════════════════════════════════════════════════════════
+    renderReview() {
+        const box = document.getElementById('review-list');
+        if (!this.notes.length) {
+            box.innerHTML = `
+                <p class="text-[12.5px] text-gray-400 leading-relaxed"
+                   style="font-family:'Nunito',sans-serif;">
+                    Aucune erreur notée. Si c'était vraiment une session sans faute, tant mieux :
+                    les points de son carnet non revus avanceront quand même vers « maîtrisé ».
+                </p>`;
+            return;
+        }
+
+        const cats = Carnet.catsFor('oral');
+        box.innerHTML = this.notes.map((n, i) => `
+            <div class="rev-card">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="rev-label">Erreur ${i + 1} · ${this.fmt(n.atMs)}</span>
+                    <button onclick="oral.dropNote(${i})" class="text-gray-300 hover:text-red-500 transition">
+                        <i class="fa-solid fa-trash-can text-xs"></i>
+                    </button>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-2">
+                    <input class="err-input" placeholder="Ce qu'elle a dit"
+                           value="${Carnet.esc(n.wrong)}"
+                           oninput="oral.editNote(${i}, 'wrong', this.value)">
+                    <input class="err-input" placeholder="Ce qu'il fallait dire"
+                           value="${Carnet.esc(n.right)}"
+                           oninput="oral.editNote(${i}, 'right', this.value)">
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                    <label class="flex flex-col gap-1">
+                        <span class="rev-label">Catégorie</span>
+                        <select class="rev-select" onchange="oral.setNoteCat(${i}, this.value)">
+                            ${cats.map(c => `<option value="${c.key}" ${c.key === n.category ? 'selected' : ''}>
+                                ${Carnet.esc(c.label)}</option>`).join('')}
+                        </select>
+                    </label>
+                    <label class="flex flex-col gap-1">
+                        <span class="rev-label">Point du carnet</span>
+                        <select class="rev-select" id="rev-point-${i}" onchange="oral.setNotePoint(${i}, this.value)">
+                            ${this._pointOptions(n)}
+                        </select>
+                    </label>
+                </div>
+
+                <div id="rev-new-${i}" class="${n.pointId ? 'hidden' : ''} mt-2">
+                    <label class="flex flex-col gap-1">
+                        <span class="rev-label">Nom du nouveau point</span>
+                        <input class="err-input" id="rev-label-${i}"
+                               placeholder="${Carnet.esc(Carnet.cat(n.category).label)} — précise en 3 à 8 mots"
+                               value="${Carnet.esc(n.label)}"
+                               oninput="oral.editNote(${i}, 'label', this.value)">
+                    </label>
+                </div>
+            </div>`).join('');
+    },
+
+    _pointOptions(n) {
+        const pts = Carnet.load().points.filter(p => p.category === n.category);
+        return `<option value="">➕ Nouveau point</option>` +
+            pts.map(p => `<option value="${p.id}" ${n.pointId === p.id ? 'selected' : ''}>
+                ${Carnet.esc(p.label)} (${p.occurrences}×)</option>`).join('');
+    },
+
+    editNote(i, field, val) {
+        if (!this.notes[i]) return;
+        this.notes[i][field] = val;
+    },
+
+    setNoteCat(i, cat) {
+        const n = this.notes[i];
+        if (!n) return;
+        n.category = cat;
+        n.pointId = null;
+        // Seule la liste des points dépend de la catégorie : on ne
+        // réaffiche que ce qu'il faut, pour ne pas perdre le focus.
+        const sel = document.getElementById(`rev-point-${i}`);
+        if (sel) sel.innerHTML = this._pointOptions(n);
+        document.getElementById(`rev-new-${i}`)?.classList.remove('hidden');
+        const lbl = document.getElementById(`rev-label-${i}`);
+        if (lbl) lbl.placeholder = `${Carnet.cat(cat).label} — précise en 3 à 8 mots`;
+        this.renderNoted();
+    },
+
+    setNotePoint(i, id) {
+        const n = this.notes[i];
+        if (!n) return;
+        n.pointId = id || null;
+        const box = document.getElementById(`rev-new-${i}`);
+        if (box) box.classList.toggle('hidden', !!id);
+        if (id) {
+            const p = Carnet.load().points.find(x => x.id === id);
+            if (p) n.label = p.label;
+        }
+    },
+
+    // ════════════════════════════════════════════════════════════
     //  SLIDERS
     // ════════════════════════════════════════════════════════════
     renderSliders() {
@@ -412,7 +952,6 @@ const oral = {
     },
 
     onSlide(key) {
-        const c   = this.CRITERIA.find(x => x.key === key);
         const val = parseInt(document.getElementById(`slider-${key}`).value, 10);
         document.getElementById(`badge-${key}`).textContent = `${val} · ${this.LEVELS[val - 1]}`;
         this.updateScore();
@@ -438,21 +977,54 @@ const oral = {
     save() {
         const scores  = this.currentScores();
         const subject = document.getElementById('subject-input').value.trim() || 'Sans sujet';
+        const durationMs = this.currentMs();
 
+        // 1. Le carnet d'erreurs
+        this.log = Carnet.record({
+            type: 'oral',
+            articleId: this.articleId,
+            errors: this.notes.map(n => ({
+                pointId:  n.pointId,
+                category: n.category,
+                label:    (n.label || '').trim() || Carnet.cat(n.category).label,
+                wrong:    n.wrong,
+                right:    n.right
+            }))
+        });
+
+        // 2. La session
         const list = this.sessions;
         list.push({
             id:         'o' + Date.now(),
             at:         new Date().toISOString(),
             subject,
-            durationMs: this.currentMs(),
+            articleId:  this.articleId,
+            durationMs,
+            goalReached: durationMs >= this.GOAL_MS,
+            errorCount: this.notes.length,
+            errors:     this.notes.map(n => ({
+                wrong: n.wrong, right: n.right, category: n.category,
+                label: n.label, atMs: n.atMs
+            })),
             ...scores,
-            total:      this.CRITERIA.reduce((a, c) => a + scores[c.key], 0)
+            total: this.CRITERIA.reduce((a, c) => a + scores[c.key], 0)
         });
         this.setSessions(list);
 
-        this.reset();
+        // 3. Le bilan du carnet
+        document.getElementById('carnet-changelog').innerHTML =
+            Carnet.renderChangelog(this.log, { title: 'Ton carnet après cette session' });
+        document.getElementById('eval-section').classList.add('hidden');
+        document.getElementById('notes-section').classList.add('hidden');
+        document.getElementById('live-panel').classList.add('hidden');
+        const sec = document.getElementById('carnet-section');
+        sec.classList.remove('hidden');
+
+        this.notes = [];
+        this.renderNoted();
         this.renderChart();
         this.renderHistory();
+        setTimeout(() => sec.scrollIntoView({ behavior:'smooth', block:'start' }), 60);
     },
 
     cancel() { this.reset(); },
@@ -515,7 +1087,9 @@ const oral = {
                         callbacks: {
                             title: (items) => {
                                 const s = sessions[items[0].dataIndex];
-                                return s ? s.subject : '';
+                                if (!s) return '';
+                                return `${s.subject} · ${this.fmt(s.durationMs || 0)}` +
+                                       (s.errorCount != null ? ` · ${s.errorCount} err.` : '');
                             },
                             label: c => c.dataset.label === 'Total /12'
                                 ? `Total : ${c.parsed.y} / 12`
@@ -545,7 +1119,7 @@ const oral = {
 
         if (!sessions.length) {
             body.innerHTML = `
-                <tr><td colspan="8" class="text-center text-xs text-gray-400 py-8">
+                <tr><td colspan="9" class="text-center text-xs text-gray-400 py-8">
                     Aucune session enregistrée.
                 </td></tr>`;
             return;
@@ -556,16 +1130,23 @@ const oral = {
             const dateStr = `${String(d.getDate()).padStart(2,'0')}/${String(d.getMonth()+1).padStart(2,'0')}/${d.getFullYear()}`;
             const timeStr = `${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}`;
             const cell = v => `<td class="text-center px-2 py-3 font-bold" style="color:${this._lvlColor(v)};">${v}</td>`;
+            const goal = s.goalReached ?? ((s.durationMs || 0) >= this.GOAL_MS);
             return `
                 <tr class="border-t border-gray-100">
                     <td class="px-4 py-3 whitespace-nowrap">
                         <div class="text-xs font-bold text-frBlue">${dateStr}</div>
                         <div class="text-[10px] text-gray-400">${timeStr}</div>
                     </td>
-                    <td class="px-4 py-3 text-xs text-gray-700 max-w-[180px] truncate" title="${this._esc(s.subject)}">
-                        ${this._esc(s.subject)}
+                    <td class="px-4 py-3 text-xs text-gray-700 max-w-[180px] truncate" title="${Carnet.esc(s.subject)}">
+                        ${Carnet.esc(s.subject)}
                     </td>
-                    <td class="text-center px-3 py-3 text-xs font-mono text-gray-500">${this.fmt(s.durationMs || 0)}</td>
+                    <td class="text-center px-3 py-3 text-xs font-mono ${goal ? 'text-teal-600 font-bold' : 'text-gray-500'}"
+                        title="${goal ? 'Objectif 20 min atteint' : 'Moins de 20 min'}">
+                        ${this.fmt(s.durationMs || 0)}${goal ? ' ✓' : ''}
+                    </td>
+                    <td class="text-center px-2 py-3 text-xs font-bold text-gray-500">
+                        ${s.errorCount != null ? s.errorCount : '—'}
+                    </td>
                     ${cell(s.attitude)}${cell(s.resilience)}${cell(s.fluidite)}
                     <td class="text-center px-3 py-3">
                         <span class="text-xs font-bold text-white px-2 py-1 rounded-full"
@@ -580,16 +1161,24 @@ const oral = {
         }).join('');
     },
 
-    _lvlColor(v)   { return ['#ef4444', '#f59e0b', '#3b82f6', '#22c55e'][(v || 1) - 1]; },
-    _totalColor(t) { return t >= 11 ? '#22c55e' : t >= 8 ? '#3b82f6' : t >= 6 ? '#f59e0b' : '#ef4444'; },
+    // Typographie française : espace insécable fine avant ? ! ; :
+    // sinon le point d'interrogation part seul à la ligne suivante.
+    _nb(str) {
+        return Carnet.esc(str).replace(/ ([?!;:»])/g, '\u202F$1').replace(/« /g, '«\u202F');
+    },
 
-    _esc(str) {
-        return String(str || '').replace(/&/g,'&amp;').replace(/</g,'&lt;')
-                                .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-    }
+    _lvlColor(v)   { return ['#ef4444', '#f59e0b', '#3b82f6', '#22c55e'][(v || 1) - 1]; },
+    _totalColor(t) { return t >= 11 ? '#22c55e' : t >= 8 ? '#3b82f6' : t >= 6 ? '#f59e0b' : '#ef4444'; }
 };
 
 oral.init();
+
+// Entrée = ajouter l'erreur : il faut pouvoir noter sans quitter le clavier.
+['note-wrong', 'note-right'].forEach(id => {
+    document.getElementById(id).addEventListener('keydown', e => {
+        if (e.key === 'Enter') { e.preventDefault(); oral.addNote(); }
+    });
+});
 
 window.addEventListener('pageshow', (event) => {
     if (event.persisted) { oral.renderChart(); oral.renderHistory(); }

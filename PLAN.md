@@ -6,7 +6,21 @@
 
 ## Vision
 
-Application web de pratique quotidienne du français (lecture + traductions orales), 100% HTML/CSS/JS, données dans `localStorage`. Inspirée visuellement de l'Académie v1 (couleurs `frBlue #002654`, `frRed #ED2939`, `frCream #F5F5DC`, `gold #D4AF37`). Thème sombre pour le lecteur.
+Application web de pratique quotidienne du français, 100 % HTML/CSS/JS, données
+dans `localStorage`. Couleurs de l'Académie v1 (`frBlue #002654`, `frRed #ED2939`,
+`frCream #F5F5DC`, `gold #D4AF37`).
+
+**La leçon est tournée vers la PRODUCTION, pas la consommation.** L'étudiante ne
+doit pas seulement lire et écouter : elle doit écrire et parler. D'où l'ordre :
+
+```
+1. ARTICLE   (lecture)   — B2, 200-250 mots. Donne le sujet et le vocabulaire.
+2. DICTÉE    (écriture)  — 15-20 min, correction par IA, mise à jour du carnet.
+3. ORAL      (parole)    — 20 min et plus avec un natif, erreurs notées en direct.
+```
+
+Le fil rouge des deux exercices de production est le **carnet d'erreurs** : c'est
+lui qui transforme une correction ponctuelle en progression visible.
 
 ---
 
@@ -14,209 +28,196 @@ Application web de pratique quotidienne du français (lecture + traductions oral
 
 ```
 academie2/
-├── index.html          ← Homepage + timeline + statistiques + config
-├── reader.html         ← Lecteur immersif type Kindle (dark)
-├── translation.html    ← Phase de traductions orales
-├── PLAN.md             ← Ce fichier
-└── (assets si besoin)
+├── index.html        ← Accueil : timeline, articles, statistiques, réglages
+├── article.html      ← Leçon : article + dictée (étapes 1 à 6)
+├── oral.html         ← Expression orale : sujets, chrono, notation, carnet
+├── carnet.html       ← Carnet d'erreurs : progression, points, sauvegarde
+├── carnet.js         ← Module partagé : carnet + relais IA (Carnet, AIRelay)
+├── translation.html  ← Ancienne phase de traductions (plus dans le parcours)
+├── make-local.py     ← [temporaire] embarque un article pas encore poussé
+├── articles-local.js ← [temporaire] généré : aperçu local en file://
+├── prompt.txt        ← Prompt de génération d'un article JSON
+├── contexte.txt      ← Fiche personnage (Rosalía) pour les contenus
+├── catalog.json      ← Index des articles
+└── articles/*.json   ← Un fichier par article
 ```
 
 ---
 
-## 1. Homepage (`index.html`)
+## 1. Accueil (`index.html`)
 
-### 1.1 Navbar
-Identique à `academie/index.html` :
-- Logo `fa-landmark` + titre "L'Académie 2"
-- Compteur de streak (flamme)
-- Bouton Paramètres (icône clé/engrenage) → ouvre la modal de config
+- Navbar : streak, **carnet**, expression orale (alerte rouge si pas faite
+  aujourd'hui), réglages
+- Timeline horizontale des jours (complété / aujourd'hui / manqué / futur)
+- Grille des articles non lus → ouvre la leçon
+- Statistiques : sessions, racha, dictées corrigées, points maîtrisés
+- Courbe : score de dictée sur 100
+- Modal réglages : clés Gemini, vocabulaire (export/import), paramètres
 
-### 1.2 Timeline horizontale
-- Ligne droite horizontale (pas verticale ni courbée), scrollable horizontalement
-- Un checkpoint/bouton circulaire par jour (Jour 1, Jour 2, …)
-- **État des checkpoints :**
-  - Complété → couleur gold/vert + icône check
-  - Aujourd'hui (prochain à faire) → couleur `frBlue`, pulsant, agrandi
-  - Futur → gris, désactivé visuellement
-- Clic sur le bouton du jour actif → démarre la pratique du jour (ouvre `reader.html`)
-- La timeline se positionne automatiquement sur le checkpoint du jour courant (scroll horizontal auto)
+---
 
-### 1.3 Bloc Statistiques
-Six widgets en grille (2×3 sur mobile, 3×2 sur desktop) :
+## 2. Leçon (`article.html`)
 
-| Widget | Donnée |
-|--------|--------|
-| Pratiques complétées | Nombre total de sessions terminées |
-| Racha de jours | Streak actuel + record |
-| Vitesse de lecture | Chart linéaire : mots/min par session |
-| Temps total de lecture | En minutes/heures |
-| Vitesse de traduction | Chart linéaire : secondes/phrase par session |
-| Phrases traduites | Nombre total |
+### 2.1 Lecture
+Hero, vocabulaire cliquable (TTS), article, réactions de lecteurs.
 
-**Charts :** utiliser Chart.js (CDN). Thème cohérent avec les couleurs du projet.
+### 2.2 Dictée — 15 à 20 minutes, correction comprise
 
-**Données stockées dans `localStorage` :**
+| Étape | Écran | Détail |
+|-------|-------|--------|
+| 0 | Présentation | mots, unités, durée, points du carnet à surveiller |
+| 1 | Première écoute | texte lu **une fois** à 0.9×, aucun texte affiché |
+| 2 | Dictée | unités de 5 à 10 mots, 0.7× (réglable), ponctuation annoncée (par défaut), répétition libre, clic pour l'unité suivante |
+| 3 | Relais IA | prompt prérempli dans Claude : texte original + sa copie + son carnet |
+| 4 | Analyse | une erreur à la fois : indice → correction → règle → statut carnet |
+| 5 | Bilan | score, diff mot à mot, **changements du carnet** |
+| 6 | Relecture | texte correct relu à 0.9×, phrase surlignée — **obligatoire** : c'est elle qui débloque l'oral |
+
+Détails d'implémentation :
+- Le texte vient de `dictation.text` (+ `dictation.units` si fourni).
+  À défaut, un extrait de l'article est choisi automatiquement : phrases
+  entières, 85-125 mots, en préférant le passage qui contient le moins de
+  chiffres et de symboles (indevinables à l'oreille).
+- Découpage automatique : coupe sur la ponctuation, sinon devant un mot qui
+  ouvre un groupe ; jamais moins de 3 ni plus de 10 mots par unité.
+- **L'article et le vocabulaire sont floutés** pendant toute la dictée.
+- Brouillon sauvegardé (`acad2_dictee_draft_{id}`) : un rechargement propose
+  de reprendre là où elle en était.
+- Le carnet est écrit dès que la correction est appliquée, avant la revue :
+  si elle s'interrompt, rien n'est perdu.
+- La journée est marquée complétée au bilan de la dictée.
+
+### 2.3 Sortie
+Bouton vers `oral.html?id={article}`, débloqué seulement quand la relecture
+finale est allée au bout (garde-fou de temps si la synthèse vocale ne rend
+jamais la main). Le lien « Voir tout mon carnet » du bilan s'ouvre dans un
+nouvel onglet : la leçon en cours n'est jamais perdue.
+
+---
+
+## 3. Expression orale (`oral.html`)
+
+Objectif affiché : **tenir plus de 20 minutes**.
+
+- **Sujets** : `oralTopics` de l'article (titre + question d'ouverture +
+  4 relances). Sans article, ou si le champ manque, cinq sujets de repli sont
+  construits à partir du titre (restitution, avis, vécu, comparaison RD/France,
+  projection à Strasbourg).
+- **Chrono** : play / pause / terminer, barre d'objectif 20 min, temps restant
+  puis dépassement.
+- **Aide-mémoire pendant la conversation** : relances cliquables (barrées quand
+  utilisées) et vocabulaire de l'article à lui faire placer.
+- **Notation en direct** (c'est le natif qui note) : « ce qu'elle a dit » +
+  « ce qu'il fallait dire » + catégorie en un clic, `Entrée` pour ajouter,
+  horodatage automatique. On classe grossièrement, on affine à la fin.
+- **Revue** : chaque erreur est corrigée, catégorisée, et rattachée à un point
+  existant du carnet ou à un nouveau point.
+- **Notes** : les trois critères d'origine (attitude, résilience, fluidité).
+- Puis changements du carnet, courbe et historique (avec durée, objectif
+  atteint, nombre d'erreurs).
+
+---
+
+## 4. Carnet d'erreurs (`carnet.js` + `carnet.html`)
+
+Le carnet ne stocke pas des erreurs isolées mais des **points** de langue
+(« accord du participe passé avec être »). Chaque erreur nourrit un point
+existant ou en crée un.
+
+- 23 catégories préfaites (non exhaustives), chacune valable à l'écrit,
+  à l'oral, ou aux deux. Une faute de prononciation ne peut donc pas être
+  « révisée » par une dictée.
+- Cycle de vie : `active` → `improving` → `mastered` après
+  `CLEAN_TARGET = 3` séances testables sans récidive. Un point réussi alors
+  qu'il était en jeu (`confirmed`) avance deux fois plus vite. Une récidive
+  ramène le point en `active` et est comptée.
+- Changelog après chaque exercice : points corrigés, nouveaux, répétés,
+  récidives — identique dans la dictée et dans l'oral.
+- `carnet.html` : compteurs, courbe (erreurs par séance vs points maîtrisés
+  cumulés), répartition par catégorie, liste filtrable, jauge de séances
+  propres, export/import/effacement.
+
+Stockage `acad2_carnet` :
 ```js
-acad2_stats: {
-  sessions: [
-    {
-      date: "2026-05-24",
-      readingWords: 320,
-      readingDurationMs: 480000,   // → 66 mots/min
-      translationSentences: 10,
-      translationTimes: [12, 8, 15, ...], // secondes par phrase
-    },
-    ...
-  ],
-  streak: 5,
-  lastCompletedDate: "2026-05-23"
+{
+  version: 1,
+  points: [{ id, category, label, es, occurrences, cleanStreak, relapses,
+             status, firstSeen, lastSeen, masteredAt,
+             examples: [{ wrong, right, note, at, source, articleId }] }],
+  sessions: [{ id, at, type, articleId, errorCount,
+               newIds, repeatedIds, masteredIds, relapseIds }]
 }
 ```
 
-### 1.4 Modal de Configuration
-Accessible depuis la navbar. Sections :
+---
 
-#### A. Vocabulaire
-- Bouton **Exporter JSON** → télécharge le vocabulaire de `acad_user_vocab` (même clé que l'Académie v1 pour compatibilité)
-- Bouton **Importer JSON** → `<input type="file">` → parse et fusionne dans `localStorage`
+## 5. Correction par IA — mode relais manuel
 
-#### B. Clés API Gemini
-- Liste des clés existantes (masquées, bouton suppression)
-- Champ pour ajouter une nouvelle clé
-- Rotation automatique en cas d'erreur 429/403 (même logique que v1)
-- Clés stockées dans `acad_gemini_keys` (compatible v1)
+Aucune clé API n'est nécessaire : `AIRelay` ouvre `claude.ai/new?q=…` avec le
+prompt prérempli (et le copie dans le presse-papiers), l'utilisatrice colle la
+réponse JSON. Garde-fous à la relecture de cette réponse :
+- le fragment fautif doit se retrouver dans son texte (sinon l'erreur est
+  écartée) — sauf pour un mot oublié, qui n'a pas de fragment ;
+- les erreurs sont réordonnées selon leur position dans son texte ;
+- le carnet est retrouvé par identifiant, sinon par libellé approchant.
 
-#### C. Paramètres de pratique
-- **Mots à lire par jour** : input numérique (défaut : 300)
-- **Phrases à générer pour les traductions** : input numérique (défaut : 10)
-- Stocké dans `acad2_config : { wordsPerDay, sentencesPerSession }`
+Le prompt de dictée contient le texte original, sa copie, et son carnet
+(identifiants inclus) ; il demande aussi les points du carnet **réussis** cette
+fois-ci (`resolved`).
 
 ---
 
-## 2. Lecteur (`reader.html`)
-
-### 2.1 Style & ambiance
-- **Thème dark immersif** : fond `#1a1a2e` ou `#0d0d1a`, texte `#e8e0d4` (ivoire chaud)
-- Police de lecture : `Merriweather` serif pour le corps, `Montserrat` pour l'UI
-- Inspiration esthétique : *Sombra y Hueso* / roman de fantasy jeune adulte
-- Pas de distractions : navbar minimaliste, marges généreuses, interlignes confortables
-
-### 2.2 Contenu du livre
-- Le contenu du livre est fourni en **Markdown hardcodé** dans un script JS (ou dans un `<script type="text/plain">`)
-- Parsing du Markdown → HTML minimal (titres, paragraphes, italiques, gras)
-- Structure interne : tableau de phrases (`sentences[]`), chaque phrase ayant un index
-
-### 2.3 Logique de chargement quotidien
-1. Charger la config `wordsPerDay` (défaut 300)
-2. Récupérer la position sauvegardée : `acad2_reader_progress.sentenceIndex`
-3. **Contexte de rappel** : afficher les 3–5 dernières phrases de la session précédente en style atténué (couleur plus sombre), non comptabilisées dans le total du jour
-4. Charger les phrases suivantes jusqu'à atteindre le nombre de mots configuré, **en s'arrêtant à la fin d'une phrase complète**
-5. **Barre de progression** du livre : `(sentencesCurrent / sentencesTotal) * 100%`, affichée en haut ou en bas de page
-6. Bouton **"Terminer la lecture"** → sauvegarde la position, enregistre les stats, redirige vers `translation.html`
-7. Bouton **"Continuer à lire"** → charge 20 phrases supplémentaires (sans recompter comme un nouveau bloc)
-
-### 2.4 Entrée de vocabulaire
-- En bas de l'écran ou en modal flottante : input `Mot français` + input `Traduction espagnole` + bouton Sauvegarder
-- Sauvegarde dans `acad_user_vocab` (compatible v1)
-- Feedback visuel sur ajout réussi
-
-### 2.5 Mesure de vitesse de lecture
-- `readingStartTime = Date.now()` au premier affichage
-- `readingEndTime = Date.now()` au clic sur "Terminer"
-- `wordsRead` = comptage exact des mots chargés
-- `wpm = wordsRead / (durationMs / 60000)`
-- Sauvegardé dans la session du jour dans `acad2_stats`
-
-### 2.6 Navigation
-- Paramètre URL : `?day=N` pour accéder à une session spécifique (optionnel, pour debug)
-- Bouton retour vers la homepage
-
----
-
-## 3. Phase de Traductions (`translation.html`)
-
-### 3.1 Identique à `academie/index.html` — `startTranslationChallenge()`
-Copier la logique exacte :
-- Génération de phrases via API Gemini à partir du vocabulaire utilisateur
-- Affichage de la phrase en espagnol
-- Bouton "Révéler la traduction française"
-- Lecture audio automatique (SpeechSynthesis, voix `fr-FR`)
-- Boutons Correct / Incorrect
-
-### 3.2 Différences vs v1
-- **Chronomètre par phrase** : `sentenceStartTime = Date.now()` au début de chaque phrase
-- `sentenceDuration = Date.now() - sentenceStartTime` au moment de la révélation
-- Tableau `translationTimes[]` accumulé pendant la session
-- En fin de session : affichage du résumé (nb phrases, temps moyen)
-- Sauvegarde dans `acad2_stats` session du jour
-- Bouton **"Terminer"** → met à jour le checkpoint du jour comme complété, redirige vers homepage
-
-### 3.3 Comptage des phrases traduites
-- Incrémenter le compteur global total dans `acad2_stats`
-
----
-
-## 4. Modification de `academie/index.html` (v1)
-
-### 4.1 Export de vocabulaire
-Dans la modal des clés API (ou une nouvelle modal "Paramètres") :
-- Bouton **"Exporter vocabulaire (JSON)"** :
-  ```js
-  const data = localStorage.getItem('acad_user_vocab');
-  const blob = new Blob([data], { type: 'application/json' });
-  const a = document.createElement('a'); a.href = URL.createObjectURL(blob);
-  a.download = 'vocabulaire-academie.json'; a.click();
-  ```
-
----
-
-## 5. LocalStorage — Schéma complet
+## 6. LocalStorage — schéma complet
 
 | Clé | Description | Partagée v1 |
 |-----|-------------|-------------|
-| `acad_user_vocab` | `[{fr, es}]` — vocabulaire | ✅ oui |
-| `acad_gemini_keys` | `[string]` — clés API | ✅ oui |
-| `acad2_config` | `{wordsPerDay, sentencesPerSession}` | non |
-| `acad2_stats` | sessions + streak | non |
-| `acad2_reader_progress` | `{sentenceIndex, lastDate}` | non |
-| `acad2_days` | `{[dayN]: "completed"\|"pending"}` | non |
+| `acad_user_vocab` | `[{fr, es}]` — vocabulaire | ✅ |
+| `acad_gemini_keys` | `[string]` — clés API | ✅ |
+| `acad2_carnet` | carnet d'erreurs (points + séances) | non |
+| `acad2_oral` | sessions d'expression orale | non |
+| `acad2_stats` | sessions, streak, scores de dictée | non |
+| `acad2_days` | `{[date]: {status, articleId}}` | non |
+| `acad2_read_ids` | articles déjà faits | non |
+| `acad2_dictee_draft_{id}` | brouillon de dictée en cours | non |
+| `acad2_config` | `{wordsPerDay, newSentencesPerDay}` | non |
 
 ---
 
-## 6. Ordre de développement recommandé
+## 7. Aperçu local d'un article non poussé
 
-1. **`reader.html`** — lecteur immersif + logique de progression + stats lecture
-2. **`translation.html`** — copie v1 + chronomètre par phrase + sauvegarde stats
-3. **`index.html`** — homepage : timeline + stats + config + charts
-4. **Modification `academie/index.html`** — export vocabulaire
+Ouvert par double-clic (`file://`), le navigateur refuse de lire `catalog.json`
+et `articles/*.json` du disque : les pages retombent alors sur GitHub Pages, où
+un article tout neuf n'existe pas encore. Un `<script src>` échappe à cette
+restriction, d'où le contournement :
 
----
-
-## 7. Dépendances CDN
-
-```html
-<!-- Tailwind CSS -->
-<script src="https://cdn.tailwindcss.com"></script>
-
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
-
-<!-- Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-<!-- Chart.js (homepage uniquement) -->
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-<!-- canvas-confetti (optionnel, célébrations) -->
-<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+```bash
+python3 make-local.py mon-nouvel-article   # génère articles-local.js
+python3 make-local.py                      # vide l'aperçu, une fois poussé
 ```
 
+`index.html` place ces articles en tête du catalogue (badge rouge « local ») et
+reste utilisable même si GitHub est injoignable ; `article.html` et `oral.html`
+les servent avant toute requête réseau. Sans le fichier, ou avec un aperçu
+vide, tout revient au comportement normal.
+
 ---
 
-## 8. Points d'attention
+## 8. Dépendances CDN
 
-- Toujours stopper le décompte en fin de **phrase** (pas de mot coupé)
-- Le bloc de "rappel" des dernières phrases n'entre pas dans le compteur de mots du jour
-- Compatibilité maximale avec `localStorage` de l'Académie v1 pour le vocabulaire et les clés API
-- Le chronomètre de traduction commence à l'affichage de la phrase, pas à la révélation
-- La racha se casse si `lastCompletedDate` n'est pas hier ou aujourd'hui
+Tailwind, Google Fonts (Merriweather / Montserrat / Nunito), Font Awesome,
+Chart.js. `carnet.js` est un simple `<script src>` local : tout fonctionne
+aussi en `file://` (les `fetch` d'articles retombent alors sur GitHub Pages).
+
+---
+
+## 9. Points d'attention
+
+- Ne jamais couper une unité de dictée au milieu d'un groupe indissociable.
+- L'article reste flouté tant que la dictée n'est pas terminée.
+- Le carnet est la seule source de vérité de la progression : toute nouvelle
+  correction doit passer par `Carnet.record()`.
+- Un point d'oral ne progresse que par des sessions orales, et inversement.
+- La synthèse vocale ne prononce pas la ponctuation : elle n'est corrigée que
+  si l'option « Ponctuation » a été activée pendant la dictée.
+- Les chiffres et symboles ne sont pas devinables à l'oreille : le prompt
+  demande de ne pas les compter comme fautes quand le texte en contient.

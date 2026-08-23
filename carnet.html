@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Carnet d'erreurs — L'Académie 2</title>
+    <link rel="icon" type="image/x-icon" href="../academie/academie.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Montserrat:wght@400;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans:['Montserrat','sans-serif'], serif:['Merriweather','serif'], chat:['Nunito','sans-serif'] },
+                    colors: {
+                        frBlue:'#002654', frRed:'#ED2939', frCream:'#F5F5DC',
+                        gold:'#D4AF37', coral:'#FF6B6B', teal:'#4ECDC4'
+                    },
+                    boxShadow: { card:'0 10px 15px -3px rgba(0,0,0,.1)' }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { overscroll-behavior-y:none; -webkit-tap-highlight-color:transparent; font-family:'Montserrat',sans-serif; }
+        input, select { font-size:16px !important; }
+        .stat-card { background:white; border-radius:1rem; padding:1rem; box-shadow:0 2px 8px rgba(0,0,0,.07); border:1px solid #f1f1f1; }
+
+        .pt-card {
+            background:#fff; border:1px solid #eef1f4; border-radius:16px;
+            padding:14px 16px; transition:box-shadow .15s;
+        }
+        .pt-card:hover { box-shadow:0 3px 12px rgba(0,0,0,.06); }
+        .pt-label { font-size:14px; font-weight:800; color:#1f2937; line-height:1.4; }
+        .pt-badge {
+            font-family:'Montserrat',sans-serif; font-size:9px; font-weight:800;
+            text-transform:uppercase; letter-spacing:.08em;
+            padding:3px 8px; border-radius:999px; white-space:nowrap;
+        }
+        .pt-meta { font-size:10.5px; font-weight:600; color:#9ca3af; }
+        .pt-ex {
+            font-family:'Nunito',sans-serif; font-size:13px; color:#4b5563;
+            display:flex; flex-wrap:wrap; align-items:center; gap:7px;
+            padding:5px 0; border-top:1px dashed #f1f3f5;
+        }
+        .pt-ex del { color:#b91c1c; }
+        .pt-ex ins { color:#0f766e; text-decoration:none; font-weight:800; }
+        .pt-ex .src { font-family:'Montserrat',sans-serif; font-size:9px; font-weight:800;
+                      text-transform:uppercase; letter-spacing:.08em; color:#c3c9d2; }
+
+        .streak-dots { display:inline-flex; gap:3px; align-items:center; }
+        .streak-dots i { width:6px; height:6px; border-radius:50%; background:#e5e7eb; display:block; }
+        .streak-dots i.on { background:#4ECDC4; }
+
+        .flt {
+            font-family:'Montserrat',sans-serif; font-size:10px; font-weight:800;
+            text-transform:uppercase; letter-spacing:.08em;
+            padding:7px 12px; border-radius:999px; cursor:pointer;
+            background:#fff; color:#6b7280; border:1.5px solid #e9edf2; transition:all .15s;
+        }
+        .flt.on { background:#002654; color:#fff; border-color:#002654; }
+
+        .c-btn {
+            display:inline-flex; align-items:center; justify-content:center; gap:7px;
+            font-family:'Montserrat',sans-serif; font-weight:800; font-size:11px;
+            padding:9px 14px; border-radius:11px; border:1.5px solid #e5e7eb;
+            background:#fff; color:#002654; cursor:pointer; transition:transform .12s;
+        }
+        .c-btn:active { transform:scale(.96); }
+        .c-btn-solid { background:#002654; color:#fff; border-color:#002654; }
+        .c-btn-danger { color:#b91c1c; border-color:#fecaca; }
+
+        .cat-row { display:flex; align-items:center; gap:10px; padding:7px 0; }
+        .cat-bar { flex:1; height:8px; border-radius:999px; background:#f1f3f5; overflow:hidden; display:flex; }
+        .cat-bar > i { display:block; height:100%; }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 h-[100dvh] flex flex-col overflow-hidden">
+
+<!-- NAVBAR -->
+<nav class="bg-frBlue text-white shadow-lg z-50 shrink-0">
+    <div class="max-w-4xl mx-auto px-4 h-14 flex justify-between items-center">
+        <div class="flex items-center gap-3">
+            <a href="index.html"
+               class="bg-white/10 active:bg-white/20 text-white w-9 h-9 rounded-lg flex items-center justify-center transition">
+                <i class="fa-solid fa-arrow-left text-gold text-sm"></i>
+            </a>
+            <h1 class="font-bold text-sm tracking-wider uppercase flex items-center gap-2">
+                <i class="fa-solid fa-book-bookmark text-gold"></i> Carnet d'erreurs
+            </h1>
+        </div>
+        <div class="flex items-center gap-1.5 bg-white/10 px-3 py-1 rounded-full border border-white/10">
+            <i class="fa-solid fa-circle-check text-teal text-xs"></i>
+            <span id="nav-mastered" class="text-xs font-bold font-mono">0</span>
+        </div>
+    </div>
+    <div class="h-1 w-full flex">
+        <div class="w-1/3 bg-blue-600"></div>
+        <div class="w-1/3 bg-white"></div>
+        <div class="w-1/3 bg-red-600"></div>
+    </div>
+</nav>
+
+<main class="flex-1 overflow-y-auto bg-frCream">
+<div class="max-w-4xl mx-auto px-4 py-6 flex flex-col gap-8 pb-16">
+
+    <!-- ── RÉSUMÉ ───────────────────────────────────────────── -->
+    <section>
+        <h2 class="text-xs font-bold uppercase tracking-widest text-frBlue mb-1">
+            <i class="fa-solid fa-chart-pie mr-1 text-gold"></i> Où j'en suis
+        </h2>
+        <p class="text-[11px] text-gray-400 mb-4">
+            Un point disparaît de la liste active après
+            <strong class="text-frBlue">3 séances</strong> sans le refaire.
+        </p>
+
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div class="stat-card flex flex-col gap-1">
+                <span class="text-[10px] uppercase tracking-wider text-gray-400 font-bold">À travailler</span>
+                <span id="s-active" class="text-3xl font-bold text-frRed">—</span>
+                <span class="text-[10px] text-gray-400">points actifs</span>
+            </div>
+            <div class="stat-card flex flex-col gap-1">
+                <span class="text-[10px] uppercase tracking-wider text-gray-400 font-bold">En progrès</span>
+                <span id="s-improving" class="text-3xl font-bold text-amber-500">—</span>
+                <span class="text-[10px] text-gray-400">bientôt acquis</span>
+            </div>
+            <div class="stat-card flex flex-col gap-1">
+                <span class="text-[10px] uppercase tracking-wider text-gray-400 font-bold">Maîtrisés</span>
+                <span id="s-mastered" class="text-3xl font-bold text-teal">—</span>
+                <span class="text-[10px] text-gray-400">points corrigés</span>
+            </div>
+            <div class="stat-card flex flex-col gap-1">
+                <span class="text-[10px] uppercase tracking-wider text-gray-400 font-bold">Séances</span>
+                <span id="s-sessions" class="text-3xl font-bold text-frBlue">—</span>
+                <span class="text-[10px] text-gray-400">dictées + orales</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── COURBE ───────────────────────────────────────────── -->
+    <section>
+        <h2 class="text-xs font-bold uppercase tracking-widest text-frBlue mb-4">
+            <i class="fa-solid fa-arrow-trend-down mr-1 text-gold"></i> Ma progression
+        </h2>
+        <div class="stat-card">
+            <div class="flex flex-wrap items-center gap-3 mb-3">
+                <span class="flex items-center gap-1.5 text-[10px] font-bold text-gray-500">
+                    <span class="w-3 h-2 rounded" style="background:#FF6B6B"></span> Erreurs par séance
+                </span>
+                <span class="flex items-center gap-1.5 text-[10px] font-bold text-gray-500">
+                    <span class="w-3 h-1 rounded-full" style="background:#4ECDC4"></span> Points maîtrisés (cumul)
+                </span>
+            </div>
+            <canvas id="chart-carnet" height="150"></canvas>
+            <p id="chart-empty" class="hidden text-xs text-gray-400 text-center py-6">
+                Fais une dictée ou une session orale pour voir la courbe apparaître.
+            </p>
+        </div>
+    </section>
+
+    <!-- ── PAR CATÉGORIE ────────────────────────────────────── -->
+    <section id="cats-section">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-frBlue mb-4">
+            <i class="fa-solid fa-layer-group mr-1 text-gold"></i> Par type d'erreur
+        </h2>
+        <div class="stat-card">
+            <div id="cats-list"></div>
+        </div>
+    </section>
+
+    <!-- ── LISTE DES POINTS ─────────────────────────────────── -->
+    <section>
+        <div class="flex items-center justify-between mb-4 gap-3">
+            <h2 class="text-xs font-bold uppercase tracking-widest text-frBlue">
+                <i class="fa-solid fa-list-ul mr-1 text-gold"></i> Mes points
+            </h2>
+            <span id="pts-count" class="text-xs text-gray-400"></span>
+        </div>
+
+        <div class="flex flex-wrap gap-2 mb-4">
+            <span class="flt on"  data-f="all"       onclick="carnet.setFilter('all')">Tous</span>
+            <span class="flt"     data-f="active"    onclick="carnet.setFilter('active')">À travailler</span>
+            <span class="flt"     data-f="improving" onclick="carnet.setFilter('improving')">En progrès</span>
+            <span class="flt"     data-f="mastered"  onclick="carnet.setFilter('mastered')">Maîtrisés</span>
+            <select id="cat-filter" class="flt" onchange="carnet.render()" style="text-transform:none;">
+                <option value="">Toutes les catégories</option>
+            </select>
+        </div>
+
+        <div id="pts-list" class="flex flex-col gap-3"></div>
+    </section>
+
+    <!-- ── DONNÉES ──────────────────────────────────────────── -->
+    <section>
+        <h2 class="text-xs font-bold uppercase tracking-widest text-frBlue mb-4">
+            <i class="fa-solid fa-database mr-1 text-gold"></i> Sauvegarde
+        </h2>
+        <div class="stat-card flex flex-col gap-3">
+            <p class="text-[11px] text-gray-400 leading-relaxed">
+                Le carnet vit dans ce navigateur. Exporte-le pour le garder ou le passer
+                sur un autre appareil.
+            </p>
+            <div class="flex flex-wrap gap-2">
+                <button class="c-btn c-btn-solid" onclick="carnet.exportFile()">
+                    <i class="fa-solid fa-download"></i> Exporter (JSON)
+                </button>
+                <button class="c-btn" onclick="document.getElementById('import-file').click()">
+                    <i class="fa-solid fa-upload"></i> Importer et fusionner
+                </button>
+                <button class="c-btn c-btn-danger" onclick="carnet.wipe()">
+                    <i class="fa-solid fa-trash-can"></i> Tout effacer
+                </button>
+                <input type="file" id="import-file" accept=".json" class="hidden"
+                       onchange="carnet.importFile(this.files[0])">
+            </div>
+            <p id="data-msg" class="hidden text-[11px] font-bold"></p>
+        </div>
+    </section>
+
+</div>
+</main>
+
+<script src="carnet.js"></script>
+<script>
+const carnet = {
+
+    filter: 'all',
+    chart: null,
+
+    init() {
+        Carnet.injectStyles();
+        const sel = document.getElementById('cat-filter');
+        Carnet.CATEGORIES.forEach(c => {
+            const o = document.createElement('option');
+            o.value = c.key; o.textContent = c.label;
+            sel.appendChild(o);
+        });
+        this.render();
+    },
+
+    setFilter(f) {
+        this.filter = f;
+        document.querySelectorAll('.flt[data-f]').forEach(el =>
+            el.classList.toggle('on', el.dataset.f === f));
+        this.render();
+    },
+
+    render() {
+        this.renderStats();
+        this.renderChart();
+        this.renderCats();
+        this.renderPoints();
+    },
+
+    // ── Résumé ────────────────────────────────────────────────
+    renderStats() {
+        const s = Carnet.stats();
+        document.getElementById('s-active').textContent    = s.active;
+        document.getElementById('s-improving').textContent = s.improving;
+        document.getElementById('s-mastered').textContent  = s.mastered;
+        document.getElementById('s-sessions').textContent  = s.sessions;
+        document.getElementById('nav-mastered').textContent = s.mastered;
+    },
+
+    // ── Courbe ────────────────────────────────────────────────
+    renderChart() {
+        const sessions = Carnet.sessions.slice(-20);
+        const canvas = document.getElementById('chart-carnet');
+        const empty  = document.getElementById('chart-empty');
+
+        canvas.style.display = sessions.length ? '' : 'none';
+        empty.classList.toggle('hidden', sessions.length > 0);
+        if (!sessions.length) {
+            if (this.chart) { this.chart.destroy(); this.chart = null; }
+            return;
+        }
+
+        const labels = sessions.map(s => {
+            const d = new Date(s.at);
+            return `${String(d.getDate()).padStart(2,'0')}/${String(d.getMonth()+1).padStart(2,'0')}`;
+        });
+
+        // Cumul des points maîtrisés : c'est la courbe qui doit monter.
+        let cum = 0;
+        const mastered = sessions.map(s => (cum += (s.masteredIds || []).length));
+
+        if (this.chart) this.chart.destroy();
+        this.chart = new Chart(canvas.getContext('2d'), {
+            data: {
+                labels,
+                datasets: [
+                    {
+                        type: 'bar',
+                        label: 'Erreurs',
+                        data: sessions.map(s => s.errorCount || 0),
+                        backgroundColor: 'rgba(255,107,107,.55)',
+                        borderRadius: 5, yAxisID: 'y'
+                    },
+                    {
+                        type: 'line',
+                        label: 'Maîtrisés',
+                        data: mastered,
+                        borderColor: '#4ECDC4', backgroundColor: 'rgba(78,205,196,.12)',
+                        borderWidth: 3, pointRadius: 3, tension: .35, fill: true, yAxisID: 'y1'
+                    }
+                ]
+            },
+            options: {
+                responsive: true, maintainAspectRatio: true,
+                interaction: { mode:'index', intersect:false },
+                plugins: {
+                    legend: { display:false },
+                    tooltip: {
+                        callbacks: {
+                            title: items => {
+                                const s = sessions[items[0].dataIndex];
+                                if (!s) return '';
+                                return `${s.type === 'oral' ? 'Expression orale' : 'Dictée'} · ${Carnet.fmtDate(s.at)}`;
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    x:  { ticks:{ font:{size:9}, color:'#9ca3af' }, grid:{ display:false } },
+                    y:  { position:'left',  beginAtZero:true, ticks:{ precision:0, font:{size:9}, color:'#9ca3af' }, grid:{ color:'#f3f4f6' } },
+                    y1: { position:'right', beginAtZero:true, ticks:{ precision:0, font:{size:9}, color:'#d1d5db' }, grid:{ display:false } }
+                }
+            }
+        });
+    },
+
+    // ── Par catégorie ─────────────────────────────────────────
+    renderCats() {
+        const s = Carnet.stats();
+        const rows = Object.entries(s.byCat)
+            .sort((a, b) => b[1].occurrences - a[1].occurrences);
+
+        const box = document.getElementById('cats-list');
+        if (!rows.length) {
+            box.innerHTML = `<p class="text-xs text-gray-400 py-2">Aucun point enregistré pour l'instant.</p>`;
+            return;
+        }
+
+        const max = Math.max(...rows.map(r => r[1].occurrences)) || 1;
+        box.innerHTML = rows.map(([key, v]) => {
+            const c = Carnet.cat(key);
+            const done = v.total ? (v.mastered / v.total) * 100 : 0;
+            const width = (v.occurrences / max) * 100;
+            return `
+                <div class="cat-row">
+                    <span class="pt-badge" style="background:${c.bg}; color:${c.fg}; min-width:96px; text-align:center;">
+                        ${Carnet.esc(c.label)}
+                    </span>
+                    <div class="cat-bar" style="max-width:${width}%; min-width:14px;">
+                        <i style="width:${done}%; background:#4ECDC4;"></i>
+                        <i style="width:${100 - done}%; background:${c.fg}; opacity:.55;"></i>
+                    </div>
+                    <span class="pt-meta shrink-0">
+                        ${v.occurrences} fois · ${v.mastered}/${v.total} acquis
+                    </span>
+                </div>`;
+        }).join('');
+    },
+
+    // ── Liste des points ──────────────────────────────────────
+    renderPoints() {
+        const catF = document.getElementById('cat-filter').value;
+        const all = Carnet.load().points;
+
+        const pts = all
+            .filter(p => this.filter === 'all' || p.status === this.filter)
+            .filter(p => !catF || p.category === catF)
+            .sort((a, b) => {
+                const rank = s => s === 'active' ? 0 : s === 'improving' ? 1 : 2;
+                return rank(a.status) - rank(b.status) ||
+                       (b.occurrences - a.occurrences) ||
+                       String(b.lastSeen).localeCompare(String(a.lastSeen));
+            });
+
+        document.getElementById('pts-count').textContent =
+            `${pts.length} / ${all.length} point${all.length > 1 ? 's' : ''}`;
+
+        const box = document.getElementById('pts-list');
+        if (!pts.length) {
+            box.innerHTML = `
+                <div class="pt-card text-center py-8">
+                    <i class="fa-regular fa-face-smile text-3xl text-gray-200 mb-3 block"></i>
+                    <p class="text-xs text-gray-400">
+                        ${all.length ? 'Rien dans cette catégorie.'
+                                     : 'Le carnet se remplit tout seul à la première dictée corrigée.'}
+                    </p>
+                </div>`;
+            return;
+        }
+
+        const STATUS = {
+            active:    { label:'À travailler', bg:'#FEE2E2', fg:'#B91C1C' },
+            improving: { label:'En progrès',   bg:'#FEF3C7', fg:'#B45309' },
+            mastered:  { label:'Maîtrisé',     bg:'#DCFCE7', fg:'#15803D' }
+        };
+
+        box.innerHTML = pts.map(p => {
+            const c  = Carnet.cat(p.category);
+            const st = STATUS[p.status] || STATUS.active;
+            const dots = Array.from({ length: Carnet.CLEAN_TARGET }, (_, i) =>
+                `<i class="${i < (p.cleanStreak || 0) ? 'on' : ''}"></i>`).join('');
+
+            return `
+                <div class="pt-card">
+                    <div class="flex items-start justify-between gap-3 mb-2">
+                        <div class="min-w-0">
+                            <p class="pt-label">${Carnet.esc(p.label)}</p>
+                            <p class="pt-meta mt-1">
+                                <i class="fa-solid ${c.icon} mr-1" style="color:${c.fg};"></i>
+                                ${Carnet.esc(c.label)} ·
+                                ${p.occurrences} fois ·
+                                vu le ${Carnet.fmtDate(p.lastSeen)}
+                                ${p.relapses ? ` · ${p.relapses} récidive${p.relapses > 1 ? 's' : ''}` : ''}
+                            </p>
+                        </div>
+                        <span class="pt-badge shrink-0" style="background:${st.bg}; color:${st.fg};">${st.label}</span>
+                    </div>
+
+                    ${p.status !== 'mastered' ? `
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="streak-dots">${dots}</span>
+                            <span class="pt-meta">
+                                ${Math.max(0, Carnet.CLEAN_TARGET - (p.cleanStreak || 0))} séance(s) propre(s)
+                                avant « maîtrisé »
+                            </span>
+                        </div>` : ''}
+
+                    ${p.es ? `<p class="pt-meta mb-1" style="font-family:'Nunito',sans-serif; font-size:12px; color:#6b7280;">
+                        ${Carnet.esc(p.es)}</p>` : ''}
+
+                    ${(p.examples || []).slice(0, 3).map(ex => `
+                        <div class="pt-ex">
+                            ${ex.wrong ? `<del>${Carnet.esc(ex.wrong)}</del>` : '<del>(oubli)</del>'}
+                            <i class="fa-solid fa-arrow-right text-[9px] text-gray-300"></i>
+                            <ins>${Carnet.esc(ex.right)}</ins>
+                            <span class="src">${ex.source === 'oral' ? 'oral' : 'dictée'} · ${Carnet.fmtDate(ex.at)}</span>
+                        </div>`).join('')}
+
+                    ${(p.examples || []).some(e => e.note) ? `
+                        <p class="pt-meta mt-2" style="font-family:'Nunito',sans-serif; font-size:12px; color:#6b7280; line-height:1.6;">
+                            <i class="fa-solid fa-lightbulb text-amber-400 mr-1"></i>
+                            ${Carnet.esc((p.examples.find(e => e.note) || {}).note)}
+                        </p>` : ''}
+
+                    <div class="flex flex-wrap gap-2 mt-3">
+                        ${p.status === 'mastered'
+                            ? `<button class="c-btn" onclick="carnet.setStatus('${p.id}','active')">
+                                 <i class="fa-solid fa-rotate-left"></i> À retravailler
+                               </button>`
+                            : `<button class="c-btn" onclick="carnet.setStatus('${p.id}','mastered')">
+                                 <i class="fa-solid fa-check"></i> Marquer maîtrisé
+                               </button>`}
+                        <button class="c-btn c-btn-danger" onclick="carnet.drop('${p.id}')">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </button>
+                    </div>
+                </div>`;
+        }).join('');
+    },
+
+    setStatus(id, status) { Carnet.setStatus(id, status); this.render(); },
+
+    drop(id) {
+        if (!confirm('Supprimer ce point du carnet ?')) return;
+        Carnet.removePoint(id);
+        this.render();
+    },
+
+    // ── Données ───────────────────────────────────────────────
+    _msg(txt, ok = true) {
+        const el = document.getElementById('data-msg');
+        el.textContent = txt;
+        el.className = `text-[11px] font-bold ${ok ? 'text-green-600' : 'text-red-500'}`;
+        el.classList.remove('hidden');
+        setTimeout(() => el.classList.add('hidden'), 4000);
+    },
+
+    exportFile() {
+        const blob = new Blob([Carnet.exportJson()], { type:'application/json' });
+        const a = document.createElement('a');
+        a.href = URL.createObjectURL(blob);
+        a.download = `carnet-erreurs-${new Date().toISOString().split('T')[0]}.json`;
+        a.click();
+        URL.revokeObjectURL(a.href);
+        this._msg('Carnet exporté.');
+    },
+
+    importFile(file) {
+        if (!file) return;
+        const r = new FileReader();
+        r.onload = () => {
+            try {
+                Carnet.importJson(r.result, { merge:true });
+                this.render();
+                this._msg('Carnet fusionné.');
+            } catch (e) {
+                console.error(e);
+                this._msg("Fichier illisible : ce n'est pas un carnet exporté.", false);
+            }
+        };
+        r.readAsText(file);
+    },
+
+    wipe() {
+        if (!confirm('Effacer TOUT le carnet ? Cette action est définitive.')) return;
+        if (!confirm('Vraiment ? Pense à exporter avant.')) return;
+        Carnet.reset();
+        this.render();
+        this._msg('Carnet effacé.');
+    }
+};
+
+carnet.init();
+</script>
+</body>
+</html>

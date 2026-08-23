@@ -96,6 +96,10 @@
             </div>
         </div>
         <div class="flex items-center gap-2">
+            <a href="carnet.html" title="Carnet d'erreurs"
+               class="bg-white/10 active:bg-white/20 text-white w-9 h-9 rounded-lg flex items-center justify-center transition">
+                <i class="fa-solid fa-book-bookmark text-gold text-sm"></i>
+            </a>
             <a href="oral.html" id="oral-btn" title="Expression orale"
                class="relative bg-white/10 active:bg-white/20 text-white w-9 h-9 rounded-lg flex items-center justify-center transition">
                 <i id="oral-icon" class="fa-solid fa-microphone-lines text-teal text-sm"></i>
@@ -269,24 +273,27 @@
                 <span class="text-[10px] text-gray-400">jours consécutifs</span>
             </div>
             <div class="stat-card flex flex-col gap-1">
-                <span class="text-[10px] uppercase tracking-wider text-gray-400 font-bold">Lecture</span>
-                <span id="stat-read-time" class="text-3xl font-bold text-frBlue">—</span>
-                <span class="text-[10px] text-gray-400">minutes totales</span>
+                <span class="text-[10px] uppercase tracking-wider text-gray-400 font-bold">Dictées</span>
+                <span id="stat-dictees" class="text-3xl font-bold text-frBlue">—</span>
+                <span class="text-[10px] text-gray-400">corrigées</span>
             </div>
-            <div class="stat-card flex flex-col gap-1">
-                <span class="text-[10px] uppercase tracking-wider text-gray-400 font-bold">Traductions</span>
-                <span id="stat-trans" class="text-3xl font-bold text-frBlue">—</span>
-                <span class="text-[10px] text-gray-400">phrases traduites</span>
-            </div>
+            <a href="carnet.html" class="stat-card flex flex-col gap-1" style="text-decoration:none;">
+                <span class="text-[10px] uppercase tracking-wider text-gray-400 font-bold">Carnet</span>
+                <span id="stat-mastered" class="text-3xl font-bold text-teal">—</span>
+                <span id="stat-carnet-sub" class="text-[10px] text-gray-400">points maîtrisés</span>
+            </a>
         </div>
 
         <!-- Charts -->
         <div class="grid grid-cols-1 gap-3">
             <div class="stat-card">
                 <p class="text-[10px] uppercase tracking-wider text-gray-400 font-bold mb-3">
-                    Vitesse de traduction (sec/phrase)
+                    Score de dictée (/100)
                 </p>
-                <canvas id="chart-trans" height="120"></canvas>
+                <canvas id="chart-dictee" height="120"></canvas>
+                <p id="chart-dictee-empty" class="hidden text-xs text-gray-400 text-center py-6">
+                    Aucune dictée corrigée pour l'instant.
+                </p>
             </div>
         </div>
     </section>
@@ -294,6 +301,9 @@
 </div>
 </main>
 
+<script src="carnet.js"></script>
+<!-- Aperçu local : articles pas encore poussés (voir make-local.py) -->
+<script src="articles-local.js" onerror="window.ACAD2_LOCAL=null"></script>
 <script>
 const home = {
 
@@ -303,6 +313,14 @@ const home = {
     get vocab()    { return JSON.parse(localStorage.getItem('acad_user_vocab') || '[]'); },
     get readIds()  { return new Set(JSON.parse(localStorage.getItem('acad2_read_ids') || '[]')); },
     get oral()     { try { return JSON.parse(localStorage.getItem('acad2_oral') || '[]'); } catch { return []; } },
+
+    // Articles embarqués dans articles-local.js : ils n'existent pas encore
+    // sur GitHub Pages, mais doivent apparaître quand on travaille en local.
+    get localArticles() {
+        const l = window.ACAD2_LOCAL;
+        return (l && Array.isArray(l.articles) ? l.articles : [])
+            .filter(a => a && a.id && a.title);
+    },
 
     // ════════════════════════════════════════════════════════════
     //  INIT
@@ -361,12 +379,31 @@ const home = {
     //  CATALOG + TIMELINE + ARTICLES
     // ════════════════════════════════════════════════════════════
     async loadCatalog() {
+        const local = this.localArticles;
+        this._localIds = new Set(local.map(a => a.id));
+
+        // En file://, le navigateur refuse de lire le catalogue du disque :
+        // on retombe sur GitHub Pages, puis on ajoute les articles locaux.
         const base = location.protocol === 'file:'
             ? 'https://clement-torti.github.io/academie2/'
             : '';
-        const res = await fetch(`${base}catalog.json`);
-        if (!res.ok) throw new Error('HTTP ' + res.status);
-        return await res.json();
+        let remote = [];
+        try {
+            const res = await fetch(`${base}catalog.json`);
+            if (!res.ok) throw new Error('HTTP ' + res.status);
+            remote = await res.json();
+        } catch (e) {
+            if (!local.length) throw e;   // rien à afficher du tout
+            console.warn('catalogue distant indisponible, aperçu local seul', e);
+        }
+
+        return [
+            ...local.map(a => ({
+                id: a.id, title: a.title, date: a.date,
+                image: a.image?.url || '', category: a.category
+            })),
+            ...remote.filter(c => !this._localIds.has(c.id))
+        ];
     },
 
     renderTimeline() {
@@ -491,6 +528,7 @@ const home = {
     _articleCard(a) {
         const d = new Date(a.date + 'T00:00:00');
         const dateStr = d.toLocaleDateString('fr-FR', { day:'numeric', month:'long', year:'numeric' });
+        const isLocal = this._localIds?.has(a.id);
         return `
             <a href="article.html?id=${this._esc(a.id)}"
                class="article-card block bg-white rounded-2xl overflow-hidden border border-teal"
@@ -504,6 +542,10 @@ const home = {
                 <span class="absolute top-3 left-3 text-[9px] font-bold uppercase tracking-widest
                              text-white px-2 py-1 rounded-full"
                       style="background:#4ECDC4;">${this._esc(a.category || '')}</span>
+                ${isLocal ? `
+                <span class="absolute top-3 right-3 text-[9px] font-bold uppercase tracking-widest
+                             text-white px-2 py-1 rounded-full" title="Pas encore poussé sur GitHub"
+                      style="background:#ED2939;"><i class="fa-solid fa-flask mr-1"></i>local</span>` : ''}
               </div>
               <div class="p-4">
                 <h3 class="font-bold text-frBlue text-sm leading-snug mb-1 line-clamp-2">${this._esc(a.title)}</h3>
@@ -536,17 +578,16 @@ const home = {
         const stats    = this.stats;
         const sessions = stats.sessions || [];
 
-        const completed = sessions.filter(s => (s.translationSentences||0) > 0 || (s.readingWords||0) > 0).length;
-        document.getElementById('stat-sessions').textContent  = completed;
+        document.getElementById('stat-sessions').textContent = sessions.length;
+        document.getElementById('stat-streak').textContent   = stats.streak || 0;
 
-        const streak = stats.streak || 0;
-        document.getElementById('stat-streak').textContent   = streak;
+        const dictees = sessions.filter(s => s.dictationScore != null).length;
+        document.getElementById('stat-dictees').textContent  = dictees;
 
-        const totalMs = sessions.reduce((a,s) => a + (s.readingDurationMs||0), 0);
-        document.getElementById('stat-read-time').textContent = Math.round(totalMs / 60000);
-
-        const totalTrans = sessions.reduce((a,s) => a + (s.translationSentences||0), 0);
-        document.getElementById('stat-trans').textContent    = totalTrans;
+        const cn = Carnet.stats();
+        document.getElementById('stat-mastered').textContent = cn.mastered;
+        document.getElementById('stat-carnet-sub').textContent =
+            cn.active ? `maîtrisés · ${cn.active} à revoir` : 'points maîtrisés';
     },
 
     // ════════════════════════════════════════════════════════════
@@ -554,10 +595,6 @@ const home = {
     // ════════════════════════════════════════════════════════════
     renderCharts() {
         const sessions = (this.stats.sessions || []).slice(-14);
-        const labels   = sessions.map(s => {
-            const d = new Date(s.date);
-            return `${d.getUTCDate()}/${d.getUTCMonth()+1}`;
-        });
 
         const baseOpts = {
             responsive: true,
@@ -569,23 +606,33 @@ const home = {
             }
         };
 
-        // Traduction
-        new Chart(document.getElementById('chart-trans').getContext('2d'), {
+        // Dictée : score sur 100
+        const scored = sessions.filter(s => s.dictationScore != null);
+        const canvas = document.getElementById('chart-dictee');
+        const empty  = document.getElementById('chart-dictee-empty');
+        canvas.style.display = scored.length ? '' : 'none';
+        empty.classList.toggle('hidden', scored.length > 0);
+        if (!scored.length) return;
+
+        if (this._chartDictee) this._chartDictee.destroy();
+        this._chartDictee = new Chart(canvas.getContext('2d'), {
             type: 'line',
             data: {
-                labels,
+                labels: scored.map(s => {
+                    const d = new Date(s.date);
+                    return `${d.getUTCDate()}/${d.getUTCMonth()+1}`;
+                }),
                 datasets: [{
-                    data: sessions.map(s => {
-                        const t = s.translationTimes || [];
-                        return t.length ? Math.round(t.reduce((a,b)=>a+b,0)/t.length) : 0;
-                    }),
+                    data: scored.map(s => s.dictationScore),
                     borderColor: '#D4AF37', backgroundColor: 'rgba(212,175,55,.1)',
                     borderWidth: 2, pointRadius: 3, pointBackgroundColor: '#D4AF37',
                     tension: .4, fill: true
                 }]
             },
-            options: { ...baseOpts, plugins: { ...baseOpts.plugins,
-                tooltip: { callbacks: { label: c => `${c.parsed.y} s/phrase` } } } }
+            options: { ...baseOpts,
+                scales: { ...baseOpts.scales, y: { ...baseOpts.scales.y, min:0, max:100 } },
+                plugins: { ...baseOpts.plugins,
+                    tooltip: { callbacks: { label: c => `${c.parsed.y} / 100` } } } }
         });
     },
 

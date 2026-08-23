@@ -1,57 +1,81 @@
 # TODO — Académie 2
 
-## reader.html
-- [x] Estructura HTML base (dark theme, fonts, navbar minimalista)
-- [x] Parsear Markdown hardcodeado → array de frases con índices
-- [x] Leer `acad2_config.wordsPerDay` del localStorage (default 300)
-- [x] Leer posición guardada `acad2_reader_progress.blockIdx`
-- [x] Mostrar últimas ~8 frases de la sesión anterior (estilo atenuado, no cuentan en el total)
-- [x] Cargar frases del día hasta alcanzar el mínimo de palabras, parando al final de una frase
-- [x] Barra de progreso del libro (% completado)
-- [x] Botón "Terminar lectura" → guarda posición, guarda stats, redirige a translation.html
-- [x] Botón "Continuar leyendo" → carga 20 frases más
-- [x] Input vocabulario (fr + es) → guarda en `acad_user_vocab`
-- [x] Cronómetro de lectura: start al cargar, stop al terminar → calcular wpm
-- [x] Guardar stats de lectura en `acad2_stats` (sesión del día)
+## Leçon orientée production (article → dictée → oral)
 
-## translation.html
-- [x] Estructura HTML base (mismos colores que v1)
-- [x] Copiar lógica completa de `startTranslationChallenge()` de v1
-- [x] Copiar sistema de claves Gemini con rotación (callGeminiAPI, rotateKey, etc.)
-- [x] Copiar lógica de `speakFrench()` (SpeechSynthesis, voz fr-FR)
-- [x] Añadir cronómetro por frase: start al mostrar la frase, stop al revelar
-- [x] Acumular `translationTimes[]` durante la sesión
-- [x] Guardar stats de traducción en `acad2_stats` al terminar
-- [x] Marcar el día como completado en `acad2_days`
-- [x] Pantalla de resumen al final (nº frases, tiempo medio)
-- [x] Botón "Retour à l'accueil" → redirige a index.html
+### carnet.js — module partagé
+- [x] 23 catégories d'erreurs (écrit / oral / les deux)
+- [x] Stockage `acad2_carnet` : points + séances
+- [x] `record()` : nouveaux points, points répétés, récidives
+- [x] Passage automatique en « maîtrisé » après 3 séances propres
+- [x] `confirmed` : un point réussi en contexte progresse deux fois plus vite
+- [x] Rapprochement des points par identifiant puis par libellé approchant
+- [x] `summaryForPrompt()` : carnet sérialisé pour l'IA
+- [x] `renderChangelog()` : bilan identique dans la dictée et l'oral
+- [x] Export / import / réinitialisation
+- [x] `AIRelay` : ouverture de Claude préremplie, copie, parsing JSON tolérant
 
-## index.html
-- [x] Estructura HTML base + navbar (mismos colores que v1, streak counter)
-- [x] Timeline horizontal scrollable con un botón por día
-- [x] Lógica de estados de checkpoints (completado / hoy / futuro / manqué)
-- [x] Scroll automático al checkpoint del día actual
-- [x] Clic en checkpoint activo → redirige a reader.html
-- [x] Widget: total de prácticas completadas
-- [x] Widget: racha de días (streak actual)
-- [x] Widget: tiempo total de lectura (minutos)
-- [x] Widget: total de frases traducidas
-- [x] Chart vitesse de lecture (Chart.js, mots/min por sesión)
-- [x] Chart vitesse de traduction (Chart.js, seg/frase por sesión)
-- [x] Modal de configuración (botón en navbar)
-- [x] Config — Export vocabulario JSON (`acad_user_vocab`)
-- [x] Config — Import vocabulario JSON (file input + merge)
-- [x] Config — Gestión claves Gemini (listar, añadir, eliminar)
-- [x] Config — Input `wordsPerDay` → guarda en `acad2_config`
-- [x] Config — Input `sentencesPerSession` → guarda en `acad2_config`
+### article.html — dictée
+- [x] Retrait de l'exercice écrit ES→FR et de l'exercice de conversation
+- [x] Source de la dictée : `dictation.text` / `dictation.units`
+- [x] Repli sur un extrait de l'article, en évitant les chiffres
+- [x] Découpage automatique en unités de 3 à 10 mots
+- [x] Étape 1 : une écoute complète à 0.9×, sans texte
+- [x] Étape 2 : unités ralenties (0.5× à 0.85×), répétition libre, clic pour avancer
+- [x] Option « Ponctuation annoncée »
+- [x] Article et vocabulaire floutés pendant l'exercice
+- [x] Brouillon repris après un rechargement
+- [x] Prompt de correction : texte original + sa copie + son carnet
+- [x] Analyse erreur par erreur (indice → correction → règle → statut carnet)
+- [x] Bilan : score, diff mot à mot, changements du carnet
+- [x] Relecture finale du texte correct, phrase surlignée
+- [x] Déblocage de l'expression orale + journée marquée complétée
 
-## academie/index.html (v1)
-- [x] Añadir botón "Exporter vocabulaire JSON" en la modal de claves API
+### oral.html — expression orale
+- [x] Sujets proposés depuis `oralTopics`, repli générique sinon
+- [x] Objectif 20 min : barre de progression, temps restant, dépassement
+- [x] Relances cliquables et vocabulaire à replacer pendant la conversation
+- [x] Notation des erreurs en direct (dit / correction / catégorie / horodatage)
+- [x] Revue finale : correction, catégorie, rattachement à un point du carnet
+- [x] Conservation du chrono, des 3 critères, de la courbe et de l'historique
+- [x] Colonne « erreurs » et marque d'objectif atteint dans l'historique
+
+### carnet.html
+- [x] Compteurs : à travailler / en progrès / maîtrisés / séances
+- [x] Courbe erreurs par séance vs points maîtrisés (cumul)
+- [x] Répartition par catégorie
+- [x] Liste filtrable (statut, catégorie) avec exemples et jauge de séances propres
+- [x] Marquer maîtrisé / à retravailler / supprimer
+- [x] Export, import fusionnant, effacement complet
+
+### index.html
+- [x] Accès au carnet dans la navbar
+- [x] Statistiques : dictées corrigées, points maîtrisés
+- [x] Courbe des scores de dictée
+
+### prompt.txt
+- [x] Niveau B2, article de 200 à 250 mots
+- [x] Champ `dictation` (texte sans chiffres, 90-120 mots, + unités)
+- [x] Champ `oralTopics` (4 sujets × 4 relances)
+- [x] Retrait de `conversation` et `writingExercise`
+- [x] 2 commentaires au lieu de 5 (une prise de position + un vécu ou un décalé)
+- [x] Ponctuation annoncée à voix haute : la garder simple dans la dictée
 
 ---
 
-## Pendiente / mejoras futuras
-- [ ] Manejar el caso donde el usuario vuelve al reader el mismo día (no recargar el contenido ya leído)
-- [ ] Añadir importación de vocabulario también en v1
-- [ ] Reemplazar el libro placeholder en reader.html con el contenido real
-- [ ] Test cross-browser del SpeechSynthesis en translation.html
+### Aperçu local (temporaire)
+- [x] `make-local.py` : embarque un article non poussé dans `articles-local.js`
+- [x] index.html : articles locaux en tête du catalogue, badge « local »
+- [x] index.html : liste utilisable même si GitHub Pages est injoignable
+- [x] article.html / oral.html : aperçu local servi avant le réseau
+
+---
+
+## Pendant / améliorations futures
+- [ ] Après avoir poussé l'article de la rentrée : `python3 make-local.py`
+      (et supprimer `make-local.py` / `articles-local.js` si le besoin disparaît)
+- [ ] `translation.html` n'est plus dans le parcours : à supprimer ou à rebrancher
+- [ ] Les 72 articles existants restent en B1 et sans texte de dictée dédié
+      (le repli automatique s'en charge) — à régénérer petit à petit
+- [ ] Enregistrement audio de l'expression orale pour réécoute
+- [ ] Reprise ciblée : une dictée générée à partir des points actifs du carnet
+- [ ] Test de la synthèse vocale sur Safari iOS (voix `fr-FR` disponibles)

@@ -61,8 +61,9 @@
 - [x] Courbe des scores de dictée
 
 ### prompt.txt
-- [x] Niveau B2, article de 200 à 250 mots
-- [x] Champ `dictation` (texte sans chiffres, 90-120 mots, + unités)
+- [x] Article en B1+ (200-250 mots), dictée en B1 (70 mots) : deux niveaux distincts
+- [x] Champ `dictation` (texte sans chiffres, 65-75 mots, + unités de 5 à 10 mots)
+- [x] Les 11 articles au nouveau format repassés en B1+ / B1
 - [x] Champ `oralTopics` (4 sujets × 4 relances)
 - [x] Retrait de `conversation` et `writingExercise`
 - [x] 2 commentaires au lieu de 5 (une prise de position + un vécu ou un décalé)

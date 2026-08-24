@@ -41,25 +41,20 @@
       "es": "una mancha"
     }
   ],
-  "article": "Le dix-neuf août, deux laboratoires, Moderna et Merck, ont annoncé le résultat que le monde médical attendait depuis des années : un vaccin contre le mélanome, la forme la plus grave du cancer de la peau, a franchi avec succès sa dernière phase d'essais. Administré avec une immunothérapie déjà utilisée aujourd'hui, il réduit nettement le risque que la maladie revienne après l'opération.\n\nIl ne s'agit pas d'un vaccin préventif, comme celui de la grippe, mais d'un vaccin thérapeutique fabriqué sur mesure pour chaque malade. On analyse la tumeur retirée par le chirurgien, puis on apprend au système immunitaire à reconnaître les cellules qui auraient échappé à l'opération. L'essai a suivi plus de mille cent patients, dont une partie recevait le vaccin en plus du traitement habituel.\n\nLes spécialistes se montrent néanmoins prudents. Fabriquer une seule dose demande de six à huit semaines de laboratoire, ce qui coûte cher et suppose une organisation dont très peu d'hôpitaux disposent. Le prix n'a pas encore été fixé, si bien que beaucoup redoutent un progrès réservé aux pays les plus riches, tandis que d'autres chercheurs rappellent qu'aucune donnée définitive sur la survie n'a été publiée.\n\nLes mêmes équipes testent désormais cette méthode contre les cancers du poumon, du rein et du pancréas. Faut-il alors parler d'une révolution, ou d'une médecine sur mesure que nos systèmes de santé ne pourront jamais payer pour tout le monde ?",
+  "article": "Le 19 août, deux laboratoires, Moderna et Merck, ont annoncé un résultat très attendu. Un vaccin contre le mélanome a réussi sa dernière phase d'essais cliniques. Le mélanome est la forme la plus grave du cancer de la peau. Utilisé avec une immunothérapie déjà connue, ce vaccin réduit nettement le risque de récidive après l'opération.\n\nCe n'est pas un vaccin préventif, comme celui de la grippe. C'est un vaccin thérapeutique, fabriqué sur mesure pour chaque malade. Les médecins analysent la tumeur retirée par le chirurgien. Ensuite, ils apprennent au système immunitaire à reconnaître les cellules qui restent. L'essai a suivi plus de mille cent patients.\n\nLes spécialistes restent pourtant prudents. Fabriquer une seule dose demande six à huit semaines de laboratoire. Cela coûte cher et demande une organisation que peu d'hôpitaux possèdent. Le prix n'est pas encore fixé. Beaucoup craignent donc un progrès réservé aux pays les plus riches. D'autres chercheurs rappellent qu'on ne connaît pas encore les effets sur la survie.\n\nLes mêmes équipes testent maintenant cette méthode contre d'autres cancers : le poumon, le rein et le pancréas. Faut-il alors parler d'une révolution ? Ou d'une médecine sur mesure que nos systèmes de santé ne pourront jamais payer pour tout le monde ?",
   "dictation": {
-    "text": "Chaque année, la maladie est découverte chez des milliers de personnes qui ne s'en méfiaient pas. Les médecins le répètent, ces taches que l'on remarque sur ses bras ou dans son dos doivent être montrées sans attendre. La femme que j'ai rencontrée l'été dernier avait longtemps hésité, puis elle s'est enfin décidée. On lui a retiré la tumeur, et les examens qu'elle a passés ensuite se sont révélés rassurants. Elle a compris ce jour-là que ses habitudes devaient changer. Aujourd'hui, elle se protège du soleil, elle a jeté ses vieilles crèmes, et elle en parle à tout le monde.",
+    "text": "Chaque année, des milliers de personnes découvrent cette maladie sans s'en être méfiées. Les médecins le répètent souvent. Ces taches sur les bras ou dans le dos doivent être montrées. La femme que j'ai rencontrée l'été dernier avait longtemps hésité. On lui a retiré la tumeur, et les examens sont rassurants. Aujourd'hui, elle se protège du soleil et elle en parle à toutes ses amies.",
     "units": [
-      "Chaque année, la maladie est découverte",
-      "chez des milliers de personnes",
-      "qui ne s'en méfiaient pas. Les médecins le répètent,",
-      "ces taches que l'on remarque",
-      "sur ses bras ou dans son dos",
-      "doivent être montrées sans attendre.",
-      "La femme que j'ai rencontrée l'été dernier",
-      "avait longtemps hésité, puis elle s'est enfin décidée.",
+      "Chaque année, des milliers de personnes découvrent cette",
+      "maladie sans s'en être méfiées.",
+      "Les médecins le répètent souvent.",
+      "Ces taches sur les bras",
+      "ou dans le dos doivent être montrées.",
+      "La femme que j'ai rencontrée l'été dernier avait longtemps hésité.",
       "On lui a retiré la tumeur,",
-      "et les examens qu'elle a passés ensuite",
-      "se sont révélés rassurants. Elle a compris ce jour-là",
-      "que ses habitudes devaient changer.",
-      "Aujourd'hui, elle se protège du soleil,",
-      "elle a jeté ses vieilles crèmes,",
-      "et elle en parle à tout le monde."
+      "et les examens sont rassurants.",
+      "Aujourd'hui, elle se protège du soleil",
+      "et elle en parle à toutes ses amies."
     ]
   },
   "oralTopics": [

@@ -8,34 +8,50 @@
     "alt": "La chanteuse colombienne Shakira lors d'une apparition publique"
   },
   "vocabulary": [
-    { "fr": "un séisme", "es": "un terremoto" },
-    { "fr": "s'effondrer", "es": "derrumbarse" },
-    { "fr": "endommagé", "es": "dañado" },
-    { "fr": "un engagement", "es": "un compromiso" },
-    { "fr": "un don", "es": "una donación" },
-    { "fr": "les travaux", "es": "las obras" },
-    { "fr": "délaissé", "es": "abandonado, desatendido" }
+    {
+      "fr": "un séisme",
+      "es": "un terremoto"
+    },
+    {
+      "fr": "s'effondrer",
+      "es": "derrumbarse"
+    },
+    {
+      "fr": "endommagé",
+      "es": "dañado"
+    },
+    {
+      "fr": "un engagement",
+      "es": "un compromiso"
+    },
+    {
+      "fr": "un don",
+      "es": "una donación"
+    },
+    {
+      "fr": "les travaux",
+      "es": "las obras"
+    },
+    {
+      "fr": "délaissé",
+      "es": "abandonado, desatendido"
+    }
   ],
-  "article": "Le 10 août dernier, un séisme de magnitude 7,4 a frappé l'ouest de la Colombie, faisant au moins 287 morts et détruisant plus de 26 000 logements. Dans le département du Chocó, une quarantaine d'écoles se sont effondrées et des centaines d'autres ont été endommagées, si bien que des milliers d'enfants se sont retrouvés sans salle de classe.\n\nUne semaine plus tard, Shakira est arrivée sans prévenir à Quibdó, la capitale de la région. La chanteuse, née sur la côte colombienne, a visité les bâtiments éventrés avant d'annoncer un engagement de 1,25 million de dollars. Sa fondation Pies Descalzos, qu'elle avait créée alors qu'elle avait à peine dix-huit ans, reconstruira dix établissements avec la fondation Howard G. Buffett. L'artiste a également promis de consacrer ses efforts personnels à la remise sur pied d'une université technologique locale.\n\nL'argent vient de plusieurs partenaires : un fonds éducatif porté par Global Citizen, le producteur de concerts Live Nation et une banque de développement latino-américaine. Néanmoins, certains Colombiens s'interrogent : faut-il qu'une vedette de la pop remplace l'État dans une région pauvre, longtemps délaissée par le pouvoir central ? D'autres répondent que, sans cette visite médiatique, le Chocó serait déjà retombé dans l'oubli.\n\nLes travaux dureront des mois, alors que la saison des pluies approche à grands pas. La vraie question est peut-être ailleurs : que restera-t-il de cette solidarité quand les caméras seront reparties ?",
+  "article": "Le 10 août, un séisme de magnitude 7,4 a frappé l'ouest de la Colombie. Il a fait au moins 287 morts et détruit plus de 26 000 logements. Dans le département du Chocó, une quarantaine d'écoles se sont effondrées. Des centaines d'autres ont été endommagées. Des milliers d'enfants se sont donc retrouvés sans salle de classe.\n\nUne semaine plus tard, Shakira est arrivée sans prévenir à Quibdó, la capitale de la région. La chanteuse est née sur la côte colombienne. Elle a visité les bâtiments détruits, puis elle a annoncé un engagement de 1,25 million de dollars. Sa fondation Pies Descalzos, créée quand elle avait dix-huit ans, reconstruira dix établissements. Elle veut aussi aider une université technologique locale.\n\nL'argent vient de plusieurs partenaires : un fonds éducatif, un producteur de concerts et une banque de développement. Pourtant, certains Colombiens s'interrogent. Faut-il qu'une vedette de la pop remplace l'État dans une région pauvre et longtemps délaissée ? D'autres répondent que, sans cette visite, le Chocó serait déjà oublié. Le débat est vif sur les réseaux sociaux.\n\nLes travaux dureront des mois, et la saison des pluies approche. La vraie question est peut-être ailleurs : que restera-t-il de cette solidarité quand les caméras seront parties ?",
   "dictation": {
-    "text": "Dans les quartiers touchés, les enseignants ont installé des salles provisoires sous de grandes bâches blanches. Les élèves que l'on a accueillis ce matin ont apporté leurs cahiers, leurs crayons et leur bonne humeur. Une institutrice raconte qu'elle a perdu sa maison, mais qu'elle n'a pas voulu abandonner ses écoliers. Les parents se demandent où leurs enfants étudieront quand les pluies reviendront. Ces promesses de dons sont importantes, néanmoins elles ne suffisent pas. Il faudra que les travaux commencent vite, pour que les familles retrouvent confiance. Les habitants ont compris qu'ils devront se battre, comme ils l'ont toujours fait.",
+    "text": "Dans les quartiers touchés, les enseignants ont installé des classes sous de grandes bâches blanches. Les élèves sont arrivés ce matin avec leurs cahiers et leurs crayons. Une institutrice raconte qu'elle a perdu sa maison, mais qu'elle est restée. Les parents se demandent où leurs enfants étudieront quand les pluies reviendront. Ces promesses de dons sont importantes, mais elles ne suffisent pas. Les travaux devront commencer très vite.",
     "units": [
-      "Dans les quartiers touchés, les enseignants",
-      "ont installé des salles provisoires",
+      "Dans les quartiers touchés, les enseignants ont installé des classes",
       "sous de grandes bâches blanches.",
-      "Les élèves que l'on a accueillis ce matin",
-      "ont apporté leurs cahiers, leurs crayons",
-      "et leur bonne humeur. Une institutrice raconte",
-      "qu'elle a perdu sa maison,",
-      "mais qu'elle n'a pas voulu abandonner ses écoliers.",
+      "Les élèves sont arrivés ce matin",
+      "avec leurs cahiers et leurs crayons.",
+      "Une institutrice raconte qu'elle a perdu sa",
+      "maison, mais qu'elle est restée.",
       "Les parents se demandent où leurs enfants",
       "étudieront quand les pluies reviendront.",
       "Ces promesses de dons sont importantes,",
-      "néanmoins elles ne suffisent pas.",
-      "Il faudra que les travaux commencent vite,",
-      "pour que les familles retrouvent confiance.",
-      "Les habitants ont compris qu'ils devront se battre,",
-      "comme ils l'ont toujours fait."
+      "mais elles ne suffisent pas.",
+      "Les travaux devront commencer très vite."
     ]
   },
   "oralTopics": [

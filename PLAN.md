@@ -14,8 +14,8 @@ dans `localStorage`. Couleurs de l'Académie v1 (`frBlue #002654`, `frRed #ED293
 doit pas seulement lire et écouter : elle doit écrire et parler. D'où l'ordre :
 
 ```
-1. ARTICLE   (lecture)   — B2, 200-250 mots. Donne le sujet et le vocabulaire.
-2. DICTÉE    (écriture)  — 15-20 min, correction par IA, mise à jour du carnet.
+1. ARTICLE   (lecture)   — B1+, 200-250 mots. Donne le sujet et le vocabulaire.
+2. DICTÉE    (écriture)  — B1, 70 mots. 15-20 min, correction par IA, carnet.
 3. ORAL      (parole)    — 20 min et plus avec un natif, erreurs notées en direct.
 ```
 

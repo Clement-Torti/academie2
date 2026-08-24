@@ -9,8 +9,8 @@ PHILOSOPHIE DE LA LEÇON
 La leçon se déroule en trois temps. Tout est construit pour que l'étudiante
 PRODUISE du français, pas seulement qu'elle en consomme :
 
-  1. LECTURE — un article court (200-250 mots) qui donne le sujet et le vocabulaire.
-  2. DICTÉE  — un texte lu à voix haute qu'elle doit écrire (production écrite).
+  1. LECTURE — un article court (200-250 mots, B1+) qui donne le sujet et le vocabulaire.
+  2. DICTÉE  — un texte de 70 mots (B1) lu à voix haute qu'elle doit écrire.
   3. ORAL    — une conversation de plus de 20 minutes avec un natif (production orale).
 
 L'article n'est donc qu'un point de départ : il doit être court, dense et
@@ -22,19 +22,29 @@ RÈGLES GÉNÉRALES
 
 1. LANGUE DE SORTIE : tout le contenu est en français (le seul champ espagnol est
    la traduction du vocabulaire).
-2. NIVEAU DE FRANÇAIS : B2. Le B1 était devenu trop facile à lire.
-   Concrètement, pour l'article ET la dictée :
-   · phrases de 12 à 25 mots, de longueur variable, avec des subordonnées ;
-   · connecteurs de niveau B2 : néanmoins, en revanche, tandis que, alors que,
-     dès lors, si bien que, faute de, à mesure que, contrairement à ;
-   · pronoms relatifs composés autorisés : dont, auquel, ce qui, ce dont ;
-   · temps variés : présent, passé composé, imparfait, plus-que-parfait,
-     futur simple, conditionnel ; subjonctif après les tournures courantes
-     (il faut que, bien que, pour que) ;
-   · tournures passives, gérondif, participe présent en petite quantité ;
-   · vocabulaire précis et nuancé, quelques expressions figées courantes.
-   À ÉVITER : le jargon technique, le style littéraire ou académique, les
-   phrases de plus de 30 mots, les énumérations à rallonge.
+2. NIVEAU DE FRANÇAIS — deux niveaux différents, ne les confonds pas.
+
+   L'ARTICLE : B1+
+   · phrases de 8 à 20 mots, UNE idée par phrase ;
+   · connecteurs courants : mais, donc, pourtant, cependant, en effet,
+     par ailleurs, alors que, c'est pourquoi, en revanche ;
+   · pronoms relatifs simples : qui, que, où, dont ;
+   · temps : présent, passé composé, imparfait, futur simple, conditionnel
+     présent ; subjonctif seulement après « il faut que » ou « bien que » ;
+   · vocabulaire courant, concret, avec quelques mots plus précis.
+   À ÉVITER dans l'article : phrases de plus de 24 mots, subordonnées
+   empilées, participe présent, tournures passives lourdes, pronoms relatifs
+   composés (auquel, lequel, duquel), vocabulaire abstrait ou technique,
+   connecteurs savants (néanmoins, dès lors, si bien que, à mesure que).
+
+   LA DICTÉE : B1, plus simple encore que l'article
+   · phrases de 8 à 15 mots, structure sujet + verbe + complément ;
+   · uniquement du vocabulaire courant, rien de spécialisé ;
+   · présent, passé composé, imparfait, futur simple ;
+   · pas de subjonctif, pas de conditionnel passé, pas d'inversion.
+   Ce qui compte dans la dictée, ce n'est pas la difficulté du sens : c'est
+   qu'elle entende bien et qu'elle écrive juste.
+
    La lectrice est une étudiante hispanophone qui apprend le français depuis
    plus d'un an et prépare son installation en France.
 
@@ -54,9 +64,9 @@ SCHÉMA JSON EXACT À RESPECTER
   "vocabulary": [
     { "fr": "mot ou expression en français", "es": "traducción al español" }
   ],
-  "article": "Texte de 200 à 250 mots, paragraphes séparés par \\n\\n",
+  "article": "Texte B1+ de 200 à 250 mots, paragraphes séparés par \\n\\n",
   "dictation": {
-    "text": "Texte de dictée de 90 à 120 mots, sur le même sujet mais DIFFÉRENT de l'article",
+    "text": "Texte B1 de 70 mots environ, sur le même sujet mais DIFFÉRENT de l'article",
     "units": [
       "groupe de 5 à 10 mots",
       "groupe suivant de 5 à 10 mots"
@@ -99,6 +109,8 @@ RÈGLES DÉTAILLÉES PAR CHAMP
 
 ### article
 - Longueur : 200 à 250 mots EXACTEMENT. Compte les mots avant de soumettre.
+- Niveau B1+ (voir les règles de langue plus haut). Relis chaque phrase :
+  si elle dépasse 24 mots ou empile deux subordonnées, coupe-la en deux.
 - Structure : 3 ou 4 paragraphes, séparés par \n\n
 - Premier paragraphe : les faits, l'essentiel du sujet
 - Paragraphes suivants : le contexte, les conséquences, les points de désaccord
@@ -111,11 +123,11 @@ RÈGLES DÉTAILLÉES PAR CHAMP
 Le texte le plus important du fichier : c'est celui qui sera lu à voix haute par
 une synthèse vocale, une fois à vitesse normale puis découpé en petites unités.
 
-- "text" : 90 à 120 mots EXACTEMENT, en 5 à 8 phrases.
+- "text" : 65 à 75 mots (viser 70), en 5 ou 6 phrases courtes.
 - Le sujet est celui de l'article, mais le texte est NOUVEAU : ne recopie
   AUCUNE phrase de l'article. C'est un autre angle, un complément, un exemple
   concret, un témoignage, une conséquence. Il doit se comprendre tout seul.
-- Niveau B2, mêmes règles de langue que l'article.
+- Niveau B1, plus simple que l'article (voir les règles de langue plus haut).
 - Le texte doit être DICTABLE. Donc obligatoirement :
   · AUCUN chiffre : tout est écrit en lettres (« quarante-deux degrés »,
     « deux mille vingt-six », « le quatorze juillet ») ;
@@ -240,11 +252,13 @@ VÉRIFICATIONS AVANT DE RÉPONDRE
 
 Contrôle ces cinq points, ils sont la source de presque toutes les erreurs :
 1. L'article fait bien entre 200 et 250 mots (compte-les).
-2. La dictée fait bien entre 90 et 120 mots, ne contient AUCUN chiffre ni sigle,
-   et ne reprend aucune phrase de l'article.
+2. La dictée fait bien 70 mots environ (65-75), ne contient AUCUN chiffre ni
+   sigle, et ne reprend aucune phrase de l'article.
 3. Les "units" recollées bout à bout redonnent exactement "text".
-4. Il y a 4 sujets d'oral (chacun avec exactement 4 relances) et 2 commentaires.
-5. Le JSON est valide : guillemets fermés, virgules bien placées, pas de
+4. Aucune phrase de l'article ne dépasse 24 mots, aucune phrase de la dictée
+   ne dépasse 15 mots.
+5. Il y a 4 sujets d'oral (chacun avec exactement 4 relances) et 2 commentaires.
+6. Le JSON est valide : guillemets fermés, virgules bien placées, pas de
    virgule avant une accolade ou un crochet fermant.
 
 ═══════════════════════════════════════

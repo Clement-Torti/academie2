@@ -41,24 +41,20 @@
       "es": "lo corriente, la falta de originalidad"
     }
   ],
-  "article": "La Direction générale des Finances publiques a reconnu, le 17 août, que des pirates informatiques avaient dérobé les données de 678 000 contribuables et entreprises. Noms, dates de naissance, adresses, numéros de téléphone, revenus et taux de prélèvement à la source : tout y était. L'intrusion s'est déroulée en juin et en juillet, grâce aux identifiants usurpés d'un agent du fisc et d'un prestataire autorisé.\n\nDerrière l'attaque, un pseudonyme désormais connu, ZeroBytes. Le groupe, qui se présente comme un duo, a mis la base en vente le 12 août sur un forum spécialisé, en se vantant de détenir deux millions de fiches. Interrogé par la presse, il assume une motivation purement financière : l'argent d'abord, et un certain goût du pouvoir. Le 18 août, ZeroBytes a revendiqué une deuxième cible, l'Éducation nationale, dont le ministère avait signalé une intrusion fin juillet.\n\nCe qui inquiète les experts, ce n'est pas tant la sophistication des méthodes que leur banalité. Aucun logiciel miracle, aucune faille spectaculaire : des mots de passe volés, puis des semaines passées à l'intérieur du système. Les pirates affirment même avoir été repérés sans jamais avoir été déconnectés.\n\nLa CNIL a ouvert une enquête et pourrait infliger une amende à l'État lui-même, ce qui serait une première. Reste une question dérangeante : si l'administration fiscale, censée être l'une des mieux protégées du pays, tombe aussi facilement, à qui peut-on encore confier ses données ?",
+  "article": "Le 17 août, la Direction générale des Finances publiques a reconnu un vol de données. Des pirates informatiques ont dérobé les informations de 678 000 contribuables et entreprises. Il y avait les noms, les dates de naissance, les adresses, les téléphones et les revenus. L'intrusion a eu lieu en juin et en juillet. Les pirates ont utilisé les identifiants usurpés d'un agent du fisc et d'un prestataire autorisé.\n\nDerrière l'attaque, il y a un groupe connu sous le nom de ZeroBytes. Il se présente comme un duo. Le 12 août, il a mis la base de données en vente sur un forum spécialisé. Il se vantait alors de posséder deux millions de fiches. Interrogé par la presse, le groupe explique agir pour l'argent. Le 18 août, ZeroBytes a revendiqué une deuxième cible : l'Éducation nationale.\n\nCe qui inquiète les experts, c'est la banalité de la méthode. Il n'y a eu aucune faille spectaculaire. Des mots de passe volés, puis des semaines à l'intérieur du système : cela a suffi. Les pirates disent même qu'on les a repérés sans jamais les déconnecter.\n\nLa CNIL a ouvert une enquête et pourrait donner une amende à l'État. Ce serait une première. Mais une question dérange : si le fisc tombe aussi facilement, à qui peut-on confier ses données ?",
   "dictation": {
-    "text": "Les victimes de ce vol n'ont rien perdu sur leur compte en banque, du moins pour le moment. Ce qu'on leur a pris, ce sont des informations que l'on ne change pas, comme leur adresse ou leurs revenus. Dès lors, les escrocs ont un avantage terrible, puisqu'ils connaissent déjà ces détails intimes. Ils appellent, se présentent comme des agents du service public, et se montrent très convaincants. Les spécialistes ont donc rappelé une règle simple, que beaucoup avaient oubliée. Une administration ne demande jamais ses codes secrets par téléphone ou par courrier. Ces messages inquiétants, il faut les signaler, puis les supprimer.",
+    "text": "Les victimes n'ont rien perdu sur leur compte en banque. On leur a pris des informations qu'elles ne peuvent pas changer. Les escrocs connaissent donc déjà leur adresse et leurs revenus. Ils appellent, puis ils se présentent comme des agents du service public. Une administration ne demande pourtant jamais ses codes secrets par téléphone. Ces messages, il faut les signaler, puis les supprimer sans répondre.",
     "units": [
-      "Les victimes de ce vol n'ont rien perdu",
-      "sur leur compte en banque,",
-      "du moins pour le moment.",
-      "Ce qu'on leur a pris,",
-      "ce sont des informations que l'on ne change pas,",
-      "comme leur adresse ou leurs revenus.",
-      "Dès lors, les escrocs ont un avantage terrible,",
-      "puisqu'ils connaissent déjà ces détails intimes.",
-      "Ils appellent, se présentent comme des agents",
-      "du service public, et se montrent très convaincants.",
-      "Les spécialistes ont donc rappelé une règle simple,",
-      "que beaucoup avaient oubliée. Une administration ne demande jamais",
-      "ses codes secrets par téléphone ou par courrier.",
-      "Ces messages inquiétants, il faut les signaler, puis les supprimer."
+      "Les victimes n'ont rien perdu",
+      "sur leur compte en banque.",
+      "On leur a pris des informations qu'elles ne peuvent pas",
+      "changer. Les escrocs connaissent donc déjà",
+      "leur adresse et leurs revenus.",
+      "Ils appellent, puis ils se présentent",
+      "comme des agents du service public.",
+      "Une administration ne demande pourtant jamais ses codes secrets",
+      "par téléphone. Ces messages, il faut les signaler,",
+      "puis les supprimer sans répondre."
     ]
   },
   "oralTopics": [

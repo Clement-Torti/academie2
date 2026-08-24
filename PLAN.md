@@ -89,7 +89,7 @@ La dictée floute la publication et le vocabulaire (`#article-section`,
 | 1 | Première écoute | texte lu **une fois** à 0.9×, aucun texte affiché |
 | 2 | Dictée | unités de 5 à 10 mots, 0.7× (réglable), ponctuation annoncée (par défaut), répétition libre, clic pour l'unité suivante |
 | 3 | Relais IA | prompt prérempli dans Claude : texte original + sa copie + son carnet |
-| 4 | Analyse | une erreur à la fois : indice → correction → règle → statut carnet |
+| 4 | Analyse | une **phrase** à la fois : réécoute (0.75×), phrase correcte, sa copie juste dessous, puis tous les points de cette phrase |
 | 5 | Bilan | score, diff mot à mot, **changements du carnet** |
 | 6 | Relecture | texte correct relu à 0.9×, phrase surlignée — **obligatoire** : c'est elle qui débloque l'oral |
 
@@ -105,6 +105,11 @@ Détails d'implémentation :
   de reprendre là où elle en était.
 - Le carnet est écrit dès que la correction est appliquée, avant la revue :
   si elle s'interrompt, rien n'est perdu.
+- La revue est **alignée localement** : un diff mot à mot (plus longue sous-suite
+  commune) rattache sa copie aux phrases de l'original. Les surlignages ne
+  dépendent donc pas de la qualité de la réponse de l'IA, qui n'apporte que la
+  catégorie, l'explication et le lien vers le carnet. Les erreurs sont ensuite
+  réparties par phrase, et une phrase sans faute est montrée comme validée.
 - La journée est marquée complétée au bilan de la dictée.
 
 ### 2.3 Sortie

@@ -558,6 +558,36 @@
       font-family: 'Nunito', sans-serif;
     }
 
+    /* Correction phrase par phrase */
+    .dict-line-label {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 9.5px; font-weight: 800;
+      text-transform: uppercase; letter-spacing: .12em;
+      color: #9ca3af; margin-bottom: 6px;
+    }
+    .dict-line {
+      font-family: 'Nunito', sans-serif;
+      font-size: 16px; line-height: 1.95;
+      border-radius: 12px; padding: 12px 14px;
+    }
+    .dict-line-ok { background: #F0FDFA; border: 1px solid #99E6DF; color: #0f5f57; }
+    .dict-line-ok ins {
+      text-decoration: none; font-weight: 800; color: #0f766e;
+      background: rgba(78,205,196,.32); border-radius: 4px; padding: 1px 4px;
+    }
+    .dict-line-user { background: #FFF7F7; border: 1px solid #FBD5D5; color: #7f1d1d; }
+    /* rien à corriger : sa ligne ne doit pas être habillée en rouge */
+    .dict-line-user.is-ok { background: #F6FEF9; border-color: #C9EED8; color: #15803D; }
+    .dict-line-user del {
+      text-decoration: line-through; color: #b91c1c;
+      background: rgba(255,107,107,.2); border-radius: 4px; padding: 1px 4px;
+    }
+    .dict-err-item {
+      display: flex; gap: 10px; align-items: flex-start;
+      padding: 11px 0; border-top: 1px dashed #eeeeee;
+    }
+    .dict-err-item:first-child { border-top: none; padding-top: 4px; }
+
     /* Diff de la dictée */
     .dict-diff {
       font-family: 'Nunito', sans-serif;
@@ -901,9 +931,9 @@
     speakPunct: true,
     userText: '',
     errors: [],
+    sentences: [],
     result: null,
-    errStep: 0,
-    revealed: false,
+    sentIdx: 0,
     log: null,
     prompt: '',
     _draft: null,
@@ -1255,7 +1285,8 @@
       this.state = 'write';
       this._writeShell = false;
       this._renderWrite();
-      setTimeout(() => this.playUnit(), 400);
+      clearTimeout(this._introTimer);
+      this._introTimer = setTimeout(() => this.playUnit(), 400);
     },
 
     _renderWrite() {
@@ -1409,6 +1440,7 @@
         return;
       }
       tts.stop();
+      clearTimeout(this._introTimer);
       this._setWave(false);
       this._stopTimer();
       this.state = 'handoff';
@@ -1611,15 +1643,16 @@ Réponds UNIQUEMENT avec ce JSON, sans texte autour ni bloc de code :
         globalComment: String(p.globalComment || '').trim(),
         resolved: Array.isArray(p.resolved) ? p.resolved.filter(x => typeof x === 'string') : []
       };
-      this.errStep = 0;
-      this.revealed = false;
+      this.sentences = this._buildSentences();
+      this._assignErrors(this.sentences);
+      this.sentIdx = 0;
       this.state = 'errors';
 
       this._recordCarnet();
 
       document.getElementById('dict-handoff').classList.add('hidden');
       document.getElementById('dict-correction').classList.remove('hidden');
-      this.renderStep();
+      this.renderSentence();
     },
 
     // Le carnet est mis à jour dès que la correction arrive : si elle
@@ -1643,141 +1676,250 @@ Réponds UNIQUEMENT avec ce JSON, sans texte autour ni bloc de code :
       try { localStorage.removeItem(this._draftKey); } catch {}
     },
 
-    // Situe l'erreur dans son texte : la phrase reprend sa couleur,
-    // le fragment fautif est surligné, le reste s'atténue.
-    _renderUserText(err) {
-      const txt = String(this.userText || '');
-      if (!txt) return '';
+    /* ── Correction phrase par phrase ───────────────────
+       On aligne sa copie sur le texte original avec un diff mot à mot.
+       Chaque phrase devient une étape : on la réécoute, on lit la version
+       correcte, puis la sienne juste en dessous, et on traite TOUTES ses
+       erreurs avant de passer à la phrase suivante.                      */
 
-      const ctx = err.userContext ? AIRelay.findFragment(txt, err.userContext) : null;
-      const sentStart = ctx ? ctx.index : 0;
-      const sentLen   = ctx ? ctx.length : txt.length;
+    _tokens(s) { return String(s || '').trim().split(/\s+/).filter(Boolean); },
 
-      let fragStart = -1, fragLen = 0;
-      if (err.heard) {
-        const inSent = AIRelay.findFragment(txt.substr(sentStart, sentLen), err.heard);
-        if (inSent) { fragStart = sentStart + inSent.index; fragLen = inSent.length; }
-        else {
-          const any = AIRelay.findFragment(txt, err.heard);
-          if (any) { fragStart = any.index; fragLen = any.length; }
-        }
-      }
-
-      const focusStart = fragStart >= 0 ? Math.min(sentStart, fragStart) : sentStart;
-      const focusEnd   = fragStart >= 0
-        ? Math.max(sentStart + sentLen, fragStart + fragLen)
-        : sentStart + sentLen;
-
-      const out = [`<span class="err-dim">${esc(txt.slice(0, focusStart))}</span>`,
-                   `<span class="err-focus" id="dict-err-focus">`];
-      if (fragStart >= 0) {
-        out.push(esc(txt.slice(focusStart, fragStart)),
-                 `<mark class="err-frag">${esc(txt.slice(fragStart, fragStart + fragLen))}</mark>`,
-                 esc(txt.slice(fragStart + fragLen, focusEnd)));
-      } else {
-        // Mot oublié : pas de fragment à surligner, on marque l'endroit.
-        out.push(esc(txt.slice(focusStart, focusEnd)),
-                 ` <mark class="err-frag" title="Il manque quelque chose ici">…</mark>`);
-      }
-      out.push(`</span>`, `<span class="err-dim">${esc(txt.slice(focusEnd))}</span>`);
-      return out.join('');
+    _normTok(t) {
+      return String(t).toLowerCase().normalize('NFC')
+        .replace(/[‘’′]/g, "'")
+        .replace(/[.,;:!?…«»"()\[\]]/g, '');
     },
 
-    _dots() {
+    // Plus longue sous-suite commune entre sa copie (A) et l'original (B).
+    // '=' mot commun · '-' seulement chez elle · '+' seulement dans l'original.
+    _diffOps() {
+      const A = this._tokens(this.userText), B = this._tokens(this.text);
+      const n = A.length, m = B.length;
+      const same = (i, j) => this._normTok(A[i]) === this._normTok(B[j]);
+
+      const dp = Array.from({ length: n + 1 }, () => new Uint16Array(m + 1));
+      for (let i = n - 1; i >= 0; i--)
+        for (let j = m - 1; j >= 0; j--)
+          dp[i][j] = same(i, j) ? dp[i + 1][j + 1] + 1
+                                : Math.max(dp[i + 1][j], dp[i][j + 1]);
+
+      const ops = [];
+      let i = 0, j = 0;
+      while (i < n && j < m) {
+        if (same(i, j))                        { ops.push({ t:'=', a:i, b:j, w:B[j] }); i++; j++; }
+        else if (dp[i + 1][j] >= dp[i][j + 1]) { ops.push({ t:'-', a:i, w:A[i] }); i++; }
+        else                                   { ops.push({ t:'+', b:j, w:B[j] }); j++; }
+      }
+      while (i < n) ops.push({ t:'-', a:i, w:A[i++] });
+      while (j < m) ops.push({ t:'+', b:j, w:B[j++] });
+      return ops;
+    },
+
+    // Découpe l'alignement en phrases de l'original.
+    _buildSentences() {
+      const parts = this._sentences(this.text);
+      if (!parts.length) return [];
+
+      const end = [];              // borne de fin de chaque phrase, en mots
+      let acc = 0;
+      parts.forEach(p => { acc += this._tokens(p).length; end.push(acc); });
+
+      const sents = parts.map((orig, idx) => ({
+        idx, orig, ops: [], errors: [],
+        oFrom: idx ? end[idx - 1] : 0, oTo: end[idx] - 1
+      }));
+
+      let k = 0;
+      for (const op of this._diffOps()) {
+        if (op.b !== undefined)
+          while (k < end.length - 1 && op.b >= end[k]) k++;
+        sents[k].ops.push(op);
+      }
+
+      sents.forEach(s => {
+        s.user = s.ops.filter(o => o.t !== '+').map(o => o.w).join(' ');
+        const idxs = s.ops.filter(o => o.a !== undefined).map(o => o.a);
+        s.uFrom = idxs.length ? Math.min(...idxs) : -1;
+        s.uTo   = idxs.length ? Math.max(...idxs) : -1;
+        s.diffs = s.ops.filter(o => o.t !== '=').length;
+      });
+      return sents;
+    },
+
+    // Rattache chaque erreur signalée par l'IA à sa phrase.
+    _assignErrors(sents) {
+      const wordAt = (txt, pos) => this._tokens(txt.slice(0, pos)).length;
+
+      this.errors.forEach(err => {
+        let target = -1;
+
+        if (err.pos < 1e9) {
+          const wi = wordAt(this.userText, err.pos);
+          target = sents.findIndex(s => s.uFrom >= 0 && wi >= s.uFrom && wi <= s.uTo);
+        }
+        if (target < 0 && err.expected) {
+          const f = AIRelay.findFragment(this.text, err.expected);
+          if (f) {
+            const oi = wordAt(this.text, f.index);
+            target = sents.findIndex(s => oi >= s.oFrom && oi <= s.oTo);
+          }
+        }
+        if (target < 0) target = 0;
+        sents[target].errors.push(err);
+      });
+    },
+
+    _sentDots() {
       return `<div class="write-dots">${
-        this.errors.map((_, i) =>
-          `<span class="write-dot ${i < this.errStep ? 'done' : i === this.errStep ? 'current' : ''}"></span>`
+        this.sentences.map((s, i) =>
+          `<span class="write-dot ${i < this.sentIdx ? 'done' : i === this.sentIdx ? 'current' : ''}"
+                 title="Phrase ${i + 1}${s.diffs ? '' : ' · correcte'}"></span>`
         ).join('')}</div>`;
     },
 
-    renderStep() {
-      const box = document.getElementById('dict-correction');
-      if (!this.errors.length)              { this.renderSummary(); return; }
-      if (this.errStep >= this.errors.length) { this.renderSummary(); return; }
+    // Ligne de référence : les mots qu'elle n'a pas écrits sont surlignés.
+    _lineCorrect(s) {
+      return s.ops.filter(o => o.t !== '-')
+        .map(o => o.t === '+' ? `<ins>${esc(o.w)}</ins>` : esc(o.w))
+        .join(' ');
+    },
 
-      const err = this.errors[this.errStep];
-      const c = Carnet.cat(err.category);
-      const isLast = this.errStep === this.errors.length - 1;
+    // Sa ligne : ses mots fautifs ou en trop sont barrés.
+    _lineUser(s) {
+      if (!s.ops.some(o => o.t !== '+')) return `<em style="opacity:.6;">(rien d'écrit ici)</em>`;
+      return s.ops.filter(o => o.t !== '+')
+        .map(o => o.t === '-' ? `<del>${esc(o.w)}</del>` : esc(o.w))
+        .join(' ');
+    },
+
+    playSentence(i) {
+      const s = this.sentences[i !== undefined ? i : this.sentIdx];
+      if (!s) return;
+      const btn = document.getElementById('dict-sent-btn');
+      if (btn) btn.disabled = true;
+      tts.speakSeq([s.orig], {
+        rate: 0.75,
+        onEnd: () => { if (btn) btn.disabled = false; }
+      });
+      setTimeout(() => { if (btn) btn.disabled = false; }, 12000);
+    },
+
+    renderSentence() {
+      const box = document.getElementById('dict-correction');
+      if (!this.sentences.length)              { this.renderSummary(); return; }
+      if (this.sentIdx >= this.sentences.length) { this.renderSummary(); return; }
+
+      const s = this.sentences[this.sentIdx];
+      const isLast = this.sentIdx === this.sentences.length - 1;
+      const n = s.errors.length;   // le compte affiché suit les erreurs signalées,
+                                   // pas les opérations du diff mot à mot
 
       box.innerHTML = `
         <div class="write-anim">
           <div class="flex items-center justify-between gap-3 mb-4 flex-wrap">
             <div class="flex items-center gap-3">
               <span class="text-[11px] font-bold uppercase tracking-widest text-frBlue">
-                Erreur ${this.errStep + 1} <span class="text-gray-300">/ ${this.errors.length}</span>
+                Phrase ${this.sentIdx + 1} <span class="text-gray-300">/ ${this.sentences.length}</span>
               </span>
-              <span class="err-badge" style="background:${c.bg}; color:${c.fg};">${c.label}</span>
+              ${n
+                ? `<span class="err-badge" style="background:#FEE2E2; color:#B91C1C;">
+                     ${n} erreur${n > 1 ? 's' : ''}</span>`
+                : s.diffs
+                  ? `<span class="err-badge" style="background:#FEF3C7; color:#B45309;">
+                       des mots diffèrent</span>`
+                  : `<span class="err-badge" style="background:#DCFCE7; color:#15803D;">
+                       <i class="fa-solid fa-check mr-1"></i>correcte</span>`}
             </div>
-            ${this._dots()}
+            ${this._sentDots()}
           </div>
 
-          <p class="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-2">
-            Dans ta dictée
-          </p>
-          <div class="err-fulltext mb-4">${this._renderUserText(err)}</div>
+          <button id="dict-sent-btn" class="write-btn w-full mb-5" style="padding:15px;"
+                  onclick="dictee.playSentence()">
+            <i class="fa-solid fa-volume-high"></i> Réécouter cette phrase
+          </button>
 
-          ${!this.revealed ? `
+          <p class="dict-line-label">La phrase correcte</p>
+          <div class="dict-line dict-line-ok mb-4">${this._lineCorrect(s)}</div>
+
+          <p class="dict-line-label">Ce que tu as écrit</p>
+          <div class="dict-line dict-line-user ${s.diffs ? '' : 'is-ok'} mb-5">${this._lineUser(s)}</div>
+
+          ${n ? `
+            <p class="dict-line-label">${n} point${n > 1 ? 's' : ''} à retenir</p>
+            <div class="mb-5">${s.errors.map(err => this._errItem(err)).join('')}</div>
+          ` : s.diffs ? `
             <div class="rounded-xl px-4 py-3.5 mb-5" style="background:#FFF8E6; border:1px solid #F3E0A8;">
               <p class="text-[13px] text-amber-900 leading-relaxed" style="font-family:'Nunito',sans-serif;">
-                <i class="fa-solid fa-lightbulb text-amber-500 mr-1.5"></i>
-                ${esc(err.hint || 'Relis attentivement la partie soulignée.')}
+                <i class="fa-solid fa-circle-info text-amber-500 mr-1.5"></i>
+                Compare les deux lignes : les mots surlignés sont ceux qui changent.
               </p>
             </div>
-            <p class="text-[11px] text-gray-400 mb-3 leading-relaxed">
-              Essaie de corriger dans ta tête avant de regarder.
-            </p>
-            <button class="write-btn w-full sm:w-auto" onclick="dictee.reveal()">
-              <i class="fa-solid fa-eye"></i> Montrer la correction
-            </button>
           ` : `
-            <div class="write-anim">
-              <div class="rounded-xl px-4 py-4 mb-3" style="background:#F0FDFA; border:1px solid #99E6DF;">
-                <div class="corr-row mb-2.5">
-                  ${err.heard ? `<del>${esc(err.heard)}</del>` : `<del>(rien)</del>`}
-                  <i class="fa-solid fa-arrow-right text-teal text-xs"></i>
-                  <span class="fix">${esc(err.expected || '(à supprimer)')}</span>
-                  <button onclick="tts._speak('${esc((err.expected || '').replace(/'/g, "\\'"))}', null, 0.75)"
-                          class="text-teal text-xs" title="Écouter la forme correcte">
-                    <i class="fa-solid fa-volume-high"></i>
-                  </button>
-                </div>
-                <p class="text-[13px] text-gray-600 leading-relaxed" style="font-family:'Nunito',sans-serif;">
-                  ${esc(err.explanation || '')}
-                </p>
-              </div>
-
-              <div class="flex items-center gap-2 mb-4 flex-wrap text-[11px]"
-                   style="font-family:'Montserrat',sans-serif; font-weight:700;">
-                <i class="fa-solid fa-book-bookmark text-gold"></i>
-                <span class="text-gray-500">${esc(err.carnetLabel)}</span>
-                ${err.known
-                  ? `<span class="err-badge" style="background:#FEF2F2; color:#B91C1C;">
-                       déjà vu ${err.known.occurrences} fois</span>`
-                  : `<span class="err-badge" style="background:#FFFBEB; color:#B45309;">
-                       nouveau point</span>`}
-              </div>
-
-              <button class="write-btn w-full sm:w-auto" onclick="dictee.nextError()">
-                ${isLast
-                  ? '<i class="fa-solid fa-flag-checkered"></i> Voir le bilan'
-                  : '<i class="fa-solid fa-arrow-right"></i> Erreur suivante'}
-              </button>
+            <div class="rounded-xl px-4 py-3.5 mb-5" style="background:#F0FDF4; border:1px solid #A7E8BD;">
+              <p class="text-[13px] leading-relaxed" style="font-family:'Nunito',sans-serif; color:#15803D;">
+                <i class="fa-solid fa-circle-check mr-1.5"></i>
+                Phrase juste, mot pour mot. Rien à corriger ici.
+              </p>
             </div>
           `}
+
+          <div class="flex gap-2">
+            <button class="write-btn write-btn-ghost" onclick="dictee.prevSentence()"
+                    ${this.sentIdx === 0 ? 'disabled' : ''}>
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button class="write-btn flex-1" onclick="dictee.nextSentence()">
+              ${isLast
+                ? '<i class="fa-solid fa-flag-checkered"></i> Voir le bilan'
+                : '<i class="fa-solid fa-arrow-right"></i> Phrase suivante'}
+            </button>
+          </div>
         </div>`;
 
       box.scrollIntoView({ behavior: 'smooth', block: 'center' });
-
-      const focus = document.getElementById('dict-err-focus');
-      const frame = focus && focus.closest('.err-fulltext');
-      if (frame && frame.scrollHeight > frame.clientHeight) {
-        frame.scrollTop = Math.max(0, focus.offsetTop - frame.clientHeight / 2);
-      }
+      setTimeout(() => this.playSentence(), 350);
     },
 
-    reveal() { this.revealed = true; this.renderStep(); },
+    _errItem(err) {
+      const c = Carnet.cat(err.category);
+      return `
+        <div class="dict-err-item">
+          <span class="err-badge shrink-0" style="background:${c.bg}; color:${c.fg};">${c.label}</span>
+          <div class="min-w-0 flex-1">
+            <div class="corr-row" style="font-size:14px;">
+              ${err.heard ? `<del>${esc(err.heard)}</del>` : `<del>(oublié)</del>`}
+              <i class="fa-solid fa-arrow-right text-teal text-xs"></i>
+              <span class="fix">${esc(err.expected || '(à supprimer)')}</span>
+            </div>
+            ${err.explanation ? `
+              <p class="text-[12.5px] text-gray-600 leading-relaxed mt-1.5"
+                 style="font-family:'Nunito',sans-serif;">${esc(err.explanation)}</p>` : ''}
+            <p class="text-[10px] font-bold mt-1.5" style="font-family:'Montserrat',sans-serif;">
+              <i class="fa-solid fa-book-bookmark text-gold mr-1"></i>
+              <span class="text-gray-400">${esc(err.carnetLabel)}</span>
+              ${err.known
+                ? `<span style="color:#B91C1C;"> · déjà vu ${err.known.occurrences} fois</span>`
+                : `<span style="color:#B45309;"> · nouveau point</span>`}
+            </p>
+          </div>
+        </div>`;
+    },
 
-    nextError() { this.errStep++; this.revealed = false; this.renderStep(); },
+    prevSentence() {
+      if (this.sentIdx === 0) return;
+      this.sentIdx--;
+      this.renderSentence();
+    },
+
+    nextSentence() {
+      this.sentIdx++;
+      this.renderSentence();
+    },
+
+    replaySentences() {
+      this.sentIdx = 0;
+      this.renderSentence();
+    },
 
     /* ── ÉTAPE 5 : bilan + carnet ───────────────────── */
     renderSummary() {
@@ -1823,9 +1965,9 @@ Réponds UNIQUEMENT avec ce JSON, sans texte autour ni bloc de code :
           </div>
 
           <div class="flex flex-col sm:flex-row gap-3">
-            ${n ? `
-              <button class="write-btn write-btn-ghost flex-1" onclick="dictee.replayErrors()">
-                <i class="fa-solid fa-rotate-left"></i> Revoir les erreurs
+            ${this.sentences.length ? `
+              <button class="write-btn write-btn-ghost flex-1" onclick="dictee.replaySentences()">
+                <i class="fa-solid fa-rotate-left"></i> Revoir phrase par phrase
               </button>` : ''}
             <button class="write-btn flex-1" onclick="dictee.finalReading()">
               <i class="fa-solid fa-headphones-simple"></i> Dernière écoute du texte
@@ -1835,8 +1977,6 @@ Réponds UNIQUEMENT avec ce JSON, sans texte autour ni bloc de code :
 
       box.scrollIntoView({ behavior: 'smooth', block: 'start' });
     },
-
-    replayErrors() { this.errStep = 0; this.revealed = false; this.renderStep(); },
 
     /* ── ÉTAPE 6 : relecture du texte corrigé ───────── */
     finalReading() {
@@ -1921,40 +2061,13 @@ Réponds UNIQUEMENT avec ce JSON, sans texte autour ni bloc de code :
 
     /* ── Diff mot à mot ─────────────────────────────── */
     _renderDiff() {
-      const A = String(this.userText || '').trim().split(/\s+/).filter(Boolean);
-      const B = String(this.text || '').trim().split(/\s+/).filter(Boolean);
-      const norm = t => t.toLowerCase().normalize('NFC')
-        .replace(/[‘’′]/g, "'")
-        .replace(/[.,;:!?…«»"()\[\]]/g, '');
-
-      // Plus longue sous-suite commune : suffisant pour ~120 mots.
-      const n = A.length, m = B.length;
-      const dp = Array.from({ length: n + 1 }, () => new Uint16Array(m + 1));
-      for (let i = n - 1; i >= 0; i--) {
-        for (let j = m - 1; j >= 0; j--) {
-          dp[i][j] = norm(A[i]) === norm(B[j])
-            ? dp[i + 1][j + 1] + 1
-            : Math.max(dp[i + 1][j], dp[i][j + 1]);
-        }
-      }
-
-      const out = [];
-      let i = 0, j = 0;
-      while (i < n && j < m) {
-        if (norm(A[i]) === norm(B[j])) { out.push({ t: '=', w: B[j] }); i++; j++; }
-        else if (dp[i + 1][j] >= dp[i][j + 1]) { out.push({ t: '-', w: A[i] }); i++; }
-        else { out.push({ t: '+', w: B[j] }); j++; }
-      }
-      while (i < n) { out.push({ t: '-', w: A[i++] }); }
-      while (j < m) { out.push({ t: '+', w: B[j++] }); }
-
-      if (!out.some(o => o.t !== '=')) {
+      const ops = this._diffOps();
+      if (!ops.some(o => o.t !== '=')) {
         return `<span style="color:#0f766e; font-weight:700;">
                   Mot pour mot, ta dictée est identique à l'original.
                 </span><br><br>${esc(this.text)}`;
       }
-
-      return out.map(o =>
+      return ops.map(o =>
         o.t === '=' ? esc(o.w)
         : o.t === '-' ? `<del>${esc(o.w)}</del>`
         : `<ins>${esc(o.w)}</ins>`

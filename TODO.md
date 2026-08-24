@@ -33,7 +33,9 @@
 - [x] Article et vocabulaire floutés pendant l'exercice
 - [x] Brouillon repris après un rechargement
 - [x] Prompt de correction : texte original + sa copie + son carnet
-- [x] Analyse erreur par erreur (indice → correction → règle → statut carnet)
+- [x] Analyse phrase par phrase : réécoute de la phrase, version correcte,
+      sa copie dessous, et tous les points de la phrase avant de passer à la suivante
+- [x] Alignement local par diff mot à mot (indépendant de la réponse de l'IA)
 - [x] Bilan : score, diff mot à mot, changements du carnet
 - [x] Relecture finale du texte correct, phrase surlignée
 - [x] Déblocage de l'expression orale + journée marquée complétée

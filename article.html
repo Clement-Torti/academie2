@@ -1300,7 +1300,8 @@
             <span class="dict-bar-label">/ ${this.units.length} unités</span>
           </div>
           <div class="flex items-center gap-3 flex-wrap">
-            <label class="dict-toggle" title="Annoncer « virgule », « point »…">
+            <label class="dict-toggle"
+                   title="Annoncer « virgule », « point »… pour entendre la structure. La ponctuation n'est pas corrigée.">
               <input type="checkbox" onchange="dictee.setPunct(this.checked)"
                      ${this.speakPunct ? 'checked' : ''}> Ponctuation
             </label>
@@ -1457,9 +1458,6 @@
     buildPrompt() {
       const cats = Carnet.catsFor('ecrit').map(c => `${c.key} (${c.hint})`).join('\n  · ');
       const carnet = Carnet.summaryForPrompt(22, 'ecrit');
-      const punctRule = this.speakPunct
-        ? `- La ponctuation A ÉTÉ dictée à voix haute : les virgules, points et majuscules de phrase comptent.`
-        : `- La ponctuation n'a PAS été dictée : ne signale ni virgule, ni point, ni majuscule de début de phrase. Une majuscule de nom propre, elle, compte.`;
 
       const digits = /[0-9]|[°%€$&]/.test(this.text)
         ? `\n- Le texte dicté contient des chiffres ou des symboles : la synthèse vocale ne permet pas de deviner comment ils s'écrivent. Ne compte JAMAIS comme erreur la façon de les noter (« 42 » ou « quarante-deux », « °C » ou « degrés », « 2003 » ou « deux mille trois »), du moment que la valeur est la bonne.`
@@ -1482,7 +1480,7 @@ TA MISSION
 3. Liste dans "resolved" les identifiants des points de son carnet qui étaient présents dans ce texte et qu'elle a RÉUSSIS cette fois. C'est ce qui lui montre qu'elle progresse : ne mets un identifiant que si le point était réellement en jeu dans le texte original.
 
 RÈGLES
-${punctRule}${digits}
+- Ne signale JAMAIS la ponctuation ni les majuscules : ni virgule, ni point, ni point-virgule, ni majuscule (début de phrase comme nom propre). Si la seule différence entre "heard" et "expected" est une ponctuation ou une majuscule, ce n'est pas une erreur : ignore-la et cherche ailleurs. Ce n'est pas ce que cet exercice travaille.${digits}
 - Les accents comptent (a/à, ou/où, é/er/ez) : ce sont de vraies erreurs.
 - Un mot oublié ou ajouté est une erreur : "heard" vaut "" pour un oubli, et "expected" vaut "" pour un mot ajouté en trop.
 - Distingue une faute d'écoute (elle a entendu un autre mot) d'une faute d'orthographe (bon mot, mauvaise graphie) et d'une faute de grammaire (accord, conjugaison).
@@ -1588,7 +1586,24 @@ Réponds UNIQUEMENT avec ce JSON, sans texte autour ni bloc de code :
       this._renderWrite();
     },
 
-    /* ── ÉTAPE 4 : analyse erreur par erreur ────────── */
+    // Ponctuation et majuscules ne sont jamais corrigées : ce n'est pas ce que
+    // la dictée entraîne, et la voix de synthèse ne les restitue pas fidèlement.
+    // Filtre local, pour que la règle tienne même si l'IA la néglige.
+    // Les accents, eux, comptent : ils ne sont pas retirés ici.
+    _ignorable(a, b) {
+      const strip = t => String(t || '')
+        .normalize('NFC')
+        .replace(/[\u00a0\u202f\u2009]/g, ' ')
+        .replace(/[‘’′]/g, "'")
+        .replace(/[.,;:!?…«»"()\[\]]/g, '')
+        .replace(/\s+/g, ' ')
+        .trim()
+        .toLowerCase();
+      const na = strip(a), nb = strip(b);
+      return na === nb && !(na === '' && nb === '');
+    },
+
+    /* ── ÉTAPE 4 : analyse phrase par phrase ────────── */
     applyCorrection() {
       const raw = (document.getElementById('dict-ai-response')?.value || '').trim();
       const errEl = document.getElementById('dict-ai-error');
@@ -1609,6 +1624,7 @@ Réponds UNIQUEMENT avec ce JSON, sans texte autour ni bloc de code :
       const carnetData = Carnet.load();
       const errors = (p.errors || [])
         .filter(e => e && (String(e.heard || '').trim() || String(e.expected || '').trim()))
+        .filter(e => !this._ignorable(e.heard, e.expected))
         .map(e => {
           const heard = String(e.heard || '').trim();
           const found = heard ? AIRelay.findFragment(this.userText, heard) : null;

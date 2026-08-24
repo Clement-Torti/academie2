@@ -143,9 +143,10 @@ une synthèse vocale, une fois à vitesse normale puis découpé en petites unit
   · terminaisons verbales homophones : -é / -er / -ez / -ais ;
   · doubles consonnes et accents (é, è, ê) ;
   · élisions et apostrophes (qu'il, l'année, d'ailleurs).
-- Ponctuation simple : points et virgules uniquement. Elle est ANNONCÉE à voix
-  haute pendant la dictée (« virgule », « point ») et l'étudiante doit donc
-  l'écrire : n'en mets pas plus que nécessaire, et rien d'exotique.
+- Ponctuation simple : points et virgules uniquement, rien d'exotique. Elle est
+  annoncée à voix haute pendant la dictée (« virgule », « point ») pour faire
+  entendre la structure des phrases, mais elle n'est JAMAIS corrigée — pas plus
+  que les majuscules. Ce n'est donc pas la peine d'en mettre beaucoup.
 
 - "units" : le même texte, découpé dans l'ordre, mot pour mot.
   · chaque unité fait 5 à 10 mots ;

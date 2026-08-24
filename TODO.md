@@ -29,7 +29,8 @@
 - [x] Découpage automatique en unités de 3 à 10 mots
 - [x] Étape 1 : une écoute complète à 0.9×, sans texte
 - [x] Étape 2 : unités ralenties (0.5× à 0.85×), répétition libre, clic pour avancer
-- [x] Option « Ponctuation annoncée »
+- [x] Option « Ponctuation annoncée » (audio seulement)
+- [x] Ponctuation et majuscules jamais corrigées : consigne + filtre local
 - [x] Article et vocabulaire floutés pendant l'exercice
 - [x] Brouillon repris après un rechargement
 - [x] Prompt de correction : texte original + sa copie + son carnet

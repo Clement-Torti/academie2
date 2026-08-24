@@ -223,7 +223,11 @@ aussi en `file://` (les `fetch` d'articles retombent alors sur GitHub Pages).
 - Le carnet est la seule source de vérité de la progression : toute nouvelle
   correction doit passer par `Carnet.record()`.
 - Un point d'oral ne progresse que par des sessions orales, et inversement.
-- La synthèse vocale ne prononce pas la ponctuation : elle n'est corrigée que
-  si l'option « Ponctuation » a été activée pendant la dictée.
+- La ponctuation et les majuscules ne sont JAMAIS corrigées : ce n'est pas ce
+  que la dictée entraîne, et la voix ne les restitue pas fidèlement. La consigne
+  est dans le prompt, et un filtre local (`_ignorable`) écarte ces signalements
+  au cas où l'IA les remonte quand même. Les accents, eux, comptent.
+- L'option « Ponctuation » ne concerne donc que l'audio : elle annonce
+  « virgule », « point » pour faire entendre la structure des phrases.
 - Les chiffres et symboles ne sont pas devinables à l'oreille : le prompt
   demande de ne pas les compter comme fautes quand le texte en contient.

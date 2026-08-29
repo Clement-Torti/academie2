@@ -43,18 +43,19 @@
   ],
   "article": "Le 17 août, la Direction générale des Finances publiques a reconnu un vol de données. Des pirates informatiques ont dérobé les informations de 678 000 contribuables et entreprises. Il y avait les noms, les dates de naissance, les adresses, les téléphones et les revenus. L'intrusion a eu lieu en juin et en juillet. Les pirates ont utilisé les identifiants usurpés d'un agent du fisc et d'un prestataire autorisé.\n\nDerrière l'attaque, il y a un groupe connu sous le nom de ZeroBytes. Il se présente comme un duo. Le 12 août, il a mis la base de données en vente sur un forum spécialisé. Il se vantait alors de posséder deux millions de fiches. Interrogé par la presse, le groupe explique agir pour l'argent. Le 18 août, ZeroBytes a revendiqué une deuxième cible : l'Éducation nationale.\n\nCe qui inquiète les experts, c'est la banalité de la méthode. Il n'y a eu aucune faille spectaculaire. Des mots de passe volés, puis des semaines à l'intérieur du système : cela a suffi. Les pirates disent même qu'on les a repérés sans jamais les déconnecter.\n\nLa CNIL a ouvert une enquête et pourrait donner une amende à l'État. Ce serait une première. Mais une question dérange : si le fisc tombe aussi facilement, à qui peut-on confier ses données ?",
   "dictation": {
-    "text": "Les victimes n'ont rien perdu sur leur compte en banque. On leur a pris des informations qu'elles ne peuvent pas changer. Les escrocs connaissent donc déjà leur adresse et leurs revenus. Ils appellent, puis ils se présentent comme des agents du service public. Une administration ne demande pourtant jamais ses codes secrets par téléphone. Ces messages, il faut les signaler, puis les supprimer sans répondre.",
+    "text": "Les victimes n'ont rien perdu sur leur compte en banque. On leur a pris des informations très personnelles. Les voleurs connaissent donc leur adresse et leurs revenus. Ils appellent, puis ils se présentent comme des agents du service public. Une administration ne demande jamais ses codes secrets au téléphone. Il faut signaler ces messages, puis les supprimer sans répondre. Ces vols sont devenus très fréquents cette année.",
     "units": [
       "Les victimes n'ont rien perdu",
       "sur leur compte en banque.",
-      "On leur a pris des informations qu'elles ne peuvent pas",
-      "changer. Les escrocs connaissent donc déjà",
-      "leur adresse et leurs revenus.",
+      "On leur a pris des informations",
+      "très personnelles. Les voleurs connaissent",
+      "donc leur adresse et leurs revenus.",
       "Ils appellent, puis ils se présentent",
       "comme des agents du service public.",
-      "Une administration ne demande pourtant jamais ses codes secrets",
-      "par téléphone. Ces messages, il faut les signaler,",
-      "puis les supprimer sans répondre."
+      "Une administration ne demande jamais ses codes secrets",
+      "au téléphone. Il faut signaler ces messages,",
+      "puis les supprimer sans répondre.",
+      "Ces vols sont devenus très fréquents cette année."
     ]
   },
   "oralTopics": [

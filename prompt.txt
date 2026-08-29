@@ -10,7 +10,7 @@ La leçon se déroule en trois temps. Tout est construit pour que l'étudiante
 PRODUISE du français, pas seulement qu'elle en consomme :
 
   1. LECTURE — un article court (200-250 mots, B1+) qui donne le sujet et le vocabulaire.
-  2. DICTÉE  — un texte de 70 mots (B1) lu à voix haute qu'elle doit écrire.
+  2. DICTÉE  — un texte de 70 mots (B1 strict) lu à voix haute qu'elle doit écrire.
   3. ORAL    — une conversation de plus de 20 minutes avec un natif (production orale).
 
 L'article n'est donc qu'un point de départ : il doit être court, dense et
@@ -37,13 +37,27 @@ RÈGLES GÉNÉRALES
    composés (auquel, lequel, duquel), vocabulaire abstrait ou technique,
    connecteurs savants (néanmoins, dès lors, si bien que, à mesure que).
 
-   LA DICTÉE : B1, plus simple encore que l'article
+   LA DICTÉE : B1 STRICT, nettement plus simple que l'article
    · phrases de 8 à 15 mots, structure sujet + verbe + complément ;
-   · uniquement du vocabulaire courant, rien de spécialisé ;
-   · présent, passé composé, imparfait, futur simple ;
-   · pas de subjonctif, pas de conditionnel passé, pas d'inversion.
+   · une seule proposition subordonnée par phrase, jamais deux ;
+   · uniquement du vocabulaire courant et concret, rien de spécialisé ;
+   · temps autorisés, et eux seuls : présent, passé composé, imparfait,
+     futur proche (aller + infinitif), futur simple, impératif ;
+   · pronoms relatifs autorisés : qui, que, où — et rien d'autre.
+   INTERDIT dans la dictée, sans exception :
+   · plus-que-parfait (avait vu, étaient partis), futur antérieur (aura
+     oublié), conditionnel passé, passé simple, subjonctif ;
+   · infinitif passé (sans avoir vu, après être arrivé) ;
+   · participe présent et gérondif (ayant fini, en arrivant) ;
+   · « dont » et les relatifs composés (auquel, lequel, duquel) ;
+   · reprise par dislocation (« Ces messages, il faut les signaler »,
+     « Les parents, eux, ont appris ») ;
+   · accord du participe passé avec un COD placé avant le verbe
+     (« la trousse qu'elle avait rangée ») : c'est du B2, pas du B1 ;
+   · inversion sujet-verbe, tournure passive, phrase sans verbe.
    Ce qui compte dans la dictée, ce n'est pas la difficulté du sens : c'est
-   qu'elle entende bien et qu'elle écrive juste.
+   qu'elle entende bien et qu'elle écrive juste. Une phrase que tu hésiterais
+   à donner en fin de première année de français est déjà trop difficile.
 
    La lectrice est une étudiante hispanophone qui apprend le français depuis
    plus d'un an et prépare son installation en France.
@@ -136,10 +150,15 @@ une synthèse vocale, une fois à vitesse normale puis découpé en petites unit
     (Paris, la France, Strasbourg — jamais un patronyme rare) ;
   · pas de mots entre guillemets, pas de parenthèses, pas de tirets longs.
 - Le texte doit faire travailler des points de langue qui reviennent souvent
-  chez une hispanophone. Places-en plusieurs, naturellement :
-  · accords du participe passé (avec être, avec avoir, avec un COD placé avant) ;
+  chez une hispanophone. Places-en plusieurs, naturellement — tous restent
+  dans le périmètre B1 défini plus haut :
+  · accord du participe passé avec être (elle est restée, ils sont arrivés)
+    et avec les verbes pronominaux (elles se sont retrouvées) ;
+  · participe passé avec avoir mais SANS COD placé avant, donc invariable
+    (ils ont mangé, on lui a retiré la tumeur) ;
   · accords en genre et en nombre dans le groupe nominal ;
-  · homophones grammaticaux : a/à, ou/où, son/sont, ce/se, ces/ses, on/ont ;
+  · homophones grammaticaux : a/à, ou/où, son/sont, ce/se, ces/ses, on/ont,
+    leur/leurs ;
   · terminaisons verbales homophones : -é / -er / -ez / -ais ;
   · doubles consonnes et accents (é, è, ê) ;
   · élisions et apostrophes (qu'il, l'année, d'ailleurs).
@@ -251,15 +270,20 @@ Quatre sujets, dans cet ordre de nature :
 VÉRIFICATIONS AVANT DE RÉPONDRE
 ═══════════════════════════════════════
 
-Contrôle ces cinq points, ils sont la source de presque toutes les erreurs :
+Contrôle ces points, ils sont la source de presque toutes les erreurs :
 1. L'article fait bien entre 200 et 250 mots (compte-les).
 2. La dictée fait bien 70 mots environ (65-75), ne contient AUCUN chiffre ni
    sigle, et ne reprend aucune phrase de l'article.
 3. Les "units" recollées bout à bout redonnent exactement "text".
 4. Aucune phrase de l'article ne dépasse 24 mots, aucune phrase de la dictée
    ne dépasse 15 mots.
-5. Il y a 4 sujets d'oral (chacun avec exactement 4 relances) et 2 commentaires.
-6. Le JSON est valide : guillemets fermés, virgules bien placées, pas de
+5. La dictée ne contient AUCUNE tournure de la liste INTERDIT ci-dessus.
+   Relis-la phrase par phrase en cherchant : « avait », « était » suivi d'un
+   participe, « aura », « dont », un participe présent, ou un participe passé
+   accordé avec un complément placé avant le verbe. Si tu en trouves un,
+   réécris la phrase au présent ou au passé composé.
+6. Il y a 4 sujets d'oral (chacun avec exactement 4 relances) et 2 commentaires.
+7. Le JSON est valide : guillemets fermés, virgules bien placées, pas de
    virgule avant une accolade ou un crochet fermant.
 
 ═══════════════════════════════════════

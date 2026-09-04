@@ -1,0 +1,110 @@
+{
+  "id": "aura-farming-phenomene-2026",
+  "title": "L'aura farming, la mode qui sort les ados des écrans",
+  "date": "2026-09-04",
+  "category": "Société",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pacu_Jalur_culture.jpg?width=1200",
+    "alt": "Une course de pirogues traditionnelles Pacu Jalur en Indonésie, à l'origine de la mode de l'aura farming"
+  },
+  "vocabulary": [
+    {
+      "fr": "le charisme",
+      "es": "el carisma"
+    },
+    {
+      "fr": "une mode",
+      "es": "una moda"
+    },
+    {
+      "fr": "sûr de soi",
+      "es": "seguro de sí mismo"
+    },
+    {
+      "fr": "se moquer de",
+      "es": "burlarse de"
+    },
+    {
+      "fr": "un rassemblement",
+      "es": "una concentración, una reunión"
+    },
+    {
+      "fr": "faire le tour du monde",
+      "es": "dar la vuelta al mundo"
+    },
+    {
+      "fr": "interdire",
+      "es": "prohibir"
+    }
+  ],
+  "article": "Depuis quelques mois, un mot revient sans arrêt dans la bouche des adolescents : l'aura. Dans leur langage, ce mot désigne le charisme, le style naturel. « Farmer son aura », c'est essayer d'en gagner, comme on gagne des points dans un jeu vidéo. La mode vient d'une vidéo indonésienne. Un garçon de onze ans y danse à l'avant d'une pirogue de course, avec des lunettes de soleil. La vidéo a fait le tour du monde.\n\nDepuis, le phénomène a quitté les écrans. En Amérique latine, des jeunes de quatorze à vingt ans organisent des « battles d'aura ». Deux adolescents se placent face à face, dans la rue ou sur une place. Ils prennent des poses, ils refont des mèmes connus, ils dansent sur de la musique phonk. Le public choisit le gagnant : celui qui fait le plus rire et qui paraît le plus sûr de lui. Ces rassemblements arrivent maintenant en Europe.\n\nPourtant, tout le monde n'applaudit pas. Certaines villes ont déjà interdit ces réunions, car elles bloquent la circulation. Des parents y voient un concours d'apparence, où le plus moqueur gagne toujours. Une psychologue défend cependant la tendance. Selon elle, ces jeunes se parlent enfin en face, et non derrière un téléphone.\n\nLes adultes ont connu la Tecktonik, puis Pokémon Go. Ces modes ont disparu, mais elles restent de bons souvenirs. L'aura farming suivra-t-il le même chemin ? Ou faut-il y voir autre chose : une génération pour qui l'image compte plus que tout ?",
+  "dictation": {
+    "text": "Dans la cour du collège, les élèves se sont retrouvés à midi. Ils ont formé un grand cercle autour de deux garçons très motivés. Les deux amis ont dansé, et les autres ont filmé la scène. Un surveillant est arrivé, mais il a seulement souri. Le soir, la vidéo était déjà partout dans le quartier. Les parents ont posé des questions, et personne n'a vraiment répondu.",
+    "units": [
+      "Dans la cour du collège,",
+      "les élèves se sont retrouvés à midi.",
+      "Ils ont formé un grand cercle",
+      "autour de deux garçons très motivés.",
+      "Les deux amis ont dansé,",
+      "et les autres ont filmé la scène.",
+      "Un surveillant est arrivé, mais il a seulement souri.",
+      "Le soir, la vidéo était déjà partout dans le quartier.",
+      "Les parents ont posé des questions,",
+      "et personne n'a vraiment répondu."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Raconter le phénomène",
+      "prompt": "Explique-moi avec tes mots ce qu'est l'aura farming et d'où vient cette mode.",
+      "relances": [
+        "Comment se passe une battle d'aura, concrètement ?",
+        "Pourquoi cette vidéo indonésienne a-t-elle eu autant de succès ?",
+        "Qu'est-ce qui t'a le plus surprise dans l'article ?",
+        "Comment expliquerais-tu le mot aura à ta mère ?"
+      ]
+    },
+    {
+      "title": "Interdire ou laisser faire",
+      "prompt": "Une ville a-t-elle raison d'interdire ces rassemblements de jeunes dans la rue ?",
+      "relances": [
+        "Quels arguments donnerais-tu aux parents inquiets ?",
+        "Où placerais-tu la limite entre le jeu et la moquerie ?",
+        "Que répondrais-tu au maire qui interdit tout ?",
+        "Pourquoi les adultes ont-ils peur de ces modes, selon toi ?"
+      ]
+    },
+    {
+      "title": "Les modes de ta jeunesse",
+      "prompt": "Quelle mode t'a occupée pendant ton adolescence à Saint-Domingue, et pourquoi celle-là ?",
+      "relances": [
+        "Raconte-moi un moment précis avec tes amies.",
+        "Qu'est-ce que tes parents en pensaient à l'époque ?",
+        "Quelle tendance TikTok suis-tu encore aujourd'hui ?",
+        "Y a-t-il une mode que tu regrettes d'avoir suivie ?"
+      ]
+    },
+    {
+      "title": "Le charisme en France",
+      "prompt": "Comment comptes-tu montrer ta personnalité en arrivant à Strasbourg, dans une autre langue ?",
+      "relances": [
+        "Qu'est-ce qui donne du charisme à quelqu'un, chez toi ?",
+        "Les Français et les Dominicains se montrent-ils de la même façon ?",
+        "Comment te présenterais-tu lors d'un entretien d'embauche ?",
+        "Que fais-tu quand tu ne trouves pas tes mots ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "MartineDuQuartier",
+      "comment": "Franchement, on appelle ça une CULTURE maintenant ? Des gamins qui se déhanchent devant un téléphone pour récolter des points imaginaires !!! De mon temps on faisait du sport, on lisait, on discutait. Là ils cherchent juste des vues. Les mairies ont mille fois raison d'interdire ces attroupements.",
+      "likes": 341
+    },
+    {
+      "username": "Yanis_Prof_Techno",
+      "comment": "Je suis prof en collège et j'ai vu trois battles dans ma cour cette semaine. Le plus drôle ? Des élèves qui ne se parlaient JAMAIS sont devenus copains en deux jours. Alors oui c'est ridicule, mais ça marche mieux que mes activités de groupe 😅",
+      "likes": 96
+    }
+  ]
+}

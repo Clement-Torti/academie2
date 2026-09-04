@@ -1,0 +1,114 @@
+{
+  "id": "verdict-meurtre-tupac-shakur-2026",
+  "title": "Meurtre de Tupac : un ancien chef de gang condamné",
+  "date": "2026-09-04",
+  "category": "Société",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tupac_Shakur_driver%27s_license_photo_%281996%29_%28cropped%29.png?width=1200",
+    "alt": "Portrait du rappeur américain Tupac Shakur en 1996"
+  },
+  "vocabulary": [
+    {
+      "fr": "un verdict",
+      "es": "un veredicto"
+    },
+    {
+      "fr": "être reconnu coupable",
+      "es": "ser declarado culpable"
+    },
+    {
+      "fr": "un témoin",
+      "es": "un testigo"
+    },
+    {
+      "fr": "une preuve",
+      "es": "una prueba"
+    },
+    {
+      "fr": "la vengeance",
+      "es": "la venganza"
+    },
+    {
+      "fr": "un enregistrement",
+      "es": "una grabación"
+    },
+    {
+      "fr": "faire appel",
+      "es": "recurrir, apelar"
+    },
+    {
+      "fr": "une peine",
+      "es": "una condena, una pena"
+    }
+  ],
+  "article": "Le 31 août 2026, un tribunal de Las Vegas a rendu son verdict. Duane Davis, surnommé Keffe D, a été reconnu coupable du meurtre de Tupac Shakur. Le rappeur américain est mort par balles le 7 septembre 1996, à vingt-cinq ans. Le jury a délibéré moins de trois heures. Cet homme de soixante-trois ans risque la prison à vie. Sa peine sera fixée le 13 octobre.\n\nL'affaire est restée sans réponse pendant presque trente ans. Selon l'accusation, Keffe D n'a pas tiré lui-même. En revanche, il a organisé l'attaque et fourni l'arme. Il occupait la place avant de la voiture blanche, d'où les coups de feu sont partis. Le motif serait la vengeance. Quelques heures plus tôt, Tupac et ses amis ont frappé son neveu dans un casino.\n\nLa condamnation repose sur un élément surprenant : les mots de l'accusé. Pendant des années, Keffe D a raconté cette nuit à la police, dans un livre et devant des caméras. Le procès a diffusé des heures d'enregistrements et vingt-cinq témoins sont venus parler. Pourtant, aucune arme n'a été retrouvée, et il n'existe aucune preuve scientifique.\n\nLa défense annonce déjà un appel. Elle affirme que son client a inventé ces histoires pour vendre son livre. Beaucoup de fans, en revanche, attendaient ce verdict depuis leur adolescence. D'autres se demandent pourquoi la justice a mis trente ans à bouger. Peut-on condamner un homme uniquement sur ses propres paroles ?",
+  "dictation": {
+    "text": "Trente ans après sa mort, ce rappeur reste très écouté. Ses chansons passent encore à la radio et dans les fêtes de famille. Beaucoup de jeunes ont découvert ces titres avec leurs parents. Le jour du verdict, ses fans se sont retrouvés devant le tribunal. Certains ont pleuré, d'autres ont préféré chanter. Ils attendaient cette réponse depuis leur enfance. Aujourd'hui, ils espèrent que cette histoire va enfin se terminer.",
+    "units": [
+      "Trente ans après sa mort,",
+      "ce rappeur reste très écouté.",
+      "Ses chansons passent encore à la radio",
+      "et dans les fêtes de famille.",
+      "Beaucoup de jeunes ont découvert ces titres",
+      "avec leurs parents. Le jour du verdict,",
+      "ses fans se sont retrouvés devant le tribunal.",
+      "Certains ont pleuré, d'autres ont préféré chanter.",
+      "Ils attendaient cette réponse depuis leur enfance.",
+      "Aujourd'hui, ils espèrent que cette histoire va enfin se terminer."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Raconter le procès",
+      "prompt": "Raconte-moi avec tes mots ce que ce tribunal américain a décidé, et pourquoi.",
+      "relances": [
+        "Quel rôle exact la justice reproche-t-elle à cet homme ?",
+        "Sur quelles preuves les juges se sont-ils appuyés ?",
+        "Qu'est-ce qui explique une attente de trente ans ?",
+        "Quel détail de cette affaire te paraît le plus étrange ?"
+      ]
+    },
+    {
+      "title": "Condamner sur des mots",
+      "prompt": "Peut-on condamner quelqu'un à vie sans arme et sans preuve scientifique, selon toi ?",
+      "relances": [
+        "Pourquoi un homme raconterait-il un crime qu'il n'a pas commis ?",
+        "Quels arguments utiliserais-tu si tu étais son avocate ?",
+        "Et si tu étais dans le jury, que demanderais-tu ?",
+        "Trente ans après, la prison a-t-elle encore un sens ?"
+      ]
+    },
+    {
+      "title": "La musique et la mémoire",
+      "prompt": "Quel artiste disparu écoutes-tu encore aujourd'hui, et qu'est-ce qui te touche chez lui ?",
+      "relances": [
+        "Comment as-tu découvert cette musique, et avec qui ?",
+        "Quelle chanson me ferais-tu écouter en premier ?",
+        "Pourquoi certains artistes restent-ils si présents après leur mort ?",
+        "Raconte-moi un concert ou une soirée liée à cette musique."
+      ]
+    },
+    {
+      "title": "Faits divers et société",
+      "prompt": "Comment imagines-tu la place des faits divers dans les médias français et dominicains ?",
+      "relances": [
+        "De quoi parle-t-on le plus à la télévision, chez toi ?",
+        "En quoi la justice française te semble-t-elle différente ?",
+        "Comment comptes-tu suivre l'actualité une fois à Strasbourg ?",
+        "Parlerais-tu de ce genre d'affaire avec de nouveaux collègues ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "ClaraDeMontreuil_92",
+      "comment": "Trente ans pour arriver à ça, et sur quoi ?? Sur les vantardises d'un vieux monsieur qui voulait vendre son bouquin ! Aucune arme, aucune preuve scientifique, mais on distribue la perpétuité. Ce procès n'a rien réglé du tout, il a juste rassuré tout le monde.",
+      "likes": 412
+    },
+    {
+      "username": "TontonMixtape_Rennes",
+      "comment": "Moi j'avais quatorze ans, une cassette de All Eyez on Me usée jusqu'à l'os, et mon prof de maths qui me la confisquait chaque semaine. Trente ans après, je réécoute le même album en préparant les nuggets de ma fille. Le temps passe bizarrement.",
+      "likes": 76
+    }
+  ]
+}

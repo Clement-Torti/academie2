@@ -1,0 +1,90 @@
+{
+  "id": "maison-blanche-jeux-video-migrants-2026",
+  "title": "La Maison Blanche met en ligne des jeux vidéo sur les expulsions",
+  "date": "2026-09-05",
+  "category": "Société",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/WhiteHouseSouthFacade.JPG?width=1200",
+    "alt": "La façade sud de la Maison Blanche, à Washington"
+  },
+  "vocabulary": [
+    { "fr": "une expulsion", "es": "una expulsión" },
+    { "fr": "la frontière", "es": "la frontera" },
+    { "fr": "en situation irrégulière", "es": "en situación irregular" },
+    { "fr": "une autorisation", "es": "una autorización" },
+    { "fr": "diviser", "es": "dividir" },
+    { "fr": "une provocation", "es": "una provocación" },
+    { "fr": "un enjeu", "es": "algo que está en juego" }
+  ],
+  "article": "Depuis le 3 septembre 2026, le site officiel de la Maison Blanche propose des jeux vidéo. La page s'appelle « Arcade ». Dans « Rio Run », le joueur dirige un personnage qui attrape des migrants près du Rio Grande. Le principe reprend celui du vieux jeu « Snake ». Un autre jeu, « Build the Wall », copie « Tetris ». Il faut empiler des blocs pour monter un mur à la frontière mexicaine.\n\nLe gouvernement américain assume totalement. Selon lui, ces jeux montrent le contraste entre une culture du plaisir et la vision sombre de ses adversaires démocrates. Le pays multiplie en effet les arrestations d'étrangers en situation irrégulière. Mais les associations sont en colère. Amérika García Grewal, responsable d'une organisation du Texas, estime que les créateurs de ces jeux ont oublié ce que veut dire être humain.\n\nLes marques citées protestent aussi. The Tetris Company rappelle qu'elle n'a donné aucune autorisation. Elle affirme croire à ce qui rapproche les gens, et non à ce qui les divise. La société Pokémon a répondu la même chose pour une autre image diffusée par la Maison Blanche.\n\nCette affaire pose une question nouvelle. Un État peut-il utiliser le jeu pour défendre sa politique ? Le jeu vidéo touche surtout les jeunes, donc le message passe vite. Certains y voient une simple provocation, d'autres un vrai danger pour le respect des personnes. L'enjeu dépasse largement les États-Unis.",
+  "dictation": {
+    "text": "Dans une classe, les élèves ont parlé de ces jeux vidéo toute la matinée. Une jeune fille a raconté que ses voisins sont partis en pleine nuit. Ses camarades sont restés silencieux, puis ils ont posé beaucoup de questions. Le professeur leur a demandé ce qu'ils pensaient de ces images. Presque tous ont répondu que ce n'était pas un jeu. Ils vont écrire une lettre ensemble, et ils la donneront à leur maire.",
+    "units": [
+      "Dans une classe, les élèves ont parlé",
+      "de ces jeux vidéo toute la matinée.",
+      "Une jeune fille a raconté",
+      "que ses voisins sont partis en pleine nuit.",
+      "Ses camarades sont restés silencieux,",
+      "puis ils ont posé beaucoup de questions.",
+      "Le professeur leur a demandé",
+      "ce qu'ils pensaient de ces images.",
+      "Presque tous ont répondu que ce n'était pas un jeu.",
+      "Ils vont écrire une lettre ensemble,",
+      "et ils la donneront à leur maire."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Raconter l'affaire",
+      "prompt": "Explique-moi avec tes mots ce que la Maison Blanche a mis en ligne cette semaine.",
+      "relances": [
+        "Comment fonctionne le jeu « Rio Run », exactement ?",
+        "Pourquoi les entreprises comme Tetris ont-elles réagi ?",
+        "Quel argument le gouvernement américain donne-t-il ?",
+        "Quelle partie de l'article t'a le plus surprise ?"
+      ]
+    },
+    {
+      "title": "Jeu ou provocation",
+      "prompt": "Que penses-tu d'un gouvernement qui transforme sa politique en jeu vidéo ?",
+      "relances": [
+        "Où se trouve la limite entre l'humour et le mépris ?",
+        "Et si le jeu parlait d'un autre sujet, moins grave ?",
+        "Qui devrait décider ce qu'un État peut publier ?",
+        "Comment répondrais-tu à quelqu'un qui trouve ça drôle ?"
+      ]
+    },
+    {
+      "title": "Les images qui choquent",
+      "prompt": "Quelle image vue sur les réseaux sociaux t'a le plus choquée, et pourquoi ?",
+      "relances": [
+        "Qu'as-tu fait juste après l'avoir vue ?",
+        "En as-tu parlé avec ta famille ou tes amis ?",
+        "Comment fais-tu pour éviter ce genre de contenu ?",
+        "Une image peut-elle changer ton avis sur un sujet ?"
+      ]
+    },
+    {
+      "title": "Arriver à Strasbourg",
+      "prompt": "Comment imagines-tu tes premières démarches administratives quand tu arriveras à Strasbourg ?",
+      "relances": [
+        "Quels documents prépares-tu déjà à Saint-Domingue ?",
+        "Qui pourrait t'aider pendant tes premières semaines ?",
+        "Comment ça se passe pour un étranger en République dominicaine ?",
+        "Quelle est la première chose que tu feras là-bas ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "CitoyenneDu67",
+      "comment": "Franchement je n'en reviens pas. On parle de familles, d'enfants, de gens qui ont peur, et eux ils en font un SNAKE ?! Ce n'est pas de l'humour, c'est du mépris, point final. Aucune excuse ne tiendra devant ça.",
+      "likes": 412
+    },
+    {
+      "username": "ProfDeCollege_Anais",
+      "comment": "Je l'ai montré à mes troisièmes ce matin, sans rien dire. Silence total pendant deux bonnes minutes, puis une élève lève la main : madame, on peut perdre à ce jeu ? Je n'ai pas su quoi répondre. On a fini le cours là-dessus.",
+      "likes": 57
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "id": "gasly-pole-position-monza-2026",
+  "title": "Gasly en pole position à Monza : la France attendait depuis 1997",
+  "date": "2026-09-05",
+  "category": "Sport",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/2026_Chinese_GP_-_Alpine_-_Pierre_Gasly_-_Qualifying.jpg?width=1200",
+    "alt": "Pierre Gasly au volant de son Alpine bleue pendant une séance de qualifications de Formule 1"
+  },
+  "vocabulary": [
+    { "fr": "une écurie", "es": "una escudería, un equipo" },
+    { "fr": "s'élancer", "es": "arrancar, salir" },
+    { "fr": "un exploit", "es": "una hazaña" },
+    { "fr": "la fiabilité", "es": "la fiabilidad" },
+    { "fr": "un dépassement", "es": "un adelantamiento" },
+    { "fr": "offrir une tournée", "es": "invitar a una ronda" },
+    { "fr": "rebattre les cartes", "es": "cambiar las reglas del juego" }
+  ],
+  "article": "Samedi, à Monza, Pierre Gasly a signé le meilleur temps des qualifications du Grand Prix d'Italie. Le pilote français d'Alpine s'élancera donc en tête dimanche. C'est la première pole position de sa carrière en Formule 1. Derrière lui se placent l'Anglais George Russell et l'Australien Oscar Piastri.\n\nCe résultat est une énorme surprise. Alpine n'est pas une grande écurie, et personne n'attendait la voiture bleue devant Mercedes et McLaren. Gasly était encore troisième avant son dernier tour. Il a alors tout donné et il a battu Russell pour six centièmes de seconde. Dans les stands, ses mécaniciens ont crié de joie.\n\nPour la France, l'événement est très rare. La dernière pole position d'un pilote français datait de 1997. Jean Alesi l'a obtenue au volant d'une Benetton. Depuis, vingt-neuf ans ont passé sans aucun Français en tête d'une grille de départ.\n\nCertains spécialistes restent pourtant prudents. Une pole position ne donne pas la victoire, surtout à Monza, où les dépassements sont faciles. La course est longue et Alpine connaît souvent des problèmes de fiabilité. D'autres pensent au contraire que le nouveau règlement de 2026 rebat les cartes. Les petites écuries pourraient enfin rêver.\n\nDimanche, des millions de Français vont regarder le départ. Gasly peut-il transformer cet exploit en victoire ? Ou la réalité va-t-elle rattraper Alpine dès le premier virage ?",
+  "dictation": {
+    "text": "Dans un café du quartier, les supporters sont arrivés très tôt. Ils ont installé un grand écran devant la fenêtre du bar. Quand la voiture bleue a passé la ligne, ils se sont levés d'un coup. Une mère et sa fille se sont regardées, puis elles ont applaudi très fort. Le patron a offert une tournée à tous ses clients. Ce soir, personne ne parle d'autre chose dans le quartier.",
+    "units": [
+      "Dans un café du quartier,",
+      "les supporters sont arrivés très tôt.",
+      "Ils ont installé un grand écran",
+      "devant la fenêtre du bar.",
+      "Quand la voiture bleue a passé la ligne,",
+      "ils se sont levés d'un coup.",
+      "Une mère et sa fille se sont regardées,",
+      "puis elles ont applaudi très fort.",
+      "Le patron a offert une tournée à tous ses clients.",
+      "Ce soir, personne ne parle",
+      "d'autre chose dans le quartier."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Raconter la nouvelle",
+      "prompt": "Raconte-moi avec tes mots ce qui s'est passé samedi à Monza pendant les qualifications.",
+      "relances": [
+        "Qui était derrière Gasly sur la grille de départ ?",
+        "Pourquoi est-ce que ce résultat est une surprise ?",
+        "Que s'est-il passé pendant son dernier tour ?",
+        "Explique-moi ce qu'est une pole position."
+      ]
+    },
+    {
+      "title": "Un exploit ou un coup de chance",
+      "prompt": "À ton avis, est-ce un vrai exploit du pilote ou surtout un coup de chance ?",
+      "relances": [
+        "Qu'est-ce qui compte le plus, la voiture ou le pilote ?",
+        "Que réponds-tu aux gens qui parlent déjà de victoire ?",
+        "Imagine qu'il abandonne dimanche : que dira la presse ?",
+        "Compare Alpine et une grande écurie comme Mercedes."
+      ]
+    },
+    {
+      "title": "Le sport et toi",
+      "prompt": "Raconte-moi une compétition sportive que tu as suivie avec ta famille ou tes amis.",
+      "relances": [
+        "Où étiez-vous et avec qui exactement ?",
+        "Qu'est-ce que vous avez mangé ou bu ce jour-là ?",
+        "Décris-moi l'ambiance au moment le plus important.",
+        "Qu'est-ce que tu as ressenti à la fin ?"
+      ]
+    },
+    {
+      "title": "Le sport en France",
+      "prompt": "Comment imagines-tu l'ambiance sportive à Strasbourg par rapport à Saint-Domingue ?",
+      "relances": [
+        "Quel sport passionne le plus les Dominicains, et pourquoi ?",
+        "Dans quel endroit iras-tu regarder un grand match en France ?",
+        "Comment le sport peut-il t'aider à rencontrer des gens ?",
+        "Quel sport français aimerais-tu découvrir sur place ?"
+      ]
+    }
+  ],
+  "comments": [
+    { "username": "MonzaOuRien_88", "comment": "Franchement arrêtez avec ce délire national !!! Une pole c'est le samedi, ça ne rapporte AUCUN point. Alpine casse une pièce tous les deux dimanches. On en reparle lundi quand la voiture sera garée au bord de la piste.", "likes": 317 },
+    { "username": "TontonAuGarage", "comment": "Mon père m'a réveillé en 97 pour voir Alesi. J'avais neuf ans et je n'ai rien compris à la course. Hier soir j'ai appelé mon fils pour qu'il regarde avec moi. Vingt-neuf ans d'attente, ça se fête un peu quand même 🥲", "likes": 64 }
+  ]
+}

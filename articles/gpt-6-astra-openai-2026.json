@@ -1,0 +1,82 @@
+{
+  "id": "gpt-6-astra-openai-2026",
+  "title": "GPT-6 Astra : l'intelligence artificielle qui utilise ton ordinateur",
+  "date": "2026-09-05",
+  "category": "Technologie",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hand_holding_smartphone_with_ChatGPT_and_OpenAI_text_%2852917312010%29.jpg?width=1200",
+    "alt": "Une main tient un téléphone qui affiche le logo de ChatGPT et le nom d'OpenAI"
+  },
+  "vocabulary": [
+    { "fr": "un concurrent", "es": "un competidor" },
+    { "fr": "un logiciel", "es": "un programa, un software" },
+    { "fr": "un abonné", "es": "un suscriptor" },
+    { "fr": "remplir un formulaire", "es": "rellenar un formulario" },
+    { "fr": "une faille", "es": "un fallo, una brecha de seguridad" },
+    { "fr": "échouer", "es": "fracasar, fallar" },
+    { "fr": "rester prudent", "es": "mantenerse prudente, ser cauto" }
+  ],
+  "article": "Le trois septembre, l'entreprise américaine OpenAI a présenté son nouveau modèle d'intelligence artificielle : GPT-6 Astra. Il remplace la version précédente et il arrive quelques jours après les modèles d'Anthropic, son grand concurrent. La sortie se fait par étapes. Quelques entreprises partenaires l'utilisent déjà, et les abonnés payants de ChatGPT vont suivre.\n\nCe logiciel ne se contente pas de discuter. Il sait utiliser un ordinateur presque comme une personne : il navigue sur Internet, remplit des formulaires et produit des documents. Pendant une démonstration, il a trouvé un logement en dix minutes, alors qu'un humain aurait eu besoin de plusieurs heures. Le président d'OpenAI parle d'un « saut de génération » et évoque même une intelligence générale, aussi large que celle des humains.\n\nCette puissance inquiète pourtant. OpenAI classe elle-même son modèle au niveau critique en cybersécurité, car il peut découvrir des failles informatiques et attaquer des systèmes protégés. Les fonctions les plus dangereuses restent donc fermées. Par ailleurs, plusieurs chercheurs restent prudents. Ils rappellent que ces machines échouent encore sur des tâches très simples et qu'elles manquent de constance.\n\nAux États-Unis, des élus demandent maintenant une pause dans la recherche. Ailleurs, beaucoup de salariés se posent une autre question, plus concrète : est-ce qu'un programme fera bientôt leur travail à leur place ? Faut-il ralentir cette course, ou bien l'accepter comme un progrès normal ?",
+  "dictation": {
+    "text": "Ma sœur travaille dans une petite agence de voyages. Le mois dernier, elle a testé un logiciel intelligent pendant une semaine. La machine a écrit ses courriers et elle a rempli ses tableaux. Ses collègues se sont regardées sans rien dire devant l'écran. Elles ont peur pour leur métier, mais elles sont curieuses aussi. Ce soir, elles sont rentrées chez elles avec beaucoup de questions dans la tête.",
+    "units": [
+      "Ma sœur travaille dans une petite agence de voyages.",
+      "Le mois dernier, elle a testé",
+      "un logiciel intelligent pendant une semaine.",
+      "La machine a écrit ses courriers",
+      "et elle a rempli ses tableaux.",
+      "Ses collègues se sont regardées",
+      "sans rien dire devant l'écran.",
+      "Elles ont peur pour leur métier,",
+      "mais elles sont curieuses aussi.",
+      "Ce soir, elles sont rentrées chez elles",
+      "avec beaucoup de questions dans la tête."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Raconter la nouvelle",
+      "prompt": "Explique-moi avec tes mots ce que cette nouvelle machine sait faire et pour qui.",
+      "relances": [
+        "Qui a présenté ce modèle, et quand exactement ?",
+        "Raconte-moi l'exemple de la recherche de logement.",
+        "Pourquoi est-ce que certaines fonctions restent fermées ?",
+        "Qu'est-ce que les chercheurs prudents reprochent à ces machines ?"
+      ]
+    },
+    {
+      "title": "Faut-il ralentir",
+      "prompt": "À ton avis, faut-il mettre une pause dans la recherche sur l'intelligence artificielle ?",
+      "relances": [
+        "Qui devrait décider : les entreprises ou les États ?",
+        "Que réponds-tu à quelqu'un qui pense exactement le contraire ?",
+        "Imagine une loi utile : qu'est-ce qu'elle interdirait ?",
+        "Quels métiers faut-il protéger en premier, et pourquoi ?"
+      ]
+    },
+    {
+      "title": "Ton usage au quotidien",
+      "prompt": "Raconte-moi la dernière fois où tu as utilisé une intelligence artificielle.",
+      "relances": [
+        "Qu'est-ce que tu lui as demandé exactement ?",
+        "Est-ce que le résultat t'a aidée ou déçue ?",
+        "Comment ça change ta façon d'apprendre le français ?",
+        "Qu'est-ce que tu refuses de lui faire faire ?"
+      ]
+    },
+    {
+      "title": "Chercher un travail en France",
+      "prompt": "Comment ces machines peuvent-elles t'aider dans ta recherche d'emploi à Strasbourg ?",
+      "relances": [
+        "Quelles tâches de ton métier une machine ne fera jamais ?",
+        "Compare l'usage de ces outils en France et chez toi.",
+        "Que dirais-tu en entretien si on te posait la question ?",
+        "Comment ton diplôme de mercadeo peut-il devenir un avantage ?"
+      ]
+    }
+  ],
+  "comments": [
+    { "username": "MarreDuBattage_67", "comment": "Encore une annonce révolutionnaire !!! À chaque fois on nous promet la même chose, et à chaque fois le truc se trompe sur un calcul de collège. Pendant ce temps, dans mon service, on supprime deux postes. Le fameux saut de génération, ce sont surtout les actionnaires qui le voient.", "likes": 394 },
+    { "username": "ProfDeMathsAuCollege", "comment": "Chez nous, un devoir sur trois est écrit par une machine. Ça se voit tout de suite : les phrases sont trop propres et personne ne fait plus de fautes. Du coup je fais tout écrire à la main, en classe, sur papier. Merci l'innovation 😅", "likes": 58 }
+  ]
+}

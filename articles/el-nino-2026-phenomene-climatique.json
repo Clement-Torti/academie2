@@ -1,0 +1,82 @@
+{
+  "id": "el-nino-2026-phenomene-climatique",
+  "title": "El Niño 2026 : le Pacifique se réchauffe comme jamais",
+  "date": "2026-09-05",
+  "category": "Société",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/El_Ni%C3%B1o_warming_pattern_in_the_Pacific_Ocean_%28Copernicus_2026-08-26%29.webp?width=1200",
+    "alt": "Une carte du Pacifique montre les eaux plus chaudes que la normale pendant El Niño"
+  },
+  "vocabulary": [
+    { "fr": "se réchauffer", "es": "calentarse" },
+    { "fr": "une sécheresse", "es": "una sequía" },
+    { "fr": "une récolte", "es": "una cosecha" },
+    { "fr": "un ouragan", "es": "un huracán" },
+    { "fr": "battre un record", "es": "batir un récord" },
+    { "fr": "inquiéter", "es": "preocupar" },
+    { "fr": "se préparer", "es": "prepararse" }
+  ],
+  "article": "L'océan Pacifique se réchauffe beaucoup plus vite que d'habitude. Les scientifiques parlent d'un El Niño exceptionnel pour la fin de l'année 2026. L'agence américaine du climat estime qu'il a 69 % de chances de battre tous les records depuis 1950. Dans une zone du Pacifique, la mer pourrait dépasser de 2,5 degrés sa température normale.\n\nEl Niño est un phénomène naturel. Tous les trois à sept ans, les eaux chaudes du Pacifique se déplacent vers l'Amérique du Sud. Ce changement modifie les vents, puis les pluies sur toute la planète. Son nom vient de l'espagnol : les pêcheurs péruviens lui ont donné ce nom, car il arrive souvent autour de Noël.\n\nLes conséquences ne sont pas les mêmes partout. On attend des sécheresses en Asie du Sud-Est et en Australie, mais des pluies très fortes sur la côte du Pérou. Dans les Caraïbes, il y a souvent moins d'ouragans pendant ces épisodes. En Europe, l'automne et le début de l'hiver pourraient être plus humides et plus orageux.\n\nCette chaleur inquiète les agriculteurs et les pêcheurs. Les récoltes de riz, de café et de cacao peuvent baisser, et les prix montent ensuite dans les magasins. L'ONU demande donc aux pays de se préparer dès maintenant. Certains rappellent pourtant qu'El Niño existe depuis toujours et que la panique n'aide personne. Mais le climat est déjà plus chaud qu'avant. Faut-il vivre avec ces épisodes, ou changer nos habitudes plus vite ?",
+  "dictation": {
+    "text": "Ma tante habite dans un village au bord de la mer. Cette année, elle a écouté la radio tous les matins. Les pêcheurs sont rentrés avec très peu de poissons. Ils ont expliqué que l'eau était trop chaude. Ses voisines se sont réunies pour parler de la sécheresse. Elles ont acheté du riz et elles ont réparé les toits. Ma tante reste calme devant ces nouvelles, mais elle sait que l'hiver sera difficile.",
+    "units": [
+      "Ma tante habite dans un village",
+      "au bord de la mer.",
+      "Cette année, elle a écouté la radio tous les matins.",
+      "Les pêcheurs sont rentrés avec très peu de poissons.",
+      "Ils ont expliqué que l'eau était trop chaude.",
+      "Ses voisines se sont réunies",
+      "pour parler de la sécheresse.",
+      "Elles ont acheté du riz",
+      "et elles ont réparé les toits.",
+      "Ma tante reste calme devant ces nouvelles,",
+      "mais elle sait que l'hiver sera difficile."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Raconter le phénomène",
+      "prompt": "Explique-moi avec tes mots ce qu'est El Niño et pourquoi on en parle.",
+      "relances": [
+        "Quels chiffres de l'article t'ont le plus marquée ?",
+        "Quelles régions du monde vont souffrir de la sécheresse ?",
+        "Pourquoi est-ce que ce phénomène porte un nom espagnol ?",
+        "Qu'est-ce que l'ONU demande aux pays de faire ?"
+      ]
+    },
+    {
+      "title": "Alerte ou exagération",
+      "prompt": "Que penses-tu de la façon dont les médias annoncent ces phénomènes climatiques ?",
+      "relances": [
+        "Que répondrais-tu au commentaire du lecteur en colère ?",
+        "Qui doit payer les dégâts : l'État ou les habitants ?",
+        "Quelles mesures te semblent vraiment utiles, et pourquoi ?",
+        "Imagine qu'on ne prévienne personne : que se passerait-il ?"
+      ]
+    },
+    {
+      "title": "Ton expérience de la météo",
+      "prompt": "Raconte-moi une saison des pluies ou une sécheresse que tu as vécue chez toi.",
+      "relances": [
+        "Comment ta famille se prépare-t-elle avant un ouragan ?",
+        "Qu'est-ce qui change dans les magasins à ce moment-là ?",
+        "Quelle image de cette période te reste en tête ?",
+        "Comment les gens autour de toi réagissent-ils ?"
+      ]
+    },
+    {
+      "title": "Le climat de ta nouvelle vie",
+      "prompt": "Comment imagines-tu ton premier hiver à Strasbourg si l'automne est très pluvieux ?",
+      "relances": [
+        "Compare le climat de Strasbourg et celui de Saint-Domingue.",
+        "Qu'est-ce que tu vas acheter avant l'arrivée du froid ?",
+        "Quelles habitudes dominicaines vas-tu garder là-bas ?",
+        "De quoi parlent les Français quand ils parlent météo ?"
+      ]
+    }
+  ],
+  "comments": [
+    { "username": "RasLeBolDesRecords_44", "comment": "Encore un record, encore une alerte !!! On nous refait le coup tous les trois ans et il ne se passe jamais rien de plus que d'habitude. Pendant ce temps, personne ne parle du prix du café qui a DOUBLÉ. Les vrais dégâts, ils sont déjà dans nos courses.", "likes": 372 },
+    { "username": "PecheurDeSete_31", "comment": "Moi je pêche depuis vingt ans et l'eau change vraiment, ça c'est sûr. En 2016 on voyait des espèces qui n'existaient pas chez nous avant, et les anciennes descendaient plus profond. On s'adapte, on change les filets, mais chaque année c'est un peu plus la loterie.", "likes": 61 }
+  ]
+}

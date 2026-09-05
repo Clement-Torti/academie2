@@ -1,0 +1,82 @@
+{
+  "id": "lionel-messi-retraite-internationale-2026",
+  "title": "Lionel Messi dit adieu à l'équipe d'Argentine",
+  "date": "2026-09-05",
+  "category": "Sport",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lionel_Messi_Argentina_v_Spain_19_July_2026-076.jpg?width=1200",
+    "alt": "Lionel Messi sous le maillot de l'Argentine pendant la finale de la Coupe du monde 2026 contre l'Espagne"
+  },
+  "vocabulary": [
+    { "fr": "la sélection", "es": "la selección nacional" },
+    { "fr": "prendre sa retraite", "es": "retirarse" },
+    { "fr": "un palmarès", "es": "un palmarés" },
+    { "fr": "une prolongation", "es": "una prórroga" },
+    { "fr": "peser dans une décision", "es": "pesar en una decisión" },
+    { "fr": "un maillot", "es": "una camiseta" },
+    { "fr": "reconnaissant", "es": "agradecido" },
+    { "fr": "un supporter", "es": "un hincha, un aficionado" }
+  ],
+  "article": "Lundi 31 août, Lionel Messi a annoncé sa retraite internationale. Le joueur argentin a publié un long message sur Instagram. À 39 ans, il quitte la sélection après vingt ans de carrière. Il laisse derrière lui plus de 200 matchs et 125 buts avec l'Argentine.\n\nMessi explique qu'il a écrit ce texte le 21 juillet, deux jours après la finale de la Coupe du monde. Ce soir-là, près de New York, l'Argentine a perdu contre l'Espagne après prolongation. Le capitaine avait pourtant marqué huit buts pendant le tournoi, dont un triplé. « J'ai tout donné, je n'ai plus rien à donner », écrit-il. Selon lui, de très bons jeunes joueurs méritent maintenant leur place.\n\nLa mort de son père et agent, Jorge Messi, a aussi pesé dans cette décision. Le joueur a vécu un été très difficile. Il se dit cependant reconnaissant d'avoir porté ce maillot. Son palmarès reste immense : la Coupe du monde 2022, deux Copa América, un titre olympique et une Finalissima.\n\nMessi ne range pas encore ses crampons. Il joue toujours à l'Inter Miami, aux États-Unis, et son contrat court jusqu'en 2028. En revanche, l'Argentine doit désormais préparer l'avenir sans son numéro dix. Beaucoup de supporters se demandent qui portera ce poids. Peut-on vraiment remplacer un joueur pareil, ou faut-il plutôt construire une équipe complètement différente ?",
+  "dictation": {
+    "text": "À Buenos Aires, les supporters sont tristes mais fiers. Beaucoup ont pleuré devant leur télévision. Une jeune femme raconte que son père a acheté un maillot pour toute la famille. Ils ont regardé tous les matchs ensemble. Hier soir, elle et ses amies se sont retrouvées devant le stade. Elles sont restées là très longtemps. Elle pense que les jeunes joueurs vont continuer ce travail. Le football argentin ne va pas s'arrêter.",
+    "units": [
+      "À Buenos Aires, les supporters sont tristes mais fiers.",
+      "Beaucoup ont pleuré devant leur télévision.",
+      "Une jeune femme raconte que son père a acheté",
+      "un maillot pour toute la famille.",
+      "Ils ont regardé tous les matchs ensemble.",
+      "Hier soir, elle et ses amies",
+      "se sont retrouvées devant le stade.",
+      "Elles sont restées là très longtemps.",
+      "Elle pense que les jeunes joueurs vont continuer ce travail.",
+      "Le football argentin ne va pas s'arrêter."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "L'annonce de Messi",
+      "prompt": "Raconte-moi avec tes mots ce que Lionel Messi a annoncé et pourquoi.",
+      "relances": [
+        "Qu'est-ce qui explique vraiment sa décision, selon toi ?",
+        "Comment s'est passée la finale contre l'Espagne ?",
+        "Quels titres a-t-il gagnés avec l'Argentine ?",
+        "Que va-t-il faire maintenant dans son club ?"
+      ]
+    },
+    {
+      "title": "Partir au bon moment",
+      "prompt": "Selon toi, un grand sportif doit-il s'arrêter au sommet ou jouer le plus longtemps possible ?",
+      "relances": [
+        "Quel exemple concret peux-tu me donner ?",
+        "Que répondrais-tu à quelqu'un qui pense le contraire ?",
+        "Que devrait faire un club avec un joueur plus âgé ?",
+        "À ton avis, pourquoi est-ce si difficile d'arrêter ?"
+      ]
+    },
+    {
+      "title": "Le sport dans ta vie",
+      "prompt": "Quelle place le football ou un autre sport occupe-t-il dans ta famille ?",
+      "relances": [
+        "Raconte-moi un match que tu n'oublieras jamais.",
+        "Comment ta famille vit-elle les grandes compétitions ?",
+        "Quel sportif admirais-tu quand tu étais petite ?",
+        "Qu'est-ce que le sport t'a appris personnellement ?"
+      ]
+    },
+    {
+      "title": "Supporters d'ici et d'ailleurs",
+      "prompt": "Comment imagines-tu les soirs de match à Strasbourg, comparés à ceux de Saint-Domingue ?",
+      "relances": [
+        "Quel sport aimerais-tu découvrir en arrivant en France ?",
+        "Comment le sport peut-il t'aider à rencontrer des gens ?",
+        "Quelles différences vois-tu entre supporters français et dominicains ?",
+        "Dans quel stade français aimerais-tu aller, et pourquoi ?"
+      ]
+    }
+  ],
+  "comments": [
+    { "username": "TifosiDuDimanche_10", "comment": "Franchement il aurait dû partir juste après 2022, avec la coupe dans les mains !!! Là on a eu droit à quatre ans de tournée d'adieux et une finale perdue. L'Argentine a bloqué toute une génération de jeunes pour UN SEUL homme. Ça s'appelle de l'égoïsme, pas de la légende.", "likes": 317 },
+    { "username": "LaCantineDeRosario", "comment": "J'étais à Marseille en 2022, dans un bar plein d'Argentins. Quand il a marqué en finale, un monsieur de soixante-dix ans m'a serré dans ses bras en pleurant. Je ne le connaissais même pas. Voilà ce qu'il laisse derrière lui, et aucun jeune ne remplacera ça.", "likes": 46 }
+  ]
+}

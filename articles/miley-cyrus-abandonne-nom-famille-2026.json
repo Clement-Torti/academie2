@@ -1,0 +1,82 @@
+{
+  "id": "miley-cyrus-abandonne-nom-famille-2026",
+  "title": "Miley Cyrus abandonne son nom de famille, son père approuve",
+  "date": "2026-09-05",
+  "category": "Culture",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Miley_Cyrus_and_Billy_Ray_Cyrus.jpg?width=1200",
+    "alt": "Miley Cyrus souriante à côté de son père, le chanteur Billy Ray Cyrus, lors d'un événement public"
+  },
+  "vocabulary": [
+    { "fr": "un nom de famille", "es": "un apellido" },
+    { "fr": "désormais", "es": "a partir de ahora, de ahora en adelante" },
+    { "fr": "se faire appeler", "es": "hacerse llamar" },
+    { "fr": "une pochette d'album", "es": "la portada de un disco" },
+    { "fr": "un geste", "es": "un gesto" },
+    { "fr": "une opération de communication", "es": "una estrategia de imagen" },
+    { "fr": "compter pour quelqu'un", "es": "importarle a alguien" }
+  ],
+  "article": "La chanteuse américaine Miley Cyrus a décidé de retirer son nom de famille. Désormais, sur ses affiches et sur ses pochettes d'album, elle se fait appeler simplement Miley. Ce changement arrive juste avant la sortie de son dixième album, « Bass Persuades », prévu le 18 septembre.\n\nSon père, le chanteur Billy Ray Cyrus, a réagi sur le réseau social X. Il explique qu'il a toujours appelé sa fille Miley, tout simplement. Il rappelle aussi que lui-même se faisait appeler Cyrus, avant le succès de sa chanson « Achy Breaky Heart » en 1992. Pour lui, la famille compte plus que jamais aujourd'hui.\n\nDans son message, il cite Dolly, Cher, Elvis et Prince. Ces artistes ont tous laissé tomber leur nom de famille. Il parle donc d'une progression naturelle pour une icône de la musique. Cette réaction publique surprend beaucoup de fans, car la relation entre le père et la fille a souvent été difficile.\n\nCertains applaudissent ce geste et y voient une vraie liberté. D'autres pensent en revanche à une simple opération de communication avant un album. En effet, un prénom seul se retient plus vite et se vend mieux partout dans le monde. Mais peut-on vraiment effacer un nom quand on est célèbre depuis l'enfance ? Miley donnera peut-être sa réponse dans ses nouvelles chansons.",
+  "dictation": {
+    "text": "Dans la boutique du centre, la vendeuse a changé toutes les étiquettes. Les affiches sont arrivées le matin, et le nom de famille a disparu. Deux amies se sont arrêtées devant la vitrine. Elles ont pris une photo, puis elles sont entrées pour acheter le disque. La vendeuse leur a expliqué la nouvelle. Elles sont reparties très contentes, avec leur sac et leurs affiches. Ce soir, elles vont écouter les chansons ensemble.",
+    "units": [
+      "Dans la boutique du centre,",
+      "la vendeuse a changé toutes les étiquettes.",
+      "Les affiches sont arrivées le matin,",
+      "et le nom de famille a disparu.",
+      "Deux amies se sont arrêtées devant la vitrine.",
+      "Elles ont pris une photo,",
+      "puis elles sont entrées pour acheter le disque.",
+      "La vendeuse leur a expliqué la nouvelle.",
+      "Elles sont reparties très contentes,",
+      "avec leur sac et leurs affiches.",
+      "Ce soir, elles vont écouter les chansons ensemble."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Raconter la nouvelle",
+      "prompt": "Explique-moi avec tes mots ce que Miley Cyrus a décidé et ce que son père a répondu.",
+      "relances": [
+        "Quels artistes est-ce que son père cite dans son message ?",
+        "Pourquoi ce changement arrive-t-il maintenant, à ton avis ?",
+        "Que sais-tu de la relation entre le père et la fille ?",
+        "Où est-ce que le père a publié son message ?"
+      ]
+    },
+    {
+      "title": "Liberté ou communication",
+      "prompt": "Selon toi, ce changement de nom est-il une vraie liberté ou une stratégie commerciale ?",
+      "relances": [
+        "Qu'est-ce qui te fait penser cela exactement ?",
+        "Que répondrais-tu à quelqu'un qui pense le contraire ?",
+        "Un prénom seul aide-t-il vraiment à vendre un album ?",
+        "Imagine qu'elle change encore de nom dans cinq ans : qu'en dirais-tu ?"
+      ]
+    },
+    {
+      "title": "Ton nom et toi",
+      "prompt": "Raconte-moi l'histoire de ton nom de famille et ce qu'il représente pour toi.",
+      "relances": [
+        "Qui t'a expliqué l'origine de ce nom dans ta famille ?",
+        "Comment les gens réagissent-ils quand tu donnes ton nom ?",
+        "As-tu déjà eu envie de changer de prénom, et pourquoi ?",
+        "Quel surnom te donnent tes proches à Saint-Domingue ?"
+      ]
+    },
+    {
+      "title": "Les noms en France",
+      "prompt": "Comment imagines-tu la place des noms de famille en France, comparée à ton pays ?",
+      "relances": [
+        "Comment vas-tu présenter ton nom aux gens à Strasbourg ?",
+        "Que se passe-t-il quand un employeur lit mal ton nom ?",
+        "Quelles différences vois-tu avec les noms dominicains ?",
+        "Quel conseil donnerais-tu à un ami qui arrive en France ?"
+      ]
+    }
+  ],
+  "comments": [
+    { "username": "DiscothequeDuSamedi", "comment": "Non mais quel cirque !!! Elle enlève son nom trois semaines avant son album, quelle COÏNCIDENCE. Son père parle d'Elvis et de Prince, franchement il exagère. Un vrai artiste n'a pas besoin de ce genre de petit jeu pour exister.", "likes": 284 },
+    { "username": "MarraineDeQuatre", "comment": "Moi j'ai gardé le nom de mon ex-mari pendant onze ans juste pour mes enfants. Le jour où je l'ai enlevé à la mairie, j'ai pleuré dans la voiture. Alors non, changer de nom ce n'est jamais un simple coup de pub 🙂", "likes": 47 }
+  ]
+}

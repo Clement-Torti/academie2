@@ -1,0 +1,111 @@
+{
+  "id": "tesla-cybercab-sans-volant-2026",
+  "title": "Tesla lance le Cybercab, un taxi sans volant ni pédales",
+  "date": "2026-09-05",
+  "category": "Technologie",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tesla_Cybercab_at_Santana_Row_oblique_view_dllu.jpg?width=1200",
+    "alt": "Un robotaxi Tesla Cybercab, une petite voiture à deux places, garé dans une rue"
+  },
+  "vocabulary": [
+    {
+      "fr": "le volant",
+      "es": "el volante"
+    },
+    {
+      "fr": "une pédale",
+      "es": "un pedal"
+    },
+    {
+      "fr": "un trajet",
+      "es": "un trayecto"
+    },
+    {
+      "fr": "une flotte",
+      "es": "una flota"
+    },
+    {
+      "fr": "une enquête",
+      "es": "una investigación"
+    },
+    {
+      "fr": "surveiller",
+      "es": "vigilar"
+    },
+    {
+      "fr": "discret",
+      "es": "discreto"
+    }
+  ],
+  "article": "Hier, à Austin, au Texas, Tesla a mis en service son Cybercab. Ce petit taxi électrique n'a ni volant, ni pédales, ni rétroviseurs. Il transporte deux passagers, et l'ordinateur conduit tout seul. Les premières courses ont commencé vendredi soir, grâce à une application. Pour le moment, la flotte compte seulement quarante-cinq voitures.\n\nLe lancement a été très discret. En 2024, Elon Musk présentait le projet devant des caméras, à Hollywood. Cette fois, il n'y a eu ni scène, ni vidéo en direct, et le patron était absent. Tesla a d'abord invité quelques actionnaires et des influenceurs proches. Certains invités ont même dû signer un engagement de confidentialité.\n\nLes autorités surveillent déjà ces voitures de près. L'agence américaine de sécurité routière a ouvert une enquête sur environ mille véhicules. En effet, la loi impose des équipements que le Cybercab n'a pas. Par ailleurs, Tesla utilise seulement des caméras, alors que ses concurrents ajoutent des capteurs laser. Ce choix coûte moins cher, mais il inquiète beaucoup d'ingénieurs.\n\nL'entreprise promet un prix inférieur à trente mille dollars et une usine capable de produire cent vingt-cinq mille voitures par an. Pourtant, la production reste faible aujourd'hui. Beaucoup d'observateurs parlent donc d'une expérience à grande échelle, pas encore d'une révolution. La vraie question arrive maintenant : accepterait-on de monter dans une voiture sans volant ?",
+  "dictation": {
+    "text": "Ma sœur est arrivée à Austin, et elle a essayé une voiture sans conducteur. Ses amies et elle se sont installées à l'arrière, puis elles ont attendu. On ne voyait pas de volant, et la voiture a démarré toute seule. Ses amies ont eu un peu peur, mais le trajet était très calme. Après le trajet, elles sont sorties et elles ont beaucoup ri. Ma sœur veut recommencer demain avec son mari.",
+    "units": [
+      "Ma sœur est arrivée à Austin,",
+      "et elle a essayé une voiture sans conducteur.",
+      "Ses amies et elle se sont installées",
+      "à l'arrière, puis elles ont attendu.",
+      "On ne voyait pas de volant,",
+      "et la voiture a démarré toute seule.",
+      "Ses amies ont eu un peu peur,",
+      "mais le trajet était très calme.",
+      "Après le trajet, elles sont sorties",
+      "et elles ont beaucoup ri.",
+      "Ma sœur veut recommencer demain avec son mari."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Raconter le Cybercab",
+      "prompt": "Qu'est-ce que Tesla a lancé hier à Austin, et comment ça marche ?",
+      "relances": [
+        "Quels équipements manquent dans cette voiture ?",
+        "Pourquoi le lancement a-t-il été si discret ?",
+        "Que reprochent les autorités américaines à Tesla ?",
+        "Comment expliquerais-tu cette nouvelle à ta famille ?"
+      ]
+    },
+    {
+      "title": "Une voiture sans volant",
+      "prompt": "Que penses-tu des voitures qui roulent sans volant et sans conducteur ?",
+      "relances": [
+        "Qui doit payer en cas d'accident, selon toi ?",
+        "Quels avantages vois-tu pour les personnes âgées ?",
+        "Pourquoi certaines personnes ont-elles peur de cette technologie ?",
+        "Que réponds-tu à quelqu'un qui trouve ça dangereux ?"
+      ]
+    },
+    {
+      "title": "Tes trajets au quotidien",
+      "prompt": "Comment tu te déplaces à Saint-Domingue, et qu'est-ce qui te plaît le moins ?",
+      "relances": [
+        "Quel souvenir gardes-tu d'un trajet en taxi ?",
+        "Comment se passe une journée de transport chez toi ?",
+        "Qu'est-ce qui te fatigue le plus dans la circulation ?",
+        "Quelle différence vois-tu entre le taxi et le bus ?"
+      ]
+    },
+    {
+      "title": "Se déplacer à Strasbourg",
+      "prompt": "Comment imagines-tu tes déplacements à Strasbourg quand tu seras installée en France ?",
+      "relances": [
+        "Quels transports veux-tu essayer en premier là-bas ?",
+        "Comment compares-tu Strasbourg et Saint-Domingue sur ce point ?",
+        "Que dirais-tu si un robotaxi arrivait à Strasbourg ?",
+        "Quels mots français te seront utiles dans les transports ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "PapyDuVolant_54",
+      "comment": "Une voiture sans volant, sans pédales et sans rétroviseurs, et on trouve ça NORMAL ?! Le jour où le logiciel plante, personne ne peut rien faire à l'intérieur. Et bien sûr on lance ça en douce, sans Musk, sans direct. Ça en dit long !!!",
+      "likes": 387
+    },
+    {
+      "username": "MarionAustin2022",
+      "comment": "J'ai vécu deux ans à Austin et j'ai testé un robotaxi l'an dernier. Le plus bizarre, c'est le silence : tu montes, la porte se ferme, et voilà. Ma grand-mère m'a demandé où était le monsieur qui conduit. Bonne question mamie 😅",
+      "likes": 63
+    }
+  ]
+}

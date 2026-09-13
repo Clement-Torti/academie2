@@ -1,0 +1,88 @@
+{
+  "id": "film-horreur-epidemie-dansante-strasbourg-1518",
+  "title": "Strasbourg : un film d'horreur ressuscite l'épidémie dansante de 1518",
+  "date": "2026-09-13",
+  "category": "Culture",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Die_Wallfahrt_der_Fallsuechtigen_nach_Meulebeeck.jpg?width=1200",
+    "alt": "Gravure ancienne montrant des malades pris d'une folie dansante pendant un pèlerinage"
+  },
+  "vocabulary": [
+    { "fr": "un tournage", "es": "un rodaje" },
+    { "fr": "un figurant", "es": "un extra, un figurante" },
+    { "fr": "l'épuisement", "es": "el agotamiento" },
+    { "fr": "se réjouir", "es": "alegrarse" },
+    { "fr": "gênant", "es": "incómodo, embarazoso" },
+    { "fr": "malgré eux", "es": "a su pesar" },
+    { "fr": "s'emparer de", "es": "apoderarse de" }
+  ],
+  "article": "Un film d'horreur est en tournage à Strasbourg depuis le début du mois de septembre. Il s'appelle Dancing Plague et il raconte un fait réel : l'épidémie dansante de 1518. Cet été-là, des habitants de la ville se sont mis à danser sans pouvoir s'arrêter. Selon les chroniques, ils étaient entre cinquante et quatre cents. Certains ont dansé pendant des semaines, jusqu'à l'épuisement.\n\nLe réalisateur est l'Indonésien Joko Anwar, connu pour ses films fantastiques. Il tourne en partie sur les lieux mêmes du drame, à Strasbourg et à Kaysersberg. La production a recruté des dizaines de figurants dans la région. Les habitants ont pu voir les danseurs le soir, sur la place de la cathédrale. Le chorégraphe a travaillé chaque geste pour donner l'impression de corps possédés, qui dansent malgré eux.\n\nLe film relance un vieux débat. Les historiens ne sont pas d'accord sur les causes de 1518. Certains parlent d'un champignon présent dans le pain, d'autres d'une crise collective liée à la faim et à la peur. En revanche, tous rappellent qu'il s'agit d'une tragédie réelle, avec de vraies victimes.\n\nUne partie des Strasbourgeois s'en réjouit, car le tournage fait parler de leur ville. D'autres trouvent gênant de transformer cette histoire en simple spectacle de peur. Faut-il accepter que le cinéma s'empare ainsi du passé ?",
+  "dictation": {
+    "text": "Cette semaine, des habitants sont venus voir le tournage près de la cathédrale. Une jeune femme raconte qu'elle est restée dehors jusqu'à minuit. Ses amies se sont retrouvées devant la scène et elles ont pris des photos. Les danseurs ont répété la même scène plusieurs fois. Leurs gestes étaient lents, puis de plus en plus rapides. Quand la musique s'est arrêtée, le public a applaudi. Ces images vont marquer les esprits.",
+    "units": [
+      "Cette semaine, des habitants sont venus",
+      "voir le tournage près de la cathédrale.",
+      "Une jeune femme raconte qu'elle est restée dehors jusqu'à minuit.",
+      "Ses amies se sont retrouvées devant la scène",
+      "et elles ont pris des photos.",
+      "Les danseurs ont répété la même scène plusieurs fois.",
+      "Leurs gestes étaient lents, puis de plus en plus rapides.",
+      "Quand la musique s'est arrêtée, le public a applaudi.",
+      "Ces images vont marquer les esprits."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Raconter le tournage",
+      "prompt": "Raconte-moi avec tes mots ce qui se passe en ce moment à Strasbourg autour de ce film.",
+      "relances": [
+        "Que s'est-il passé exactement en 1518 ?",
+        "Pourquoi le réalisateur tourne-t-il sur place ?",
+        "Comment la production a-t-elle trouvé ses figurants ?",
+        "Quelles explications donnent les historiens ?"
+      ]
+    },
+    {
+      "title": "L'histoire vraie au cinéma",
+      "prompt": "Selon toi, un film d'horreur a-t-il le droit d'utiliser une vraie tragédie historique ?",
+      "relances": [
+        "Où mettrais-tu la limite, exactement ?",
+        "Que répondrais-tu aux familles des victimes ?",
+        "Un documentaire serait-il plus respectueux ? Explique.",
+        "Donne-moi un exemple de film qui exagère trop."
+      ]
+    },
+    {
+      "title": "Tes peurs et les films",
+      "prompt": "Parle-moi de ton rapport aux films d'horreur : qu'est-ce qui te fait peur au cinéma ?",
+      "relances": [
+        "Raconte-moi le film qui t'a le plus marquée.",
+        "Avec qui regardes-tu ce genre de films ?",
+        "Qu'est-ce qui fait peur sans montrer de sang ?",
+        "Pourquoi certaines personnes détestent-elles ce genre ?"
+      ]
+    },
+    {
+      "title": "Strasbourg et ses légendes",
+      "prompt": "Quand tu vivras à Strasbourg, comment aimerais-tu découvrir l'histoire de la ville ?",
+      "relances": [
+        "Quels lieux veux-tu visiter en premier ?",
+        "Existe-t-il des légendes semblables en République dominicaine ?",
+        "Comment ton pays raconte-t-il son passé difficile ?",
+        "Que dirais-tu à ta famille pour la convaincre de venir ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "AlsacienneDuCentre_67",
+      "comment": "Franchement ça me met en colère. Des gens sont MORTS en dansant, épuisés, terrifiés, et on en fait un film pour faire sursauter les spectateurs. Notre histoire n'est pas un parc d'attractions. Qu'on fasse un vrai documentaire, pas ce cirque devant la cathédrale !!!",
+      "likes": 347
+    },
+    {
+      "username": "FigurantMalgreMoi",
+      "comment": "J'étais figurant deux soirs place de la cathédrale. Quatre heures à tourner en rond en costume de laine, sous la pluie, avec des ampoules partout. À la fin je dansais vraiment malgré moi 😅 Je comprends beaucoup mieux les gens de 1518 maintenant.",
+      "likes": 58
+    }
+  ]
+}

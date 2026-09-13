@@ -1,0 +1,89 @@
+{
+  "id": "vingt-cinq-ans-11-septembre-2026",
+  "title": "Les États-Unis commémorent les 25 ans du 11-Septembre",
+  "date": "2026-09-13",
+  "category": "Société",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/National_September_11_Memorial,_World_Trade_Center,_Manhattan,_New_York.jpg?width=1200",
+    "alt": "Le mémorial du 11-Septembre et ses bassins, à l'emplacement des tours jumelles, à New York"
+  },
+  "vocabulary": [
+    { "fr": "un attentat", "es": "un atentado" },
+    { "fr": "commémorer", "es": "conmemorar" },
+    { "fr": "rendre hommage", "es": "rendir homenaje" },
+    { "fr": "un secouriste", "es": "un socorrista" },
+    { "fr": "la poussière", "es": "el polvo" },
+    { "fr": "tomber malade", "es": "enfermar" },
+    { "fr": "transmettre", "es": "transmitir" }
+  ],
+  "article": "Le vendredi 11 septembre 2026, les États-Unis ont commémoré les vingt-cinq ans des attentats de 2001. Des cérémonies ont eu lieu sur les trois sites frappés ce jour-là : New York, le Pentagone et la Pennsylvanie. À Ground Zero, des familles ont lu un par un les noms des près de 3 000 victimes.\n\nQuatre anciens présidents américains étaient présents à New York. Donald Trump, lui, a préféré se rendre au Pentagone. Le maire de la ville, Zohran Mamdani, est venu malgré une pétition qui demandait son absence. À Bryant Park, la mairie a installé 2 753 chaises vides sur la pelouse. Chaque chaise représentait une personne tuée dans les tours. Les visiteurs pouvaient y déposer une fleur ou un message.\n\nVingt-cinq ans après, les attentats font encore des victimes. En 2001, l'air de Manhattan était plein de poussières toxiques. Des milliers de pompiers et de secouristes sont tombés malades depuis. Beaucoup souffrent aujourd'hui d'un cancer. C'est pourquoi la cérémonie a prévu cette année un moment de silence pour ces morts plus récents.\n\nUne question revient pourtant à chaque anniversaire : comment transmettre cette mémoire ? Beaucoup de jeunes Américains n'étaient pas encore nés en 2001. Pour eux, le 11-Septembre est déjà une page d'histoire, et non un souvenir. Faut-il continuer ces grandes cérémonies chaque année, ou laisser le temps faire son travail ?",
+  "dictation": {
+    "text": "Ce matin, une classe est arrivée devant le mémorial de New York. Les élèves ont apporté des fleurs blanches et ils se sont arrêtés près du bassin. Une dame qui habite le quartier leur a raconté son histoire. Son frère travaillait dans la tour ce jour-là. Elle est restée longtemps avec eux, et les élèves ont gardé le silence. Ils ont promis de ne jamais oublier cette journée.",
+    "units": [
+      "Ce matin, une classe est arrivée",
+      "devant le mémorial de New York.",
+      "Les élèves ont apporté des fleurs blanches",
+      "et ils se sont arrêtés près du bassin.",
+      "Une dame qui habite le quartier",
+      "leur a raconté son histoire.",
+      "Son frère travaillait dans la tour ce jour-là.",
+      "Elle est restée longtemps avec eux,",
+      "et les élèves ont gardé le silence.",
+      "Ils ont promis de ne jamais oublier cette journée."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Raconter la commémoration",
+      "prompt": "Avec tes mots, qu'est-ce que les Américains ont fait le 11 septembre dernier ?",
+      "relances": [
+        "Quels lieux ont accueilli des cérémonies ?",
+        "Pourquoi la mairie a-t-elle installé des chaises vides ?",
+        "Qui étaient les personnes présentes à New York ?",
+        "Quel détail de l'article t'a le plus marquée ?"
+      ]
+    },
+    {
+      "title": "Commémorer ou tourner la page",
+      "prompt": "À ton avis, faut-il continuer ces grandes cérémonies chaque année ? Explique-moi pourquoi.",
+      "relances": [
+        "Que répondrais-tu à quelqu'un qui trouve cela inutile ?",
+        "Une minute de silence, est-ce que ça change quelque chose ?",
+        "Comment expliquer cette journée à un enfant de dix ans ?",
+        "Vingt-cinq ans, c'est long ou c'est court selon toi ?"
+      ]
+    },
+    {
+      "title": "Un souvenir marquant",
+      "prompt": "Raconte-moi une nouvelle terrible que tu as apprise et que tu n'as jamais oubliée.",
+      "relances": [
+        "Où étais-tu et avec qui à ce moment-là ?",
+        "Comment ta famille en a-t-elle parlé ensuite ?",
+        "Qu'est-ce que tu as ressenti les jours suivants ?",
+        "Pourquoi ce souvenir reste-t-il si précis pour toi ?"
+      ]
+    },
+    {
+      "title": "Mémoire française et dominicaine",
+      "prompt": "Quelles dates importantes la République dominicaine commémore-t-elle, et comment les gens les vivent-ils ?",
+      "relances": [
+        "Quelles différences imagines-tu avec les cérémonies françaises ?",
+        "Le 11 novembre, qu'est-ce que tu sais de cette date ?",
+        "Irais-tu voir une commémoration à Strasbourg ? Raconte.",
+        "Comment tes futurs voisins parlent-ils de leur histoire ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "MarcheDansLeVent_78",
+      "comment": "Franchement ça m'ÉNERVE. Vingt-cinq ans après, on sort les grands discours et les chaises vides, mais les pompiers malades attendent toujours d'être soignés correctement !! On savait dès 2001 que cet air était toxique. Les belles cérémonies oui, le silence sur les cancers beaucoup moins.",
+      "likes": 387
+    },
+    {
+      "username": "ProfDHistoire_Colmar",
+      "comment": "Je fais ce cours à des élèves de seconde. Cette année, une gamine m'a demandé si c'était filmé en noir et blanc... J'ai compris d'un coup que pour eux, c'est aussi loin que la guerre de 14. On a regardé les images, plus personne ne parlait.",
+      "likes": 46
+    }
+  ]
+}

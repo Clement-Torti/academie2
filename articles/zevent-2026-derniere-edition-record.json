@@ -1,0 +1,109 @@
+{
+  "id": "zevent-2026-derniere-edition-record",
+  "title": "Le ZEvent tire sa révérence avec un record de 33 millions d'euros",
+  "date": "2026-09-13",
+  "category": "Société",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lancement_du_ZEVENT_2025.jpg?width=1200",
+    "alt": "Le lancement du ZEvent sur la grande scène, devant le public et les caméras"
+  },
+  "vocabulary": [
+    {
+      "fr": "récolter des dons",
+      "es": "recaudar donaciones"
+    },
+    {
+      "fr": "une association",
+      "es": "una asociación, una ONG"
+    },
+    {
+      "fr": "en direct",
+      "es": "en directo"
+    },
+    {
+      "fr": "la générosité",
+      "es": "la generosidad"
+    },
+    {
+      "fr": "dépasser les attentes",
+      "es": "superar las expectativas"
+    },
+    {
+      "fr": "un spectateur",
+      "es": "un espectador"
+    },
+    {
+      "fr": "prendre la suite",
+      "es": "tomar el relevo"
+    }
+  ],
+  "article": "Du 4 au 6 septembre, le ZEvent a réuni des centaines de streameurs à Montpellier. Pendant près de cinquante heures, ils ont joué en direct sur Internet pour récolter des dons. Le résultat a dépassé toutes les attentes : 32,9 millions d'euros pour vingt-deux associations. C'est deux fois plus que l'année dernière.\n\nLe principe est simple. Les spectateurs regardent leurs streameurs préférés jouer, puis ils donnent ce qu'ils veulent. Deux Montpelliérains, ZeratoR et Dach, ont créé le ZEvent en 2016. En dix ans, l'événement a déjà offert plus de 90 millions d'euros. Il a aidé la Croix-Rouge, la Ligue contre le cancer ou encore Amnesty International.\n\nPourtant, cette édition était la dernière. ZeratoR a prévenu le public plusieurs mois avant. Il explique qu'il préfère s'arrêter au sommet, alors que l'événement marche très bien. Cette annonce a sûrement encouragé les dons, car beaucoup de spectateurs voulaient participer une dernière fois.\n\nTout le monde ne se réjouit pas, cependant. Certains trouvent inquiétant que de grandes associations dépendent d'un week-end de jeux vidéo. En effet, l'État donne moins d'argent qu'avant au monde associatif. D'autres répondent que cette générosité reste une très bonne nouvelle, surtout chez les jeunes. La question reste ouverte : qui prendra la suite l'année prochaine ?",
+  "dictation": {
+    "text": "Cette année, beaucoup de familles ont regardé le marathon ensemble. Des amis se sont retrouvés devant l'écran, avec des pizzas et du thé. Une jeune femme a donné dix euros, puis elle est restée jusqu'au matin. Elle a dit que la nuit est passée très vite. Le dimanche soir, les spectateurs ont applaudi devant leur télévision. Beaucoup d'entre eux sont partis se coucher très tard. Cette dernière soirée restera un très beau souvenir.",
+    "units": [
+      "Cette année, beaucoup de familles ont regardé le marathon ensemble.",
+      "Des amis se sont retrouvés devant l'écran,",
+      "avec des pizzas et du thé.",
+      "Une jeune femme a donné dix euros,",
+      "puis elle est restée jusqu'au matin.",
+      "Elle a dit que la nuit est passée très vite.",
+      "Le dimanche soir, les spectateurs ont applaudi devant leur télévision.",
+      "Beaucoup d'entre eux sont partis se coucher très tard.",
+      "Cette dernière soirée restera un très beau souvenir."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Raconter le ZEvent",
+      "prompt": "Raconte-moi avec tes mots ce qui s'est passé à Montpellier au début du mois.",
+      "relances": [
+        "Comment expliques-tu ce record de dons ?",
+        "Qu'est-ce qui t'a le plus surpris dans cette histoire ?",
+        "Comment fonctionne ce genre d'événement, à ton avis ?",
+        "Quel détail retiens-tu pour le raconter à une amie ?"
+      ]
+    },
+    {
+      "title": "Donner grâce aux jeux vidéo",
+      "prompt": "Pourquoi les gens donnent-ils plus facilement à un streameur qu'à une grande association ?",
+      "relances": [
+        "Que répondrais-tu à quelqu'un qui trouve ça choquant ?",
+        "L'État devrait-il donner plus d'argent aux associations ? Explique.",
+        "Quelles causes méritent le plus notre argent, selon toi ?",
+        "Imagine que ton streameur préféré demande des dons : tu fais quoi ?"
+      ]
+    },
+    {
+      "title": "Ta propre générosité",
+      "prompt": "Raconte-moi une fois où tu as donné de l'argent ou du temps pour aider quelqu'un.",
+      "relances": [
+        "Qu'est-ce qui t'a donné envie d'aider ce jour-là ?",
+        "Comment t'es-tu sentie après coup ?",
+        "Y a-t-il une cause qui te touche particulièrement ? Pourquoi ?",
+        "Dans ta famille, qui est le plus généreux ? Raconte."
+      ]
+    },
+    {
+      "title": "Solidarité ici et là-bas",
+      "prompt": "Comment les gens s'entraident-ils en République dominicaine, comparé à ce que tu vois en France ?",
+      "relances": [
+        "Quelles différences imagines-tu avec ta future vie à Strasbourg ?",
+        "Existe-t-il un événement solidaire célèbre chez toi ? Décris-le.",
+        "Comment aimerais-tu t'engager une fois installée en France ?",
+        "Que garderais-tu de la solidarité dominicaine si tu pouvais ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "RealisteDu34",
+      "comment": "Trente-trois millions en un week-end, bravo, vraiment. Mais franchement ça ne DEVRAIT PAS exister. Si la Croix-Rouge a besoin de gamers pour tenir debout, c'est que l'État a démissionné depuis longtemps. On applaudit un pansement sur une jambe cassée, et personne ne pose la vraie question !!",
+      "likes": 418
+    },
+    {
+      "username": "Mamie_Josette_62",
+      "comment": "Mon petit-fils m'a installée devant son ordinateur samedi soir pour me montrer son monde. Je comprenais un mot sur trois et il y avait beaucoup trop de bruit. Et pourtant j'ai fini par donner vingt euros à la Ligue contre le cancer. Première fois de ma vie 😄",
+      "likes": 34
+    }
+  ]
+}

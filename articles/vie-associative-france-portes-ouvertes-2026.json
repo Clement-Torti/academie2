@@ -1,0 +1,110 @@
+{
+  "id": "vie-associative-france-portes-ouvertes-2026",
+  "title": "Vie associative : le week-end portes ouvertes des associations",
+  "date": "2026-09-13",
+  "category": "Société",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Forum_des_associations_in_Jacou.jpg?width=1200",
+    "alt": "Stands et visiteurs pendant un forum des associations dans une commune française."
+  },
+  "vocabulary": [
+    {
+      "fr": "un bénévole",
+      "es": "un voluntario"
+    },
+    {
+      "fr": "s'engager",
+      "es": "comprometerse, implicarse"
+    },
+    {
+      "fr": "une cotisation",
+      "es": "una cuota"
+    },
+    {
+      "fr": "une subvention",
+      "es": "una subvención"
+    },
+    {
+      "fr": "l'entraide",
+      "es": "la ayuda mutua"
+    },
+    {
+      "fr": "recruter",
+      "es": "reclutar, captar"
+    },
+    {
+      "fr": "une porte d'entrée",
+      "es": "una puerta de entrada"
+    }
+  ],
+  "article": "Ce week-end, des milliers d'associations françaises ouvrent leurs portes au public. Dans plus de mille communes, on organise un forum ou une journée portes ouvertes. Sur les stands, on trouve des clubs de sport, des chorales, des cours de théâtre et des groupes d'entraide. L'entrée est libre et on peut souvent essayer une activité sur place.\n\nLa France compte environ un million et demi d'associations. Quelques-unes emploient des salariés, mais la plupart vivent grâce aux bénévoles. Or les responsables ont du mal à recruter depuis quelques années. Les jeunes s'engagent encore, cependant ils restent moins longtemps et préfèrent les projets courts. C'est pourquoi ces week-ends de rentrée sont devenus si importants pour les associations.\n\nPar ailleurs, les subventions publiques baissent dans beaucoup de villes. Certains présidents dénoncent une situation injuste, car ils rendent des services que la mairie n'assure plus. En revanche, d'autres pensent qu'une association doit rester indépendante et trouver son propre argent. Le débat revient chaque automne, alors que les cotisations augmentent un peu partout.\n\nPour les nouveaux arrivants, ces forums sont aussi une porte d'entrée sociale. On y rencontre des voisins, on y pratique la langue, on y construit un premier réseau. Beaucoup de mairies veulent donc rendre le bénévolat plus visible, à l'école comme dans les entreprises. Mais faut-il aller plus loin et donner un vrai statut aux bénévoles ?",
+  "dictation": {
+    "text": "Samedi matin, ma voisine est arrivée très tôt sur la place du marché. Les bénévoles ont installé les tables et les affiches. Elle a choisi un cours de danse et un atelier de cuisine. Ses deux filles se sont inscrites au club de natation. Elles ont payé leur cotisation à la fin de la matinée. Le soir, tout le monde est rentré content, avec des idées pour l'année.",
+    "units": [
+      "Samedi matin, ma voisine est arrivée",
+      "très tôt sur la place du marché.",
+      "Les bénévoles ont installé les tables et les affiches.",
+      "Elle a choisi un cours de danse",
+      "et un atelier de cuisine.",
+      "Ses deux filles se sont inscrites au club de natation.",
+      "Elles ont payé leur cotisation",
+      "à la fin de la matinée.",
+      "Le soir, tout le monde est rentré content,",
+      "avec des idées pour l'année."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Raconter l'article",
+      "prompt": "Avec tes mots, qu'est-ce qui se passe ce week-end dans les communes françaises ?",
+      "relances": [
+        "Quels types d'associations trouve-t-on sur les stands ?",
+        "Pourquoi les associations ont-elles besoin de bénévoles ?",
+        "Quel problème d'argent explique le débat actuel ?",
+        "Quelle information de l'article t'a le plus étonnée ?"
+      ]
+    },
+    {
+      "title": "Faut-il payer les bénévoles",
+      "prompt": "Selon toi, une association doit-elle vivre des subventions publiques ou de son propre argent ?",
+      "relances": [
+        "Quels risques vois-tu si la mairie paie tout ?",
+        "Que répondrais-tu à un président d'association en colère ?",
+        "Une cotisation plus chère, est-ce toujours injuste ?",
+        "Comment convaincre un jeune de s'engager plus longtemps ?"
+      ]
+    },
+    {
+      "title": "Ton expérience du bénévolat",
+      "prompt": "Raconte-moi une fois où tu as aidé un groupe, une école ou un quartier.",
+      "relances": [
+        "Qui t'avait proposé de participer, et comment ?",
+        "Qu'est-ce que tu as appris pendant cette expérience ?",
+        "Quel moment reste le meilleur souvenir pour toi ?",
+        "Referais-tu la même chose aujourd'hui, et pourquoi ?"
+      ]
+    },
+    {
+      "title": "S'inscrire à Strasbourg",
+      "prompt": "Quand tu seras à Strasbourg, à quelle association aimerais-tu t'inscrire en premier ?",
+      "relances": [
+        "Comment ce club pourrait-il t'aider à parler français ?",
+        "Qu'est-ce qui existe de semblable à Saint-Domingue ?",
+        "Comment les gens s'organisent-ils entre voisins chez toi ?",
+        "Quelle activité dominicaine aimerais-tu faire découvrir là-bas ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "PresidenteDuFootLocal",
+      "comment": "Article beaucoup trop gentil !!! On nous coupe les subventions chaque année et on nous demande TOUJOURS plus. Les bénévoles paient l'essence de leur poche pour emmener les gamins aux matchs. Un week-end de stands ne remplacera jamais un vrai budget.",
+      "likes": 347
+    },
+    {
+      "username": "Karim_ClubEchecs",
+      "comment": "Moi je suis venu au forum pour le club de course, je suis reparti avec un cours de tango et une carte du club d'échecs 😅 Ma femme n'a toujours pas compris. Trois ans après, je joue encore tous les mardis soir.",
+      "likes": 58
+    }
+  ]
+}

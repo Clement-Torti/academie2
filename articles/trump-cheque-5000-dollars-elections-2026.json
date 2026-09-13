@@ -1,0 +1,82 @@
+{
+  "id": "trump-cheque-5000-dollars-elections-2026",
+  "title": "Trump promet un chèque de 5 000 dollars à chaque Américain",
+  "date": "2026-09-13",
+  "category": "Économie",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/P20260127MR-1046_President_Donald_Trump_delivers_an_economic_speech_in_Iowa.jpg?width=1200",
+    "alt": "Le président américain Donald Trump pendant un discours sur l'économie, derrière un pupitre"
+  },
+  "vocabulary": [
+    { "fr": "un chèque", "es": "un cheque" },
+    { "fr": "une promesse", "es": "una promesa" },
+    { "fr": "un versement", "es": "un pago" },
+    { "fr": "une taxe", "es": "un impuesto" },
+    { "fr": "se réjouir", "es": "alegrarse" },
+    { "fr": "un élu", "es": "un cargo electo" },
+    { "fr": "gêné", "es": "incómodo" }
+  ],
+  "article": "Le président américain Donald Trump a fait une promesse spectaculaire. Le 9 septembre, il a parlé devant les militants républicains réunis à Dallas. Il a annoncé un chèque de 5 000 dollars pour chaque citoyen adulte. Mais il y a une condition : son parti doit garder la Chambre des représentants et le Sénat après les élections du 3 novembre.\n\nTrump appelle cette mesure le « dividende Trump ». Selon lui, l'argent viendrait des taxes payées sur les produits importés. Le vice-président J.D. Vance a précisé ensuite que les Américains les plus riches ne recevraient rien. Le président demande aussi que cette somme soit dépensée aux États-Unis.\n\nPourtant, beaucoup d'économistes ne croient pas à ce projet. Le coût dépasserait mille milliards de dollars, alors que les taxes sur les importations rapportent bien moins. Par ailleurs, seul le Congrès peut décider d'un tel versement. Plusieurs élus républicains se montrent donc très gênés. En effet, ce n'est pas la première promesse de ce genre : Trump a déjà annoncé des chèques en 2025, puis en novembre dernier. Ces chèques ne sont jamais arrivés.\n\nDans les magasins et sur les réseaux sociaux, certains Américains se réjouissent déjà. D'autres parlent en revanche d'un achat de votes, car le cadeau dépend du résultat des élections. Des juristes répondent qu'un discours de campagne reste libre, même quand il promet de l'argent. La question reste donc ouverte : une démocratie peut-elle accepter qu'un chèque dépende d'un vote ?",
+  "dictation": {
+    "text": "Dans une petite ville du Texas, un vendeur de meubles regarde la télévision. Il rêve déjà d'un grand chèque pour son magasin. Sa femme est entrée dans le salon, et elle est restée silencieuse. Elle lui rappelle les promesses du passé. Les voisins se sont retrouvés devant la porte pour en parler. Certains ont préparé une liste d'achats, d'autres ont haussé les épaules. Ce soir, toute la rue va parler d'argent.",
+    "units": [
+      "Dans une petite ville du Texas,",
+      "un vendeur de meubles regarde la télévision.",
+      "Il rêve déjà d'un grand chèque pour son magasin.",
+      "Sa femme est entrée dans le salon,",
+      "et elle est restée silencieuse.",
+      "Elle lui rappelle les promesses du passé.",
+      "Les voisins se sont retrouvés",
+      "devant la porte pour en parler.",
+      "Certains ont préparé une liste d'achats,",
+      "d'autres ont haussé les épaules.",
+      "Ce soir, toute la rue va parler d'argent."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Raconter la promesse",
+      "prompt": "Explique-moi avec tes mots ce que Trump a promis et à quelle condition.",
+      "relances": [
+        "Où et quand est-ce qu'il a fait cette annonce ?",
+        "Qui recevrait cet argent, et qui n'en recevrait pas ?",
+        "D'où viendrait l'argent, selon le vice-président ?",
+        "Pourquoi les économistes ne croient-ils pas à ce projet ?"
+      ]
+    },
+    {
+      "title": "Cadeau ou achat de votes",
+      "prompt": "Pour toi, cette promesse est-elle un vrai projet économique ou un achat de votes ?",
+      "relances": [
+        "Qu'est-ce qui te fait penser cela exactement ?",
+        "Que répondrais-tu à quelqu'un qui pense le contraire ?",
+        "Faut-il interdire ce genre de promesse pendant une campagne ?",
+        "Imagine que les chèques arrivent vraiment : qui gagnerait le plus ?"
+      ]
+    },
+    {
+      "title": "Cinq mille dollars",
+      "prompt": "Raconte-moi ce que tu ferais si tu recevais soudain cinq mille dollars demain.",
+      "relances": [
+        "Quelle serait ta première dépense, et pourquoi celle-là ?",
+        "Est-ce que tu en garderais une partie pour plus tard ?",
+        "As-tu déjà reçu une somme inattendue dans ta vie ?",
+        "Qu'est-ce que ta famille te conseillerait de faire ?"
+      ]
+    },
+    {
+      "title": "Les promesses en campagne",
+      "prompt": "Comment compares-tu les promesses des politiques en France et en République dominicaine ?",
+      "relances": [
+        "Quelles promesses entends-tu le plus souvent à Saint-Domingue ?",
+        "Comment les gens réagissent-ils quand une promesse n'est pas tenue ?",
+        "Qu'est-ce que tu attends d'un homme politique à Strasbourg ?",
+        "Une aide de l'État changerait-elle ton installation en France ?"
+      ]
+    }
+  ],
+  "comments": [
+    { "username": "ComptableDepuisToujours", "comment": "Mille milliards de dollars, mais avec QUEL argent ?!! Les taxes sur les importations ne rapportent même pas un cinquième de cette somme. On promet un chèque, on paie l'inflation deux ans après. Et devinez qui paie l'inflation ? Toujours les mêmes.", "likes": 331 },
+    { "username": "TontonDeMiami_72", "comment": "Mon beau-frère vit en Floride et il a déjà fait la liste : une tondeuse, un barbecue et un voyage à Porto Rico 😅 Il attendait déjà les chèques de l'an dernier. À ce rythme, sa liste sera plus longue que sa retraite.", "likes": 58 }
+  ]
+}

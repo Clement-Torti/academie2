@@ -1,0 +1,112 @@
+{
+  "id": "film-artificial-openai-sam-altman-2026",
+  "title": "Un film sur OpenAI et Sam Altman divise déjà Hollywood",
+  "date": "2026-09-13",
+  "category": "Culture",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sam_Altman_November_2022.jpg?width=1200",
+    "alt": "Sam Altman, le patron d'OpenAI, pendant une conférence"
+  },
+  "vocabulary": [
+    {
+      "fr": "un réalisateur",
+      "es": "un director de cine"
+    },
+    {
+      "fr": "tourner un film",
+      "es": "rodar una película"
+    },
+    {
+      "fr": "renvoyer quelqu'un",
+      "es": "despedir a alguien"
+    },
+    {
+      "fr": "une séance",
+      "es": "una sesión de cine"
+    },
+    {
+      "fr": "un distributeur",
+      "es": "una distribuidora"
+    },
+    {
+      "fr": "peu flatteur",
+      "es": "poco halagador"
+    },
+    {
+      "fr": "une récompense",
+      "es": "un premio"
+    }
+  ],
+  "article": "Le film Artificial sortira dans les salles américaines le 25 décembre 2026. Il raconte une histoire vraie. En novembre 2023, le conseil d'administration d'OpenAI a renvoyé son patron, Sam Altman. Cinq jours plus tard, il a retrouvé son poste. Le réalisateur italien Luca Guadagnino a tourné ce film à San Francisco et à Turin. L'acteur Andrew Garfield joue le rôle de Sam Altman.\n\nLe projet a connu de gros problèmes. Amazon devait distribuer le film, mais l'entreprise a abandonné en juin dernier. Quelques mois plus tôt, elle a signé un contrat énorme avec OpenAI. Le studio affirme que le sujet du film n'a joué aucun rôle. Pourtant, beaucoup de journalistes en doutent, car l'histoire montre Altman et Elon Musk sous un jour peu flatteur.\n\nLe distributeur Neon a finalement racheté les droits. La première aura lieu au festival de New York, le 5 octobre. Plusieurs studios ont refusé ce film et l'ont trouvé lent et ennuyeux. En revanche, Neon espère des récompenses et prépare déjà une grande campagne. Le frère de Sam Altman, lui, se moque du résultat. Selon lui, les acteurs ont seulement réussi la démarche de son frère.\n\nCette affaire pose une question importante. Aujourd'hui, les géants de la technologie financent aussi le cinéma et les plateformes. Peut-on encore raconter librement leur histoire ? Le réalisateur accuse ces entreprises d'exercer un contrôle très puissant sur la culture. Le public répondra à Noël, devant l'écran.",
+  "dictation": {
+    "text": "Ma cousine adore les films qui racontent des histoires vraies. La semaine dernière, elle est allée au cinéma avec ses amies. Elles se sont installées au dernier rang, et elles ont beaucoup aimé la fin. Après la séance, elles ont parlé pendant une heure dans un petit café. Ma cousine veut revoir ce film avec son frère et sa mère. Elle dit souvent qu'une bonne histoire ouvre des discussions entre amis.",
+    "units": [
+      "Ma cousine adore les films",
+      "qui racontent des histoires vraies.",
+      "La semaine dernière, elle est allée",
+      "au cinéma avec ses amies.",
+      "Elles se sont installées au dernier rang,",
+      "et elles ont beaucoup aimé la fin.",
+      "Après la séance, elles ont parlé",
+      "pendant une heure dans un petit café.",
+      "Ma cousine veut revoir ce film",
+      "avec son frère et sa mère.",
+      "Elle dit souvent qu'une bonne histoire",
+      "ouvre des discussions entre amis."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Raconter l'affaire",
+      "prompt": "Qu'est-ce que raconte ce film, et pourquoi fait-il autant parler de lui ?",
+      "relances": [
+        "Que s'est-il passé chez OpenAI en 2023 ?",
+        "Pourquoi Amazon a-t-il abandonné le projet ?",
+        "Qui a finalement accepté de distribuer le film ?",
+        "Comment résumerais-tu cette histoire en trois phrases ?"
+      ]
+    },
+    {
+      "title": "Raconter les puissants",
+      "prompt": "Selon toi, peut-on faire un film critique sur une entreprise très puissante ?",
+      "relances": [
+        "Qu'est-ce qui te choque le plus dans cette affaire ?",
+        "Que réponds-tu à ceux qui parlent de censure ?",
+        "Pourquoi un studio préfère-t-il parfois protéger un client ?",
+        "Quel film critique devrait exister, selon toi ?"
+      ]
+    },
+    {
+      "title": "Toi et le cinéma",
+      "prompt": "Raconte-moi ta dernière séance de cinéma : qu'est-ce que tu as vu ?",
+      "relances": [
+        "Avec qui vas-tu au cinéma d'habitude ?",
+        "Quel film t'a marquée cette année, et pourquoi ?",
+        "Préfères-tu les histoires vraies ou inventées ?",
+        "Comment se passe une sortie cinéma à Saint-Domingue ?"
+      ]
+    },
+    {
+      "title": "Le cinéma en France",
+      "prompt": "Comment imagines-tu tes sorties cinéma quand tu vivras à Strasbourg ?",
+      "relances": [
+        "Iras-tu voir des films en français sans sous-titres ?",
+        "Quelles différences imagines-tu avec les cinémas dominicains ?",
+        "Comment le cinéma peut-il t'aider à progresser ?",
+        "Quel film français aimerais-tu découvrir en premier ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "CinephileEnColere_88",
+      "comment": "Amazon signe un contrat à cinquante milliards avec OpenAI, puis abandonne comme par hasard le film qui critique OpenAI. Et on nous explique que le sujet n'y est pour RIEN ?! Arrêtez de nous prendre pour des idiots. Voilà où va le cinéma aujourd'hui.",
+      "likes": 412
+    },
+    {
+      "username": "SandrineDuBalcon",
+      "comment": "Moi j'ai travaillé six ans dans une start-up, et le patron a été viré un vendredi soir par mail. Le lundi il était de retour, tout sourire, comme si de rien n'était. Franchement, on aurait pu en faire un film aussi 😅",
+      "likes": 57
+    }
+  ]
+}

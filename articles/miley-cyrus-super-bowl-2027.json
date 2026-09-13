@@ -1,0 +1,111 @@
+{
+  "id": "miley-cyrus-super-bowl-2027",
+  "title": "Miley Cyrus au Super Bowl : la rumeur qui agite les réseaux",
+  "date": "2026-09-13",
+  "category": "Culture",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Miley_Cyrus_no_palco_do_Lollapalooza_Brasil_2022.jpg?width=1200",
+    "alt": "Miley Cyrus chante sur la scène du festival Lollapalooza au Brésil en 2022."
+  },
+  "vocabulary": [
+    {
+      "fr": "la mi-temps",
+      "es": "el descanso, el medio tiempo"
+    },
+    {
+      "fr": "une rumeur",
+      "es": "un rumor"
+    },
+    {
+      "fr": "les paris",
+      "es": "las apuestas"
+    },
+    {
+      "fr": "la pression",
+      "es": "la presión"
+    },
+    {
+      "fr": "un hommage",
+      "es": "un homenaje"
+    },
+    {
+      "fr": "la scène",
+      "es": "el escenario"
+    },
+    {
+      "fr": "confirmer",
+      "es": "confirmar"
+    }
+  ],
+  "article": "Depuis quelques jours, une rumeur circule partout sur les réseaux sociaux. Miley Cyrus serait la prochaine artiste du spectacle de la mi-temps du Super Bowl. Cette grande finale du football américain aura lieu le 14 février 2027, près de Los Angeles. Pourtant, ni la ligue ni la chanteuse n'ont rien confirmé. Tout est parti de quelques messages de comptes de fans, repris ensuite par des sites d'actualité.\n\nLe spectacle de la mi-temps est le concert le plus regardé de la planète. Il dure seulement treize minutes, mais il peut changer une carrière. La marque Apple Music sponsorise ce rendez-vous depuis plusieurs années. En 2026, le chanteur portoricain Bad Bunny a tenu ce rôle. Depuis, les sites de paris placent Miley Cyrus en tête, devant Taylor Swift et Justin Bieber.\n\nL'artiste, elle, reste prudente. Dans une interview, elle a parlé d'une pression énorme. Elle accepterait cependant si le concert racontait toute sa carrière, époque par époque. En effet, elle chante depuis vingt ans, d'abord comme Hannah Montana, puis comme star de la pop.\n\nBeaucoup de fans espèrent aussi un hommage à Dolly Parton, sa marraine, morte en août 2026. D'autres, en revanche, trouvent ce show trop long et beaucoup trop cher. Ils préfèrent regarder le match et rien d'autre. Une question reste donc ouverte : un match de sport a-t-il vraiment besoin d'un tel spectacle ?",
+  "dictation": {
+    "text": "Le grand match a lieu au mois de février, un dimanche soir. Les chaînes de télévision préparent déjà leurs émissions spéciales. L'année dernière, des milliers de familles se sont réunies devant l'écran. Beaucoup de gens regardent surtout la partie musicale, puis ils éteignent la télévision. Les billets sont très chers et ils partent en quelques heures. Cette année, les fans attendent une belle surprise et ils ont déjà choisi leur chanteuse.",
+    "units": [
+      "Le grand match a lieu",
+      "au mois de février, un dimanche soir.",
+      "Les chaînes de télévision préparent déjà leurs émissions spéciales.",
+      "L'année dernière, des milliers de familles",
+      "se sont réunies devant l'écran.",
+      "Beaucoup de gens regardent surtout la partie musicale,",
+      "puis ils éteignent la télévision.",
+      "Les billets sont très chers",
+      "et ils partent en quelques heures.",
+      "Cette année, les fans attendent une belle surprise",
+      "et ils ont déjà choisi leur chanteuse."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Raconter la rumeur",
+      "prompt": "Avec tes mots, qu'est-ce que cet article raconte sur Miley Cyrus et le Super Bowl ?",
+      "relances": [
+        "Qu'est-ce qui est confirmé et qu'est-ce qui reste une rumeur ?",
+        "Pourquoi ce concert est-il si important pour une carrière ?",
+        "Quels autres noms circulent, et pourquoi eux ?",
+        "Comment expliques-tu la prudence de la chanteuse ?"
+      ]
+    },
+    {
+      "title": "Sport ou spectacle",
+      "prompt": "Selon toi, un match de sport a-t-il besoin d'un grand concert au milieu ?",
+      "relances": [
+        "Qu'est-ce que tu répondrais à quelqu'un qui trouve ça inutile ?",
+        "Qui gagne vraiment quelque chose dans ce spectacle, à ton avis ?",
+        "Imagine qu'on supprime la mi-temps musicale : que se passe-t-il ?",
+        "Préfères-tu un show court et simple ou un show immense ?"
+      ]
+    },
+    {
+      "title": "Ton expérience des concerts",
+      "prompt": "Raconte-moi un concert ou un grand spectacle qui t'a marquée à Saint-Domingue.",
+      "relances": [
+        "Avec qui étais-tu, et comment avez-vous organisé la soirée ?",
+        "Qu'est-ce que tu as ressenti pendant le premier morceau ?",
+        "Est-ce que le prix des billets t'a déjà arrêtée ?",
+        "Quelle chanteuse aimerais-tu voir sur scène, et pourquoi elle ?"
+      ]
+    },
+    {
+      "title": "Le sport vu de France",
+      "prompt": "Comment imagines-tu les grands soirs de sport une fois installée à Strasbourg ?",
+      "relances": [
+        "Quel sport passionne les Français, d'après ce que tu vois ?",
+        "En République dominicaine, quel match réunit toute la famille ?",
+        "Où irais-tu regarder une finale à Strasbourg, et avec qui ?",
+        "Qu'est-ce qui te surprendrait le plus dans un stade français ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "TeleSpectateur_Grognon",
+      "comment": "Franchement STOP avec ces rumeurs !!! On nous annonce une chanteuse différente toutes les semaines et à la fin personne n'a rien signé. Le football devrait rester du football, pas une pub géante de treize minutes payée par des marques.",
+      "likes": 317
+    },
+    {
+      "username": "MarraineDeDolly",
+      "comment": "Moi j'ai découvert Dolly Parton grâce à ma grand-mère, on écoutait ses cassettes dans la cuisine. Si Miley chante une de ses chansons devant cent millions de personnes, je pleure devant ma télé, c'est sûr 😭",
+      "likes": 46
+    }
+  ]
+}

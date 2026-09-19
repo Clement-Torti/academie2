@@ -1,0 +1,88 @@
+{
+  "id": "clubs-sportifs-listes-attente-rentree-2026",
+  "title": "Rentrée des associations : les clubs refusent du monde",
+  "date": "2026-09-19",
+  "category": "Société",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Palais_des_sports_de_Grenoble_pendant_le_forum_des_associations_2024.jpg?width=1200",
+    "alt": "Des visiteurs circulent entre les stands des clubs pendant le forum des associations, dans un palais des sports."
+  },
+  "vocabulary": [
+    { "fr": "une liste d'attente", "es": "una lista de espera" },
+    { "fr": "un encadrant", "es": "un monitor, un responsable" },
+    { "fr": "un créneau horaire", "es": "una franja horaria" },
+    { "fr": "s'inscrire", "es": "inscribirse, apuntarse" },
+    { "fr": "refuser du monde", "es": "rechazar gente por falta de sitio" },
+    { "fr": "la rentrée", "es": "la vuelta al cole, el inicio de curso" },
+    { "fr": "manquer de", "es": "faltar, carecer de" }
+  ],
+  "article": "Chaque année, en septembre, les forums des associations attirent des foules dans les gymnases et sur les places. Cette rentrée ne fait pas exception. À Grenoble, à Lannion ou à Carpentras, les visiteurs se pressent devant les stands dès le matin. Pourtant, beaucoup de familles repartent avec une simple place sur une liste d'attente.\n\nEn effet, les clubs refusent du monde. Le judo, la danse et la natation ferment leurs inscriptions en quelques heures. Le problème n'est pas l'argent, mais les encadrants. Il faut un entraîneur diplômé pour ouvrir un cours, et les bénévoles formés manquent partout. Par ailleurs, les créneaux horaires dans les salles municipales restent les mêmes depuis des années.\n\nLes parents comprennent mal cette situation. Certains paient déjà une cotisation plus chère et trouvent injuste d'attendre un an. En revanche, les présidents de club rappellent qu'ils ne peuvent pas inventer des salles ni des entraîneurs. Quelques mairies ouvrent donc les gymnases plus tard le soir. D'autres prêtent les cours d'école le samedi matin.\n\nDes solutions existent cependant. Des clubs forment leurs anciens élèves et leur paient le diplôme d'animateur. D'autres regroupent deux associations pour partager un seul entraîneur. Mais il faut que des adultes acceptent de donner deux heures par semaine, toute l'année. La question revient donc chaque automne. Comment donner envie aux gens d'encadrer, et pas seulement de s'inscrire ?",
+  "dictation": {
+    "text": "Samedi dernier, mon frère est allé au forum des associations avec ses trois enfants. Ils sont arrivés tôt, mais la file était déjà longue. Ses deux filles se sont inscrites au cours de judo. Pour le garçon, le club a donné une place sur une liste d'attente. Le président leur a expliqué qu'il manque des entraîneurs. Ils ont laissé leur numéro et ils vont attendre une réponse.",
+    "units": [
+      "Samedi dernier, mon frère est allé",
+      "au forum des associations avec ses trois enfants.",
+      "Ils sont arrivés tôt, mais la file était déjà longue.",
+      "Ses deux filles se sont inscrites au cours de judo.",
+      "Pour le garçon, le club a donné",
+      "une place sur une liste d'attente.",
+      "Le président leur a expliqué qu'il manque des entraîneurs.",
+      "Ils ont laissé leur numéro",
+      "et ils vont attendre une réponse."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Raconter l'article",
+      "prompt": "Avec tes mots, explique-moi pourquoi les clubs français refusent des inscriptions cette rentrée.",
+      "relances": [
+        "Quelles activités ferment le plus vite, et pourquoi ?",
+        "Quel est le vrai problème, l'argent ou les personnes ?",
+        "Que font certaines mairies pour aider les clubs ?",
+        "Quelle solution de l'article te semble la plus efficace ?"
+      ]
+    },
+    {
+      "title": "Attendre un an, est-ce juste",
+      "prompt": "À ton avis, comment un club doit-il choisir les enfants quand il manque de places ?",
+      "relances": [
+        "Faut-il donner la priorité aux anciens membres, selon toi ?",
+        "Que répondrais-tu à un parent en colère devant le stand ?",
+        "Une cotisation plus chère réglerait-elle vraiment le problème ?",
+        "Pourquoi tant d'adultes refusent-ils d'encadrer un groupe ?"
+      ]
+    },
+    {
+      "title": "Ton expérience des inscriptions",
+      "prompt": "Raconte-moi une activité que tu as pratiquée en club, à l'école ou dans ton quartier.",
+      "relances": [
+        "Comment t'es-tu inscrite, et qui t'accompagnait ?",
+        "Qui organisait les cours, des professionnels ou des bénévoles ?",
+        "Quel souvenir gardes-tu du premier jour ?",
+        "Qu'est-ce qui t'a donné envie de continuer ou d'arrêter ?"
+      ]
+    },
+    {
+      "title": "S'inscrire à Strasbourg",
+      "prompt": "À Strasbourg, quelle activité choisirais-tu si ta première idée affichait complet ?",
+      "relances": [
+        "Comment ferais-tu pour trouver un club près de chez toi ?",
+        "Accepterais-tu d'encadrer un cours de danse dominicaine ?",
+        "Comment ça se passe à Saint-Domingue pour ces inscriptions ?",
+        "Qu'est-ce qu'un club pourrait t'apporter pendant ta recherche d'emploi ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "PapaDeDeuxGamins_67",
+      "comment": "Encore un article qui plaint les clubs !!! Nous on paie la cotisation en juin, on remplit dix papiers, et en septembre on nous dit LISTE D'ATTENTE. Pendant ce temps les gymnases sont vides le dimanche. Le problème n'est pas les bénévoles, c'est l'organisation.",
+      "likes": 412
+    },
+    {
+      "username": "CoachJudo_Depuis1998",
+      "comment": "J'entraîne le mercredi depuis vingt-huit ans, gratuitement, après mon travail. Cette année j'ai refusé onze enfants et j'en ai pleuré dans ma voiture. Venez passer le diplôme, il dure un week-end. On vous attend, vraiment.",
+      "likes": 96
+    }
+  ]
+}

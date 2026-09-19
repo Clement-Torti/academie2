@@ -1,0 +1,81 @@
+{
+  "id": "ed-sheeran-macklemore-palestine-tournee-2026",
+  "title": "Ed Sheeran : la polémique Macklemore secoue sa tournée",
+  "date": "2026-09-19",
+  "category": "Culture",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ed_Sheeran_in_Philadelphia_04.jpg?width=1200",
+    "alt": "Ed Sheeran, guitare à la main, pendant un concert à Philadelphie"
+  },
+  "vocabulary": [
+    { "fr": "la première partie", "es": "el telonero" },
+    { "fr": "une tournée", "es": "una gira" },
+    { "fr": "menacer", "es": "amenazar" },
+    { "fr": "le boycott", "es": "el boicot" },
+    { "fr": "prendre position", "es": "tomar partido" },
+    { "fr": "se taire", "es": "callarse" },
+    { "fr": "un cachet", "es": "un caché, unos honorarios" }
+  ],
+  "article": "Le cinq septembre, le rappeur américain Macklemore a crié « Free Palestine » sur scène. Il assurait la première partie d'Ed Sheeran, dans un stade du New Jersey, devant quatre-vingt-dix mille personnes. Quelques jours plus tard, il a perdu sa place dans la tournée américaine du chanteur britannique.\n\nSelon Macklemore, des propriétaires de stades ont menacé d'annuler les concerts. Ed Sheeran répond que la décision vient des organisateurs, et pas de lui. Il refuse aussi de parler publiquement de la guerre à Gaza. Pourtant, ce silence ne convainc pas tout le monde. Ses critiques estiment qu'il laisse d'autres personnes choisir sa position à sa place.\n\nLa réaction a été rapide. Toutes les autres premières parties ont quitté la tournée par solidarité, dont Finneas, le frère de la chanteuse Billie Eilish. Macklemore, lui, va donner son cachet, environ un million de dollars, à des associations qui aident les Palestiniens. Par ailleurs, des militants appellent maintenant au boycott de toute la tournée mondiale.\n\nSamedi, à Philadelphie, le concert a lieu malgré tout, avec une manifestation prévue devant le stade. La question dépasse largement la musique. Un artiste très célèbre doit-il prendre position sur un sujet politique ? Certains pensent que son métier est de chanter, rien de plus. D'autres répondent que se taire, c'est déjà choisir un camp.",
+  "dictation": {
+    "text": "Devant le stade, des fans sont arrivés très tôt. Beaucoup ont acheté leurs billets il y a un an. Certains ont préféré rester chez eux, parce qu'ils ne sont pas d'accord. Dehors, des manifestants ont montré des pancartes, et la police est restée calme. Une jeune femme est venue avec ses amies, et elles ont chanté ensemble. Elle explique qu'on peut aimer une chanson et critiquer un artiste célèbre.",
+    "units": [
+      "Devant le stade, des fans sont arrivés très tôt.",
+      "Beaucoup ont acheté leurs billets il y a un an.",
+      "Certains ont préféré rester chez eux,",
+      "parce qu'ils ne sont pas d'accord.",
+      "Dehors, des manifestants ont montré des pancartes,",
+      "et la police est restée calme.",
+      "Une jeune femme est venue avec ses amies,",
+      "et elles ont chanté ensemble.",
+      "Elle explique qu'on peut aimer une chanson",
+      "et critiquer un artiste célèbre."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Raconter la polémique",
+      "prompt": "Qu'est-ce qui s'est passé exactement entre Ed Sheeran et son rappeur invité ?",
+      "relances": [
+        "Qui a pris la décision, et pourquoi selon toi ?",
+        "Comment les autres artistes ont-ils réagi ?",
+        "Quels mots de l'article te semblent les plus importants ?",
+        "Si tu résumais l'histoire à une amie, tu dirais quoi ?"
+      ]
+    },
+    {
+      "title": "Le silence des artistes",
+      "prompt": "Selon toi, que risque un artiste quand il prend position publiquement ?",
+      "relances": [
+        "Et quand il se tait, qu'est-ce qu'il risque ?",
+        "Peux-tu donner un exemple d'artiste qui t'a déçue ?",
+        "Pourquoi les propriétaires de stades ont-ils autant de pouvoir ?",
+        "Qu'est-ce que tu ferais à la place d'Ed Sheeran ?"
+      ]
+    },
+    {
+      "title": "La musique dans ta vie",
+      "prompt": "Raconte-moi un concert ou un moment musical qui t'a vraiment marquée.",
+      "relances": [
+        "Avec qui étais-tu, et quelle ambiance il y avait ?",
+        "Quelle chanson te rappelle le plus Saint-Domingue ?",
+        "Comment tu choisis la musique que tu écoutes le matin ?",
+        "Qu'est-ce qui te ferait arrêter d'écouter un artiste ?"
+      ]
+    },
+    {
+      "title": "Débattre en France",
+      "prompt": "Comment imagines-tu ces discussions politiques avec tes futurs amis à Strasbourg ?",
+      "relances": [
+        "En République dominicaine, on parle de ces sujets comment ?",
+        "Quels mots français te manquent pour donner ton avis ?",
+        "Qu'est-ce qui t'attire dans les débats à la française ?",
+        "Comment tu réagirais si quelqu'un n'était pas d'accord avec toi ?"
+      ]
+    }
+  ],
+  "comments": [
+    { "username": "SansFiltre_Marseille", "comment": "Franchement, arrêtez de le défendre !!! Quand on remplit des stades de quatre-vingt-dix mille personnes, on n'est pas une victime. Dire que c'est la faute du promoteur, c'est beaucoup trop facile. Il a signé, il a encaissé, il a laissé virer son invité. POINT.", "likes": 387 },
+    { "username": "LaClarinettiste_67", "comment": "Moi j'étais à Bercy en 2022 pour lui, j'avais économisé six mois pour ce billet. Hier j'ai revendu ma place de la prochaine date à ma voisine, qui se fiche complètement de toute cette histoire. Elle est ravie, et moi je suis bizarrement soulagée.", "likes": 41 }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "id": "canada-etat-associe-union-europeenne-2026",
+  "title": "Le Canada, premier « État associé » de l'Union européenne ?",
+  "date": "2026-09-19",
+  "category": "Société",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mark_Carney_at_European_Parliament_September_2026.jpg?width=1200",
+    "alt": "Mark Carney s'adresse au Parlement européen à Strasbourg en septembre 2026."
+  },
+  "vocabulary": [
+    {
+      "fr": "l'adhésion",
+      "es": "la adhesión, el ingreso"
+    },
+    {
+      "fr": "un État associé",
+      "es": "un Estado asociado"
+    },
+    {
+      "fr": "les droits de douane",
+      "es": "los aranceles"
+    },
+    {
+      "fr": "un sondage",
+      "es": "una encuesta"
+    },
+    {
+      "fr": "un sommet",
+      "es": "una cumbre"
+    },
+    {
+      "fr": "saluer une idée",
+      "es": "aplaudir, acoger bien una idea"
+    },
+    {
+      "fr": "peser sur",
+      "es": "afectar, pesar sobre"
+    }
+  ],
+  "article": "Le Canada va-t-il rejoindre l'Union européenne ? Le 16 septembre, Ursula von der Leyen a lancé une idée inédite devant le Parlement européen. Elle propose de faire du Canada le premier « État associé » de l'Union. Le lendemain, le premier ministre canadien Mark Carney est venu répondre à Strasbourg. Il a salué le projet, mais il a posé une limite claire : son pays ne demande pas une adhésion complète.\n\nCette alliance couvrirait la défense, l'intelligence artificielle, l'énergie et les minerais critiques. Elle faciliterait aussi la mobilité des jeunes entre les deux continents. En effet, le Canada et l'Europe échangent déjà beaucoup grâce à l'accord commercial CETA. L'annonce officielle est attendue fin octobre, pendant un sommet à Montréal.\n\nPourquoi maintenant ? Depuis deux ans, la guerre commerciale avec les États-Unis fatigue Ottawa. Les droits de douane américains pèsent sur les entreprises canadiennes. C'est pourquoi beaucoup de Canadiens regardent vers l'Europe. Selon un sondage du printemps, près de six sur dix soutiennent une adhésion complète. Donald Trump, lui, juge l'idée ridicule et menace d'augmenter encore les taxes.\n\nLe débat reste ouvert. Les traités européens réservent l'adhésion aux États européens, et le Canada se trouve de l'autre côté de l'Atlantique. Il faut donc qu'on invente un statut nouveau. Carney promet que les députés canadiens voteront sur l'accord final. Mais une alliance sans adhésion, est-ce vraiment suffisant face à Washington ?",
+  "dictation": {
+    "text": "Beaucoup de jeunes rêvent de partir en Europe pour étudier ou pour travailler. Hier, des étudiantes se sont retrouvées devant leur université pour en discuter. Elles ont expliqué que les visas sont longs et chers. Leurs parents ont déjà voyagé là-bas, et ils gardent un très bon souvenir. Une amie a rempli un dossier, mais elle attend toujours une réponse. Si l'accord arrive, tout va devenir beaucoup plus simple.",
+    "units": [
+      "Beaucoup de jeunes rêvent de partir en Europe",
+      "pour étudier ou pour travailler.",
+      "Hier, des étudiantes se sont retrouvées",
+      "devant leur université pour en discuter.",
+      "Elles ont expliqué que les visas sont longs et chers.",
+      "Leurs parents ont déjà voyagé là-bas,",
+      "et ils gardent un très bon souvenir.",
+      "Une amie a rempli un dossier,",
+      "mais elle attend toujours une réponse.",
+      "Si l'accord arrive, tout va devenir beaucoup plus simple."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "L'annonce de Strasbourg",
+      "prompt": "Raconte avec tes mots ce que l'Union européenne vient de proposer au Canada.",
+      "relances": [
+        "Qui a lancé cette idée, et dans quelle ville ?",
+        "Quelle différence fais-tu entre membre associé et membre complet ?",
+        "Quels domaines de coopération te semblent les plus importants ?",
+        "Pourquoi le Canada se tourne-t-il vers l'Europe maintenant ?"
+      ]
+    },
+    {
+      "title": "Pour ou contre",
+      "prompt": "À ton avis, l'Union européenne doit-elle accepter un pays situé hors d'Europe ?",
+      "relances": [
+        "Qu'est-ce que l'Europe gagnerait vraiment dans cette alliance ?",
+        "Que réponds-tu à ceux qui parlent seulement de géographie ?",
+        "Quels risques vois-tu pour les petits pays européens ?",
+        "Si tu votais demain, quel serait ton choix, et pourquoi ?"
+      ]
+    },
+    {
+      "title": "Tes démarches administratives",
+      "prompt": "Raconte-moi comment tu prépares ton installation en France, étape par étape.",
+      "relances": [
+        "Quel document a été le plus difficile à obtenir ?",
+        "Combien de temps as-tu attendu une réponse ?",
+        "Qui t'a aidée pendant ces démarches, et comment ?",
+        "Quel conseil donnerais-tu à une amie dans la même situation ?"
+      ]
+    },
+    {
+      "title": "Strasbourg, ville européenne",
+      "prompt": "Comment imagines-tu ta vie à Strasbourg, la ville qui accueille le Parlement européen ?",
+      "relances": [
+        "Que représente l'Europe pour les gens en République dominicaine ?",
+        "Quelles différences attends-tu entre Saint-Domingue et Strasbourg ?",
+        "Comment ton diplôme de mercadeo peut-il t'aider là-bas ?",
+        "Dans dix ans, où aimerais-tu travailler, et pourquoi ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "SouverainisteDu67",
+      "comment": "N'importe quoi !!! On n'arrive déjà pas à se mettre d'accord à vingt-sept, et on voudrait ajouter un pays à six mille kilomètres ? Les traités sont clairs : l'UE, c'est l'EUROPE. Qu'on règle d'abord nos propres problèmes avant d'inventer des statuts sur mesure.",
+      "likes": 387
+    },
+    {
+      "username": "MarieClaude_TroisRivieres",
+      "comment": "J'ai vécu huit ans à Montréal et franchement, le Canada est déjà plus européen qu'on ne le croit. Sirop d'érable le matin, grand débat sur le fromage au lait cru le soir... Il ne manque que le TGV et les grèves ! 😄",
+      "likes": 142
+    }
+  ]
+}

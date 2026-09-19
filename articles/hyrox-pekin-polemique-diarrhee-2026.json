@@ -1,0 +1,88 @@
+{
+  "id": "hyrox-pekin-polemique-diarrhee-2026",
+  "title": "Hyrox : elle gagne malgré une diarrhée, la polémique enfle",
+  "date": "2026-09-19",
+  "category": "Sport",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Stockholm_HYROX_lunges.jpg?width=1200",
+    "alt": "Une athlète enchaîne des fentes avec un sac de sable pendant une compétition Hyrox"
+  },
+  "vocabulary": [
+    { "fr": "une épreuve", "es": "una prueba" },
+    { "fr": "abandonner", "es": "abandonar, retirarse" },
+    { "fr": "le règlement", "es": "el reglamento" },
+    { "fr": "présenter ses excuses", "es": "pedir disculpas" },
+    { "fr": "rembourser", "es": "reembolsar" },
+    { "fr": "renoncer à", "es": "renunciar a" },
+    { "fr": "un trouble digestif", "es": "un problema digestivo" }
+  ],
+  "article": "Une athlète australienne a gagné une compétition Hyrox à Pékin, le 12 septembre. Mais sa victoire a fait le tour du monde pour une tout autre raison. Pendant la course, Joanna Wietrzyk, 24 ans, a été prise d'une forte diarrhée. Elle a refusé d'abandonner et elle a terminé première, en un peu plus d'une heure.\n\nLe Hyrox est une compétition très dure. Il faut courir huit kilomètres et enchaîner huit épreuves de force entre les courses. Tous les concurrents utilisent le même matériel. Après l'incident, plusieurs d'entre eux se sont plaints : le sol était sale et certains ont glissé. Les organisateurs ont isolé la zone, désinfecté les machines et changé le tapis.\n\nLe règlement prévoyait des sanctions pour des fautes légères, comme cracher ou jeter un déchet par terre. En revanche, il ne disait rien sur ce genre de situation. C'est pourquoi les juges n'ont pas arrêté la course. Le cofondateur Moritz Fürste a reconnu une erreur et a présenté ses excuses. Les règles vont changer, et plus de mille participants sont remboursés.\n\nQuelques jours plus tard, l'athlète s'est excusée à son tour et a renoncé à sa victoire. Pourtant, les troubles digestifs touchent une grande partie des sportifs d'endurance. Faut-il obliger un compétiteur malade à s'arrêter, même quand il veut aller au bout ?",
+  "dictation": {
+    "text": "Avant une course, beaucoup de sportifs ont mal au ventre. Ce problème touche aussi les plus grands champions. Le stress et l'effort dérangent souvent la digestion, et les entraîneurs conseillent de manger léger. Une coureuse raconte qu'elle est partie trop vite un matin. Elle a dû s'arrêter deux fois, et ses amies l'attendaient à l'arrivée. Aujourd'hui, elle prend toujours son petit-déjeuner trois heures avant le départ.",
+    "units": [
+      "Avant une course, beaucoup de sportifs ont mal au ventre.",
+      "Ce problème touche aussi les plus grands champions.",
+      "Le stress et l'effort dérangent souvent la digestion,",
+      "et les entraîneurs conseillent de manger léger.",
+      "Une coureuse raconte qu'elle est partie trop vite un matin.",
+      "Elle a dû s'arrêter deux fois,",
+      "et ses amies l'attendaient à l'arrivée.",
+      "Aujourd'hui, elle prend toujours son petit-déjeuner",
+      "trois heures avant le départ."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Raconter la polémique",
+      "prompt": "Explique-moi avec tes mots ce qui s'est passé pendant cette compétition à Pékin.",
+      "relances": [
+        "En quoi consiste exactement une épreuve de Hyrox ?",
+        "Pourquoi les juges n'ont-ils rien fait ?",
+        "De quoi les autres concurrents se plaignent-ils ?",
+        "Qu'ont décidé les organisateurs après l'incident ?"
+      ]
+    },
+    {
+      "title": "Continuer ou s'arrêter",
+      "prompt": "À ton avis, faut-il obliger un sportif malade à quitter la course contre sa volonté ?",
+      "relances": [
+        "Qui devrait décider : le médecin, le juge ou l'athlète ?",
+        "Que dirais-tu aux concurrents qui ont glissé ?",
+        "La victoire valait-elle ce risque ? Explique pourquoi.",
+        "Comment changerais-tu le règlement, concrètement ?"
+      ]
+    },
+    {
+      "title": "Aller au bout malgré tout",
+      "prompt": "Raconte-moi une fois où tu as continué quelque chose malgré la fatigue ou la douleur.",
+      "relances": [
+        "Qu'est-ce qui t'a donné la force de continuer ?",
+        "Aurais-tu préféré t'arrêter ? Explique.",
+        "Comment réagis-tu quand tu es malade avant un examen ?",
+        "Qui t'a aidée ce jour-là, et comment ?"
+      ]
+    },
+    {
+      "title": "Le sport en France",
+      "prompt": "Comment imagines-tu ta pratique du sport une fois installée à Strasbourg ?",
+      "relances": [
+        "Quelles différences vois-tu avec le sport à Saint-Domingue ?",
+        "Le froid va-t-il changer tes habitudes ? Comment ?",
+        "Comment choisirais-tu ta salle de sport ?",
+        "Le sport peut-il t'aider à rencontrer des gens ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "CoureuseDuDimanche_31",
+      "comment": "Non mais c'est une question d'HYGIÈNE, pas de courage !! Les autres concurrents payent leur inscription et se retrouvent à glisser sur un sol souillé. Les juges auraient dû arrêter la course en trente secondes. Une médaille ne vaut jamais la santé des autres.",
+      "likes": 412
+    },
+    {
+      "username": "PapyMarathonien",
+      "comment": "Marathon de Paris, avril dernier, kilomètre trente-deux. Mon corps a dit stop d'un coup et j'ai fini dans les buissons du bois de Boulogne 😅 Personne n'en parle mais ça arrive à tout le monde. Elle, elle a juste eu une caméra braquée sur elle.",
+      "likes": 76
+    }
+  ]
+}

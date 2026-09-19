@@ -1,0 +1,88 @@
+{
+  "id": "meta-notes-communaute-amerique-latine-2026",
+  "title": "Meta teste les notes de la communauté en Amérique latine",
+  "date": "2026-09-19",
+  "category": "Technologie",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Meta_Platforms_Headquarters_Menlo_Park_California.jpg?width=1200",
+    "alt": "Le siège de Meta à Menlo Park, en Californie"
+  },
+  "vocabulary": [
+    { "fr": "une publication trompeuse", "es": "una publicación engañosa" },
+    { "fr": "vérifier une information", "es": "verificar una información" },
+    { "fr": "un internaute", "es": "un internauta" },
+    { "fr": "une fausse information", "es": "una información falsa" },
+    { "fr": "un contributeur bénévole", "es": "un colaborador voluntario" },
+    { "fr": "se méfier", "es": "desconfiar" },
+    { "fr": "signaler", "es": "reportar, denunciar" }
+  ],
+  "article": "Meta lance un grand test dans seize pays d'Amérique latine. Les « notes de la communauté » vont apparaître sous certaines publications de Facebook, d'Instagram et de Threads. N'importe quel internaute peut signaler un contenu qui lui semble trompeur. Des contributeurs bénévoles écrivent alors un texte court qui ajoute du contexte. La note devient visible seulement si assez de personnes la trouvent utile.\n\nCe système existe déjà aux États-Unis. En janvier 2025, l'entreprise a arrêté son programme de vérification des faits dans le pays. Avant, elle payait des médias indépendants pour contrôler les informations douteuses. Mark Zuckerberg a expliqué que ces professionnels étaient trop orientés politiquement. L'idée vient en réalité de X, l'ancien Twitter, qui utilise ce modèle depuis plusieurs années.\n\nLes organisations de vérification se méfient beaucoup de ce choix. LatamChequea, un réseau qui regroupe quarante-sept organisations de la région, parle d'une décision dangereuse. Selon ces spécialistes, une note écrite par des internautes arrive souvent trop tard. En effet, une fausse information circule en quelques heures, alors qu'une note demande parfois plusieurs jours. Le conseil de surveillance de Meta a d'ailleurs demandé à l'entreprise de garder une forme de vérification professionnelle.\n\nL'Europe n'est pas encore concernée, car ses règles sur les contenus en ligne restent plus strictes. Mais la question intéresse tout le monde. Peut-on vraiment confier la vérité aux utilisateurs eux-mêmes ?",
+  "dictation": {
+    "text": "Ma cousine a partagé une vidéo sur un médicament miracle. Le lendemain, une note est apparue sous sa publication. Des internautes ont expliqué que cette information était fausse. Ma cousine a lu la note et elle a effacé son message. Elle m'a dit qu'elle se sentait un peu bête. Maintenant, elle vérifie toujours ses sources avant de publier quelque chose. Ses amis ont fait la même chose sur leurs réseaux.",
+    "units": [
+      "Ma cousine a partagé une vidéo sur un médicament miracle.",
+      "Le lendemain, une note est apparue sous sa publication.",
+      "Des internautes ont expliqué que cette information était fausse.",
+      "Ma cousine a lu la note",
+      "et elle a effacé son message.",
+      "Elle m'a dit qu'elle se sentait un peu bête.",
+      "Maintenant, elle vérifie toujours ses sources",
+      "avant de publier quelque chose.",
+      "Ses amis ont fait la même chose sur leurs réseaux."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Raconter la nouvelle",
+      "prompt": "Explique-moi avec tes mots ce que Meta va tester en Amérique latine.",
+      "relances": [
+        "Comment une note apparaît-elle sous une publication ?",
+        "Qui écrit ces notes, exactement ?",
+        "Pourquoi Meta a-t-il arrêté son ancien système ?",
+        "Que reprochent les organisations de vérification à ce choix ?"
+      ]
+    },
+    {
+      "title": "Qui doit dire le vrai",
+      "prompt": "À ton avis, qui doit vérifier les informations sur les réseaux sociaux ?",
+      "relances": [
+        "Fais-tu plus confiance à un journaliste ou à un internaute ?",
+        "Que se passe-t-il si les contributeurs se trompent aussi ?",
+        "Une note gratuite vaut-elle un travail payé ?",
+        "Comment réagirais-tu si une note contredisait ton opinion ?"
+      ]
+    },
+    {
+      "title": "Ton expérience en ligne",
+      "prompt": "Raconte-moi une fois où tu as vu une fausse information sur tes réseaux.",
+      "relances": [
+        "Comment as-tu compris que c'était faux ?",
+        "As-tu prévenu la personne qui avait publié ce message ?",
+        "Que font tes amis quand ils doutent d'une vidéo ?",
+        "Quels comptes suis-tu sur TikTok pour t'informer ?"
+      ]
+    },
+    {
+      "title": "France et République dominicaine",
+      "prompt": "Comment imagines-tu ton rapport à l'information une fois installée à Strasbourg ?",
+      "relances": [
+        "Où chercheras-tu les nouvelles locales de ta ville ?",
+        "Les Dominicains partagent-ils l'info comme les Français ?",
+        "Quelles rumeurs circulent beaucoup à Saint-Domingue ?",
+        "Que changerais-tu dans les réseaux sociaux de ton pays ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "PasDupeDepuis2010",
+      "comment": "Arrêtons d'être naïfs !!! Meta ne fait pas ça pour la vérité, il fait ça pour économiser l'argent des vérificateurs. Demander aux internautes de corriger les internautes, c'est confier le poulailler au renard. En Amérique latine les conséquences seront DRAMATIQUES.",
+      "likes": 387
+    },
+    {
+      "username": "TantePaolaDeLima",
+      "comment": "Ma tante a envoyé à toute la famille une vidéo qui expliquait comment soigner la grippe avec du citron et du sel. Trois jours plus tard, une petite note est arrivée sous la publication. Elle a répondu : « c'est un complot ». 😅",
+      "likes": 64
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "id": "nouveaux-iphone-pliable-apple-2026",
+  "title": "Apple dévoile son premier iPhone pliable",
+  "date": "2026-09-19",
+  "category": "Technologie",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/IPhone_17%2C_Air%2C_17_Pro%2C_and_Pro_max.jpg?width=1200",
+    "alt": "Plusieurs modèles d'iPhone posés côte à côte sur une table"
+  },
+  "vocabulary": [
+    { "fr": "dévoiler", "es": "revelar, presentar" },
+    { "fr": "un téléphone pliable", "es": "un teléfono plegable" },
+    { "fr": "une précommande", "es": "una reserva anticipada" },
+    { "fr": "reconditionné", "es": "reacondicionado" },
+    { "fr": "un pari", "es": "una apuesta" },
+    { "fr": "une vitrine", "es": "un escaparate" },
+    { "fr": "un appareil", "es": "un aparato, un dispositivo" }
+  ],
+  "article": "Le neuf septembre, Apple a présenté ses nouveaux téléphones en Californie. La marque a dévoilé l'iPhone 18 Pro et l'iPhone 18 Pro Max, vendus en France à partir de 1479 euros. Ces modèles sont arrivés dans les magasins dix jours plus tard. Mais la vraie surprise est venue à la fin de la conférence.\n\nApple a en effet annoncé l'iPhone Duo, son premier téléphone pliable. L'écran intérieur mesure 7,6 pouces, et l'appareil se plie comme un petit livre. Le prix, lui, fait beaucoup discuter. Il commence à 2339 euros et dépasse 3900 euros pour la version la plus grande. Les précommandes ouvrent en octobre.\n\nApple arrive pourtant tard sur ce marché. Samsung vend des téléphones pliables depuis 2019, et plusieurs marques chinoises font la même chose. Cependant, la firme américaine promet un appareil plus solide, avec un châssis en titane. Les premiers essais sont plutôt bons. Certains journalistes doutent encore de la résistance de l'écran.\n\nReste une question : qui va payer un tel prix ? En Europe, beaucoup de clients gardent leur téléphone quatre ou cinq ans, ou achètent un modèle reconditionné. Pour eux, un objet à plus de deux mille euros ressemble à un luxe inutile. D'autres pensent en revanche que le pliable remplacera un jour la tablette. Le pari d'Apple sera peut-être plus clair à Noël.",
+  "dictation": {
+    "text": "Les clients sont arrivés très tôt devant la boutique ce matin. Une vendeuse souriante leur a montré le nouveau téléphone pliable. Elle a expliqué le prix, et plusieurs personnes sont parties sans rien acheter. Deux amies se sont installées près de la vitrine pour essayer l'appareil. Elles ont trouvé l'écran très grand, mais elles ont gardé leur ancien téléphone. Leur choix est simple, elles vont attendre l'année prochaine.",
+    "units": [
+      "Les clients sont arrivés très tôt",
+      "devant la boutique ce matin.",
+      "Une vendeuse souriante leur a montré le nouveau téléphone pliable.",
+      "Elle a expliqué le prix,",
+      "et plusieurs personnes sont parties sans rien acheter.",
+      "Deux amies se sont installées",
+      "près de la vitrine pour essayer l'appareil.",
+      "Elles ont trouvé l'écran très grand,",
+      "mais elles ont gardé leur ancien téléphone.",
+      "Leur choix est simple, elles vont attendre l'année prochaine."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Les annonces d'Apple",
+      "prompt": "Raconte-moi avec tes mots ce qu'Apple a présenté cette année et pourquoi on en parle.",
+      "relances": [
+        "Quel modèle t'a le plus étonnée, et pourquoi ?",
+        "Comment expliquerais-tu un téléphone pliable à ta grand-mère ?",
+        "Quels chiffres de l'article t'ont le plus marquée ?",
+        "Selon toi, quelle information manque dans cet article ?"
+      ]
+    },
+    {
+      "title": "Un prix justifié ?",
+      "prompt": "Selon toi, qu'est-ce qui justifie ou non le prix d'un téléphone à deux mille euros ?",
+      "relances": [
+        "Que répondrais-tu à quelqu'un qui trouve ce prix normal ?",
+        "Quelles autres choses achèterais-tu avec cette somme ?",
+        "Comment les marques arrivent-elles à nous convaincre de payer plus ?",
+        "À quel prix ce téléphone deviendrait-il intéressant pour toi ?"
+      ]
+    },
+    {
+      "title": "Ton téléphone et toi",
+      "prompt": "Parle-moi de ton téléphone actuel et de la place qu'il prend dans ta journée.",
+      "relances": [
+        "Comment as-tu choisi ton téléphone la dernière fois ?",
+        "Que ferais-tu si tu le perdais demain matin ?",
+        "Quelles applications utilises-tu vraiment tous les jours ?",
+        "Raconte-moi une panne ou une casse qui t'a embêtée."
+      ]
+    },
+    {
+      "title": "Acheter en France",
+      "prompt": "Comment imagines-tu tes achats de technologie une fois installée à Strasbourg ?",
+      "relances": [
+        "Qu'est-ce qui change entre Saint-Domingue et la France pour ces achats ?",
+        "Comment vas-tu organiser ton forfait et ta ligne en arrivant ?",
+        "Quels conseils donnerais-tu à une amie qui déménage aussi ?",
+        "Que penses-tu du marché de l'occasion en France ?"
+      ]
+    }
+  ],
+  "comments": [
+    { "username": "PasDupeDuMarketing_67", "comment": "Deux mille euros pour un téléphone qui se plie, franchement STOP. On nous vend du rêve avec une charnière et tout le monde applaudit !!! Dans trois ans l'écran sera mort et il faudra racheter. C'est du gâchis pur et simple.", "likes": 418 },
+    { "username": "MamieGeekDeColmar", "comment": "Mon fils m'a offert son ancien iPhone il y a six ans, il marche encore très bien. Je l'utilise pour mes recettes et pour appeler mes petits-enfants. Le pliable, ça me rappelle mon vieux téléphone à clapet de 2004 😄 Finalement tout revient !", "likes": 57 }
+  ]
+}

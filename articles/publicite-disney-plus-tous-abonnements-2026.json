@@ -1,0 +1,80 @@
+{
+  "id": "publicite-disney-plus-tous-abonnements-2026",
+  "title": "Disney+ : de la publicité même pour les abonnés premium",
+  "date": "2026-09-19",
+  "category": "Technologie",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Disney%2B_2024.svg?width=1200",
+    "alt": "Le logo de la plateforme de streaming Disney+"
+  },
+  "vocabulary": [
+    { "fr": "un abonnement", "es": "una suscripción" },
+    { "fr": "une plateforme", "es": "una plataforma" },
+    { "fr": "les conditions générales", "es": "los términos y condiciones" },
+    { "fr": "résilier", "es": "cancelar, dar de baja" },
+    { "fr": "une bande-annonce", "es": "un tráiler" },
+    { "fr": "se sentir trahi", "es": "sentirse traicionado" },
+    { "fr": "une coupure publicitaire", "es": "un corte publicitario" }
+  ],
+  "article": "Disney+ a envoyé un message à tous ses abonnés cette semaine. La plateforme modifie ses conditions générales d'utilisation. Désormais, toutes les formules peuvent contenir de la publicité. Le changement s'applique trente jours après la notification. Même l'offre la plus chère, à 15,99 euros par mois, est concernée. Pourtant, elle était vendue comme une offre sans publicité.\n\nTrois types de messages sont prévus. D'abord, des publicités avant le film et après le générique. Ensuite, des bandes-annonces imposées pour les productions locales. Enfin, des contenus sponsorisés pendant les événements sportifs en direct. En revanche, les coupures au milieu d'un film restent réservées à la formule la moins chère. Les profils enfants restent totalement protégés.\n\nBeaucoup d'abonnés se sentent trahis. Ils paient chaque mois pour une expérience tranquille, et le prix ne baisse pas. De plus, refuser les nouvelles conditions revient à résilier son abonnement. Disney+ n'est pourtant pas un cas isolé. Netflix, Prime Video et HBO Max ont fait des choix comparables ces dernières années.\n\nLe sport explique en partie cette décision. La plateforme va diffuser de grandes compétitions, et ces droits coûtent très cher. La publicité devient donc une ressource indispensable. Mais jusqu'où ira-t-on ? Certains spectateurs acceptent quelques secondes de pub contre un tarif plus bas. D'autres pensent qu'un abonnement payant doit rester complètement libre de réclames. Le débat ne fait que commencer.",
+  "dictation": {
+    "text": "Hier soir, ma sœur est rentrée tard et elle a allumé la télévision. Elle voulait voir un film avec ses enfants. Avant le début, trois publicités sont passées, et les enfants ont trouvé ça très long. Ma sœur paie pourtant un abonnement assez cher chaque mois. Elle a décidé de lire les nouvelles conditions. Ce matin, elle a annulé son abonnement, et elle est allée à la médiathèque.",
+    "units": [
+      "Hier soir, ma sœur est rentrée tard",
+      "et elle a allumé la télévision.",
+      "Elle voulait voir un film avec ses enfants.",
+      "Avant le début, trois publicités sont passées,",
+      "et les enfants ont trouvé ça très long.",
+      "Ma sœur paie pourtant un abonnement assez cher chaque mois.",
+      "Elle a décidé de lire les nouvelles conditions.",
+      "Ce matin, elle a annulé son abonnement,",
+      "et elle est allée à la médiathèque."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Expliquer le changement",
+      "prompt": "Qu'est-ce que Disney+ a décidé exactement, et qui est concerné ?",
+      "relances": [
+        "Quels types de publicités sont prévus, d'après l'article ?",
+        "Pourquoi les abonnés premium sont-ils les plus surpris ?",
+        "Quel rôle joue le sport dans cette décision ?",
+        "Comment tu résumerais cette histoire en trois phrases ?"
+      ]
+    },
+    {
+      "title": "Payer ou regarder des pubs",
+      "prompt": "Selon toi, un abonnement payant doit-il rester complètement sans publicité ?",
+      "relances": [
+        "Combien de minutes de pub tu acceptes avant un film ?",
+        "Que ferais-tu si ton service préféré augmentait encore ?",
+        "Qu'est-ce qui te dérange le plus dans la publicité ?",
+        "Comment une plateforme peut-elle gagner de l'argent autrement ?"
+      ]
+    },
+    {
+      "title": "Tes soirées séries",
+      "prompt": "Raconte-moi comment tu regardes tes séries et tes films en ce moment.",
+      "relances": [
+        "Quelle série t'a vraiment plu cette année, et pourquoi ?",
+        "Tu regardes seule, en famille, ou avec des amies ?",
+        "Tu mets les sous-titres en français ou en espagnol ?",
+        "Quel abonnement tu garderais si tu devais en choisir un seul ?"
+      ]
+    },
+    {
+      "title": "Regarder la télé en France",
+      "prompt": "Comment imagines-tu tes soirées télé une fois installée à Strasbourg ?",
+      "relances": [
+        "En République dominicaine, on regarde la télé de la même façon ?",
+        "Quelles chaînes françaises aimerais-tu découvrir en arrivant ?",
+        "Les séries peuvent-elles t'aider à progresser en français ?",
+        "Quel budget mensuel tu es prête à mettre là-dedans ?"
+      ]
+    }
+  ],
+  "comments": [
+    { "username": "AbonneDeLaPremiereHeure", "comment": "Non mais c'est une ARNAQUE pure et simple !!! Je paie le tarif le plus cher précisément pour ne pas voir de pub, et on change le contrat en cours de route sans baisser le prix. Résiliation immédiate, et sans regret.", "likes": 412 },
+    { "username": "Tatie_Corinne_du_67", "comment": "Chez nous, la solution est trouvée depuis longtemps : la médiathèque du quartier. Mes petits-enfants empruntent des films le mercredi, ça coûte quinze euros par an pour toute la famille, et personne n'a jamais vu une seule publicité. 😄", "likes": 67 }
+  ]
+}

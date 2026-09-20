@@ -1,0 +1,112 @@
+{
+  "id": "gilets-jaunes-retour-france-2026",
+  "title": "Les gilets jaunes de retour sur les ronds-points ?",
+  "date": "2026-09-20",
+  "category": "Société",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gilets_Jaunes_Carcassonne.jpg?width=1200",
+    "alt": "Des manifestants en gilets jaunes rassemblés sur un rond-point près de Carcassonne"
+  },
+  "vocabulary": [
+    {
+      "fr": "un rond-point",
+      "es": "una rotonda"
+    },
+    {
+      "fr": "le carburant",
+      "es": "el combustible"
+    },
+    {
+      "fr": "la vie chère",
+      "es": "la carestía de la vida"
+    },
+    {
+      "fr": "un rassemblement",
+      "es": "una concentración"
+    },
+    {
+      "fr": "se mobiliser",
+      "es": "movilizarse"
+    },
+    {
+      "fr": "dénoncer",
+      "es": "denunciar"
+    },
+    {
+      "fr": "la colère",
+      "es": "la rabia, el enfado"
+    },
+    {
+      "fr": "klaxonner",
+      "es": "tocar el claxon"
+    }
+  ],
+  "article": "Huit ans après leur première mobilisation, les gilets jaunes font de nouveau parler d'eux. Depuis le début du mois de septembre 2026, des appels à manifester circulent sur TikTok, Facebook et Instagram. La raison principale est le prix des carburants, qui approche 2,30 euros le litre. Le samedi 17 octobre est devenu la date symbole de ce retour annoncé.\n\nLes premiers rassemblements ont déjà commencé. Un collectif a défilé dans les rues de Paris le 12 septembre. À Hazebrouck, dans le Nord, des manifestants occupent trois ronds-points depuis lundi. Ils dénoncent les taxes, le prix de l'essence et le coût des courses. Des responsables politiques et syndicaux soutiennent ce mouvement. Le communiste Fabien Roussel a appelé les Français à se mobiliser si le gouvernement ne fait rien.\n\nPourtant, tout le monde ne croit pas à un nouveau 2018. La police explique qu'aucune manifestation n'a été déclarée officiellement en préfecture. Les anciens gilets jaunes eux-mêmes hésitent. Certains pensent que la colère peut exploser très vite, car la vie chère touche tout le monde. D'autres trouvent le mouvement trop divisé et trop fatigué. En revanche, les responsables politiques prennent la menace au sérieux. L'ancien président François Hollande a parlé d'un vrai risque pour le pays.\n\nUne question reste donc ouverte. La colère contre les prix suffira-t-elle à ramener des milliers de personnes sur les ronds-points ? Les cabanes et les feux de palettes de 2018 ont marqué la France. Le 17 octobre dira si cette page est vraiment tournée.",
+  "dictation": {
+    "text": "Sur le rond-point, des habitants sont arrivés très tôt. Ils ont installé une table et un petit abri. Une voisine a préparé du café pour tout le monde. Ils veulent parler des taxes et du prix des courses. Les automobilistes ont ralenti et plusieurs ont klaxonné. Deux amies se sont retrouvées là, avec leurs gilets jaunes. Elles ont parlé du prix de l'essence pendant des heures. Ce soir, elles vont revenir avec leurs voisins.",
+    "units": [
+      "Sur le rond-point, des habitants sont arrivés très tôt.",
+      "Ils ont installé une table et un petit abri.",
+      "Une voisine a préparé du café pour tout le monde.",
+      "Ils veulent parler des taxes et du prix des courses.",
+      "Les automobilistes ont ralenti et plusieurs ont klaxonné.",
+      "Deux amies se sont retrouvées là, avec leurs gilets jaunes.",
+      "Elles ont parlé du prix de l'essence pendant des heures.",
+      "Ce soir, elles vont revenir avec leurs voisins."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Raconter le mouvement",
+      "prompt": "Explique-moi avec tes mots pourquoi les gilets jaunes reviennent en France cet automne.",
+      "relances": [
+        "Quelle date circule beaucoup sur les réseaux sociaux ?",
+        "Où est-ce que les premiers rassemblements ont eu lieu ?",
+        "Qui soutient ce mouvement, et pourquoi ?",
+        "Quels arguments utilisent ceux qui n'y croient pas ?"
+      ]
+    },
+    {
+      "title": "Bloquer pour se faire entendre",
+      "prompt": "Selon toi, bloquer un rond-point est-il un bon moyen de se faire écouter par un gouvernement ?",
+      "relances": [
+        "Quels autres moyens existent pour protester, à ton avis ?",
+        "Que réponds-tu à un automobiliste bloqué le matin ?",
+        "Jusqu'où une manifestation peut-elle aller, selon toi ?",
+        "Imagine que le gouvernement cède : est-ce une bonne chose ?"
+      ]
+    },
+    {
+      "title": "Les prix et toi",
+      "prompt": "Raconte-moi un moment où une hausse de prix a vraiment changé tes habitudes à Saint-Domingue.",
+      "relances": [
+        "Qu'est-ce que tu as arrêté d'acheter à ce moment-là ?",
+        "Comment ta famille a-t-elle réagi à cette hausse ?",
+        "Comment les gens autour de toi ont-ils montré leur colère ?",
+        "Qu'est-ce qui coûte le plus cher chez toi aujourd'hui ?"
+      ]
+    },
+    {
+      "title": "Manifester en France",
+      "prompt": "Quand tu vivras à Strasbourg, comment imagines-tu ta première manifestation française ?",
+      "relances": [
+        "Est-ce qu'on manifeste de la même façon en République dominicaine ?",
+        "Quel sujet te donnerait envie de descendre dans la rue ?",
+        "Comment est-ce que tu expliquerais ce mouvement à ta famille ?",
+        "Que ferais-tu si ton bus était bloqué par des manifestants ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "AutomobilisteDu67",
+      "comment": "Non mais ça suffit !!! On parle de MILLIERS de gens bloqués sur la route pour aller bosser, et personne n'en parle. Le prix de l'essence est un vrai problème, d'accord, mais bloquer ceux qui travaillent n'a jamais fait baisser une seule taxe.",
+      "likes": 312
+    },
+    {
+      "username": "CabaneDuRondPoint",
+      "comment": "En 2018 j'ai passé six semaines sur le rond-point de Salvaza. On faisait du café à cinq heures du matin et j'ai rencontré des voisins que je n'avais jamais vus en vingt ans. Même mon boulanger venait avec des croissants 🙂",
+      "likes": 78
+    }
+  ]
+}

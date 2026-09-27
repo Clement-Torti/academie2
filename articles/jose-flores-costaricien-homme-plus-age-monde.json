@@ -1,0 +1,112 @@
+{
+  "id": "jose-flores-costaricien-homme-plus-age-monde",
+  "title": "À 119 ans, un Costaricien pourrait être l'homme le plus âgé de l'histoire",
+  "date": "2026-09-27",
+  "category": "Société",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Landscape,_Nicoya_Peninsula,_Costa_Rica.JPG?width=1200",
+    "alt": "Paysage vert de la péninsule de Nicoya, au Costa Rica, avec des arbres, des vaches et la mer au loin"
+  },
+  "vocabulary": [
+    {
+      "fr": "l'espérance de vie",
+      "es": "la esperanza de vida"
+    },
+    {
+      "fr": "faire reconnaître",
+      "es": "lograr que se reconozca"
+    },
+    {
+      "fr": "un acte de naissance",
+      "es": "un acta de nacimiento"
+    },
+    {
+      "fr": "veuf",
+      "es": "viudo"
+    },
+    {
+      "fr": "faire la sieste",
+      "es": "echar la siesta"
+    },
+    {
+      "fr": "rester actif",
+      "es": "mantenerse activo"
+    },
+    {
+      "fr": "le mode de vie",
+      "es": "el estilo de vida"
+    }
+  ],
+  "article": "Au Costa Rica, un homme pourrait bientôt entrer dans l'histoire. Selon ses papiers officiels, José Flores est né le 11 juillet 1907, dans la province de Guanacaste. Il aurait donc 119 ans. Une association locale veut faire reconnaître son âge par le Guinness des records. Si elle réussit, il deviendra l'homme le plus âgé de tous les temps.\n\nJosé Flores vit à Sardinal, un village de la péninsule de Nicoya. Cette région est l'une des « zones bleues » du monde, où l'espérance de vie est exceptionnelle. Toute sa vie, il a travaillé dans les bananeraies et dans les champs. À 105 ans, il dansait encore et portait sa machette. Aujourd'hui, il joue aux dominos avec sa petite-fille et fait la sieste dans son fauteuil. Veuf depuis 23 ans, il a eu huit enfants.\n\nLe record masculin appartient au Japonais Jiroemon Kimura, mort en 2013 à 116 ans. Seule la Française Jeanne Calment a vécu plus longtemps : 122 ans. Pourtant, la vérification sera difficile. En effet, les actes de naissance du début du XXe siècle contiennent souvent des erreurs.\n\nSon secret ? José Flores remercie Dieu. Il conseille aussi aux jeunes de travailler et de rester actifs. Sa petite-fille raconte qu'il a été fêtard et boxeur, et qu'il boit encore un petit whisky de temps en temps. Alors, une longue vie dépend-elle surtout des gènes, de l'alimentation ou du mode de vie ?",
+  "dictation": {
+    "text": "Dans les zones bleues du monde, beaucoup de personnes âgées sont encore en bonne santé. Elles sont restées très actives et elles marchent chaque jour jusqu'au marché. Leurs repas sont toujours simples, avec des haricots, du maïs et des fruits. Les familles vivent souvent ensemble et les anciens ne sont jamais seuls. On leur demande des conseils, parce qu'ils ont une longue expérience. Si vous voulez vivre vieux, allez voir vos voisins et bougez beaucoup.",
+    "units": [
+      "Dans les zones bleues du monde,",
+      "beaucoup de personnes âgées sont encore en bonne santé.",
+      "Elles sont restées très actives",
+      "et elles marchent chaque jour jusqu'au marché.",
+      "Leurs repas sont toujours simples,",
+      "avec des haricots, du maïs et des fruits.",
+      "Les familles vivent souvent ensemble",
+      "et les anciens ne sont jamais seuls.",
+      "On leur demande des conseils,",
+      "parce qu'ils ont une longue expérience.",
+      "Si vous voulez vivre vieux,",
+      "allez voir vos voisins et bougez beaucoup."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "L'histoire de José Flores",
+      "prompt": "Raconte-moi avec tes mots qui est José Flores et pourquoi on parle de lui.",
+      "relances": [
+        "Comment se passe une journée normale pour lui aujourd'hui ?",
+        "Pourquoi est-ce difficile de vérifier son âge exact ?",
+        "Qu'est-ce qu'une zone bleue, d'après ce que tu as compris ?",
+        "Quel détail de sa vie t'a le plus surprise ?"
+      ]
+    },
+    {
+      "title": "Le secret d'une longue vie",
+      "prompt": "Selon toi, qu'est-ce qui compte le plus pour vivre longtemps et en bonne santé ?",
+      "relances": [
+        "Quelle place donnes-tu aux gènes par rapport au mode de vie ?",
+        "Que penses-tu de son conseil de travailler et de rester actif ?",
+        "Jusqu'à quel âge aimerais-tu vivre, et pourquoi ?",
+        "Quels sont les avantages et les inconvénients de vivre très vieux ?"
+      ]
+    },
+    {
+      "title": "Les anciens de ma famille",
+      "prompt": "Parle-moi de la personne la plus âgée que tu connais dans ta famille ou ton quartier.",
+      "relances": [
+        "Qu'est-ce que cette personne t'a appris ?",
+        "Comment passe-t-elle ses journées ?",
+        "Quelle histoire de sa jeunesse aimes-tu entendre ?",
+        "À quels jeux jouiez-vous ensemble quand tu étais petite ?"
+      ]
+    },
+    {
+      "title": "Vieillir en France",
+      "prompt": "Comment imagines-tu la place des personnes âgées en France, par rapport à la République dominicaine ?",
+      "relances": [
+        "Qui s'occupe des grands-parents dans une famille dominicaine ?",
+        "Que sais-tu des maisons de retraite en France ?",
+        "Quelles habitudes saines veux-tu garder en arrivant à Strasbourg ?",
+        "Comment pourrais-tu rencontrer des personnes âgées dans ton nouveau quartier ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "Sceptique_Du_Calendrier",
+      "comment": "Franchement, 119 ans avec une carte d'identité imprimée des décennies plus tard ?? Personne ne vérifie rien ! En 1907, dans un village de Guanacaste, on déclarait les bébés quand on avait le temps. C'est une belle histoire pour le tourisme, pas un record.",
+      "likes": 318
+    },
+    {
+      "username": "MamieGinette_Tricote",
+      "comment": "Moi j'ai 91 ans et je joue aussi aux dominos tous les après-midi avec mon arrière-petit-fils. Il triche, évidemment. Si le secret c'est un petit whisky et Dieu, j'ai déjà la moitié de la recette 😄 Il me reste à commencer la boxe !",
+      "likes": 47
+    }
+  ]
+}

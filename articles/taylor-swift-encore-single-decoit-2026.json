@@ -1,0 +1,113 @@
+{
+  "id": "taylor-swift-encore-single-decoit-2026",
+  "title": "Le nouveau single de Taylor Swift déçoit même ses fans",
+  "date": "2026-09-27",
+  "category": "Culture",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Taylor_Swift_The_Eras_Tour_at_BC_Place,_Landscape.jpg?width=1200",
+    "alt": "Taylor Swift sur scène pendant un concert de sa tournée The Eras Tour à Vancouver"
+  },
+  "vocabulary": [
+    {
+      "fr": "décevoir (être déçu)",
+      "es": "decepcionar (estar decepcionado)"
+    },
+    {
+      "fr": "l'accueil",
+      "es": "la acogida, la recepción"
+    },
+    {
+      "fr": "reprocher quelque chose à quelqu'un",
+      "es": "reprochar algo a alguien"
+    },
+    {
+      "fr": "une rupture",
+      "es": "una ruptura (amorosa)"
+    },
+    {
+      "fr": "le succès commercial",
+      "es": "el éxito comercial"
+    },
+    {
+      "fr": "une polémique",
+      "es": "una polémica"
+    },
+    {
+      "fr": "les paroles",
+      "es": "la letra (de una canción)"
+    },
+    {
+      "fr": "écouter en boucle",
+      "es": "escuchar en bucle, poner una y otra vez"
+    }
+  ],
+  "article": "Le 25 septembre, Taylor Swift a sorti quatre nouvelles chansons. Elles complètent The Life of a Showgirl, son album paru en octobre 2025. Mais cette fois, l'accueil est froid. La chanson la plus commentée s'appelle « Cleveland! ». Elle est dédiée à son mari, le joueur de football américain Travis Kelce, qui a grandi près de cette ville.\n\nLes critiques sont sévères. Les journaux britanniques The Guardian et The Independent lui donnent seulement deux étoiles sur cinq. Ils reprochent à la chanteuse de répéter toujours les mêmes idées. Sur les réseaux sociaux, beaucoup de fans sont aussi déçus. Certains parlent même de « la pire chanson de sa carrière ». D'autres regrettent l'ancienne Taylor Swift, celle des chansons tristes et des ruptures.\n\nPourtant, le succès commercial est bien là. Le jour de la sortie, elle est devenue l'artiste féminine la plus écoutée en une seule journée sur Spotify cette année. Ses défenseurs rappellent aussi qu'elle a le droit de changer de style. Selon eux, une chanson joyeuse et légère n'est pas forcément une mauvaise chanson. La chanteuse ne semble pas inquiète. Elle a déjà expliqué que les discussions autour d'un album l'aident à le vendre.\n\nCette polémique pose une vraie question. Un artiste aussi célèbre peut-il encore surprendre son public ? Et quand on aime un chanteur depuis longtemps, est-ce qu'on doit tout aimer chez lui ?",
+  "dictation": {
+    "text": "Ma sœur a attendu ces nouvelles chansons pendant des mois. Vendredi matin, elle s'est levée très tôt pour les écouter avant le travail. Elle a mis son casque et elle a fermé la porte de sa chambre. Une heure après, elle est sortie avec un air triste. Elle m'a dit que les paroles sont trop simples. Pourtant, ce soir, elle écoute encore la même chanson en boucle dans la cuisine.",
+    "units": [
+      "Ma sœur a attendu ces nouvelles chansons pendant des mois.",
+      "Vendredi matin, elle s'est levée très tôt",
+      "pour les écouter avant le travail.",
+      "Elle a mis son casque",
+      "et elle a fermé la porte de sa chambre.",
+      "Une heure après, elle est sortie avec un air triste.",
+      "Elle m'a dit que les paroles sont trop simples.",
+      "Pourtant, ce soir, elle écoute encore la même chanson",
+      "en boucle dans la cuisine."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Raconte la polémique",
+      "prompt": "Qu'est-ce qui s'est passé avec les nouvelles chansons de Taylor Swift, et pourquoi on en parle autant ?",
+      "relances": [
+        "Qu'est-ce que les critiques reprochent exactement à ces chansons ?",
+        "Comment les fans ont-ils réagi sur les réseaux sociaux ?",
+        "Pourquoi dit-on que c'est quand même un succès commercial ?",
+        "Qu'est-ce que Taylor Swift pense de toutes ces critiques ?"
+      ]
+    },
+    {
+      "title": "Aimer tout d'un artiste",
+      "prompt": "À ton avis, quand on est fan d'un artiste, est-ce qu'on doit défendre tout ce qu'il fait ?",
+      "relances": [
+        "Qu'est-ce qui fait qu'une chanson est bonne ou mauvaise pour toi ?",
+        "Pourquoi un artiste change-t-il de style, selon toi ?",
+        "Que penses-tu des gens qui critiquent un artiste en ligne ?",
+        "Imagine que tu es Taylor Swift : que réponds-tu aux critiques ?"
+      ]
+    },
+    {
+      "title": "Une déception musicale",
+      "prompt": "Raconte-moi une fois où un chanteur, une série ou un film que tu aimais t'a déçue.",
+      "relances": [
+        "Qu'est-ce que tu attendais exactement, et qu'est-ce que tu as eu ?",
+        "Tu en as parlé avec qui, et qu'est-ce qu'ils en pensaient ?",
+        "Quelle chanson as-tu écoutée en boucle récemment, et pourquoi ?",
+        "Comment découvres-tu la musique : TikTok, Spotify, tes amis ?"
+      ]
+    },
+    {
+      "title": "La musique à Strasbourg",
+      "prompt": "Quelle place la musique va-t-elle avoir dans ta nouvelle vie à Strasbourg ?",
+      "relances": [
+        "Quels artistes dominicains aimerais-tu faire découvrir à tes futurs amis français ?",
+        "Comment la musique peut-elle t'aider à progresser en français ?",
+        "Quelles différences imagines-tu entre une fête en France et à Saint-Domingue ?",
+        "Quel concert aimerais-tu voir en France, et avec qui ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "SwiftieDepuis2008",
+      "comment": "Désolée mais NON. J'ai tout acheté, les vinyles, les places de concert, TOUT. Et là on me sert quatre fois la même chanson ?? « Cleveland! » c'est gênant, point. Arrêtez de dire que c'est « juste du pop fun », elle peut faire mille fois mieux !!!",
+      "likes": 487
+    },
+    {
+      "username": "PapyRockDu63",
+      "comment": "Ma petite-fille m'a fait écouter « Cleveland! » dans la voiture. J'ai cru que c'était une pub pour l'office de tourisme de l'Ohio 😂 Elle a boudé jusqu'à la maison. Moi à son âge, on se disputait pour Johnny, c'était pareil finalement.",
+      "likes": 64
+    }
+  ]
+}

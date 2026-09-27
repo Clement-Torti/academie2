@@ -1,0 +1,116 @@
+{
+  "id": "visite-pape-leon-xiv-france-2026",
+  "title": "Le pape Léon XIV en visite en France : foule, foi et débats",
+  "date": "2026-09-27",
+  "category": "Société",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pope_Leo_XIV_in_popemobile_at_inauguration.jpg?width=1200",
+    "alt": "Le pape Léon XIV salue la foule depuis sa papamobile"
+  },
+  "vocabulary": [
+    {
+      "fr": "la foule",
+      "es": "la multitud"
+    },
+    {
+      "fr": "une messe en plein air",
+      "es": "una misa al aire libre"
+    },
+    {
+      "fr": "les fidèles",
+      "es": "los fieles, los creyentes"
+    },
+    {
+      "fr": "laïque",
+      "es": "laico"
+    },
+    {
+      "fr": "prononcer un discours",
+      "es": "pronunciar un discurso"
+    },
+    {
+      "fr": "s'interroger sur",
+      "es": "preguntarse por, cuestionar"
+    },
+    {
+      "fr": "le dispositif de sécurité",
+      "es": "el dispositivo de seguridad"
+    },
+    {
+      "fr": "occuper une place",
+      "es": "ocupar un lugar"
+    }
+  ],
+  "article": "Le pape Léon XIV est en France du 25 au 28 septembre. Ce pape américain, élu en mai 2025, fait son premier voyage officiel dans le pays. Il visite Paris, Lourdes et Metz. Samedi, une foule immense a assisté à sa messe en plein air sur la place de la Concorde. Les organisateurs attendaient environ 600 000 fidèles.\n\nC'est la première visite officielle d'un pape à Paris depuis Benoît XVI, en 2008. En quatre jours, Léon XIV prononce quinze discours, presque tous en français. Vendredi, il a rencontré Emmanuel Macron, puis il a parlé d'éducation et de culture à l'UNESCO. Ce dimanche, il est à Lourdes, où il rencontre en privé des victimes d'abus sexuels dans l'Église.\n\nCette visite ne plaît pas à tout le monde. Certains critiquent le choix de la Concorde, un lieu très symbolique de la République. Pour eux, une messe géante à cet endroit pose problème dans un pays laïque. D'autres s'interrogent sur le coût de l'énorme dispositif de sécurité. En revanche, beaucoup de catholiques sont heureux. En effet, l'Église de France voit revenir des fidèles : plus de 13 000 adultes ont été baptisés à Pâques.\n\nLundi, le pape termine son voyage à Metz. Il doit y parler de l'unité de l'Europe, dans la région de Robert Schuman, l'un des pères de l'Union européenne. Mais une question reste ouverte : dans une France de plus en plus laïque, quelle place l'Église peut-elle encore occuper dans le débat public ?",
+  "dictation": {
+    "text": "Samedi matin, ma cousine et moi sommes parties très tôt pour voir le pape. Nous sommes arrivées à Paris vers huit heures, avec des drapeaux jaunes et blancs. Il y avait déjà une foule immense, et des familles ont chanté ensemble. Quand la voiture du pape est passée, on a crié et applaudi. Ma cousine a beaucoup pleuré, elle ne va jamais oublier ce moment. Ce soir, nous allons regarder les images à la télévision.",
+    "units": [
+      "Samedi matin, ma cousine et moi",
+      "sommes parties très tôt pour voir le pape.",
+      "Nous sommes arrivées à Paris vers huit heures,",
+      "avec des drapeaux jaunes et blancs.",
+      "Il y avait déjà une foule immense,",
+      "et des familles ont chanté ensemble.",
+      "Quand la voiture du pape est passée,",
+      "on a crié et applaudi.",
+      "Ma cousine a beaucoup pleuré,",
+      "elle ne va jamais oublier ce moment.",
+      "Ce soir, nous allons regarder",
+      "les images à la télévision."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Le pape en France",
+      "prompt": "Comment s'est passé le voyage du pape en France, d'après ce que tu as lu ?",
+      "relances": [
+        "Quelles villes a-t-il visitées, et pour quelles raisons ?",
+        "Qu'est-ce qui s'est passé sur la place de la Concorde ?",
+        "Pourquoi certaines personnes critiquent-elles cette visite ?",
+        "Quel moment du voyage te paraît le plus important, et pourquoi ?"
+      ]
+    },
+    {
+      "title": "Religion et laïcité",
+      "prompt": "Que penses-tu d'une messe géante sur une grande place publique, dans un pays laïque ?",
+      "relances": [
+        "Selon toi, qui devrait payer la sécurité d'un tel événement ?",
+        "Quelle différence fais-tu entre croire et montrer sa religion ?",
+        "Que répondrais-tu au commentaire énervé sous l'article ?",
+        "Comment imagines-tu la place de l'Église dans vingt ans ?"
+      ]
+    },
+    {
+      "title": "Au milieu de la foule",
+      "prompt": "Raconte-moi un grand rassemblement où tu es allée : religieux, sportif ou musical.",
+      "relances": [
+        "Qu'est-ce que tu as ressenti au milieu de tous ces gens ?",
+        "Avec qui y étais-tu, et comment s'est passée la journée ?",
+        "Quel souvenir précis te reste de ce jour-là ?",
+        "Quelle fête religieuse compte le plus dans ta famille, et pourquoi ?"
+      ]
+    },
+    {
+      "title": "La foi, ici et là-bas",
+      "prompt": "Quelle place la religion occupe-t-elle en République dominicaine, comparée à ce que tu découvres de la France ?",
+      "relances": [
+        "Comment ta famille vit-elle la Semaine sainte à Saint-Domingue ?",
+        "À Strasbourg, l'État paie les prêtres : qu'en penses-tu ?",
+        "Comment parlerais-tu de religion avec de futurs collègues français ?",
+        "Quelle tradition dominicaine aimerais-tu faire découvrir à tes amis français ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "RepubliqueAvantTout_89",
+      "comment": "Une messe géante place de la Concorde, sérieusement ?!! On nous parle de laïcité toute l'année, et là tout le monde trouve ça normal. Et la sécurité, c'est qui qui paie ? NOUS, les contribuables. Que le pape vienne, aucun problème, mais qu'il reste dans les églises !!!",
+      "likes": 437
+    },
+    {
+      "username": "PedaleEtPriere_33",
+      "comment": "Quand j'ai vu la papamobile descendre les Champs-Élysées, j'ai cru que le Tour de France revenait 😂 J'attends maintenant le maillot jaune du pape. Remarquez, il est déjà tout en blanc… il a sûrement gagné le classement du meilleur jeune, version éternité.",
+      "likes": 64
+    }
+  ]
+}

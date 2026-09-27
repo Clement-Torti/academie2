@@ -1,0 +1,112 @@
+{
+  "id": "zidane-premier-match-bleus-turquie-2026",
+  "title": "Zidane gagne son premier match à la tête des Bleus",
+  "date": "2026-09-27",
+  "category": "Sport",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Zinedine_Zidane.jpg?width=1200",
+    "alt": "Zinédine Zidane en tenue d'entraîneur, au bord d'un terrain de football"
+  },
+  "vocabulary": [
+    {
+      "fr": "le sélectionneur",
+      "es": "el seleccionador"
+    },
+    {
+      "fr": "une rencontre",
+      "es": "un partido, un encuentro"
+    },
+    {
+      "fr": "marquer un but",
+      "es": "marcar un gol"
+    },
+    {
+      "fr": "se blesser",
+      "es": "lesionarse"
+    },
+    {
+      "fr": "être forfait",
+      "es": "ser baja"
+    },
+    {
+      "fr": "une occasion",
+      "es": "una ocasión (de gol)"
+    },
+    {
+      "fr": "rester discret",
+      "es": "mantener un perfil bajo"
+    },
+    {
+      "fr": "en ligne de mire",
+      "es": "en el punto de mira, como objetivo"
+    }
+  ],
+  "article": "Pour son premier match à la tête de l'équipe de France, Zinédine Zidane a gagné. Vendredi 25 septembre, les Bleus ont battu la Turquie 1-0 à Izmit, en Ligue des nations. Kylian Mbappé a marqué l'unique but à la 54e minute, sur une passe de Michael Olise. Mais la soirée s'est mal terminée pour le capitaine. Il s'est blessé au genou gauche au moment de sa frappe et il est rentré à Madrid.\n\nZidane remplace Didier Deschamps, qui a dirigé les Bleus pendant quatorze ans. Cet été, la France a perdu en demi-finale de la Coupe du monde contre l'Espagne. Pourtant, avant la rencontre, le champion du monde 1998 a voulu rester discret. « Je ne cherche pas cette lumière », a-t-il expliqué. Selon lui, les joueurs doivent être au centre de l'attention.\n\nSur le terrain, la victoire n'a pas été brillante. Zidane a tenté plusieurs changements, comme Ousmane Dembélé en attaquant de pointe. Cette idée n'a pas vraiment fonctionné. Les Bleus ont créé peu d'occasions, mais la défense a été solide, avec un excellent Dayot Upamecano. Au milieu, Manu Koné a aussi impressionné par son énergie.\n\nLe vrai défi commence maintenant. Mbappé est forfait pour les trois prochains matchs. Sans lui, la France joue en Belgique lundi, puis reçoit l'Italie au Stade de France le 2 octobre. Zidane a signé pour quatre ans, avec l'Euro 2028 en ligne de mire. Faut-il juger un sélectionneur sur ses premiers résultats, ou lui laisser le temps de construire son équipe ?",
+  "dictation": {
+    "text": "Vendredi soir, ma sœur et moi sommes allées au café du quartier. Toute la salle a regardé le match de l'équipe de France. Les supporters étaient nerveux pendant la première mi-temps. Quand le capitaine a marqué, nous avons crié de joie. Mais il s'est blessé au genou et il est sorti à cause de la douleur. Nous sommes rentrées à la maison un peu déçues. Lundi, on va regarder le prochain match ensemble.",
+    "units": [
+      "Vendredi soir, ma sœur et moi sommes allées au café du quartier.",
+      "Toute la salle a regardé le match de l'équipe de France.",
+      "Les supporters étaient nerveux pendant la première mi-temps.",
+      "Quand le capitaine a marqué, nous avons crié de joie.",
+      "Mais il s'est blessé au genou",
+      "et il est sorti à cause de la douleur.",
+      "Nous sommes rentrées à la maison un peu déçues.",
+      "Lundi, on va regarder le prochain match ensemble."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Raconter le match",
+      "prompt": "Comment s'est passé le premier match de Zidane comme sélectionneur de l'équipe de France ?",
+      "relances": [
+        "Qui a marqué, et que s'est-il passé ensuite ?",
+        "Pourquoi ce match était-il si attendu en France ?",
+        "Quels changements Zidane a-t-il essayés sur le terrain ?",
+        "Qu'est-ce qui a bien marché, et qu'est-ce qui a raté ?"
+      ]
+    },
+    {
+      "title": "Juger un nouvel entraîneur",
+      "prompt": "Selon toi, combien de temps faut-il laisser à un nouveau sélectionneur avant de le juger ?",
+      "relances": [
+        "Qu'est-ce qui compte le plus pour toi : gagner ou bien jouer ?",
+        "Pourquoi un grand joueur ne devient-il pas toujours un grand entraîneur ?",
+        "Comment réagirais-tu à la place de Zidane après cette blessure ?",
+        "Que penses-tu de sa volonté de rester discret ?"
+      ]
+    },
+    {
+      "title": "Un grand moment de sport",
+      "prompt": "Raconte-moi un grand moment de sport que tu as vécu avec ta famille ou tes amis.",
+      "relances": [
+        "Où étiez-vous, et qui était avec toi ce jour-là ?",
+        "Quelle ambiance y avait-il autour de toi pendant le match ?",
+        "Comment se passe un match de baseball à Saint-Domingue ?",
+        "Quel sportif dominicain admires-tu le plus, et pourquoi ?"
+      ]
+    },
+    {
+      "title": "Supportrice à Strasbourg",
+      "prompt": "Comment imagines-tu vivre un grand match des Bleus une fois installée à Strasbourg ?",
+      "relances": [
+        "Où aimerais-tu regarder le match : dans un bar, chez des amis ?",
+        "Quelles différences imagines-tu entre les supporters français et dominicains ?",
+        "Comment le football peut-il t'aider à rencontrer des gens en France ?",
+        "Avec ton diplôme de mercadeo, comment vendrais-tu un match des Bleus ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "Allez_Les_Bleus_75",
+      "comment": "Franchement, 1-0 contre la Turquie et tout le monde crie au génie ?? Dembélé en pointe, c'était n'importe quoi, on a vu ZÉRO jeu pendant une heure. Zidane est une légende comme joueur, OK, mais comme sélectionneur il n'a encore RIEN prouvé. Attendez l'Italie avant de vous emballer !!!",
+      "likes": 287
+    },
+    {
+      "username": "MamieZizou1998",
+      "comment": "Mon chat s'appelle Zizou depuis 1998. Vendredi, sur le but de Mbappé, il a sauté sur la table et renversé tout le plat de pâtes. Mon mari dit que c'est un signe : le chat a senti le retour du patron 😂 Depuis, il miaule dès qu'on allume la télé à 20h45.",
+      "likes": 64
+    }
+  ]
+}

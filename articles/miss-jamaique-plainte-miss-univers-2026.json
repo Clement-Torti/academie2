@@ -1,0 +1,90 @@
+{
+  "id": "miss-jamaique-plainte-miss-univers-2026",
+  "title": "Tombée sur scène, Miss Jamaïque attaque Miss Univers en justice",
+  "date": "2026-09-27",
+  "category": "Société",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gabrielle_Henry_Miss_Universe_Jamaica_2025_Siam_Niramit.jpg?width=1200",
+    "alt": "Gabrielle Henry, Miss Jamaïque 2025, pendant le concours Miss Univers en Thaïlande"
+  },
+  "vocabulary": [
+    { "fr": "porter plainte", "es": "presentar una denuncia, demandar" },
+    { "fr": "une chute", "es": "una caída" },
+    { "fr": "perdre connaissance", "es": "perder el conocimiento" },
+    { "fr": "les frais médicaux", "es": "los gastos médicos" },
+    { "fr": "le bilan est lourd", "es": "las consecuencias son graves" },
+    { "fr": "manquer à ses obligations", "es": "incumplir sus obligaciones" },
+    { "fr": "un défilé", "es": "un desfile" }
+  ],
+  "article": "Gabrielle Henry, Miss Jamaïque 2025, a porté plainte contre l'organisation Miss Univers. Le 21 septembre, ses avocats ont déposé la plainte devant un tribunal du Delaware, aux États-Unis. La jeune femme accuse l'organisation de négligence après une chute très grave pendant le concours, en Thaïlande.\n\nLes faits datent du 19 novembre 2025, à Bangkok. Pendant le défilé en robe de soirée, Gabrielle Henry est tombée dans un trou d'environ un mètre cinquante, au bord de la scène. Selon elle, ce trou n'était ni couvert, ni signalé, ni éclairé. Elle affirme aussi qu'elle suivait les instructions des répétitions et que les projecteurs l'aveuglaient. Elle a perdu connaissance et ne se souvient pas de sa chute.\n\nLe bilan est lourd : hémorragie cérébrale, fracture et blessures au visage. Elle a passé plusieurs jours en soins intensifs. Au début, l'organisation a payé ses frais médicaux en Thaïlande et son retour en Jamaïque. Mais depuis, la jeune femme dit qu'elle ne reçoit presque plus d'aide. Elle est médecin, mais elle n'a pas pu terminer sa spécialisation en ophtalmologie. Aujourd'hui, elle travaille avec des horaires aménagés.\n\nCette affaire pose une question simple : qui est responsable de la sécurité des candidates ? Les concours de beauté attirent des millions de spectateurs et rapportent beaucoup d'argent. Pourtant, les femmes qui défilent prennent parfois des risques invisibles. Le procès dira si Miss Univers a manqué à ses obligations. En attendant, Gabrielle Henry résume : « Cette chute a changé ma vie pour toujours. »",
+  "dictation": {
+    "text": "Ce soir-là, les candidates ont défilé devant un public immense. Soudain, une jeune femme est tombée au bord de la scène. Ses amies se sont arrêtées et le spectacle a continué sans elle. Elle est partie à l'hôpital, où elle est restée plusieurs semaines. Aujourd'hui, elle va beaucoup mieux, mais elle a toujours mal à la tête. Elle demande plus de sécurité pour les futures candidates et une aide pour ses soins.",
+    "units": [
+      "Ce soir-là, les candidates ont défilé devant un public immense.",
+      "Soudain, une jeune femme est tombée",
+      "au bord de la scène.",
+      "Ses amies se sont arrêtées",
+      "et le spectacle a continué sans elle.",
+      "Elle est partie à l'hôpital,",
+      "où elle est restée plusieurs semaines.",
+      "Aujourd'hui, elle va beaucoup mieux,",
+      "mais elle a toujours mal à la tête.",
+      "Elle demande plus de sécurité pour les futures candidates",
+      "et une aide pour ses soins."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Raconte l'accident",
+      "prompt": "Raconte-moi ce qui est arrivé à Miss Jamaïque et pourquoi elle porte plainte aujourd'hui.",
+      "relances": [
+        "Comment s'est passée la chute, d'après elle ?",
+        "Qu'est-ce que l'organisation a fait juste après l'accident ?",
+        "Quelles sont les conséquences sur son métier de médecin ?",
+        "Qu'est-ce qu'elle reproche exactement à Miss Univers ?"
+      ]
+    },
+    {
+      "title": "Qui est responsable ?",
+      "prompt": "À ton avis, qui est responsable de cette chute et que doit payer l'organisation ?",
+      "relances": [
+        "Quels arguments l'organisation pourrait-elle utiliser pour se défendre ?",
+        "Jusqu'où va la responsabilité d'un organisateur de spectacle ?",
+        "Que penses-tu des concours de beauté en général aujourd'hui ?",
+        "Qu'est-ce qu'il faudrait changer pour protéger les candidates ?"
+      ]
+    },
+    {
+      "title": "Un accident marquant",
+      "prompt": "Raconte-moi un moment où tu as eu très peur, pour toi ou pour un proche.",
+      "relances": [
+        "Comment as-tu réagi sur le moment ?",
+        "Qui t'a aidée, et de quelle façon ?",
+        "Qu'est-ce que cette expérience t'a appris ?",
+        "Comment racontes-tu cette histoire à ta famille aujourd'hui ?"
+      ]
+    },
+    {
+      "title": "Miss et fierté nationale",
+      "prompt": "Quelle place occupent les concours de Miss en République dominicaine, comparée à la France ?",
+      "relances": [
+        "Quelle Miss dominicaine célèbre connais-tu, et pourquoi ?",
+        "Comment ta famille regarde-t-elle ces concours à la télévision ?",
+        "Que sais-tu de l'élection de Miss France ?",
+        "Comment utiliserais-tu une Miss dans une campagne de mercadeo ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "Justice_Pour_Gaby",
+      "comment": "Un trou NON signalé au bord d'une scène internationale ?!! C'est pas un accident, c'est de l'amateurisme total. Ils encaissent des millions et ils laissent tomber une femme blessée dès qu'elle rentre chez elle. Qu'ils paient TOUT, et vite !!!",
+      "likes": 487
+    },
+    {
+      "username": "RegisseurLumiere_Lyon",
+      "comment": "Je bosse dans l'éclairage de spectacle depuis quinze ans. Quand tu marches face aux projecteurs, tu ne vois RIEN au-delà de deux mètres. Chez nous, chaque bord de scène a une bande blanche au sol. Ça coûte trois euros le rouleau...",
+      "likes": 132
+    }
+  ]
+}

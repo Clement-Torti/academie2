@@ -1,0 +1,114 @@
+{
+  "id": "foire-du-livre-saint-domingue-2026",
+  "title": "La Foire du livre de Saint-Domingue ouvre avec le Panama à l'honneur",
+  "date": "2026-09-27",
+  "category": "Culture",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Inauguraci%C3%B3n_de_la_XIV_Feria_Internacional_del_Libro_Santo_Domingo_2011.jpg?width=1200",
+    "alt": "Inauguration d'une Foire internationale du livre de Saint-Domingue, sur la place de la Culture"
+  },
+  "vocabulary": [
+    {
+      "fr": "ouvrir ses portes",
+      "es": "abrir sus puertas"
+    },
+    {
+      "fr": "le pays invité d'honneur",
+      "es": "el país invitado de honor"
+    },
+    {
+      "fr": "rendre hommage à",
+      "es": "rendir homenaje a"
+    },
+    {
+      "fr": "une bande dessinée",
+      "es": "un cómic, una historieta"
+    },
+    {
+      "fr": "un prix abordable",
+      "es": "un precio asequible"
+    },
+    {
+      "fr": "donner le goût de",
+      "es": "despertar el gusto por"
+    },
+    {
+      "fr": "un libraire",
+      "es": "un librero"
+    },
+    {
+      "fr": "un atelier",
+      "es": "un taller"
+    }
+  ],
+  "article": "La 28e Foire internationale du livre de Saint-Domingue a ouvert ses portes le jeudi 24 septembre. Jusqu'au 4 octobre, elle accueille le public sur la place de la Culture, de 9 heures à 21 heures. Le programme propose plus de 700 activités : rencontres, lectures, concerts et ateliers pour les enfants. Environ soixante-dix écrivains étrangers ont fait le voyage.\n\nCette année, le pays invité d'honneur est le Panama. Il présente plus de trente auteurs, mais aussi son Ballet national, qui danse Le Lac des cygnes. L'Orchestre symphonique du Panama donne également un concert. Par ailleurs, la foire rend hommage au poète dominicain José Mármol. Un pavillon est consacré à son œuvre, et un autre à la bande dessinée.\n\nLe slogan de l'édition est « Ouvre un livre, ouvre un monde ». Pour le ministre de la Culture, Roberto Ángel Salcedo, l'objectif est de relier le public aux différentes valeurs de la culture. Sur place, les libraires sont plutôt satisfaits. Selon l'Éditorial national, « on lit beaucoup » dans le pays. Les jeunes visiteurs apprécient surtout la variété des livres et les prix abordables.\n\nPourtant, une question revient chaque année. Une grande fête de onze jours suffit-elle à donner le goût de la lecture ? Beaucoup de familles viennent d'abord pour l'ambiance, les spectacles et la nourriture. En dehors de la foire, il n'est pas toujours facile de trouver une librairie près de chez soi. Faut-il miser sur les grands événements, ou plutôt sur les bibliothèques et l'école ?",
+  "dictation": {
+    "text": "Samedi, ma cousine et moi sommes allées à la foire du livre. Beaucoup de familles attendaient devant les stands. Les enfants ont écouté des contes et ils ont dessiné leurs personnages préférés. J'ai acheté trois romans à un prix très correct. Ma cousine a trouvé une bande dessinée qu'elle cherchait depuis très longtemps. Le soir, nous sommes rentrées fatiguées mais contentes. Nous allons y retourner la semaine prochaine.",
+    "units": [
+      "Samedi, ma cousine et moi sommes allées",
+      "à la foire du livre.",
+      "Beaucoup de familles attendaient devant les stands.",
+      "Les enfants ont écouté des contes",
+      "et ils ont dessiné leurs personnages préférés.",
+      "J'ai acheté trois romans à un prix très correct.",
+      "Ma cousine a trouvé une bande dessinée",
+      "qu'elle cherchait depuis très longtemps.",
+      "Le soir, nous sommes rentrées fatiguées mais contentes.",
+      "Nous allons y retourner la semaine prochaine."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Présenter la foire",
+      "prompt": "Comment présenterais-tu la Foire du livre de Saint-Domingue à une amie française qui ne la connaît pas ?",
+      "relances": [
+        "Que propose le Panama comme pays invité d'honneur ?",
+        "Qui est José Mármol, et pourquoi lui rend-on hommage ?",
+        "Quelles activités du programme te semblent les plus intéressantes ?",
+        "Que pensent les libraires et les visiteurs de cette édition ?"
+      ]
+    },
+    {
+      "title": "Donner envie de lire",
+      "prompt": "Selon toi, quel est le meilleur moyen de donner le goût de la lecture aux jeunes ?",
+      "relances": [
+        "Pourquoi certaines personnes lisent-elles très peu, à ton avis ?",
+        "Quel rôle doivent jouer l'école et les bibliothèques ?",
+        "Comment TikTok peut-il changer la façon de choisir un livre ?",
+        "Que réponds-tu à quelqu'un qui trouve la lecture démodée ?"
+      ]
+    },
+    {
+      "title": "Mes souvenirs de lecture",
+      "prompt": "Quel livre a compté pour toi, et dans quelles circonstances l'as-tu découvert ?",
+      "relances": [
+        "Raconte-moi une visite à la foire ou dans une librairie.",
+        "Quels livres lisais-tu quand tu étais enfant ?",
+        "Qui t'a donné envie de lire dans ta famille ?",
+        "Quel livre offrirais-tu à ta meilleure amie, et pourquoi ?"
+      ]
+    },
+    {
+      "title": "Lire en France",
+      "prompt": "Comment imagines-tu ta vie de lectrice une fois installée à Strasbourg ?",
+      "relances": [
+        "Quel livre en français aimerais-tu lire en premier ?",
+        "Comment la lecture peut-elle t'aider à progresser en français ?",
+        "Quels auteurs dominicains aimerais-tu faire découvrir aux Français ?",
+        "Quelles différences imagines-tu entre les librairies françaises et dominicaines ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "LectorCriticoSDQ",
+      "comment": "Sept cents activités, des ballets, des concerts... et les livres dans tout ça ?? Chaque année c'est pareil : une grande fête pendant onze jours, puis RIEN le reste de l'année. Les bibliothèques de quartier sont vides ou fermées. Arrêtez les paillettes et investissez dans les écoles !!!",
+      "likes": 318
+    },
+    {
+      "username": "MamieLectrice_1962",
+      "comment": "J'ai emmené mon petit-fils de huit ans samedi. Il voulait seulement voir le spectacle et manger une glace 😅 Il est reparti avec trois BD et il a lu la première dans la voiture. Comme quoi, parfois il suffit de mettre un livre entre leurs mains !",
+      "likes": 57
+    }
+  ]
+}

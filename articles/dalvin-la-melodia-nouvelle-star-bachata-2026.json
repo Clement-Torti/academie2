@@ -1,0 +1,88 @@
+{
+  "id": "dalvin-la-melodia-nouvelle-star-bachata-2026",
+  "title": "Dalvin La Melodía, du moto-taxi à la nouvelle star de la bachata",
+  "date": "2026-09-27",
+  "category": "Culture",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Amargue_Bachata_Quintet_with_Andre_Veloz_(22092585435).jpg?width=1200",
+    "alt": "Un groupe de musiciens joue de la bachata sur scène, avec guitare et percussions"
+  },
+  "vocabulary": [
+    { "fr": "un quartier populaire", "es": "un barrio popular, un barrio humilde" },
+    { "fr": "un petit boulot", "es": "un trabajito, un empleo temporal" },
+    { "fr": "une chorale", "es": "un coro" },
+    { "fr": "devenir viral", "es": "hacerse viral" },
+    { "fr": "battre un record", "es": "romper un récord" },
+    { "fr": "une tournée", "es": "una gira" },
+    { "fr": "la révélation de l'année", "es": "la revelación del año" }
+  ],
+  "article": "Il y a deux ans, presque personne ne connaissait Dalvin Antonio Núñez Vargas. Aujourd'hui, à vingt-trois ans, ce chanteur dominicain est la nouvelle star de la bachata. En 2026, il a reçu le prix Soberano de la révélation de l'année. Sa chanson « Mi reina » dépasse déjà 74 millions de vues sur YouTube.\n\nPourtant, son histoire commence loin des projecteurs. Dalvin a grandi à Los Alcarrizos, un quartier populaire de Saint-Domingue. Sa famille avait peu d'argent, donc il a enchaîné les petits boulots très jeune. Il a été cireur de chaussures, livreur pour une épicerie et chauffeur de moto-taxi. En parallèle, il chantait dans la chorale de son église, à côté de son père.\n\nTout change au début de 2024, quand il rencontre le producteur Mikey Touch. Ses premières chansons deviennent virales sur TikTok. Son style mélange la bachata traditionnelle et des influences plus modernes, comme le R&B. À Porto Rico, il a battu un record de billets vendus en vingt-quatre heures. En août, il a sorti son premier album, « La bachata volvió ». Il fait maintenant sa première tournée aux États-Unis et vient d'enregistrer un remix avec Luis Fonsi.\n\nCe succès rapide divise pourtant le public. Pour ses fans, il rend la bachata à nouveau populaire chez les jeunes. En revanche, d'autres pensent que TikTok fabrique des stars trop vite. Dalvin va-t-il durer, ou sera-t-il seulement la star d'une saison ?",
+  "dictation": {
+    "text": "Dans mon quartier, tout le monde connaît ce jeune chanteur. Avant, il livrait les courses à moto. Il passait souvent devant ma maison et il chantait toujours. Un jour, ses amis ont publié sa chanson sur internet. La chanson est devenue célèbre en quelques jours. Aujourd'hui, il est parti en tournée à l'étranger. Sa mère est restée ici, mais elle va aller le voir sur scène. Nous sommes tous très fiers de ce garçon.",
+    "units": [
+      "Dans mon quartier, tout le monde connaît ce jeune chanteur.",
+      "Avant, il livrait les courses à moto.",
+      "Il passait souvent devant ma maison et il chantait toujours.",
+      "Un jour, ses amis ont publié sa chanson sur internet.",
+      "La chanson est devenue célèbre en quelques jours.",
+      "Aujourd'hui, il est parti en tournée à l'étranger.",
+      "Sa mère est restée ici,",
+      "mais elle va aller le voir sur scène.",
+      "Nous sommes tous très fiers de ce garçon."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Le parcours de Dalvin",
+      "prompt": "Raconte-moi avec tes mots le parcours de Dalvin, de son enfance jusqu'à aujourd'hui.",
+      "relances": [
+        "Quels petits boulots a-t-il faits avant la musique ?",
+        "Comment a-t-il appris à chanter, d'après l'article ?",
+        "Qu'est-ce qui a changé pour lui en 2024 ?",
+        "Quel succès de sa carrière te semble le plus impressionnant ?"
+      ]
+    },
+    {
+      "title": "Les stars nées sur TikTok",
+      "prompt": "À ton avis, est-ce que TikTok crée de vrais artistes ou seulement des succès rapides ?",
+      "relances": [
+        "Qu'est-ce qu'il faut, selon toi, pour durer dans la musique ?",
+        "Peux-tu donner l'exemple d'un artiste qui a disparu très vite ?",
+        "Pourquoi les maisons de disques regardent-elles autant les réseaux sociaux ?",
+        "Que répondrais-tu à quelqu'un qui dit que c'est trop facile ?"
+      ]
+    },
+    {
+      "title": "Ta bachata à toi",
+      "prompt": "Quelle place la bachata a-t-elle dans ta vie et dans celle de ta famille ?",
+      "relances": [
+        "Quelle chanson de bachata te rappelle un moment précis ?",
+        "Qui écoute le plus de bachata chez toi, et pourquoi ?",
+        "Comment décrirais-tu la bachata à quelqu'un qui ne la connaît pas ?",
+        "Qu'est-ce qui a changé entre la bachata d'avant et celle d'aujourd'hui ?"
+      ]
+    },
+    {
+      "title": "La bachata à Strasbourg",
+      "prompt": "Comment imagines-tu faire découvrir la musique dominicaine à tes futurs amis à Strasbourg ?",
+      "relances": [
+        "Quelles trois chansons choisirais-tu pour leur faire découvrir la bachata ?",
+        "Où pourrais-tu trouver des cours ou des soirées de bachata là-bas ?",
+        "Comment ton diplôme de mercadeo pourrait-il aider un artiste comme Dalvin en France ?",
+        "Quelle musique française aimerais-tu découvrir en échange ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "PuristeDuBolero_58",
+      "comment": "Désolé mais c'est pas de la VRAIE bachata ça !!! Une reprise des Bukis, deux vidéos virales sur TikTok, et hop, révélation de l'année ?! Les anciens ont galéré vingt ans pour avoir ce succès. Dans trois ans, plus personne ne se souviendra de son nom.",
+      "likes": 318
+    },
+    {
+      "username": "LiliDeLosAlcarrizos",
+      "comment": "Je vous jure, il m'a livré mes courses à moto en 2022 et il chantait déjà dans l'escalier 😂 Ma voisine lui criait de se taire... Aujourd'hui elle a acheté des billets pour son concert à New York. La vie, franchement !",
+      "likes": 47
+    }
+  ]
+}

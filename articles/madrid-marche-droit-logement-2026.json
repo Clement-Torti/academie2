@@ -1,0 +1,113 @@
+{
+  "id": "madrid-marche-droit-logement-2026",
+  "title": "Logement : des milliers de Madrilènes marchent contre la hausse des loyers",
+  "date": "2026-10-04",
+  "category": "Société",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Manifestaci%C3%B3n_por_una_vivienda_digna_-_250209_123629.jpg?width=1200",
+    "alt": "Des habitants de Madrid défilent sur le Paseo del Prado derrière une banderole qui réclame un logement digne pour tous"
+  },
+  "vocabulary": [
+    {
+      "fr": "le loyer",
+      "es": "el alquiler (la renta mensual)"
+    },
+    {
+      "fr": "le locataire",
+      "es": "el inquilino"
+    },
+    {
+      "fr": "le propriétaire",
+      "es": "el propietario / el casero"
+    },
+    {
+      "fr": "une expulsion",
+      "es": "un desahucio"
+    },
+    {
+      "fr": "le logement social",
+      "es": "la vivienda social / protegida"
+    },
+    {
+      "fr": "réclamer",
+      "es": "reclamar, exigir"
+    },
+    {
+      "fr": "la grève",
+      "es": "la huelga"
+    },
+    {
+      "fr": "faire monter les prix",
+      "es": "encarecer, hacer subir los precios"
+    }
+  ],
+  "article": "Ce samedi 3 octobre, des dizaines de milliers de personnes ont manifesté à Madrid pour le droit au logement. Cinq cortèges sont partis à midi de plusieurs points de la ville. Ils se sont tous retrouvés sur la place de Cibeles, devant la mairie. Les organisateurs annoncent 500 000 participants, mais les autorités en comptent seulement 70 000.\n\nLa marche a été organisée par le Syndicat des locataires. Elle arrive au lendemain d'un vote important au Congrès des députés. Vendredi, le Parti populaire, Vox et Junts ont rejeté deux décrets du gouvernement de Pedro Sánchez. L'un d'eux prolongeait automatiquement les contrats de location. Pour Junts, ces mesures risquaient de réduire le nombre de logements à louer et de faire monter les prix.\n\nDans le cortège, la colère était forte. Les manifestants ont crié « Honte ! » et ont visé les fonds d'investissement, qu'ils appellent les « fonds vautours ». Ces sociétés achètent des appartements pour faire du profit. Les manifestants réclament le gel des loyers, la fin des expulsions et plus de logements sociaux. Laura, 23 ans, campe depuis une semaine sur la place de la Puerta del Sol. « Nous allons continuer, et ils vont finir par nous écouter », promet-elle.\n\nLe mouvement ne veut pas s'arrêter là. Sur beaucoup de pancartes, on pouvait lire un appel à la grève générale pour le logement. Mais une grève suffira-t-elle à faire baisser les loyers ? Et qui doit agir en priorité : l'État, les villes ou les propriétaires ?",
+  "dictation": {
+    "text": "Ma cousine habite à Madrid depuis trois ans et elle aime beaucoup son quartier. Mais cette année, son loyer a encore augmenté. Les prix sont trop élevés pour elle et ses amis. Samedi, ils sont allés manifester dans la rue. Ils ont marché toute la journée et ils sont rentrés fatigués, mais fiers. Pour eux, un toit n'est pas un luxe, c'est un droit pour tout le monde.",
+    "units": [
+      "Ma cousine habite à Madrid depuis trois ans",
+      "et elle aime beaucoup son quartier.",
+      "Mais cette année, son loyer a encore augmenté.",
+      "Les prix sont trop élevés pour elle et ses amis.",
+      "Samedi, ils sont allés manifester dans la rue.",
+      "Ils ont marché toute la journée",
+      "et ils sont rentrés fatigués, mais fiers.",
+      "Pour eux, un toit n'est pas un luxe,",
+      "c'est un droit pour tout le monde."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "La marche de Madrid en bref",
+      "prompt": "Peux-tu me raconter avec tes mots ce qui s'est passé samedi dans les rues de Madrid ?",
+      "relances": [
+        "Pourquoi les manifestants étaient-ils si en colère ce jour-là ?",
+        "Que s'est-il passé au Congrès la veille de la marche ?",
+        "Qui sont les fonds vautours, d'après l'article ?",
+        "Comment expliques-tu la grande différence entre les deux chiffres ?"
+      ]
+    },
+    {
+      "title": "Un droit ou un marché",
+      "prompt": "Selon toi, qui doit faire baisser les loyers : l'État, les villes ou les propriétaires ?",
+      "relances": [
+        "Que penses-tu d'un gel des loyers pendant plusieurs années ?",
+        "Que répondrais-tu à un propriétaire qui défend ses prix ?",
+        "Qu'est-ce qu'une grève générale peut vraiment changer, à ton avis ?",
+        "Quelle mesure prendrais-tu si tu étais ministre du Logement ?"
+      ]
+    },
+    {
+      "title": "Notre premier appartement",
+      "prompt": "Raconte-moi comment Clément et toi avez trouvé votre appartement à Saint-Domingue.",
+      "relances": [
+        "Quels critères comptaient le plus pour vous deux ?",
+        "Quelle visite t'a le plus surprise, en bien ou en mal ?",
+        "Comment se passe la relation avec votre propriétaire ?",
+        "Qu'est-ce que tu as fait pour te sentir vraiment chez toi ?"
+      ]
+    },
+    {
+      "title": "Se loger à Strasbourg",
+      "prompt": "Comment imagines-tu votre recherche d'appartement à Strasbourg, comparée à celle de Saint-Domingue ?",
+      "relances": [
+        "Dans quel quartier de Strasbourg aimerais-tu vivre, et pourquoi ?",
+        "Quels documents un propriétaire français peut-il te demander, à ton avis ?",
+        "Comment décrirais-tu ton appartement idéal à un agent immobilier ?",
+        "Pourquoi avez-vous finalement préféré la France à l'Espagne ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "ProprioEtFier_75",
+      "comment": "Toujours la même chanson !!! On accuse les propriétaires de TOUT, mais qui va encore louer si on bloque les loyers et qu'on ne peut plus récupérer son appartement ? Junts a raison, ces décrets allaient vider le marché. Construisez des logements au lieu de défiler !",
+      "likes": 312
+    },
+    {
+      "username": "Madrilena_19m2",
+      "comment": "Mon studio à Madrid fait 19 m², la douche est dans la cuisine et la cuisine est dans le salon. Le proprio appelle ça un « concept ouvert » et me demande 1 100 € par mois 😂 Samedi, j'ai surtout manifesté pour profiter de l'espace sur la Gran Vía.",
+      "likes": 47
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "id": "messi-dernier-match-argentine-benin-2026",
+  "title": "Messi fait ses adieux à l'Argentine lors d'un dernier match contre le Bénin",
+  "date": "2026-10-04",
+  "category": "Sport",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lionel-Messi-Argentina-2022-FIFA-World-Cup.jpg?width=1200",
+    "alt": "Lionel Messi avec le maillot bleu ciel et blanc de l'Argentine pendant la Coupe du monde 2022"
+  },
+  "vocabulary": [
+    { "fr": "faire ses adieux", "es": "despedirse" },
+    { "fr": "le coup d'envoi", "es": "el saque inicial, el pitazo inicial" },
+    { "fr": "une rencontre amicale", "es": "un partido amistoso" },
+    { "fr": "les tribunes", "es": "las gradas" },
+    { "fr": "faire polémique", "es": "generar polémica" },
+    { "fr": "une sanction", "es": "una sanción" },
+    { "fr": "insister", "es": "insistir" },
+    { "fr": "mériter", "es": "merecer" }
+  ],
+  "article": "Mardi 6 octobre, Lionel Messi jouera son dernier match avec l'Argentine. Cette rencontre amicale aura lieu au stade Monumental de Buenos Aires, contre le Bénin. Le coup d'envoi est prévu à 20 heures, soit une heure du matin en France. Ce sera la 208e sélection du capitaine, après 21 ans de carrière internationale. Toutes les places sont déjà vendues.\n\nMessi a annoncé sa retraite fin août, quelques semaines après la finale perdue contre l'Espagne. La fédération argentine prépare donc une grande fête. Les champions du monde 2022, comme Ángel Di María, sont invités. Une cérémonie aura lieu sur la pelouse à la fin du match. Messi portera aussi un maillot unique, avec un soleil géant et son numéro 10 en doré. Sa femme, ses trois fils et sa mère seront dans les tribunes.\n\nPourtant, cette soirée fait aussi polémique. Une place coûte entre 90 000 et 480 000 pesos, ce qui est très cher pour beaucoup de familles. Par ailleurs, la FIFA a sanctionné l'Argentine après des incidents pendant la finale. C'est pourquoi les deux premiers matchs amicaux se sont joués dans des stades à moitié vides. Messi, lui, n'a pas joué ces deux matchs.\n\nAprès mardi, il continuera à jouer à l'Inter Miami, aux États-Unis. En revanche, l'Argentine devra apprendre à gagner sans son numéro 10. Le président de la fédération parle du « dernier tango du meilleur joueur du monde ». Mais faut-il vraiment une grande fête pour dire au revoir à un sportif ?",
+  "dictation": {
+    "text": "Ce mardi, mon grand-père et moi allons voir le dernier match du capitaine. Hier, nous sommes allés chercher nos billets au stade. Ils sont très chers, mais mon grand-père a beaucoup insisté. Il suit ce joueur depuis ses premiers matchs. Ma grand-mère a préféré rester à la maison avec mes cousines. Elles ont déjà préparé un grand repas pour la fin de la soirée. Au stade, nous allons chanter et sûrement pleurer.",
+    "units": [
+      "Ce mardi, mon grand-père et moi",
+      "allons voir le dernier match du capitaine.",
+      "Hier, nous sommes allés chercher nos billets au stade.",
+      "Ils sont très chers, mais mon grand-père a beaucoup insisté.",
+      "Il suit ce joueur depuis ses premiers matchs.",
+      "Ma grand-mère a préféré rester",
+      "à la maison avec mes cousines.",
+      "Elles ont déjà préparé un grand repas",
+      "pour la fin de la soirée.",
+      "Au stade, nous allons chanter et sûrement pleurer."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "La soirée d'adieu",
+      "prompt": "Peux-tu me raconter avec tes mots comment l'Argentine va dire au revoir à Messi ?",
+      "relances": [
+        "Où et contre quelle équipe va-t-il jouer ?",
+        "Qu'est-ce que la fédération a prévu pour la fête ?",
+        "Pourquoi cette soirée fait-elle polémique ?",
+        "Que va faire Messi après ce match ?"
+      ]
+    },
+    {
+      "title": "Une fête nécessaire",
+      "prompt": "Que penses-tu de ces grandes cérémonies organisées pour dire adieu à un sportif ?",
+      "relances": [
+        "Que réponds-tu aux familles qui trouvent les billets trop chers ?",
+        "Quelle autre personne célèbre mériterait une fête pareille, et pourquoi ?",
+        "Comment imaginerais-tu, toi, une soirée d'adieu idéale ?",
+        "Pourquoi les gens s'attachent-ils autant à un joueur ?"
+      ]
+    },
+    {
+      "title": "Un grand adieu vécu",
+      "prompt": "Raconte-moi un moment où tu as dû dire au revoir à quelqu'un ou à quelque chose.",
+      "relances": [
+        "Qu'est-ce que tu as ressenti ce jour-là ?",
+        "Qui était avec toi à ce moment-là ?",
+        "Comment ta famille organise-t-elle les fêtes d'adieu ?",
+        "Quel souvenir gardes-tu le plus précieusement ?"
+      ]
+    },
+    {
+      "title": "Ton propre départ",
+      "prompt": "Comment aimerais-tu dire au revoir à Saint-Domingue avant ton départ pour Strasbourg ?",
+      "relances": [
+        "Qui inviterais-tu à ta fête de départ ?",
+        "Quel plat dominicain servirais-tu à tes invités ?",
+        "Quel objet emporterais-tu absolument en France, et pourquoi ?",
+        "Comment comptes-tu garder le contact avec tes proches ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "HinchaDeBoedo_86",
+      "comment": "480 000 pesos pour voir Messi jouer contre le BÉNIN ?!! C'est une honte. Les vrais supporters, ceux qui ont tout donné pendant vingt ans, vont regarder ça à la télé pendant que les riches font des selfies. La fédération transforme une légende en machine à fric.",
+      "likes": 389
+    },
+    {
+      "username": "TontonDuCanape_Lyon",
+      "comment": "Une heure du matin en France… Ma femme m'a dit : soit tu dors, soit tu dors sur le canapé 😂 J'ai déjà préparé le canapé, la couverture et un maté que je ne sais pas boire. On ne dit pas adieu au numéro 10 en pyjama, c'est tout !!!",
+      "likes": 57
+    }
+  ]
+}

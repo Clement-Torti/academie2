@@ -1,0 +1,114 @@
+{
+  "id": "blocus-lycees-universites-colere-jeunes-2026",
+  "title": "Lycées et universités bloqués : la colère des jeunes gagne toute la France",
+  "date": "2026-10-04",
+  "category": "Société",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%89tudiantes_%C3%A0_la_manifestation_du_18_octobre_2022_%C3%A0_Saint-%C3%89tienne.jpg?width=1200",
+    "alt": "Des étudiantes crient des slogans derrière une grande banderole « Pour nos études, pour nos salaires, pour nos retraites » lors d'une manifestation"
+  },
+  "vocabulary": [
+    {
+      "fr": "le blocus",
+      "es": "el bloqueo (de un centro educativo)"
+    },
+    {
+      "fr": "s'étendre à",
+      "es": "extenderse a"
+    },
+    {
+      "fr": "le manque de moyens",
+      "es": "la falta de recursos"
+    },
+    {
+      "fr": "en mauvais état",
+      "es": "en mal estado"
+    },
+    {
+      "fr": "être interpellé",
+      "es": "ser detenido (por la policía)"
+    },
+    {
+      "fr": "légitime",
+      "es": "legítimo"
+    },
+    {
+      "fr": "se faire écouter",
+      "es": "hacerse escuchar"
+    },
+    {
+      "fr": "une pancarte",
+      "es": "una pancarta / un cartel"
+    }
+  ],
+  "article": "Depuis la fin du mois de septembre, la colère des jeunes grandit en France. Tout a commencé le 21 septembre devant un lycée de Créteil. En quelques jours, les blocus se sont étendus à tout le pays. Le 1er octobre, plus de 600 lycées étaient bloqués, selon un syndicat lycéen. Le même jour, les étudiants ont rejoint le mouvement : une trentaine d'universités, dont celle de Strasbourg, ont été bloquées.\n\nLes jeunes dénoncent le manque de moyens dans l'éducation. Ils parlent de professeurs absents et jamais remplacés, de classes de 35 élèves et de bâtiments en mauvais état. Beaucoup critiquent aussi Parcoursup, la plateforme qui décide de leur avenir après le bac. « Dans ma classe, il n'y a même pas assez de chaises », raconte Kesia, 15 ans.\n\nMais le mouvement est aussi marqué par la violence. Des écoles et des voitures ont été incendiées. Plus de 300 personnes ont été blessées, dont 170 élèves et 83 policiers. Plus de 5 000 jeunes ont été interpellés. Le ministre de l'Éducation, Édouard Geffray, reconnaît que certaines demandes sont légitimes. Pourtant, il demande aux parents de garder leurs enfants loin des manifestations. De leur côté, les élèves accusent la police d'utiliser trop de force.\n\nMardi 6 octobre, une grande manifestation nationale est prévue, avec le soutien des syndicats d'enseignants. Le gouvernement propose une concertation, mais les jeunes veulent des mesures concrètes. Alors, faut-il bloquer son lycée pour se faire écouter, ou existe-t-il d'autres moyens d'agir ?",
+  "dictation": {
+    "text": "Mardi matin, ma sœur et moi sommes allées à la manifestation. Nous avons marché avec des milliers de jeunes. Ses amies ont préparé des pancartes très drôles. Dans son lycée, les classes sont trop pleines et les toilettes sont sales. Quand un professeur est malade, personne ne le remplace. Le soir, elle est rentrée fatiguée, mais elle était fière. Elle a dit à nos parents qu'elle voulait juste étudier en paix.",
+    "units": [
+      "Mardi matin, ma sœur et moi",
+      "sommes allées à la manifestation.",
+      "Nous avons marché avec des milliers de jeunes.",
+      "Ses amies ont préparé des pancartes très drôles.",
+      "Dans son lycée, les classes sont trop pleines",
+      "et les toilettes sont sales.",
+      "Quand un professeur est malade, personne ne le remplace.",
+      "Le soir, elle est rentrée fatiguée, mais elle était fière.",
+      "Elle a dit à nos parents",
+      "qu'elle voulait juste étudier en paix."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "La révolte des lycéens",
+      "prompt": "Peux-tu me raconter avec tes mots ce qui se passe en ce moment dans les lycées français ?",
+      "relances": [
+        "Où et quand le mouvement a-t-il commencé ?",
+        "Qu'est-ce que les jeunes reprochent à l'école ?",
+        "Pourquoi parle-t-on aussi de violence dans ce mouvement ?",
+        "Comment le gouvernement répond-il aux élèves ?"
+      ]
+    },
+    {
+      "title": "Bloquer pour se faire entendre",
+      "prompt": "Selon toi, bloquer son lycée ou son université est-il un bon moyen de se faire écouter ?",
+      "relances": [
+        "Quelle autre action te semble plus efficace, et pourquoi ?",
+        "Où places-tu la limite entre manifestation et violence ?",
+        "Que dirais-tu à un parent qui interdit à son enfant de manifester ?",
+        "Si tu étais ministre, quelle mesure prendrais-tu en premier ?"
+      ]
+    },
+    {
+      "title": "Mes années d'étudiante",
+      "prompt": "Raconte-moi comment se passaient tes études de mercadeo à Saint-Domingue.",
+      "relances": [
+        "Combien d'étudiants y avait-il dans tes cours ?",
+        "Quel professeur t'a le plus marquée, et pourquoi ?",
+        "Qu'est-ce que tu changerais dans ton université si tu pouvais ?",
+        "Comment les étudiants protestent-ils en République dominicaine ?"
+      ]
+    },
+    {
+      "title": "Étudier et vivre à Strasbourg",
+      "prompt": "Comment imagines-tu ta vie avec les étudiants et les jeunes de Strasbourg ?",
+      "relances": [
+        "Quelles différences imagines-tu entre les jeunes Dominicains et les jeunes Français ?",
+        "Quelle formation aimerais-tu suivre une fois installée en France ?",
+        "Comment expliquerais-tu Parcoursup à ta famille ?",
+        "Qu'est-ce qui t'attire le plus dans la vie étudiante française ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "ProfDeMathsEpuise_93",
+      "comment": "Bloquer les lycées, brûler des voitures et frapper des proviseurs pour réclamer plus de profs ??? Sérieusement ?! Chaque jour de blocus, ce sont des cours en moins pour ceux qui veulent vraiment travailler. Les problèmes sont réels, mais là, ils sont en train de tout gâcher.",
+      "likes": 318
+    },
+    {
+      "username": "PapaDeLeo_Strasbourg",
+      "comment": "Mon fils de 16 ans m'explique qu'il bloque son lycée parce qu'il n'a pas eu de prof de maths depuis septembre. Je lui ai proposé de lui faire cours moi-même ce week-end. Bizarrement, il préfère le blocus 😂 Bon courage aux profs !!!",
+      "likes": 56
+    }
+  ]
+}

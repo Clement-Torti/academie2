@@ -1,0 +1,115 @@
+{
+  "id": "rachat-warner-bros-paramount-skydance-2026",
+  "title": "Paramount rachète Warner Bros. : naissance d'un géant nommé Skydance",
+  "date": "2026-10-04",
+  "category": "Économie",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paramount_Pictures_Melrose_Gate_entrance.jpg?width=1200",
+    "alt": "La célèbre porte d'entrée des studios Paramount Pictures à Hollywood, avec ses arches et ses palmiers sous un ciel bleu"
+  },
+  "vocabulary": [
+    {
+      "fr": "le rachat",
+      "es": "la compra / la adquisición (de una empresa)"
+    },
+    {
+      "fr": "une fusion",
+      "es": "una fusión"
+    },
+    {
+      "fr": "donner son feu vert",
+      "es": "dar luz verde"
+    },
+    {
+      "fr": "la dette",
+      "es": "la deuda"
+    },
+    {
+      "fr": "craindre",
+      "es": "temer"
+    },
+    {
+      "fr": "un licenciement",
+      "es": "un despido"
+    },
+    {
+      "fr": "un abonnement",
+      "es": "una suscripción"
+    },
+    {
+      "fr": "les salles de cinéma",
+      "es": "las salas de cine"
+    }
+  ],
+  "article": "C'est le plus gros rachat de l'histoire d'Hollywood. Mardi 6 octobre, Paramount va officiellement prendre le contrôle de Warner Bros. Discovery. Le prix total atteint 111 milliards de dollars. Le 1er octobre, un juge américain a donné son feu vert à l'opération. Deux jours plus tard, le patron de Paramount, David Ellison, a annoncé le nom du nouveau géant : Skydance.\n\nCe groupe réunit des films et des séries que tout le monde connaît. Il possède Harry Potter, Game of Thrones et les héros de DC, mais aussi Mission: Impossible, Top Gun et Star Trek. Il contrôle deux plateformes de streaming, HBO Max et Paramount+, ainsi que deux grandes chaînes d'information, CBS et CNN. Pourtant, Warner avait d'abord choisi Netflix. Mais Paramount a fait une meilleure offre en février, et Netflix a abandonné.\n\nCe rachat inquiète beaucoup de monde. Douze États américains ont essayé de le bloquer devant la justice. Pour obtenir leur accord, Paramount a promis de sortir au moins 30 films par an au cinéma. Cependant, le nouveau groupe aura environ 80 milliards de dollars de dette. C'est pourquoi les employés craignent des milliers de licenciements. L'acteur Mark Ruffalo pense que cette fusion va tuer la créativité et menacer la liberté d'expression.\n\nHollywood compte maintenant un grand studio de moins. Pour les spectateurs, cela pourrait signifier des abonnements plus chers et moins de choix. Alors, une seule entreprise doit-elle posséder autant de films, de séries et de chaînes d'information ?",
+  "dictation": {
+    "text": "Ma cousine adore les séries américaines. Chaque mois, elle paie trois abonnements à des plateformes différentes. Avec ce rachat, deux de ces plateformes vont peut-être bientôt se réunir. Elle est contente, mais elle pense que les prix vont encore augmenter. Samedi, ses amies sont venues chez elle. Elles ont regardé un vieux film et elles ont parlé de l'avenir du cinéma. Pour elles, les salles de cinéma ne doivent jamais fermer leurs portes.",
+    "units": [
+      "Ma cousine adore les séries américaines.",
+      "Chaque mois, elle paie trois abonnements à des plateformes différentes.",
+      "Avec ce rachat, deux de ces plateformes",
+      "vont peut-être bientôt se réunir.",
+      "Elle est contente, mais elle pense",
+      "que les prix vont encore augmenter.",
+      "Samedi, ses amies sont venues chez elle.",
+      "Elles ont regardé un vieux film",
+      "et elles ont parlé de l'avenir du cinéma.",
+      "Pour elles, les salles de cinéma",
+      "ne doivent jamais fermer leurs portes."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Un géant à Hollywood",
+      "prompt": "Peux-tu m'expliquer avec tes mots ce qui se passe entre Paramount et Warner ?",
+      "relances": [
+        "Combien coûte ce rachat, et qui va diriger le nouveau groupe ?",
+        "Quels films et séries célèbres vont appartenir à la même entreprise ?",
+        "Quel rôle Netflix a-t-il joué dans cette histoire ?",
+        "Pourquoi certaines personnes s'inquiètent-elles de cette fusion ?"
+      ]
+    },
+    {
+      "title": "Trop de pouvoir pour un seul",
+      "prompt": "Que penses-tu du fait qu'une seule entreprise possède autant de films, de séries et de chaînes d'information ?",
+      "relances": [
+        "Quels risques vois-tu pour des chaînes d'information comme CNN ?",
+        "Qu'est-ce que ce rachat peut changer pour les spectateurs comme toi ?",
+        "Quels avantages un très grand studio peut-il avoir, selon toi ?",
+        "Comment l'État devrait-il contrôler les grandes entreprises des médias ?"
+      ]
+    },
+    {
+      "title": "Mes films et mes séries",
+      "prompt": "Raconte-moi comment tu regardes tes films et tes séries à Saint-Domingue.",
+      "relances": [
+        "À quelles plateformes es-tu abonnée, et pourquoi celles-là ?",
+        "Quelle série t'a le plus marquée ces dernières années, et pourquoi ?",
+        "Quand es-tu allée au cinéma pour la dernière fois, et qu'as-tu vu ?",
+        "Quel film américain regardes-tu en famille, et qu'est-ce qu'il représente pour toi ?"
+      ]
+    },
+    {
+      "title": "Soirées cinéma à Strasbourg",
+      "prompt": "Comment imagines-tu tes soirées cinéma et séries une fois installée à Strasbourg ?",
+      "relances": [
+        "Quelles séries françaises aimerais-tu regarder pour progresser en français ?",
+        "Quelles différences imagines-tu entre les cinémas dominicains et français ?",
+        "Comment ferais-tu le mercadeo d'un grand film en France ?",
+        "Quel film dominicain aimerais-tu faire découvrir à tes amis français ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "CinephileEnColere_75",
+      "comment": "111 MILLIARDS pour racheter des films qui existent déjà ?!! Après Disney, voilà encore un monstre qui va tout contrôler. Moins de risques, toujours plus de suites, et des abonnements de plus en plus chers. Et le même patron possède CBS ET CNN... Franchement, ça devrait être interdit !!!",
+      "likes": 412
+    },
+    {
+      "username": "MamieGeek_Colmar",
+      "comment": "Donc si je comprends bien, Harry Potter, Batman et Tom Cruise travaillent maintenant dans la même entreprise ? J'attends avec impatience le film où Batman apprend à voler sur un balai pendant que Tom Cruise saute d'un hélicoptère 🍿 Au moins, ils feront des économies sur la cantine !",
+      "likes": 87
+    }
+  ]
+}

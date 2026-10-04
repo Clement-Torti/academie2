@@ -1,0 +1,111 @@
+{
+  "id": "hailey-bieber-justin-francais-quotidien-2026",
+  "title": "Hailey Bieber affirme que Justin est français : est-ce vrai ?",
+  "date": "2026-10-04",
+  "category": "Culture",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hailey_Bieber_at_WWD_Style_Awards_2026.jpg?width=1200",
+    "alt": "Hailey Bieber aux WWD Style Awards en 2026"
+  },
+  "vocabulary": [
+    {
+      "fr": "le plateau (de télévision)",
+      "es": "el plató (de televisión)"
+    },
+    {
+      "fr": "rester sans voix",
+      "es": "quedarse sin palabras"
+    },
+    {
+      "fr": "les racines",
+      "es": "las raíces"
+    },
+    {
+      "fr": "les ancêtres",
+      "es": "los antepasados"
+    },
+    {
+      "fr": "obtenir la nationalité",
+      "es": "obtener la nacionalidad"
+    },
+    {
+      "fr": "se moquer de quelqu'un",
+      "es": "burlarse de alguien"
+    },
+    {
+      "fr": "touchant, touchante",
+      "es": "conmovedor, conmovedora"
+    }
+  ],
+  "article": "Le 30 septembre, Hailey Bieber était l'invitée de l'émission « Quotidien », sur TMC. Elle venait présenter Rhode, sa marque de cosmétiques, qui arrive en France chez Sephora. Au milieu de l'interview, elle a fait une déclaration surprenante : « La France est un très beau pays, et mon mari est français. » Sur le plateau, Yann Barthès est resté sans voix. Il lui a rappelé que Justin Bieber est canadien.\n\nPourtant, Hailey Bieber n'a pas changé d'avis. Selon elle, son mari vient du Canada, mais il est aussi français, car sa famille est française. En réalité, c'est un peu plus compliqué. Justin Bieber est né en 1994 à London, dans l'Ontario, et il a grandi à Stratford. Sa mère, Pattie Mallette, a des origines canadiennes-françaises. Comme beaucoup de Canadiens, elle descend de colons français arrivés au Québec il y a plusieurs siècles.\n\nAlors, Justin Bieber est-il français ? Non. Avoir des racines françaises ne donne pas la nationalité française. Pour l'obtenir, il faut par exemple avoir un parent français ou vivre plusieurs années en France. À notre connaissance, ce n'est pas son cas. Sur les réseaux sociaux, la séquence a beaucoup circulé. Certains se sont moqués de la star, alors que d'autres ont trouvé sa remarque plutôt touchante.\n\nCette histoire pose cependant une vraie question. Qu'est-ce qui fait notre identité : un passeport, une langue ou l'histoire de notre famille ? Des millions de personnes dans le monde ont des ancêtres français. Peut-on dire qu'elles sont un peu françaises, elles aussi ?",
+  "dictation": {
+    "text": "Ma grand-mère est née dans un village français, au bord de la mer. Un jour, elle a traversé l'océan avec ses sœurs. Là-bas, elles se sont mariées et elles ont eu beaucoup d'enfants. Toute ma famille parle anglais à la maison. Pourtant, on garde ses recettes et ses vieilles chansons. Je ne suis pas française, mais cette histoire est aussi la mienne. L'été prochain, je vais visiter la France pour la toute première fois.",
+    "units": [
+      "Ma grand-mère est née dans un village français,",
+      "au bord de la mer.",
+      "Un jour, elle a traversé l'océan avec ses sœurs.",
+      "Là-bas, elles se sont mariées",
+      "et elles ont eu beaucoup d'enfants.",
+      "Toute ma famille parle anglais à la maison.",
+      "Pourtant, on garde ses recettes et ses vieilles chansons.",
+      "Je ne suis pas française,",
+      "mais cette histoire est aussi la mienne.",
+      "L'été prochain, je vais visiter la France",
+      "pour la toute première fois."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Raconter la séquence",
+      "prompt": "Peux-tu raconter ce qui s'est passé avec Hailey Bieber sur le plateau de Quotidien ?",
+      "relances": [
+        "Comment Yann Barthès a-t-il réagi, à ton avis ?",
+        "Pourquoi Hailey Bieber pense-t-elle que son mari est français ?",
+        "Que sait-on vraiment des origines de Justin Bieber ?",
+        "Comment expliquerais-tu cette histoire à une amie dominicaine ?"
+      ]
+    },
+    {
+      "title": "Racines ou nationalité",
+      "prompt": "Selon toi, qu'est-ce qui fait qu'une personne est vraiment française, ou vraiment dominicaine ?",
+      "relances": [
+        "Quelle place donnes-tu à la langue dans l'identité ?",
+        "Que penses-tu des gens qui se sont moqués d'elle ?",
+        "Quelle différence fais-tu entre des racines et une nationalité ?",
+        "Comment une star devrait-elle préparer une interview à l'étranger ?"
+      ]
+    },
+    {
+      "title": "Les origines de ta famille",
+      "prompt": "Que sais-tu des origines de ta famille et des pays d'où viennent tes ancêtres ?",
+      "relances": [
+        "Qui raconte l'histoire de la famille chez vous ?",
+        "Quelle recette ou quel objet vient de tes ancêtres ?",
+        "Quelle tradition familiale voudrais-tu garder en France ?",
+        "Qu'aimerais-tu découvrir encore sur ton histoire familiale ?"
+      ]
+    },
+    {
+      "title": "Devenir un peu française",
+      "prompt": "À ton avis, à quel moment vas-tu te sentir un peu française à Strasbourg ?",
+      "relances": [
+        "Quelles habitudes françaises aimerais-tu adopter rapidement ?",
+        "Comment présenteras-tu la République dominicaine à tes futurs collègues ?",
+        "Qu'est-ce qui restera toujours dominicain chez toi ?",
+        "Dans dix ans, comment décriras-tu ton identité ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "PasseportBleuBlancRouge",
+      "comment": "Non mais SÉRIEUX ?! Avoir un ancêtre parti de France il y a trois cents ans, ça ne fait pas de toi un Français !!! Avec ce raisonnement, la moitié de l'Amérique est française. Elle était là pour vendre ses crèmes, point. Et tout le plateau a fait semblant de trouver ça mignon...",
+      "likes": 438
+    },
+    {
+      "username": "CroissantDuDimanche_88",
+      "comment": "Bon, moi j'ai décidé d'être canadienne parce que j'adore le sirop d'érable 🍁 Je commence demain à m'excuser toutes les cinq minutes. Bienvenue chez nous Justin, par contre tu vas devoir apprendre à râler et à faire la bise, c'est obligatoire !",
+      "likes": 57
+    }
+  ]
+}

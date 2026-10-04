@@ -1,0 +1,110 @@
+{
+  "id": "mattel-parcs-aquatiques-barbie-hot-wheels-usa",
+  "title": "Mattel va ouvrir des parcs aquatiques Barbie et Hot Wheels aux États-Unis",
+  "date": "2026-10-04",
+  "category": "Économie",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Full_Blast_waterpark_indoor_slides.jpg?width=1200",
+    "alt": "Toboggans colorés dans un parc aquatique couvert aux États-Unis"
+  },
+  "vocabulary": [
+    {
+      "fr": "un fabricant de jouets",
+      "es": "un fabricante de juguetes"
+    },
+    {
+      "fr": "se lancer dans",
+      "es": "lanzarse a, incursionar en"
+    },
+    {
+      "fr": "un parc aquatique couvert",
+      "es": "un parque acuático techado"
+    },
+    {
+      "fr": "un toboggan",
+      "es": "un tobogán"
+    },
+    {
+      "fr": "une poupée",
+      "es": "una muñeca"
+    },
+    {
+      "fr": "une sortie en famille",
+      "es": "un paseo en familia"
+    },
+    {
+      "fr": "pose des questions",
+      "es": "plantea dudas"
+    }
+  ],
+  "article": "Le fabricant de jouets Mattel, connu pour Barbie et Hot Wheels, se lance dans les parcs aquatiques. Cette semaine, l'entreprise américaine a présenté son premier « Mattel Wonder Indoor Waterpark ». Il ouvrira fin 2027 à Bellevue, une petite ville du Nebraska. Le parc sera couvert, avec un toit qui s'ouvre, et il fonctionnera toute l'année.\n\nÀ l'intérieur, chaque marque aura son attraction. Les enfants trouveront une piscine Barbie avec une machine à vagues pour apprendre à surfer. Les plus courageux pourront descendre une tour de toboggans Hot Wheels. Une rivière lente traversera un décor inspiré du jeu de cartes UNO. Enfin, les tout-petits auront un espace de jeux d'eau Fisher-Price.\n\nBellevue n'est qu'un début. Mattel prévoit cinq parcs en Amérique du Nord. Quatre villes sont déjà choisies : Bellevue, Orlando en Floride, Bradley dans l'Illinois et Roanoke Rapids en Caroline du Nord. Depuis le succès du film Barbie en 2023, l'entreprise veut faire vivre ses marques en dehors des magasins.\n\nMais ce projet pose aussi des questions. Pour certains, ces parcs sont surtout une immense publicité pour vendre plus de jouets. D'autres pensent au contraire que les familles cherchent des sorties près de chez elles, et moins chères qu'un voyage à Disney World. La direction de Mattel le dit clairement : elle veut aller « là où les fans vivent vraiment ». Un parc aquatique peut-il devenir aussi célèbre qu'une poupée ?",
+  "dictation": {
+    "text": "Samedi dernier, ma sœur et ses enfants sont allés dans un parc aquatique couvert. Il faisait froid dehors, mais l'eau était chaude. Les garçons ont descendu les toboggans toute la journée. Leur petite sœur est restée dans la piscine. À midi, on a mangé des frites près de la rivière où les parents se reposaient. Le soir, ils sont rentrés fatigués, mais ils étaient très contents. Ils veulent déjà y retourner.",
+    "units": [
+      "Samedi dernier, ma sœur et ses enfants",
+      "sont allés dans un parc aquatique couvert.",
+      "Il faisait froid dehors, mais l'eau était chaude.",
+      "Les garçons ont descendu les toboggans toute la journée.",
+      "Leur petite sœur est restée dans la piscine.",
+      "À midi, on a mangé des frites",
+      "près de la rivière où les parents se reposaient.",
+      "Le soir, ils sont rentrés fatigués,",
+      "mais ils étaient très contents.",
+      "Ils veulent déjà y retourner."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Le projet de Mattel",
+      "prompt": "Peux-tu m'expliquer avec tes mots ce que Mattel prépare aux États-Unis ?",
+      "relances": [
+        "Quelles attractions trouve-t-on dans le parc ?",
+        "Pourquoi le parc est-il couvert, à ton avis ?",
+        "Dans quelles villes Mattel veut-il s'installer ?",
+        "Quelle attraction te semble la plus originale, et pourquoi ?"
+      ]
+    },
+    {
+      "title": "Jouet ou publicité géante",
+      "prompt": "Selon toi, ces parcs sont-ils un vrai loisir ou surtout une publicité pour vendre des jouets ?",
+      "relances": [
+        "Qu'est-ce qui te fait penser ça ?",
+        "Comment le film Barbie a-t-il changé l'image de la poupée ?",
+        "Quelles autres marques pourraient ouvrir un parc, selon toi ?",
+        "Que répondrais-tu à quelqu'un qui trouve ça trop commercial ?"
+      ]
+    },
+    {
+      "title": "Souvenirs de baignade",
+      "prompt": "Raconte-moi une journée à la plage, à la piscine ou dans un parc aquatique.",
+      "relances": [
+        "Avec qui y étais-tu, et qu'avez-vous fait ?",
+        "Quel jeu ou quel jouet adorais-tu quand tu étais petite ?",
+        "Comment se passent les sorties en famille à Saint-Domingue ?",
+        "Quel est ton meilleur souvenir de vacances au bord de l'eau ?"
+      ]
+    },
+    {
+      "title": "Les loisirs à Strasbourg",
+      "prompt": "Comment imagines-tu tes week-ends à Strasbourg quand il fera froid en hiver ?",
+      "relances": [
+        "Quelles activités aimerais-tu découvrir en France ?",
+        "Comment compares-tu les loisirs français et dominicains ?",
+        "Que proposerais-tu à des amis français qui visitent Saint-Domingue ?",
+        "Comment ferais-tu la publicité d'un parc, avec ton diplôme de mercadeo ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "ParentEnColere_44",
+      "comment": "Franchement c'est n'importe quoi !!! On paie déjà les poupées hors de prix, maintenant il faudra payer l'entrée pour voir des PUBS géantes en maillot de bain. Ce n'est pas un parc, c'est un magasin avec des toboggans. Mes enfants n'iront pas.",
+      "likes": 318
+    },
+    {
+      "username": "TontonSurfeur_Lyon",
+      "comment": "Moi j'attends surtout la rivière UNO. Imaginez : vous flottez tranquillement et au dernier moment quelqu'un vous lance un +4 en pleine figure. Ma famille va enfin se disputer dans l'eau au lieu de se disputer dans le salon 😂",
+      "likes": 47
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "id": "la-strasbourgeoise-octobre-rose-2026",
+  "title": "Octobre rose : 12 000 personnes courent contre le cancer du sein à Strasbourg",
+  "date": "2026-10-04",
+  "category": "Santé",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Odyssea_Chamb%C3%A9ry_2018_(d%C3%A9part_1%C3%A8re_course).JPG?width=1200",
+    "alt": "Départ d'une course solidaire contre le cancer du sein : une foule en tee-shirts roses passe sous une grande arche rose avec des ballons"
+  },
+  "vocabulary": [
+    { "fr": "le dépistage", "es": "la detección precoz" },
+    { "fr": "la sensibilisation", "es": "la concienciación" },
+    { "fr": "être reversé à", "es": "ser donado a / destinarse a" },
+    { "fr": "la foule", "es": "la multitud" },
+    { "fr": "supporter un traitement", "es": "sobrellevar un tratamiento" },
+    { "fr": "la récidive", "es": "la recaída" },
+    { "fr": "faire partie de", "es": "formar parte de" }
+  ],
+  "article": "Ce dimanche 4 octobre, Strasbourg s'est habillée en rose. Plus de 12 000 personnes ont participé à La Strasbourgeoise, la grande course solidaire contre le cancer du sein. Le départ a eu lieu sur le quai du Général-Koenig. Chacun pouvait courir ou marcher sur un parcours de cinq kilomètres. C'était la 17e édition de cet événement, créé en 2010.\n\nLa course fait partie d'Octobre rose, le mois international de sensibilisation au cancer du sein. Pour chaque inscription, six euros sont reversés à deux structures. La première est l'institut Paul-Strauss, qui accompagne les malades. La seconde est le centre régional de dépistage du Grand Est. En effet, une femme sur huit risque de développer ce cancer au cours de sa vie. Pourtant, beaucoup de femmes ne font pas leur mammographie à temps.\n\nDans la foule, il y avait aussi des malades et d'anciennes malades. « Je viens de faire treize mois de chimiothérapie, donc c'est important d'être là », raconte une participante. Les médecins le répètent : le sport aide à mieux supporter les traitements et réduit le risque de récidive. La fête continue tout le mois, avec un banc rose géant devant le palais Rohan et une sortie à vélo le 11 octobre.\n\nMais certains critiquent Octobre rose. Selon eux, on parle beaucoup du cancer pendant un mois, puis on l'oublie. D'autres regrettent que des marques vendent des produits roses pour soigner leur image. Alors, une course suffit-elle à changer les choses, ou faut-il agir toute l'année ?",
+  "dictation": {
+    "text": "Dimanche matin, ma mère et moi sommes allées courir en rose. Il y a deux ans, les médecins ont trouvé une petite tumeur dans son sein. Elle a eu très peur, mais elle s'est battue avec courage. Aujourd'hui, elle va beaucoup mieux et elle a voulu marcher avec moi. Nous sommes arrivées ensemble, main dans la main. Ses amies ont applaudi et ont pleuré de joie. Ce jour-là, j'ai décidé de faire mon dépistage.",
+    "units": [
+      "Dimanche matin, ma mère et moi",
+      "sommes allées courir en rose.",
+      "Il y a deux ans, les médecins",
+      "ont trouvé une petite tumeur dans son sein.",
+      "Elle a eu très peur,",
+      "mais elle s'est battue avec courage.",
+      "Aujourd'hui, elle va beaucoup mieux",
+      "et elle a voulu marcher avec moi.",
+      "Nous sommes arrivées ensemble, main dans la main.",
+      "Ses amies ont applaudi et ont pleuré de joie.",
+      "Ce jour-là, j'ai décidé de faire mon dépistage."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "La Strasbourgeoise en bref",
+      "prompt": "Peux-tu me raconter avec tes mots ce qui s'est passé dimanche à Strasbourg ?",
+      "relances": [
+        "Combien de personnes ont participé, et comment ?",
+        "À quoi sert l'argent des inscriptions, selon l'article ?",
+        "Pourquoi le sport est-il important pour les malades ?",
+        "Quelles critiques fait-on à Octobre rose ?"
+      ]
+    },
+    {
+      "title": "Un mois en rose, ça suffit",
+      "prompt": "Que penses-tu d'Octobre rose : une vraie aide pour les femmes ou une simple mode ?",
+      "relances": [
+        "Que réponds-tu aux marques qui vendent des produits roses ?",
+        "Quelle autre maladie mériterait aussi son mois spécial, et pourquoi ?",
+        "Comment parler du dépistage à une amie qui a peur ?",
+        "Quelle action te semble la plus utile, à part courir ?"
+      ]
+    },
+    {
+      "title": "Courir pour une cause",
+      "prompt": "Raconte-moi un événement sportif ou solidaire que tu as vécu à Saint-Domingue.",
+      "relances": [
+        "Avec qui étais-tu ce jour-là ?",
+        "Quelle ambiance y avait-il autour de toi ?",
+        "Quel moment t'a le plus marquée, et pourquoi ?",
+        "Quelle place a le sport dans ta vie aujourd'hui ?"
+      ]
+    },
+    {
+      "title": "Octobre rose, ici et là-bas",
+      "prompt": "Comment parle-t-on du cancer du sein en République dominicaine, comparé à la France ?",
+      "relances": [
+        "Comment se passe le mois d'octobre chez toi, à Saint-Domingue ?",
+        "Quel événement strasbourgeois aimerais-tu essayer l'an prochain, et avec qui ?",
+        "Comment une course comme celle-ci peut t'aider à te faire des amies ?",
+        "Quelle campagne marketing imaginerais-tu pour Octobre rose ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "StopRoseWashing_67",
+      "comment": "Encore du rose PARTOUT !!! Les marques vendent des yaourts roses et se font une belle pub, pendant que les hôpitaux manquent de personnel toute l'année. Courir cinq kilomètres, c'est sympa, mais ça ne remplace pas un vrai budget pour la recherche. Ras-le-bol de cette com'.",
+      "likes": 214
+    },
+    {
+      "username": "MamieJosiane_Neudorf",
+      "comment": "J'ai couru la toute première Strasbourgeoise en 2010, j'avais fini ma chimio trois mois avant. Cette année j'y étais avec ma fille et mes deux petites-filles, toutes en tutu rose 😂 Seize ans plus tard je suis toujours là, alors allez faire vos mammographies les filles !!!",
+      "likes": 87
+    }
+  ]
+}

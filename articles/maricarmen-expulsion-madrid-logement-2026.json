@@ -1,0 +1,114 @@
+{
+  "id": "maricarmen-expulsion-madrid-logement-2026",
+  "title": "Madrid : la mort de Maricarmen, 87 ans, expulsée de chez elle, choque l'Espagne",
+  "date": "2026-10-11",
+  "category": "Société",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/26S-Manifestaci%C3%B3n_por_la_vivienda--09.jpg?width=1200",
+    "alt": "Manifestation pour le droit au logement devant la mairie de Madrid, avec des banderoles du syndicat des locataires"
+  },
+  "vocabulary": [
+    {
+      "fr": "le loyer",
+      "es": "el alquiler"
+    },
+    {
+      "fr": "un locataire",
+      "es": "un inquilino"
+    },
+    {
+      "fr": "expulser quelqu'un de son logement",
+      "es": "desahuciar a alguien"
+    },
+    {
+      "fr": "le logement",
+      "es": "la vivienda"
+    },
+    {
+      "fr": "bouleverser",
+      "es": "conmocionar, conmover"
+    },
+    {
+      "fr": "manifester",
+      "es": "manifestarse"
+    },
+    {
+      "fr": "une personne âgée",
+      "es": "una persona mayor"
+    },
+    {
+      "fr": "des élections anticipées",
+      "es": "unas elecciones anticipadas"
+    }
+  ],
+  "article": "Maricarmen Abascal est morte le mercredi 7 octobre à Madrid, à l'âge de 87 ans. Le 23 septembre, un fonds immobilier l'a expulsée de son appartement du quartier de Retiro. Elle vivait dans ce logement depuis 1956, donc depuis presque soixante-dix ans. Le jour de l'expulsion, elle est sortie de chez elle sur un brancard. Elle est entrée à l'hôpital, très affaiblie, et elle ne s'est jamais remise.\n\nLe propriétaire voulait faire passer son loyer de 500 à 2 650 euros par mois. Pendant dix ans, Maricarmen a résisté à quatre tentatives d'expulsion. Mais la justice a finalement donné raison au fonds. Un accord devait lui permettre de rentrer chez elle à sa sortie de l'hôpital. Il est arrivé trop tard.\n\nSon histoire a bouleversé l'Espagne. Des centaines de milliers de personnes ont manifesté pour le droit au logement, et des violences ont éclaté à Barcelone. Les manifestants veulent mieux protéger les locataires. Ils demandent aussi d'interdire les expulsions sans solution de relogement. Depuis son lit d'hôpital, Maricarmen leur a lancé un dernier message : « Battez-vous ! »\n\nLa crise est aussi devenue politique. L'opposition de droite a rejeté les mesures d'urgence du gouvernement de Pedro Sánchez. Le Premier ministre a ensuite annoncé des élections anticipées pour le 29 novembre. Le logement sera donc au cœur de la campagne. Une question reste ouverte : un logement est-il un produit comme un autre, ou un droit qu'il faut protéger ?",
+  "dictation": {
+    "text": "Ma voisine a quatre-vingts ans et elle vit seule dans notre immeuble. L'année dernière, son loyer a beaucoup augmenté. Elle a eu peur de perdre son appartement. Tous les voisins se sont réunis dans la cour. Ensemble, nous avons écrit une lettre à la mairie. Finalement, elle est restée chez elle. Mais elle pense souvent à ses amies qui sont parties. Elles ont quitté leur quartier parce que les loyers sont trop chers.",
+    "units": [
+      "Ma voisine a quatre-vingts ans",
+      "et elle vit seule dans notre immeuble.",
+      "L'année dernière, son loyer a beaucoup augmenté.",
+      "Elle a eu peur de perdre son appartement.",
+      "Tous les voisins se sont réunis dans la cour.",
+      "Ensemble, nous avons écrit une lettre à la mairie.",
+      "Finalement, elle est restée chez elle.",
+      "Mais elle pense souvent à ses amies qui sont parties.",
+      "Elles ont quitté leur quartier",
+      "parce que les loyers sont trop chers."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "L'histoire de Maricarmen",
+      "prompt": "Peux-tu me raconter avec tes mots ce qui est arrivé à Maricarmen à Madrid ?",
+      "relances": [
+        "Pourquoi le propriétaire voulait-il récupérer son appartement, selon toi ?",
+        "Comment les Espagnols ont-ils réagi après son expulsion ?",
+        "Qu'est-ce qui t'a le plus marquée dans son histoire ?",
+        "Quelles conséquences politiques cette affaire a-t-elle eues en Espagne ?"
+      ]
+    },
+    {
+      "title": "Logement : droit ou produit ?",
+      "prompt": "D'après toi, un propriétaire doit-il pouvoir fixer librement le prix de son loyer, et pourquoi ?",
+      "relances": [
+        "Comment protéger les locataires âgés sans punir les petits propriétaires ?",
+        "Quelle mesure choisirais-tu si tu étais ministre du Logement ?",
+        "Que penses-tu des fonds qui achètent des immeubles entiers ?",
+        "Comment répondrais-tu à quelqu'un qui défend le marché libre ?"
+      ]
+    },
+    {
+      "title": "Les loyers autour de moi",
+      "prompt": "Comment se passe la recherche d'un logement pour les jeunes à Saint-Domingue aujourd'hui ?",
+      "relances": [
+        "Combien coûte un petit appartement dans ton quartier, à peu près ?",
+        "Raconte-moi comment tu as trouvé ton appartement avec Clément.",
+        "Quelles personnes de ton entourage ont eu des problèmes de loyer ?",
+        "Quel conseil donnerais-tu à une amie qui cherche son premier logement ?"
+      ]
+    },
+    {
+      "title": "Mon futur appartement à Strasbourg",
+      "prompt": "Décris-moi l'appartement idéal que tu imagines pour ta nouvelle vie à Strasbourg.",
+      "relances": [
+        "Dans quel quartier de Strasbourg aimerais-tu habiter, et pourquoi ?",
+        "Quelles questions poserais-tu à un propriétaire pendant une visite ?",
+        "Qu'est-ce qui changera par rapport à ton logement en République dominicaine ?",
+        "Comment imagines-tu tes relations avec tes futurs voisins français ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "LocataireEnColere_75",
+      "comment": "Soixante-dix ans dans le même appart et on la sort sur un BRANCARD pour faire du profit ?!! Ces fonds d'investissement n'ont aucune limite. Et maintenant tout le monde pleure… Il fallait agir AVANT. Ça arrivera chez nous aussi si on ne fait rien !!!",
+      "likes": 487
+    },
+    {
+      "username": "ConciergeDuMarais",
+      "comment": "Ça me rappelle Mme Lucienne, au troisième de notre immeuble à Paris. Quatre-vingt-onze ans, tout le quartier la connaissait. Quand l'immeuble a été vendu, on a fait une pétition et un goûter géant dans la cour. Elle est restée jusqu'au bout, avec son chat. Les voisins, ça compte.",
+      "likes": 63
+    }
+  ]
+}

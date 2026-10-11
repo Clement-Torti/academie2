@@ -1,0 +1,114 @@
+{
+  "id": "harry-meghan-retour-angleterre-2026",
+  "title": "Harry et Meghan reviennent vivre en Angleterre, six ans après leur départ",
+  "date": "2026-10-11",
+  "category": "Société",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Prince_Harry_and_Meghan_Markle_on_Christmas_Day_2017.jpg?width=1200",
+    "alt": "Le prince Harry et Meghan Markle souriants, en manteaux d'hiver, le jour de Noël 2017 à Sandringham"
+  },
+  "vocabulary": [
+    {
+      "fr": "s'installer",
+      "es": "instalarse"
+    },
+    {
+      "fr": "un simple particulier",
+      "es": "un simple ciudadano particular"
+    },
+    {
+      "fr": "un sondage",
+      "es": "una encuesta"
+    },
+    {
+      "fr": "les petits-enfants",
+      "es": "los nietos"
+    },
+    {
+      "fr": "les fiançailles",
+      "es": "el compromiso (de boda)"
+    },
+    {
+      "fr": "la vie privée",
+      "es": "la vida privada"
+    },
+    {
+      "fr": "rester discret",
+      "es": "ser discreto, no llamar la atención"
+    },
+    {
+      "fr": "être divisé",
+      "es": "estar dividido"
+    }
+  ],
+  "article": "Le prince Harry et sa femme Meghan vivent de nouveau en Angleterre. Le 26 août, le couple a atterri à Birmingham en jet privé, en provenance de Californie. Il est arrivé avec ses deux enfants, Archie, 7 ans, et Lilibet, 5 ans. Six ans après leur départ, ce retour a surpris tout le Royaume-Uni. La famille s'est installée dans les Cotswolds, une région de campagne très appréciée des célébrités.\n\nPourtant, Harry et Meghan ne redeviennent pas des membres actifs de la famille royale. Ils reviennent comme de simples particuliers, sans mission officielle. Ils gardent aussi leur maison en Californie et une résidence au Portugal. Depuis septembre, leurs enfants vont dans une école britannique.\n\nCe retour pose cependant une question sensible : qui va payer leur sécurité ? Le Premier ministre, Andy Burnham, parle d'une « affaire privée ». Selon un sondage YouGov, plus de 70 % des Britanniques pensent que le couple doit la financer lui-même, au moins en grande partie. Du côté de la famille, le roi Charles III se dit heureux de voir ses petits-enfants plus souvent. En revanche, la relation avec le prince William reste très froide. Dans ses mémoires, Harry a présenté son frère comme son « ennemi juré ».\n\nDans les prochains jours, le couple va faire sa première sortie publique commune depuis son retour. Il visitera Nottingham, la ville de sa première apparition après les fiançailles, en 2017. Harry et Meghan veulent-ils simplement une vie plus calme ? Ou cherchent-ils à retrouver une place dans la monarchie ? Les Britanniques restent divisés.",
+  "dictation": {
+    "text": "Dans le village, les habitants ont vite reconnu leurs voisins. Le prince et sa femme sont arrivés à la fin de l'été. Leurs deux enfants sont entrés à l'école en septembre. Le matin, on voit la famille au marché ou au café du coin. Les gens sont curieux, mais ils restent discrets. Une vendeuse préfère les laisser tranquilles. Ces voisins ont choisi une vie simple, loin des caméras et du bruit.",
+    "units": [
+      "Dans le village, les habitants ont vite reconnu leurs voisins.",
+      "Le prince et sa femme sont arrivés",
+      "à la fin de l'été.",
+      "Leurs deux enfants sont entrés à l'école en septembre.",
+      "Le matin, on voit la famille",
+      "au marché ou au café du coin.",
+      "Les gens sont curieux, mais ils restent discrets.",
+      "Une vendeuse préfère les laisser tranquilles.",
+      "Ces voisins ont choisi une vie simple,",
+      "loin des caméras et du bruit."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Raconter leur retour",
+      "prompt": "Peux-tu me raconter pourquoi le retour de Harry et Meghan fait autant parler les Britanniques ?",
+      "relances": [
+        "Où et comment la famille s'est-elle installée ?",
+        "Quelle est la grande question autour de leur sécurité ?",
+        "Comment décrirais-tu les relations entre Harry et sa famille ?",
+        "Qu'est-ce qui t'a le plus surprise dans cet article ?"
+      ]
+    },
+    {
+      "title": "Qui paie la sécurité",
+      "prompt": "À ton avis, qui devrait payer la sécurité d'un prince qui a quitté la famille royale ?",
+      "relances": [
+        "Comment réponds-tu au premier commentaire sous l'article ?",
+        "Quelle différence fais-tu entre une star et un membre de la famille royale ?",
+        "Que ferais-tu à la place du roi Charles ?",
+        "À quoi sert une monarchie aujourd'hui, selon toi ?"
+      ]
+    },
+    {
+      "title": "Revenir chez soi",
+      "prompt": "Raconte-moi une fois où tu es revenue dans un lieu important pour toi après longtemps.",
+      "relances": [
+        "Qu'est-ce qui avait changé, et qu'est-ce qui était pareil ?",
+        "Comment ta famille ou tes amis t'ont-ils accueillie ?",
+        "Quelles émotions as-tu ressenties en arrivant ?",
+        "Quel souvenir de ce retour te fait encore sourire ?"
+      ]
+    },
+    {
+      "title": "Une nouvelle vie à Strasbourg",
+      "prompt": "Comme Archie et Lilibet, tu vas changer de pays : comment imagines-tu tes premiers mois à Strasbourg ?",
+      "relances": [
+        "Quelles habitudes dominicaines veux-tu garder en France ?",
+        "Comment comptes-tu te faire des amis là-bas ?",
+        "Que feras-tu pour te sentir vite chez toi ?",
+        "Comment les Dominicains voient-ils les familles royales européennes ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "BrexitBernard_1962",
+      "comment": "Sérieusement ?! Ils critiquent la famille royale pendant six ans, ils vendent des livres et des séries Netflix, et maintenant ils reviennent comme si de rien n'était ? Et on devrait EN PLUS payer leur sécurité ?? Hors de question. Ils ont largement les moyens !!!",
+      "likes": 418
+    },
+    {
+      "username": "TheEtScones_Cotswolds",
+      "comment": "J'habite à vingt minutes de chez eux. Depuis août, mon pub du dimanche est rempli de journalistes qui commandent UN thé et fixent la fenêtre pendant quatre heures. Le patron a augmenté le prix du scone d'une livre. Merci Meghan 😂",
+      "likes": 96
+    }
+  ]
+}

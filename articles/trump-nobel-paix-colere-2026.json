@@ -1,0 +1,90 @@
+{
+  "id": "trump-nobel-paix-colere-2026",
+  "title": "Nobel de la paix : Trump furieux contre le comité après le choix de Navi Pillay",
+  "date": "2026-10-11",
+  "category": "Société",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Official_Presidential_Portrait_of_President_Donald_J._Trump_(2025).jpg?width=1200",
+    "alt": "Portrait officiel du président américain Donald Trump, devant le drapeau des États-Unis"
+  },
+  "vocabulary": [
+    { "fr": "le lauréat, la lauréate", "es": "el galardonado, la galardonada" },
+    { "fr": "mériter", "es": "merecer" },
+    { "fr": "mettre fin à une guerre", "es": "poner fin a una guerra" },
+    { "fr": "faire pression sur quelqu'un", "es": "presionar a alguien" },
+    { "fr": "les droits humains", "es": "los derechos humanos" },
+    { "fr": "se moquer de", "es": "burlarse de" },
+    { "fr": "être en colère", "es": "estar enojado, enfadado" }
+  ],
+  "article": "Le vendredi 9 octobre, le comité Nobel norvégien a donné le prix Nobel de la paix 2026 à Navi Pillay. Cette juriste sud-africaine de 85 ans a dirigé le Haut-Commissariat de l'ONU aux droits de l'homme de 2008 à 2014. Le comité récompense son travail pour la paix et le droit international. Donald Trump, lui, espérait recevoir ce prix. Il est donc très en colère.\n\nLe soir même, pendant un meeting à Syracuse, le président américain a attaqué le comité. Selon lui, cette décision est « une tache indélébile » pour la Norvège. Il affirme aussi qu'il n'a « jamais entendu parler » de la lauréate. Pourtant, deux jours avant l'annonce, il a prévenu le comité : ne pas le choisir serait « un grand déshonneur ».\n\nTrump répète qu'il a mis fin à huit guerres, par exemple entre l'Inde et le Pakistan. Il pense donc mériter « huit prix Nobel ». Mais ses critiques rappellent que la guerre en Ukraine continue. L'an dernier, le prix est allé à l'opposante vénézuélienne María Corina Machado. En janvier, elle a offert sa médaille à Trump. Cependant, un prix Nobel ne peut pas être transmis officiellement.\n\nLe comité Nobel est indépendant : le gouvernement norvégien ne participe pas au choix. Navi Pillay, elle, a répondu avec humour qu'elle pourrait partager son prix avec Trump. La cérémonie aura lieu à Oslo le 10 décembre. Mais une question reste ouverte : un prix peut-il rester neutre quand un président fait autant pression ?",
+  "dictation": {
+    "text": "Chaque année, au mois d'octobre, on attend le prix Nobel de la paix. Cette fois, le président américain espérait gagner. Il a parlé de ce prix pendant des mois à la télévision. Mais le comité a choisi une femme âgée qui a défendu les droits humains. Elle est arrivée devant les journalistes avec un grand sourire. Le président est resté très en colère. Ses partisans se sont moqués du comité sur les réseaux sociaux.",
+    "units": [
+      "Chaque année, au mois d'octobre,",
+      "on attend le prix Nobel de la paix.",
+      "Cette fois, le président américain espérait gagner.",
+      "Il a parlé de ce prix",
+      "pendant des mois à la télévision.",
+      "Mais le comité a choisi une femme âgée",
+      "qui a défendu les droits humains.",
+      "Elle est arrivée devant les journalistes avec un grand sourire.",
+      "Le président est resté très en colère.",
+      "Ses partisans se sont moqués",
+      "du comité sur les réseaux sociaux."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Ce qui s'est passé",
+      "prompt": "Raconte-moi avec tes mots qui a gagné le prix Nobel et comment Trump a réagi.",
+      "relances": [
+        "Qui est Navi Pillay, d'après ce que tu as compris ?",
+        "Quelles phrases de Trump t'ont le plus frappée, et pourquoi ?",
+        "Explique-moi l'histoire de la médaille de María Corina Machado.",
+        "Comment le comité Nobel peut-il répondre à ces attaques, selon toi ?"
+      ]
+    },
+    {
+      "title": "Un prix mérité ?",
+      "prompt": "Pour toi, qu'est-ce qu'une personne doit avoir fait pour mériter le prix Nobel de la paix ?",
+      "relances": [
+        "Comment juges-tu le bilan de Trump sur les guerres qu'il dit avoir arrêtées ?",
+        "Que penses-tu d'un président qui fait pression sur un jury ?",
+        "À qui aurais-tu donné ce prix cette année, et pourquoi ?",
+        "Quelle différence fais-tu entre signer une paix et construire la paix ?"
+      ]
+    },
+    {
+      "title": "Perdre avec élégance",
+      "prompt": "Raconte-moi une fois où tu n'as pas obtenu quelque chose que tu espérais vraiment.",
+      "relances": [
+        "Comment as-tu réagi sur le moment, et ensuite ?",
+        "Qu'est-ce que cette expérience t'a appris pour la suite ?",
+        "Quelle personne de ta famille sait le mieux accepter une défaite ?",
+        "Comment réagis-tu quand quelqu'un se moque de toi sur TikTok ?"
+      ]
+    },
+    {
+      "title": "La politique vue d'ailleurs",
+      "prompt": "Comment les Dominicains parlent-ils de Trump, et comment penses-tu que les Français en parlent ?",
+      "relances": [
+        "Quelle image les États-Unis ont-ils à Saint-Domingue aujourd'hui ?",
+        "Comment vas-tu suivre l'actualité internationale une fois à Strasbourg ?",
+        "Quels médias français aimerais-tu découvrir pour progresser en français ?",
+        "Strasbourg accueille le Parlement européen : qu'est-ce que tu aimerais y visiter ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "VraiDemocrate_75",
+      "comment": "Franchement, c'est HONTEUX de menacer un jury avant l'annonce !!! Un prix de la paix, ça ne se réclame pas comme un caprice d'enfant. Et dire « je ne la connais pas » à propos d'une femme qui a passé sa vie à défendre les droits humains… ça en dit long sur lui, pas sur elle.",
+      "likes": 487
+    },
+    {
+      "username": "TontonDuBuffet",
+      "comment": "Mon neveu de huit ans a fait exactement la même crise quand il n'a pas eu la coupe du meilleur joueur au tournoi de foot 😂 Il a dit que l'arbitre était nul et que c'était une honte pour tout le club. Au moins, lui, il est allé goûter après.",
+      "likes": 58
+    }
+  ]
+}

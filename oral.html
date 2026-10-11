@@ -299,7 +299,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-[10px] uppercase tracking-wider text-gray-400 font-bold">Score</span>
-                    <span id="eval-score" class="text-lg font-bold text-gold">9 / 12</span>
+                    <span id="eval-score" class="text-lg font-bold text-gold">3 / 4</span>
                 </div>
             </div>
 
@@ -351,16 +351,7 @@
         <div class="stat-card">
             <div class="flex flex-wrap items-center gap-3 mb-3">
                 <span class="flex items-center gap-1.5 text-[10px] font-bold text-gray-500">
-                    <span class="w-3 h-1 rounded-full" style="background:#002654"></span> Total /12
-                </span>
-                <span class="flex items-center gap-1.5 text-[10px] font-bold text-gray-500">
-                    <span class="w-3 h-1 rounded-full" style="background:#FF6B6B"></span> Attitude
-                </span>
-                <span class="flex items-center gap-1.5 text-[10px] font-bold text-gray-500">
-                    <span class="w-3 h-1 rounded-full" style="background:#4ECDC4"></span> Résilience
-                </span>
-                <span class="flex items-center gap-1.5 text-[10px] font-bold text-gray-500">
-                    <span class="w-3 h-1 rounded-full" style="background:#D4AF37"></span> Fluidité
+                    <span class="w-3 h-1 rounded-full" style="background:#002654"></span> Improvisation /4
                 </span>
             </div>
             <canvas id="chart-oral" height="150"></canvas>
@@ -388,10 +379,7 @@
                             <th class="text-left  px-4 py-3">Sujet</th>
                             <th class="text-center px-3 py-3">Durée</th>
                             <th class="text-center px-2 py-3" title="Erreurs notées">Err.</th>
-                            <th class="text-center px-2 py-3" title="Attitude">Att.</th>
-                            <th class="text-center px-2 py-3" title="Résilience">Rés.</th>
-                            <th class="text-center px-2 py-3" title="Fluidité">Flu.</th>
-                            <th class="text-center px-3 py-3">Total</th>
+                            <th class="text-center px-3 py-3">Impro.</th>
                             <th class="px-2 py-3"></th>
                         </tr>
                     </thead>
@@ -413,26 +401,23 @@ const oral = {
 
     CRITERIA: [
         {
-            key: 'attitude',
-            label: 'Attitude',
-            color: '#FF6B6B',
-            desc: "La personne s'est efforcé de maintenir la conversation sans blanc, en improvisant et en s'intéressant à son interlocuteur"
-        },
-        {
-            key: 'resilience',
-            label: 'Résilience',
-            color: '#4ECDC4',
-            desc: "La personne a tenu compte des erreurs de prononciation et du vocabulaire utilisé par son interlocuteur natif"
-        },
-        {
-            key: 'fluidite',
-            label: 'Fluidité',
-            color: '#D4AF37',
-            desc: "La personne parle à un rythme naturel et comprend son interlocuteur directement"
+            key: 'improvisation',
+            label: 'Improvisation',
+            color: '#002654',
+            desc: "La personne parle longtemps et fait vivre la conversation, même sur un sujet qu'elle connaît mal : elle rebondit, contourne les mots qui lui manquent et relance son interlocuteur au lieu de s'arrêter"
         }
     ],
 
     LEVELS: ['Insuffisant', 'En progrès', 'Bien', 'Excellent'],
+
+    get MAX() { return this.CRITERIA.length * 4; },
+
+    // Note d'une session sur 4. Les anciennes sessions étaient notées sur
+    // trois critères (/12) : on les ramène sur 4 pour garder une courbe continue.
+    score(s) {
+        if (s.improvisation != null) return s.improvisation;
+        return s.total != null ? Math.round(s.total / 3 * 10) / 10 : null;
+    },
 
     // Catégories mises en avant pendant la conversation : il faut pouvoir
     // classer d'un seul geste, le reste se règle à la revue.
@@ -960,7 +945,7 @@ const oral = {
     updateScore() {
         const s     = this.currentScores();
         const total = this.CRITERIA.reduce((a, c) => a + s[c.key], 0);
-        document.getElementById('eval-score').textContent = `${total} / 12`;
+        document.getElementById('eval-score').textContent = `${total} / ${this.MAX}`;
     },
 
     // ════════════════════════════════════════════════════════════
@@ -1048,22 +1033,13 @@ const oral = {
             return `${String(d.getDate()).padStart(2,'0')}/${String(d.getMonth()+1).padStart(2,'0')}`;
         });
 
-        const datasets = [
-            {
-                label: 'Total /12',
-                data: sessions.map(s => s.total),
-                borderColor: '#002654', backgroundColor: 'rgba(0,38,84,.08)',
-                borderWidth: 3, pointRadius: 4, pointBackgroundColor: '#002654',
-                tension: .35, fill: true, yAxisID: 'y'
-            },
-            ...this.CRITERIA.map(c => ({
-                label: c.label,
-                data: sessions.map(s => s[c.key]),
-                borderColor: c.color, backgroundColor: c.color,
-                borderWidth: 2, pointRadius: 2, borderDash: [4, 3],
-                tension: .35, fill: false, yAxisID: 'y1'
-            }))
-        ];
+        const datasets = [{
+            label: 'Improvisation',
+            data: sessions.map(s => this.score(s)),
+            borderColor: '#002654', backgroundColor: 'rgba(0,38,84,.08)',
+            borderWidth: 3, pointRadius: 4, pointBackgroundColor: '#002654',
+            tension: .35, fill: true
+        }];
 
         if (this.chart) this.chart.destroy();
         this.chart = new Chart(canvas.getContext('2d'), {
@@ -1083,16 +1059,13 @@ const oral = {
                                 return `${s.subject} · ${this.fmt(s.durationMs || 0)}` +
                                        (s.errorCount != null ? ` · ${s.errorCount} err.` : '');
                             },
-                            label: c => c.dataset.label === 'Total /12'
-                                ? `Total : ${c.parsed.y} / 12`
-                                : `${c.dataset.label} : ${c.parsed.y} / 4`
+                            label: c => `${c.dataset.label} : ${c.parsed.y} / 4`
                         }
                     }
                 },
                 scales: {
                     x:  { ticks:{ font:{size:9}, color:'#9ca3af' }, grid:{ display:false } },
-                    y:  { position:'left', min:0, max:12, ticks:{ stepSize:3, font:{size:9}, color:'#9ca3af' }, grid:{ color:'#f3f4f6' } },
-                    y1: { position:'right', min:0, max:4, ticks:{ stepSize:1, font:{size:9}, color:'#d1d5db' }, grid:{ display:false } }
+                    y:  { min:0, max:4, ticks:{ stepSize:1, font:{size:9}, color:'#9ca3af' }, grid:{ color:'#f3f4f6' } }
                 }
             }
         });
@@ -1111,7 +1084,7 @@ const oral = {
 
         if (!sessions.length) {
             body.innerHTML = `
-                <tr><td colspan="9" class="text-center text-xs text-gray-400 py-8">
+                <tr><td colspan="6" class="text-center text-xs text-gray-400 py-8">
                     Aucune session enregistrée.
                 </td></tr>`;
             return;
@@ -1121,7 +1094,7 @@ const oral = {
             const d       = new Date(s.at);
             const dateStr = `${String(d.getDate()).padStart(2,'0')}/${String(d.getMonth()+1).padStart(2,'0')}/${d.getFullYear()}`;
             const timeStr = `${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}`;
-            const cell = v => `<td class="text-center px-2 py-3 font-bold" style="color:${this._lvlColor(v)};">${v}</td>`;
+            const note = this.score(s);
             const goal = s.goalReached ?? ((s.durationMs || 0) >= this.GOAL_MS);
             return `
                 <tr class="border-t border-gray-100">
@@ -1139,10 +1112,9 @@ const oral = {
                     <td class="text-center px-2 py-3 text-xs font-bold text-gray-500">
                         ${s.errorCount != null ? s.errorCount : '—'}
                     </td>
-                    ${cell(s.attitude)}${cell(s.resilience)}${cell(s.fluidite)}
                     <td class="text-center px-3 py-3">
                         <span class="text-xs font-bold text-white px-2 py-1 rounded-full"
-                              style="background:${this._totalColor(s.total)};">${s.total}/12</span>
+                              style="background:${this._lvlColor(note)};">${note ?? '—'}/4</span>
                     </td>
                     <td class="text-center px-2 py-3">
                         <button onclick="oral.remove('${s.id}')" class="text-gray-300 hover:text-red-500 transition">
@@ -1159,8 +1131,7 @@ const oral = {
         return Carnet.esc(str).replace(/ ([?!;:»])/g, '\u202F$1').replace(/« /g, '«\u202F');
     },
 
-    _lvlColor(v)   { return ['#ef4444', '#f59e0b', '#3b82f6', '#22c55e'][(v || 1) - 1]; },
-    _totalColor(t) { return t >= 11 ? '#22c55e' : t >= 8 ? '#3b82f6' : t >= 6 ? '#f59e0b' : '#ef4444'; }
+    _lvlColor(v)   { return ['#ef4444', '#f59e0b', '#3b82f6', '#22c55e'][Math.min(3, Math.max(0, Math.round(v || 1) - 1))]; }
 };
 
 oral.init();

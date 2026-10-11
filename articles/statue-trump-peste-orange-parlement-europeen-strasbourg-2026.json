@@ -1,0 +1,114 @@
+{
+  "id": "statue-trump-peste-orange-parlement-europeen-strasbourg-2026",
+  "title": "« La Peste orange » : une statue satirique de Trump au Parlement européen",
+  "date": "2026-10-11",
+  "category": "Culture",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Servival_of_the_Fattest_with_Jens_Galschi%C3%B8t.jpg?width=1200",
+    "alt": "Le sculpteur danois Jens Galschiøt à côté de sa statue « Survival of the Fattest », une femme obèse assise sur les épaules d'un homme très maigre, que reprend la statue de Trump"
+  },
+  "vocabulary": [
+    {
+      "fr": "une œuvre (d'art)",
+      "es": "una obra (de arte)"
+    },
+    {
+      "fr": "satirique",
+      "es": "satírico/a, burlesco/a"
+    },
+    {
+      "fr": "le sculpteur",
+      "es": "el escultor"
+    },
+    {
+      "fr": "le député européen",
+      "es": "el eurodiputado"
+    },
+    {
+      "fr": "demander le retrait de",
+      "es": "exigir la retirada de"
+    },
+    {
+      "fr": "la liberté d'expression",
+      "es": "la libertad de expresión"
+    },
+    {
+      "fr": "provocant(e)",
+      "es": "provocador(a)"
+    },
+    {
+      "fr": "se moquer de",
+      "es": "burlarse de"
+    }
+  ],
+  "article": "Ce mardi 6 octobre, une statue de Donald Trump a été installée au Parlement européen, à Strasbourg. Elle mesure 2,6 mètres et elle est couverte de feuilles d'or. Mais ce n'est pas un hommage : c'est une œuvre satirique. Le président américain y apparaît nu, assis sur le dos d'un homme très maigre. Il tient une balance, le symbole de la justice, et un club de golf.\n\nL'auteur de la statue est le sculpteur danois Jens Galschiøt. Il a appelé son œuvre « La Peste orange ». Pour lui, Donald Trump est une menace pour la démocratie et pour la lutte contre le changement climatique. Sur le socle, on peut lire une phrase ironique : « Je suis assis sur le dos d'un homme. Je ferai tout pour l'aider, sauf descendre de son dos. »\n\nC'est un député européen danois de gauche, Per Clausen, qui a invité l'artiste. Selon lui, l'Europe ne doit pas vivre dans la peur ni pratiquer l'autocensure. Pourtant, l'œuvre ne plaît pas à tout le monde. Le Premier ministre slovaque, Robert Fico, a demandé son retrait. Il a même qualifié l'artiste de « fou ».\n\nLa statue est restée à Strasbourg jusqu'à jeudi. En novembre, elle partira en Turquie pour la COP31, la conférence de l'ONU sur le climat. Elle a déjà voyagé au Brésil et à Munich. Reste une question : un parlement est-il un bon endroit pour une œuvre aussi provocante ? Liberté d'expression ou manque de respect envers un allié ?",
+  "dictation": {
+    "text": "Mardi, ma sœur est allée à Strasbourg pour son travail. Au parlement, elle a vu une grande statue dorée du président américain. Les visiteurs se sont arrêtés devant l'œuvre et ils ont pris des photos. Certains ont ri, mais d'autres sont repartis très choqués. Ma sœur pense que l'art a le droit de se moquer des hommes puissants. Ce soir, elle va me montrer ses photos et on va en parler.",
+    "units": [
+      "Mardi, ma sœur est allée à Strasbourg pour son travail.",
+      "Au parlement, elle a vu",
+      "une grande statue dorée du président américain.",
+      "Les visiteurs se sont arrêtés devant l'œuvre",
+      "et ils ont pris des photos.",
+      "Certains ont ri, mais d'autres sont repartis très choqués.",
+      "Ma sœur pense que l'art a le droit",
+      "de se moquer des hommes puissants.",
+      "Ce soir, elle va me montrer ses photos",
+      "et on va en parler."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Raconte la statue",
+      "prompt": "Peux-tu me décrire la statue de Strasbourg et m'expliquer pourquoi elle fait autant parler ?",
+      "relances": [
+        "Que tient le président dans ses mains, et pourquoi ?",
+        "Qui est l'homme maigre sous lui, selon toi ?",
+        "Qui a invité cette statue au Parlement européen ?",
+        "Comment a réagi le Premier ministre slovaque ?"
+      ]
+    },
+    {
+      "title": "L'art peut-il tout se permettre",
+      "prompt": "Selon toi, est-ce qu'un parlement doit accepter une œuvre qui se moque d'un chef d'État ?",
+      "relances": [
+        "Où places-tu la limite entre humour et manque de respect ?",
+        "Qu'est-ce que tu dirais au Premier ministre slovaque ?",
+        "Que se passerait-il avec une statue de ton président ?",
+        "Pourquoi un artiste choisit-il la provocation plutôt qu'un discours ?"
+      ]
+    },
+    {
+      "title": "Une œuvre qui m'a marquée",
+      "prompt": "Raconte-moi une œuvre, une affiche ou une vidéo satirique qui t'a fait rire ou choquée.",
+      "relances": [
+        "Où l'as-tu vue, et avec qui ?",
+        "Qu'est-ce que tu as ressenti sur le moment ?",
+        "Comment ta famille a-t-elle réagi quand tu en as parlé ?",
+        "Quels comptes TikTok d'humour politique est-ce que tu suis ?"
+      ]
+    },
+    {
+      "title": "Strasbourg, capitale européenne",
+      "prompt": "Strasbourg accueille le Parlement européen : qu'est-ce que tu as envie d'y découvrir quand tu t'installeras ?",
+      "relances": [
+        "Comment imagines-tu une visite du Parlement européen ?",
+        "Quelle place a l'humour politique en République dominicaine ?",
+        "Comment ton diplôme de mercadeo pourrait-il servir dans une ville européenne ?",
+        "Qu'est-ce que tu raconterais à ta famille après ta première visite ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "BonSensAlsacien_67",
+      "comment": "Franchement c'est NUL. On paie le Parlement avec NOS impôts et on y expose un Trump tout nu doré ?! Qu'on l'aime ou pas, c'est le président de notre premier allié. Ce n'est pas de l'art, c'est de la provocation gratuite qui va encore nous ridiculiser !!!",
+      "likes": 287
+    },
+    {
+      "username": "MamieGolf_Colmar",
+      "comment": "Moi ce qui me choque, c'est le club de golf. Avec un swing pareil, assis sur le dos d'un monsieur, il n'a aucune chance de toucher la balle 😄 Mon club de golf propose de le prendre en cours d'essai gratuit, mais habillé.",
+      "likes": 64
+    }
+  ]
+}

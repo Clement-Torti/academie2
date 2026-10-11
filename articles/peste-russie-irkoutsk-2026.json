@@ -1,0 +1,116 @@
+{
+  "id": "peste-russie-irkoutsk-2026",
+  "title": "Peste en Russie : la mort d'une laborantine en Sibérie inquiète le monde",
+  "date": "2026-10-11",
+  "category": "Santé",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Yersinia_pestis_scanned_with_electron_micrograph.jpg?width=1200",
+    "alt": "Vue au microscope électronique de la bactérie de la peste, Yersinia pestis, dans le corps d'une puce"
+  },
+  "vocabulary": [
+    {
+      "fr": "la peste",
+      "es": "la peste"
+    },
+    {
+      "fr": "une épidémie",
+      "es": "una epidemia, un brote"
+    },
+    {
+      "fr": "être placé en quarantaine",
+      "es": "ser puesto en cuarentena"
+    },
+    {
+      "fr": "démentir",
+      "es": "desmentir, negar"
+    },
+    {
+      "fr": "soigner",
+      "es": "curar, tratar"
+    },
+    {
+      "fr": "prévenir quelqu'un",
+      "es": "avisar a alguien"
+    },
+    {
+      "fr": "faire peur",
+      "es": "dar miedo, asustar"
+    },
+    {
+      "fr": "la transparence",
+      "es": "la transparencia"
+    }
+  ],
+  "article": "Une jeune technicienne de laboratoire est morte dans la nuit du 1er au 2 octobre à Irkoutsk, en Sibérie. Daria Tchipilova avait 28 ans. Elle travaillait dans un institut qui étudie la peste. Elle a succombé à une pneumonie très grave, moins de trois jours après son arrivée à l'hôpital. Depuis, une question fait peur : la peste est-elle de retour en Russie ?\n\nSelon des médias locaux, la jeune femme a cassé un tube le 25 septembre. Ce tube pouvait contenir la bactérie de la peste pulmonaire. Elle n'a rien dit et elle est rentrée chez elle. Près de 200 personnes ont ensuite été placées en quarantaine. Plusieurs hôpitaux et une usine de la région ont aussi pris des mesures.\n\nPourtant, les autorités russes refusent de parler d'épidémie. Selon l'agence sanitaire, aucune bactérie liée à son travail n'a été trouvée. Le Kremlin dénonce de « fausses informations » dans la presse et dément l'existence d'un deuxième malade. L'Organisation mondiale de la santé (OMS) juge le risque faible pour la Russie et très faible pour l'Europe. Mais elle demande plus de transparence à Moscou.\n\nLa peste n'est plus la maladie qui a tué des millions d'Européens au Moyen Âge. Aujourd'hui, on la soigne avec des antibiotiques, si on agit vite. En revanche, sa forme pulmonaire se transmet par l'air, d'une personne à une autre. Alors, faut-il croire les autorités russes ? Et face à une maladie dangereuse, un pays a-t-il le droit de cacher des informations au reste du monde ?",
+  "dictation": {
+    "text": "Ma sœur travaille dans un laboratoire où on étudie les maladies dangereuses. Elle met une blouse, des gants et un masque. Hier, elle a lu les nouvelles sur la peste. Elle est restée inquiète toute la journée. Ses collègues ont discuté de cette histoire. Pour eux, la règle est simple. Quand on casse un tube, on doit prévenir son chef tout de suite. Ce n'est pas une honte, c'est une question de sécurité.",
+    "units": [
+      "Ma sœur travaille dans un laboratoire",
+      "où on étudie les maladies dangereuses.",
+      "Elle met une blouse,",
+      "des gants et un masque.",
+      "Hier, elle a lu les nouvelles sur la peste.",
+      "Elle est restée inquiète toute la journée.",
+      "Ses collègues ont discuté de cette histoire.",
+      "Pour eux, la règle est simple.",
+      "Quand on casse un tube,",
+      "on doit prévenir son chef tout de suite.",
+      "Ce n'est pas une honte,",
+      "c'est une question de sécurité."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "L'affaire d'Irkoutsk",
+      "prompt": "Peux-tu me raconter ce qui s'est passé à Irkoutsk, comme si je n'avais rien lu ?",
+      "relances": [
+        "Qui était Daria et quel était son travail ?",
+        "Pourquoi près de deux cents personnes sont-elles en quarantaine ?",
+        "Que disent les autorités russes, et que dit l'OMS ?",
+        "Quels détails de cette histoire restent flous pour toi ?"
+      ]
+    },
+    {
+      "title": "Dire la vérité ou rassurer",
+      "prompt": "Selon toi, que doit dire un gouvernement à la population quand une maladie dangereuse apparaît ?",
+      "relances": [
+        "Pourquoi un pays voudrait-il cacher une information pareille ?",
+        "Que se passe-t-il quand les gens n'ont plus confiance ?",
+        "Qui crois-tu le plus : l'État, l'OMS ou les journalistes ?",
+        "Comment éviter la panique tout en disant la vérité ?"
+      ]
+    },
+    {
+      "title": "Tes souvenirs du Covid",
+      "prompt": "Comment as-tu vécu la pandémie de Covid à Saint-Domingue avec ta famille ?",
+      "relances": [
+        "Qu'est-ce qui a été le plus difficile pour toi ?",
+        "Comment ta famille s'informait-elle à cette époque ?",
+        "Quelle habitude de cette période as-tu gardée ?",
+        "Raconte-moi une rumeur que tu as entendue sur TikTok."
+      ]
+    },
+    {
+      "title": "Se soigner à Strasbourg",
+      "prompt": "Comment imagines-tu le système de santé français quand tu vivras à Strasbourg ?",
+      "relances": [
+        "Qu'est-ce qui sera différent de la République dominicaine ?",
+        "Comment vas-tu choisir ton médecin en arrivant ?",
+        "Où vas-tu chercher des informations fiables sur la santé ?",
+        "Quelles questions aimerais-tu poser à un pharmacien français ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "PasNeDeLaDerniereNeige",
+      "comment": "« Fausses informations »... bien sûr !!! Comme à Tchernobyl, le Kremlin nie TOUT jusqu'au dernier moment. Une jeune femme est morte, deux cents personnes sont enfermées, et on nous répète qu'il n'y a rien à voir ? Désolé, mais je fais plus confiance aux petits journaux locaux qu'à Peskov.",
+      "likes": 437
+    },
+    {
+      "username": "PipetteEtCafe_83",
+      "comment": "J'ai bossé six ans dans un labo de microbio à Lyon. Le jour où j'ai cassé un flacon, j'ai prévenu ma cheffe en tremblant... Elle m'a remerciée, et on a tout désinfecté en vingt minutes. La règle d'or, c'est qu'on ne se tait JAMAIS. Pensées pour sa famille 🙏",
+      "likes": 58
+    }
+  ]
+}

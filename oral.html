@@ -215,6 +215,25 @@
                        class="px-4 py-3 border border-gray-300 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-frBlue">
             </label>
 
+            <!-- Idées et plan -->
+            <div class="flex flex-col gap-1.5">
+                <div class="flex items-center justify-between gap-3">
+                    <label for="plan-input" class="text-[11px] font-bold uppercase tracking-wider text-gray-500">
+                        <i class="fa-solid fa-lightbulb mr-1 text-gold"></i> Mes idées et mon plan
+                    </label>
+                    <button type="button" onclick="oral.insertPlanTemplate()"
+                            class="text-[10px] font-bold uppercase tracking-wider text-gray-400 hover:text-frBlue transition">
+                        <i class="fa-solid fa-list-ol mr-1"></i> Modèle
+                    </button>
+                </div>
+                <textarea id="plan-input" rows="6" class="err-input resize-y leading-relaxed"
+                          oninput="oral.savePlanDraft()"
+                          placeholder="Note tes idées en vrac, puis mets-les dans l'ordre : ton avis, tes arguments, un exemple de ta vie, une question à poser à l'autre…"></textarea>
+                <p class="text-[11px] text-gray-400 leading-relaxed">
+                    Quelques mots-clés suffisent, pas de phrases entières : c'est un fil à suivre pour parler plus longtemps.
+                </p>
+            </div>
+
             <!-- Chrono -->
             <div id="chrono-box" class="rounded-2xl bg-frBlue text-white py-6 px-5 flex flex-col items-center gap-1">
                 <div class="flex items-center gap-2">
@@ -439,6 +458,16 @@ const oral = {
     quickCat: 'autre',
     log: null,
 
+    PLAN_STORE: 'acad2_oral_plan',
+
+    PLAN_TEMPLATE:
+        "1. Mon avis en une phrase :\n" +
+        "2. Premier argument + un exemple :\n" +
+        "3. Deuxième argument + un exemple :\n" +
+        "4. Ce que pensent ceux qui ne sont pas d'accord :\n" +
+        "5. Mon expérience, chez moi ou en France :\n" +
+        "6. Ma question pour relancer l'autre :",
+
     get sessions() {
         try { return JSON.parse(localStorage.getItem(this.STORE) || '[]'); }
         catch { return []; }
@@ -456,6 +485,38 @@ const oral = {
         this.renderHistory();
         this.renderNoted();
         this.loadArticle();
+        this.loadPlanDraft();
+    },
+
+    // ════════════════════════════════════════════════════════════
+    //  IDÉES ET PLAN
+    // ════════════════════════════════════════════════════════════
+    // Brouillon gardé par article : un rechargement de page ne doit pas
+    // effacer ce qu'elle a préparé.
+    get planKey() { return `${this.PLAN_STORE}_${this.articleId || 'libre'}`; },
+
+    loadPlanDraft() {
+        try { document.getElementById('plan-input').value = localStorage.getItem(this.planKey) || ''; }
+        catch {}
+    },
+
+    savePlanDraft() {
+        try { localStorage.setItem(this.planKey, document.getElementById('plan-input').value); }
+        catch {}
+    },
+
+    clearPlanDraft() {
+        document.getElementById('plan-input').value = '';
+        try { localStorage.removeItem(this.planKey); } catch {}
+    },
+
+    insertPlanTemplate() {
+        const box = document.getElementById('plan-input');
+        box.value = box.value.trim()
+            ? `${box.value.trimEnd()}\n\n${this.PLAN_TEMPLATE}`
+            : this.PLAN_TEMPLATE;
+        this.savePlanDraft();
+        box.focus();
     },
 
     async loadArticle() {
@@ -955,6 +1016,7 @@ const oral = {
         const scores  = this.currentScores();
         const subject = document.getElementById('subject-input').value.trim() || 'Sans sujet';
         const durationMs = this.currentMs();
+        const plan = document.getElementById('plan-input').value.trim();
 
         // 1. Le carnet d'erreurs
         this.log = Carnet.record({
@@ -979,6 +1041,7 @@ const oral = {
             durationMs,
             goalReached: durationMs >= this.GOAL_MS,
             errorCount: this.notes.length,
+            plan,
             errors:     this.notes.map(n => ({
                 wrong: n.wrong, right: n.right, category: n.category,
                 label: n.label, atMs: n.atMs
@@ -998,6 +1061,7 @@ const oral = {
         sec.classList.remove('hidden');
 
         this.notes = [];
+        this.clearPlanDraft();
         this.renderNoted();
         this.renderChart();
         this.renderHistory();
@@ -1104,6 +1168,7 @@ const oral = {
                     </td>
                     <td class="px-4 py-3 text-xs text-gray-700 max-w-[180px] truncate" title="${Carnet.esc(s.subject)}">
                         ${Carnet.esc(s.subject)}
+                        ${s.plan ? `<i class="fa-solid fa-lightbulb text-gold ml-1" title="${Carnet.esc(s.plan)}"></i>` : ''}
                     </td>
                     <td class="text-center px-3 py-3 text-xs font-mono ${goal ? 'text-teal-600 font-bold' : 'text-gray-500'}"
                         title="${goal ? 'Objectif 20 min atteint' : 'Moins de 20 min'}">

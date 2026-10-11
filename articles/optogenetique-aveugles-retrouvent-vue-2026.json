@@ -1,0 +1,114 @@
+{
+  "id": "optogenetique-aveugles-retrouvent-vue-2026",
+  "title": "Optogénétique : six patients aveugles ont partiellement retrouvé la vue",
+  "date": "2026-10-11",
+  "category": "Santé",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Fundus_of_patient_with_retinitis_pigmentosa%2C_mid_stage.jpg?width=1200",
+    "alt": "Photographie du fond de l'œil d'un patient atteint de rétinite pigmentaire, avec des taches sombres sur la rétine"
+  },
+  "vocabulary": [
+    {
+      "fr": "aveugle",
+      "es": "ciego, ciega"
+    },
+    {
+      "fr": "retrouver la vue",
+      "es": "recuperar la vista"
+    },
+    {
+      "fr": "un essai",
+      "es": "un ensayo (clínico)"
+    },
+    {
+      "fr": "détruire peu à peu",
+      "es": "destruir poco a poco"
+    },
+    {
+      "fr": "encourageant",
+      "es": "alentador, esperanzador"
+    },
+    {
+      "fr": "rester prudent",
+      "es": "ser prudente, mantener la cautela"
+    },
+    {
+      "fr": "la guérison",
+      "es": "la curación"
+    },
+    {
+      "fr": "donner de l'espoir",
+      "es": "dar esperanza"
+    }
+  ],
+  "article": "Six personnes aveugles ont partiellement retrouvé la vue grâce à un traitement expérimental. Les résultats ont été publiés le 9 octobre dans une grande revue médicale américaine. L'essai a réuni dix patients en France, aux États-Unis et au Royaume-Uni. Tous souffraient d'une rétinite pigmentaire. Cette maladie génétique détruit peu à peu les cellules de l'œil qui captent la lumière.\n\nLe traitement se fait en deux étapes. D'abord, les médecins injectent un gène dans l'œil. Grâce à lui, d'autres cellules de la rétine fabriquent une protéine qui réagit à la lumière. Ensuite, le patient porte des lunettes spéciales. Elles filment le monde et envoient des signaux lumineux vers cette protéine. Cette technique s'appelle l'optogénétique. Ses inventeurs ont reçu le prix Nobel de médecine quelques jours plus tôt.\n\nLes résultats sont encourageants, mais il faut rester prudent. Sept patients sur dix sont devenus plus sensibles à la lumière. Certains peuvent maintenant repérer un objet, dire où il se trouve et le prendre avec la main. En revanche, ils ne retrouvent pas une vision normale. Le traitement semble sûr, pourtant l'essai concerne très peu de personnes.\n\nL'équipe, en partie basée à l'hôpital des Quinze-Vingts à Paris, veut maintenant tester la méthode sur d'autres maladies des yeux. D'autres études seront nécessaires avant une utilisation à grande échelle. Alors, qui pourra payer ces traitements sans doute très coûteux ? Et faut-il donner autant d'espoir aux malades, alors qu'on ne peut pas encore promettre une vraie guérison ?",
+  "dictation": {
+    "text": "Ma grand-mère ne voit presque plus rien depuis l'année dernière. Elle reste souvent à la maison et elle écoute la radio. Ce matin, elle a entendu une nouvelle sur des malades aveugles. Ils ont reçu un traitement et ils ont retrouvé un peu de lumière. Ma grand-mère est restée silencieuse, puis elle a souri. Elle ne va pas guérir, mais elle aime ces nouvelles où on parle d'espoir.",
+    "units": [
+      "Ma grand-mère ne voit presque plus rien depuis l'année dernière.",
+      "Elle reste souvent à la maison",
+      "et elle écoute la radio.",
+      "Ce matin, elle a entendu",
+      "une nouvelle sur des malades aveugles.",
+      "Ils ont reçu un traitement",
+      "et ils ont retrouvé un peu de lumière.",
+      "Ma grand-mère est restée silencieuse, puis elle a souri.",
+      "Elle ne va pas guérir,",
+      "mais elle aime ces nouvelles où on parle d'espoir."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Un traitement en deux étapes",
+      "prompt": "Peux-tu m'expliquer avec tes mots comment ces six patients ont retrouvé une partie de la vue ?",
+      "relances": [
+        "Quelle maladie avaient les dix patients de l'essai ?",
+        "À quoi servent les lunettes spéciales dans ce traitement ?",
+        "Que peuvent faire les patients maintenant, et que ne peuvent-ils pas faire ?",
+        "Pourquoi les chercheurs disent-ils qu'il faut rester prudent ?"
+      ]
+    },
+    {
+      "title": "Espoir ou faux espoir",
+      "prompt": "Que penses-tu de la façon dont les médias annoncent ce genre de découverte médicale ?",
+      "relances": [
+        "Pourquoi un titre trop optimiste peut-il faire du mal aux malades ?",
+        "Qui devrait payer un traitement très cher : l'État, les assurances ou les patients ?",
+        "Comment expliquerais-tu ces résultats à une personne aveugle ?",
+        "Quelle découverte médicale aimerais-tu voir dans les dix prochaines années ?"
+      ]
+    },
+    {
+      "title": "Tes sens au quotidien",
+      "prompt": "Quel sens te semble le plus précieux dans ta vie de tous les jours, et pourquoi ?",
+      "relances": [
+        "Raconte-moi ta dernière visite chez un médecin ou un ophtalmologue.",
+        "Comment les personnes handicapées se déplacent-elles à Saint-Domingue ?",
+        "Quelle personne de ta famille t'a appris à prendre soin de ta santé ?",
+        "Comment ferais-tu ton travail de marketing sans la vue ?"
+      ]
+    },
+    {
+      "title": "Une ville accessible",
+      "prompt": "Comment imagines-tu la vie d'une personne aveugle à Strasbourg, comparée à Saint-Domingue ?",
+      "relances": [
+        "Qu'as-tu déjà remarqué sur les rues et les transports en France ?",
+        "Quels aménagements aimerais-tu voir aussi en République dominicaine ?",
+        "Comment une entreprise peut-elle mieux accueillir un employé malvoyant ?",
+        "Comment parlerais-tu de ce sujet dans une campagne de marketing ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "StopAuxTitresChocs",
+      "comment": "Encore un titre qui vend du rêve !!! « Des aveugles retrouvent la vue »... Non. Ils voient une forme floue avec des lunettes de robot, c'est tout. Et le prix ? Sûrement des centaines de milliers d'euros, réservés aux riches. Arrêtez de jouer avec l'espoir des malades, c'est CRUEL.",
+      "likes": 312
+    },
+    {
+      "username": "FilleDeRetinien_74",
+      "comment": "Mon père a une rétinite pigmentaire depuis ses quarante ans. Quand je lui ai lu l'article à voix haute, il a juste demandé si les lunettes existaient « en version moins moche » 😂 Il ne sera peut-être jamais concerné, mais ça fait du bien de le voir sourire comme ça.",
+      "likes": 47
+    }
+  ]
+}

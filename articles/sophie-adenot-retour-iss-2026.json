@@ -1,0 +1,114 @@
+{
+  "id": "sophie-adenot-retour-iss-2026",
+  "title": "Sophie Adenot revient sur Terre après 235 jours dans l'espace",
+  "date": "2026-10-11",
+  "category": "Technologie",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/NASA%E2%80%99s_SpaceX_Crew-12_Splashdown_(NHQ202610080008).jpg?width=1200",
+    "alt": "L'astronaute française Sophie Adenot aidée à sortir de la capsule Crew Dragon sur un bateau de récupération, après son amerrissage dans le Pacifique"
+  },
+  "vocabulary": [
+    {
+      "fr": "amerrir",
+      "es": "amerizar (aterrizar en el mar)"
+    },
+    {
+      "fr": "un séjour",
+      "es": "una estancia"
+    },
+    {
+      "fr": "battre un record",
+      "es": "batir un récord"
+    },
+    {
+      "fr": "une sortie dans l'espace",
+      "es": "una caminata espacial"
+    },
+    {
+      "fr": "garder l'équilibre",
+      "es": "mantener el equilibrio"
+    },
+    {
+      "fr": "la rééducation",
+      "es": "la rehabilitación"
+    },
+    {
+      "fr": "faire rêver",
+      "es": "hacer soñar, ilusionar"
+    },
+    {
+      "fr": "avoir envie de",
+      "es": "tener ganas de"
+    }
+  ],
+  "article": "Après 235 jours dans l'espace, Sophie Adenot est revenue sur Terre. Le jeudi 8 octobre, sa capsule Crew Dragon a amerri dans l'océan Pacifique, au large de la Californie. Elle voyageait avec deux Américains, Jessica Meir et Jack Hathaway, et un Russe, Andreï Fediaïev. Les quatre astronautes sont ensuite partis en hélicoptère vers Houston pour des examens médicaux.\n\nCette mission, appelée Epsilon, entre dans l'histoire. Sophie Adenot est seulement la deuxième Française à aller dans l'espace, après Claudie Haigneré. Elle bat aussi le record du plus long séjour d'un astronaute européen dans la Station spatiale internationale. Pendant son voyage, elle a réalisé trois sorties dans l'espace, pour un total de 19 heures et 42 minutes. Selon elle, ces sorties restent « le point culminant » de sa mission.\n\nPourtant, le retour sur Terre n'est pas simple. Après huit mois sans gravité, le corps perd du muscle et de l'os. Les astronautes ont souvent du mal à marcher et à garder l'équilibre. C'est pourquoi Sophie Adenot va suivre trois semaines de rééducation à Cologne, au centre des astronautes européens. En attendant, elle a surtout envie d'une chose simple : « une bonne galette bretonne ».\n\nCe retour pose aussi une question. Chaque mission coûte très cher, et l'Europe dépend encore des fusées américaines pour envoyer ses astronautes. Certains pensent que cet argent serait plus utile sur Terre. D'autres répondent que l'espace fait rêver les jeunes et fait avancer la science. Et vous, les vols habités valent-ils vraiment leur prix ?",
+  "dictation": {
+    "text": "Après huit mois dans l'espace, l'astronaute est enfin rentrée sur Terre. Ses trois collègues sont rentrés dans la même capsule. Son corps est très faible et elle doit réapprendre à marcher. Les médecins vont la suivre pendant plusieurs semaines. Là-haut, elle dormait dans un sac attaché au mur. Chaque jour, elle voyait seize levers de soleil. Maintenant, elle a envie de retrouver sa famille et de manger un bon repas chaud.",
+    "units": [
+      "Après huit mois dans l'espace,",
+      "l'astronaute est enfin rentrée sur Terre.",
+      "Ses trois collègues sont rentrés dans la même capsule.",
+      "Son corps est très faible",
+      "et elle doit réapprendre à marcher.",
+      "Les médecins vont la suivre pendant plusieurs semaines.",
+      "Là-haut, elle dormait dans un sac attaché au mur.",
+      "Chaque jour, elle voyait seize levers de soleil.",
+      "Maintenant, elle a envie de retrouver sa famille",
+      "et de manger un bon repas chaud."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Le retour de Sophie Adenot",
+      "prompt": "Raconte avec tes mots comment s'est passé le retour de Sophie Adenot et pourquoi sa mission est historique.",
+      "relances": [
+        "Quels records a-t-elle battus pendant sa mission ?",
+        "Pourquoi le retour sur Terre est-il difficile pour le corps ?",
+        "Que va-t-elle faire pendant ses semaines à Cologne ?",
+        "Quel détail de l'article t'a le plus surprise ?"
+      ]
+    },
+    {
+      "title": "L'espace, à quel prix",
+      "prompt": "À ton avis, qu'est-ce qui justifie, ou non, de dépenser autant d'argent pour envoyer des humains dans l'espace ?",
+      "relances": [
+        "Dans quels domaines utiliserais-tu cet argent à la place ?",
+        "Pourquoi certains disent-ils que l'espace fait avancer la science ?",
+        "Que penses-tu des robots qui remplacent les astronautes ?",
+        "Comment expliquerais-tu l'intérêt de ces missions à un enfant ?"
+      ]
+    },
+    {
+      "title": "Ce qui manque quand on part",
+      "prompt": "Raconte une période où tu es partie longtemps loin de chez toi : qu'est-ce qui t'a le plus manqué ?",
+      "relances": [
+        "Quel plat dominicain te manquerait autant qu'une galette bretonne ?",
+        "Comment gardais-tu le contact avec ta famille à ce moment-là ?",
+        "Qu'as-tu ressenti le jour où tu es rentrée chez toi ?",
+        "Qu'est-ce que ce voyage t'a appris sur toi-même ?"
+      ]
+    },
+    {
+      "title": "Tout réapprendre à Strasbourg",
+      "prompt": "Comme une astronaute qui rentre sur Terre, qu'est-ce que tu vas devoir réapprendre en arrivant à Strasbourg ?",
+      "relances": [
+        "Quelles habitudes de Saint-Domingue vas-tu garder en France ?",
+        "Comment imagines-tu tes premières semaines à Strasbourg ?",
+        "Qui pourrait jouer le rôle de ton équipe de rééducation là-bas ?",
+        "Quelle petite victoire quotidienne aimerais-tu célébrer en premier ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "ContribuableEnColere_57",
+      "comment": "235 jours là-haut, des records, des photos magnifiques… et qui paie la facture ? NOUS !!! Pendant ce temps, mon hôpital ferme des lits faute d'argent. Bravo à elle, mais il faut arrêter de nous vendre du rêve avec nos impôts. Les priorités sont sur Terre, pas en orbite.",
+      "likes": 318
+    },
+    {
+      "username": "CrepeMasterDeQuimper",
+      "comment": "Huit mois dans l'espace, trois sorties dans le vide, un record européen… et la première chose qu'elle veut c'est une galette bretonne 😂 Voilà une vraie Française. Sophie, si tu passes par Quimper, la complète œuf-jambon-fromage est pour moi, promis !",
+      "likes": 47
+    }
+  ]
+}

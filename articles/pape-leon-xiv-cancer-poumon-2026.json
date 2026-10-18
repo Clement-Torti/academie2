@@ -1,0 +1,93 @@
+{
+  "id": "pape-leon-xiv-cancer-poumon-2026",
+  "title": "Le pape Léon XIV opéré d'un cancer du poumon, déjà sorti de l'hôpital",
+  "date": "2026-10-18",
+  "category": "Santé",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pope_Leo_XIV_Waving.jpg?width=1200",
+    "alt": "Le pape Léon XIV salue la foule depuis le balcon de la basilique Saint-Pierre, entre de grands rideaux rouges"
+  },
+  "vocabulary": [
+    { "fr": "faire une annonce", "es": "hacer un anuncio" },
+    { "fr": "être opéré, être opérée", "es": "ser operado, ser operada" },
+    { "fr": "guérir", "es": "curarse, sanar" },
+    { "fr": "quitter l'hôpital", "es": "salir del hospital, recibir el alta" },
+    { "fr": "les fidèles", "es": "los fieles" },
+    { "fr": "se reposer", "es": "descansar" },
+    { "fr": "prier pour quelqu'un", "es": "rezar por alguien" },
+    { "fr": "malgré tout", "es": "a pesar de todo" }
+  ],
+  "article": "Le dimanche 11 octobre, pendant la prière de l'Angélus, le pape Léon XIV a fait une annonce inattendue. Ses médecins ont découvert un petit nodule dans son poumon droit. Deux jours plus tard, il a été opéré à l'hôpital Gemelli de Rome. L'opération a duré 90 minutes et les chirurgiens ont retiré une partie du poumon. Le Vatican a ensuite confirmé le diagnostic : c'est un cancer du poumon.\n\nLe pape a 71 ans et il ne fume pas. Pourtant, ce type de cancer est justement le plus fréquent chez les non-fumeurs. Selon les spécialistes, la maladie a été découverte très tôt. C'est une bonne nouvelle, car à ce stade, la grande majorité des patients guérissent. Les médecins attendent cependant d'autres analyses avant de décider d'un éventuel traitement.\n\nLe samedi 17 octobre, quatre jours après l'opération, Léon XIV a quitté l'hôpital. Souriant, il a salué les fidèles qui l'attendaient devant l'entrée. Il doit réciter l'Angélus ce dimanche depuis sa fenêtre. En revanche, toutes ses audiences sont annulées jusqu'au 20 octobre. Par ailleurs, le Vatican a choisi la transparence : il a publié des photos et des bulletins de santé réguliers.\n\nUne question reste ouverte : le grand voyage prévu en Uruguay, en Argentine et au Pérou, du 6 au 17 novembre. Ce voyage compte beaucoup pour ce pape né aux États-Unis, qui a longtemps vécu au Pérou. Doit-il se reposer ou partir malgré tout ? Et un dirigeant doit-il tout dire sur sa santé ?",
+  "dictation": {
+    "text": "Dimanche, ma grand-mère a regardé la messe à la télévision. Quand le pape a parlé de sa maladie, elle est restée silencieuse. Elle a appelé ses sœurs pour leur annoncer la nouvelle. Le soir, elles se sont retrouvées dans la petite église du quartier. Elles ont prié pour lui et elles ont allumé des bougies. Six jours plus tard, il est sorti de l'hôpital. Ma grand-mère était très contente et elle a pleuré de joie.",
+    "units": [
+      "Dimanche, ma grand-mère a regardé",
+      "la messe à la télévision.",
+      "Quand le pape a parlé",
+      "de sa maladie, elle est restée silencieuse.",
+      "Elle a appelé ses sœurs",
+      "pour leur annoncer la nouvelle.",
+      "Le soir, elles se sont retrouvées",
+      "dans la petite église du quartier.",
+      "Elles ont prié pour lui",
+      "et elles ont allumé des bougies.",
+      "Six jours plus tard, il est sorti de l'hôpital.",
+      "Ma grand-mère était très contente",
+      "et elle a pleuré de joie."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Ce qu'on sait",
+      "prompt": "Raconte-moi avec tes mots ce qui est arrivé au pape ces derniers jours.",
+      "relances": [
+        "Comment le pape a-t-il annoncé sa maladie aux fidèles ?",
+        "Pourquoi les médecins sont-ils plutôt optimistes, d'après l'article ?",
+        "Qu'est-ce qui t'a surprise dans cette histoire ?",
+        "Comment le Vatican a-t-il informé le public pendant l'hospitalisation ?"
+      ]
+    },
+    {
+      "title": "Partir ou se reposer",
+      "prompt": "Que devrait faire le pape avec son grand voyage en Amérique du Sud, et pourquoi ?",
+      "relances": [
+        "Quels risques vois-tu s'il part malgré tout en novembre ?",
+        "Que perdraient les fidèles d'Argentine ou du Pérou s'il annulait ?",
+        "Jusqu'où une personnalité publique doit-elle parler de sa santé ?",
+        "Que ferais-tu à sa place, si ton travail comptait autant pour toi ?"
+      ]
+    },
+    {
+      "title": "La foi à Saint-Domingue",
+      "prompt": "Quelle place la religion occupe-t-elle dans ta famille et dans ton quartier à Saint-Domingue ?",
+      "relances": [
+        "Comment ta famille fête-t-elle la Semaine sainte ou Noël ?",
+        "Que se passe-t-il chez vous le jour de la Altagracia ?",
+        "Quelle personne de ta famille est la plus pratiquante, et comment ça se voit ?",
+        "Comment les jeunes Dominicains parlent-ils de religion sur TikTok ?"
+      ]
+    },
+    {
+      "title": "Se soigner à Strasbourg",
+      "prompt": "Comment imagines-tu le système de santé en France, comparé à celui de la République dominicaine ?",
+      "relances": [
+        "Qu'est-ce que tu sais déjà sur la carte Vitale ou le médecin traitant ?",
+        "Quelles démarches de santé veux-tu faire en premier à Strasbourg ?",
+        "Comment vas-tu expliquer un problème de santé à un médecin en français ?",
+        "Quels mots de vocabulaire médical aimerais-tu apprendre avant de partir ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "PatientDepuisSixMois",
+      "comment": "Opéré deux jours après l'annonce, sorti en quatre jours, des bulletins de santé tous les matins… Moi j'attends un rendez-vous chez le pneumologue depuis SIX MOIS !!! Je lui souhaite de guérir, évidemment, mais arrêtez de nous faire croire que c'est un patient comme les autres.",
+      "likes": 412
+    },
+    {
+      "username": "FilleDeJeannot_44",
+      "comment": "Mon père a eu exactement la même opération il y a trois ans, le lobe du poumon droit lui aussi. Le chirurgien nous avait dit : « on l'a pris tôt, c'est le plus important ». Aujourd'hui il refait du vélo tous les dimanches et il râle toujours autant 😄 Courage au pape !",
+      "likes": 87
+    }
+  ]
+}

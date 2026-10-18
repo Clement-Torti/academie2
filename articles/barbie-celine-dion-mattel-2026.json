@@ -1,0 +1,113 @@
+{
+  "id": "barbie-celine-dion-mattel-2026",
+  "title": "Céline Dion a sa Barbie, habillée comme aux Oscars de 1998",
+  "date": "2026-10-18",
+  "category": "Culture",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Celine_Dion_Live_2017.jpg?width=1200",
+    "alt": "Céline Dion qui chante sur scène pendant un concert en 2017"
+  },
+  "vocabulary": [
+    {
+      "fr": "à l'effigie de",
+      "es": "con la imagen de, inspirado en"
+    },
+    {
+      "fr": "une tenue",
+      "es": "un atuendo, un look"
+    },
+    {
+      "fr": "faire partie de",
+      "es": "formar parte de"
+    },
+    {
+      "fr": "ressembler à",
+      "es": "parecerse a"
+    },
+    {
+      "fr": "être touché(e)",
+      "es": "estar conmovido(a), emocionado(a)"
+    },
+    {
+      "fr": "remonter sur scène",
+      "es": "volver a subirse al escenario"
+    },
+    {
+      "fr": "afficher complet",
+      "es": "agotar las entradas, colgar el cartel de lleno"
+    },
+    {
+      "fr": "un coup commercial",
+      "es": "una jugada comercial, una estrategia de marketing"
+    }
+  ],
+  "article": "Céline Dion a désormais sa propre Barbie. Le mercredi 14 octobre, le fabricant de jouets Mattel a présenté une poupée à l'effigie de la chanteuse québécoise. Elle porte une longue robe bleu marine, inspirée de sa tenue aux Oscars de 1998. Ce soir-là, la star avait chanté « My Heart Will Go On », la chanson du film Titanic. Elle porte aussi une copie du « Cœur de l'océan », le célèbre collier bleu du film.\n\nLa poupée fait partie de la collection Barbie Signature, qui vise surtout les collectionneurs. Avant elle, Whitney Houston, Kylie Minogue et Cher ont déjà reçu cet honneur. Mattel a créé un nouveau visage pour elle, avec un sourire discret. En France, elle coûte 77,99 euros et elle est en vente depuis le 15 octobre. La chanteuse s'est dite très touchée. Elle espère que cette poupée va encourager chacun à affirmer sa personnalité avec confiance.\n\nPourtant, tout le monde n'est pas convaincu. Sur les réseaux sociaux, certains fans trouvent que la poupée ne ressemble pas vraiment à leur idole. D'autres, au contraire, la trouvent très fidèle et disent qu'il était temps.\n\nCette sortie arrive à un moment particulier. Après plusieurs années loin des concerts à cause d'une maladie rare, Céline Dion est remontée sur scène en septembre, près de Paris. Ses seize concerts de 2026 ont affiché complet en quelques heures. Alors, cette Barbie est-elle un vrai hommage à une artiste courageuse, ou surtout un bon coup commercial pour Mattel ?",
+  "dictation": {
+    "text": "Ma tante adore cette chanteuse depuis qu'elle est petite. Hier, elle a commandé la nouvelle poupée sur internet. Elle a payé assez cher, mais elle est très contente de son achat. Elle va la poser dans le salon, à côté de ses vieux disques. Ma cousine a ri quand elle a vu la photo. Pour elle, les poupées sont pour les enfants. Ma tante a répondu que les rêves n'ont pas d'âge.",
+    "units": [
+      "Ma tante adore cette chanteuse depuis qu'elle est petite.",
+      "Hier, elle a commandé la nouvelle poupée sur internet.",
+      "Elle a payé assez cher,",
+      "mais elle est très contente de son achat.",
+      "Elle va la poser dans le salon,",
+      "à côté de ses vieux disques.",
+      "Ma cousine a ri quand elle a vu la photo.",
+      "Pour elle, les poupées sont pour les enfants.",
+      "Ma tante a répondu que les rêves n'ont pas d'âge."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "La Barbie de Céline Dion",
+      "prompt": "Raconte-moi avec tes mots ce que Mattel a présenté cette semaine et pourquoi on en parle.",
+      "relances": [
+        "À quoi ressemble exactement cette poupée ?",
+        "Pourquoi Mattel a-t-il choisi la tenue des Oscars de 1998 ?",
+        "Comment les fans ont-ils réagi sur les réseaux sociaux ?",
+        "Pourquoi cette sortie arrive-t-elle à un moment particulier pour la chanteuse ?"
+      ]
+    },
+    {
+      "title": "Hommage ou coup commercial",
+      "prompt": "D'après toi, cette poupée est-elle un vrai hommage ou surtout une façon de vendre plus ?",
+      "relances": [
+        "Pourquoi un adulte paierait-il presque quatre-vingts euros pour une poupée ?",
+        "Quelle star mériterait sa Barbie selon toi, et pourquoi ?",
+        "Comment expliques-tu le succès de Barbie depuis si longtemps ?",
+        "Que répondrais-tu au commentaire énervé sous l'article ?"
+      ]
+    },
+    {
+      "title": "Tes jouets d'enfance",
+      "prompt": "Raconte-moi les jouets et les chansons qui ont marqué ton enfance à Saint-Domingue.",
+      "relances": [
+        "Quel était ton jouet préféré, et qui te l'avait offert ?",
+        "Quelle chanson te rappelle immédiatement ta famille ?",
+        "Qu'est-ce que tu gardes encore aujourd'hui de ton enfance ?",
+        "Comment les enfants de ta famille jouent-ils aujourd'hui, par rapport à toi ?"
+      ]
+    },
+    {
+      "title": "Musique et nouvelle vie",
+      "prompt": "Quelle place la musique va-t-elle avoir dans ta nouvelle vie à Strasbourg ?",
+      "relances": [
+        "Quel concert aimerais-tu voir en premier en France ?",
+        "Quels chanteurs français écoutes-tu pour progresser en français ?",
+        "Comment ferais-tu découvrir la bachata ou le merengue à tes futurs collègues ?",
+        "Quelle campagne de mercadeo imaginerais-tu pour lancer cette Barbie en France ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "CoeurDeLOcean_Pas_Dupe",
+      "comment": "Franchement, elle ne lui ressemble PAS DU TOUT !!! On dirait une Barbie normale avec une perruque. Et 78 euros pour du plastique… Mattel profite du retour de Céline pour vider le portefeuille des fans. Un vrai hommage, c'est aller à ses concerts, pas acheter un jouet.",
+      "likes": 387
+    },
+    {
+      "username": "MonChatSappelleRene",
+      "comment": "J'ai commandé la poupée et mon chat s'est assis devant la boîte pendant une heure, sans bouger. Je pense qu'il attend qu'elle chante. Mon voisin dit que c'est juste la couleur bleue qui l'hypnotise. Moi, je dis que mon chat a du goût 😂 My heart will go oooon…",
+      "likes": 54
+    }
+  ]
+}

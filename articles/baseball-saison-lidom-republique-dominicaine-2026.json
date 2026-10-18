@@ -1,0 +1,112 @@
+{
+  "id": "baseball-saison-lidom-republique-dominicaine-2026",
+  "title": "La pelota est de retour : le Licey écrase l'Escogido pour le premier match",
+  "date": "2026-10-18",
+  "category": "Sport",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Estadio_quisqueya_santo_domingo_dominican_republic_1.jpg?width=1200",
+    "alt": "Les tribunes pleines du stade Quisqueya, à Saint-Domingue, pendant un match de baseball"
+  },
+  "vocabulary": [
+    {
+      "fr": "écraser (un adversaire)",
+      "es": "aplastar, arrollar (a un rival)"
+    },
+    {
+      "fr": "un coup de circuit",
+      "es": "un jonrón, un cuadrangular"
+    },
+    {
+      "fr": "l'arbitre",
+      "es": "el árbitro"
+    },
+    {
+      "fr": "contester une décision",
+      "es": "impugnar, protestar una decisión"
+    },
+    {
+      "fr": "faire débat",
+      "es": "generar polémica, dar de qué hablar"
+    },
+    {
+      "fr": "un supporter",
+      "es": "un fanático, un aficionado"
+    },
+    {
+      "fr": "consécutif, consécutive",
+      "es": "consecutivo, seguido"
+    }
+  ],
+  "article": "Le vendredi 16 octobre, la saison de baseball a repris en République dominicaine. Là-bas, on l'appelle simplement « la pelota ». Comme chaque automne, les six équipes de la ligue d'hiver se retrouvent pour trois mois de compétition. Le premier soir, le stade Quisqueya de Saint-Domingue accueillait le grand classique entre le Licey et l'Escogido. Les Tigres du Licey ont écrasé leurs rivaux 12 à 2. Le jeune Jesús Madé a frappé un coup de circuit dès son premier passage à la batte.\n\nAilleurs dans le pays, les Estrellas Orientales ont battu les Toros del Este 11 à 0. Les Gigantes del Cibao ont gagné 4 à 1 contre les Águilas Cibaeñas. La saison régulière durera jusqu'au 22 décembre. Ensuite, les meilleures équipes joueront un mini-championnat, puis une finale en janvier. Le vainqueur représentera le pays à la Série des Caraïbes.\n\nCette année, la ligue teste une nouveauté qui fait débat : une machine qui aide l'arbitre à juger les balles et les prises. Les équipes peuvent contester une décision, et la machine donne la réponse. Pour certains, c'est plus juste. Pour d'autres, le baseball perd une partie de son charme et de ses disputes.\n\nLa pression est forte sur l'Escogido, champion des deux dernières saisons. Ses supporters rêvent d'un troisième titre consécutif. Mais après une telle défaite, beaucoup se demandent si l'équipe rouge a encore les moyens de ses ambitions. Une chose est sûre : jusqu'en janvier, la pelota sera au centre de toutes les conversations.",
+  "dictation": {
+    "text": "Vendredi soir, ma sœur et moi sommes allées au stade avec nos cousins. Il y avait beaucoup de monde et la musique était forte. Nos voisins ont apporté des tambours et ils ont chanté tout le match. Mon équipe préférée a gagné, alors nous sommes rentrées tard à la maison. Ce soir, je vais regarder le match à la télévision avec mon père. Pour lui, c'est la saison où tout le pays se retrouve.",
+    "units": [
+      "Vendredi soir, ma sœur et moi sommes allées",
+      "au stade avec nos cousins.",
+      "Il y avait beaucoup de monde",
+      "et la musique était forte.",
+      "Nos voisins ont apporté des tambours",
+      "et ils ont chanté tout le match.",
+      "Mon équipe préférée a gagné,",
+      "alors nous sommes rentrées tard à la maison.",
+      "Ce soir, je vais regarder le match",
+      "à la télévision avec mon père.",
+      "Pour lui, c'est la saison",
+      "où tout le pays se retrouve."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Le premier soir de pelota",
+      "prompt": "Raconte-moi avec tes mots comment s'est passé le début de la saison de baseball.",
+      "relances": [
+        "Quelle équipe a gagné le grand classique, et comment ?",
+        "Qu'est-ce qui va se passer entre décembre et janvier ?",
+        "Quelle est la nouveauté de cette saison, d'après l'article ?",
+        "Pourquoi l'Escogido est-il sous pression cette année ?"
+      ]
+    },
+    {
+      "title": "La machine contre l'arbitre",
+      "prompt": "Que penses-tu de la machine qui aide l'arbitre à juger les balles et les prises ?",
+      "relances": [
+        "Dans quels autres sports la technologie a-t-elle changé les règles ?",
+        "Qu'est-ce qu'on perd quand une machine remplace un humain ?",
+        "Comment réagiraient les supporters dominicains à une grosse erreur de l'arbitre ?",
+        "Si tu dirigeais la ligue, quelle règle changerais-tu ?"
+      ]
+    },
+    {
+      "title": "Mes souvenirs au stade",
+      "prompt": "Raconte-moi un match ou une fête sportive qui t'a marquée à Saint-Domingue.",
+      "relances": [
+        "Avec qui y es-tu allée, et qu'avez-vous mangé ?",
+        "Pour quelle équipe est-ce que ta famille est supporter, et pourquoi ?",
+        "Comment est l'ambiance dans les tribunes quand le Licey joue contre l'Escogido ?",
+        "Comment est-ce que tu expliquerais la pelota à quelqu'un qui ne la connaît pas ?"
+      ]
+    },
+    {
+      "title": "Du baseball au football",
+      "prompt": "À ton avis, comment est-ce que tu vas vivre le sport une fois installée à Strasbourg ?",
+      "relances": [
+        "Quel sport tu aimerais découvrir en France, et pourquoi ?",
+        "Comment ferais-tu pour suivre la pelota depuis la France ?",
+        "Quelles différences imagines-tu entre un stade français et un stade dominicain ?",
+        "Comment le sport peut-il t'aider à te faire des amis en France ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "EscogidoHastaLaMuerte_27",
+      "comment": "12 à 2 contre le Licey, et en plus le premier soir... C'est une HONTE !!! On est double champion et on joue comme une équipe de quartier. Et cette machine pour les prises, franchement, c'est n'importe quoi, le baseball sans dispute avec l'arbitre c'est plus du baseball !",
+      "likes": 214
+    },
+    {
+      "username": "TatieDeLaRomana",
+      "comment": "Moi j'étais au stade Micheli pour Estrellas contre Toros. Mon voisin de tribune a promis de manger sa casquette si les Toros perdaient. 11 à 0... Il l'a pas mangée, mais il est parti avant la fin avec la casquette dans la poche 😂",
+      "likes": 47
+    }
+  ]
+}

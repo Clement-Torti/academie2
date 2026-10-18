@@ -1,0 +1,91 @@
+{
+  "id": "taylor-swift-record-mtv-vma-2026",
+  "title": "Taylor Swift dépasse Beyoncé et devient la reine des MTV Awards",
+  "date": "2026-10-18",
+  "category": "Culture",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Taylor_Swift_Eras_Tour_London_20240819_1989era.jpg?width=1200",
+    "alt": "Taylor Swift qui chante sur scène pendant un concert de sa tournée à Londres"
+  },
+  "vocabulary": [
+    { "fr": "être à égalité avec", "es": "estar empatado con" },
+    { "fr": "dépasser quelqu'un", "es": "superar a alguien" },
+    { "fr": "une statuette", "es": "una estatuilla, un trofeo" },
+    { "fr": "dédier un prix à", "es": "dedicar un premio a" },
+    { "fr": "dévoiler", "es": "revelar, presentar por primera vez" },
+    { "fr": "un tournage", "es": "un rodaje, una grabación" },
+    { "fr": "le palmarès", "es": "la lista de ganadores" },
+    { "fr": "faire débat", "es": "generar polémica, dar que hablar" }
+  ],
+  "article": "Taylor Swift entre encore une fois dans l'histoire de la musique. Le dimanche 27 septembre, à Los Angeles, elle est devenue l'artiste la plus récompensée des MTV Video Music Awards. Avant la cérémonie, elle était à égalité avec Beyoncé, avec trente statuettes chacune. Ce soir-là, elle a dépassé sa rivale et elle possède désormais plus de trente prix.\n\nLa chanteuse américaine a d'abord reçu un tout nouveau prix, qui récompense les artistes qui réalisent eux-mêmes leurs clips. En effet, Taylor Swift ne se contente pas de chanter : elle écrit ses histoires et elle dirige les tournages. Elle a aussi remporté le prix le plus important, la vidéo de l'année, pour « The Fate of Ophelia ». Elle l'a dédié à Dolly Parton, la légende de la musique country disparue récemment. Juste après, elle a dévoilé son nouveau clip, « Patient Zero », avec les acteurs Colin Farrell et Dakota Johnson.\n\nPourtant, Taylor Swift n'était pas la seule star de la soirée. Madonna a reçu le prix d'artiste de l'année. Le groupe Nirvana a obtenu un prix pour l'ensemble de sa carrière. Les femmes ont d'ailleurs dominé le palmarès.\n\nCe record impressionne, mais il fait aussi débat. Pour ses fans, il prouve un talent unique et un travail énorme. Pour d'autres, ces prix récompensent surtout la popularité et la puissance commerciale de la chanteuse. Alors, ces trophées sont-ils la preuve d'un vrai génie artistique, ou simplement le reflet d'une machine à succès ?",
+  "dictation": {
+    "text": "Ma petite sœur est fan de cette chanteuse depuis l'école. Dimanche soir, elle est restée devant la télévision jusqu'à minuit. Quand son idole a gagné, elle a crié de joie dans tout l'appartement. Mes parents se sont réveillés et ils sont venus voir. Ils n'ont pas compris pourquoi elle pleurait. Ce matin, elle a regardé le nouveau clip au moins dix fois. Elle va bientôt acheter des places pour un concert.",
+    "units": [
+      "Ma petite sœur est fan de cette chanteuse depuis l'école.",
+      "Dimanche soir, elle est restée",
+      "devant la télévision jusqu'à minuit.",
+      "Quand son idole a gagné,",
+      "elle a crié de joie dans tout l'appartement.",
+      "Mes parents se sont réveillés",
+      "et ils sont venus voir.",
+      "Ils n'ont pas compris pourquoi elle pleurait.",
+      "Ce matin, elle a regardé",
+      "le nouveau clip au moins dix fois.",
+      "Elle va bientôt acheter des places pour un concert."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Le record de Taylor Swift",
+      "prompt": "Raconte-moi avec tes mots ce qui s'est passé pour Taylor Swift aux MTV Awards.",
+      "relances": [
+        "Quels prix a-t-elle reçus pendant cette soirée ?",
+        "Pourquoi a-t-elle dédié son prix à Dolly Parton ?",
+        "Que sais-tu de son nouveau clip et de ses acteurs ?",
+        "Quelles autres stars ont été récompensées ce soir-là ?"
+      ]
+    },
+    {
+      "title": "Talent ou machine commerciale",
+      "prompt": "Selon toi, ce record récompense-t-il surtout le talent de Taylor Swift ou sa popularité ?",
+      "relances": [
+        "Comment expliques-tu qu'une chanteuse ait autant de succès si longtemps ?",
+        "Quel artiste mériterait plus de prix, d'après toi ?",
+        "À quoi servent vraiment les cérémonies de récompenses selon toi ?",
+        "Que répondrais-tu au commentaire énervé sous l'article ?"
+      ]
+    },
+    {
+      "title": "Tes souvenirs de fan",
+      "prompt": "Raconte-moi un artiste ou une série dont tu as été vraiment fan, et pourquoi.",
+      "relances": [
+        "Comment as-tu découvert cet artiste ou cette série ?",
+        "Qu'est-ce que tu as fait de plus fou en tant que fan ?",
+        "Comment ta famille réagissait-elle à ta passion ?",
+        "Quels artistes dominicains rendent ta famille fière aujourd'hui ?"
+      ]
+    },
+    {
+      "title": "Musique, mercadeo et France",
+      "prompt": "Que pourrait t'apprendre la stratégie de Taylor Swift pour ta future carrière en mercadeo en France ?",
+      "relances": [
+        "Comment Taylor Swift utilise-t-elle TikTok et les réseaux pour parler à ses fans ?",
+        "Quelle campagne imaginerais-tu pour lancer un concert à Strasbourg ?",
+        "Quelles différences vois-tu entre les fans dominicains et les fans français ?",
+        "Comment présenterais-tu une star dominicaine à un public français ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "VraieMusique_Avant2010",
+      "comment": "Franchement, ce record ne veut RIEN dire !!! MTV invente un nouveau prix juste pour elle et hop, elle dépasse Beyoncé. C'est du marketing, pas de la musique. Beyoncé a une voix incroyable, elle danse, elle fait des vrais spectacles. Arrêtez de tout donner à la même personne !",
+      "likes": 412
+    },
+    {
+      "username": "Swiftie_DeStrasbourg67",
+      "comment": "J'ai vu sa tournée à Lyon en 2024 avec ma fille de douze ans. Trois heures et demie de concert, pas une seule pause, quarante chansons... On est sorties avec la voix cassée et les yeux pleins d'étoiles. Alors le record, honnêtement, il ne m'étonne pas du tout ❤️",
+      "likes": 87
+    }
+  ]
+}

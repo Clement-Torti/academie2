@@ -1,0 +1,114 @@
+{
+  "id": "greta-thunberg-lyceens-france-2026",
+  "title": "Greta Thunberg à Saint-Denis pour soutenir les lycéens en colère",
+  "date": "2026-10-18",
+  "category": "Société",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Greta_Thunberg_2024.jpg?width=1200",
+    "alt": "La militante suédoise Greta Thunberg lors d'une manifestation à Stockholm en 2024"
+  },
+  "vocabulary": [
+    {
+      "fr": "soutenir",
+      "es": "apoyar"
+    },
+    {
+      "fr": "un lycéen, une lycéenne",
+      "es": "un estudiante de bachillerato, una estudiante de bachillerato"
+    },
+    {
+      "fr": "manifester",
+      "es": "manifestarse, protestar"
+    },
+    {
+      "fr": "en mauvais état",
+      "es": "en mal estado"
+    },
+    {
+      "fr": "une classe trop chargée",
+      "es": "un aula con demasiados alumnos"
+    },
+    {
+      "fr": "remplacer quelqu'un",
+      "es": "sustituir a alguien"
+    },
+    {
+      "fr": "se plaindre de",
+      "es": "quejarse de"
+    },
+    {
+      "fr": "l'avenir",
+      "es": "el futuro"
+    }
+  ],
+  "article": "Le mardi 13 octobre, la militante suédoise Greta Thunberg est venue soutenir les lycéens français. Elle s'est rendue devant le lycée Paul-Éluard, à Saint-Denis, au nord de Paris. Cet établissement est l'un des centres de la mobilisation. « Je suis extrêmement fière des élèves français », a-t-elle déclaré. Le même jour, 480 000 personnes ont manifesté dans toute la France, selon les syndicats de jeunes.\n\nLe mouvement a commencé le 17 septembre en région parisienne. Les élèves dénoncent des bâtiments en mauvais état et des classes trop chargées. Ils se plaignent aussi des professeurs absents qui ne sont pas remplacés. Ils demandent donc un plan de 10 milliards d'euros pour les lycées. Le gouvernement a promis 3 000 enseignants remplaçants. Pourtant, les jeunes trouvent cette réponse insuffisante.\n\nLa mobilisation est aussi marquée par la violence. La police a utilisé des gaz lacrymogènes. Plus de 6 800 personnes, surtout des mineurs, ont été arrêtées. Greta Thunberg parle d'une réponse « extrêmement violente ». À Saint-Denis, des avocats en robe ont même formé une chaîne humaine pour protéger les adolescents. « On nous vole notre avenir », a ajouté la militante.\n\nEmmanuel Macron demande du calme et du temps pour discuter. Mais l'État doit aussi faire des économies, car sa dette est très élevée. Une question divise donc les Français. Une star étrangère a-t-elle sa place dans un débat national ? Ou bien sa présence aide-t-elle enfin les jeunes à être écoutés ?",
+  "dictation": {
+    "text": "Ce matin, ma sœur est partie au lycée avec ses deux meilleures amies. Elles ne sont pas entrées en classe. Elles se sont assises devant la porte avec leurs pancartes. Dans leur salle, il fait froid en hiver, et le plafond a des taches d'eau. Leur professeur de mathématiques est absent depuis trois semaines, mais personne ne le remplace. Ce soir, elles vont écrire une lettre au maire et elles espèrent une réponse rapide.",
+    "units": [
+      "Ce matin, ma sœur est partie au lycée",
+      "avec ses deux meilleures amies.",
+      "Elles ne sont pas entrées en classe.",
+      "Elles se sont assises devant la porte avec leurs pancartes.",
+      "Dans leur salle, il fait froid en hiver,",
+      "et le plafond a des taches d'eau.",
+      "Leur professeur de mathématiques est absent depuis trois semaines,",
+      "mais personne ne le remplace.",
+      "Ce soir, elles vont écrire une lettre au maire",
+      "et elles espèrent une réponse rapide."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Raconte l'actualité",
+      "prompt": "Explique-moi avec tes mots pourquoi les lycéens français manifestent et ce que Greta Thunberg est venue faire.",
+      "relances": [
+        "Quels problèmes les élèves dénoncent-ils exactement dans leurs lycées ?",
+        "Comment le gouvernement a-t-il répondu à leurs demandes ?",
+        "Qu'est-ce qui s'est passé avec la police pendant les manifestations ?",
+        "Quel détail de l'article t'a le plus surprise, et pourquoi ?"
+      ]
+    },
+    {
+      "title": "Une star dans la rue",
+      "prompt": "Qu'est-ce que tu penses d'une célébrité étrangère qui vient soutenir une manifestation dans un autre pays ?",
+      "relances": [
+        "Selon toi, sa présence aide les lycéens ou leur vole la vedette ?",
+        "Quelle célébrité aimerais-tu voir défendre une cause qui te tient à cœur ?",
+        "À partir de quel âge peut-on manifester de façon sérieuse, d'après toi ?",
+        "Comment réagirais-tu si une star venait dans ton quartier pour une cause ?"
+      ]
+    },
+    {
+      "title": "Mes années de lycée",
+      "prompt": "Raconte-moi comment se passaient tes années de lycée et d'université à Saint-Domingue.",
+      "relances": [
+        "Comment étaient les bâtiments et les salles de classe dans ton école ?",
+        "Quel professeur t'a le plus marquée, et pour quelle raison ?",
+        "Qu'est-ce que tu changerais dans tes cours du soir à l'université ?",
+        "Raconte-moi une fois où les élèves ont protesté contre quelque chose."
+      ]
+    },
+    {
+      "title": "L'école en France",
+      "prompt": "Comment imagines-tu l'école française si un jour tu as des enfants à Strasbourg ?",
+      "relances": [
+        "Quelles différences tu vois entre les lycées français et dominicains ?",
+        "Qu'est-ce qui te plaît dans le fait que les élèves français osent manifester ?",
+        "Comment tu pourrais découvrir le système scolaire français avant d'avoir des enfants ?",
+        "Que voudrais-tu transmettre de l'école dominicaine à tes futurs enfants ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "PapaDeTroisLyceens",
+      "comment": "Franchement ça m'ÉNERVE !!! Greta vient faire sa photo devant un lycée de Saint-Denis et elle repart en Suède le soir même. Nos gamins ont besoin de profs et de plafonds qui ne fuient pas, pas d'une influenceuse qui récupère leur colère pour sa pub. Laissez les jeunes français parler eux-mêmes !",
+      "likes": 412
+    },
+    {
+      "username": "Manon_Prof_Hist93",
+      "comment": "Je travaille à deux rues de Paul-Éluard. Mardi matin, une élève de seconde m'a dit : « Madame, Greta était là, mais moi j'ai toujours pas de prof de maths depuis septembre. » Elle a raison. Mais je l'ai rarement vue aussi fière de son lycée 😊",
+      "likes": 67
+    }
+  ]
+}

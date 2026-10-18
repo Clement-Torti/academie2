@@ -1,0 +1,113 @@
+{
+  "id": "tesla-roadster-voiture-volante-2026",
+  "title": "Tesla présente le Roadster, une voiture électrique qui peut voler",
+  "date": "2026-10-18",
+  "category": "Technologie",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tesla_roadster_2020_prototype_(cropped).jpg?width=1200",
+    "alt": "Le prototype rouge du Tesla Roadster de deuxième génération, une voiture de sport électrique"
+  },
+  "vocabulary": [
+    {
+      "fr": "s'envoler",
+      "es": "despegar, alzar el vuelo"
+    },
+    {
+      "fr": "à l'envers",
+      "es": "al revés, boca abajo"
+    },
+    {
+      "fr": "atterrir",
+      "es": "aterrizar"
+    },
+    {
+      "fr": "un acompte",
+      "es": "un anticipo, una seña"
+    },
+    {
+      "fr": "avoir du retard",
+      "es": "tener retraso, estar atrasado"
+    },
+    {
+      "fr": "avoir le droit de",
+      "es": "tener derecho a, estar permitido"
+    },
+    {
+      "fr": "faire parler de",
+      "es": "dar que hablar de"
+    },
+    {
+      "fr": "soigner son image",
+      "es": "cuidar su imagen"
+    }
+  ],
+  "article": "Le jeudi 15 octobre, au Texas, Elon Musk a enfin présenté le nouveau Tesla Roadster. Devant le public, la voiture électrique est montée sur une rampe courbe. Elle a roulé à l'envers, la tête en bas, puis elle s'est envolée. Elle a fait un tour complet en l'air avant d'atterrir sur ses roues. « Eh bien, ça a marché », a simplement dit Musk.\n\nPour réaliser ces figures, Tesla utilise une technologie qui vient de SpaceX. La voiture possède des réservoirs d'air à très haute pression et dix petits propulseurs. Sous la voiture, un système d'aspiration la colle à la route, même à l'envers. Selon Tesla, elle passe de 0 à 97 km/h en moins d'une seconde.\n\nLe Roadster existera en trois versions. Seule la version Rocket pourra vraiment voler, et elle sera vendue uniquement sur invitation. Le prix reste secret, mais on peut déjà réserver la version classique avec un acompte de 5 000 dollars. La production doit commencer en 2028. Pourtant, Musk promettait déjà cette voiture pour 2020 : le projet a donc beaucoup de retard.\n\nBeaucoup de questions restent sans réponse. La version volante n'a pas le droit de rouler sur la voie publique. Par ailleurs, l'agence américaine de l'aviation explique que ce véhicule n'est pas un avion. Personne ne sait donc qui va le contrôler. Pour un analyste de Wall Street, cette voiture ne changera pas les ventes de Tesla, mais elle va soigner son image. Alors, vraie révolution ou simple spectacle pour faire parler de la marque ?",
+  "dictation": {
+    "text": "Jeudi soir, des centaines de personnes sont venues voir la nouvelle voiture. Elles ont attendu longtemps sous le soleil. Puis la petite voiture est montée sur une grande rampe. Elle a roulé à l'envers et elle s'est envolée. Les spectateurs ont crié très fort. Ma voisine a filmé toute la scène avec son téléphone. Elle va montrer la vidéo à ses amis. Mais on ne peut pas encore acheter cette voiture.",
+    "units": [
+      "Jeudi soir, des centaines de personnes",
+      "sont venues voir la nouvelle voiture.",
+      "Elles ont attendu longtemps sous le soleil.",
+      "Puis la petite voiture est montée sur une grande rampe.",
+      "Elle a roulé à l'envers et elle s'est envolée.",
+      "Les spectateurs ont crié très fort.",
+      "Ma voisine a filmé toute la scène avec son téléphone.",
+      "Elle va montrer la vidéo à ses amis.",
+      "Mais on ne peut pas encore acheter cette voiture."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "La démonstration du Roadster",
+      "prompt": "Raconte-moi avec tes mots ce qui s'est passé pendant la présentation du nouveau Roadster.",
+      "relances": [
+        "Qu'est-ce que la voiture a fait exactement sur la rampe ?",
+        "Comment Tesla arrive-t-elle à faire voler cette voiture ?",
+        "Pourquoi parle-t-on d'un énorme retard pour ce modèle ?",
+        "Quelles questions restent encore sans réponse aujourd'hui ?"
+      ]
+    },
+    {
+      "title": "Révolution ou spectacle",
+      "prompt": "D'après toi, cette voiture volante est-elle une vraie révolution ou seulement un coup de publicité ?",
+      "relances": [
+        "Pourquoi les entreprises font-elles des présentations aussi spectaculaires ?",
+        "Qu'est-ce qui pourrait mal se passer avec des voitures volantes en ville ?",
+        "Comment expliques-tu qu'Elon Musk fasse autant parler de lui ?",
+        "Que répondrais-tu au commentaire énervé sous l'article ?"
+      ]
+    },
+    {
+      "title": "Toi et la voiture",
+      "prompt": "Raconte-moi comment tu te déplaces à Saint-Domingue et ce que tu penses de la circulation là-bas.",
+      "relances": [
+        "Quel est le pire embouteillage que tu as connu ?",
+        "Quelle voiture rêvais-tu d'avoir quand tu étais petite ?",
+        "Comment ta famille se déplace-t-elle au quotidien ?",
+        "Quel est ton meilleur souvenir de voyage en voiture ?"
+      ]
+    },
+    {
+      "title": "Se déplacer à Strasbourg",
+      "prompt": "Comment imagines-tu tes déplacements à Strasbourg, et qu'est-ce qui va changer par rapport à Saint-Domingue ?",
+      "relances": [
+        "Qu'est-ce qui te tente le plus : le tram, le vélo ou la voiture ?",
+        "Comment les transports vont-ils compter dans ta recherche d'emploi ?",
+        "À quoi ressembleront les transports en ville dans vingt ans ?",
+        "Quelle campagne de mercadeo inventerais-tu pour vendre ce Roadster ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "PasDupe_Lyonnais",
+      "comment": "Une voiture qui vole mais qui n'a même pas le droit de rouler sur la route… BRAVO le génie !!! Ça fait presque dix ans qu'on attend ce Roadster et on nous sert un numéro de cirque. Arrêtez d'applaudir, c'est juste de la pub hors de prix pour faire oublier les retards.",
+      "likes": 412
+    },
+    {
+      "username": "PapaRoadster2018",
+      "comment": "J'ai versé un acompte pour le Roadster en 2018. Depuis, ma fille a eu le temps de grandir et de passer son permis ! Hier soir, on a regardé la démo ensemble. Elle m'a dit : « Papa, ta voiture sait voler, mais elle n'existe toujours pas. » Elle n'a pas tort…",
+      "likes": 63
+    }
+  ]
+}

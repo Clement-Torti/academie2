@@ -1,0 +1,114 @@
+{
+  "id": "manifestations-17-octobre-destructions-2026",
+  "title": "17 octobre : mairie brûlée, magasins pillés, la mobilisation tourne au chaos",
+  "date": "2026-10-18",
+  "category": "Société",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Limoges_Mairie.jpg?width=1200",
+    "alt": "L'hôtel de ville de Limoges et son campanile, avant l'incendie du 17 octobre 2026"
+  },
+  "vocabulary": [
+    {
+      "fr": "mettre le feu à",
+      "es": "prender fuego a, incendiar"
+    },
+    {
+      "fr": "un casseur, une casseuse",
+      "es": "un vándalo, una vándala (en una manifestación)"
+    },
+    {
+      "fr": "piller un magasin",
+      "es": "saquear una tienda"
+    },
+    {
+      "fr": "s'effondrer",
+      "es": "derrumbarse"
+    },
+    {
+      "fr": "les forces de l'ordre",
+      "es": "las fuerzas del orden"
+    },
+    {
+      "fr": "une interpellation",
+      "es": "una detención"
+    },
+    {
+      "fr": "la vie chère",
+      "es": "el alto costo de la vida"
+    },
+    {
+      "fr": "le droit de manifester",
+      "es": "el derecho a manifestarse"
+    }
+  ],
+  "article": "Le samedi 17 octobre, environ 550 000 personnes ont manifesté dans toute la France, selon le ministère de l'Intérieur. L'appel est parti de TikTok en septembre. Lycéens, étudiants, syndicats et gilets jaunes protestaient contre la vie chère et pour de meilleures conditions d'études. Mais dans plusieurs villes, la journée a fini dans la violence.\n\nÀ Limoges, des manifestants ont mis le feu à l'hôtel de ville, inauguré en 1883. Son campanile, le symbole de la ville, s'est effondré dans la soirée. À Lyon, l'office de tourisme a brûlé. À Bordeaux, des casseurs sont entrés dans la résidence du préfet. Des magasins ont aussi été pillés à Marseille, Rouen et Nancy.\n\nLe lendemain, le ministre de l'Intérieur, Laurent Nuñez, a annoncé 1 800 interpellations. Il compte aussi 500 blessés chez les policiers, les gendarmes et les pompiers. Un manifestant est mort d'un malaise à Paris. À Saint-Étienne, un adolescent de 17 ans a perdu une main à cause d'une grenade. Le Premier ministre, Sébastien Lecornu, accuse des groupes d'ultragauche. En revanche, la gauche critique surtout l'organisation de la police. Plusieurs maires pensent en effet que les forces de l'ordre étaient trop peu nombreuses.\n\nAujourd'hui, la France est divisée. Pour certains, les casseurs ont trahi un mouvement juste. Pour d'autres, le gouvernement n'écoute pas la colère des jeunes. Une question reste donc ouverte : comment protéger le droit de manifester sans laisser la place aux destructions ?",
+  "dictation": {
+    "text": "Samedi soir, une commerçante est restée seule devant sa boutique. Des casseurs ont brisé ses vitres et ont volé ses vêtements. Elle a travaillé dix ans pour ouvrir ce magasin. Les pompiers sont arrivés, mais il était trop tard. Le lendemain, ses voisines se sont retrouvées dans la rue où elle habite. Elles ont nettoyé le trottoir avec elle. Elle va bientôt rouvrir sa boutique, mais elle a peur de la prochaine manifestation.",
+    "units": [
+      "Samedi soir, une commerçante est restée seule devant sa boutique.",
+      "Des casseurs ont brisé ses vitres",
+      "et ont volé ses vêtements.",
+      "Elle a travaillé dix ans pour ouvrir ce magasin.",
+      "Les pompiers sont arrivés, mais il était trop tard.",
+      "Le lendemain, ses voisines se sont retrouvées",
+      "dans la rue où elle habite.",
+      "Elles ont nettoyé le trottoir avec elle.",
+      "Elle va bientôt rouvrir sa boutique,",
+      "mais elle a peur de la prochaine manifestation."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Ce qui s'est passé",
+      "prompt": "Raconte-moi avec tes mots ce qui s'est passé en France le samedi 17 octobre.",
+      "relances": [
+        "Pourquoi les gens sont-ils descendus dans la rue, d'après l'article ?",
+        "Quelles destructions t'ont le plus marquée, et pourquoi ?",
+        "Comment le Premier ministre explique-t-il ces violences ?",
+        "Que reprochent les maires et la gauche à la police ?"
+      ]
+    },
+    {
+      "title": "Manifester ou casser",
+      "prompt": "Que penses-tu des personnes qui cassent et pillent pendant une manifestation ?",
+      "relances": [
+        "Qui est responsable, selon toi : les casseurs, la police ou le gouvernement ?",
+        "Comment un mouvement peut-il se faire entendre sans violence ?",
+        "Quelle différence fais-tu entre la colère et la destruction ?",
+        "Que dirais-tu à un lycéen qui veut manifester samedi prochain ?"
+      ]
+    },
+    {
+      "title": "Une protestation vécue",
+      "prompt": "Raconte-moi une manifestation ou une grande protestation que tu as vue ou vécue à Saint-Domingue.",
+      "relances": [
+        "Pour quelle cause les gens protestaient-ils, et comment ?",
+        "Comment ta famille a-t-elle réagi à ce mouvement ?",
+        "Qu'est-ce que tu as vu passer sur TikTok à ce sujet ?",
+        "Qu'est-ce que ce mouvement a changé, selon toi ?"
+      ]
+    },
+    {
+      "title": "Manifester en France",
+      "prompt": "Les Français manifestent souvent : comment imagines-tu ces journées-là quand tu vivras à Strasbourg ?",
+      "relances": [
+        "Comment vas-tu t'informer sur les manifestations prévues dans ta ville ?",
+        "Pour quelle cause aimerais-tu un jour défiler en France ?",
+        "Qu'est-ce qui te surprend dans la culture française de la grève ?",
+        "Comment expliquerais-tu les manifestations françaises à ta famille dominicaine ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "Limousin87_PourDeVrai",
+      "comment": "On manifeste contre la VIE CHÈRE et on brûle la mairie de Limoges, un bâtiment de 1883 !!! Qui va payer la reconstruction ? Nous, les contribuables. Les casseurs ont tué le mouvement des lycéens, point final. Et le ministre qui ose dire que la police n'était pas sous-dimensionnée… sérieusement ?",
+      "likes": 463
+    },
+    {
+      "username": "BoulangereRueSaintJean",
+      "comment": "J'ai fermé à 14h samedi, par prudence. À 17h, mon voisin m'envoie une photo : la vitrine de la parfumerie d'à côté explosée, plus rien dedans. Ce matin, on était cinq commerçants à balayer le verre ensemble. On ne se parlait jamais avant… J'ai apporté des croissants 🥐",
+      "likes": 71
+    }
+  ]
+}

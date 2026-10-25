@@ -1,0 +1,112 @@
+{
+  "id": "selena-gomez-vapotage-voix-2026",
+  "title": "Selena Gomez avoue que le vapotage a changé sa voix",
+  "date": "2026-10-25",
+  "category": "Santé",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Selena_Gomez_at_the_2024_Toronto_International_Film_Festival_10_(cropped).jpg?width=1200",
+    "alt": "La chanteuse et actrice Selena Gomez au Festival international du film de Toronto en 2024"
+  },
+  "vocabulary": [
+    {
+      "fr": "avouer",
+      "es": "confesar, admitir"
+    },
+    {
+      "fr": "vapoter / la cigarette électronique",
+      "es": "vapear / el vapeador, el cigarrillo electrónico"
+    },
+    {
+      "fr": "une voix grave",
+      "es": "una voz grave, profunda"
+    },
+    {
+      "fr": "rauque, éraillé(e)",
+      "es": "ronco(a), áspero(a)"
+    },
+    {
+      "fr": "se moquer de quelqu'un",
+      "es": "burlarse de alguien"
+    },
+    {
+      "fr": "abîmer",
+      "es": "dañar, estropear"
+    },
+    {
+      "fr": "ça ne vaut pas la peine",
+      "es": "no vale la pena"
+    },
+    {
+      "fr": "avoir mal à la gorge",
+      "es": "tener dolor de garganta"
+    }
+  ],
+  "article": "La chanteuse et actrice américaine Selena Gomez a fait une confidence surprenante à ses fans. Le 18 octobre, dans une vidéo publiée sur Instagram, elle a expliqué pourquoi sa voix a changé. « J'ai beaucoup vapoté de la nicotine », a-t-elle avoué. Selon elle, sa voix ne redeviendra jamais comme avant. Elle a arrêté la cigarette électronique, mais elle reconnaît que la nicotine est très difficile à abandonner.\n\nDepuis plusieurs mois, des internautes se moquaient de sa voix, devenue plus grave et plus rauque. En décembre dernier, la star de 34 ans avait seulement parlé d'une gorge qui gonfle parfois de l'intérieur. Elle souffre en effet d'un lupus, une maladie grave, et elle a reçu une greffe de rein en 2017. Cette fois, elle a choisi de dire toute la vérité.\n\nLes médecins confirment que le vapotage peut abîmer la voix. La vapeur chaude et sèche irrite la gorge et assèche les cordes vocales. Pour compenser, on force sur sa voix, qui devient alors plus grave ou plus éraillée. La toux, fréquente chez les vapoteurs, peut aussi aggraver le problème.\n\nSon message s'adresse surtout aux jeunes : « Si vous vapotez, ou si vous pensez essayer, ça ne vaut pas la peine. » Pourtant, beaucoup d'adolescents croient que la cigarette électronique est sans danger, car elle sent bon et ne fait pas de fumée. Une célébrité suivie par des centaines de millions de personnes peut-elle les faire changer d'avis ?",
+  "dictation": {
+    "text": "Ma sœur a commencé à vapoter à seize ans. Elle trouvait ça joli et elle aimait les parfums sucrés. Ses amies se sont moquées de sa voix grave. Puis elle a eu mal à la gorge le matin. Un jour, elle est allée voir un médecin. Il a expliqué que la vapeur abîme la voix. Maintenant, elle a arrêté et elle se sent mieux. Elle va chanter à la fête de l'école en juin.",
+    "units": [
+      "Ma sœur a commencé à vapoter à seize ans.",
+      "Elle trouvait ça joli et elle aimait les parfums sucrés.",
+      "Ses amies se sont moquées de sa voix grave.",
+      "Puis elle a eu mal à la gorge le matin.",
+      "Un jour, elle est allée voir un médecin.",
+      "Il a expliqué que la vapeur abîme la voix.",
+      "Maintenant, elle a arrêté et elle se sent mieux.",
+      "Elle va chanter à la fête de l'école en juin."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "La confidence de Selena",
+      "prompt": "Peux-tu raconter ce que Selena Gomez a révélé à ses fans, et pourquoi elle l'a fait ?",
+      "relances": [
+        "Qu'est-ce qui est arrivé à sa voix, exactement ?",
+        "Comment les médecins expliquent-ils ce changement ?",
+        "Pourquoi a-t-elle attendu longtemps avant de dire la vérité ?",
+        "À qui s'adresse surtout son message, selon toi ?"
+      ]
+    },
+    {
+      "title": "Les stars et la santé",
+      "prompt": "À ton avis, est-ce qu'une célébrité peut vraiment changer les habitudes des jeunes ? Pourquoi ?",
+      "relances": [
+        "Quelle star a déjà influencé tes choix, et comment ?",
+        "Que penses-tu des gens qui se moquaient de sa voix ?",
+        "Quelle serait la meilleure façon de parler du vapotage aux ados ?",
+        "Faudrait-il interdire les parfums sucrés dans les vapoteuses ? Pourquoi ?"
+      ]
+    },
+    {
+      "title": "Le vapotage autour de toi",
+      "prompt": "Que sais-tu du vapotage chez les jeunes que tu connais à Saint-Domingue ?",
+      "relances": [
+        "À quel âge les jeunes commencent-ils, d'après ce que tu vois ?",
+        "Quels arguments entends-tu pour ou contre la cigarette électronique ?",
+        "Raconte une situation où quelqu'un a essayé d'arrêter.",
+        "Comment ta famille réagirait-elle si un proche vapotait ?"
+      ]
+    },
+    {
+      "title": "Santé et vie en France",
+      "prompt": "Comment imagines-tu prendre soin de ta santé quand tu vivras à Strasbourg ?",
+      "relances": [
+        "Quelles habitudes dominicaines aimerais-tu garder en France ?",
+        "Que sais-tu des règles sur le tabac dans les lieux publics français ?",
+        "Comment ferais-tu pour trouver un médecin en arrivant ?",
+        "Quelles nouvelles activités voudrais-tu essayer là-bas pour te sentir bien ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "PasDeFiltre_Marseille",
+      "comment": "Franchement, je suis pas d'accord avec tout ce cirque !!! Elle a des millions, des coachs, des médecins, et elle vapotait quand même ? Et maintenant elle fait la leçon aux ados ? Qu'elle commence par assumer au lieu de jouer les victimes, c'est trop facile.",
+      "likes": 387
+    },
+    {
+      "username": "Chorale_Et_Croissants",
+      "comment": "Je chante dans une chorale depuis quinze ans. L'an dernier, une copine soprano s'est mise à vapoter \"pour le stress\". En six mois, elle ne montait plus dans les aigus et elle a dû passer chez les altos 😅 Elle a arrêté depuis, et sa voix revient doucement.",
+      "likes": 64
+    }
+  ]
+}

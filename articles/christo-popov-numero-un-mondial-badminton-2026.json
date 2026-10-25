@@ -1,0 +1,114 @@
+{
+  "id": "christo-popov-numero-un-mondial-badminton-2026",
+  "title": "Christo Popov, premier Français numéro un mondial de badminton",
+  "date": "2026-10-25",
+  "category": "Sport",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Christo_Popov_-_Indonesia_Open_2026.jpg?width=1200",
+    "alt": "Le joueur de badminton français Christo Popov pendant un match à l'Open d'Indonésie"
+  },
+  "vocabulary": [
+    {
+      "fr": "remporter",
+      "es": "ganar, conquistar (un título, un torneo)"
+    },
+    {
+      "fr": "battre quelqu'un",
+      "es": "vencer a alguien, ganarle a alguien"
+    },
+    {
+      "fr": "le classement",
+      "es": "la clasificación, el ranking"
+    },
+    {
+      "fr": "une première historique",
+      "es": "algo inédito, un hito histórico"
+    },
+    {
+      "fr": "dépasser",
+      "es": "superar, adelantar"
+    },
+    {
+      "fr": "au plus haut niveau",
+      "es": "al más alto nivel"
+    },
+    {
+      "fr": "l'entraînement",
+      "es": "el entrenamiento"
+    },
+    {
+      "fr": "attirer",
+      "es": "atraer"
+    }
+  ],
+  "article": "Dimanche 25 octobre, Christo Popov a remporté les Internationaux de France de badminton, à Tremblay, en Seine-Saint-Denis. Grâce à cette victoire, il va devenir numéro un mondial dès la semaine prochaine. C'est une première historique : jamais un Français n'a occupé la tête du classement en simple. En finale, il a battu l'Indonésien Mohammad Zaki Ubaidillah en trois sets. « C'est incroyable. Du jamais fait », a-t-il réagi.\n\nChristo Popov a 24 ans. Il est né à Sofia, en Bulgarie, mais il a grandi à Fos-sur-Mer, près de Marseille. Son père a entraîné l'équipe nationale de Bulgarie. Son grand frère, Toma Junior, joue aussi au plus haut niveau. Ensemble, ils ont disputé le tournoi de double aux Jeux olympiques de Paris.\n\nSa progression est impressionnante. En décembre dernier, il a gagné les Finales du World Tour, le tournoi des huit meilleurs joueurs de l'année. En avril, il est devenu champion d'Europe. En juillet, il a remporté l'Open du Japon, l'un des plus grands tournois du circuit. Il dépasse maintenant le Thaïlandais Kunlavut Vitidsarn.\n\nLe badminton français vit donc une période exceptionnelle. En août, Alex Lanier est devenu champion du monde, comme le double mixte Thomas Gicquel et Delphine Delrue. Pourtant, ce sport reste discret à la télévision, alors que beaucoup d'élèves y jouent à l'école. Ces succès vont-ils enfin attirer les caméras et les jeunes dans les clubs ?",
+  "dictation": {
+    "text": "Dimanche, mon frère et moi sommes allés au club de badminton de notre quartier. Nous avons regardé la finale à la télévision avant l'entraînement. Le joueur français a gagné le dernier set et tout le monde a crié de joie. Ensuite, les enfants ont pris leurs raquettes avec beaucoup d'énergie. Ma cousine est arrivée en retard, mais elle a joué jusqu'au soir avec nous. Demain, on va acheter des volants neufs pour toute l'équipe.",
+    "units": [
+      "Dimanche, mon frère et moi sommes allés",
+      "au club de badminton de notre quartier.",
+      "Nous avons regardé la finale",
+      "à la télévision avant l'entraînement.",
+      "Le joueur français a gagné le dernier set",
+      "et tout le monde a crié de joie.",
+      "Ensuite, les enfants ont pris leurs raquettes avec beaucoup d'énergie.",
+      "Ma cousine est arrivée en retard,",
+      "mais elle a joué jusqu'au soir avec nous.",
+      "Demain, on va acheter des volants neufs pour toute l'équipe."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Raconter l'exploit de Popov",
+      "prompt": "Qui est Christo Popov et pourquoi sa victoire de dimanche est-elle si importante pour la France ?",
+      "relances": [
+        "Comment est-il arrivé au badminton, d'après l'article ?",
+        "Quels grands tournois a-t-il gagnés cette année ?",
+        "Quel rôle joue sa famille dans sa carrière ?",
+        "Pourquoi parle-t-on d'une période exceptionnelle pour le badminton français ?"
+      ]
+    },
+    {
+      "title": "Les sports oubliés des médias",
+      "prompt": "À ton avis, pourquoi certains sports passent tout le temps à la télévision et d'autres presque jamais ?",
+      "relances": [
+        "Quel sport mériterait plus de place à la télévision, selon toi ?",
+        "Qui décide vraiment des sports qu'on regarde : le public ou l'argent ?",
+        "Que pourrait faire un champion pour rendre son sport plus populaire ?",
+        "Que répondrais-tu à quelqu'un qui dit que seul le football compte ?"
+      ]
+    },
+    {
+      "title": "Mon sport, ma famille",
+      "prompt": "Raconte-moi la place du sport dans ta vie et dans ta famille à Saint-Domingue.",
+      "relances": [
+        "Quel sport pratiquais-tu à l'école ou avec tes amis ?",
+        "Quel match ou quelle victoire as-tu fêté avec toute ta famille ?",
+        "Comment ton entourage regarde le baseball en République dominicaine ?",
+        "Quel sportif dominicain admires-tu, et pourquoi ?"
+      ]
+    },
+    {
+      "title": "Faire du sport à Strasbourg",
+      "prompt": "Quand tu seras installée à Strasbourg, quelle activité sportive aimerais-tu essayer, et pourquoi ?",
+      "relances": [
+        "Comment un club de sport peut-il t'aider à te faire des amis ?",
+        "Quelles différences imagines-tu entre le sport en France et chez toi ?",
+        "Comment vas-tu trouver un club qui te plaît ?",
+        "Comment le sport peut-il t'aider à progresser en français ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "VolantDOr_Rennes",
+      "comment": "Premier Français NUMÉRO UN MONDIAL et on en parle à peine au journal de 20h !!! Si c'était un footballeur, on aurait trois jours d'émissions spéciales. Franchement, les chaînes de télé devraient avoir honte, ce garçon mérite tellement mieux.",
+      "likes": 412
+    },
+    {
+      "username": "MamieSmash_13",
+      "comment": "J'habite à Fos-sur-Mer et je me souviens des deux petits Popov au gymnase, avec des raquettes presque plus grandes qu'eux. Ils restaient jusqu'à la fermeture, le gardien devait les mettre dehors ! Aujourd'hui je pleure devant ma télé comme si c'était mon petit-fils 😭",
+      "likes": 87
+    }
+  ]
+}

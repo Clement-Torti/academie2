@@ -1,0 +1,115 @@
+{
+  "id": "election-presidentielle-bresil-second-tour-2026",
+  "title": "Brésil : Lula et Flávio Bolsonaro au coude-à-coude au second tour",
+  "date": "2026-10-25",
+  "category": "Société",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Brazilian_DRE_voting_machine_for_2022_elections.jpg?width=1200",
+    "alt": "Une urne électronique brésilienne utilisée pour voter lors des élections"
+  },
+  "vocabulary": [
+    {
+      "fr": "le second tour",
+      "es": "la segunda vuelta"
+    },
+    {
+      "fr": "être au coude-à-coude",
+      "es": "estar codo a codo, estar muy reñido"
+    },
+    {
+      "fr": "le dépouillement",
+      "es": "el escrutinio, el conteo de votos"
+    },
+    {
+      "fr": "le bureau de vote",
+      "es": "el colegio electoral, la mesa de votación"
+    },
+    {
+      "fr": "un adversaire",
+      "es": "un adversario, un rival"
+    },
+    {
+      "fr": "gracier quelqu'un",
+      "es": "indultar a alguien"
+    },
+    {
+      "fr": "accepter sa défaite",
+      "es": "aceptar su derrota"
+    },
+    {
+      "fr": "réconcilier",
+      "es": "reconciliar, volver a unir"
+    }
+  ],
+  "article": "Ce dimanche 25 octobre, environ 160 millions de Brésiliens sont appelés à voter pour le second tour de l'élection présidentielle. Le président sortant, Lula, qui a 80 ans, affronte le sénateur Flávio Bolsonaro. C'est le fils aîné de l'ancien président Jair Bolsonaro. Au premier tour, le 4 octobre, Flávio Bolsonaro est arrivé en tête avec 47 % des voix, contre 45 % pour Lula. Ce soir, le dépouillement continue et les deux candidats sont au coude-à-coude.\n\nAu Brésil, le vote est obligatoire et il se fait sur des urnes électroniques. Les résultats arrivent donc très vite. Pourtant, la journée n'a pas été simple. À cause des pluies et des retards dans les transports, la justice a prolongé l'ouverture des bureaux de vote de deux heures.\n\nLa campagne a été très tendue. Flávio Bolsonaro promet plus de sécurité, moins de dépenses publiques et une baisse des prix. Il veut aussi gracier son père, condamné à 27 ans de prison pour une tentative de coup d'État. Lula, de son côté, défend la lutte contre les inégalités et la protection de l'environnement. Il accuse son adversaire d'être trop proche de Donald Trump. En effet, les États-Unis ont imposé des droits de douane de 50 % sur les produits brésiliens.\n\nQuel que soit le résultat, le pays sort coupé en deux moitiés presque égales. Le futur président pourra-t-il réconcilier les Brésiliens ? Et le perdant acceptera-t-il sa défaite, alors qu'en 2022 la défaite de Jair Bolsonaro avait provoqué des violences à Brasília ?",
+  "dictation": {
+    "text": "Ce dimanche, ma tante est allée voter dans l'école de son quartier. Elle a attendu longtemps sous la pluie, mais elle est restée calme. Au Brésil, voter est obligatoire et on utilise une machine électronique. Ses voisines se sont retrouvées à l'entrée où elles ont parlé des candidats. Ce soir, toute la famille va regarder les résultats à la télévision. Ils sont inquiets parce que le pays est très divisé.",
+    "units": [
+      "Ce dimanche, ma tante est allée voter",
+      "dans l'école de son quartier.",
+      "Elle a attendu longtemps sous la pluie,",
+      "mais elle est restée calme.",
+      "Au Brésil, voter est obligatoire",
+      "et on utilise une machine électronique.",
+      "Ses voisines se sont retrouvées à l'entrée",
+      "où elles ont parlé des candidats.",
+      "Ce soir, toute la famille va regarder",
+      "les résultats à la télévision.",
+      "Ils sont inquiets parce que le pays est très divisé."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Raconter l'élection brésilienne",
+      "prompt": "Qui sont les deux candidats au second tour au Brésil, et pourquoi cette élection est-elle si tendue ?",
+      "relances": [
+        "Que s'est-il passé au premier tour, le 4 octobre ?",
+        "Qu'est-ce que Flávio Bolsonaro promet aux électeurs ?",
+        "Quelles idées Lula défend-il pendant cette campagne ?",
+        "Pourquoi parle-t-on de Donald Trump dans cette élection ?"
+      ]
+    },
+    {
+      "title": "Faut-il obliger à voter",
+      "prompt": "Au Brésil, voter est obligatoire : que penses-tu de cette règle, et pourquoi ?",
+      "relances": [
+        "Quels sont les avantages d'un vote obligatoire, selon toi ?",
+        "Comment expliques-tu que beaucoup de jeunes ne votent plus ?",
+        "Que penses-tu des familles qui restent au pouvoir pendant des années ?",
+        "Que dirais-tu à une amie qui refuse d'aller voter ?"
+      ]
+    },
+    {
+      "title": "Mes souvenirs d'élection",
+      "prompt": "Raconte-moi comment se passe un jour d'élection à Saint-Domingue, dans ta famille ou dans ton quartier.",
+      "relances": [
+        "Comment as-tu vécu la première fois où tu as voté ?",
+        "De quoi parlait-on à la maison pendant la dernière campagne ?",
+        "Comment les candidats font-ils campagne sur TikTok chez toi ?",
+        "Quelle élection t'a le plus marquée, et pourquoi ?"
+      ]
+    },
+    {
+      "title": "Suivre la politique en France",
+      "prompt": "Quand tu vivras à Strasbourg, comment comptes-tu suivre la vie politique française et européenne ?",
+      "relances": [
+        "Quels médias français aimerais-tu écouter ou lire pour t'informer ?",
+        "Quelles différences imagines-tu entre une campagne en France et chez toi ?",
+        "Comment vas-tu continuer à suivre les élections dominicaines depuis la France ?",
+        "Pourquoi Strasbourg est-elle une ville importante pour l'Europe, à ton avis ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "DemocratieOuDynastie_75",
+      "comment": "Sérieusement ?! Le choix, c'est entre un président de 80 ans et le FILS de celui qui a tenté un coup d'État ? Et il promet déjà de gracier papa !!! Ce n'est plus une élection, c'est une affaire de famille. Pauvres Brésiliens, ils méritent tellement mieux que ça.",
+      "likes": 368
+    },
+    {
+      "username": "SyndicDeLImmeuble_B",
+      "comment": "Ce qui me fascine, c'est que 160 millions de personnes votent sur une machine et qu'ils ont les résultats le soir même. Chez moi, on attend toujours le compte-rendu de l'assemblée de copropriété de 2019 😅 Le Brésil, envoyez-nous vos urnes, s'il vous plaît !!",
+      "likes": 54
+    }
+  ]
+}

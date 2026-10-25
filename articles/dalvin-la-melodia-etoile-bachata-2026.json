@@ -1,0 +1,90 @@
+{
+  "id": "dalvin-la-melodia-etoile-bachata-2026",
+  "title": "Dalvin La Melodía, l'étoile montante de la bachata dominicaine",
+  "date": "2026-10-25",
+  "category": "Culture",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Amargue_Bachata_Quintet_with_Andre_Veloz_(22092585435).jpg?width=1200",
+    "alt": "Un groupe de bachata en concert, avec un guitariste et une chanteuse sur scène"
+  },
+  "vocabulary": [
+    { "fr": "une étoile montante", "es": "una estrella en ascenso" },
+    { "fr": "remplir une salle", "es": "llenar una sala" },
+    { "fr": "battre un record", "es": "romper un récord" },
+    { "fr": "une famille modeste", "es": "una familia humilde" },
+    { "fr": "une reprise", "es": "un cover, una versión" },
+    { "fr": "une tournée", "es": "una gira" },
+    { "fr": "toucher le public", "es": "conmover al público" },
+    { "fr": "être à la mode", "es": "estar de moda" }
+  ],
+  "article": "À seulement 23 ans, Dalvin La Melodía est la nouvelle star de la bachata. En septembre, ce chanteur dominicain a rempli six fois de suite le Coca-Cola Music Hall de San Juan, à Porto Rico. Il a vendu 22 500 billets et battu le record de la salle. En janvier 2027, il chantera au Coliseo, la plus grande salle de l'île. En ce moment, il fait aussi sa première tournée aux États-Unis et au Canada.\n\nSon histoire touche beaucoup le public. Dalvin Núñez est né en 2003 à Saint-Domingue, dans une famille modeste. Enfant, il chantait à l'église avec son père. Avant la musique, il a été cireur de chaussures, livreur pour un colmado et chauffeur de moto-taxi. Tout a changé en 2024, quand il a rencontré le guitariste et producteur Mikey Touch. Quelques mois plus tard, sa chanson « Mi Reina » a dépassé 23 millions de vues sur YouTube.\n\nSon style mélange la bachata traditionnelle et des sons proches du R&B. C'est pourquoi il plaît aux jeunes : ils représentent 60 à 70 % de son public. En 2026, il a reçu le prix de la Révélation de l'année aux Premios Soberano. Luis Fonsi a même enregistré avec lui. Cependant, plusieurs de ses succès sont des reprises, comme « Chiquilla Bonita ».\n\nLongtemps, la bachata a été vue comme la musique des quartiers pauvres. Grâce à des artistes comme Dalvin, elle est aujourd'hui à la mode. Mais un succès aussi rapide sur les réseaux sociaux peut-il durer ?",
+  "dictation": {
+    "text": "Samedi, ma cousine et moi sommes allées à un concert de bachata. La salle était pleine de monde, et les gens chantaient toutes les chansons. Le chanteur est arrivé sur scène avec sa guitare. Il a parlé de son enfance et de sa famille. Ensuite, des couples se sont mis à danser devant la scène. Nous sommes rentrées très tard, mais nous étions heureuses. Demain, je vais écouter ses chansons sur mon téléphone.",
+    "units": [
+      "Samedi, ma cousine et moi",
+      "sommes allées à un concert de bachata.",
+      "La salle était pleine de monde,",
+      "et les gens chantaient toutes les chansons.",
+      "Le chanteur est arrivé sur scène avec sa guitare.",
+      "Il a parlé de son enfance et de sa famille.",
+      "Ensuite, des couples se sont mis",
+      "à danser devant la scène.",
+      "Nous sommes rentrées très tard, mais nous étions heureuses.",
+      "Demain, je vais écouter ses chansons sur mon téléphone."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "L'histoire de Dalvin",
+      "prompt": "Peux-tu me raconter avec tes mots qui est Dalvin La Melodía et comment il est devenu célèbre ?",
+      "relances": [
+        "Quels métiers a-t-il faits avant la musique ?",
+        "Pourquoi son succès à Porto Rico est-il impressionnant ?",
+        "Qu'est-ce qui a changé pour lui en deux mille vingt-quatre ?",
+        "Comment explique-t-on qu'il plaise autant aux jeunes ?"
+      ]
+    },
+    {
+      "title": "Reprises ou chansons originales",
+      "prompt": "Selon toi, un artiste qui chante surtout des reprises mérite-t-il autant de succès qu'un auteur-compositeur ?",
+      "relances": [
+        "Qu'est-ce qu'une bonne reprise apporte de nouveau à une chanson ?",
+        "Quelle reprise préfères-tu à la chanson originale, et pourquoi ?",
+        "À ton avis, combien de temps peut durer un succès né sur TikTok ?",
+        "Que doit faire Dalvin pour être encore une star dans dix ans ?"
+      ]
+    },
+    {
+      "title": "La bachata dans ma vie",
+      "prompt": "Quelle place la bachata a-t-elle dans ta vie et dans celle de ta famille ?",
+      "relances": [
+        "Quelle chanson te rappelle un moment précis de ta vie ?",
+        "Où et avec qui as-tu appris à danser la bachata ?",
+        "Raconte-moi le meilleur concert ou la meilleure fête de ta vie.",
+        "Quels artistes écoutent tes parents, et lesquels écoutes-tu, toi ?"
+      ]
+    },
+    {
+      "title": "La bachata à Strasbourg",
+      "prompt": "Comment imagines-tu faire découvrir la musique dominicaine à tes futurs amis de Strasbourg ?",
+      "relances": [
+        "Quelle chanson choisirais-tu pour leur présenter la bachata ?",
+        "Comment expliquerais-tu la différence entre bachata, merengue et dembow ?",
+        "Quelle musique française aimerais-tu découvrir en arrivant ?",
+        "Comment ton diplôme de mercadeo pourrait-il aider un artiste dominicain en France ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "VieuxBachatero_1987",
+      "comment": "Désolé mais ça, ce n'est PAS de la bachata !!! C'est du R&B avec une guitare par-dessus. Et la moitié de ses tubes sont des reprises... Antony Santos et Raulín Rodríguez, eux, écrivaient leurs chansons. Dans cinq ans, plus personne ne se souviendra de lui.",
+      "likes": 87
+    },
+    {
+      "username": "LaNenaDeLosAlcarrizos",
+      "comment": "Il livrait les courses du colmado de mon oncle, je vous jure ! Il chantait tout le temps sur sa moto, et ma tante lui disait d'arrêter de faire du bruit 😂 Aujourd'hui elle a acheté deux billets pour le voir à New York...",
+      "likes": 412
+    }
+  ]
+}

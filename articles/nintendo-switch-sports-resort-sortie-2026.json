@@ -1,0 +1,91 @@
+{
+  "id": "nintendo-switch-sports-resort-sortie-2026",
+  "title": "Switch Sports Resort : Nintendo ramène tout le monde sur l'île Wuhu",
+  "date": "2026-10-25",
+  "category": "Technologie",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nintendo_Switch_2_Joy-Con_2_Blue_and_Orange.jpg?width=1200",
+    "alt": "Deux manettes Joy-Con 2 de la console Nintendo Switch 2, une bleue et une orange"
+  },
+  "vocabulary": [
+    { "fr": "sortir un jeu", "es": "lanzar un juego" },
+    { "fr": "une manette", "es": "un mando, un control" },
+    { "fr": "un geste", "es": "un gesto, un movimiento" },
+    { "fr": "une nouveauté", "es": "una novedad" },
+    { "fr": "regretter l'absence de", "es": "lamentar que falte" },
+    { "fr": "miser sur", "es": "apostar por" },
+    { "fr": "rassembler", "es": "reunir, juntar" },
+    { "fr": "la nostalgie", "es": "la nostalgia" }
+  ],
+  "article": "Le 22 octobre, Nintendo a sorti Nintendo Switch Sports Resort, un nouveau jeu de sport pour sa console Switch 2. Le jeu propose douze sports, comme la boxe, le tennis, le bowling ou le basket. Pour jouer, on tient une manette Joy-Con 2 dans chaque main et on fait les vrais gestes. Le jeu coûte environ 45 euros.\n\nCe titre rappelle un grand succès : Wii Sports Resort, sorti en 2009 sur la console Wii. En effet, le nouveau jeu se passe sur la même île, l'île Wuhu. Les joueurs peuvent maintenant l'explorer librement en hydravion. Il y a aussi des nouveautés, comme le jet-ski, le skateboard ou un étonnant bras de fer avec les pouces. Grâce aux capteurs plus précis de la Switch 2, les mouvements sont mieux reconnus.\n\nLes critiques sont plutôt bonnes : le jeu obtient 79 sur 100 sur le site Metacritic. Les testeurs aiment l'ambiance familiale et la précision des gestes. Cependant, certains joueurs regrettent l'absence du football, du badminton et du combat d'épées, qui existaient dans le jeu précédent. D'autres trouvent le prix trop élevé pour un jeu qui reprend surtout des idées anciennes.\n\nNintendo mise donc encore sur une recette simple : bouger ensemble devant l'écran, en famille ou entre amis. Pourtant, aujourd'hui, beaucoup de joueurs passent leurs soirées seuls, sur leur téléphone ou en ligne. Alors, ces jeux de sport dans le salon peuvent-ils encore rassembler les générations, ou est-ce seulement de la nostalgie ?",
+  "dictation": {
+    "text": "Samedi, mes grands-parents sont venus à la maison pour le déjeuner. Après le repas, nous avons joué au bowling sur la console. Ma grand-mère a tenu la manette pour la première fois. Elle a gagné trois parties et elle a beaucoup ri. Mon grand-père préfère le tennis, mais il se fatigue vite. Le soir, ils sont rentrés chez eux très contents. La semaine prochaine, ils vont revenir avec leurs voisins.",
+    "units": [
+      "Samedi, mes grands-parents sont venus",
+      "à la maison pour le déjeuner.",
+      "Après le repas, nous avons joué",
+      "au bowling sur la console.",
+      "Ma grand-mère a tenu la manette pour la première fois.",
+      "Elle a gagné trois parties",
+      "et elle a beaucoup ri.",
+      "Mon grand-père préfère le tennis,",
+      "mais il se fatigue vite.",
+      "Le soir, ils sont rentrés chez eux très contents.",
+      "La semaine prochaine, ils vont revenir avec leurs voisins."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Le retour sur l'île Wuhu",
+      "prompt": "Raconte-moi avec tes mots ce que propose ce nouveau jeu de Nintendo.",
+      "relances": [
+        "Comment joue-t-on avec les manettes Joy-Con 2 ?",
+        "Quelles nouveautés le jeu apporte-t-il par rapport à l'ancien ?",
+        "Pourquoi certains joueurs sont-ils déçus ?",
+        "Quel sport du jeu aimerais-tu essayer en premier, et pourquoi ?"
+      ]
+    },
+    {
+      "title": "Nouveauté ou nostalgie",
+      "prompt": "Selon toi, Nintendo crée-t-il vraiment quelque chose de nouveau ou vend-il seulement des souvenirs ?",
+      "relances": [
+        "Pourquoi les entreprises aiment-elles autant refaire d'anciens succès ?",
+        "Quel film ou quelle série refaite as-tu trouvé meilleur que l'original ?",
+        "Que répondrais-tu au commentaire énervé sous l'article ?",
+        "À ton avis, quel prix serait juste pour ce jeu ?"
+      ]
+    },
+    {
+      "title": "Jouer en famille",
+      "prompt": "Raconte-moi un jeu, vidéo ou non, qui rassemblait ta famille à Saint-Domingue.",
+      "relances": [
+        "Qui gagnait toujours, et comment réagissaient les autres ?",
+        "À quel moment de l'année jouiez-vous ensemble ?",
+        "Quel souvenir drôle te revient de ces parties ?",
+        "Comment ta famille passe-t-elle ses soirées aujourd'hui ?"
+      ]
+    },
+    {
+      "title": "Se faire des amis à Strasbourg",
+      "prompt": "Comment pourrais-tu utiliser le jeu ou le sport pour rencontrer des gens à Strasbourg ?",
+      "relances": [
+        "Quelle activité de groupe aimerais-tu découvrir en France ?",
+        "Quel jeu dominicain ferais-tu découvrir à tes futurs amis français ?",
+        "Comment présenterais-tu ce jeu Nintendo dans une campagne de mercadeo ?",
+        "Que préfères-tu : jouer en ligne ou dans le même salon ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "VieuxGamer_Depuis1998",
+      "comment": "Sérieusement ?! Ils nous revendent l'île de 2009 avec trois nouveaux sports et ils enlèvent le FOOT ! 45 euros pour un jeu que j'ai déjà sur ma Wii dans le grenier... Nintendo se moque complètement de nous. Moi, je ne l'achèterai pas, point final.",
+      "likes": 388
+    },
+    {
+      "username": "MamieBowling_2026",
+      "comment": "Moi, je m'en fiche des critiques. Depuis jeudi, mon chien aboie à chaque strike, mon voisin du dessous tape au plafond et j'ai pris un coup de manette dans le nez par mon petit-fils. Meilleur jeu de l'année 😂 Le bras de fer avec les pouces, par contre, c'est de la triche !",
+      "likes": 46
+    }
+  ]
+}

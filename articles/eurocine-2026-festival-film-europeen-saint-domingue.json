@@ -1,0 +1,88 @@
+{
+  "id": "eurocine-2026-festival-film-europeen-saint-domingue",
+  "title": "Eurocine 2026 : une semaine de cinéma européen à Saint-Domingue",
+  "date": "2026-10-25",
+  "category": "Culture",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/MKr354426_Nelson_Carlos_De_Los_Santos_Arias_(Beste_Regie,_Berlinale_2024).jpg?width=1200",
+    "alt": "Le réalisateur dominicain Nelson Carlos de los Santos Arias avec son Ours d'argent au festival de Berlin en 2024"
+  },
+  "vocabulary": [
+    { "fr": "une salle de cinéma", "es": "una sala de cine" },
+    { "fr": "un réalisateur", "es": "un director de cine" },
+    { "fr": "la soirée d'ouverture", "es": "la noche de apertura" },
+    { "fr": "une comédie noire", "es": "una comedia negra" },
+    { "fr": "être très attendu", "es": "ser muy esperado" },
+    { "fr": "la version originale", "es": "la versión original" },
+    { "fr": "changer les habitudes", "es": "cambiar los hábitos" },
+    { "fr": "applaudir", "es": "aplaudir" }
+  ],
+  "article": "Du 26 octobre au 1er novembre, le cinéma européen s'installe à Saint-Domingue. Le festival Eurocine présente quinze films récents dans les salles Caribbean Cinemas du centre commercial Galería 360. Ces films viennent de plus de vingt pays, de l'Italie à la Finlande. Le festival est organisé par la délégation de l'Union européenne, avec la Direction générale du cinéma dominicain.\n\nLa soirée d'ouverture a lieu lundi à 19 heures avec « Gloria! », un film italien de Margherita Vicario. Il raconte l'histoire d'une jeune servante qui compose de la musique à Venise, à la fin du XVIIIe siècle. Les amateurs de français pourront aussi voir « Un ours dans le Jura », une comédie noire de Franck Dubosc. On y trouve également des films roumains, hongrois, irlandais ou espagnols.\n\nLe festival se termine avec « Pepe », un film très attendu ici. Son réalisateur, le Dominicain Nelson Carlos de los Santos Arias, a gagné l'Ours d'argent du meilleur réalisateur à Berlin en 2024. Le film raconte la vie d'un hippopotame que Pablo Escobar a fait venir d'Afrique en Colombie. Ce choix montre que le cinéma dominicain participe aussi aux grandes coproductions européennes.\n\nSelon les organisateurs, l'objectif est simple : montrer des films qu'on ne voit presque jamais dans les cinémas commerciaux. En effet, les salles dominicaines programment surtout des films américains. Pourtant, une seule semaine de festival suffit-elle à changer les habitudes du public ? Ou faudrait-il proposer du cinéma européen toute l'année ?",
+  "dictation": {
+    "text": "Hier soir, ma cousine et moi sommes allées au cinéma. Nous avons choisi un film français que personne ne connaissait. La salle était presque vide, mais l'histoire était très drôle. À la fin, une vieille dame s'est levée et elle a applaudi très fort. Ensuite, nous avons discuté du film dans un petit café. Ma cousine a déjà acheté des places sur son téléphone. Samedi, on va revoir ce film avec nos amis.",
+    "units": [
+      "Hier soir, ma cousine et moi sommes allées au cinéma.",
+      "Nous avons choisi un film français que personne ne connaissait.",
+      "La salle était presque vide, mais l'histoire était très drôle.",
+      "À la fin, une vieille dame s'est levée",
+      "et elle a applaudi très fort.",
+      "Ensuite, nous avons discuté du film dans un petit café.",
+      "Ma cousine a déjà acheté des places sur son téléphone.",
+      "Samedi, on va revoir ce film avec nos amis."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Une semaine de cinéma",
+      "prompt": "Raconte-moi avec tes mots ce que le festival Eurocine propose cette semaine à Saint-Domingue.",
+      "relances": [
+        "Quels films ouvrent et ferment le festival, et de quoi parlent-ils ?",
+        "Pourquoi le film Pepe est-il important pour les Dominicains ?",
+        "Qui organise ce festival, et dans quel but ?",
+        "Quel film de la programmation irais-tu voir en premier, et pourquoi ?"
+      ]
+    },
+    {
+      "title": "Hollywood ou l'Europe",
+      "prompt": "Selon toi, pourquoi le public préfère-t-il souvent les films américains aux films européens ?",
+      "relances": [
+        "Qu'est-ce qu'un film européen apporte qu'un film américain n'apporte pas ?",
+        "Que réponds-tu au commentaire énervé sous l'article ?",
+        "Comment pourrait-on attirer plus de jeunes vers ce genre de festival ?",
+        "Que préfères-tu, les sous-titres ou le doublage, et pourquoi ?"
+      ]
+    },
+    {
+      "title": "Mon meilleur souvenir de cinéma",
+      "prompt": "Raconte-moi une sortie au cinéma à Saint-Domingue dont tu te souviens très bien.",
+      "relances": [
+        "Avec qui étais-tu, et quel film avez-vous vu ?",
+        "Qu'est-ce qui a rendu cette soirée si spéciale ?",
+        "Quel film t'a fait rire ou pleurer plus que les autres ?",
+        "Quel film dominicain conseillerais-tu à quelqu'un qui ne connaît pas ton pays ?"
+      ]
+    },
+    {
+      "title": "Le cinéma à Strasbourg",
+      "prompt": "Comment imagines-tu tes sorties au cinéma quand tu vivras à Strasbourg ?",
+      "relances": [
+        "Comment le cinéma peut-il t'aider à progresser en français ?",
+        "Quel film français aimerais-tu voir dans une salle française ?",
+        "Comment ferais-tu la promotion d'un festival de films dominicains en France ?",
+        "Avec qui aimerais-tu partager ces sorties là-bas ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "CinefiloSDQ_2001",
+      "comment": "Franchement, une semaine par an et UNIQUEMENT à Galería 360 ?! Ceux qui habitent à Santiago ou à Higüey, on les oublie encore. Et le reste de l'année, c'est super-héros, super-héros et encore super-héros. Ce festival, c'est une jolie vitrine, rien de plus.",
+      "likes": 274
+    },
+    {
+      "username": "TiaMarisol_Popcorn",
+      "comment": "L'an dernier, j'ai emmené mon mari voir un film finlandais à Eurocine. Deux heures de neige, de silence et de sous-titres... Il a dormi au bout de dix minutes ! Mais cette année, c'est lui qui veut voir Pepe. Un hippopotame, ça, il comprend 😂",
+      "likes": 63
+    }
+  ]
+}

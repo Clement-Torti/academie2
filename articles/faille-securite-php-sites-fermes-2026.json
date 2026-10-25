@@ -1,0 +1,114 @@
+{
+  "id": "faille-securite-php-sites-fermes-2026",
+  "title": "Une faille géante dans PHP oblige des milliers de sites à fermer",
+  "date": "2026-10-25",
+  "category": "Technologie",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/PHP-logo.svg?width=1200",
+    "alt": "Le logo bleu du langage informatique PHP"
+  },
+  "vocabulary": [
+    {
+      "fr": "une faille de sécurité",
+      "es": "una brecha de seguridad, una vulnerabilidad"
+    },
+    {
+      "fr": "un pirate informatique",
+      "es": "un hacker, un pirata informático"
+    },
+    {
+      "fr": "prendre le contrôle de",
+      "es": "tomar el control de"
+    },
+    {
+      "fr": "fuiter",
+      "es": "filtrarse"
+    },
+    {
+      "fr": "un correctif",
+      "es": "un parche, una corrección"
+    },
+    {
+      "fr": "par prudence",
+      "es": "por precaución"
+    },
+    {
+      "fr": "être en panne",
+      "es": "estar averiado, no funcionar"
+    },
+    {
+      "fr": "mettre à jour",
+      "es": "actualizar"
+    }
+  ],
+  "article": "Le mardi 21 octobre, des milliers de sites internet ont fermé en urgence. La raison : deux failles de sécurité très graves dans PHP. C'est un langage informatique qui fait fonctionner environ 70 % des sites du monde, comme la plupart des sites WordPress. Grâce à ces failles, un pirate informatique pouvait prendre le contrôle d'un site à distance, sans aucun mot de passe.\n\nDes chercheurs ont découvert le problème en août grâce à l'intelligence artificielle. Ils ont prévenu les créateurs de PHP en secret, pour leur laisser le temps de préparer un correctif. Mais le 20 octobre, des informations ont fuité sur Internet. Les pirates ont donc commencé leurs attaques avant même la sortie de la réparation.\n\nPar prudence, beaucoup d'organisations ont préféré couper leurs sites. En France, plusieurs sites publics, comme ceux de certaines préfectures, sont devenus inaccessibles. Aux Pays-Bas, au Canada et en Finlande, des services de l'État ont fait la même chose. Même Wikipédia et plusieurs jeux vidéo japonais ont été touchés.\n\nPour les internautes, il n'y a rien à installer : ce sont les hébergeurs qui doivent mettre à jour leurs serveurs. Les experts conseillent cependant de rester prudent face aux messages bizarres. Cette affaire pose aussi une vraie question. L'intelligence artificielle aide à trouver les failles plus vite, mais elle peut aussi aider les pirates. Alors, demain, Internet sera-t-il plus sûr ou plus fragile ?",
+  "dictation": {
+    "text": "Mardi matin, ma sœur a voulu payer une facture sur le site de la mairie. Mais la page ne marchait pas. Elle a pensé que son ordinateur était en panne. Puis elle a lu les informations sur son téléphone. Une faille de sécurité a obligé beaucoup de sites à fermer. Le soir, elle est retournée sur le site et tout allait bien. Demain, elle va changer tous ses mots de passe.",
+    "units": [
+      "Mardi matin, ma sœur a voulu payer une facture",
+      "sur le site de la mairie.",
+      "Mais la page ne marchait pas.",
+      "Elle a pensé que son ordinateur était en panne.",
+      "Puis elle a lu les informations sur son téléphone.",
+      "Une faille de sécurité a obligé",
+      "beaucoup de sites à fermer.",
+      "Le soir, elle est retournée",
+      "sur le site et tout allait bien.",
+      "Demain, elle va changer tous ses mots de passe."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Raconter la grande panne",
+      "prompt": "Qu'est-ce qui s'est passé sur Internet le vingt et un octobre, et pourquoi tant de sites ont fermé ?",
+      "relances": [
+        "Qu'est-ce qu'un pirate pouvait faire grâce à ces failles ?",
+        "Quel rôle l'intelligence artificielle a-t-elle joué dans cette histoire ?",
+        "Pourquoi la fuite du vingt octobre a-t-elle tout compliqué ?",
+        "Qui doit réparer le problème, d'après l'article ?"
+      ]
+    },
+    {
+      "title": "L'IA, amie ou ennemie",
+      "prompt": "À ton avis, l'intelligence artificielle va-t-elle rendre Internet plus sûr ou plus dangereux, et pourquoi ?",
+      "relances": [
+        "Quels avantages de l'IA vois-tu dans la vie de tous les jours ?",
+        "Qu'est-ce qui te fait peur avec ces nouveaux outils ?",
+        "Qui devrait contrôler l'IA : les États, les entreprises ou personne ?",
+        "Que répondrais-tu à quelqu'un qui veut interdire l'IA ?"
+      ]
+    },
+    {
+      "title": "Mes mésaventures en ligne",
+      "prompt": "Raconte-moi une fois où tu as eu un problème avec un site, un compte ou un message suspect.",
+      "relances": [
+        "Comment as-tu réagi sur le moment ?",
+        "Quels messages bizarres reçois-tu sur WhatsApp ou TikTok ?",
+        "Comment fais-tu pour retenir et protéger tes mots de passe ?",
+        "Quels conseils donnerais-tu à tes parents pour éviter les arnaques ?"
+      ]
+    },
+    {
+      "title": "Démarches en ligne en France",
+      "prompt": "En France, presque tout se fait en ligne : comment imagines-tu tes démarches en arrivant à Strasbourg ?",
+      "relances": [
+        "Quels sites vas-tu utiliser pour chercher un emploi ?",
+        "Comment se passent les démarches administratives à Saint-Domingue ?",
+        "Que ferais-tu si le site de la préfecture tombait en panne ?",
+        "Qu'est-ce que tu préfères, faire une démarche en ligne ou au guichet ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "RetraiteeEnColere56",
+      "comment": "Et après on nous OBLIGE à tout faire en ligne : impôts, CAF, préfecture... Le jour où ça plante, on fait comment ?? Moi je veux un vrai guichet avec un vrai humain, pas un site qui ferme dès qu'un pirate éternue !!!",
+      "likes": 347
+    },
+    {
+      "username": "MaximeDu67_",
+      "comment": "Mardi j'essayais de déclarer mon changement d'adresse sur le site de la préfecture... page blanche pendant toute la journée. Pour une fois que mon retard n'est PAS de ma faute 😅 J'ai gardé la capture d'écran comme un trophée, je la ressortirai la prochaine fois.",
+      "likes": 58
+    }
+  ]
+}

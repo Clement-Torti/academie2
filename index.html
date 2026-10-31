@@ -252,6 +252,23 @@
 
         <!-- Grid -->
         <div id="articles-grid" class="grid grid-cols-1 sm:grid-cols-2 gap-4" style="display:none;"></div>
+
+        <!-- Pagination -->
+        <div id="articles-pager" class="hidden flex items-center justify-center gap-3 mt-5">
+            <button id="pager-prev" onclick="home.goToPage(home.page - 1)"
+                    class="flex items-center gap-1.5 text-[11px] font-bold text-frBlue bg-white border border-gray-200
+                           px-3 py-2 rounded-xl transition hover:bg-gray-50 active:scale-95
+                           disabled:opacity-40 disabled:pointer-events-none">
+                <i class="fa-solid fa-chevron-left text-[9px]"></i> Plus récents
+            </button>
+            <span id="pager-label" class="text-xs text-gray-400 font-mono"></span>
+            <button id="pager-next" onclick="home.goToPage(home.page + 1)"
+                    class="flex items-center gap-1.5 text-[11px] font-bold text-frBlue bg-white border border-gray-200
+                           px-3 py-2 rounded-xl transition hover:bg-gray-50 active:scale-95
+                           disabled:opacity-40 disabled:pointer-events-none">
+                Plus anciens <i class="fa-solid fa-chevron-right text-[9px]"></i>
+            </button>
+        </div>
     </section>
 
     <!-- ── STATISTIQUES ─────────────────────────────────────── -->
@@ -477,14 +494,45 @@ const home = {
         document.getElementById('articles-count').textContent =
             `${unread.length} article${unread.length > 1 ? 's' : ''}`;
 
+        this._unread = unread;
+
         if (!unread.length) {
+            document.getElementById('articles-pager').classList.add('hidden');
             grid.style.display = 'grid';
             grid.innerHTML = '<p class="text-sm text-gray-400 text-center col-span-2 py-4">Tous les articles ont été lus. 🎉</p>';
             return;
         }
 
-        grid.innerHTML = unread.map(a => this._articleCard(a, false)).join('');
+        this.renderPage();
+    },
+
+    // ── Pagination : PAGE_SIZE articles par page, plus récents d'abord ──
+    PAGE_SIZE: 10,
+    page: 1,
+    _unread: [],
+
+    renderPage() {
+        const grid  = document.getElementById('articles-grid');
+        const pager = document.getElementById('articles-pager');
+        const pages = Math.max(1, Math.ceil(this._unread.length / this.PAGE_SIZE));
+        this.page = Math.min(Math.max(1, this.page), pages);
+
+        const start = (this.page - 1) * this.PAGE_SIZE;
+        grid.innerHTML = this._unread.slice(start, start + this.PAGE_SIZE)
+            .map(a => this._articleCard(a, false)).join('');
         grid.style.display = 'grid';
+
+        pager.classList.toggle('hidden', pages <= 1);
+        document.getElementById('pager-label').textContent = `${this.page} / ${pages}`;
+        document.getElementById('pager-prev').disabled = this.page <= 1;
+        document.getElementById('pager-next').disabled = this.page >= pages;
+    },
+
+    goToPage(n) {
+        this.page = n;
+        this.renderPage();
+        document.getElementById('articles-grid').closest('section')
+            .scrollIntoView({ behavior: 'smooth', block: 'start' });
     },
 
     markAsRead(articleId) {

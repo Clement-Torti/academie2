@@ -1,0 +1,110 @@
+{
+  "id": "lac-de-lispach-vosges",
+  "title": "Le lac de Lispach, un petit trésor des Hautes-Vosges",
+  "date": "2026-10-31",
+  "category": "Voyage",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lac_de_Lispach.jpg?width=1200",
+    "alt": "Le lac de Lispach entouré de sapins, avec sa tourbière dorée qui avance sur l'eau bleue"
+  },
+  "vocabulary": [
+    {
+      "fr": "une tourbière",
+      "es": "una turbera"
+    },
+    {
+      "fr": "une zone humide",
+      "es": "un humedal"
+    },
+    {
+      "fr": "un barrage",
+      "es": "una presa"
+    },
+    {
+      "fr": "faire le tour de",
+      "es": "dar la vuelta a, recorrer"
+    },
+    {
+      "fr": "un sentier",
+      "es": "un sendero"
+    },
+    {
+      "fr": "abîmer",
+      "es": "dañar, estropear"
+    },
+    {
+      "fr": "un milieu fragile",
+      "es": "un entorno frágil"
+    }
+  ],
+  "article": "Le lac de Lispach se trouve dans les Hautes-Vosges, près de La Bresse, à 909 mètres d'altitude. Beaucoup de visiteurs pensent qu'il est en Alsace, mais il se trouve en réalité du côté lorrain du massif. Il est petit : dix hectares et neuf mètres de profondeur seulement. Pourtant, c'est l'un des lacs les plus étonnants de la région. En effet, une grande partie de sa surface est couverte par une tourbière.\n\nUne tourbière est une zone humide où les plantes mortes ne pourrissent pas complètement. Elles s'accumulent lentement et forment un sol très spongieux. À Lispach, certaines parties semblent même flotter sur l'eau. On y trouve des plantes rares, comme la droséra, une petite plante carnivore qui attrape les insectes. L'eau du lac est acide, mais elle reste riche en poissons.\n\nLe lac a aussi une histoire industrielle. Au XXe siècle, on a construit plusieurs barrages pour alimenter les usines textiles et les scieries de la vallée. Sans ces travaux, le lac serait sans doute devenu une simple tourbière. Depuis 1990, l'industrie n'utilise plus son eau, et le site est aujourd'hui protégé par le réseau Natura 2000.\n\nLes promeneurs peuvent faire le tour du lac en une heure et demie, sur un sentier de trois kilomètres. En hiver, une petite station de ski familiale accueille les débutants juste en face. Mais ce succès pose une question : comment recevoir plus de visiteurs sans abîmer un milieu aussi fragile ?",
+  "dictation": {
+    "text": "Samedi dernier, mes amis et moi sommes partis marcher à la montagne. Nous avons laissé la voiture près d'un petit lac très calme. L'eau était froide et les arbres étaient déjà rouges. Ma sœur a vu une plante qui mange des insectes. Nous nous sommes arrêtés sur un banc pour manger nos sandwichs au fromage. Le soir, nous sommes rentrés très fatigués. Nous allons revenir cet hiver pour faire du ski.",
+    "units": [
+      "Samedi dernier, mes amis et moi",
+      "sommes partis marcher à la montagne.",
+      "Nous avons laissé la voiture",
+      "près d'un petit lac très calme.",
+      "L'eau était froide et les arbres étaient déjà rouges.",
+      "Ma sœur a vu une plante qui mange des insectes.",
+      "Nous nous sommes arrêtés sur un banc",
+      "pour manger nos sandwichs au fromage.",
+      "Le soir, nous sommes rentrés très fatigués.",
+      "Nous allons revenir cet hiver pour faire du ski."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Présenter le lac de Lispach",
+      "prompt": "Peux-tu me présenter le lac de Lispach comme si tu étais guide touristique ?",
+      "relances": [
+        "Qu'est-ce qu'une tourbière, avec tes propres mots ?",
+        "Pourquoi a-t-on construit des barrages sur ce lac ?",
+        "Que peut-on faire là-bas en été et en hiver ?",
+        "Qu'est-ce qui t'a le plus surprise dans l'article ?"
+      ]
+    },
+    {
+      "title": "Tourisme ou protection",
+      "prompt": "Selon toi, faut-il limiter le nombre de visiteurs dans les sites naturels fragiles ? Pourquoi ?",
+      "relances": [
+        "Quelles règles imposerais-tu aux promeneurs, concrètement ?",
+        "Que penses-tu d'un parking payant ou d'une réservation obligatoire ?",
+        "Qui devrait payer pour protéger la nature, d'après toi ?",
+        "Que répondrais-tu à un habitant qui vit du tourisme ?"
+      ]
+    },
+    {
+      "title": "Une sortie dans la nature",
+      "prompt": "Raconte-moi ta plus belle sortie dans la nature en République dominicaine.",
+      "relances": [
+        "Avec qui y es-tu allée, et comment ?",
+        "Décris-moi le paysage le plus précisément possible.",
+        "Qu'est-ce que vous avez mangé ou fait sur place ?",
+        "Quel endroit conseillerais-tu à un touriste français, et pourquoi ?"
+      ]
+    },
+    {
+      "title": "Des week-ends dans les Vosges",
+      "prompt": "Comment imagines-tu tes week-ends dans les Vosges quand tu habiteras à Strasbourg ?",
+      "relances": [
+        "Quelle activité aimerais-tu essayer en premier : randonnée, ski ou luge ?",
+        "Comment vas-tu t'habiller pour ta première journée dans la neige ?",
+        "Compare la montagne de Jarabacoa avec ce que tu imagines des Vosges.",
+        "Quels plats chauds aimerais-tu goûter après une journée dehors ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "VosgienPurSapin88",
+      "comment": "Arrêtez de faire de la pub pour Lispach !!! L'été dernier, il y avait des voitures garées partout et des gens qui marchaient SUR la tourbière pour leurs photos Instagram. Il faut un parking payant et des gardes, sinon dans dix ans il ne restera rien.",
+      "likes": 412
+    },
+    {
+      "username": "RandoMamieDuChajoux",
+      "comment": "J'y suis allée en raquettes en février avec mon petit-fils. Il voulait absolument voir la plante carnivore… sous un mètre de neige 😂 On a fini au chalet avec une tarte aux myrtilles et il a dit que c'était la meilleure randonnée de sa vie.",
+      "likes": 57
+    }
+  ]
+}

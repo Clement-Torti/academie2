@@ -1,0 +1,109 @@
+{
+  "id": "velada-ibai-netflix-2027",
+  "title": "La Velada d'Ibai quitte Twitch pour Netflix",
+  "date": "2026-10-31",
+  "category": "Culture",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ibai_Llanos_(2024)1.jpg?width=1200",
+    "alt": "Le streamer espagnol Ibai Llanos, créateur de La Velada del Año"
+  },
+  "vocabulary": [
+    {
+      "fr": "les droits de diffusion",
+      "es": "los derechos de emisión"
+    },
+    {
+      "fr": "en exclusivité",
+      "es": "en exclusiva"
+    },
+    {
+      "fr": "un abonnement",
+      "es": "una suscripción"
+    },
+    {
+      "fr": "un créateur de contenu",
+      "es": "un creador de contenido"
+    },
+    {
+      "fr": "être déçu",
+      "es": "estar decepcionado"
+    },
+    {
+      "fr": "garder son esprit",
+      "es": "mantener su esencia"
+    },
+    {
+      "fr": "payant / gratuit",
+      "es": "de pago / gratis"
+    }
+  ],
+  "article": "La Velada del Año change de maison. Le 19 octobre, Netflix a annoncé un accord avec Ibai Llanos, le streamer espagnol le plus célèbre. La plateforme diffusera en exclusivité les trois prochaines éditions, de 2027 à 2029. Ce gala mélange des combats de boxe entre créateurs de contenu et des concerts de grands artistes. Depuis sa création en 2021, il était diffusé gratuitement sur Twitch.\n\nLe succès de l'événement est énorme. La première édition avait lieu dans une simple salle de concert à Barcelone. Aujourd'hui, la Velada remplit des stades comme le Santiago Bernabéu, à Madrid, ou La Cartuja, à Séville. En 2025, elle a réuni jusqu'à 9,3 millions de spectateurs en même temps, un record pour Twitch.\n\nPour Ibai, ce choix permet de rendre la Velada « encore plus grande ». Il précise qu'il n'a pas vendu l'événement, mais seulement les droits de diffusion des combats. La présentation, les pesées et les interviews resteront gratuites sur Twitch et YouTube. Il affirme aussi avoir refusé une offre trois fois plus élevée de la plateforme Kick. Pourtant, une partie du public est déçue, car il faudra désormais un abonnement pour voir les combats.\n\nCet accord pose une vraie question. La Velada est née sur internet, grâce à une communauté jeune et fidèle. Peut-elle garder son esprit sur une grande plateforme payante ? Netflix promet de ne rien changer au format. Réponse en 2027, devant un public présent dans plus de 190 pays.",
+  "dictation": {
+    "text": "Chaque été, mon frère et moi regardons la soirée de boxe sur internet. Cette année, nous sommes allés au stade avec nos amis. Ma cousine est venue aussi et elle est restée jusqu'à la fin. Les combats ont commencé tard, mais l'ambiance était incroyable. L'année prochaine, la soirée va passer sur une plateforme payante. Mon frère est très déçu, mais je vais quand même prendre un abonnement.",
+    "units": [
+      "Chaque été, mon frère et moi",
+      "regardons la soirée de boxe sur internet.",
+      "Cette année, nous sommes allés au stade",
+      "avec nos amis. Ma cousine est venue aussi",
+      "et elle est restée jusqu'à la fin.",
+      "Les combats ont commencé tard, mais l'ambiance était incroyable.",
+      "L'année prochaine, la soirée va passer sur une plateforme payante.",
+      "Mon frère est très déçu,",
+      "mais je vais quand même prendre un abonnement."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Raconte l'accord",
+      "prompt": "Peux-tu m'expliquer avec tes mots ce qu'est la Velada et ce qui va changer ?",
+      "relances": [
+        "Qui est Ibai Llanos et pourquoi est-il si connu ?",
+        "Qu'est-ce qui restera gratuit sur Twitch et YouTube ?",
+        "Pourquoi Ibai a-t-il refusé l'offre de Kick, selon toi ?",
+        "Comment la Velada a-t-elle grandi depuis deux mille vingt et un ?"
+      ]
+    },
+    {
+      "title": "Gratuit ou payant",
+      "prompt": "À ton avis, Ibai a-t-il eu raison de passer d'une plateforme gratuite à Netflix ?",
+      "relances": [
+        "Qu'est-ce que les fans risquent de perdre avec ce changement ?",
+        "Que gagnent les créateurs quand un grand groupe les finance ?",
+        "Combien serais-tu prête à payer pour voir un événement en direct ?",
+        "Que ferais-tu à la place d'Ibai ?"
+      ]
+    },
+    {
+      "title": "Un grand événement vécu",
+      "prompt": "Raconte-moi un grand événement, concert ou match, que tu as vu en direct ou à l'écran.",
+      "relances": [
+        "Avec qui l'as-tu regardé, et où étiez-vous ?",
+        "Quelle ambiance y avait-il autour de toi ?",
+        "Quel moment précis te reste en mémoire ?",
+        "Quels créateurs de TikTok ou de Twitch suis-tu en ce moment ?"
+      ]
+    },
+    {
+      "title": "Les écrans en France",
+      "prompt": "Comment imagines-tu tes soirées devant les écrans une fois installée à Strasbourg ?",
+      "relances": [
+        "Quels abonnements as-tu à Saint-Domingue, et lesquels garderas-tu ?",
+        "Quels créateurs français aimerais-tu découvrir pour progresser en français ?",
+        "Quel grand événement dominicain aimerais-tu faire connaître à tes futurs amis ?",
+        "Comment une marque utilise-t-elle ce genre d'événement en mercadeo ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "TwitchOuRien_2021",
+      "comment": "Donc la Velada, née GRATUITE sur internet grâce à nous, devient un produit Netflix. Bravo !!! On nous laisse les pesées et les interviews, merci pour les miettes. Qu'il ne vienne pas dire que la communauté reste au centre, c'est juste l'argent qui parle.",
+      "likes": 487
+    },
+    {
+      "username": "AbuelaBoxeuse_64",
+      "comment": "Mon petit-fils m'a forcée à regarder la Velada l'an dernier. Je ne connaissais personne sur le ring mais j'ai crié plus fort que lui 😂 Maintenant que c'est sur Netflix, je suis enfin la seule de la famille à avoir l'abonnement. Il va devoir venir chez mamie !",
+      "likes": 63
+    }
+  ]
+}

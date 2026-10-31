@@ -1,0 +1,90 @@
+{
+  "id": "comprendre-aeroports-voyager-autonomie",
+  "title": "Comprendre les aéroports pour voyager en autonomie",
+  "date": "2026-10-31",
+  "category": "Voyage",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Departures_Board_at_the_Paris_Charles_de_Gaulle_Airport_(CDG),_Roissy,_France_(4004735771).jpg?width=1200",
+    "alt": "Le tableau des départs à l'aéroport Paris-Charles-de-Gaulle, avec les vols, les horaires et les portes"
+  },
+  "vocabulary": [
+    { "fr": "s'enregistrer", "es": "hacer el check-in" },
+    { "fr": "la carte d'embarquement", "es": "la tarjeta de embarque" },
+    { "fr": "un bagage en soute", "es": "una maleta facturada" },
+    { "fr": "le contrôle de sûreté", "es": "el control de seguridad" },
+    { "fr": "une correspondance", "es": "una escala, una conexión" },
+    { "fr": "le tapis roulant", "es": "la cinta de equipaje" },
+    { "fr": "se sentir perdu", "es": "sentirse perdido" },
+    { "fr": "il vaut mieux", "es": "es mejor, más vale" }
+  ],
+  "article": "Prendre l'avion seul pour la première fois peut faire peur. Pourtant, presque tous les aéroports fonctionnent de la même façon. D'abord, il faut s'enregistrer, souvent en ligne, vingt-quatre heures avant le vol. On reçoit alors une carte d'embarquement sur son téléphone. À l'aéroport, on dépose son bagage en soute au comptoir de la compagnie. Ensuite, on passe le contrôle de sûreté, où les liquides de plus de 100 ml sont interdits en cabine.\n\nAprès le contrôle, il faut trouver sa porte d'embarquement. Pour cela, on regarde les écrans des départs. Ils indiquent le numéro du vol, l'heure et la porte. Mais la porte peut changer au dernier moment, donc il vaut mieux vérifier plusieurs fois. En général, l'embarquement se termine vingt minutes avant le décollage. Un passager en retard peut perdre sa place.\n\nPour un vol international, il y a une étape de plus : le contrôle des passeports. À l'arrivée, on récupère sa valise sur le tapis roulant, puis on passe la douane. Les grands aéroports, comme Roissy-Charles-de-Gaulle, sont immenses. On doit parfois prendre un petit train pour changer de terminal. C'est pourquoi une correspondance trop courte est toujours risquée.\n\nAujourd'hui, beaucoup d'étapes se font sans personnel : bornes automatiques, portes biométriques, applications. C'est rapide et pratique. En revanche, certains voyageurs, surtout les plus âgés, se sentent perdus. Faut-il tout automatiser, ou faut-il garder des agents pour aider les passagers ?",
+  "dictation": {
+    "text": "Le mois dernier, ma cousine est partie seule à Paris. Elle est arrivée à l'aéroport trois heures avant son vol. Elle a déposé sa valise, puis elle a passé le contrôle sans problème. Ensuite, elle a cherché la porte où l'avion attendait les passagers. Elle s'est assise près de la fenêtre et elle a regardé les avions. Ses parents sont très fiers, parce qu'elle a tout fait toute seule.",
+    "units": [
+      "Le mois dernier, ma cousine est partie seule à Paris.",
+      "Elle est arrivée à l'aéroport trois heures avant son vol.",
+      "Elle a déposé sa valise,",
+      "puis elle a passé le contrôle sans problème.",
+      "Ensuite, elle a cherché la porte",
+      "où l'avion attendait les passagers.",
+      "Elle s'est assise près de la fenêtre",
+      "et elle a regardé les avions.",
+      "Ses parents sont très fiers,",
+      "parce qu'elle a tout fait toute seule."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Les étapes à l'aéroport",
+      "prompt": "Peux-tu m'expliquer, étape par étape, ce qu'on fait entre l'arrivée à l'aéroport et le décollage ?",
+      "relances": [
+        "À quoi sert la carte d'embarquement, exactement ?",
+        "Que se passe-t-il au contrôle de sûreté ?",
+        "Pourquoi faut-il vérifier la porte plusieurs fois ?",
+        "Qu'est-ce qui change pour un vol international ?"
+      ]
+    },
+    {
+      "title": "Machines ou agents humains",
+      "prompt": "Selon toi, faut-il remplacer les agents d'aéroport par des bornes et des applications ? Pourquoi ?",
+      "relances": [
+        "Quels sont les avantages des bornes automatiques, d'après toi ?",
+        "Qui risque de se sentir perdu sans agent ?",
+        "Comment imagines-tu l'aéroport idéal dans dix ans ?",
+        "Que répondrais-tu à quelqu'un qui défend le contraire ?"
+      ]
+    },
+    {
+      "title": "Un vol inoubliable",
+      "prompt": "Raconte-moi un voyage en avion qui t'a marquée, en bien ou en mal.",
+      "relances": [
+        "Où allais-tu, et avec qui voyageais-tu ?",
+        "Comment as-tu réagi quand le problème est arrivé ?",
+        "Qu'est-ce que tu ferais différemment aujourd'hui ?",
+        "Quel conseil donnerais-tu à quelqu'un qui part seul ?"
+      ]
+    },
+    {
+      "title": "Le grand départ vers Strasbourg",
+      "prompt": "Comment imagines-tu ton voyage entre Saint-Domingue et Strasbourg, le jour de ton déménagement ?",
+      "relances": [
+        "Que vas-tu mettre dans ta valise en priorité ?",
+        "Comment vas-tu aller de Paris jusqu'à Strasbourg ?",
+        "Compare l'aéroport de Las Américas avec Roissy, selon toi.",
+        "Qui va t'accompagner à l'aéroport, et pourquoi ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "VoyageurRaleur_74",
+      "comment": "Les bornes automatiques, c'est une ARNAQUE !!! On fait le travail des employés et on paie le même prix. La dernière fois, la machine a refusé ma valise trois fois et il n'y avait personne pour m'aider. Rendez-nous les vrais agents !",
+      "likes": 387
+    },
+    {
+      "username": "MamieGlobetrotteuse",
+      "comment": "Moi, à Roissy, j'ai pris le petit train dans le mauvais sens et je suis arrivée au terminal 1 au lieu du 2E 😅 J'ai couru comme jamais avec mes sandales. Bilan : j'ai eu mon vol pour Lisbonne, mais j'ai perdu une chaussure en route.",
+      "likes": 64
+    }
+  ]
+}

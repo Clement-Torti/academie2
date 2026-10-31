@@ -1,0 +1,89 @@
+{
+  "id": "mbappe-polemique-chine-mao-2026",
+  "title": "Une blague sur Mao coûte cher à Kylian Mbappé en Chine",
+  "date": "2026-10-31",
+  "category": "Sport",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kylian_Mbappe_at_Real_Madrid's_game_versus_Juventus_Turin_on_22_October_2025.jpeg?width=1200",
+    "alt": "Kylian Mbappé sous le maillot du Real Madrid pendant un match contre la Juventus"
+  },
+  "vocabulary": [
+    { "fr": "une polémique", "es": "una polémica" },
+    { "fr": "maladroit", "es": "torpe, desafortunado" },
+    { "fr": "présenter ses excuses", "es": "pedir disculpas" },
+    { "fr": "mettre fin à un contrat", "es": "rescindir un contrato" },
+    { "fr": "passer inaperçu", "es": "pasar desapercibido" },
+    { "fr": "les internautes", "es": "los usuarios de internet" },
+    { "fr": "faire attention à ses mots", "es": "medir sus palabras" }
+  ],
+  "article": "Kylian Mbappé est au cœur d'une polémique en Chine. Tout commence avec une courte vidéo tournée pendant une séance de maquillage. Le média The Bridge demande au joueur du Real Madrid quel est son mème préféré. Mbappé parle d'une image où son visage est placé sur le corps d'un « dictateur chinois ». Il s'agit de Mao Zedong, le fondateur de la Chine communiste.\n\nEn France, la remarque passe presque inaperçue. En Chine, en revanche, la vidéo dépasse des centaines de millions de vues sur Weibo, le principal réseau social du pays. Beaucoup d'internautes se disent blessés. Le 27 octobre, trois marques chinoises mettent fin à leur contrat avec l'attaquant. La télévision d'État arrête même de diffuser les matchs du championnat espagnol.\n\nMbappé présente rapidement ses excuses. Il explique que son commentaire était maladroit et qu'il respecte profondément le peuple chinois. Le Real Madrid et la Liga s'excusent aussi. Le gouvernement chinois dit prendre ces excuses « au sérieux ». En France, le président de la Fédération, Philippe Diallo, défend le joueur et espère que l'affaire ne durera pas.\n\nCette histoire montre le poids économique de la Chine dans le football. Pourtant, beaucoup de Français ne comprennent pas cette colère. Pour eux, Mao reste un dictateur responsable de millions de morts. Alors, un sportif doit-il adapter ses mots à chaque pays ? Ou bien a-t-il le droit de dire ce qu'il pense, même quand cela coûte cher ?",
+  "dictation": {
+    "text": "Ma cousine adore le football et elle suit son joueur préféré sur les réseaux. Mardi, elle a vu ses excuses et elle est restée sans voix. Il a fait une blague qui a choqué des millions de personnes en Chine. Trois grandes marques ont arrêté leur contrat avec lui. Ses copines et elle en ont parlé toute la soirée. Selon moi, une personne célèbre doit toujours faire attention à ses mots.",
+    "units": [
+      "Ma cousine adore le football",
+      "et elle suit son joueur préféré sur les réseaux.",
+      "Mardi, elle a vu ses excuses",
+      "et elle est restée sans voix.",
+      "Il a fait une blague",
+      "qui a choqué des millions de personnes en Chine.",
+      "Trois grandes marques ont arrêté leur contrat avec lui.",
+      "Ses copines et elle en ont parlé toute la soirée.",
+      "Selon moi, une personne célèbre doit toujours",
+      "faire attention à ses mots."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Raconte l'affaire Mbappé",
+      "prompt": "Peux-tu me raconter avec tes mots ce qui est arrivé à Mbappé en Chine ?",
+      "relances": [
+        "Qu'est-ce que Mbappé a dit exactement dans la vidéo ?",
+        "Comment les marques chinoises ont-elles réagi ?",
+        "Pourquoi la vidéo a-t-elle fait autant de bruit en Chine ?",
+        "Qui a pris la défense du joueur, et pourquoi ?"
+      ]
+    },
+    {
+      "title": "Liberté ou prudence",
+      "prompt": "Selon toi, une star doit-elle adapter ses paroles à la culture de chaque pays ?",
+      "relances": [
+        "Qu'est-ce qui est le plus important pour toi : l'argent ou la sincérité ?",
+        "Comment aurais-tu réagi à la place de Mbappé ?",
+        "Pourquoi une blague peut-elle être drôle ici et choquante ailleurs ?",
+        "Quelle limite fixerais-tu à l'humour d'une personne célèbre ?"
+      ]
+    },
+    {
+      "title": "Une blague mal comprise",
+      "prompt": "Raconte-moi une fois où une de tes blagues ou de tes paroles a été mal comprise.",
+      "relances": [
+        "Comment as-tu remarqué que la personne était vexée ?",
+        "Qu'as-tu fait pour arranger la situation ?",
+        "Quelles blagues dominicaines un Français risque-t-il de mal comprendre ?",
+        "Qu'est-ce que tu as appris de cette expérience ?"
+      ]
+    },
+    {
+      "title": "L'humour à la française",
+      "prompt": "Comment imagines-tu l'humour des Français, et comment vas-tu t'y adapter à Strasbourg ?",
+      "relances": [
+        "Quels sujets éviterais-tu au début avec des collègues français ?",
+        "Quelle différence vois-tu entre l'humour dominicain et l'humour français ?",
+        "Quelle vidéo TikTok française t'a déjà fait rire, et pourquoi ?",
+        "Comment ferais-tu rire de nouvelles amies en français ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "VraiSupporterBleu_92",
+      "comment": "Franchement c'est HONTEUX de le faire s'excuser !!! Mao a fait des millions de morts, c'est un fait historique, pas une insulte. Si on doit réécrire l'histoire pour vendre des yaourts en Chine, le foot a vraiment perdu la tête.",
+      "likes": 487
+    },
+    {
+      "username": "TontonRaclette_67",
+      "comment": "Moi j'ai mis ma tête sur le corps de Napoléon pour l'anniversaire de ma belle-mère. Personne n'a rompu de contrat, mais j'ai été privé de dessert pendant un mois 😂 Kylian, je compatis, vraiment.",
+      "likes": 63
+    }
+  ]
+}

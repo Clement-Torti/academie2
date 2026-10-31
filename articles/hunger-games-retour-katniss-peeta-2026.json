@@ -1,0 +1,89 @@
+{
+  "id": "hunger-games-retour-katniss-peeta-2026",
+  "title": "Katniss et Peeta de retour dans le prochain Hunger Games",
+  "date": "2026-10-31",
+  "category": "Culture",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/SDCC_2015_-_Josh_Hutcherson_%26_Jennifer_Lawrence_(19470021929).jpg?width=1200",
+    "alt": "Josh Hutcherson et Jennifer Lawrence au Comic-Con de San Diego en 2015"
+  },
+  "vocabulary": [
+    { "fr": "reprendre un rôle", "es": "volver a interpretar un papel" },
+    { "fr": "être de la partie", "es": "estar presente, formar parte" },
+    { "fr": "un tournage", "es": "un rodaje" },
+    { "fr": "émouvant", "es": "conmovedor, emotivo" },
+    { "fr": "la nostalgie", "es": "la nostalgia" },
+    { "fr": "diviser", "es": "dividir (las opiniones)" },
+    { "fr": "avoir hâte", "es": "tener muchas ganas, estar impaciente" }
+  ],
+  "article": "Katniss et Peeta reviennent au cinéma. Jennifer Lawrence l'a confirmé fin octobre dans le podcast américain « Call Her Daddy ». Elle va reprendre le rôle de Katniss Everdeen dans « Hunger Games : Lever de soleil sur la moisson ». Josh Hutcherson, qui jouait Peeta, sera aussi de la partie. Le film sort le 20 novembre aux États-Unis.\n\nPourtant, ce nouveau film n'est pas une suite. C'est un préquel, adapté du roman de Suzanne Collins publié en 2025. L'histoire se passe vingt-quatre ans avant la première saga. Elle raconte la jeunesse de Haymitch, le mentor de Katniss qui boit trop. Il est joué par le jeune acteur australien Joseph Zada.\n\nLes deux stars auront donc un petit rôle. Dans le livre, un épilogue montre Haymitch adulte, qui raconte son passé à Katniss et Peeta. Woody Harrelson, l'ancien Haymitch, fait lui aussi son retour. Pour Jennifer Lawrence, ce tournage a été très émouvant. Elle explique qu'elle et Josh Hutcherson ne se quittaient plus sur le plateau.\n\nCette nouvelle réjouit les fans, mais elle divise aussi. Certains y voient un beau cadeau, plus de dix ans après le dernier film de la saga. D'autres pensent que le studio Lionsgate utilise la nostalgie pour vendre des billets. Une question reste ouverte : faut-il aller voir un film pour une scène de quelques minutes ?",
+  "dictation": {
+    "text": "Samedi soir, ma sœur et moi avons regardé les anciens films à la maison. Elle a pleuré à la fin, comme la première fois. Ma sœur connaît encore toutes ses répliques par cœur. Ces histoires ont marqué notre jeunesse. Quand nous avons appris le retour des deux héros, nous étions vraiment très contentes. Ce matin, nous sommes allées acheter nos places au cinéma. On va voir le film ensemble, et on a déjà hâte.",
+    "units": [
+      "Samedi soir, ma sœur et moi avons regardé",
+      "les anciens films à la maison.",
+      "Elle a pleuré à la fin, comme la première fois.",
+      "Ma sœur connaît encore toutes ses répliques par cœur.",
+      "Ces histoires ont marqué notre jeunesse.",
+      "Quand nous avons appris le retour des deux héros,",
+      "nous étions vraiment très contentes.",
+      "Ce matin, nous sommes allées acheter nos places",
+      "au cinéma. On va voir le film ensemble,",
+      "et on a déjà hâte."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Raconter la nouvelle",
+      "prompt": "Peux-tu m'expliquer avec tes mots ce que raconte ce nouveau film Hunger Games ?",
+      "relances": [
+        "Qui est Haymitch, et pourquoi est-il important dans la saga ?",
+        "Pourquoi Katniss et Peeta n'ont-ils qu'un petit rôle ?",
+        "Comment Jennifer Lawrence a-t-elle annoncé son retour ?",
+        "Pourquoi cette nouvelle divise-t-elle les fans, selon l'article ?"
+      ]
+    },
+    {
+      "title": "Nostalgie ou bon cinéma",
+      "prompt": "Que penses-tu des studios qui font revenir des acteurs célèbres pour attirer le public ?",
+      "relances": [
+        "Quel retour d'acteur t'a vraiment fait plaisir, et pourquoi ?",
+        "À ton avis, qu'est-ce qui rend une suite ou un préquel réussi ?",
+        "Que dirais-tu à quelqu'un qui trouve que tout est recyclé à Hollywood ?",
+        "Quelle saga aimerais-tu voir revenir au cinéma, et comment ?"
+      ]
+    },
+    {
+      "title": "Mes sagas préférées",
+      "prompt": "Raconte-moi une saga de films, de livres ou de séries qui a marqué ta vie.",
+      "relances": [
+        "Avec qui la regardais-tu, et dans quelles circonstances ?",
+        "Quel personnage t'a le plus touchée, et pourquoi ?",
+        "Comment en parlait-on avec tes amis ou sur TikTok ?",
+        "Qu'est-ce que tu ressens quand tu la revois aujourd'hui ?"
+      ]
+    },
+    {
+      "title": "Le cinéma à Strasbourg",
+      "prompt": "Comment imagines-tu tes sorties au cinéma quand tu vivras à Strasbourg ?",
+      "relances": [
+        "Comment se passe une soirée cinéma à Saint-Domingue, en général ?",
+        "Préfères-tu voir les films en version originale ou en français ? Pourquoi ?",
+        "Comment le cinéma peut-il t'aider à progresser en français ?",
+        "Quel film français aimerais-tu découvrir en premier là-bas ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "DistrictDouze_Forever",
+      "comment": "Franchement j'en ai MARRE. Faire revenir Katniss et Peeta pour trois minutes d'épilogue, c'est juste du marketing !!! Lionsgate sait très bien que les gens vont payer leur place pour ça. Laissez cette histoire tranquille, elle était parfaite comme elle était.",
+      "likes": 387
+    },
+    {
+      "username": "PainDeBoulanger_Peeta",
+      "comment": "J'avais quatorze ans à la sortie du premier film, j'ai fait la queue trois heures avec ma meilleure amie, déguisées en Katniss avec la tresse et tout. Aujourd'hui on a trente ans et on a déjà réservé nos places pour le 20 novembre. Rien n'a changé 😂",
+      "likes": 64
+    }
+  ]
+}

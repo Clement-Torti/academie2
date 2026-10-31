@@ -1,0 +1,81 @@
+{
+  "id": "ballon-or-2026-harry-kane",
+  "title": "Harry Kane remporte le Ballon d'Or 2026 devant Kylian Mbappé",
+  "date": "2026-10-31",
+  "category": "Sport",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/FC_RB_Salzburg_gegen_FC_Bayern_München_(2026-01-06_Testspiel)_08.jpg?width=1200",
+    "alt": "Harry Kane, numéro 9 du Bayern Munich, sur la pelouse pendant un match amical en janvier 2026"
+  },
+  "vocabulary": [
+    { "fr": "remporter", "es": "ganar, conquistar" },
+    { "fr": "devancer quelqu'un", "es": "adelantarse a alguien, superar a alguien" },
+    { "fr": "un sacre", "es": "una consagración" },
+    { "fr": "un attaquant", "es": "un delantero" },
+    { "fr": "ne pas faire l'unanimité", "es": "no convencer a todos, no generar consenso" },
+    { "fr": "monter sur la première marche", "es": "subir al primer escalón del podio" },
+    { "fr": "le débat reste ouvert", "es": "el debate sigue abierto" }
+  ],
+  "article": "Harry Kane a remporté le Ballon d'Or 2026. L'attaquant anglais du Bayern Munich a reçu le trophée le 26 octobre, lors d'une cérémonie organisée à Londres. Il devance de très peu Kylian Mbappé, deuxième. L'Espagnol Lamine Yamal termine troisième. Chez les femmes, l'Espagnole Alexia Putellas gagne son troisième Ballon d'Or.\n\nCe sacre est historique. Kane est le premier Anglais récompensé depuis Michael Owen, en 2001. Pendant longtemps, on disait qu'il marquait beaucoup mais qu'il ne gagnait jamais de titre. Cette saison, il a enfin changé cette image. Avec le Bayern, il a marqué plus de 60 buts. Il a aussi gagné le championnat et la Coupe d'Allemagne.\n\nPourtant, ce résultat ne fait pas l'unanimité. Mbappé a lui aussi réalisé une saison exceptionnelle avec le Real Madrid. Cependant, son club n'a gagné aucun grand titre, et cela a sans doute compté dans le vote. Par ailleurs, l'Espagne a remporté la Coupe du monde cet été. Aucun joueur espagnol ne monte pourtant sur la première marche du podium.\n\nCréé en 1956 par le magazine France Football, le Ballon d'Or fête cette année sa 70e édition. Mais il pose toujours la même question. Dans un sport collectif, est-ce juste de récompenser un seul joueur ? Et que faut-il regarder en priorité : les buts, les trophées ou le talent ? Le débat reste ouvert.",
+  "dictation": {
+    "text": "Lundi soir, ma sœur et moi sommes restées devant la télévision. Nous voulions connaître le gagnant du Ballon d'Or. Quand le nom de l'attaquant anglais est apparu, elle a crié de joie. Il a levé le trophée doré sous les applaudissements de la salle. Ses coéquipiers et sa famille étaient très fiers de lui. J'ai pensé aux enfants qui jouent au football dans la rue. Demain, ils vont rêver de ce trophée.",
+    "units": [
+      "Lundi soir, ma sœur et moi",
+      "sommes restées devant la télévision.",
+      "Nous voulions connaître le gagnant du Ballon d'Or.",
+      "Quand le nom de l'attaquant anglais est apparu,",
+      "elle a crié de joie.",
+      "Il a levé le trophée doré",
+      "sous les applaudissements de la salle.",
+      "Ses coéquipiers et sa famille étaient très fiers de lui.",
+      "J'ai pensé aux enfants qui jouent au football",
+      "dans la rue. Demain, ils vont rêver de ce trophée."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Le sacre de Harry Kane",
+      "prompt": "Qu'est-ce qui s'est passé au Ballon d'Or 2026, et pourquoi la victoire de Kane est-elle historique ?",
+      "relances": [
+        "Qui termine juste derrière lui, et avec quel écart ?",
+        "Comment Kane a-t-il changé son image cette saison ?",
+        "Quels titres a-t-il gagnés avec le Bayern Munich ?",
+        "Pourquoi l'Espagne fait-elle parler d'elle cette année ?"
+      ]
+    },
+    {
+      "title": "Un trophée vraiment juste ?",
+      "prompt": "Que penses-tu de l'idée de récompenser un seul joueur dans un sport d'équipe comme le football ?",
+      "relances": [
+        "Qu'est-ce qui compte le plus pour toi : les buts ou les titres ?",
+        "Si tu votais, quel joueur choisirais-tu, et pourquoi ?",
+        "Comment expliques-tu qu'aucun Espagnol n'ait gagné cette année ?",
+        "Quels autres critères faudrait-il prendre en compte, selon toi ?"
+      ]
+    },
+    {
+      "title": "Le sport dans ta vie",
+      "prompt": "Quelle place le football, ou le sport en général, occupe-t-il dans ta vie et dans ta famille ?",
+      "relances": [
+        "Quel grand match as-tu regardé avec tes proches, et dans quelle ambiance ?",
+        "Quel sport est le plus populaire à Saint-Domingue, et pourquoi ?",
+        "Quel sportif dominicain admires-tu, et pour quelle raison ?",
+        "Comment ta famille réagit-elle pendant une grande compétition ?"
+      ]
+    },
+    {
+      "title": "Supportrice à Strasbourg",
+      "prompt": "Comment imagines-tu ta vie de spectatrice ou de supportrice une fois installée à Strasbourg ?",
+      "relances": [
+        "Quel match ou quel événement sportif aimerais-tu voir au stade ?",
+        "Comment le sport peut-il t'aider à te faire des amis en France ?",
+        "Quelles différences imagines-tu entre le sport en France et chez toi ?",
+        "Comment utiliserais-tu un joueur célèbre dans une campagne de mercadeo ?"
+      ]
+    }
+  ],
+  "comments": [
+    { "username": "MbappeOuRien_75", "comment": "Encore une fois on vole Kylian !!! Il porte le Real toute l'année et on donne le trophée à Kane parce qu'il gagne la Bundesliga ?? Franchement, être champion d'Allemagne avec le Bayern c'est pas un exploit, c'est la routine. Ce Ballon d'Or est devenu un concours de popularité, je ne le regarde PLUS.", "likes": 318 },
+    { "username": "CoinceSurLePeriph_93", "comment": "Moi j'ai surtout retenu que la cérémonie a commencé avec 45 minutes de retard à cause des bouchons 😂 Même les meilleurs joueurs du monde sont coincés dans les embouteillages à Londres. Ça me rassure, je me sens moins seul sur le périph tous les matins.", "likes": 87 }
+  ]
+}

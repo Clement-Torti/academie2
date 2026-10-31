@@ -1,0 +1,89 @@
+{
+  "id": "jaime-lannister-nuit-metro-kiev-2026",
+  "title": "L'acteur de Jaime Lannister passe la nuit dans le métro de Kiev",
+  "date": "2026-10-31",
+  "category": "Société",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nikolaj_Coster-Waldau_2022.jpg?width=1200",
+    "alt": "L'acteur danois Nikolaj Coster-Waldau, interprète de Jaime Lannister dans Game of Thrones"
+  },
+  "vocabulary": [
+    { "fr": "une alerte aérienne", "es": "una alerta antiaérea" },
+    { "fr": "un abri", "es": "un refugio" },
+    { "fr": "un lit de camp", "es": "un catre" },
+    { "fr": "un sac de couchage", "es": "un saco de dormir" },
+    { "fr": "sensibiliser", "es": "concienciar, sensibilizar" },
+    { "fr": "une frappe", "es": "un ataque, un bombardeo" },
+    { "fr": "faire le tour des médias", "es": "dar la vuelta a los medios" }
+  ],
+  "article": "L'acteur danois Nikolaj Coster-Waldau a passé une nuit dans une station de métro de Kiev, en Ukraine. Le monde entier le connaît pour son rôle de Jaime Lannister dans la série Game of Thrones. Le mercredi 28 octobre, une alerte aérienne a été lancée à cause d'une menace de frappes russes. L'acteur de 56 ans est alors descendu sous terre avec les habitants.\n\nDans la capitale, le métro sert d'abri pendant les attaques. Des photos de l'agence Reuters montrent l'acteur allongé sur un lit de camp. Autour de lui, des familles ont apporté des sacs de couchage et même des tentes. Sur Instagram, il a parlé d'une « nuit assez difficile ». Il a aussi montré les nombreuses alertes reçues sur son téléphone en seulement trois jours.\n\nNikolaj Coster-Waldau n'était pas en Ukraine pour un tournage. Il est ambassadeur de bonne volonté du Programme des Nations unies pour le développement. Son but était de sensibiliser le public. En effet, il veut rappeler que l'Ukraine a toujours besoin d'aide, surtout à l'approche de l'hiver. Il a aussi demandé de protéger les civils pendant les bombardements.\n\nSes photos ont vite fait le tour des médias. Pourtant, une question revient souvent quand une star s'engage pour une cause. Une nuit dans le métro peut-elle vraiment changer quelque chose ? Certains pensent que les célébrités attirent l'attention sur des drames oubliés. D'autres y voient surtout une belle opération de communication.",
+  "dictation": {
+    "text": "Hier soir, les sirènes ont sonné dans toute la ville. Avec ma mère, je suis descendue dans le métro. Beaucoup de familles sont arrivées avec des couvertures et des enfants. On a dormi sur le sol froid, mais personne ne s'est plaint. Des voisins ont partagé leurs gâteaux et leur thé chaud. Le matin, nous sommes remontées à la lumière. Ces nuits sont très difficiles, mais on va continuer à vivre ici.",
+    "units": [
+      "Hier soir, les sirènes ont sonné dans toute la ville.",
+      "Avec ma mère, je suis descendue dans le métro.",
+      "Beaucoup de familles sont arrivées",
+      "avec des couvertures et des enfants.",
+      "On a dormi sur le sol froid,",
+      "mais personne ne s'est plaint.",
+      "Des voisins ont partagé leurs gâteaux et leur thé chaud.",
+      "Le matin, nous sommes remontées à la lumière.",
+      "Ces nuits sont très difficiles,",
+      "mais on va continuer à vivre ici."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Une nuit sous terre",
+      "prompt": "Peux-tu me raconter avec tes mots ce qui est arrivé à Nikolaj Coster-Waldau à Kiev ?",
+      "relances": [
+        "Pourquoi est-ce qu'il se trouvait en Ukraine à ce moment-là ?",
+        "Comment imagines-tu l'ambiance dans cette station de métro ?",
+        "Qu'est-ce qu'il a voulu dire aux gens sur Instagram ?",
+        "Quel détail de l'article t'a le plus marquée, et pourquoi ?"
+      ]
+    },
+    {
+      "title": "Les stars et les causes",
+      "prompt": "À ton avis, à quoi servent vraiment les célébrités qui s'engagent pour un pays en guerre ?",
+      "relances": [
+        "Quelle différence fais-tu entre un vrai engagement et de la communication ?",
+        "Peux-tu citer une star dont l'engagement te paraît sincère ?",
+        "Que répondrais-tu à quelqu'un qui parle d'opération de communication ?",
+        "Comment une célébrité pourrait-elle aider de façon plus utile ?"
+      ]
+    },
+    {
+      "title": "Tes séries et leurs acteurs",
+      "prompt": "Quelle série t'a vraiment marquée, et que sais-tu des acteurs en dehors de leurs rôles ?",
+      "relances": [
+        "Qu'est-ce qui t'a donné envie de regarder cette série ?",
+        "Comment découvres-tu la vie des acteurs : TikTok, Instagram, la presse ?",
+        "Quel personnage de série aimerais-tu rencontrer en vrai, et pourquoi ?",
+        "Comment tes amis à Saint-Domingue parlent-ils des séries qu'ils regardent ?"
+      ]
+    },
+    {
+      "title": "S'informer depuis Strasbourg",
+      "prompt": "Comment penses-tu suivre l'actualité internationale une fois installée à Strasbourg ?",
+      "relances": [
+        "Quels médias français aimerais-tu découvrir, et pourquoi ?",
+        "Comment parle-t-on de la guerre en Ukraine en République dominicaine ?",
+        "En quoi Strasbourg, ville européenne, peut-elle changer ton regard sur l'actualité ?",
+        "Comment ton diplôme de mercadeo t'aide-t-il à analyser la communication des stars ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "PasDupeDuTout_75",
+      "comment": "Franchement ça m'agace... Les Ukrainiens dorment dans le métro depuis des ANNÉES et personne n'en parle. Il suffit qu'une star d'Hollywood s'allonge sur un lit de camp avec un photographe à côté et là, tout le monde s'émeut !!! C'est de la com, point.",
+      "likes": 418
+    },
+    {
+      "username": "RegicideDuDimanche",
+      "comment": "Moi j'ai regardé les huit saisons de Game of Thrones en deux semaines pendant le confinement. J'étais persuadée que Jaime Lannister ne dormait jamais sans son armure dorée 😅 Le voir en sweat à capuche dans le métro, ça fait bizarre mais respect quand même.",
+      "likes": 37
+    }
+  ]
+}

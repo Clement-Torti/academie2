@@ -1,0 +1,111 @@
+{
+  "id": "campus-drivers-serie-prime-video-2026",
+  "title": "Campus Drivers : la saga star de BookTok devient une série",
+  "date": "2026-11-07",
+  "category": "Culture",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Booktok_section,_Barnes_%26_Noble,_The_Grove,_Hollywood,_Los_Angeles,_California,_USA.jpg?width=1200",
+    "alt": "Un rayon de librairie consacré aux livres populaires sur BookTok"
+  },
+  "vocabulary": [
+    {
+      "fr": "une adaptation",
+      "es": "una adaptación"
+    },
+    {
+      "fr": "un tome",
+      "es": "un tomo, un volumen"
+    },
+    {
+      "fr": "une autrice",
+      "es": "una autora"
+    },
+    {
+      "fr": "rester fidèle à",
+      "es": "ser fiel a, respetar"
+    },
+    {
+      "fr": "le covoiturage",
+      "es": "el viaje compartido en coche"
+    },
+    {
+      "fr": "s'installer chez quelqu'un",
+      "es": "irse a vivir a casa de alguien"
+    },
+    {
+      "fr": "avoir du mal à",
+      "es": "costarle a uno, tener dificultades para"
+    }
+  ],
+  "article": "Depuis le 6 novembre, les fans de new romance peuvent regarder Campus Drivers sur Prime Video. La série adapte la célèbre saga de C.S. Quill, une autrice française. Ses cinq romans ont vendu plus de 600 000 exemplaires en France. Leur succès vient surtout de BookTok, la partie de TikTok où les lecteurs parlent de leurs livres préférés.\n\nLa première saison compte six épisodes d'environ 35 minutes. Elle adapte le premier tome, Supermad. Loïs entre dans une université prestigieuse avec Max, son amour de toujours. Mais Max la quitte, car il veut profiter de sa vie d'étudiant. Sans logement, elle s'installe alors chez son voisin, Lane. Ce garçon charmeur a créé Campus Drivers, l'application de covoiturage la plus populaire du campus. Carmen Kassovitz et Baptiste Masseline jouent les deux rôles principaux.\n\nPourtant, l'adaptation fait parler les lectrices. Dans les livres, l'histoire se passe aux États-Unis, sur un campus imaginaire. Or la série a été tournée en France, sur la Côte d'Azur, à Nice, Cannes et Antibes. Certains prénoms ont aussi changé : Kirk, le premier amour de Loïs, s'appelle maintenant Max. Les fans les plus attachés aux romans surveillent donc chaque détail sur les réseaux sociaux.\n\nPrime Video a de grandes ambitions, car la série est disponible dans plus de 240 pays. Mais les séries françaises ont parfois du mal à séduire hors de France. Une histoire d'amour entre étudiants peut-elle plaire au monde entier ? Et une adaptation doit-elle rester fidèle au livre, ou bien oser le changer ?",
+  "dictation": {
+    "text": "Ma cousine a découvert ces romans sur son téléphone, grâce à une vidéo. Elle a acheté le premier tome et elle a lu toute la nuit. Ensuite, ses amies sont venues chez elle pour parler de l'histoire. Hier soir, elles se sont retrouvées devant la télévision. Elles ont regardé les six épisodes de la série sans s'arrêter. Ma cousine a aimé les acteurs, mais elle préfère toujours le livre.",
+    "units": [
+      "Ma cousine a découvert ces romans",
+      "sur son téléphone, grâce à une vidéo.",
+      "Elle a acheté le premier tome",
+      "et elle a lu toute la nuit.",
+      "Ensuite, ses amies sont venues chez elle",
+      "pour parler de l'histoire. Hier soir,",
+      "elles se sont retrouvées devant la télévision.",
+      "Elles ont regardé les six épisodes",
+      "de la série sans s'arrêter.",
+      "Ma cousine a aimé les acteurs,",
+      "mais elle préfère toujours le livre."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Campus Drivers à l'écran",
+      "prompt": "Peux-tu raconter avec tes mots l'histoire de Campus Drivers et comment ces livres sont devenus une série ?",
+      "relances": [
+        "Qui sont Loïs et Lane, et comment se rencontrent-ils ?",
+        "Pourquoi ces romans ont-ils eu autant de succès ?",
+        "Qu'est-ce que la série a changé par rapport aux livres ?",
+        "Quelles sont les ambitions de Prime Video avec cette série ?"
+      ]
+    },
+    {
+      "title": "Le livre ou la série",
+      "prompt": "Selon toi, jusqu'où une série a-t-elle le droit de changer le livre qu'elle adapte ?",
+      "relances": [
+        "Quels changements te sembleraient acceptables, et lesquels non ?",
+        "Pourquoi les fans réagissent-ils si fort aux adaptations ?",
+        "Que gagne une histoire américaine à se passer en France ?",
+        "Quelle adaptation réussie pourrais-tu donner en exemple ?"
+      ]
+    },
+    {
+      "title": "Ta série coup de cœur",
+      "prompt": "Quelle série ou quel livre t'a rendue vraiment accro, et comment l'as-tu découvert ?",
+      "relances": [
+        "Qu'est-ce qui t'a donné envie de continuer jusqu'au bout ?",
+        "Quel personnage t'a le plus marquée, et pourquoi ?",
+        "Comment en as-tu parlé autour de toi ou sur TikTok ?",
+        "Comment le présenterais-tu à quelqu'un qui ne le connaît pas ?"
+      ]
+    },
+    {
+      "title": "Séries et français",
+      "prompt": "Comment pourrais-tu utiliser les séries françaises et BookTok pour progresser en français avant Strasbourg ?",
+      "relances": [
+        "Quelles différences vois-tu avec les séries et telenovelas dominicaines ?",
+        "Préfères-tu regarder avec ou sans sous-titres, et pourquoi ?",
+        "Quelle campagne de mercadeo imaginerais-tu pour cette série ?",
+        "Avec qui aimerais-tu regarder une série française à Strasbourg ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "TeamLaneForever_33",
+      "comment": "Belrose sur la Côte d'Azur et Kirk qui devient Max ?!! Mais qui a lu les livres dans cette production ??? Toute la magie des romans, c'est l'ambiance campus américain. Là on dirait une pub pour la Promenade des Anglais. Je regarderai quand même, mais je suis DÉÇUE.",
+      "likes": 389
+    },
+    {
+      "username": "AntiboiseEnTongs",
+      "comment": "Ils ont tourné juste à côté de chez moi l'année dernière ! Pendant trois jours, impossible de garer ma voiture et des dizaines d'ados attendaient derrière les barrières avec le tome 1 à la main. J'ai fini par lire les cinq livres pour comprendre. Verdict : je suis accro aussi 😅",
+      "likes": 57
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "id": "cristiano-ronaldo-retraite-internationale-portugal-2026",
+  "title": "Cristiano Ronaldo prend sa retraite internationale après 23 ans",
+  "date": "2026-11-07",
+  "category": "Sport",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cristiano_Ronaldo_Croatia_v_Portugal_2_July_2026-075_(cropped).jpg?width=1200",
+    "alt": "Cristiano Ronaldo sous le maillot du Portugal pendant la Coupe du monde 2026"
+  },
+  "vocabulary": [
+    {
+      "fr": "annoncer sa retraite",
+      "es": "anunciar su retiro"
+    },
+    {
+      "fr": "une lettre d'adieu",
+      "es": "una carta de despedida"
+    },
+    {
+      "fr": "transmettre",
+      "es": "transmitir, pasar (a otros)"
+    },
+    {
+      "fr": "la sélection (l'équipe nationale)",
+      "es": "la selección nacional"
+    },
+    {
+      "fr": "le sélectionneur",
+      "es": "el seleccionador"
+    },
+    {
+      "fr": "le temps de jeu",
+      "es": "los minutos de juego"
+    },
+    {
+      "fr": "laisser la place à quelqu'un",
+      "es": "dejar paso a alguien"
+    },
+    {
+      "fr": "un hommage",
+      "es": "un homenaje"
+    }
+  ],
+  "article": "Le jeudi 5 novembre, Cristiano Ronaldo a annoncé la fin de sa carrière avec l'équipe du Portugal. À 41 ans, il a publié une vidéo sur ses réseaux sociaux. Il y lit une longue lettre d'adieu à ses supporters. Selon lui, le moment est venu de transmettre son numéro 7 aux générations futures. Il reconnaît aussi que ce n'était pas une décision facile.\n\nRonaldo quitte la sélection avec des chiffres historiques. Il a joué 234 matchs et marqué 146 buts en vingt-trois ans. Aucun joueur n'a fait mieux dans le football international masculin. Avec le Portugal, il a gagné l'Euro 2016 contre la France, puis la Ligue des nations en 2019 et en 2025. Pourtant, il ne prend pas complètement sa retraite. En effet, il continue à jouer en club, à Al-Nassr, en Arabie saoudite.\n\nCette décision arrive après un été difficile. En juillet, l'Espagne a éliminé le Portugal en huitièmes de finale de la Coupe du monde. Ensuite, le sélectionneur Roberto Martínez est parti. Son remplaçant, Jorge Jesus, voulait garder Ronaldo dans l'équipe. Mais selon la presse, les deux hommes ne sont pas d'accord sur le temps de jeu du capitaine. Par ailleurs, une partie des supporters pensait qu'il fallait laisser la place aux jeunes.\n\nPour l'instant, aucun match d'adieu n'est prévu. La Fédération portugaise promet cependant un hommage à la hauteur de sa carrière. Reste une question : Ronaldo part-il au bon moment, ou trop tard ? Et le Portugal va-t-il réussir à gagner sans sa star ?",
+  "dictation": {
+    "text": "Hier soir, mon grand-père a regardé la vidéo de son joueur préféré. Le joueur a dit au revoir à son équipe nationale après vingt-trois ans de matchs. Mon grand-père est resté devant l'écran sans parler. Ensuite, il a sorti ses vieux maillots rouges et verts. Ces maillots dorment dans une boîte depuis longtemps. Demain, on va les montrer à mes cousines. Elles sont nées après la victoire de l'Euro.",
+    "units": [
+      "Hier soir, mon grand-père a regardé",
+      "la vidéo de son joueur préféré.",
+      "Le joueur a dit au revoir à son équipe nationale",
+      "après vingt-trois ans de matchs.",
+      "Mon grand-père est resté devant l'écran sans parler.",
+      "Ensuite, il a sorti ses vieux maillots rouges et verts.",
+      "Ces maillots dorment dans une boîte depuis longtemps.",
+      "Demain, on va les montrer à mes cousines.",
+      "Elles sont nées après la victoire de l'Euro."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "La fin d'une époque",
+      "prompt": "Peux-tu me raconter avec tes mots ce que Cristiano Ronaldo a annoncé cette semaine ?",
+      "relances": [
+        "Pourquoi a-t-il choisi ce moment, selon l'article ?",
+        "Qu'est-ce qu'il a gagné avec le Portugal ?",
+        "Que va-t-il faire maintenant dans sa carrière ?",
+        "Quel chiffre de l'article t'a le plus marquée ?"
+      ]
+    },
+    {
+      "title": "Partir au bon moment",
+      "prompt": "Selon toi, quel est le bon moment pour qu'un grand champion arrête sa carrière ?",
+      "relances": [
+        "Ronaldo part-il trop tard ou au bon moment, d'après toi ?",
+        "Qui doit décider : le joueur, l'entraîneur ou les supporters ?",
+        "Quel autre sportif est parti au bon moment, à ton avis ?",
+        "Que ferais-tu à sa place, à quarante et un ans ?"
+      ]
+    },
+    {
+      "title": "Tes idoles d'hier",
+      "prompt": "Quelle personnalité as-tu beaucoup admirée quand tu étais plus jeune, et pourquoi ?",
+      "relances": [
+        "Comment as-tu découvert cette personne ?",
+        "Qu'est-ce que tu as appris grâce à elle ?",
+        "Comment ton regard sur elle a-t-il changé avec le temps ?",
+        "Qui admires-tu aujourd'hui, et pour quelles raisons ?"
+      ]
+    },
+    {
+      "title": "Le sport, ici et là-bas",
+      "prompt": "Comment le sport est-il vécu en République dominicaine, et qu'est-ce qui t'attend à Strasbourg ?",
+      "relances": [
+        "Pourquoi le baseball est-il si important chez toi ?",
+        "Quels sportifs dominicains rendent les gens fiers, et pourquoi ?",
+        "Comment pourrais-tu te faire des amis grâce au sport à Strasbourg ?",
+        "Quel sport aimerais-tu essayer en France, et pourquoi ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "Benfica4Ever_Lyon",
+      "comment": "Franchement il était TEMPS !!! Ça fait trois ans qu'il bloque la place des jeunes et qu'on joue pour lui au lieu de jouer en équipe. Le Portugal a perdu contre l'Espagne avec un capitaine qui marche sur le terrain. Merci pour 2016, mais il fallait partir bien avant.",
+      "likes": 412
+    },
+    {
+      "username": "MamieTricoteDuCalvados",
+      "comment": "Mon petit-fils a appris à compter avec les buts de Ronaldo, je vous jure. À six ans il connaissait tous ses records par cœur mais pas ses tables de multiplication 😅 Aujourd'hui il a vingt-deux ans et il a pleuré devant la vidéo. Moi aussi un peu, je l'avoue.",
+      "likes": 87
+    }
+  ]
+}

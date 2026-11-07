@@ -1,0 +1,110 @@
+{
+  "id": "sete-refuse-affiches-ia-2026",
+  "title": "Sète refuse les affiches créées par l'intelligence artificielle",
+  "date": "2026-11-07",
+  "category": "Technologie",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Canal_de_S%C3%A8te%2C_H%C3%A9rault_02.jpg?width=1200",
+    "alt": "Le canal de Sète, dans l'Hérault, avec ses bateaux et ses façades colorées"
+  },
+  "vocabulary": [
+    {
+      "fr": "imprimer",
+      "es": "imprimir"
+    },
+    {
+      "fr": "diffuser",
+      "es": "difundir"
+    },
+    {
+      "fr": "un graphiste",
+      "es": "un diseñador gráfico"
+    },
+    {
+      "fr": "sans âme",
+      "es": "sin alma"
+    },
+    {
+      "fr": "les revenus baissent",
+      "es": "los ingresos bajan"
+    },
+    {
+      "fr": "un usage excessif",
+      "es": "un uso excesivo"
+    },
+    {
+      "fr": "suivre l'exemple de",
+      "es": "seguir el ejemplo de"
+    }
+  ],
+  "article": "La ville de Sète, dans l'Hérault, a pris une décision rare en France. La mairie refuse désormais d'imprimer et de diffuser les affiches entièrement créées par l'intelligence artificielle. Chaque année, elle imprime gratuitement près de 200 000 affiches et flyers pour les associations locales. Ces documents annoncent des concerts, des fêtes de quartier ou des événements sportifs.\n\nLe maire, Hervé Marquès, ne veut pas interdire cette technologie. Il souhaite plutôt limiter son usage excessif. « Sète ne peut pas se satisfaire d'images sans histoire, sans âme », explique-t-il. Une association peut donc toujours utiliser l'IA pour trouver une idée. En revanche, l'affiche finale doit garder une vraie part de création humaine. Le service communication de la ville va aider les associations à respecter cette règle.\n\nPour la mairie, l'objectif est aussi de protéger les artistes et les graphistes de la ville. Thomas Perea dirige un petit studio de graphisme à Sète. Selon lui, ses revenus baissent chaque année, car beaucoup de petits clients préfèrent l'IA. Pourtant, quand il teste l'outil, le résultat ressemble plus à Marseille qu'à Sète. L'IA crée une affiche en une minute, alors qu'il lui faut une journée.\n\nCette décision pose une question importante. Les habitants voient de plus en plus d'images artificielles et ne savent plus toujours ce qui est vrai. D'autres villes vont-elles suivre l'exemple de Sète ? Et une affiche faite à la main vaut-elle vraiment plus qu'une image produite par une machine ?",
+  "dictation": {
+    "text": "Ma sœur a une petite association de musique près de la plage. Le mois dernier, elle a créé une affiche pour son concert avec l'intelligence artificielle. Mais la mairie a refusé de l'imprimer. Alors elle est allée voir un jeune graphiste du quartier. Elle a choisi les couleurs et il a dessiné les musiciens. Ces belles affiches sont maintenant dans toutes les rues, où tout le monde les regarde.",
+    "units": [
+      "Ma sœur a une petite association",
+      "de musique près de la plage.",
+      "Le mois dernier, elle a créé une affiche",
+      "pour son concert avec l'intelligence artificielle.",
+      "Mais la mairie a refusé de l'imprimer.",
+      "Alors elle est allée voir un jeune graphiste du quartier.",
+      "Elle a choisi les couleurs",
+      "et il a dessiné les musiciens.",
+      "Ces belles affiches sont maintenant dans toutes les rues,",
+      "où tout le monde les regarde."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "La décision de Sète",
+      "prompt": "Peux-tu m'expliquer avec tes mots ce que la ville de Sète a décidé, et pourquoi ?",
+      "relances": [
+        "Qui imprime ces affiches, et pour qui ?",
+        "Que dit exactement le maire sur ces images ?",
+        "Comment le graphiste Thomas Perea vit-il cette situation ?",
+        "Quelle différence fait la mairie entre s'aider de l'IA et tout lui confier ?"
+      ]
+    },
+    {
+      "title": "Main humaine ou machine",
+      "prompt": "Que penses-tu de la décision de Sète, et quels arguments te semblent les plus forts ?",
+      "relances": [
+        "Comment peut-on vérifier qu'une affiche est faite par l'IA ?",
+        "Que répondrais-tu à une petite association sans budget ?",
+        "Pourquoi une image faite à la main aurait-elle plus de valeur ?",
+        "Où placerais-tu la limite entre une aide et une triche ?"
+      ]
+    },
+    {
+      "title": "L'IA et le mercadeo",
+      "prompt": "Pendant tes études de mercadeo, comment as-tu créé ou vu créer des images publicitaires ?",
+      "relances": [
+        "Raconte-moi une campagne publicitaire qui t'a marquée.",
+        "Quels outils utilises-tu pour créer un visuel ?",
+        "Comment reconnais-tu une image créée par l'IA sur TikTok ?",
+        "Selon toi, qu'est-ce qui rend une affiche vraiment efficace ?"
+      ]
+    },
+    {
+      "title": "Créer à Strasbourg",
+      "prompt": "Si tu travailles un jour dans la communication à Strasbourg, comment imagines-tu ton rôle face à l'IA ?",
+      "relances": [
+        "Quelles compétences humaines voudrais-tu mettre en avant ?",
+        "Comment sont les affiches dans les rues de Saint-Domingue ?",
+        "Quel événement strasbourgeois aimerais-tu promouvoir, et comment ?",
+        "Que dirais-tu à un recruteur français qui te parle d'IA ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "LotoDuDimanche_34",
+      "comment": "Sérieusement ?! La mairie n'a vraiment RIEN de plus urgent à faire ? Les petites assos ont zéro budget, et maintenant on va leur demander de payer un graphiste pour annoncer un loto ? C'est de la com' pour faire joli, rien d'autre !!!",
+      "likes": 347
+    },
+    {
+      "username": "FlamantRose_A6Pattes",
+      "comment": "J'ai demandé à une IA une affiche pour les joutes de Sète... Résultat : deux gondoles, un flamant rose avec six pattes et la tour Eiffel au fond 😂 Franchement le graphiste a raison, ça ressemblait à tout sauf à chez nous.",
+      "likes": 58
+    }
+  ]
+}

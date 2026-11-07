@@ -1,0 +1,113 @@
+{
+  "id": "karl-bushby-retour-hull-2026",
+  "title": "Karl Bushby rentre à Hull après 28 ans de marche autour du monde",
+  "date": "2026-11-07",
+  "category": "Voyage",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Karl_Bushby_Homecoming_Newtondale_Crowd,_Kingston_upon_Hull_Nov26.jpg?width=1200",
+    "alt": "Karl Bushby entouré par la foule dans une rue de Hull, le jour de son retour en novembre 2026"
+  },
+  "vocabulary": [
+    {
+      "fr": "un aventurier",
+      "es": "un aventurero"
+    },
+    {
+      "fr": "parcourir",
+      "es": "recorrer"
+    },
+    {
+      "fr": "un obstacle",
+      "es": "un obstáculo"
+    },
+    {
+      "fr": "traverser à la nage",
+      "es": "cruzar a nado"
+    },
+    {
+      "fr": "accueillir quelqu'un",
+      "es": "recibir a alguien, dar la bienvenida"
+    },
+    {
+      "fr": "consacrer sa vie à",
+      "es": "dedicar su vida a"
+    },
+    {
+      "fr": "prendre quelqu'un dans ses bras",
+      "es": "abrazar a alguien"
+    },
+    {
+      "fr": "manquer l'essentiel",
+      "es": "perderse lo esencial"
+    }
+  ],
+  "article": "Le 2 novembre, l'aventurier britannique Karl Bushby est enfin rentré chez lui, à Hull, dans le nord de l'Angleterre. Il était parti en 1998 de la pointe sud du Chili, à 28 ans. Son objectif semblait fou : rentrer à pied, sans jamais prendre de transport à moteur. Vingt-huit ans plus tard, il a parcouru environ 50 000 kilomètres.\n\nSon voyage a été plein d'obstacles. Cet ancien parachutiste de l'armée britannique a traversé la jungle du Darién, entre la Colombie et le Panama. Il a aussi marché sur la mer gelée du détroit de Béring, entre l'Alaska et la Russie. Les visas, les frontières fermées et les guerres l'ont souvent bloqué pendant des mois. À la fin, on lui a refusé le passage par le tunnel sous la Manche. Il a donc traversé la Manche à la nage.\n\nÀ Hull, des centaines de personnes l'attendaient devant l'hôtel de ville. La maire a rappelé que la ville attendait son retour depuis 10 229 jours. Ensuite, il a marché encore cinq kilomètres jusqu'à la maison de sa mère, Angela. Elle l'a pris dans ses bras devant la porte. Son fils Adam avait huit ans à son départ. Aujourd'hui, il en a 36.\n\nCette aventure impressionne, mais elle pose aussi des questions. Peut-on consacrer presque trente ans de sa vie à un seul projet ? Que reste-t-il pour la famille, les amis ou le travail ? Pour certains, Karl Bushby est un héros. Pour d'autres, c'est un homme qui a manqué l'essentiel.",
+  "dictation": {
+    "text": "Ce matin, toute la rue a décoré les maisons avec des drapeaux. Les voisins sont sortis très tôt pour attendre le voyageur. Sa mère est restée près de la fenêtre. Elle a gardé sa chambre pendant toutes ces années. Quand son fils est arrivé, elle a pleuré de joie. Ils se sont serrés dans les bras devant les caméras. Ce soir, ils vont manger ensemble à la maison.",
+    "units": [
+      "Ce matin, toute la rue",
+      "a décoré les maisons avec des drapeaux.",
+      "Les voisins sont sortis très tôt pour attendre le voyageur.",
+      "Sa mère est restée près de la fenêtre.",
+      "Elle a gardé sa chambre pendant toutes ces années.",
+      "Quand son fils est arrivé,",
+      "elle a pleuré de joie.",
+      "Ils se sont serrés dans les bras devant les caméras.",
+      "Ce soir, ils vont manger ensemble à la maison."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Le grand retour",
+      "prompt": "Peux-tu me raconter avec tes mots le voyage de Karl Bushby et son arrivée à Hull ?",
+      "relances": [
+        "Quels obstacles a-t-il rencontrés pendant toutes ces années ?",
+        "Pourquoi a-t-il traversé la Manche à la nage ?",
+        "Comment la ville de Hull l'a-t-elle accueilli ?",
+        "Quel moment de son retour t'a le plus touchée, et pourquoi ?"
+      ]
+    },
+    {
+      "title": "Héros ou égoïste",
+      "prompt": "Selon toi, Karl Bushby est-il un héros ou un homme qui a manqué l'essentiel ?",
+      "relances": [
+        "Qu'est-ce que son fils a pu ressentir pendant toutes ces années ?",
+        "À partir de quand un rêve devient-il une obsession, d'après toi ?",
+        "Quelles qualités faut-il pour marcher pendant vingt-huit ans ?",
+        "Comment réagirais-tu si quelqu'un de ta famille partait aussi longtemps ?"
+      ]
+    },
+    {
+      "title": "Mon plus beau retour",
+      "prompt": "Raconte-moi un retour à la maison, ou des retrouvailles, que tu n'oublieras jamais.",
+      "relances": [
+        "Qui t'attendait, et comment t'a-t-on accueillie ?",
+        "Qu'est-ce qui avait changé pendant ton absence ?",
+        "Quel plat dominicain voulais-tu manger en premier en rentrant ?",
+        "Comment ta famille fête-t-elle les retrouvailles à Saint-Domingue ?"
+      ]
+    },
+    {
+      "title": "Découvrir la France à pied",
+      "prompt": "Une fois installée à Strasbourg, quels voyages aimerais-tu faire pour découvrir la France et l'Europe ?",
+      "relances": [
+        "Préfères-tu voyager à pied, à vélo, en train ou en avion ?",
+        "Quelle région française voudrais-tu explorer en premier, et pourquoi ?",
+        "Comment imagines-tu ton premier retour en visite à Saint-Domingue ?",
+        "Quel défi personnel aimerais-tu te lancer en France ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "PapaPoule_Dunkerque",
+      "comment": "Désolé mais je ne vois RIEN d'héroïque là-dedans. Il a laissé un gamin de huit ans pour aller se promener pendant vingt-huit ans !!! Pendant ce temps, sa mère vieillissait toute seule. On applaudit un égoïste et on appelle ça une aventure...",
+      "likes": 318
+    },
+    {
+      "username": "RandoMamie_Vercors",
+      "comment": "Moi j'ai fait Compostelle à pied l'an dernier, 800 km, et au bout de trois semaines je parlais à mes chaussettes 😅 Alors 50 000 km... Chapeau Monsieur ! J'espère que sa maman lui a préparé un bon plat bien chaud.",
+      "likes": 57
+    }
+  ]
+}

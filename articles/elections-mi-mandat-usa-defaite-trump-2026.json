@@ -1,0 +1,115 @@
+{
+  "id": "elections-mi-mandat-usa-defaite-trump-2026",
+  "title": "États-Unis : lourde défaite pour Trump aux élections de mi-mandat",
+  "date": "2026-11-07",
+  "category": "Société",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/United_States_Capitol_west_front_edit2.jpg?width=1200",
+    "alt": "Le Capitole à Washington, où siège le Congrès des États-Unis"
+  },
+  "vocabulary": [
+    {
+      "fr": "les élections de mi-mandat",
+      "es": "las elecciones de medio mandato (midterms)"
+    },
+    {
+      "fr": "une lourde défaite",
+      "es": "una dura derrota"
+    },
+    {
+      "fr": "prendre le contrôle de",
+      "es": "tomar el control de"
+    },
+    {
+      "fr": "sanctionner quelqu'un",
+      "es": "castigar a alguien (con el voto)"
+    },
+    {
+      "fr": "la hausse des prix",
+      "es": "el aumento de los precios"
+    },
+    {
+      "fr": "les droits de douane",
+      "es": "los aranceles"
+    },
+    {
+      "fr": "une enquête",
+      "es": "una investigación"
+    },
+    {
+      "fr": "se relever",
+      "es": "recuperarse, levantarse"
+    }
+  ],
+  "article": "Le mardi 3 novembre, les Américains ont voté pour les élections de mi-mandat. Ce scrutin a lieu deux ans après l'élection présidentielle. Le résultat est une lourde défaite pour Donald Trump et le Parti républicain. Les démocrates prennent le contrôle de la Chambre des représentants avec environ 255 sièges, alors qu'il en faut 218 pour avoir la majorité. Ils gagnent aussi le Sénat, avec au moins 54 sièges sur 100. Même le Texas élit un sénateur démocrate, pour la première fois depuis des décennies.\n\nTrump n'était pas candidat, mais beaucoup d'électeurs ont voulu le sanctionner. Ils se plaignent de la hausse des prix, surtout pour l'essence et les courses. Les droits de douane et la guerre en Iran sont aussi très impopulaires. Le vice-président JD Vance l'a reconnu : selon lui, cette guerre est « la raison de notre défaite ». De son côté, Mike Johnson, le président de la Chambre, renonce à rester le chef des républicains.\n\nCe changement aura des conséquences concrètes. À partir du 3 janvier, Hakeem Jeffries devrait devenir le premier Afro-Américain à présider la Chambre. Les démocrates pourront bloquer les lois de Trump. Ils pourront aussi lancer des enquêtes sur son gouvernement et sur les affaires de sa famille. Certains parlent même d'une troisième procédure de destitution.\n\nPourtant, Trump reste président jusqu'en janvier 2029. Pendant deux ans, il devra négocier avec un Congrès hostile. Cette défaite est-elle le début de la fin pour le trumpisme ? Ou bien les républicains vont-ils se relever avant la présidentielle de 2028 ?",
+  "dictation": {
+    "text": "Ma cousine habite aux États-Unis depuis dix ans. Mardi, elle est allée voter avant son travail. Elle a attendu une heure dehors, mais elle est restée jusqu'au bout. Le soir, ses amies se sont retrouvées chez elle pour regarder les résultats. Comme beaucoup de gens, ces femmes trouvent que les courses et l'essence sont trop chères. À minuit, elles ont compris que le parti du président a perdu. Ma cousine m'a envoyé un message joyeux.",
+    "units": [
+      "Ma cousine habite aux États-Unis depuis dix ans.",
+      "Mardi, elle est allée voter avant son travail.",
+      "Elle a attendu une heure dehors,",
+      "mais elle est restée jusqu'au bout.",
+      "Le soir, ses amies se sont retrouvées",
+      "chez elle pour regarder les résultats.",
+      "Comme beaucoup de gens, ces femmes trouvent",
+      "que les courses et l'essence sont trop chères.",
+      "À minuit, elles ont compris",
+      "que le parti du président a perdu.",
+      "Ma cousine m'a envoyé un message joyeux."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Raconter les élections américaines",
+      "prompt": "Explique-moi ce qui s'est passé aux États-Unis le 3 novembre, et pourquoi on parle d'une défaite pour Trump.",
+      "relances": [
+        "Quelle différence fais-tu entre la Chambre et le Sénat ?",
+        "Pourquoi beaucoup d'électeurs ont-ils voulu sanctionner Trump ?",
+        "Qu'est-ce que les démocrates vont pouvoir faire maintenant ?",
+        "Pourquoi l'élection au Texas est-elle si surprenante ?"
+      ]
+    },
+    {
+      "title": "Voter pour sanctionner",
+      "prompt": "À ton avis, est-ce qu'on doit voter contre un président quand les prix augmentent trop ?",
+      "relances": [
+        "Quelles autres raisons devraient compter quand on vote ?",
+        "Comment expliques-tu qu'un président devienne impopulaire si vite ?",
+        "Que penses-tu de l'idée d'une troisième procédure de destitution ?",
+        "Qu'est-ce qui pourrait aider les républicains à se relever ?"
+      ]
+    },
+    {
+      "title": "La hausse des prix",
+      "prompt": "Raconte-moi comment la hausse des prix a changé les habitudes de ta famille à Saint-Domingue.",
+      "relances": [
+        "Quels produits sont devenus trop chers pour vous, par exemple ?",
+        "Comment tes parents font-ils leurs courses aujourd'hui ?",
+        "Comment parle-t-on des États-Unis à la maison ou sur TikTok ?",
+        "Quelle astuce utilises-tu pour dépenser moins chaque mois ?"
+      ]
+    },
+    {
+      "title": "La politique vue de France",
+      "prompt": "Comment imagines-tu les discussions sur la politique américaine avec tes futurs collègues à Strasbourg ?",
+      "relances": [
+        "Quelle image les Dominicains ont-ils des États-Unis, selon toi ?",
+        "Quelles différences vois-tu entre les élections françaises et américaines ?",
+        "Comment une décision prise à Washington peut-elle changer ta vie en France ?",
+        "Quels mots de cet article aimerais-tu réutiliser dans une conversation ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "PatriotDeLyon_1776",
+      "comment": "Franchement, les médias français crient victoire beaucoup trop vite !!! Trump reste président jusqu'en 2029, il n'a perdu AUCUNE élection lui-même. Des enquêtes et une troisième destitution ? Les démocrates vont perdre deux ans à faire de la politique au lieu de baisser les prix. On en reparle en 2028.",
+      "likes": 47
+    },
+    {
+      "username": "TatieGinetteEnFloride",
+      "comment": "Je vis près de Miami depuis vingt ans et je n'avais JAMAIS vu une queue pareille devant mon bureau de vote. Mon voisin, républicain depuis toujours, m'a avoué dans la file que le plein d'essence lui coûtait trop cher. Il n'a pas voulu me dire pour qui il a voté 😏",
+      "likes": 312
+    }
+  ]
+}

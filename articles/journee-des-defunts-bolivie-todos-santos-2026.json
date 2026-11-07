@@ -1,0 +1,82 @@
+{
+  "id": "journee-des-defunts-bolivie-todos-santos-2026",
+  "title": "En Bolivie, les morts reviennent à la maison pour la Toussaint",
+  "date": "2026-11-07",
+  "category": "Culture",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mesa_sencilla_de_Todos_Santos,_La_Paz,_Bolivia.jpg?width=1200",
+    "alt": "Une table de Todos Santos à La Paz, en Bolivie, décorée de pains, de fruits, de fleurs et de bougies pour accueillir l'âme d'un défunt"
+  },
+  "vocabulary": [
+    { "fr": "un défunt", "es": "un difunto" },
+    { "fr": "accueillir quelqu'un", "es": "recibir a alguien, acoger a alguien" },
+    { "fr": "une âme", "es": "un alma" },
+    { "fr": "une bougie", "es": "una vela" },
+    { "fr": "le lendemain", "es": "el día siguiente" },
+    { "fr": "en échange", "es": "a cambio" },
+    { "fr": "un crâne", "es": "un cráneo, una calavera" },
+    { "fr": "laisser évoluer une tradition", "es": "dejar que una tradición cambie" }
+  ],
+  "article": "En Bolivie, la fête des morts n'est pas un jour de tristesse. Chaque année, le 1er et le 2 novembre, les familles accueillent les âmes de leurs défunts à la maison. Selon la tradition, les morts arrivent le 1er novembre à midi. Ils passent vingt-quatre heures avec les vivants, puis repartent le lendemain.\n\nPour les recevoir, on prépare une table spéciale, appelée « mesa » ou « mast'aku ». On y pose les plats préférés du défunt, des fruits, des fleurs, des bougies et sa photo. Les éléments les plus connus sont les « tantawawas », des pains en forme de bébé. On ajoute aussi des échelles en pain, qui aident l'âme à descendre du ciel, et parfois des feuilles de coca.\n\nLa fête est aussi collective. Les voisins et les amis passent dans les maisons pour prier devant la table. En échange, ils reçoivent du pain et des biscuits. Le 2 novembre, beaucoup de familles vont au cimetière avec de la musique et de la nourriture. À La Paz, la tradition continue le 8 novembre avec la fête des « ñatitas ». Ce jour-là, des habitants décorent des crânes humains avec des fleurs et des lunettes de soleil.\n\nCependant, ces coutumes changent. Dans les grandes villes, beaucoup de familles achètent leurs tantawawas à la boulangerie au lieu de les préparer. Par ailleurs, Halloween attire de plus en plus de jeunes. Faut-il protéger ces traditions ou les laisser évoluer ? Une chose reste sûre : en Bolivie, on ne cache pas la mort, on l'invite à table.",
+  "dictation": {
+    "text": "L'année dernière, je suis allée chez une amie bolivienne pour la fête des morts. Sa mère a préparé une grande table pour son père, qui est mort au printemps. Il y avait des fleurs, des bougies et des petits pains en forme de bébé. Ses voisins sont venus prier devant la photo. Ensuite, nous avons mangé ensemble et nous avons beaucoup ri. L'année prochaine, je vais préparer ces petits pains avec elles.",
+    "units": [
+      "L'année dernière, je suis allée chez une amie bolivienne",
+      "pour la fête des morts.",
+      "Sa mère a préparé une grande table pour son père,",
+      "qui est mort au printemps.",
+      "Il y avait des fleurs, des bougies",
+      "et des petits pains en forme de bébé.",
+      "Ses voisins sont venus prier devant la photo.",
+      "Ensuite, nous avons mangé ensemble",
+      "et nous avons beaucoup ri.",
+      "L'année prochaine, je vais préparer ces petits pains avec elles."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Todos Santos en Bolivie",
+      "prompt": "Comment les Boliviens accueillent-ils leurs défunts pendant les premiers jours de novembre ?",
+      "relances": [
+        "Qu'est-ce qu'on pose sur la table préparée pour le défunt ?",
+        "À quoi servent les tantawawas et les échelles en pain ?",
+        "Quel rôle jouent les voisins et les amis pendant la fête ?",
+        "Que se passe-t-il à La Paz le 8 novembre ?"
+      ]
+    },
+    {
+      "title": "Rire ou pleurer ses morts",
+      "prompt": "Selon toi, vaut-il mieux faire la fête ou rester dans le silence pour se souvenir des morts ?",
+      "relances": [
+        "Que penses-tu de la fête des ñatitas et de ses crânes décorés ?",
+        "Pourquoi certaines personnes trouvent-elles ces traditions choquantes ?",
+        "Que faudrait-il faire pour protéger ces coutumes face à Halloween ?",
+        "Comment une tradition peut-elle changer sans perdre son sens ?"
+      ]
+    },
+    {
+      "title": "Les souvenirs de famille",
+      "prompt": "Comment ta famille à Saint-Domingue garde-t-elle vivant le souvenir de ses proches disparus ?",
+      "relances": [
+        "Quel plat ou quelle chanson te rappelle une personne de ta famille ?",
+        "Raconte-moi une histoire de famille que tes grands-parents aiment raconter.",
+        "Qu'est-ce qu'on fait chez toi le 1er et le 2 novembre ?",
+        "Quelle tradition dominicaine aimerais-tu transmettre un jour ?"
+      ]
+    },
+    {
+      "title": "La Toussaint en France",
+      "prompt": "Comment imagines-tu ta première Toussaint en France, une fois installée à Strasbourg ?",
+      "relances": [
+        "Quelles différences imagines-tu entre la France, la Bolivie et ton pays ?",
+        "Comment pourrais-tu partager tes traditions avec tes futurs amis français ?",
+        "Que préfères-tu : Halloween ou une fête des morts traditionnelle ? Pourquoi ?",
+        "Comment ferais-tu la promotion de Todos Santos auprès des touristes européens ?"
+      ]
+    }
+  ],
+  "comments": [
+    { "username": "RationnelEtFier_31", "comment": "Désolé mais décorer des VRAIS crânes humains avec des lunettes de soleil, j'appelle pas ça une belle tradition, c'est carrément glauque !!! On parle de restes humains, un peu de respect. Et qu'on arrête de tout trouver magnifique dès que c'est \"folklorique\". Les morts, on les laisse tranquilles au cimetière.", "likes": 274 },
+    { "username": "MochileraDeCochabamba", "comment": "J'étais en sac à dos à Cochabamba il y a trois ans. Une famille m'a fait entrer chez elle, j'ai prié devant la photo de leur grand-mère et on m'a donné un sac ENTIER de pain. J'ai mangé des tantawawas pendant une semaine 😄 Je n'ai jamais été aussi bien accueillie de ma vie.", "likes": 61 }
+  ]
+}

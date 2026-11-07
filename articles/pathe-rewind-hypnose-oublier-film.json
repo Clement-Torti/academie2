@@ -1,0 +1,80 @@
+{
+  "id": "pathe-rewind-hypnose-oublier-film",
+  "title": "Pathé hypnotise ses spectateurs pour leur faire oublier un film",
+  "date": "2026-11-07",
+  "category": "Culture",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Panoramio_-_henkiedenkie_-_Den_Haag_-_Pathe_Buitenhof_(bioscoop-cinema).jpg?width=1200",
+    "alt": "La façade du cinéma Pathé Buitenhof, à La Haye, aux Pays-Bas"
+  },
+  "vocabulary": [
+    { "fr": "hypnotiser quelqu'un", "es": "hipnotizar a alguien" },
+    { "fr": "effacer un souvenir", "es": "borrar un recuerdo" },
+    { "fr": "connaître par cœur", "es": "saberse de memoria" },
+    { "fr": "une séance", "es": "una sesión, una función (de cine)" },
+    { "fr": "revoir un film", "es": "volver a ver una película" },
+    { "fr": "s'inquiéter", "es": "preocuparse" },
+    { "fr": "une opération de communication", "es": "una campaña publicitaria, una operación de marketing" }
+  ],
+  "article": "Aux Pays-Bas, la chaîne de cinémas Pathé lance une expérience étonnante, appelée REWIND. Le 9 novembre, trente spectateurs vont être hypnotisés avant une séance au cinéma Pathé Buitenhof, à La Haye. Le but est de leur faire oublier un film qu'ils adorent. Ainsi, ils pourront le revoir comme la première fois.\n\nLes participants ont pu choisir entre quatre films cultes : Matrix, Seven, La La Land et Interstellar. Pathé va garder un seul titre, selon leurs préférences. Chaque volontaire a d'abord une séance privée en ligne avec Victor Kraemer, un hypnothérapeute qui a plus de trente ans d'expérience. Juste avant la projection, il hypnotisera tout le groupe dans la salle. La participation est gratuite, mais les inscriptions sont déjà fermées.\n\nPourtant, l'expérience pose des questions. Pathé reconnaît lui-même que rien ne prouve que l'hypnose peut effacer un souvenir. Selon plusieurs chercheurs, elle rend les souvenirs plus difficiles à retrouver, mais elle ne les supprime pas. Par ailleurs, certains s'inquiètent, car une personne hypnotisée est plus facile à influencer. Que se passe-t-il si elle regarde ensuite des publicités ? Et comment réagira-t-elle devant un film violent comme Seven ?\n\nPour Pathé, c'est surtout une belle opération de communication autour de ses films classiques. « Qui ne voudrait pas revoir son film préféré pour la première fois ? », demande sa responsable de la communication. Mais le plaisir du cinéma vient-il vraiment de la surprise ? Ou bien aime-t-on justement revoir une histoire qu'on connaît par cœur ?",
+  "dictation": {
+    "text": "Samedi, mon frère et ses amies sont allés au cinéma. Ils ont choisi un vieux film que mon frère connaît par cœur. Avant la séance, une femme a parlé d'une voix douce. Elle a demandé aux spectateurs de fermer les yeux et d'oublier l'histoire. Après le film, mon frère est rentré à la maison très content. Il a dit que la fin était une vraie surprise. Je pense qu'il a dormi pendant la séance.",
+    "units": [
+      "Samedi, mon frère et ses amies sont allés au cinéma.",
+      "Ils ont choisi un vieux film",
+      "que mon frère connaît par cœur.",
+      "Avant la séance, une femme a parlé d'une voix douce.",
+      "Elle a demandé aux spectateurs de fermer les yeux",
+      "et d'oublier l'histoire. Après le film, mon frère",
+      "est rentré à la maison très content.",
+      "Il a dit que la fin était une vraie surprise.",
+      "Je pense qu'il a dormi pendant la séance."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "L'expérience REWIND",
+      "prompt": "Peux-tu m'expliquer avec tes mots ce que Pathé organise aux Pays-Bas, et dans quel but ?",
+      "relances": [
+        "Comment se déroule l'hypnose, étape par étape ?",
+        "Quels films les participants ont-ils pu choisir ?",
+        "Pourquoi certains chercheurs restent-ils sceptiques ?",
+        "Quels risques les critiques mettent-ils en avant ?"
+      ]
+    },
+    {
+      "title": "Oublier pour mieux revoir",
+      "prompt": "À ton avis, est-ce une bonne idée d'hypnotiser des spectateurs pour leur faire oublier un film ?",
+      "relances": [
+        "Qu'est-ce qui rend un film agréable à revoir, selon toi ?",
+        "Pourquoi une marque choisit-elle une idée aussi étrange ?",
+        "Quelles limites faudrait-il fixer à ce genre d'expérience ?",
+        "Que dirais-tu à un ami qui veut participer ?"
+      ]
+    },
+    {
+      "title": "Ton film préféré",
+      "prompt": "Quel film ou quelle série aimerais-tu découvrir à nouveau comme la première fois, et pourquoi ?",
+      "relances": [
+        "Dans quelles circonstances l'as-tu vu pour la première fois ?",
+        "Quelle scène t'a le plus marquée, et pourquoi ?",
+        "Combien de fois l'as-tu revu, et avec qui ?",
+        "Comment le raconterais-tu à quelqu'un qui ne le connaît pas ?"
+      ]
+    },
+    {
+      "title": "Le cinéma à Strasbourg",
+      "prompt": "Comment imagines-tu tes sorties au cinéma une fois installée à Strasbourg ?",
+      "relances": [
+        "Quelles différences imagines-tu avec les cinémas de Saint-Domingue ?",
+        "Pourquoi un film en version originale peut-il t'aider en français ?",
+        "Quelle campagne de mercadeo inventerais-tu pour attirer des spectateurs ?",
+        "Avec qui aimerais-tu partager ta première séance en France ?"
+      ]
+    }
+  ],
+  "comments": [
+    { "username": "CinephileEnColere_44", "comment": "Hypnotiser des gens pour qu'ils oublient Seven et ensuite leur balancer 20 minutes de pubs ??? C'est franchement MALSAIN. On joue avec la mémoire des spectateurs pour faire le buzz. Au lieu de ça, baissez le prix des places et des popcorns, là je reviendrai au cinéma !!!", "likes": 274 },
+    { "username": "MamieRevoitTitanic", "comment": "Moi pas besoin d'hypnose, j'oublie tous les films au bout de deux semaines 😅 Hier soir j'ai revu Titanic en pensant que c'était une nouveauté. J'ai pleuré à la fin comme la première fois. Pathé, embauchez-moi, je suis le cobaye idéal et je ne coûte rien !", "likes": 61 }
+  ]
+}

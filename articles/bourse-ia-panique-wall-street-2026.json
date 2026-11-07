@@ -1,0 +1,115 @@
+{
+  "id": "bourse-ia-panique-wall-street-2026",
+  "title": "Panique en Bourse : les géants de l'intelligence artificielle chutent",
+  "date": "2026-11-07",
+  "category": "Économie",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nasdaq_MarketSite_(51494550508).jpg?width=1200",
+    "alt": "La façade du Nasdaq, la Bourse des valeurs technologiques, à Times Square, New York"
+  },
+  "vocabulary": [
+    {
+      "fr": "la Bourse",
+      "es": "la Bolsa (de valores)"
+    },
+    {
+      "fr": "une action",
+      "es": "una acción (de una empresa)"
+    },
+    {
+      "fr": "chuter",
+      "es": "caer, desplomarse"
+    },
+    {
+      "fr": "un investisseur",
+      "es": "un inversor"
+    },
+    {
+      "fr": "une bulle",
+      "es": "una burbuja (financiera)"
+    },
+    {
+      "fr": "les économies",
+      "es": "los ahorros"
+    },
+    {
+      "fr": "un centre de données",
+      "es": "un centro de datos"
+    },
+    {
+      "fr": "remonter",
+      "es": "volver a subir, recuperarse"
+    }
+  ],
+  "article": "Cette semaine, la Bourse de New York a connu une journée noire. Le Nasdaq, l'indice des entreprises technologiques, a perdu 5,5 % en une seule séance. C'est sa pire chute depuis avril 2025. Les actions liées à l'intelligence artificielle ont été les plus touchées. Nvidia, qui fabrique les puces utilisées par l'IA, a perdu plus de 9 % en un jour. Au total, environ 2 500 milliards de dollars ont disparu.\n\nPourquoi cette panique ? Le déclencheur, ce sont les élections de mi-mandat. Les démocrates ont gagné, et les investisseurs craignent maintenant des règles plus strictes pour l'IA. En effet, beaucoup d'Américains se méfient de cette technologie. Ils reprochent aussi aux immenses centres de données de faire monter les factures d'électricité. Si leur construction ralentit, les géants de la tech gagneront moins d'argent.\n\nLa peur a vite traversé les océans. Les Bourses de Tokyo et de Séoul ont ensuite chuté d'environ 6 %. L'Europe a moins souffert, car elle a peu d'entreprises spécialisées dans l'IA. Vendredi, les marchés ont un peu remonté. Pourtant, la semaine reste la pire depuis avril 2025.\n\nDepuis des mois, certains experts parlent d'une « bulle » de l'IA. Selon eux, le prix des actions est monté beaucoup trop haut. D'autres rappellent que ces entreprises gagnent vraiment de l'argent, contrairement à celles de l'an 2000. Alors, simple coup de froid ou début d'un krach ? Et faut-il avoir peur d'une technologie qui fait autant rêver les marchés ?",
+  "dictation": {
+    "text": "Mon voisin et sa femme ont acheté des actions il y a deux ans. Au début, ils étaient très fiers de leur choix. Cette semaine, ils sont restés toute la soirée devant leurs écrans. Leurs économies ont perdu beaucoup de valeur en une seule journée de panique. Ma voisine est restée calme et elle pense que les prix vont remonter. Son mari a peur et il veut tout vendre à la fin du mois.",
+    "units": [
+      "Mon voisin et sa femme ont acheté des actions",
+      "il y a deux ans.",
+      "Au début, ils étaient très fiers de leur choix.",
+      "Cette semaine, ils sont restés",
+      "toute la soirée devant leurs écrans.",
+      "Leurs économies ont perdu beaucoup de valeur",
+      "en une seule journée de panique.",
+      "Ma voisine est restée calme",
+      "et elle pense que les prix vont remonter.",
+      "Son mari a peur et il veut tout vendre",
+      "à la fin du mois."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "La journée noire",
+      "prompt": "Peux-tu raconter avec tes mots ce qui s'est passé en Bourse cette semaine ?",
+      "relances": [
+        "Pourquoi les élections ont-elles fait peur aux investisseurs ?",
+        "Quelles entreprises ont le plus perdu, et pourquoi ?",
+        "Comment la panique est-elle arrivée en Asie et en Europe ?",
+        "Que reprochent les Américains aux centres de données ?"
+      ]
+    },
+    {
+      "title": "Bulle ou pas bulle",
+      "prompt": "Selon toi, l'intelligence artificielle est-elle une vraie révolution ou une mode que les marchés exagèrent ?",
+      "relances": [
+        "Quels arguments te semblent les plus convaincants, et pourquoi ?",
+        "Que se passerait-il pour nous si la bulle éclatait ?",
+        "Quelles règles les gouvernements devraient-ils imposer à l'IA ?",
+        "Qui gagne vraiment de l'argent avec l'IA, à ton avis ?"
+      ]
+    },
+    {
+      "title": "Moi et l'argent",
+      "prompt": "Comment gères-tu ton argent, et comment ta famille t'a-t-elle appris à épargner ?",
+      "relances": [
+        "Qu'est-ce qu'on pense de la Bourse dans ta famille ?",
+        "Raconte un achat que tu as regretté ou adoré.",
+        "Comment utilises-tu l'IA dans ta vie de tous les jours ?",
+        "Que ferais-tu avec mille euros à placer aujourd'hui ?"
+      ]
+    },
+    {
+      "title": "Économiser en France",
+      "prompt": "Comment imagines-tu ta vie financière à Strasbourg, entre salaire, loyer et économies ?",
+      "relances": [
+        "Qu'est-ce qui coûte plus cher en France qu'à Saint-Domingue ?",
+        "Comment le marketing parle-t-il de l'IA aux consommateurs ?",
+        "Quelles questions poseras-tu à ta future banque française ?",
+        "Comment l'IA peut-elle t'aider dans ta recherche d'emploi ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "PetitPorteur_Lyonnais",
+      "comment": "Une « bulle » ? Non, c'est une ARNAQUE géante !!! On nous vend des robots qui écrivent des poèmes pendant que nos factures d'électricité explosent. Que ces milliardaires perdent un peu d'argent, franchement je ne vais pas pleurer. Il était temps que quelqu'un dise stop.",
+      "likes": 487
+    },
+    {
+      "username": "TatieDanielle_1958",
+      "comment": "J'ai demandé à l'IA de mon téléphone si je devais vendre mes actions. Elle m'a répondu très poliment qu'elle n'était pas conseillère financière. Même elle a peur de la Bourse, ça en dit long 😂 Du coup j'ai tout laissé et je suis allée faire un gâteau.",
+      "likes": 63
+    }
+  ]
+}

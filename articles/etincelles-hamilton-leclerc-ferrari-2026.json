@@ -1,0 +1,113 @@
+{
+  "id": "etincelles-hamilton-leclerc-ferrari-2026",
+  "title": "Ferrari : des étincelles entre Lewis Hamilton et Charles Leclerc",
+  "date": "2026-11-07",
+  "category": "Sport",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/2026_Singapore_GP_-_Ferrari_-_Lewis_Hamilton_-_Sprint_Race.jpg?width=1200",
+    "alt": "La Ferrari rouge de Lewis Hamilton sur la piste du Grand Prix de Singapour en 2026"
+  },
+  "vocabulary": [
+    {
+      "fr": "un coéquipier",
+      "es": "un compañero de equipo"
+    },
+    {
+      "fr": "sortir de la piste",
+      "es": "salirse de la pista"
+    },
+    {
+      "fr": "une pénalité",
+      "es": "una penalización, una sanción"
+    },
+    {
+      "fr": "rendre sa place",
+      "es": "devolver el puesto"
+    },
+    {
+      "fr": "tenter sa chance",
+      "es": "probar suerte, arriesgarse"
+    },
+    {
+      "fr": "aller trop loin",
+      "es": "pasarse de la raya"
+    },
+    {
+      "fr": "régler un problème",
+      "es": "resolver un problema, arreglar un asunto"
+    },
+    {
+      "fr": "une consigne d'équipe",
+      "es": "una orden de equipo"
+    }
+  ],
+  "article": "Le 1er novembre, au Grand Prix du Mexique, les deux pilotes Ferrari se sont affrontés dès le premier tour. Charles Leclerc a attaqué Lewis Hamilton dans un virage, mais les deux voitures sont sorties de la piste. Max Verstappen en a profité pour passer devant et gagner la course. Hamilton a terminé deuxième, et Leclerc a reçu une pénalité de cinq secondes.\n\nAprès la course, Hamilton était furieux. « On aurait pu finir premier et deuxième si on avait travaillé en équipe », a-t-il déclaré. Pendant la course, il a même demandé à la radio que Leclerc lui rende sa place. Son coéquipier a ignoré la demande. Pour lui, il a simplement vu un espace et il a tenté sa chance.\n\nCe n'est pas la première dispute entre les deux hommes. Hamilton, sept fois champion du monde, est arrivé chez Ferrari en 2025. Leclerc, lui, est le pilote star de l'équipe depuis 2019. En septembre, à Monza, il avait déjà reconnu être allé « trop loin » contre Hamilton. Le patron de l'équipe, Fred Vasseur, regrette un doublé perdu.\n\nCette semaine, au Brésil, le ton a changé. Hamilton affirme que les deux pilotes ont parlé et que le problème est réglé. Leclerc parle d'un « chapitre clos ». Pourtant, Hamilton reconnaît qu'une tension reste, car chacun veut finir devant l'autre. Faut-il imposer des consignes d'équipe, ou laisser les pilotes se battre librement ?",
+  "dictation": {
+    "text": "Dimanche soir, ma sœur et moi avons regardé la course à la télévision. Au premier virage, les deux voitures rouges sont sorties de la piste. Ma sœur s'est levée et elle a crié très fort. Ces deux pilotes sont dans la même équipe, mais chacun a envie de passer devant l'autre. À la fin, ils se sont disputés à la radio. Leur dispute va peut-être continuer à la prochaine course.",
+    "units": [
+      "Dimanche soir, ma sœur et moi",
+      "avons regardé la course à la télévision.",
+      "Au premier virage, les deux voitures rouges",
+      "sont sorties de la piste.",
+      "Ma sœur s'est levée et elle a crié très fort.",
+      "Ces deux pilotes sont dans la même équipe,",
+      "mais chacun a envie de passer devant l'autre.",
+      "À la fin, ils se sont disputés à la radio.",
+      "Leur dispute va peut-être continuer à la prochaine course."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Le duel du Mexique",
+      "prompt": "Peux-tu me raconter avec tes mots ce qui s'est passé entre Hamilton et Leclerc au Mexique ?",
+      "relances": [
+        "Pourquoi Hamilton était-il si furieux après la course ?",
+        "Comment Leclerc explique-t-il son attaque au premier virage ?",
+        "Qu'est-ce qui a changé quand ils sont arrivés au Brésil ?",
+        "Qui a vraiment profité de cette dispute, selon toi ?"
+      ]
+    },
+    {
+      "title": "Équipe ou liberté",
+      "prompt": "À ton avis, une équipe doit-elle imposer des consignes ou laisser ses pilotes se battre librement ?",
+      "relances": [
+        "Qui avait raison au Mexique, Hamilton ou Leclerc, et pourquoi ?",
+        "Que ferais-tu à la place de Fred Vasseur ?",
+        "Dans quel autre sport vois-tu ce genre de conflit ?",
+        "Comment peut-on rester ami avec son plus grand rival ?"
+      ]
+    },
+    {
+      "title": "Mes rivalités",
+      "prompt": "Raconte-moi une compétition ou une rivalité que tu as vécue avec un frère, une amie ou un collègue.",
+      "relances": [
+        "Comment cette rivalité a-t-elle commencé ?",
+        "Qu'est-ce que tu as ressenti au moment le plus tendu ?",
+        "Comment avez-vous réglé le problème, finalement ?",
+        "Qu'est-ce que cette expérience t'a appris sur toi ?"
+      ]
+    },
+    {
+      "title": "Collègues en France",
+      "prompt": "Dans ton futur travail en marketing à Strasbourg, comment imagines-tu tes relations avec tes collègues ?",
+      "relances": [
+        "Comment réagirais-tu si un collègue prenait le mérite de ton travail ?",
+        "Quelles différences imagines-tu entre la France et la République dominicaine au bureau ?",
+        "Comment dit-on poliment son désaccord en français, selon toi ?",
+        "Quel type de collègue aimerais-tu être dans ta nouvelle équipe ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "Tifosi_Rosso_Dal2006",
+      "comment": "Franchement j'en ai MARRE de lire que Leclerc est le méchant !!! Hamilton est arrivé chez Ferrari en pensant que tout le monde allait se pousser pour lui. Charles est chez lui à Maranello, il a le droit d'attaquer. Sept titres ça ne donne pas tous les droits.",
+      "likes": 412
+    },
+    {
+      "username": "MamieDuPaddock",
+      "comment": "Chez moi c'est pareil avec mes deux petits-fils au karting du dimanche. Ils se rentrent dedans au premier virage, ils boudent tout le repas, et au dessert ils se partagent la tarte. Le patron de Ferrari devrait essayer la tarte aux pommes 😄",
+      "likes": 87
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "id": "hausse-smic-france-republique-dominicaine-2026",
+  "title": "Le SMIC augmente en France : et en République dominicaine ?",
+  "date": "2026-11-15",
+  "category": "Économie",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Manifestation_du_5_novembre_2026_-_Avenue_Pierre_Brossolette_à_Aix-en-Provence_14.jpg?width=1200",
+    "alt": "Cortège de la manifestation du 5 novembre 2026 pour défendre les salaires, à Aix-en-Provence"
+  },
+  "vocabulary": [
+    { "fr": "un coup de pouce", "es": "un empujoncito, una ayuda extra" },
+    { "fr": "revaloriser (un salaire)", "es": "reajustar, aumentar (un salario)" },
+    { "fr": "un temps plein", "es": "una jornada completa, un trabajo a tiempo completo" },
+    { "fr": "réclamer", "es": "exigir, reclamar" },
+    { "fr": "le pouvoir d'achat", "es": "el poder adquisitivo" },
+    { "fr": "le loyer", "es": "el alquiler" },
+    { "fr": "s'inquiéter de", "es": "preocuparse por" },
+    { "fr": "le patron", "es": "el jefe, el dueño de la empresa" }
+  ],
+  "article": "Le 9 novembre, le Premier ministre Sébastien Lecornu a fait une annonce attendue. Le SMIC, le salaire minimum en France, va augmenter de 1,6 % le 1er décembre. Il passera de 1 478 à 1 502 euros net par mois pour un temps plein. Normalement, le SMIC est revalorisé chaque 1er janvier. Cette fois, le gouvernement avance la date et ajoute un « coup de pouce » de 0,6 %.\n\nPourtant, les syndicats ne sont pas satisfaits. La CGT parle de « miettes » et réclamait une hausse de 10 %. En effet, le logement et l'alimentation pèsent lourd sur le pouvoir d'achat des familles. Une nouvelle journée de mobilisation est prévue le 17 novembre. En revanche, beaucoup de patrons de petites entreprises s'inquiètent du coût de cette hausse.\n\nEn République dominicaine, le système est très différent. Il n'existe pas un seul salaire minimum, mais plusieurs. Le montant dépend de la taille de l'entreprise et du secteur. Le 1er février 2026, il a augmenté de 8 %, après une hausse de 12 % en 2025. Dans une grande entreprise, il atteint environ 30 000 pesos par mois, soit à peu près 400 euros. Mais la vie coûte beaucoup moins cher à Saint-Domingue qu'à Paris.\n\nAlors, comment comparer deux pays si différents ? Un salaire élevé ne garantit pas toujours une vie confortable. Faut-il augmenter fortement le salaire minimum, au risque de fragiliser les petites entreprises ? Ou faut-il plutôt faire baisser le prix des loyers et des courses ?",
+  "dictation": {
+    "text": "Ma cousine travaille dans une boulangerie à Strasbourg. Elle gagne le salaire minimum et son loyer coûte cher. Hier, elle a appris la nouvelle à la radio. Son salaire va augmenter le mois prochain. Elle est restée calme, parce que la hausse est petite. Ses collègues et elle ont calculé ce qu'elles vont gagner en plus. Elles sont un peu déçues, mais elles ont décidé d'en parler au patron.",
+    "units": [
+      "Ma cousine travaille dans une boulangerie à Strasbourg.",
+      "Elle gagne le salaire minimum",
+      "et son loyer coûte cher.",
+      "Hier, elle a appris la nouvelle à la radio.",
+      "Son salaire va augmenter le mois prochain.",
+      "Elle est restée calme, parce que la hausse est petite.",
+      "Ses collègues et elle ont calculé",
+      "ce qu'elles vont gagner en plus.",
+      "Elles sont un peu déçues,",
+      "mais elles ont décidé d'en parler au patron."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "La hausse du SMIC",
+      "prompt": "Peux-tu m'expliquer avec tes mots ce que le gouvernement français a annoncé le 9 novembre ?",
+      "relances": [
+        "Combien un salarié au SMIC va-t-il gagner en plus ?",
+        "Pourquoi les syndicats trouvent-ils cette hausse insuffisante ?",
+        "Pourquoi certains patrons s'inquiètent-ils de cette augmentation ?",
+        "Quelles différences l'article montre-t-il avec la République dominicaine ?"
+      ]
+    },
+    {
+      "title": "Un salaire juste",
+      "prompt": "Selon toi, qu'est-ce qu'un salaire minimum juste, et comment devrait-on le calculer ?",
+      "relances": [
+        "Que vaut-il mieux : augmenter les salaires ou faire baisser les prix ?",
+        "Que penses-tu du système dominicain, avec un salaire selon la taille de l'entreprise ?",
+        "Qui devrait payer l'augmentation : l'État ou les entreprises ?",
+        "Que réponds-tu à un patron qui dit qu'il ne peut pas payer plus ?"
+      ]
+    },
+    {
+      "title": "Le budget à Saint-Domingue",
+      "prompt": "Raconte-moi comment une famille de ton entourage organise son budget du mois à Saint-Domingue.",
+      "relances": [
+        "Quelles dépenses coûtent le plus cher à Saint-Domingue aujourd'hui ?",
+        "Comment les prix ont-ils changé depuis que tu es adolescente ?",
+        "Quel a été ton premier travail ou ton premier salaire ?",
+        "Quelles astuces les Dominicains utilisent-ils pour économiser au quotidien ?"
+      ]
+    },
+    {
+      "title": "Mon premier salaire français",
+      "prompt": "Comment imagines-tu ton premier emploi et ton premier salaire une fois installée à Strasbourg ?",
+      "relances": [
+        "Dans quel type d'entreprise aimerais-tu utiliser ton diplôme de mercadeo ?",
+        "Comment organiserais-tu ton budget entre loyer, courses et loisirs ?",
+        "Quels produits dominicains seras-tu prête à payer plus cher en France ?",
+        "Quels conseils donnerais-tu à une amie qui veut travailler en France ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "Caissiere_EnColere59",
+      "comment": "24 euros. VINGT-QUATRE EUROS !!! Mon loyer a pris 40 euros cette année, le caddie de la semaine coûte le double d'il y a cinq ans, et on ose appeler ça un coup de pouce ?? Qu'ils essaient de vivre un mois avec 1 502 euros à Lille, on en reparlera. Le 17 je serai dans la rue.",
+      "likes": 487
+    },
+    {
+      "username": "Kebabologue_67",
+      "comment": "Moi j'ai fait le calcul : avec 24 euros de plus, je peux m'acheter exactement un kebab-frites-boisson par semaine pendant un mois. Ou un demi-kebab si je prends la sauce en supplément 😅 Le capitalisme a un sens de l'humour incroyable.",
+      "likes": 36
+    }
+  ]
+}

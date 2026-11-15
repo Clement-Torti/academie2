@@ -1,0 +1,114 @@
+{
+  "id": "finalslam-squeezie-amine-velada-2026",
+  "title": "FinalSlam : les youtubeurs français font du catch, loin de la Velada",
+  "date": "2026-11-15",
+  "category": "Culture",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Squeezie_Zack_en_Roue_Libre_2025_(cropped).png?width=1200",
+    "alt": "Portrait du youtubeur français Squeezie en 2025"
+  },
+  "vocabulary": [
+    {
+      "fr": "s'affronter",
+      "es": "enfrentarse"
+    },
+    {
+      "fr": "un don",
+      "es": "una donación"
+    },
+    {
+      "fr": "une cagnotte",
+      "es": "una colecta, un bote"
+    },
+    {
+      "fr": "le pic d'audience",
+      "es": "el pico de audiencia"
+    },
+    {
+      "fr": "rester loin de",
+      "es": "quedarse lejos de"
+    },
+    {
+      "fr": "un écart",
+      "es": "una diferencia, una brecha"
+    },
+    {
+      "fr": "arrangé à l'avance",
+      "es": "amañado, pactado de antemano"
+    },
+    {
+      "fr": "en masse",
+      "es": "masivamente"
+    }
+  ],
+  "article": "Le samedi 14 novembre, le streameur AmineMaTue a organisé le FinalSlam, une grande soirée de catch. Près de 18 000 personnes sont venues à la Plenitude Arena, à Nanterre. Dans le combat principal, Amine a battu Squeezie, le youtubeur le plus suivi de France. Plus tôt, trente participants se sont affrontés dans une bataille générale. Parmi eux, il y avait Tibo InShape, la star du sport sur YouTube.\n\nTout a commencé il y a un an, pendant un marathon caritatif en direct. Amine avait promis ce combat si les dons dépassaient 300 000 euros. La cagnotte a finalement atteint plus de 1,5 million d'euros. Des catcheurs professionnels, comme l'ancien champion de la WWE Raj Dhesi, sont aussi montés sur le ring.\n\nLe modèle est clair : la Velada del Año, créée par l'Espagnol Ibai Llanos. En juillet, son gala de boxe entre streameurs a rempli un stade à Séville. Près de huit millions de personnes l'ont regardé en direct sur Twitch. Le FinalSlam reste loin de ces chiffres. Sur Twitch, le pic d'audience a atteint environ 300 000 spectateurs. Sur TMC, seulement 205 000 téléspectateurs ont suivi la soirée.\n\nAlors, pourquoi un tel écart ? Pour certains, le public français préfère les vidéos aux longs directs. Pour d'autres, le catch attire moins que la boxe, parce que les combats sont arrangés à l'avance. Squeezie a pourtant prouvé avec le GP Explorer, sa course automobile, que la France peut suivre en masse. Faut-il copier l'Espagne, ou inventer un modèle plus français ?",
+  "dictation": {
+    "text": "Samedi soir, ma sœur et moi sommes allées voir un grand spectacle de catch. La salle était pleine et les gens criaient très fort. Nous avons acheté nos places au mois de mai. Les combattants sont arrivés sous les lumières et la musique. Mon youtubeur préféré a perdu, mais il a bien résisté. À la fin, les deux adversaires se sont félicités devant le public. Je vais regarder la vidéo demain avec mes amis.",
+    "units": [
+      "Samedi soir, ma sœur et moi",
+      "sommes allées voir un grand spectacle de catch.",
+      "La salle était pleine et les gens criaient très fort.",
+      "Nous avons acheté nos places au mois de mai.",
+      "Les combattants sont arrivés sous les lumières et la musique.",
+      "Mon youtubeur préféré a perdu,",
+      "mais il a bien résisté.",
+      "À la fin, les deux adversaires",
+      "se sont félicités devant le public.",
+      "Je vais regarder la vidéo demain avec mes amis."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Raconte le FinalSlam",
+      "prompt": "Peux-tu me raconter ce qui s'est passé pendant la soirée du FinalSlam ?",
+      "relances": [
+        "Qui a organisé cet événement, et pourquoi ?",
+        "D'où vient l'argent de la cagnotte, d'après l'article ?",
+        "Quelle différence y a-t-il entre le FinalSlam et la Velada ?",
+        "Quels chiffres t'ont le plus surprise dans l'article ?"
+      ]
+    },
+    {
+      "title": "Catch, boxe ou spectacle",
+      "prompt": "À ton avis, pourquoi la Velada attire-t-elle beaucoup plus de monde que le FinalSlam ?",
+      "relances": [
+        "Que penses-tu d'un sport où les combats sont arrangés ?",
+        "Pourquoi des influenceurs veulent-ils monter sur un ring ?",
+        "Quels risques vois-tu pour des amateurs qui combattent ?",
+        "Qu'est-ce qui rend un grand événement en direct vraiment réussi ?"
+      ]
+    },
+    {
+      "title": "Tes créateurs préférés",
+      "prompt": "Quels créateurs de contenu suis-tu sur TikTok ou YouTube, et qu'est-ce qui te plaît chez eux ?",
+      "relances": [
+        "Raconte-moi un live ou une vidéo qui t'a marquée.",
+        "Comment as-tu découvert ce créateur, au départ ?",
+        "Quelle différence fais-tu entre regarder la télé et regarder un live ?",
+        "Quel événement en ligne aimerais-tu voir en vrai, et pourquoi ?"
+      ]
+    },
+    {
+      "title": "Influenceurs français et dominicains",
+      "prompt": "Comment les influenceurs dominicains et les influenceurs français se ressemblent-ils, ou se distinguent-ils ?",
+      "relances": [
+        "Quel influenceur dominicain présenterais-tu à un ami français ?",
+        "Comment une marque pourrait-elle utiliser un événement comme le FinalSlam ?",
+        "Quels créateurs français vas-tu suivre pour progresser en français ?",
+        "Quel événement organiserais-tu à Strasbourg avec des créateurs ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "VeladaOuRien_93",
+      "comment": "Franchement c'est la HONTE. L'Espagne remplit un stade avec de la vraie boxe et nous on fait du catch truqué à Nanterre ?? 205 000 sur TMC, faut arrêter de copier Ibai si c'est pour faire dix fois moins bien !!!",
+      "likes": 487
+    },
+    {
+      "username": "TontonDuRumble",
+      "comment": "J'y étais avec mon fils de douze ans. Quand Tibo InShape est entré en dernier dans le Rumble, toute la salle a hurlé, même moi. On a perdu notre voix pour trois jours, mais honnêtement c'était la meilleure soirée de l'année 😂",
+      "likes": 63
+    }
+  ]
+}

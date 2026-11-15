@@ -1,0 +1,91 @@
+{
+  "id": "strasbourg-mondial-handball-2029",
+  "title": "Strasbourg accueillera le Mondial de handball en 2029",
+  "date": "2026-11-15",
+  "category": "Sport",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rhenus_Sport_2026.jpg?width=1200",
+    "alt": "Vue intérieure du Rhénus Sport, la grande salle de sport de Strasbourg, en 2026"
+  },
+  "vocabulary": [
+    { "fr": "une ville hôte", "es": "una ciudad anfitriona, una sede" },
+    { "fr": "partager un événement", "es": "compartir un evento, coorganizarlo" },
+    { "fr": "le premier tour", "es": "la primera ronda, la fase de grupos" },
+    { "fr": "un supporter", "es": "un aficionado, un hincha" },
+    { "fr": "une vitrine", "es": "un escaparate (en sentido figurado: una gran oportunidad para darse a conocer)" },
+    { "fr": "un bénévole", "es": "un voluntario" },
+    { "fr": "avoir hâte de", "es": "tener muchas ganas de, estar impaciente por" },
+    { "fr": "regretter l'absence de", "es": "lamentar la ausencia de" }
+  ],
+  "article": "Le 5 novembre, à Berlin, la Fédération française de handball a fait une annonce très attendue en Alsace. Strasbourg accueillera des matchs du Championnat du monde masculin de handball en 2029. La compétition aura lieu du 17 janvier au 4 février. Elle réunira 32 équipes venues du monde entier. C'est la première fois depuis 2017 que la France organise ce Mondial.\n\nCette fois, la France partage l'événement avec l'Allemagne. Six villes hôtes ont été choisies : Paris, Lyon et Strasbourg d'un côté, Berlin, Hambourg et Cologne de l'autre. Strasbourg et Lyon recevront des matchs du premier tour. En revanche, les demi-finales et la finale se joueront à Paris. Pour Strasbourg, ville frontalière, ce choix est logique : les supporters allemands pourront venir facilement.\n\nPourtant, plusieurs questions restent ouvertes. La salle n'est pas encore officielle. Le Rhénus Sport est la piste la plus probable, mais la Fédération internationale doit d'abord l'inspecter. Ce n'est pas une salle inconnue : le 25 octobre, l'équipe de France féminine y a joué contre la Hongrie. Cependant, selon certains fans, ce sera la plus petite salle du tournoi. Ils ont peur de voir à Strasbourg des matchs moins prestigieux. D'autres regrettent l'absence de Montpellier ou de Nantes, deux grandes villes de handball.\n\nIl reste un peu plus de deux ans pour se préparer. Pour l'Alsace, c'est une belle vitrine en plein hiver. Mais un grand tournoi suffit-il à faire aimer un sport ? Ou faut-il surtout investir dans les clubs et les écoles ?",
+  "dictation": {
+    "text": "Ma sœur joue au handball depuis l'école primaire. Hier soir, elle est rentrée très contente de son entraînement. Ses amies et elle se sont inscrites comme bénévoles pour le grand tournoi. Elles vont accueillir les joueurs et les supporters à la salle. Mon père a déjà acheté des billets pour la famille. On a hâte de voir ces matchs à Strasbourg. Les voisins qui ont des billets vont aussi venir avec nous.",
+    "units": [
+      "Ma sœur joue au handball depuis l'école primaire.",
+      "Hier soir, elle est rentrée",
+      "très contente de son entraînement.",
+      "Ses amies et elle se sont inscrites",
+      "comme bénévoles pour le grand tournoi.",
+      "Elles vont accueillir les joueurs",
+      "et les supporters à la salle.",
+      "Mon père a déjà acheté des billets pour la famille.",
+      "On a hâte de voir ces matchs à Strasbourg.",
+      "Les voisins qui ont des billets",
+      "vont aussi venir avec nous."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Le Mondial à Strasbourg",
+      "prompt": "Peux-tu me raconter avec tes mots ce qui va se passer en janvier 2029 ?",
+      "relances": [
+        "Quelles villes vont accueillir la compétition, et dans quels pays ?",
+        "Quel rôle va jouer Strasbourg par rapport à Paris ?",
+        "Pourquoi la salle de Strasbourg pose-t-elle encore question ?",
+        "Pourquoi certains fans ne sont-ils pas complètement satisfaits ?"
+      ]
+    },
+    {
+      "title": "Grands événements, vrai bénéfice",
+      "prompt": "Selon toi, qu'est-ce qu'un grand tournoi international apporte vraiment à une ville comme Strasbourg ?",
+      "relances": [
+        "Vaut-il mieux investir dans les grands événements ou dans les clubs de quartier ?",
+        "Qui profite le plus de ce genre de compétition, d'après toi ?",
+        "Quels inconvénients peut-il y avoir pour les habitants ?",
+        "Que penses-tu de l'idée de partager un Mondial entre deux pays ?"
+      ]
+    },
+    {
+      "title": "Mon souvenir de supportrice",
+      "prompt": "Raconte-moi un match ou un événement sportif qui t'a marquée, au stade ou devant la télé.",
+      "relances": [
+        "Avec qui étais-tu, et comment était l'ambiance ?",
+        "Quel sport passionne le plus les Dominicains, et pourquoi ?",
+        "Comment ta famille regarde-t-elle les grands matchs à Saint-Domingue ?",
+        "Quel sport as-tu pratiqué, ou aurais-tu aimé pratiquer, à l'école ?"
+      ]
+    },
+    {
+      "title": "Bénévole à Strasbourg",
+      "prompt": "Si tu habites à Strasbourg en 2029, comment aimerais-tu vivre ce Mondial de handball ?",
+      "relances": [
+        "Comment ton diplôme de mercadeo pourrait-il t'aider à travailler sur un tel événement ?",
+        "Quelles missions de bénévole te plairaient le plus, et pourquoi ?",
+        "Comment présenterais-tu Strasbourg à des supporters étrangers sur TikTok ?",
+        "Quel sport aimerais-tu découvrir ou pratiquer une fois installée en France ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "HandBallBreizh_29",
+      "comment": "Sérieusement ?? Paris, Lyon, Strasbourg... et l'Ouest, on l'oublie encore une fois !!! Nantes et Montpellier forment les meilleurs joueurs du pays depuis vingt ans. Et on donne des matchs à Strasbourg parce que c'est à côté de l'Allemagne ? C'est un Mondial allemand avec trois villes françaises en décoration.",
+      "likes": 412
+    },
+    {
+      "username": "MamieTricote_Neudorf",
+      "comment": "En 2017 j'étais bénévole à Metz, j'ai distribué des bouteilles d'eau aux joueurs pendant dix jours. Un joueur de deux mètres m'a dit merci en français, j'en parle encore à mes petits-enfants 😄 Pour 2029 je m'inscris dès que c'est ouvert, même si j'aurai 74 ans !",
+      "likes": 63
+    }
+  ]
+}

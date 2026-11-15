@@ -1,0 +1,115 @@
+{
+  "id": "bukele-intervention-militaire-haiti-2026",
+  "title": "Haïti : Nayib Bukele envoie l'armée du Salvador contre les gangs",
+  "date": "2026-11-15",
+  "category": "Société",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nayib_Bukele_and_the_armed_forces_in_2019_(E0A1211).jpg?width=1200",
+    "alt": "Le président salvadorien Nayib Bukele aux côtés des forces armées du Salvador"
+  },
+  "vocabulary": [
+    {
+      "fr": "une opération de sauvetage",
+      "es": "una operación de rescate"
+    },
+    {
+      "fr": "disparaître",
+      "es": "desaparecer"
+    },
+    {
+      "fr": "acclamer quelqu'un",
+      "es": "aclamar, vitorear a alguien"
+    },
+    {
+      "fr": "épuisé, épuisée",
+      "es": "agotado, agotada"
+    },
+    {
+      "fr": "les victimes civiles",
+      "es": "las víctimas civiles"
+    },
+    {
+      "fr": "un manque de",
+      "es": "una falta de"
+    },
+    {
+      "fr": "faire chuter la criminalité",
+      "es": "hacer caer (bajar mucho) la criminalidad"
+    },
+    {
+      "fr": "au prix de",
+      "es": "a costa de"
+    }
+  ],
+  "article": "Depuis fin octobre, le Salvador mène une grande opération militaire en Haïti. Le président Nayib Bukele a envoyé environ 2 500 soldats, des véhicules blindés et des hélicoptères d'attaque. Tout a commencé le 18 octobre. Ce jour-là, quatre techniciens salvadoriens ont disparu après une attaque de gangs près de Port-au-Prince. Bukele parlait d'abord d'une opération de sauvetage. Pourtant, les quatre hommes restent introuvables.\n\nDepuis, la mission est devenue une véritable offensive contre les gangs, qui contrôlent une grande partie de la capitale. Le 10 novembre, des hélicoptères salvadoriens ont détruit le quartier général d'un gang. Une vingtaine de personnes seraient mortes. Sur les réseaux sociaux, Bukele publie des vidéos de ses soldats acclamés par la foule. Beaucoup d'Haïtiens, épuisés par la violence, crient son nom dans la rue.\n\nCependant, cette intervention inquiète. Seuls 200 soldats salvadoriens dépendent de la force internationale soutenue par l'ONU. Les deux gouvernements n'ont jamais publié les règles de l'opération. Médecins sans frontières craint de nombreuses victimes civiles. Les États-Unis se plaignent aussi d'un manque de coordination. En revanche, le président dominicain Luis Abinader soutient l'opération et partage des informations avec le Salvador.\n\nAu Salvador, Bukele a fait chuter la criminalité, mais au prix de dizaines de milliers d'arrestations. Son modèle peut-il fonctionner en Haïti, un pays sans président élu depuis 2021 ? Les Haïtiens retrouveront-ils enfin la paix ? Ou bien la violence reviendra-t-elle dès le départ des soldats ?",
+  "dictation": {
+    "text": "Ma voisine est née en Haïti, et sa sœur habite encore là-bas. La semaine dernière, des soldats étrangers sont arrivés dans son quartier. Au début, ses neveux ont eu peur des hélicoptères. Puis les habitants sont sortis dans la rue pour applaudir les soldats. Ma voisine est très soulagée, mais elle reste inquiète pour sa famille. Personne ne sait si ces militaires vont rester longtemps. Elle appelle sa sœur tous les soirs à huit heures.",
+    "units": [
+      "Ma voisine est née en Haïti,",
+      "et sa sœur habite encore là-bas.",
+      "La semaine dernière, des soldats étrangers",
+      "sont arrivés dans son quartier.",
+      "Au début, ses neveux ont eu peur des hélicoptères.",
+      "Puis les habitants sont sortis",
+      "dans la rue pour applaudir les soldats.",
+      "Ma voisine est très soulagée,",
+      "mais elle reste inquiète pour sa famille.",
+      "Personne ne sait si ces militaires vont rester longtemps.",
+      "Elle appelle sa sœur tous les soirs à huit heures."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Raconter l'intervention",
+      "prompt": "Explique-moi avec tes mots pourquoi des soldats du Salvador se trouvent aujourd'hui en Haïti.",
+      "relances": [
+        "Que s'est-il passé exactement le 18 octobre ?",
+        "Comment la mission de sauvetage est-elle devenue une offensive ?",
+        "Pourquoi certains Haïtiens acclament-ils les soldats salvadoriens ?",
+        "Quelles critiques entend-on contre cette opération ?"
+      ]
+    },
+    {
+      "title": "Le modèle Bukele",
+      "prompt": "Selon toi, un pays a-t-il le droit d'envoyer son armée combattre les gangs d'un autre pays ?",
+      "relances": [
+        "Qu'est-ce qui compte le plus pour toi : la sécurité ou les libertés ?",
+        "Comment pourrait-on éviter les victimes civiles, à ton avis ?",
+        "Pourquoi Bukele est-il si populaire en Amérique latine, selon toi ?",
+        "Que devrait faire l'ONU dans une situation comme celle-ci ?"
+      ]
+    },
+    {
+      "title": "Haïti vu de Saint-Domingue",
+      "prompt": "Raconte-moi comment on parle d'Haïti dans ta famille et autour de toi à Saint-Domingue.",
+      "relances": [
+        "Quelles nouvelles d'Haïti as-tu vues récemment sur TikTok ?",
+        "Comment les Dominicains réagissent-ils au soutien de Luis Abinader ?",
+        "Quel souvenir lié à Haïti ou aux Haïtiens peux-tu me raconter ?",
+        "Pourquoi les deux pays ont-ils une relation si compliquée, d'après toi ?"
+      ]
+    },
+    {
+      "title": "La sécurité en France",
+      "prompt": "Comment imagines-tu le sentiment de sécurité dans ta future vie quotidienne à Strasbourg ?",
+      "relances": [
+        "Quelles différences attends-tu entre Saint-Domingue et Strasbourg sur ce point ?",
+        "Comment la France pourrait-elle aider Haïti, un pays francophone ?",
+        "Comment expliquerais-tu la situation haïtienne à tes futurs collègues français ?",
+        "Quels mots de cet article aimerais-tu réutiliser cette semaine ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "DroitsHumains_Avant_Tout",
+      "comment": "Tout le monde applaudit, mais personne ne pose les vraies questions !!! Des hélicoptères qui tirent sur des quartiers pleins d'enfants, des règles SECRÈTES, aucun contrôle de l'ONU... Bukele fait sa pub sur les réseaux avec la souffrance des Haïtiens. Quand les caméras partiront, les gangs reviendront.",
+      "likes": 134
+    },
+    {
+      "username": "Rosanna_DeSantiago",
+      "comment": "Ma tante habite à Dajabón, juste à la frontière. Pendant des mois, elle a vu arriver des familles haïtiennes qui fuyaient Port-au-Prince avec deux sacs et rien d'autre. La semaine dernière, une de ces mamans l'a appelée en pleurant de joie : son frère peut enfin ouvrir sa boutique. Ça fait réfléchir.",
+      "likes": 418
+    }
+  ]
+}

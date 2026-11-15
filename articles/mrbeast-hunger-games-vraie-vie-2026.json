@@ -1,0 +1,110 @@
+{
+  "id": "mrbeast-hunger-games-vraie-vie-2026",
+  "title": "MrBeast recrée les Hunger Games dans la vraie vie",
+  "date": "2026-11-15",
+  "category": "Culture",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/MrBeast_2023_(cropped).jpg?width=1200",
+    "alt": "Portrait du YouTubeur américain MrBeast, souriant"
+  },
+  "vocabulary": [
+    {
+      "fr": "s'affronter",
+      "es": "enfrentarse"
+    },
+    {
+      "fr": "éliminer quelqu'un",
+      "es": "eliminar a alguien"
+    },
+    {
+      "fr": "une combinaison",
+      "es": "un traje, un mono"
+    },
+    {
+      "fr": "une arme en mousse",
+      "es": "un arma de espuma"
+    },
+    {
+      "fr": "un candidat",
+      "es": "un concursante"
+    },
+    {
+      "fr": "un divertissement",
+      "es": "un entretenimiento"
+    },
+    {
+      "fr": "transformer quelque chose en spectacle",
+      "es": "convertir algo en espectáculo"
+    }
+  ],
+  "article": "Le YouTubeur américain MrBeast a publié cette semaine une vidéo très attendue. Il a recréé les Hunger Games, la célèbre saga de livres et de films, mais dans la vraie vie. Douze équipes se sont affrontées dans une arène pour gagner 250 000 dollars. Bien sûr, personne n'est blessé : c'est un jeu, pas un combat à mort.\n\nPour éliminer les joueurs, l'équipe de MrBeast a inventé un système original. Chaque participant porte une combinaison équipée de capteurs. Les armes sont en mousse, mais elles contiennent des aimants. Quand une arme touche la combinaison, le joueur est éliminé. Sur les réseaux sociaux, MrBeast a présenté ce projet comme la vidéo la plus folle de sa chaîne.\n\nLe casting rassemble d'anciens candidats de ses émissions. On y retrouve par exemple Jeff Allen, le premier gagnant de Beast Games, son jeu télévisé sur Prime Video. MrBeast participe aussi, avec sa femme, Thea Booysen. Il parlait de ce projet depuis plus d'un an. En 2025, il avait même évoqué un prix d'un million de dollars.\n\nCette vidéo pose pourtant une question. Les Hunger Games racontent l'histoire d'un pouvoir cruel qui transforme la violence en spectacle. Est-ce qu'on peut en faire un simple divertissement ? Pour ses fans, c'est une idée géniale. Pour ses critiques, MrBeast oublie le message de l'œuvre. Et vous, est-ce que vous regarderiez ce genre de jeu ?",
+  "dictation": {
+    "text": "Samedi soir, mon petit frère a regardé la nouvelle vidéo avec ses deux amis. Ils se sont installés devant la télévision du salon. Les joueurs portaient des combinaisons spéciales et couraient dans une immense arène. Mon frère a choisi son équipe préférée dès le début du jeu. Quand elle a perdu, il a crié très fort. Demain, ils vont organiser un jeu pareil dans le jardin de leur école.",
+    "units": [
+      "Samedi soir, mon petit frère a regardé",
+      "la nouvelle vidéo avec ses deux amis.",
+      "Ils se sont installés devant la télévision du salon.",
+      "Les joueurs portaient des combinaisons spéciales",
+      "et couraient dans une immense arène.",
+      "Mon frère a choisi son équipe préférée",
+      "dès le début du jeu.",
+      "Quand elle a perdu, il a crié très fort.",
+      "Demain, ils vont organiser un jeu pareil",
+      "dans le jardin de leur école."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Raconte la vidéo",
+      "prompt": "Peux-tu m'expliquer avec tes mots ce que MrBeast a organisé dans sa nouvelle vidéo ?",
+      "relances": [
+        "Comment est-ce qu'on éliminait les joueurs ?",
+        "Qui participait à ce jeu, d'après l'article ?",
+        "Pourquoi est-ce que le système des combinaisons est original ?",
+        "Qu'est-ce que tu as retenu sur le prix à gagner ?"
+      ]
+    },
+    {
+      "title": "Jeu ou mauvais message",
+      "prompt": "À ton avis, est-ce qu'on peut transformer une histoire violente comme les Hunger Games en divertissement ?",
+      "relances": [
+        "Quelle est la différence entre ce jeu et le film, pour toi ?",
+        "Que répondrais-tu aux critiques de MrBeast ?",
+        "Quel message les enfants retiennent-ils de ce genre de vidéo ?",
+        "Où mettrais-tu la limite entre jeu et violence ?"
+      ]
+    },
+    {
+      "title": "Toi et les youtubeurs",
+      "prompt": "Quels créateurs de contenu est-ce que tu suis sur YouTube ou TikTok, et pourquoi ?",
+      "relances": [
+        "Quelle vidéo t'a marquée récemment ? Raconte-la-moi.",
+        "Quels jeux faisais-tu avec tes amis quand tu étais petite ?",
+        "Quel défi aimerais-tu tenter, et pour combien d'argent ?",
+        "Avec ton diplôme de mercadeo, comment analyses-tu le succès de MrBeast ?"
+      ]
+    },
+    {
+      "title": "Les médias en France",
+      "prompt": "Quand tu seras à Strasbourg, comment imagines-tu tes soirées devant les écrans en France ?",
+      "relances": [
+        "Quelles émissions françaises connais-tu déjà ?",
+        "Comment le français des youtubeurs peut-il t'aider à progresser ?",
+        "Quelles différences vois-tu avec la télévision dominicaine ?",
+        "Quel type de contenu aimerais-tu créer en français un jour ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "PanemNeMeurtJamais",
+      "comment": "Sérieusement ?! Les Hunger Games, c'est une CRITIQUE des riches qui font s'entretuer les pauvres pour divertir le public. Et lui, il fait exactement ça avec 250 000 dollars à la clé… Il n'a juste rien compris au livre. Ça me dépasse complètement.",
+      "likes": 487
+    },
+    {
+      "username": "TontonNerf_Lyon69",
+      "comment": "J'ai essayé la même chose dans mon jardin avec mes neveux et des pistolets en mousse. Pas de capteurs, pas d'arène, juste un chien qui volait toutes les balles. Personne n'a gagné, le chien a tout gardé. Zéro dollar, mais grosse ambiance quand même 😂",
+      "likes": 63
+    }
+  ]
+}

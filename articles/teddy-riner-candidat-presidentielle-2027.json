@@ -1,0 +1,89 @@
+{
+  "id": "teddy-riner-candidat-presidentielle-2027",
+  "title": "Teddy Riner se présente à l'élection présidentielle de 2027",
+  "date": "2026-11-15",
+  "category": "Société",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Teddy_Riner_Cannes_2016.jpg?width=1200",
+    "alt": "Le judoka Teddy Riner, souriant, en costume au Festival de Cannes"
+  },
+  "vocabulary": [
+    { "fr": "une candidature", "es": "una candidatura" },
+    { "fr": "être élu", "es": "ser elegido" },
+    { "fr": "le coût de la vie", "es": "el costo de la vida" },
+    { "fr": "l'inquiétude", "es": "la preocupación" },
+    { "fr": "les avis sont partagés", "es": "las opiniones están divididas" },
+    { "fr": "se moquer de", "es": "burlarse de" },
+    { "fr": "diriger un pays", "es": "dirigir un país" }
+  ],
+  "article": "Le judoka Teddy Riner a annoncé sa candidature à l'élection présidentielle de 2027. Il a fait cette annonce le lundi 9 novembre, dans une interview au journal Le Parisien. La nouvelle a tellement surpris qu'il a publié une vidéo pour prouver qu'elle n'était pas créée par l'IA. Cinq fois champion olympique, il se présente « ni de droite, ni de gauche ». Son slogan est simple : « La France qu'on veut ».\n\nPourquoi se lancer maintenant ? Teddy Riner parle des Jeux de Paris 2024. Pendant quinze jours, il a vu le pays uni, puis à nouveau divisé. Aujourd'hui, il dit entendre la colère et l'inquiétude des Français, en particulier sur le coût de la vie. Il prépare son programme depuis plusieurs mois avec une vingtaine de personnes. On y trouve les retraites, la sécurité et un meilleur salaire.\n\nLes avis sont très partagés. Emmanuel Macron pense que cette candidature « ne peut qu'apporter au pays ». En revanche, François Hollande rappelle que « la présidentielle, ce n'est pas les Jeux ». À gauche, Raphaël Glucksmann se moque de ce discours « ni de droite, ni de gauche ». Certains imaginent même que l'Élysée soutient discrètement le champion. Pourtant, l'entourage du président dément.\n\nLe judoka veut aussi continuer sa carrière. S'il est élu, il souhaite participer aux Jeux de Los Angeles en 2028. Un président peut-il vraiment combattre sur un tatami ? Et surtout, une immense popularité suffit-elle pour diriger un pays ?",
+  "dictation": {
+    "text": "Mon petit frère fait du judo depuis trois ans. Hier soir, il a vu son champion préféré à la télévision. Ce grand sportif veut devenir président de la France. Mon frère et ses amis du club ont trouvé cette idée géniale. Mais mes parents sont restés inquiets, car la politique est un autre combat. Ils vont écouter ses idées avant de choisir, et je vais faire comme eux.",
+    "units": [
+      "Mon petit frère fait du judo depuis trois ans.",
+      "Hier soir, il a vu",
+      "son champion préféré à la télévision.",
+      "Ce grand sportif veut devenir président de la France.",
+      "Mon frère et ses amis du club",
+      "ont trouvé cette idée géniale.",
+      "Mais mes parents sont restés inquiets,",
+      "car la politique est un autre combat.",
+      "Ils vont écouter ses idées avant de choisir,",
+      "et je vais faire comme eux."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Un champion candidat",
+      "prompt": "Peux-tu me raconter avec tes mots ce que Teddy Riner a annoncé, et pourquoi ?",
+      "relances": [
+        "Quel rôle jouent les Jeux de Paris dans sa décision ?",
+        "Quels thèmes trouve-t-on dans son programme ?",
+        "Comment les autres responsables politiques ont-ils réagi ?",
+        "Que veut-il faire pour sa carrière de judoka ?"
+      ]
+    },
+    {
+      "title": "Sportif ou président",
+      "prompt": "Selon toi, quelles qualités d'un grand sportif peuvent servir pour diriger un pays ?",
+      "relances": [
+        "Qu'est-ce qui lui manque, à ton avis, par rapport à un politicien ?",
+        "Que réponds-tu à ceux qui disent que la présidentielle n'est pas les Jeux ?",
+        "Pourquoi le slogan ni de droite ni de gauche attire-t-il autant ?",
+        "Comment jugerais-tu un président qui part combattre aux Jeux ?"
+      ]
+    },
+    {
+      "title": "Mes idoles",
+      "prompt": "Quelle personnalité célèbre t'a inspirée depuis ton enfance, et qu'as-tu appris d'elle ?",
+      "relances": [
+        "Comment as-tu découvert cette personne ?",
+        "Raconte-moi un moment où elle t'a vraiment impressionnée.",
+        "Quels sportifs dominicains rendent ta famille fière ?",
+        "Quelle célébrité suis-tu sur TikTok, et pourquoi ?"
+      ]
+    },
+    {
+      "title": "Politique ici et là-bas",
+      "prompt": "Comment imagines-tu suivre la présidentielle française depuis Strasbourg, comparée aux élections dominicaines ?",
+      "relances": [
+        "Comment se passe une campagne électorale à Saint-Domingue ?",
+        "Quelle star dominicaine verrais-tu à la présidence, et pourquoi ?",
+        "Quels sujets politiques français t'intéressent le plus pour ta nouvelle vie ?",
+        "Comment comptes-tu t'informer sur la politique en France ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "VraiDebat_2027",
+      "comment": "Non mais on marche sur la tête !!! Être champion de judo, ça ne fait PAS un programme économique. Diriger un pays, c'est un vrai métier. Bientôt on va élire un influenceur parce qu'il a beaucoup d'abonnés ? Les Français méritent mieux qu'un coup de com'.",
+      "likes": 412
+    },
+    {
+      "username": "KimonoBlanc_Ceinture3",
+      "comment": "Moi je vote pour lui uniquement si les débats télé se règlent sur un tatami 🥋 Imaginez le face-à-face final : trois minutes, un ippon, et on a un président. Franchement ce serait plus rapide et beaucoup plus honnête que d'habitude 😂",
+      "likes": 87
+    }
+  ]
+}

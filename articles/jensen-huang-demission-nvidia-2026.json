@@ -1,0 +1,116 @@
+{
+  "id": "jensen-huang-demission-nvidia-2026",
+  "title": "Soupçons d'espionnage : Jensen Huang quitte la tête de Nvidia",
+  "date": "2026-11-15",
+  "category": "Économie",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jensen_Huang_(cropped).jpg?width=1200",
+    "alt": "Portrait de Jensen Huang, fondateur et ancien patron de Nvidia"
+  },
+  "vocabulary": [
+    {
+      "fr": "la démission",
+      "es": "la dimisión, la renuncia"
+    },
+    {
+      "fr": "le patron",
+      "es": "el jefe, el director"
+    },
+    {
+      "fr": "soupçonner",
+      "es": "sospechar"
+    },
+    {
+      "fr": "une liaison",
+      "es": "una relación amorosa, una aventura"
+    },
+    {
+      "fr": "reconnaître",
+      "es": "admitir, reconocer"
+    },
+    {
+      "fr": "porter plainte",
+      "es": "presentar una denuncia, demandar"
+    },
+    {
+      "fr": "la vie privée",
+      "es": "la vida privada"
+    },
+    {
+      "fr": "le conseil d'administration",
+      "es": "el consejo de administración"
+    }
+  ],
+  "article": "Jensen Huang n'est plus le patron de Nvidia. Le 12 novembre, l'entreprise a annoncé la démission de son fondateur. Il dirigeait Nvidia depuis 1993. Grâce à l'intelligence artificielle, ce fabricant de puces est devenu l'une des entreprises les plus riches du monde. La directrice financière, Colette Kress, le remplace pour le moment.\n\nTout a commencé fin octobre avec une enquête du New York Times. Selon le journal, les services secrets américains soupçonnent une femme d'affaires chinoise, Alice Huang, d'espionner le patron pour Pékin. Elle dirigeait Megaspeed, un gros client de Nvidia installé à Singapour. Cette société est accusée d'aider la Chine à obtenir des puces interdites. Le 8 novembre, Jensen Huang a reconnu une liaison avec elle et s'est excusé auprès de sa famille. Ensuite, la presse a révélé une deuxième relation avec une cadre de Nvidia.\n\nPourtant, aucun gouvernement n'a confirmé qu'Alice Huang est une espionne. La Chine parle de « pure invention ». Le conseil d'administration affirme qu'aucun secret n'a été volé. Mais le Congrès américain veut interroger l'ancien patron. En Bourse, l'action a chuté, et des investisseurs ont porté plainte contre l'entreprise. Donald Trump a d'abord défendu Jensen Huang, puis il a jugé la situation « horrible ».\n\nCette affaire pose plusieurs questions. La vie privée d'un grand patron regarde-t-elle le public ? Une seule personne peut-elle mettre en danger une entreprise, et même la sécurité d'un pays ? Ce scandale montre que la guerre technologique entre les États-Unis et la Chine ne fait que commencer.",
+  "dictation": {
+    "text": "Ce matin, les employés de la grande entreprise sont arrivés très tôt au bureau. Leur patron a quitté son poste hier soir, après le scandale. Beaucoup ont appris la nouvelle sur leur téléphone dans le métro. Une jeune ingénieure est restée longtemps silencieuse devant son écran. Elle pense que ses collègues vont avoir peur pour leur avenir. À midi, son chef a demandé à chacun de continuer à travailler calmement.",
+    "units": [
+      "Ce matin, les employés de la grande entreprise",
+      "sont arrivés très tôt au bureau.",
+      "Leur patron a quitté son poste",
+      "hier soir, après le scandale.",
+      "Beaucoup ont appris la nouvelle",
+      "sur leur téléphone dans le métro.",
+      "Une jeune ingénieure est restée",
+      "longtemps silencieuse devant son écran.",
+      "Elle pense que ses collègues",
+      "vont avoir peur pour leur avenir.",
+      "À midi, son chef a demandé à chacun",
+      "de continuer à travailler calmement."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "L'affaire Jensen Huang",
+      "prompt": "Peux-tu raconter avec tes mots pourquoi Jensen Huang a dû quitter la direction de Nvidia ?",
+      "relances": [
+        "Qui est Alice Huang, et que lui reproche-t-on ?",
+        "Pourquoi la Chine est-elle au centre de cette affaire ?",
+        "Comment la Bourse et les politiques ont-ils réagi ?",
+        "Qu'est-ce qui reste encore incertain dans cette histoire ?"
+      ]
+    },
+    {
+      "title": "Vie privée des patrons",
+      "prompt": "Jusqu'où la vie privée d'un grand patron doit-elle compter dans son travail, selon toi ?",
+      "relances": [
+        "Quelle différence fais-tu entre une faute privée et une faute professionnelle ?",
+        "Que penses-tu d'un patron qui a une relation avec une employée ?",
+        "Qu'aurais-tu décidé à la place du conseil d'administration ?",
+        "Pourquoi le public adore-t-il ce genre de scandale, à ton avis ?"
+      ]
+    },
+    {
+      "title": "Mes chefs",
+      "prompt": "Raconte-moi le meilleur ou le pire chef que tu as connu, et ce qu'il t'a appris.",
+      "relances": [
+        "Qu'est-ce qui fait un bon patron, d'après ton expérience ?",
+        "Comment parle-t-on des scandales de célébrités à Saint-Domingue ?",
+        "Raconte une rumeur au travail ou à l'université qui t'a surprise.",
+        "Comment réagis-tu quand une personne de confiance te déçoit ?"
+      ]
+    },
+    {
+      "title": "Travailler en France",
+      "prompt": "Comment imagines-tu la relation avec ton futur patron dans une entreprise à Strasbourg ?",
+      "relances": [
+        "Quelles différences imagines-tu entre un chef français et un chef dominicain ?",
+        "Comment une marque peut-elle réparer son image après un scandale ?",
+        "Quelles questions poseras-tu à un recruteur sur l'ambiance au travail ?",
+        "Comment comptes-tu séparer vie privée et vie professionnelle en France ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "PasDupeDuTout_75",
+      "comment": "Franchement, cette histoire me DÉGOÛTE. Un homme qui pèse des milliards, qui négocie avec la Chine tous les jours, et il ne voit pas le piège ?! Soit il est naïf, soit il savait. Dans les deux cas, il fallait partir. Et ceux qui le défendaient encore la semaine dernière devraient avoir honte !!!",
+      "likes": 412
+    },
+    {
+      "username": "GamerDuDimanche_33",
+      "comment": "J'ai une carte graphique Nvidia dans mon PC depuis cinq ans. Ce matin, elle a fait un bruit bizarre au démarrage... Je commence à me demander si elle aussi envoie des infos à Pékin 😅 Bon, au moins, elle ne m'a jamais trompé, elle.",
+      "likes": 58
+    }
+  ]
+}

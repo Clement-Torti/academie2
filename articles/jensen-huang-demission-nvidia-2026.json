@@ -43,20 +43,21 @@
   ],
   "article": "Jensen Huang n'est plus le patron de Nvidia. Le 12 novembre, l'entreprise a annoncé la démission de son fondateur. Il dirigeait Nvidia depuis 1993. Grâce à l'intelligence artificielle, ce fabricant de puces est devenu l'une des entreprises les plus riches du monde. La directrice financière, Colette Kress, le remplace pour le moment.\n\nTout a commencé fin octobre avec une enquête du New York Times. Selon le journal, les services secrets américains soupçonnent une femme d'affaires chinoise, Alice Huang, d'espionner le patron pour Pékin. Elle dirigeait Megaspeed, un gros client de Nvidia installé à Singapour. Cette société est accusée d'aider la Chine à obtenir des puces interdites. Le 8 novembre, Jensen Huang a reconnu une liaison avec elle et s'est excusé auprès de sa famille. Ensuite, la presse a révélé une deuxième relation avec une cadre de Nvidia.\n\nPourtant, aucun gouvernement n'a confirmé qu'Alice Huang est une espionne. La Chine parle de « pure invention ». Le conseil d'administration affirme qu'aucun secret n'a été volé. Mais le Congrès américain veut interroger l'ancien patron. En Bourse, l'action a chuté, et des investisseurs ont porté plainte contre l'entreprise. Donald Trump a d'abord défendu Jensen Huang, puis il a jugé la situation « horrible ».\n\nCette affaire pose plusieurs questions. La vie privée d'un grand patron regarde-t-elle le public ? Une seule personne peut-elle mettre en danger une entreprise, et même la sécurité d'un pays ? Ce scandale montre que la guerre technologique entre les États-Unis et la Chine ne fait que commencer.",
   "dictation": {
-    "text": "Ce matin, les employés de la grande entreprise sont arrivés très tôt au bureau. Leur patron a quitté son poste hier soir, après le scandale. Beaucoup ont appris la nouvelle sur leur téléphone dans le métro. Une jeune ingénieure est restée longtemps silencieuse devant son écran. Elle pense que ses collègues vont avoir peur pour leur avenir. À midi, son chef a demandé à chacun de continuer à travailler calmement.",
+    "form": "consignes",
+    "focus": "accord du participe passé avec avoir et un COD placé avant",
+    "text": "Voici les consignes pour tous les employés. Après le départ du directeur, des journalistes vous appelleront peut-être. Ne répondez pas à leurs questions. Les documents que vous avez reçus cette semaine restent strictement confidentiels. Les messages qu'on vous a envoyés depuis une adresse inconnue sont dangereux. Supprimez-les et signalez-les au service informatique. Les badges que nous avons distribués lundi sont obligatoires. Si vous les avez perdus, prévenez l'accueil.",
     "units": [
-      "Ce matin, les employés de la grande entreprise",
-      "sont arrivés très tôt au bureau.",
-      "Leur patron a quitté son poste",
-      "hier soir, après le scandale.",
-      "Beaucoup ont appris la nouvelle",
-      "sur leur téléphone dans le métro.",
-      "Une jeune ingénieure est restée",
-      "longtemps silencieuse devant son écran.",
-      "Elle pense que ses collègues",
-      "vont avoir peur pour leur avenir.",
-      "À midi, son chef a demandé à chacun",
-      "de continuer à travailler calmement."
+      "Voici les consignes pour tous les employés.",
+      "Après le départ du directeur,",
+      "des journalistes vous appelleront peut-être.",
+      "Ne répondez pas à leurs questions.",
+      "Les documents que vous avez reçus",
+      "cette semaine restent strictement confidentiels.",
+      "Les messages qu'on vous a envoyés",
+      "depuis une adresse inconnue sont dangereux.",
+      "Supprimez-les et signalez-les au service informatique.",
+      "Les badges que nous avons distribués lundi sont obligatoires.",
+      "Si vous les avez perdus, prévenez l'accueil."
     ]
   },
   "oralTopics": [

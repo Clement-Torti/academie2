@@ -19,18 +19,20 @@
   ],
   "article": "Le 9 novembre, le Premier ministre Sébastien Lecornu a fait une annonce attendue. Le SMIC, le salaire minimum en France, va augmenter de 1,6 % le 1er décembre. Il passera de 1 478 à 1 502 euros net par mois pour un temps plein. Normalement, le SMIC est revalorisé chaque 1er janvier. Cette fois, le gouvernement avance la date et ajoute un « coup de pouce » de 0,6 %.\n\nPourtant, les syndicats ne sont pas satisfaits. La CGT parle de « miettes » et réclamait une hausse de 10 %. En effet, le logement et l'alimentation pèsent lourd sur le pouvoir d'achat des familles. Une nouvelle journée de mobilisation est prévue le 17 novembre. En revanche, beaucoup de patrons de petites entreprises s'inquiètent du coût de cette hausse.\n\nEn République dominicaine, le système est très différent. Il n'existe pas un seul salaire minimum, mais plusieurs. Le montant dépend de la taille de l'entreprise et du secteur. Le 1er février 2026, il a augmenté de 8 %, après une hausse de 12 % en 2025. Dans une grande entreprise, il atteint environ 30 000 pesos par mois, soit à peu près 400 euros. Mais la vie coûte beaucoup moins cher à Saint-Domingue qu'à Paris.\n\nAlors, comment comparer deux pays si différents ? Un salaire élevé ne garantit pas toujours une vie confortable. Faut-il augmenter fortement le salaire minimum, au risque de fragiliser les petites entreprises ? Ou faut-il plutôt faire baisser le prix des loyers et des courses ?",
   "dictation": {
-    "text": "Ma cousine travaille dans une boulangerie à Strasbourg. Elle gagne le salaire minimum et son loyer coûte cher. Hier, elle a appris la nouvelle à la radio. Son salaire va augmenter le mois prochain. Elle est restée calme, parce que la hausse est petite. Ses collègues et elle ont calculé ce qu'elles vont gagner en plus. Elles sont un peu déçues, mais elles ont décidé d'en parler au patron.",
+    "form": "courrier administratif ou réclamation",
+    "focus": "futur simple et impératif",
+    "text": "Madame, Monsieur, je travaille dans votre boulangerie depuis deux ans. Le salaire minimum a augmenté le premier décembre. Pourtant, ma fiche de paie ne montre aucune hausse. Vous trouverez ci-joint cette fiche et mon contrat de travail. Merci de vérifier le montant de mon salaire avant la fin du mois. Je serai disponible lundi matin, et j'apporterai tous mes documents. Nous pourrons ainsi corriger cette erreur rapidement. Cordialement, Sofia",
     "units": [
-      "Ma cousine travaille dans une boulangerie à Strasbourg.",
-      "Elle gagne le salaire minimum",
-      "et son loyer coûte cher.",
-      "Hier, elle a appris la nouvelle à la radio.",
-      "Son salaire va augmenter le mois prochain.",
-      "Elle est restée calme, parce que la hausse est petite.",
-      "Ses collègues et elle ont calculé",
-      "ce qu'elles vont gagner en plus.",
-      "Elles sont un peu déçues,",
-      "mais elles ont décidé d'en parler au patron."
+      "Madame, Monsieur, je travaille dans votre boulangerie depuis deux ans.",
+      "Le salaire minimum a augmenté le premier décembre.",
+      "Pourtant, ma fiche de paie ne montre aucune hausse.",
+      "Vous trouverez ci-joint cette fiche",
+      "et mon contrat de travail.",
+      "Merci de vérifier le montant de mon salaire",
+      "avant la fin du mois.",
+      "Je serai disponible lundi matin,",
+      "et j'apporterai tous mes documents.",
+      "Nous pourrons ainsi corriger cette erreur rapidement. Cordialement, Sofia"
     ]
   },
   "oralTopics": [

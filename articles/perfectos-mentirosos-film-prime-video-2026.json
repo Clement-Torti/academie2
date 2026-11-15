@@ -1,0 +1,86 @@
+{
+  "id": "perfectos-mentirosos-film-prime-video-2026",
+  "title": "« Perfectos mentirosos » : le phénomène Wattpad arrive sur Prime Video",
+  "date": "2026-11-15",
+  "category": "Culture",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Libros_de_wattpad.jpg?width=1200",
+    "alt": "Plusieurs romans en espagnol ouverts les uns sur les autres"
+  },
+  "vocabulary": [
+    { "fr": "très attendu", "es": "muy esperado" },
+    { "fr": "un tome", "es": "un tomo, un volumen" },
+    { "fr": "dépasser", "es": "superar" },
+    { "fr": "une adaptation", "es": "una adaptación" },
+    { "fr": "un mensonge", "es": "una mentira" },
+    { "fr": "craindre", "es": "temer" },
+    { "fr": "un coup de cœur", "es": "un flechazo, algo que te encanta" },
+    { "fr": "séduire un public", "es": "conquistar a un público" }
+  ],
+  "article": "Le 20 novembre, Prime Video sortira Perfectos mentirosos, un film espagnol très attendu par les jeunes lecteurs. Il adapte le premier tome d'une saga écrite par Alex Mírez. L'histoire est née sur Wattpad, une plateforme où chacun peut publier ses textes gratuitement. Elle y a dépassé 140 millions de lectures. Le film sera disponible dans plus de 240 pays.\n\nL'héroïne, Jude Derry, entre à Tagus, une université réservée aux familles riches. Elle veut découvrir ce qui est arrivé à son frère. Pour cela, elle s'approche des frères Cash, qui dominent le campus. Mais elle entre dans un jeu dangereux de secrets, de mensonges et d'attirance. Le réalisateur, Jesús Colmenar, a travaillé sur La casa de papel. Irene Balmes, Gleb Abrosimov et Pau Simón jouent les rôles principaux.\n\nPourtant, beaucoup de fans sont inquiets. En effet, une adaptation doit souvent couper des scènes et des personnages. Une histoire aussi riche peut-elle tenir dans un seul film ? Certains lecteurs auraient préféré une série, avec plus de temps pour chaque personnage. D'autres craignent la disparition de leurs passages préférés.\n\nCe succès montre la force de Wattpad et de TikTok, où les lecteurs partagent leurs coups de cœur. Après Culpa mía et A través de mi ventana, l'Espagne adapte encore un phénomène né sur internet. Mais une histoire écrite par une fan, pour des fans, peut-elle séduire un public plus large ? Et faut-il toujours lire le livre avant de voir le film ?",
+  "dictation": {
+    "form": "compte rendu",
+    "focus": "conditionnel présent de politesse ou d'hypothèse, et différence entre futur et conditionnel",
+    "text": "Le club de lecture de la médiathèque s'est réuni jeudi après le travail. Nous avons parlé de l'adaptation d'un roman très connu sur internet. Plusieurs membres voudraient voir le film ensemble, le soir de sa sortie. D'autres préféreraient attendre les premières critiques. Selon la bibliothécaire, une série aurait plus de temps pour raconter l'histoire. Elle aimerait aussi organiser un débat après la projection. La prochaine réunion aura lieu le premier décembre, à la même heure.",
+    "units": [
+      "Le club de lecture de la médiathèque",
+      "s'est réuni jeudi après le travail.",
+      "Nous avons parlé de l'adaptation",
+      "d'un roman très connu sur internet.",
+      "Plusieurs membres voudraient voir le film ensemble,",
+      "le soir de sa sortie.",
+      "D'autres préféreraient attendre les premières critiques.",
+      "Selon la bibliothécaire, une série aurait",
+      "plus de temps pour raconter l'histoire.",
+      "Elle aimerait aussi organiser un débat après la projection.",
+      "La prochaine réunion aura lieu",
+      "le premier décembre, à la même heure."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Un phénomène né sur Wattpad",
+      "prompt": "Peux-tu me raconter avec tes mots l'histoire de ce film et d'où elle vient ?",
+      "relances": [
+        "Qui est Jude Derry, et que cherche-t-elle à Tagus ?",
+        "Comment ce roman est-il devenu si célèbre ?",
+        "Pourquoi beaucoup de fans sont-ils inquiets ?",
+        "Quels autres succès nés sur internet l'article cite-t-il ?"
+      ]
+    },
+    {
+      "title": "Livre ou écran",
+      "prompt": "Selon toi, que perd une histoire quand on la transforme en film, et que gagne-t-elle ?",
+      "relances": [
+        "Quelle adaptation t'a déçue, et pourquoi ?",
+        "Que penses-tu d'une série à la place d'un film ?",
+        "Comment expliques-tu le succès des histoires écrites par des fans ?",
+        "Que dirais-tu à quelqu'un qui méprise les romans de Wattpad ?"
+      ]
+    },
+    {
+      "title": "Mes coups de cœur",
+      "prompt": "Raconte-moi un livre ou une série qui t'a tellement plu que tu en as parlé à tout le monde.",
+      "relances": [
+        "Comment as-tu découvert cette histoire ?",
+        "Quel personnage t'a le plus marquée, et pourquoi ?",
+        "Quels livres ou séries découvres-tu grâce à TikTok ?",
+        "Comment lisais-tu à Saint-Domingue, sur papier ou sur ton téléphone ?"
+      ]
+    },
+    {
+      "title": "Lire en français",
+      "prompt": "Comment pourrais-tu utiliser les livres, les films et les séries pour progresser en français à Strasbourg ?",
+      "relances": [
+        "Quel genre de livre aimerais-tu lire en premier en français ?",
+        "Comment imagines-tu un club de lecture à la médiathèque ?",
+        "Quelle série latino ferais-tu découvrir à des amis français ?",
+        "Quels conseils donnerais-tu à une amie qui apprend le français avec des séries ?"
+      ]
+    }
+  ],
+  "comments": [
+    { "username": "TeamAegan_4ever", "comment": "Sérieusement ??? Un roman aussi riche en UN SEUL film ?! Ils vont couper la moitié des scènes, c'est sûr. Une série, c'était le MINIMUM pour respecter les lecteurs. Je vais le regarder vendredi, mais je suis déjà énervée 😤", "likes": 387 },
+    { "username": "LectriceDe2hDuMatin", "comment": "J'ai lu toute la saga sur Wattpad pendant mes examens, cachée sous la couette avec mon téléphone. Ma mère pensait que je révisais 😅 Aujourd'hui j'ai mon diplôme et je connais encore des répliques par cœur. Vendredi : pizza, plaid et mouchoirs.", "likes": 64 }
+  ]
+}

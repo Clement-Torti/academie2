@@ -37,27 +37,40 @@ RÈGLES GÉNÉRALES
    composés (auquel, lequel, duquel), vocabulaire abstrait ou technique,
    connecteurs savants (néanmoins, dès lors, si bien que, à mesure que).
 
-   LA DICTÉE : B1 STRICT, nettement plus simple que l'article
+   LA DICTÉE : B1, plus simple que l'article, mais tournée vers le français
+   ÉCRIT DE LA VIE RÉELLE (messages, e-mails, courriers, consignes)
    · phrases de 8 à 15 mots, structure sujet + verbe + complément ;
    · une seule proposition subordonnée par phrase, jamais deux ;
    · uniquement du vocabulaire courant et concret, rien de spécialisé ;
    · temps autorisés, et eux seuls : présent, passé composé, imparfait,
-     futur proche (aller + infinitif), futur simple, impératif ;
-   · pronoms relatifs autorisés : qui, que, où — et rien d'autre.
+     futur proche (aller + infinitif), futur simple, impératif,
+     conditionnel présent (je voudrais, pourriez-vous, si j'avais… je
+     pourrais), subjonctif présent après « il faut que », « pour que »,
+     « je voudrais que », « avant que » ;
+   · pronoms relatifs autorisés : qui, que, où — et rien d'autre ;
+   · accord du participe passé avec un COD placé avant le verbe autorisé
+     SEULEMENT avec le passé composé (« les documents que je vous ai
+     envoyés », « je les ai reçues ») ;
+   · inversion autorisée SEULEMENT dans les formules de politesse
+     (pourriez-vous, voulez-vous, auriez-vous) ;
+   · phrase sans verbe autorisée SEULEMENT pour les formules d'appel et
+     de clôture d'un message (Madame, Monsieur, Bonjour Julie, Cordialement,
+     Bonne journée, À bientôt).
    INTERDIT dans la dictée, sans exception :
    · plus-que-parfait (avait vu, étaient partis), futur antérieur (aura
-     oublié), conditionnel passé, passé simple, subjonctif ;
+     oublié), conditionnel passé, passé simple, subjonctif passé ;
    · infinitif passé (sans avoir vu, après être arrivé) ;
    · participe présent et gérondif (ayant fini, en arrivant) ;
    · « dont » et les relatifs composés (auquel, lequel, duquel) ;
    · reprise par dislocation (« Ces messages, il faut les signaler »,
      « Les parents, eux, ont appris ») ;
-   · accord du participe passé avec un COD placé avant le verbe
-     (« la trousse qu'elle avait rangée ») : c'est du B2, pas du B1 ;
-   · inversion sujet-verbe, tournure passive, phrase sans verbe.
+   · accord avec un COD placé avant un verbe au plus-que-parfait ou à un
+     autre temps composé que le passé composé ;
+   · tournure passive.
    Ce qui compte dans la dictée, ce n'est pas la difficulté du sens : c'est
-   qu'elle entende bien et qu'elle écrive juste. Une phrase que tu hésiterais
-   à donner en fin de première année de français est déjà trop difficile.
+   qu'elle entende bien et qu'elle écrive juste. Le but à long terme : qu'elle
+   sache écrire sans faute les textes de sa vie quotidienne et professionnelle
+   en France.
 
    La lectrice est une étudiante hispanophone qui apprend le français depuis
    plus d'un an et prépare son installation en France.
@@ -80,6 +93,8 @@ SCHÉMA JSON EXACT À RESPECTER
   ],
   "article": "Texte B1+ de 200 à 250 mots, paragraphes séparés par \\n\\n",
   "dictation": {
+    "form": "La forme imposée par la table FORME (ex : « e-mail professionnel »)",
+    "focus": "Le point de langue imposé par la table POINT (ex : « homophones a/à, ou/où, et/est »)",
     "text": "Texte B1 de 70 mots environ, sur le même sujet mais DIFFÉRENT de l'article",
     "units": [
       "groupe de 5 à 10 mots",
@@ -140,7 +155,73 @@ une synthèse vocale, une fois à vitesse normale puis découpé en petites unit
 - "text" : 65 à 75 mots (viser 70), en 5 ou 6 phrases courtes.
 - Le sujet est celui de l'article, mais le texte est NOUVEAU : ne recopie
   AUCUNE phrase de l'article. C'est un autre angle, un complément, un exemple
-  concret, un témoignage, une conséquence. Il doit se comprendre tout seul.
+  concret, une conséquence. Il doit se comprendre tout seul.
+
+- FORME ET POINT DE LANGUE : ils ne se choisissent PAS, ils se calculent.
+  Plusieurs articles sont générés en même temps dans des sessions séparées :
+  cette règle fixe garantit qu'ils seront différents les uns des autres.
+  Choisis d'abord l'"id", puis applique les deux tables ci-dessous.
+
+  TABLE FORME — selon la PREMIÈRE lettre de l'id :
+    a b d     → 1. RÉCIT : une petite histoire racontée au passé
+    c k       → 2. E-MAIL PROFESSIONNEL : à un collègue, un client, un
+                   recruteur ou un responsable (vouvoiement, formule d'appel
+                   et de clôture)
+    e f       → 3. MESSAGE PERSONNEL : SMS ou message vocal retranscrit à un
+                   ami ou à quelqu'un de la famille (tutoiement)
+    g h i     → 4. COURRIER ADMINISTRATIF OU RÉCLAMATION : au propriétaire,
+                   à la mairie, à la banque, à l'assurance, à l'école…
+    j l n o q r → 5. CONSIGNES : règlement, mode d'emploi, affiche,
+                   recommandations (impératif, il faut que, vous devez)
+    m         → 6. ANNONCE : offre d'emploi, logement, recherche de
+                   bénévoles, invitation à un événement
+    p t u     → 7. COMPTE RENDU : de réunion, de visite ou d'événement,
+                   au présent et au passé composé
+    s v w x y z → 8. AVIS ARGUMENTÉ : message sur un forum, avis client,
+                   courrier des lecteurs (je pense que, parce que, pourtant)
+
+  TABLE POINT — selon la première lettre du DEUXIÈME mot de l'id
+  (dans "hausse-smic-france", c'est le « s » de « smic » ; si ce mot
+  commence par un chiffre, prends le groupe « r t chiffre ») :
+    a e i o u y → 1. homophones a/à, ou/où, et/est
+    b c       → 2. terminaisons -é / -er / -ez / -ais / -ait
+    d f       → 3. accord du participe passé avec être et avec les verbes
+                   pronominaux (elles sont arrivées, ils se sont inscrits)
+    g h j k   → 4. accord du participe passé avec avoir et un COD placé
+                   avant (la lettre que j'ai envoyée, je les ai reçus)
+    l m       → 5. conditionnel présent de politesse ou d'hypothèse, et
+                   la différence entre futur et conditionnel
+                   (je voudrais / je voudrai, j'aimerais / j'aimerai)
+    n p       → 6. subjonctif présent courant (il faut que je fasse,
+                   pour que vous puissiez, avant qu'il soit trop tard)
+    r t chiffre → 7. homophones ce/se, ces/ses, c'est/s'est, on/ont,
+                   son/sont, leur/leurs
+    s v w x z q → 8. futur simple et impératif (je serai, nous enverrons,
+                   n'oubliez pas, envoyez-moi)
+
+  Le POINT imposé doit apparaître au moins QUATRE fois dans le texte. Les
+  autres points peuvent apparaître naturellement, sans forcer.
+  La FORME imposée s'adapte toujours au sujet : trouve la situation de la
+  vie réelle où quelqu'un écrirait ce type de texte à propos de ce sujet.
+  Exemple pour un article sur la hausse du SMIC : e-mail d'une employée à
+  sa responsable pour demander un entretien sur son salaire.
+  Recopie la forme et le point obtenus dans "form" et "focus".
+
+- DOMAINE DE VIE : privilégie un angle utile pour s'installer et travailler
+  en France (travail, logement, santé, banque, transports, école,
+  démarches administratives, vie de quartier) plutôt que les loisirs et
+  la télévision, chaque fois que le sujet le permet.
+
+- ANTI-RÉPÉTITION — les dictées précédentes se ressemblaient trop. Donc :
+  · ne commence PAS par un membre de la famille (Ma sœur, Ma cousine, Ma
+    tante, Mon frère…), ni par un jour ou un moment (Samedi, Hier soir,
+    Ce matin, Dimanche dernier) ;
+  · ne termine PAS par une émotion (fier, content, ému, pleurer de joie)
+    ni par un projet au futur proche (Ce soir / Demain, on va…) ;
+  · tournures usées à éviter : se retrouver, rester devant la télévision,
+    rentrer fatigué mais content, se sont installées, est restée silencieuse ;
+  · varie les personnes : je, tu, nous, vous et on ont toute leur place,
+    pas seulement elle / elles.
 - Niveau B1, plus simple que l'article (voir les règles de langue plus haut).
 - Le texte doit être DICTABLE. Donc obligatoirement :
   · AUCUN chiffre : tout est écrit en lettres (« quarante-deux degrés »,
@@ -149,23 +230,16 @@ une synthèse vocale, une fois à vitesse normale puis découpé en petites unit
   · au maximum UN nom propre, et seulement s'il est facile à écrire
     (Paris, la France, Strasbourg — jamais un patronyme rare) ;
   · pas de mots entre guillemets, pas de parenthèses, pas de tirets longs.
-- Le texte doit faire travailler des points de langue qui reviennent souvent
-  chez une hispanophone. Places-en plusieurs, naturellement — tous restent
-  dans le périmètre B1 défini plus haut :
-  · accord du participe passé avec être (elle est restée, ils sont arrivés)
-    et avec les verbes pronominaux (elles se sont retrouvées) ;
-  · participe passé avec avoir mais SANS COD placé avant, donc invariable
-    (ils ont mangé, on lui a retiré la tumeur) ;
-  · accords en genre et en nombre dans le groupe nominal ;
-  · homophones grammaticaux : a/à, ou/où, son/sont, ce/se, ces/ses, on/ont,
-    leur/leurs ;
-  · terminaisons verbales homophones : -é / -er / -ez / -ais ;
-  · doubles consonnes et accents (é, è, ê) ;
-  · élisions et apostrophes (qu'il, l'année, d'ailleurs).
-- Ponctuation simple : points et virgules uniquement, rien d'exotique. Elle est
-  annoncée à voix haute pendant la dictée (« virgule », « point ») pour faire
-  entendre la structure des phrases, mais elle n'est JAMAIS corrigée — pas plus
-  que les majuscules. Ce n'est donc pas la peine d'en mettre beaucoup.
+- En plus du POINT imposé, le texte contient naturellement des accords en
+  genre et en nombre, des doubles consonnes, des accents (é, è, ê) et des
+  élisions (qu'il, l'année, d'ailleurs).
+- Les formules d'un message (Bonjour Madame, Cordialement, Bisous, À
+  bientôt) comptent dans les 70 mots. Signature : un prénom courant ou rien.
+- Ponctuation simple : points, virgules, et si la forme l'exige points
+  d'interrogation, d'exclamation et deux-points. Elle est annoncée à voix
+  haute pendant la dictée (« virgule », « point ») pour faire entendre la
+  structure des phrases, mais elle n'est JAMAIS corrigée — pas plus que les
+  majuscules. Ce n'est donc pas la peine d'en mettre beaucoup.
 
 - "units" : le même texte, découpé dans l'ordre, mot pour mot.
   · chaque unité fait 5 à 10 mots ;
@@ -279,9 +353,15 @@ Contrôle ces points, ils sont la source de presque toutes les erreurs :
    ne dépasse 15 mots.
 5. La dictée ne contient AUCUNE tournure de la liste INTERDIT ci-dessus.
    Relis-la phrase par phrase en cherchant : « avait », « était » suivi d'un
-   participe, « aura », « dont », un participe présent, ou un participe passé
-   accordé avec un complément placé avant le verbe. Si tu en trouves un,
-   réécris la phrase au présent ou au passé composé.
+   participe, « aura », « aurait » suivi d'un participe, « dont », un
+   participe présent, une tournure passive. Si tu en trouves un, réécris la
+   phrase.
+5 bis. La forme et le point de la dictée sont bien ceux que donnent les
+   tables FORME et POINT pour cet id, ils sont recopiés dans "form" et
+   "focus", et le point imposé apparaît au moins quatre fois.
+5 ter. La dictée ne commence ni par un membre de la famille ni par un
+   moment de la semaine, et ne se termine ni par une émotion ni par un
+   « on va… ».
 6. Il y a 4 sujets d'oral (chacun avec exactement 4 relances) et 2 commentaires.
 7. Le JSON est valide : guillemets fermés, virgules bien placées, pas de
    virgule avant une accolade ou un crochet fermant.

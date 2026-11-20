@@ -1,0 +1,115 @@
+{
+  "id": "series-americaines-personnages-lgbt-baisse-2026",
+  "title": "Séries américaines : les personnages LGBT de moins en moins nombreux",
+  "date": "2026-11-20",
+  "category": "Culture",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rainbow_flag_and_blue_skies.jpg?width=1200",
+    "alt": "Un drapeau arc-en-ciel, symbole de la communauté LGBT, flotte sous un ciel bleu"
+  },
+  "vocabulary": [
+    {
+      "fr": "diminuer",
+      "es": "disminuir"
+    },
+    {
+      "fr": "une baisse",
+      "es": "una caída, un descenso"
+    },
+    {
+      "fr": "un personnage",
+      "es": "un personaje"
+    },
+    {
+      "fr": "annuler une série",
+      "es": "cancelar una serie"
+    },
+    {
+      "fr": "faire des économies",
+      "es": "ahorrar, recortar gastos"
+    },
+    {
+      "fr": "hostile à",
+      "es": "hostil a"
+    },
+    {
+      "fr": "à l'écran",
+      "es": "en pantalla"
+    },
+    {
+      "fr": "se reconnaître",
+      "es": "sentirse identificado, reconocerse"
+    }
+  ],
+  "article": "Les personnages LGBT sont de moins en moins nombreux dans les séries américaines. C'est la conclusion du nouveau rapport de l'association GLAAD, publié le 12 novembre 2026. Pendant la saison 2025-2026, elle a compté 369 personnages LGBT, contre 489 l'année précédente. C'est une baisse de 25 % en un an.\n\nLes personnages transgenres sont les plus touchés. Ils étaient 33 la saison dernière, mais ils ne sont plus que sept aujourd'hui. Le nombre de personnages gays a aussi diminué de 32 %. Seuls les personnages non binaires sont un peu plus nombreux. Les plateformes de streaming ont perdu le plus de personnages : 96 de moins en un an.\n\nComment expliquer cette chute ? D'abord, beaucoup de séries ont été annulées, car les studios font des économies. Par ailleurs, le climat politique aux États-Unis est devenu plus hostile aux minorités. Certaines entreprises préfèrent donc éviter les sujets sensibles. Pourtant, le public demande plus de diversité à l'écran, surtout les jeunes de la génération Z. Le président de GLAAD accuse Hollywood de supprimer ces histoires « alors que la demande augmente ».\n\nEt l'avenir ne s'annonce pas meilleur. Selon le rapport, aucun personnage transgenre de cette saison ne reviendra l'année prochaine. Faut-il pousser les chaînes à représenter toute la société ? Ou bien les scénaristes doivent-ils rester libres de raconter les histoires qu'ils veulent ?",
+  "dictation": {
+    "form": "avis argumenté",
+    "focus": "homophones a/à, ou/où, et/est",
+    "text": "Je suis abonnée à cette plateforme depuis deux ans. Je pense que son catalogue a changé. Où sont passés les personnages gays ou transgenres ? La plateforme a arrêté ma série préférée à la fin de l'été. Pourtant, elle plaisait aux jeunes et à leurs parents. Chacun a besoin de se reconnaître à l'écran. C'est à vous de choisir : ajoutez des histoires variées ou je résilie mon abonnement.",
+    "units": [
+      "Je suis abonnée à cette plateforme depuis deux ans.",
+      "Je pense que son catalogue a changé.",
+      "Où sont passés les personnages gays ou transgenres ?",
+      "La plateforme a arrêté ma série préférée",
+      "à la fin de l'été.",
+      "Pourtant, elle plaisait aux jeunes et à leurs parents.",
+      "Chacun a besoin de se reconnaître à l'écran.",
+      "C'est à vous de choisir :",
+      "ajoutez des histoires variées ou je résilie mon abonnement."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Ce que dit le rapport",
+      "prompt": "Peux-tu m'expliquer avec tes mots ce que montre le nouveau rapport de GLAAD ?",
+      "relances": [
+        "Quels personnages ont le plus disparu, selon l'article ?",
+        "Comment les studios expliquent-ils cette baisse ?",
+        "Quel chiffre t'a le plus surprise, et pourquoi ?",
+        "Que va-t-il se passer la saison prochaine, d'après le rapport ?"
+      ]
+    },
+    {
+      "title": "Obligation ou liberté",
+      "prompt": "À ton avis, les séries doivent-elles représenter toute la société, ou les scénaristes doivent-ils rester libres ?",
+      "relances": [
+        "Quels arguments pourrais-tu donner à quelqu'un qui pense le contraire ?",
+        "Que réponds-tu au premier commentaire, très en colère ?",
+        "Qu'est-ce qui rend un personnage LGBT réussi ou raté, selon toi ?",
+        "Pourquoi les entreprises ont-elles peur des sujets sensibles, à ton avis ?"
+      ]
+    },
+    {
+      "title": "Mes séries et moi",
+      "prompt": "Quelle série t'a fait découvrir un personnage différent de toi, et qu'en as-tu pensé ?",
+      "relances": [
+        "Comment ce personnage était-il présenté dans l'histoire ?",
+        "De quelle façon tes amis ou ta famille ont-ils réagi à cette série ?",
+        "Quelle série regardes-tu en ce moment, et pourquoi elle te plaît ?",
+        "Comment les séries et TikTok influencent-ils les idées des jeunes Dominicains ?"
+      ]
+    },
+    {
+      "title": "Séries en France et ailleurs",
+      "prompt": "Comment les séries dominicaines, américaines et françaises parlent-elles de la diversité, selon toi ?",
+      "relances": [
+        "Quelles séries françaises aimerais-tu regarder pour progresser en français ?",
+        "Que t'apprennent les séries sur la société française avant ton arrivée à Strasbourg ?",
+        "Comment imagines-tu tes soirées séries une fois installée en France ?",
+        "En mercadeo, comment une marque devrait-elle parler de diversité ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "CinephileEnColere_84",
+      "comment": "Franchement, TANT MIEUX ! On en avait marre des personnages ajoutés juste pour cocher une case. Une série, c'est une histoire, pas un tract politique. Les scénaristes écrivent enfin ce qu'ils veulent, et les gens qui râlent n'ont qu'à créer leurs propres séries !!!",
+      "likes": 214
+    },
+    {
+      "username": "MamieZappeuse1958",
+      "comment": "Moi, à 68 ans, j'ai compris mon petit-fils grâce à une série. Il m'a fait regarder un épisode où un ado fait son coming out, et j'ai pleuré comme une madeleine. Le lendemain, je l'ai appelé pour lui dire que je l'aimais. Alors non, ce n'est pas une case à cocher.",
+      "likes": 487
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "id": "robert-pattinson-james-bond-2026",
+  "title": "Robert Pattinson sera le nouveau James Bond",
+  "date": "2026-11-20",
+  "category": "Culture",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Robert_Pattinson_at_Berlinale_2025.jpg?width=1200",
+    "alt": "L'acteur britannique Robert Pattinson au festival de Berlin en 2025"
+  },
+  "vocabulary": [
+    {
+      "fr": "succéder à quelqu'un",
+      "es": "suceder a alguien"
+    },
+    {
+      "fr": "réaliser un film",
+      "es": "dirigir una película"
+    },
+    {
+      "fr": "le scénario",
+      "es": "el guion"
+    },
+    {
+      "fr": "un tournage",
+      "es": "un rodaje"
+    },
+    {
+      "fr": "un figurant",
+      "es": "un extra (en una película)"
+    },
+    {
+      "fr": "les réactions sont partagées",
+      "es": "las opiniones están divididas"
+    },
+    {
+      "fr": "prévisible",
+      "es": "predecible"
+    },
+    {
+      "fr": "être dans la course",
+      "es": "estar en la carrera, tener posibilidades"
+    }
+  ],
+  "article": "C'est officiel : Robert Pattinson sera le prochain James Bond. Le studio Amazon MGM l'a annoncé le 16 novembre, après une longue recherche. L'acteur britannique de 40 ans succède à Daniel Craig, qui a quitté le rôle en 2021. Pour lui, jouer 007 est « un rêve devenu réalité » et « l'honneur d'une vie ».\n\nC'est le Canadien Denis Villeneuve, connu pour la saga Dune, qui va réaliser le film. Steven Knight, le créateur de la série Peaky Blinders, écrit le scénario. Pour Amazon, c'est un moment important. En 2025, l'entreprise a obtenu le contrôle de la saga, après un accord avec ses producteurs historiques. La date de sortie n'est pas encore connue.\n\nRobert Pattinson est devenu célèbre très jeune avec Harry Potter, puis avec Twilight, où il jouait un vampire. Ensuite, il a choisi des films plus sombres et plus originaux. Il a aussi incarné Batman en 2022, et il tourne actuellement la suite.\n\nSur les réseaux sociaux, les réactions sont partagées. Les fans de Twilight sont ravis. D'autres trouvent ce choix trop prévisible et voulaient un acteur inconnu. Beaucoup espéraient aussi Idris Elba, mais l'acteur a expliqué qu'il n'a jamais vraiment été dans la course. Enfin, les fans de Batman ont peur d'attendre encore longtemps la suite. Alors, Pattinson peut-il faire oublier Daniel Craig ? Et faut-il vraiment une star pour jouer James Bond ?",
+  "dictation": {
+    "form": "consignes",
+    "focus": "subjonctif présent courant",
+    "text": "Voici les consignes pour les figurants du nouveau film d'espionnage. Il faut que vous arriviez à l'heure devant l'entrée du studio. Apportez une pièce d'identité et votre contrat signé. Avant que la scène commence, éteignez votre téléphone portable. Il faut que chacun reste immobile pendant les prises de vue. Il faut aussi que tout le monde fasse silence sur le plateau. Pour que l'équipe puisse vous payer, donnez votre numéro de compte à l'accueil.",
+    "units": [
+      "Voici les consignes pour les figurants du nouveau film d'espionnage.",
+      "Il faut que vous arriviez",
+      "à l'heure devant l'entrée du studio.",
+      "Apportez une pièce d'identité et votre contrat signé.",
+      "Avant que la scène commence, éteignez votre téléphone portable.",
+      "Il faut que chacun reste immobile",
+      "pendant les prises de vue.",
+      "Il faut aussi que tout le monde",
+      "fasse silence sur le plateau.",
+      "Pour que l'équipe puisse vous payer,",
+      "donnez votre numéro de compte à l'accueil."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Le nouveau 007",
+      "prompt": "Peux-tu me raconter avec tes mots ce qu'Amazon a annoncé à propos de James Bond ?",
+      "relances": [
+        "Qui va réaliser ce film, et pourquoi c'est important ?",
+        "Que sais-tu de la carrière de Robert Pattinson ?",
+        "Comment les fans ont-ils réagi, d'après l'article ?",
+        "Pourquoi les fans de Batman sont-ils inquiets ?"
+      ]
+    },
+    {
+      "title": "Une star ou un inconnu",
+      "prompt": "À ton avis, faut-il choisir une grande star ou un acteur inconnu pour jouer James Bond ?",
+      "relances": [
+        "Quels sont les avantages d'un acteur inconnu, selon toi ?",
+        "Qui aurais-tu choisi à la place de Pattinson, et pourquoi ?",
+        "Comment James Bond devrait-il changer pour plaire aux jeunes ?",
+        "Que penses-tu des acteurs qui gardent toujours le même rôle ?"
+      ]
+    },
+    {
+      "title": "Toi et le cinéma",
+      "prompt": "Quel film ou quelle saga a marqué ton adolescence, et pourquoi ?",
+      "relances": [
+        "Comment regardais-tu les films à Saint-Domingue avec tes amis ?",
+        "Quel acteur ou quelle actrice admirais-tu quand tu étais jeune ?",
+        "Raconte-moi une sortie au cinéma dont tu te souviens bien.",
+        "Avec ton diplôme de mercadeo, comment vendrais-tu ce nouveau Bond ?"
+      ]
+    },
+    {
+      "title": "Le cinéma en France",
+      "prompt": "Comment imagines-tu tes sorties au cinéma quand tu habiteras à Strasbourg ?",
+      "relances": [
+        "Préférerais-tu voir les films en version originale ou en français ?",
+        "Quels films français aimerais-tu découvrir pour progresser ?",
+        "Quelles différences imagines-tu avec les cinémas dominicains ?",
+        "Comment le cinéma peut-il t'aider à rencontrer des gens en France ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "Bond_Pur_Sang_007",
+      "comment": "Franchement NON. Le vampire de Twilight en smoking, sérieusement ?! Bond, c'est un homme dur, élégant, un peu dangereux. Pattinson, il fait des films bizarres et il marmonne tout le temps. Amazon a juste choisi un nom célèbre pour vendre. Craig doit bien rire.",
+      "likes": 412
+    },
+    {
+      "username": "FigurantDeLuxe_Nantes",
+      "comment": "J'ai été figurant sur un tournage à Paris il y a deux ans. Douze heures debout pour une scène de trois secondes, et on me voit de dos dans le film final 😂 Si le prochain Bond tourne en France, je m'inscris quand même !",
+      "likes": 57
+    }
+  ]
+}

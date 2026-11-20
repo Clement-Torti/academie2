@@ -1,0 +1,117 @@
+{
+  "id": "regalia-pascual-double-salaire-noel",
+  "title": "Doble sueldo : l'État dominicain versera le salaire de Noël dès le 3 décembre",
+  "date": "2026-11-20",
+  "category": "Économie",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arbol_de_Navidad_2022_en_el_Palacio_Nacional.jpg?width=1200",
+    "alt": "Le grand sapin de Noël illuminé devant le Palais national, à Saint-Domingue"
+  },
+  "vocabulary": [
+    {
+      "fr": "verser (un salaire)",
+      "es": "pagar, abonar (un sueldo)"
+    },
+    {
+      "fr": "un salarié",
+      "es": "un empleado asalariado"
+    },
+    {
+      "fr": "une obligation",
+      "es": "una obligación"
+    },
+    {
+      "fr": "dépasser",
+      "es": "superar, sobrepasar"
+    },
+    {
+      "fr": "rembourser ses dettes",
+      "es": "pagar sus deudas"
+    },
+    {
+      "fr": "attendre avec impatience",
+      "es": "esperar con ansias"
+    },
+    {
+      "fr": "les coordonnées bancaires",
+      "es": "los datos bancarios"
+    },
+    {
+      "fr": "la fiche de paie",
+      "es": "el volante de pago, la nómina"
+    }
+  ],
+  "article": "En République dominicaine, décembre est le mois du « doble sueldo ». Le 18 novembre, le trésorier national, Luis Rafael Delgado, a fait une annonce attendue. L'État commencera à verser ce salaire de Noël le jeudi 3 décembre. Les retraités, les militaires et les policiers seront payés en premier. Les autres institutions publiques recevront l'argent ensuite.\n\nAu total, le gouvernement va dépenser plus de 35 600 millions de pesos, soit 3,5 % de plus qu'en 2025. Les mairies ne sont pas comprises dans ce chiffre, car elles paient leurs employés avec leur propre budget.\n\nCette « regalía pascual » n'est pas un cadeau de l'employeur. C'est une obligation prévue par le Code du travail. Dans le secteur privé aussi, chaque salarié doit recevoir un douzième de ce qu'il a gagné pendant l'année. Les entreprises ont jusqu'au 20 décembre pour payer. Cette somme n'est pas soumise à l'impôt sur le revenu, mais elle ne peut pas dépasser cinq salaires minimums.\n\nPour l'économie, c'est un moment clé. Les commerces, les supermarchés et les agences de voyage attendent cet argent avec impatience. Pourtant, beaucoup de familles l'utilisent d'abord pour rembourser leurs dettes ou pour préparer la rentrée scolaire de janvier. Alors, faut-il dépenser son double salaire pendant les fêtes ou le garder pour l'année qui commence ?",
+  "dictation": {
+    "form": "Consignes : note du service du personnel aux employés avant le versement du salaire de Noël",
+    "focus": "subjonctif présent courant (il faut que je fasse, pour que vous puissiez, avant qu'il soit trop tard)",
+    "text": "Chers collègues, le salaire de Noël arrive bientôt. Pour que nous puissions le verser avant le vingt décembre, lisez ces consignes. Il faut que chacun vérifie ses coordonnées bancaires. Si votre compte a changé, prévenez la comptabilité avant la fin du mois. Il faut aussi que vous gardiez votre fiche de paie : la banque peut la demander. Pour toute question, il faut que vous écriviez au service du personnel. Merci à tous, bonnes fêtes.",
+    "units": [
+      "Chers collègues, le salaire de Noël arrive bientôt.",
+      "Pour que nous puissions le verser",
+      "avant le vingt décembre, lisez ces consignes.",
+      "Il faut que chacun vérifie ses coordonnées bancaires.",
+      "Si votre compte a changé, prévenez la comptabilité",
+      "avant la fin du mois.",
+      "Il faut aussi que vous gardiez votre fiche de paie :",
+      "la banque peut la demander.",
+      "Pour toute question, il faut",
+      "que vous écriviez au service du personnel.",
+      "Merci à tous, bonnes fêtes."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Le doble sueldo expliqué",
+      "prompt": "Explique avec tes mots ce qu'est le doble sueldo et ce que l'État a annoncé cette année.",
+      "relances": [
+        "Qui va recevoir l'argent en premier, et pourquoi selon toi ?",
+        "Comment calcule-t-on cette somme dans le secteur privé ?",
+        "Quelle différence fais-tu entre un cadeau et une obligation ?",
+        "Pourquoi les commerçants attendent-ils ce moment avec impatience ?"
+      ]
+    },
+    {
+      "title": "Dépenser ou économiser",
+      "prompt": "À ton avis, que faut-il faire avec son double salaire : faire la fête ou économiser ?",
+      "relances": [
+        "Quels arguments donnerais-tu à quelqu'un qui pense le contraire ?",
+        "Comment expliques-tu que tant de familles remboursent d'abord leurs dettes ?",
+        "Quelle partie de cet argent mettrais-tu de côté, et pour quoi ?",
+        "Que conseillerais-tu à un jeune qui reçoit son premier double salaire ?"
+      ]
+    },
+    {
+      "title": "Mes souvenirs de décembre",
+      "prompt": "Raconte-moi comment ta famille utilisait le doble sueldo quand tu étais plus jeune.",
+      "relances": [
+        "Quel achat de décembre t'a le plus marquée ?",
+        "Comment se passent les courses de Noël à Saint-Domingue ?",
+        "Qu'est-ce qui a changé depuis que tu travailles toi-même ?",
+        "Quel plat ou quelle tradition de Noël ne manquerait jamais chez toi ?"
+      ]
+    },
+    {
+      "title": "Un treizième mois en France",
+      "prompt": "En France, le treizième mois n'est pas obligatoire : comment imagines-tu ton premier Noël à Strasbourg ?",
+      "relances": [
+        "Quelles questions poserais-tu sur le salaire pendant un entretien d'embauche ?",
+        "Comment comptes-tu organiser ton budget pendant ta première année ?",
+        "Quelle tradition dominicaine aimerais-tu faire découvrir à tes futurs collègues ?",
+        "Que penses-tu découvrir au marché de Noël de Strasbourg ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "ContableEnColere_809",
+      "comment": "Arrêtez de présenter ça comme une bonne nouvelle !!! Le doble sueldo, c'est NOTRE argent, pas un cadeau du gouvernement. Et pendant ce temps, mon patron attend toujours le 20 décembre au soir pour payer, comme chaque année. Franchement, il faudrait des contrôles sérieux dans le privé.",
+      "likes": 347
+    },
+    {
+      "username": "MamiDeLosMina",
+      "comment": "L'an dernier, j'ai reçu mon double salaire un vendredi matin. Le samedi, j'avais déjà acheté le cochon, payé le colmado et remboursé ma cousine... Le dimanche, il me restait exactement 200 pesos et un sapin tout neuf 😅 Cette année, je fais une liste AVANT !",
+      "likes": 58
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "id": "fans-perfectos-mentirosos-adaptation",
+  "title": "« Perfectos mentirosos » : les fans du roman se sentent trahis",
+  "date": "2026-11-20",
+  "category": "Culture",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Woman_watching_her_phone_on_a_bus.jpg?width=1200",
+    "alt": "Une jeune femme regarde l'écran de son téléphone dans un bus"
+  },
+  "vocabulary": [
+    { "fr": "être déçu", "es": "estar decepcionado" },
+    { "fr": "se sentir trahi", "es": "sentirse traicionado" },
+    { "fr": "un reproche", "es": "un reproche, una crítica" },
+    { "fr": "l'intrigue", "es": "la trama" },
+    { "fr": "révéler un secret", "es": "revelar un secreto" },
+    { "fr": "assumer ses choix", "es": "asumir sus decisiones" },
+    { "fr": "gâcher la surprise", "es": "arruinar la sorpresa" },
+    { "fr": "les avis sont partagés", "es": "las opiniones están divididas" }
+  ],
+  "article": "Depuis le 20 novembre, Perfectos mentirosos est disponible sur Prime Video. Le film adapte le roman d'Alex Mírez, lu plus de 140 millions de fois sur Wattpad. Les lecteurs l'attendaient depuis des mois. Pourtant, sur les réseaux sociaux, une partie des fans est très déçue.\n\nLe principal reproche concerne les personnages. Dans le livre, la relation entre Jude et les frères Aegan et Adrik est le cœur de l'histoire. Avec Aegan, l'héroïne commence un jeu d'apparences, puis de vrais sentiments apparaissent. Selon beaucoup de lecteurs, cette complexité disparaît à l'écran. Un site espagnol compare même le film à un « téléphone arabe ». En effet, le film révèle très tôt une information que le roman garde pour la fin.\n\nLe réalisateur, Jesús Colmenar, assume ces choix. Il explique que les lectrices connaissent déjà tous les mystères du livre. Il a donc changé l'intrigue : selon lui, elles peuvent ainsi être surprises une deuxième fois. Les critiques, elles, sont partagées. Certaines trouvent la deuxième moitié du film trop rapide. D'autres regrettent l'image des femmes, souvent montrées comme de simples trophées.\n\nCe débat revient avec presque chaque adaptation. Pour certains fans, changer l'histoire, c'est trahir les lecteurs. Pour d'autres, un film doit trouver sa propre voie. Une adaptation doit-elle respecter le livre page par page ? Et qui doit avoir le dernier mot : l'auteur, le réalisateur ou le public ?",
+  "dictation": {
+    "form": "message personnel",
+    "focus": "subjonctif présent courant",
+    "text": "Coucou Inès, j'ai enfin regardé le film que tu attendais. Je ne te raconte rien pour que tu gardes la surprise. Mais il faut d'abord que tu lises le roman. Fais vite avant que les collègues te racontent tout. Les scénaristes ont changé presque tous les secrets du livre. Je voudrais que tu me donnes ton avis après. Il faut que tu passes chez moi, j'ai un abonnement et un grand canapé. Bisous !",
+    "units": [
+      "Coucou Inès, j'ai enfin regardé",
+      "le film que tu attendais.",
+      "Je ne te raconte rien",
+      "pour que tu gardes la surprise.",
+      "Mais il faut d'abord que tu lises le roman.",
+      "Fais vite avant que les collègues te racontent tout.",
+      "Les scénaristes ont changé presque tous les secrets du livre.",
+      "Je voudrais que tu me donnes ton avis après.",
+      "Il faut que tu passes chez moi,",
+      "j'ai un abonnement et un grand canapé. Bisous !"
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "La colère des fans",
+      "prompt": "Peux-tu m'expliquer avec tes mots pourquoi une partie des fans est déçue par ce film ?",
+      "relances": [
+        "Quelle relation est au cœur du roman, selon les lecteurs ?",
+        "Que veut dire l'expression « téléphone arabe », d'après toi ?",
+        "Comment le réalisateur justifie-t-il ses changements ?",
+        "Que reprochent les critiques au film ?"
+      ]
+    },
+    {
+      "title": "Fidèle ou libre",
+      "prompt": "À ton avis, un réalisateur a-t-il le droit de changer l'histoire d'un livre très aimé ?",
+      "relances": [
+        "Quels changements te semblent acceptables, et lesquels sont impardonnables ?",
+        "Pourquoi les fans se sentent-ils propriétaires d'une histoire ?",
+        "Qui devrait avoir le dernier mot : l'auteur, le réalisateur ou le public ?",
+        "Que réponds-tu à quelqu'un qui dit que le livre est toujours meilleur ?"
+      ]
+    },
+    {
+      "title": "Ma plus grande déception",
+      "prompt": "Raconte-moi une adaptation, un film ou une série qui t'a vraiment déçue.",
+      "relances": [
+        "Qu'attendais-tu exactement avant de la regarder ?",
+        "À quel moment as-tu compris que ça ne te plaisait pas ?",
+        "Comment en as-tu parlé avec tes amis ou sur TikTok ?",
+        "Qu'aurais-tu changé si tu avais été la réalisatrice ?"
+      ]
+    },
+    {
+      "title": "Donner son avis en français",
+      "prompt": "Comment imagines-tu partager tes goûts de films et de séries avec tes futurs collègues à Strasbourg ?",
+      "relances": [
+        "Quelles expressions utiliserais-tu pour critiquer poliment un film ?",
+        "Quelle série dominicaine ou latino conseillerais-tu à des Français ?",
+        "Comment réagis-tu quand quelqu'un te raconte la fin d'une histoire ?",
+        "Quelles différences imagines-tu entre les débats de fans en France et à Saint-Domingue ?"
+      ]
+    }
+  ],
+  "comments": [
+    { "username": "JudeEtAegan_PourToujours", "comment": "Non mais ils ont VRAIMENT lu le livre ?! Ils ont révélé le secret au bout de vingt minutes et Aegan n'a plus aucune profondeur. « Surprendre les lectrices », c'est une excuse !!! Nous, on voulait juste NOTRE histoire. Ça ne s'appelle plus une adaptation 😡", "likes": 463 },
+    { "username": "MamieDuCanape_57", "comment": "Ma petite-fille m'a obligée à regarder le film avec elle. Elle a mis pause toutes les cinq minutes pour crier « ÇA C'EST PAS DANS LE LIVRE ! ». Au bout d'une heure, je connaissais mieux le roman que le film. Deux histoires pour le prix d'une, moi je suis gagnante.", "likes": 58 }
+  ]
+}

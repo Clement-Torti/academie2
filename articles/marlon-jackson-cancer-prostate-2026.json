@@ -1,0 +1,117 @@
+{
+  "id": "marlon-jackson-cancer-prostate-2026",
+  "title": "Marlon Jackson, du groupe Jackson 5, révèle un cancer de stade 4",
+  "date": "2026-11-20",
+  "category": "Santé",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Marlon_Jackson_2013.jpg",
+    "alt": "Portrait du chanteur américain Marlon Jackson en 2013"
+  },
+  "vocabulary": [
+    {
+      "fr": "révéler",
+      "es": "revelar"
+    },
+    {
+      "fr": "se battre contre une maladie",
+      "es": "luchar contra una enfermedad"
+    },
+    {
+      "fr": "suivre un traitement",
+      "es": "seguir un tratamiento"
+    },
+    {
+      "fr": "faire attention à son alimentation",
+      "es": "cuidar su alimentación"
+    },
+    {
+      "fr": "être en rémission",
+      "es": "estar en remisión"
+    },
+    {
+      "fr": "un témoignage",
+      "es": "un testimonio"
+    },
+    {
+      "fr": "se faire dépister",
+      "es": "hacerse una prueba de detección"
+    },
+    {
+      "fr": "la mauvaise herbe ne meurt jamais",
+      "es": "hierba mala nunca muere"
+    }
+  ],
+  "article": "Marlon Jackson, membre du célèbre groupe Jackson 5 et frère de Michael Jackson, a révélé qu'il a un cancer de la prostate. Le chanteur de 69 ans a fait cette annonce dans un podcast américain, publié le 17 novembre. D'après plusieurs médias, la maladie a atteint le stade 4. Pourtant, il se bat contre ce cancer depuis déjà quatre ans.\n\nIl a raconté que les médecins lui ont retiré la prostate. Ensuite, il a suivi un traitement par radiothérapie. Aujourd'hui, il assure qu'il va très bien. Il marche environ six kilomètres, quatre fois par semaine. Il a aussi arrêté le sucre et fait très attention à son alimentation. Selon lui, son médecin est surpris par ses progrès.\n\nLe chanteur reste très optimiste. « La mauvaise herbe ne meurt jamais », a-t-il plaisanté. Il n'a cependant pas précisé s'il est aujourd'hui en rémission. Cette nouvelle touche une famille déjà marquée par la maladie. En effet, son père, Joe Jackson, est mort d'un cancer du pancréas en 2018.\n\nLe cancer de la prostate est le cancer le plus fréquent chez les hommes. Quand on le découvre tôt, on le soigne bien dans la plupart des cas. Mais beaucoup d'hommes évitent encore d'en parler ou de consulter un médecin. Le témoignage d'une star peut-il convaincre les hommes de se faire dépister plus tôt ?",
+  "dictation": {
+    "form": "Annonce : invitation à un événement",
+    "focus": "accord du participe passé avec avoir et un COD placé avant (la lettre que j'ai envoyée, je les ai reçus)",
+    "text": "Nous vous invitons à une matinée d'information sur le cancer de la prostate. La maison de quartier vous accueille le samedi six décembre, à neuf heures. Les deux médecins que nous avons invités vont parler du dépistage précoce. Vous pourrez poser les questions que vous avez préparées. Nous distribuerons aussi les brochures que la mairie nous a envoyées. Les inscriptions que nous avons reçues sont déjà nombreuses. Venez avec un proche, l'entrée est libre.",
+    "units": [
+      "Nous vous invitons à une matinée d'information",
+      "sur le cancer de la prostate.",
+      "La maison de quartier vous accueille",
+      "le samedi six décembre, à neuf heures.",
+      "Les deux médecins que nous avons invités",
+      "vont parler du dépistage précoce.",
+      "Vous pourrez poser les questions que vous avez préparées.",
+      "Nous distribuerons aussi les brochures",
+      "que la mairie nous a envoyées.",
+      "Les inscriptions que nous avons reçues sont déjà nombreuses.",
+      "Venez avec un proche, l'entrée est libre."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "L'annonce de Marlon Jackson",
+      "prompt": "Peux-tu me raconter avec tes mots ce que Marlon Jackson a révélé dans ce podcast ?",
+      "relances": [
+        "Quels traitements a-t-il suivis, d'après l'article ?",
+        "Comment décrit-il sa vie de tous les jours aujourd'hui ?",
+        "Pourquoi l'article parle-t-il aussi de son père ?",
+        "Qu'est-ce qui t'a le plus surprise dans son histoire ?"
+      ]
+    },
+    {
+      "title": "Les stars et leur santé",
+      "prompt": "À ton avis, pourquoi une célébrité choisit-elle de parler publiquement de sa maladie ?",
+      "relances": [
+        "Quels avantages vois-tu à ce genre de témoignage ?",
+        "Où places-tu la limite entre information et vie privée ?",
+        "Que penses-tu de son optimisme face à un stade quatre ?",
+        "Quelle autre star a parlé de sa santé, selon tes souvenirs ?"
+      ]
+    },
+    {
+      "title": "Prendre soin de soi",
+      "prompt": "Comment est-ce que toi et ta famille prenez soin de votre santé au quotidien ?",
+      "relances": [
+        "Raconte-moi une habitude saine que tu as adoptée récemment.",
+        "Comment les hommes de ta famille parlent-ils de leur santé ?",
+        "Qu'est-ce que tu as changé dans ton alimentation, et pourquoi ?",
+        "Quel conseil santé ta mère ou ta grand-mère te répète-t-elle ?"
+      ]
+    },
+    {
+      "title": "La santé en France",
+      "prompt": "Comment imagines-tu ton suivi médical une fois installée à Strasbourg ?",
+      "relances": [
+        "Quelles démarches devras-tu faire pour trouver un médecin traitant ?",
+        "Comment fonctionne le dépistage en République dominicaine ?",
+        "Que sais-tu déjà de la carte Vitale et de la Sécurité sociale ?",
+        "Comment ferais-tu une campagne de prévention avec ton diplôme de mercadeo ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "DocMartin_Lyon75",
+      "comment": "Franchement, \"stade 4\" et \"tout va bien\" dans la même phrase, ça me met mal à l'aise. On ne guérit pas un cancer en arrêtant le sucre et en marchant !!! Ce genre de message peut pousser des gens à négliger leurs vrais traitements.",
+      "likes": 214
+    },
+    {
+      "username": "JacksonFiveForever_84",
+      "comment": "Mon père a eu exactement le même cancer à soixante-cinq ans. Il refusait d'aller chez le médecin, c'est ma mère qui l'a traîné de force au dépistage. Opéré à temps, il va très bien aujourd'hui et il danse encore sur ABC à chaque mariage 😄",
+      "likes": 37
+    }
+  ]
+}

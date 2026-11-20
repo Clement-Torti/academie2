@@ -1,0 +1,92 @@
+{
+  "id": "petition-the-body-netflix",
+  "title": "« The Body » : 100 000 signatures pour retirer la série de Netflix",
+  "date": "2026-11-20",
+  "category": "Culture",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Quinn_Shephard_2017.jpg",
+    "alt": "Portrait de Quinn Shephard, la créatrice de la série The Body"
+  },
+  "vocabulary": [
+    { "fr": "une pétition", "es": "una petición (recogida de firmas)" },
+    { "fr": "retirer", "es": "retirar" },
+    { "fr": "une polémique", "es": "una polémica" },
+    { "fr": "se moquer de", "es": "burlarse de" },
+    { "fr": "la foi", "es": "la fe" },
+    { "fr": "faire fuir", "es": "ahuyentar" },
+    { "fr": "les croyances", "es": "las creencias" },
+    { "fr": "la liberté de création", "es": "la libertad creativa" }
+  ],
+  "article": "Une pétition demande à Netflix de retirer « The Body », sa nouvelle série d'horreur. En une semaine, elle a réuni environ 100 000 signatures. Le texte a été lancé sur CitizenGO, une plateforme militante conservatrice. Il s'adresse au responsable des contenus de Netflix.\n\nLa série, créée par l'Américaine Quinn Shephard, est sortie le 11 novembre. L'histoire se passe dans un lycée catholique, pendant Halloween 2004. Les filles d'une troupe de danse font un rituel d'initiation qui tourne mal. Ensuite, elles ont des visions étranges et des convulsions. Pour les auteurs de la pétition, la série se moque de la prière, de la messe et des saints. Ils accusent Netflix de « salir la foi de millions de familles chrétiennes ».\n\nPourtant, la polémique n'a pas fait fuir le public. Dès son deuxième jour, « The Body » est entrée dans le top 10 de plus de 80 pays. Selon le site FlixPatrol, elle est même devenue la série la plus regardée au monde sur la plateforme. La créatrice se défend : elle ne veut pas attaquer la foi, mais critiquer ceux qui l'exploitent. Par ailleurs, des fans ont lancé une contre-pétition pour obtenir une deuxième saison.\n\nNetflix n'a pas encore réagi. Elle a déjà connu des campagnes semblables, par exemple contre le film « Mignonnes » en 2020. Elle n'a rien retiré. Alors, une pétition peut-elle faire disparaître une série ? Et où se trouve la limite entre la liberté de création et le respect des croyances ?",
+  "dictation": {
+    "form": "Compte rendu de réunion",
+    "focus": "homophones ce/se, ces/ses, c'est/s'est, on/ont, son/sont, leur/leurs",
+    "text": "La réunion des parents d'élèves a commencé à dix-huit heures. Plusieurs familles ont parlé d'une série d'horreur que leurs enfants regardent en cachette. Certains parents pensent que ces images sont trop violentes pour des adolescents. D'autres ont expliqué que c'est une occasion de discuter de religion à la maison. La directrice s'est engagée à inviter une psychologue au collège. On a aussi demandé aux professeurs de parler des écrans avec leurs élèves.",
+    "units": [
+      "La réunion des parents d'élèves a commencé à dix-huit heures.",
+      "Plusieurs familles ont parlé d'une série d'horreur",
+      "que leurs enfants regardent en cachette.",
+      "Certains parents pensent que ces images",
+      "sont trop violentes pour des adolescents.",
+      "D'autres ont expliqué que c'est une occasion",
+      "de discuter de religion à la maison.",
+      "La directrice s'est engagée à inviter une psychologue au collège.",
+      "On a aussi demandé aux professeurs",
+      "de parler des écrans avec leurs élèves."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Raconter la polémique",
+      "prompt": "Peux-tu m'expliquer avec tes mots pourquoi la série The Body fait autant parler d'elle ?",
+      "relances": [
+        "Que reprochent exactement les auteurs de la pétition à la série ?",
+        "Comment la créatrice de la série répond-elle à ces critiques ?",
+        "Pourquoi la polémique a-t-elle aidé la série, à ton avis ?",
+        "Que s'est-il passé avec le film Mignonnes en 2020 ?"
+      ]
+    },
+    {
+      "title": "Pétition ou censure",
+      "prompt": "Que devrait faire une plateforme quand des milliers de gens trouvent une série choquante ?",
+      "relances": [
+        "Où places-tu la limite entre humour, provocation et insulte ?",
+        "Qui devrait décider de ce qu'on peut montrer à l'écran ?",
+        "Que penses-tu de ceux qui critiquent une série sans l'avoir vue ?",
+        "Quel argument de l'autre camp te semble le plus solide ?"
+      ]
+    },
+    {
+      "title": "Une série qui choque",
+      "prompt": "Raconte-moi une série ou un film qui t'a choquée, ou qui a choqué ton entourage.",
+      "relances": [
+        "Qu'est-ce qui t'a dérangée exactement dans cette histoire ?",
+        "Comment ta famille a-t-elle réagi quand elle l'a découvert ?",
+        "Comment ton regard sur cette série a-t-il évolué avec le temps ?",
+        "Quelles séries regardes-tu en ce moment, et pourquoi ?"
+      ]
+    },
+    {
+      "title": "Religion, France et Caraïbes",
+      "prompt": "Comment une série comme The Body serait-elle reçue en République dominicaine, et en France ?",
+      "relances": [
+        "Quelle place la religion occupe-t-elle dans la vie de ta famille ?",
+        "Que sais-tu de la laïcité en France et de ce qu'elle implique ?",
+        "Comment imagines-tu le rapport à la religion à Strasbourg ?",
+        "Quelles différences culturelles es-tu curieuse de découvrir en arrivant ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "VigilanceFamille_78",
+      "comment": "J'ai signé et je ne regrette RIEN. On ne peut plus regarder Netflix en famille sans tomber sur des horreurs pareilles !!! Se moquer de la messe et des saints, ça s'appelle de la provocation, pas de la création. Ils n'oseraient jamais faire ça avec une autre religion.",
+      "likes": 318
+    },
+    {
+      "username": "ExCollegienneDeSaintJoseph",
+      "comment": "J'étais dans un lycée catholique en 2004, avec l'uniforme et la messe du vendredi. Honnêtement, la série est presque réaliste… sauf les convulsions 😅 Les sœurs étaient beaucoup plus effrayantes que n'importe quel démon. J'ai tout regardé en deux soirs et j'attends la saison 2 !",
+      "likes": 47
+    }
+  ]
+}

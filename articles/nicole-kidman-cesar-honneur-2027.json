@@ -1,0 +1,92 @@
+{
+  "id": "nicole-kidman-cesar-honneur-2027",
+  "title": "Nicole Kidman recevra un César d'honneur en février 2027",
+  "date": "2026-11-20",
+  "category": "Culture",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/MKr384262_Nicole_Kidman_(Women_In_Motion,_Cannes_2025).jpg?width=1200",
+    "alt": "Nicole Kidman souriante au Festival de Cannes en 2025"
+  },
+  "vocabulary": [
+    { "fr": "un César d'honneur", "es": "un César de honor (premio a toda una carrera)" },
+    { "fr": "la remise (d'un prix)", "es": "la entrega (de un premio)" },
+    { "fr": "saluer", "es": "rendir homenaje, reconocer" },
+    { "fr": "récompenser", "es": "premiar, recompensar" },
+    { "fr": "la célébrité", "es": "la fama" },
+    { "fr": "attirer l'attention", "es": "atraer la atención" },
+    { "fr": "regretter", "es": "lamentar" },
+    { "fr": "réserver", "es": "reservar" }
+  ],
+  "article": "Nicole Kidman recevra un César d'honneur le jeudi 25 février 2027. L'Académie des César et Canal+ ont fait cette annonce le 12 novembre. La remise aura lieu à l'Olympia, à Paris, pendant la 52e cérémonie. L'actrice Léa Seydoux présidera la soirée et l'humoriste Vincent Dedienne la présentera.\n\nL'Académie veut saluer une actrice et productrice qui n'a jamais laissé la célébrité guider ses choix. En quarante ans de carrière, l'Australienne a joué dans des films très différents, de « Moulin Rouge » à « Eyes Wide Shut ». Elle a gagné l'Oscar de la meilleure actrice en 2003 pour « The Hours ». Elle produit aussi des séries à succès, comme « Big Little Lies ».\n\nCe choix n'est pas vraiment une surprise. Depuis plusieurs années, le César d'honneur récompense souvent une star d'Hollywood. Avant elle, il y a eu Cate Blanchett, David Fincher, Christopher Nolan, Julia Roberts et Jim Carrey. Pour l'Académie, ces invités prestigieux attirent l'attention du monde entier sur le cinéma français. Pourtant, certains critiques regrettent cette habitude. Selon eux, la grande fête du cinéma français devrait d'abord honorer des artistes français.\n\nLa question revient donc chaque année. Faut-il inviter des stars étrangères pour rendre les César plus visibles ? Ou est-ce que la soirée perd un peu de son identité ? Le public aura peut-être sa réponse le 25 février, quand Nicole Kidman montera sur la scène de l'Olympia.",
+  "dictation": {
+    "form": "Consignes : règlement pour les bénévoles d'un ciné-club de quartier",
+    "focus": "accord du participe passé avec avoir et un COD placé avant (la lettre que j'ai envoyée, je les ai reçus)",
+    "text": "Bienvenue aux bénévoles du ciné-club du quartier. Avant la projection, relisez les consignes que nous vous avons envoyées. Portez toujours le badge que vous avez reçu à l'accueil. Les places que les voisins ont réservées se trouvent au premier rang. Après le film, rangez les chaises que vous avez sorties. Notez aussi dans le cahier les films que vous avez aimés. Il faut que la salle soit propre avant minuit.",
+    "units": [
+      "Bienvenue aux bénévoles du ciné-club du quartier.",
+      "Avant la projection, relisez les consignes",
+      "que nous vous avons envoyées.",
+      "Portez toujours le badge que vous avez reçu",
+      "à l'accueil. Les places que les voisins ont réservées",
+      "se trouvent au premier rang.",
+      "Après le film, rangez les chaises que vous avez sorties.",
+      "Notez aussi dans le cahier",
+      "les films que vous avez aimés.",
+      "Il faut que la salle soit propre avant minuit."
+    ]
+  },
+  "oralTopics": [
+    {
+      "title": "Raconte l'annonce",
+      "prompt": "Peux-tu m'expliquer avec tes mots ce que Nicole Kidman va recevoir, et pourquoi ?",
+      "relances": [
+        "Où et quand la cérémonie va-t-elle avoir lieu ?",
+        "Quels films de Nicole Kidman l'article cite-t-il ?",
+        "Qui a reçu ce prix avant elle ?",
+        "Pourquoi certains critiques ne sont-ils pas d'accord ?"
+      ]
+    },
+    {
+      "title": "Stars étrangères aux César",
+      "prompt": "À ton avis, la grande soirée du cinéma français doit-elle honorer des stars d'Hollywood ?",
+      "relances": [
+        "Qu'est-ce que la cérémonie gagne avec une star américaine ?",
+        "Qu'est-ce qu'elle perd, selon toi ?",
+        "Quel artiste français mériterait ce prix à sa place ?",
+        "Que répondrais-tu au premier commentaire sous l'article ?"
+      ]
+    },
+    {
+      "title": "Ton actrice préférée",
+      "prompt": "Quelle actrice ou quel acteur t'a marquée, et dans quel film ou quelle série ?",
+      "relances": [
+        "Comment as-tu découvert cette personne ?",
+        "Quelle scène te reste en mémoire, et pourquoi ?",
+        "Tu as déjà vu un film avec Nicole Kidman ? Raconte.",
+        "Quel prix lui donnerais-tu, si tu étais l'Académie ?"
+      ]
+    },
+    {
+      "title": "Le cinéma à Strasbourg",
+      "prompt": "Comment imagines-tu tes sorties au cinéma quand tu vivras à Strasbourg ?",
+      "relances": [
+        "Quels films français voudrais-tu voir en version originale ?",
+        "Comment se passe une sortie au cinéma à Saint-Domingue ?",
+        "Quels films dominicains aimerais-tu faire découvrir à des Français ?",
+        "Comment le cinéma peut-il t'aider à progresser en français ?"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "username": "CinephileDuMarais75",
+      "comment": "ENCORE une star américaine !!! Chaque année c'est pareil, on déroule le tapis rouge à Hollywood pour faire le buzz. On a des actrices françaises immenses qui n'ont jamais eu de César d'honneur. Les César, c'est la fête du cinéma français, pas une annexe des Oscars.",
+      "likes": 387
+    },
+    {
+      "username": "OuvreuseRetraitee_Lyon",
+      "comment": "J'ai été ouvreuse pendant vingt ans. En 2001, pour Moulin Rouge, une dame est revenue voir le film six fois dans la même semaine, toujours au troisième rang, avec un paquet de bonbons à la menthe. Le jour de la remise, je penserai à elle 😄",
+      "likes": 64
+    }
+  ]
+}
